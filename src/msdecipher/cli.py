@@ -1,0 +1,134 @@
+"""Command line: ``python -m msdecipher <command>``."""
+from __future__ import annotations
+
+import argparse
+import sys
+
+
+def _add_common(p: argparse.ArgumentParser) -> None:
+    p.add_argument("--file", help="transcription file (default data/transcriptions/ZL3b-n.txt)")
+    p.add_argument("--units", default=None,
+                   help="unit segmentation: preset (raw, basic, collapsed, extended) or comma list "
+                        "such as ch,sh,cth (default: collapsed)")
+    p.add_argument("--uncertain-spaces", choices=["split", "join"], default="split",
+                   help="treat ',' as a word space (split, default) or ignore it (join)")
+
+
+def build_parser() -> argparse.ArgumentParser:
+    ap = argparse.ArgumentParser(
+        prog="python -m msdecipher",
+        description="Descriptive analysis of MS 408 (Voynich) transcriptions. MS 408 is undeciphered; "
+                    "nothing here decodes it.")
+    sub = ap.add_subparsers(dest="cmd", required=True)
+
+    sub.add_parser("fetch", help="download voynich.nu IVTFF files into data/transcriptions/ + SHA256 manifest")
+    sub.add_parser("verify", help="check downloaded files against data/transcriptions/MANIFEST.json")
+
+    p = sub.add_parser("parse", help="parse a transcription and print an inventory")
+    p.add_argument("--file")
+
+    p = sub.add_parser("catalog", help="glyph catalogue -> glyphs/catalog.csv + glyphs/REPORT.md")
+    _add_common(p)
+
+    p = sub.add_parser("stats", help="all statistics -> reports/ (same as run-all)")
+    _add_common(p)
+    p.add_argument("--no-replicate", action="store_true")
+    p.add_argument("--no-plots", action="store_true")
+    p.add_argument("--seed", type=int, default=1)
+
+    p = sub.add_parser("run-all", help="catalogue + statistics + reports (fetching first with --fetch)")
+    _add_common(p)
+    p.add_argument("--fetch", action="store_true", help="download the data first if missing")
+    p.add_argument("--no-replicate", action="store_true")
+    p.add_argument("--no-plots", action="store_true")
+    p.add_argument("--seed", type=int, default=1)
+
+    p = sub.add_parser("images", help="render PDF pages to data/images/ (best effort; PDF page numbers)")
+    p.add_argument("--dpi", type=int, default=100)
+    p.add_argument("--first", type=int)
+    p.add_argument("--last", type=int)
+
+    sub.add_parser("segment-glyphs", help="image glyph segmentation (NOT IMPLEMENTED; stub)")
+    return ap
+
+
+def _cmd_fetch(a) -> int:
+    from .fetch import fetch_all
+    m = fetch_all()
+    for e in m["files"]:
+        print(f"{e['file']:16s} {e['bytes']:>8d} B  sha256:{e['sha256'][:16]}…")
+    print("manifest written; downloaded files are git-ignored (no open licence stated).")
+    return 0
+
+
+def _cmd_verify(a) -> int:
+    from .fetch import verify
+    res = verify()
+    bad = 0
+    for f, st in res:
+        print(f"{f:16s} {st}")
+        bad += st != "ok"
+    if not res:
+        print("no manifest entries")
+        return 1
+    return 1 if bad else 0
+
+
+def _cmd_parse(a) -> int:
+    from .analysis import load_corpus
+    c = load_corpus(a.file)
+    print(f"{c.path}: alphabet={c.alphabet} IVTFF {c.version} mode={c.mode}")
+    print(f"pages={len(c.pages)} loci={len(c.loci)} types={dict(c.locus_type_counts())}")
+    toks = sum(len(l.tokens) for l in c.loci)
+    print(f"tokens={toks} warnings={sum(len(l.warnings) for l in c.loci)}")
+    print("uncertain-space tokens=%d, alternative-reading tokens=%d, ligature tokens=%d, unreadable tokens=%d, rare-glyph tokens=%d" % (
+        sum(1 for l in c.loci for t in l.tokens if t.space_after == ","),
+        sum(1 for l in c.loci for t in l.tokens if t.alternatives),
+        sum(1 for l in c.loci for t in l.tokens if t.ligature),
+        sum(1 for l in c.loci for t in l.tokens if t.unreadable),
+        sum(1 for l in c.loci for t in l.tokens if t.has_rare)))
+    return 0
+
+
+def _cmd_catalog(a) -> int:
+    from .analysis import catalog_only
+    cat, dig, bg = catalog_only(a.file, units=a.units, uncertain=a.uncertain_spaces)
+    print(cat.head(20).to_string(index=False))
+    print("wrote glyphs/catalog.csv, digraph_candidates.csv, top_pmi_bigrams.csv, REPORT.md")
+    return 0
+
+
+def _cmd_run(a) -> int:
+    from .analysis import run_all
+    if getattr(a, "fetch", False):
+        from .fetch import verify
+        from .fetch import fetch_all
+        if any(st == "missing" for _, st in verify()) or not verify():
+            fetch_all()
+    run_all(a.file, units=a.units, uncertain=a.uncertain_spaces, seed=a.seed,
+            replicate=not a.no_replicate, make_plots=not a.no_plots)
+    return 0
+
+
+def _cmd_images(a) -> int:
+    from .images import extract_pages
+    out = extract_pages(dpi=a.dpi, first=a.first, last=a.last)
+    print(f"wrote {len(out)} page images (PDF page numbers, not folio ids) to data/images/ (git-ignored)")
+    print("NOTE: PDF page -> folio index is not built; glyph segmentation is not implemented.")
+    return 0
+
+
+def _cmd_segment(a) -> int:
+    print("segment-glyphs: NOT IMPLEMENTED (stub). See docs/IMAGE_STAGE.md.", file=sys.stderr)
+    return 2
+
+
+def main(argv=None) -> int:
+    a = build_parser().parse_args(argv)
+    try:
+        return {"fetch": _cmd_fetch, "verify": _cmd_verify, "parse": _cmd_parse, "catalog": _cmd_catalog,
+                "stats": _cmd_run, "run-all": _cmd_run, "images": _cmd_images,
+                "segment-glyphs": _cmd_segment}[a.cmd](a)
+    except FileNotFoundError as e:
+        print(f"error: {e}", file=sys.stderr)
+        return 1

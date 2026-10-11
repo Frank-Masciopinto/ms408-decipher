@@ -1,0 +1,55 @@
+{
+  "license_note": "voynich.nu publishes these files for research use but states no open licence in the 000_README.txt that was read. They are NOT redistributed in this repository (git-ignored); only URLs and SHA256 checksums are recorded. Cite the transcribers (Zandbergen/Landini ZL, Claston GC, Takahashi IT, reference merge RF) and ask the maintainers before redistributing.",
+  "files": [
+    {
+      "file": "ZL3b-n.txt",
+      "alphabet": "Eva-",
+      "role": "primary",
+      "description": "Zandbergen-Landini transliteration v3b (13 May 2025), Extended EVA, IVTFF 2.0",
+      "url": "https://www.voynich.nu/data/ZL3b-n.txt",
+      "bytes": 411671,
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "retrieved_at": "2026-10-11T13:54:39Z"
+    },
+    {
+      "file": "IT2a-n.txt",
+      "alphabet": "EvaT",
+      "role": "replication",
+      "description": "Takahashi transliteration (as in Landini-Stolfi interlinear), basic EVA",
+      "url": "https://www.voynich.nu/data/IT2a-n.txt",
+      "bytes": 342104,
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "retrieved_at": "2026-10-11T13:54:39Z"
+    },
+    {
+      "file": "RF1b-e.txt",
+      "alphabet": "Eva-",
+      "role": "replication",
+      "description": "Reference transliteration 1b (automatic ZL+GC merge), extended EVA",
+      "url": "https://www.voynich.nu/data/RF1b-e.txt",
+      "bytes": 362373,
+      "sha256": "e7d3238e35743e06c63367a933909ec37b1e2de7ada3a1b449447eafa1918782",
+      "retrieved_at": "2026-10-11T13:54:39Z"
+    },
+    {
+      "file": "GC2a-n.txt",
+      "alphabet": "v101",
+      "role": "parse-only",
+      "description": "Claston v101 transliteration, v101 alphabet (not EVA; parser test only)",
+      "url": "https://www.voynich.nu/data/GC2a-n.txt",
+      "bytes": 314916,
+      "sha256": "b09570cb6c993bc2d87134d115e60a978650a8a6495483ddbb1f6005a586096f",
+      "retrieved_at": "2026-10-11T13:54:40Z"
+    },
+    {
+      "file": "000_README.txt",
+      "alphabet": null,
+      "role": "documentation",
+      "description": "voynich.nu data directory README",
+      "url": "https://www.voynich.nu/data/000_README.txt",
+      "bytes": 3939,
+      "sha256": "cd1e418804ec55607450da78f3d52d8d76d2cff5acb10ea3af5e1f7253a07a4a",
+      "retrieved_at": "2026-10-11T13:54:40Z"
+    }
+  ]
+}

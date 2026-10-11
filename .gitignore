@@ -1,4 +1,18 @@
 source/MS408_full.pdf
 __pycache__/
+*.pyc
 .venv/
 .ipynb_checkpoints/
+.pytest_cache/
+*.egg-info/
+
+# Third-party transcriptions (voynich.nu): no open licence stated, so the files are NOT
+# committed. Only the fetch script and the SHA256 manifest are. See data/transcriptions/README.md
+data/transcriptions/*
+!data/transcriptions/.gitkeep
+!data/transcriptions/MANIFEST.json
+!data/transcriptions/README.md
+
+# Derived / bulky artefacts (regenerate with the CLI)
+data/images/
+data/processed/
