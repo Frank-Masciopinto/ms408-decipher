@@ -1,0 +1,1601 @@
+perm,task,feature,gain_bits_per_word,grammar
+0,currier_language_AB,slot_pattern,-0.001237931384305762,learned
+0,currier_language_AB,first_last_pair,-0.006105269678447371,learned
+0,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),0.0032119160036101395,learned
+0,currier_language_AB,DIFF slot_pattern - first_last_pair,0.004867338294141609,learned
+0,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.004482953620697839,learned
+0,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0012416594427435512,learned
+0,currier_language_AB,DIFF first_last+slot - first_last_pair,0.001867980715749687,learned
+0,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.0009021419222732382,learned
+0,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.0009658387934764487,learned
+0,currier_language_AB,DIFF slot_pattern - length,0.0004330206259154806,learned
+0,illustration_section,slot_pattern,-0.1000659629646031,learned
+0,illustration_section,first_last_pair,-0.060209350185216504,learned
+0,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.039856612779386597,learned
+0,illustration_section,DIFF slot_pattern - first_last_pair,-0.039856612779386597,learned
+0,illustration_section,DIFF slot_pattern - second_penult_pair,0.007953730648092197,learned
+0,illustration_section,DIFF slot_pattern - covered_flag,0.29043869957008783,learned
+0,illustration_section,DIFF first_last+slot - first_last_pair,-0.004696056950099531,learned
+0,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.011684983627515091,learned
+0,illustration_section,DIFF first_last+slot - first_last+second_penult,0.006988926677415561,learned
+0,illustration_section,DIFF slot_pattern - length,-0.003096346681555201,learned
+1,currier_language_AB,slot_pattern,0.002428549468782717,learned
+1,currier_language_AB,first_last_pair,0.0008211435279529925,learned
+1,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.00013067335454676043,learned
+1,currier_language_AB,DIFF slot_pattern - first_last_pair,0.0016074059408297246,learned
+1,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0012081367477441505,learned
+1,currier_language_AB,DIFF slot_pattern - covered_flag,0.002441387607760332,learned
+1,currier_language_AB,DIFF first_last+slot - first_last_pair,0.0001011430639728556,learned
+1,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.000542339981102612,learned
+1,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0004411969171297564,learned
+1,currier_language_AB,DIFF slot_pattern - length,0.0017941027669931995,learned
+1,illustration_section,slot_pattern,-0.0034830667657642263,learned
+1,illustration_section,first_last_pair,-0.003918594933628153,learned
+1,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.0006124039387442114,learned
+1,illustration_section,DIFF slot_pattern - first_last_pair,0.0004355281678639269,learned
+1,illustration_section,DIFF slot_pattern - second_penult_pair,-0.0006124039387442114,learned
+1,illustration_section,DIFF slot_pattern - covered_flag,-0.0034393770682409155,learned
+1,illustration_section,DIFF first_last+slot - first_last_pair,-0.0020316909595327415,learned
+1,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.00748938832766371,learned
+1,illustration_section,DIFF first_last+slot - first_last+second_penult,0.0054576973681309685,learned
+1,illustration_section,DIFF slot_pattern - length,-0.004133834922280845,learned
+2,currier_language_AB,slot_pattern,-0.0019934377978627136,learned
+2,currier_language_AB,first_last_pair,-0.002307387669262223,learned
+2,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0007510111539167355,learned
+2,currier_language_AB,DIFF slot_pattern - first_last_pair,0.0003139498713995094,learned
+2,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0007510111539167355,learned
+2,currier_language_AB,DIFF slot_pattern - covered_flag,-0.001992450378470089,learned
+2,currier_language_AB,DIFF first_last+slot - first_last_pair,7.544963865896035e-05,learned
+2,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.0012218190773022892,learned
+2,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0011463694386433289,learned
+2,currier_language_AB,DIFF slot_pattern - length,0.0014187402776562083,learned
+2,illustration_section,slot_pattern,-0.11445839555148409,learned
+2,illustration_section,first_last_pair,-0.05100666325971746,learned
+2,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.06345173229176662,learned
+2,illustration_section,DIFF slot_pattern - first_last_pair,-0.06345173229176662,learned
+2,illustration_section,DIFF slot_pattern - second_penult_pair,-0.0028667930204880204,learned
+2,illustration_section,DIFF slot_pattern - covered_flag,0.3694545132029198,learned
+2,illustration_section,DIFF first_last+slot - first_last_pair,-0.0026011287314700315,learned
+2,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.0018474557844320658,learned
+2,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.0007536729470379658,learned
+2,illustration_section,DIFF slot_pattern - length,0.002033535612090437,learned
+3,currier_language_AB,slot_pattern,-0.007549367753365016,learned
+3,currier_language_AB,first_last_pair,-0.00968929592298646,learned
+3,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0023504458383776577,learned
+3,currier_language_AB,DIFF slot_pattern - first_last_pair,0.0021399281696214446,learned
+3,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0023504458383776577,learned
+3,currier_language_AB,DIFF slot_pattern - covered_flag,-0.007556894577823422,learned
+3,currier_language_AB,DIFF first_last+slot - first_last_pair,0.002378617177267074,learned
+3,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.0009018929865231319,learned
+3,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.001476724190743942,learned
+3,currier_language_AB,DIFF slot_pattern - length,-0.006058699375959077,learned
+3,illustration_section,slot_pattern,-0.015209877578230217,learned
+3,illustration_section,first_last_pair,-0.023964378405507344,learned
+3,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.0007121992464815645,learned
+3,illustration_section,DIFF slot_pattern - first_last_pair,0.008754500827277127,learned
+3,illustration_section,DIFF slot_pattern - second_penult_pair,0.008515621588282327,learned
+3,illustration_section,DIFF slot_pattern - covered_flag,-0.015154797795733055,learned
+3,illustration_section,DIFF first_last+slot - first_last_pair,0.005589149624230173,learned
+3,illustration_section,DIFF first_last+second_penult - first_last_pair,0.005753768284342795,learned
+3,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.0001646186601126226,learned
+3,illustration_section,DIFF slot_pattern - length,-0.00944110681234302,learned
+4,currier_language_AB,slot_pattern,-0.004799558663081411,learned
+4,currier_language_AB,first_last_pair,-0.00986103294385175,learned
+4,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),0.004495347583191512,learned
+4,currier_language_AB,DIFF slot_pattern - first_last_pair,0.00506147428077034,learned
+4,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.00529203454167203,learned
+4,currier_language_AB,DIFF slot_pattern - covered_flag,-0.00480668335786595,learned
+4,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.0052870545402144056,learned
+4,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0004582654419440519,learned
+4,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.004828789098270354,learned
+4,currier_language_AB,DIFF slot_pattern - length,-0.0034803290095561656,learned
+4,illustration_section,slot_pattern,-0.011386974990857624,learned
+4,illustration_section,first_last_pair,-0.020556730639205757,learned
+4,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),0.006625732699339573,learned
+4,illustration_section,DIFF slot_pattern - first_last_pair,0.009169755648348132,learned
+4,illustration_section,DIFF slot_pattern - second_penult_pair,0.008046353119564325,learned
+4,illustration_section,DIFF slot_pattern - covered_flag,-0.011266960741171584,learned
+4,illustration_section,DIFF first_last+slot - first_last_pair,0.005229113352566156,learned
+4,illustration_section,DIFF first_last+second_penult - first_last_pair,0.0008251133558488562,learned
+4,illustration_section,DIFF first_last+slot - first_last+second_penult,0.004403999996717299,learned
+4,illustration_section,DIFF slot_pattern - length,-0.01026446086864178,learned
+5,currier_language_AB,slot_pattern,-0.0011144420895708627,learned
+5,currier_language_AB,first_last_pair,-0.0006487951663758739,learned
+5,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0004656469231949888,learned
+5,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0004656469231949888,learned
+5,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.00021600294527985317,learned
+5,currier_language_AB,DIFF slot_pattern - covered_flag,-0.001111790480887095,learned
+5,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.001137073140759916,learned
+5,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0010971919515274792,learned
+5,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-3.9881189232437086e-05,learned
+5,currier_language_AB,DIFF slot_pattern - length,-0.0012865525658100096,learned
+5,illustration_section,slot_pattern,-0.022058113719602628,learned
+5,illustration_section,first_last_pair,-0.029384876498428535,learned
+5,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.005799589668965592,learned
+5,illustration_section,DIFF slot_pattern - first_last_pair,0.007326762778825907,learned
+5,illustration_section,DIFF slot_pattern - second_penult_pair,-0.005799589668965592,learned
+5,illustration_section,DIFF slot_pattern - covered_flag,-0.02195586974649976,learned
+5,illustration_section,DIFF first_last+slot - first_last_pair,-0.010932302360434961,learned
+5,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.004718938564093663,learned
+5,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.006213363796341298,learned
+5,illustration_section,DIFF slot_pattern - length,-0.01835934650019397,learned
+6,currier_language_AB,slot_pattern,-0.003131366565784042,learned
+6,currier_language_AB,first_last_pair,-0.001498520832457473,learned
+6,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0020013130935103516,learned
+6,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0016328457333265691,learned
+6,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0020013130935103516,learned
+6,currier_language_AB,DIFF slot_pattern - covered_flag,-0.003123947597771611,learned
+6,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.0003329012912782409,learned
+6,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.00044520699598076885,learned
+6,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.00011230570470252793,learned
+6,currier_language_AB,DIFF slot_pattern - length,-0.0029385435098552752,learned
+6,illustration_section,slot_pattern,-0.013998184986447677,learned
+6,illustration_section,first_last_pair,-0.02583325844963827,learned
+6,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),0.001695587590174491,learned
+6,illustration_section,DIFF slot_pattern - first_last_pair,0.011835073463190592,learned
+6,illustration_section,DIFF slot_pattern - second_penult_pair,0.001695587590174491,learned
+6,illustration_section,DIFF slot_pattern - covered_flag,-0.013794044301069595,learned
+6,illustration_section,DIFF first_last+slot - first_last_pair,-0.0021473915045483877,learned
+6,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.0025532756528941145,learned
+6,illustration_section,DIFF first_last+slot - first_last+second_penult,0.0004058841483457268,learned
+6,illustration_section,DIFF slot_pattern - length,-0.0032735452558017297,learned
+7,currier_language_AB,slot_pattern,-0.0002837409556661086,learned
+7,currier_language_AB,first_last_pair,7.56498367343824e-05,learned
+7,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.000359390792400491,learned
+7,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.000359390792400491,learned
+7,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0007056443712217099,learned
+7,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0002870839461996033,learned
+7,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.002439721925032698,learned
+7,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.00341737114036658,learned
+7,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.000977649215333882,learned
+7,currier_language_AB,DIFF slot_pattern - length,0.00024719159360632855,learned
+7,illustration_section,slot_pattern,-0.007224993668841822,learned
+7,illustration_section,first_last_pair,-0.015883216564953263,learned
+7,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.0033000075264597783,learned
+7,illustration_section,DIFF slot_pattern - first_last_pair,0.008658222896111442,learned
+7,illustration_section,DIFF slot_pattern - second_penult_pair,-0.0033000075264597783,learned
+7,illustration_section,DIFF slot_pattern - covered_flag,-0.007221785420550228,learned
+7,illustration_section,DIFF first_last+slot - first_last_pair,-0.0075556388363664205,learned
+7,illustration_section,DIFF first_last+second_penult - first_last_pair,0.003418026956341592,learned
+7,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.010973665792708013,learned
+7,illustration_section,DIFF slot_pattern - length,-0.00597295937610554,learned
+8,currier_language_AB,slot_pattern,-0.0017131546454405282,learned
+8,currier_language_AB,first_last_pair,0.00033382445404053855,learned
+8,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.002413570453439046,learned
+8,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0020469790994810666,learned
+8,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.002413570453439046,learned
+8,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0017126768124663282,learned
+8,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.0032340401436472517,learned
+8,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.002080692379796639,learned
+8,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0011533477638506126,learned
+8,currier_language_AB,DIFF slot_pattern - length,-0.0025529842717110073,learned
+8,illustration_section,slot_pattern,-0.02407187215382371,learned
+8,illustration_section,first_last_pair,-0.02567510196836844,learned
+8,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),0.0016032298145447314,learned
+8,illustration_section,DIFF slot_pattern - first_last_pair,0.0016032298145447314,learned
+8,illustration_section,DIFF slot_pattern - second_penult_pair,0.020448373495760067,learned
+8,illustration_section,DIFF slot_pattern - covered_flag,-0.023932360732064048,learned
+8,illustration_section,DIFF first_last+slot - first_last_pair,-0.016162604018912397,learned
+8,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.022717354228714,learned
+8,illustration_section,DIFF first_last+slot - first_last+second_penult,0.006554750209801605,learned
+8,illustration_section,DIFF slot_pattern - length,-0.017174357216891072,learned
+9,currier_language_AB,slot_pattern,-0.0034751570526422243,learned
+9,currier_language_AB,first_last_pair,-0.009493594257347993,learned
+9,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),0.0008717493730013249,learned
+9,currier_language_AB,DIFF slot_pattern - first_last_pair,0.006018437204705769,learned
+9,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0008717493730013249,learned
+9,currier_language_AB,DIFF slot_pattern - covered_flag,-0.003476076512960972,learned
+9,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.002475503124228992,learned
+9,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0034594674659084897,learned
+9,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.0009839643416794976,learned
+9,currier_language_AB,DIFF slot_pattern - length,-0.0014747570284911072,learned
+9,illustration_section,slot_pattern,-0.028918896841131747,learned
+9,illustration_section,first_last_pair,-0.02782063713006583,learned
+9,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.0010982597110659187,learned
+9,illustration_section,DIFF slot_pattern - first_last_pair,-0.0010982597110659187,learned
+9,illustration_section,DIFF slot_pattern - second_penult_pair,0.011855805396450418,learned
+9,illustration_section,DIFF slot_pattern - covered_flag,-0.02875679915527777,learned
+9,illustration_section,DIFF first_last+slot - first_last_pair,-0.011559827550007507,learned
+9,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.011937022273724944,learned
+9,illustration_section,DIFF first_last+slot - first_last+second_penult,0.0003771947237174375,learned
+9,illustration_section,DIFF slot_pattern - length,-0.02285582408327881,learned
+10,currier_language_AB,slot_pattern,-0.005686129897875059,learned
+10,currier_language_AB,first_last_pair,-0.002407289340365675,learned
+10,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.005389067681123194,learned
+10,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.003278840557509384,learned
+10,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0013561594782836401,learned
+10,currier_language_AB,DIFF slot_pattern - covered_flag,-0.00569031660880031,learned
+10,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.002744141493878369,learned
+10,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0010968129606549505,learned
+10,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0016473285332234185,learned
+10,currier_language_AB,DIFF slot_pattern - length,-0.005995685461429212,learned
+10,illustration_section,slot_pattern,-0.018451356618787627,learned
+10,illustration_section,first_last_pair,-0.0426254073898182,learned
+10,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),0.008661449391555023,learned
+10,illustration_section,DIFF slot_pattern - first_last_pair,0.024174050771030575,learned
+10,illustration_section,DIFF slot_pattern - second_penult_pair,0.024771139412113667,learned
+10,illustration_section,DIFF slot_pattern - covered_flag,-0.018240683341292738,learned
+10,illustration_section,DIFF first_last+slot - first_last_pair,0.0027292176871691817,learned
+10,illustration_section,DIFF first_last+second_penult - first_last_pair,0.0007927715071967614,learned
+10,illustration_section,DIFF first_last+slot - first_last+second_penult,0.0019364461799724203,learned
+10,illustration_section,DIFF slot_pattern - length,-0.015723525881145055,learned
+11,currier_language_AB,slot_pattern,-0.002222275402141422,learned
+11,currier_language_AB,first_last_pair,-0.0019939740912159848,learned
+11,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.00022830131092543707,learned
+11,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.00022830131092543707,learned
+11,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.00032630395251414005,learned
+11,currier_language_AB,DIFF slot_pattern - covered_flag,-0.002221482641249588,learned
+11,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.0030195556538355835,learned
+11,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0013106998264520759,learned
+11,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0017088558273835076,learned
+11,currier_language_AB,DIFF slot_pattern - length,-0.0020332745883328823,learned
+11,illustration_section,slot_pattern,-0.020221508756722635,learned
+11,illustration_section,first_last_pair,-0.03234660520207301,learned
+11,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.0003040322710283691,learned
+11,illustration_section,DIFF slot_pattern - first_last_pair,0.012125096445350377,learned
+11,illustration_section,DIFF slot_pattern - second_penult_pair,0.011134571930334694,learned
+11,illustration_section,DIFF slot_pattern - covered_flag,-0.020165735206130825,learned
+11,illustration_section,DIFF first_last+slot - first_last_pair,0.003596891038611466,learned
+11,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.0029429121334105593,learned
+11,illustration_section,DIFF first_last+slot - first_last+second_penult,0.006539803172022025,learned
+11,illustration_section,DIFF slot_pattern - length,-0.016934375168257933,learned
+12,currier_language_AB,slot_pattern,-0.002375714391841069,learned
+12,currier_language_AB,first_last_pair,-0.004219748510320297,learned
+12,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),0.00033713463786348144,learned
+12,currier_language_AB,DIFF slot_pattern - first_last_pair,0.0018440341184792282,learned
+12,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.002324339020897437,learned
+12,currier_language_AB,DIFF slot_pattern - covered_flag,-0.002374422866330896,learned
+12,currier_language_AB,DIFF first_last+slot - first_last_pair,0.0001154976965990085,learned
+12,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0010974540201221508,learned
+12,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.0012129517167211593,learned
+12,currier_language_AB,DIFF slot_pattern - length,-0.0016446451473885108,learned
+12,illustration_section,slot_pattern,-0.03184919411159837,learned
+12,illustration_section,first_last_pair,-0.027681197036606264,learned
+12,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.0041679970749921025,learned
+12,illustration_section,DIFF slot_pattern - first_last_pair,-0.0041679970749921025,learned
+12,illustration_section,DIFF slot_pattern - second_penult_pair,0.00042648550445079786,learned
+12,illustration_section,DIFF slot_pattern - covered_flag,-0.03165603617762092,learned
+12,illustration_section,DIFF first_last+slot - first_last_pair,-0.006254399665470006,learned
+12,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.006591177481241252,learned
+12,illustration_section,DIFF first_last+slot - first_last+second_penult,0.0003367778157712456,learned
+12,illustration_section,DIFF slot_pattern - length,-0.028233367473329156,learned
+13,currier_language_AB,slot_pattern,-0.002250950508878327,learned
+13,currier_language_AB,first_last_pair,0.0004508651650742135,learned
+13,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0027018156739525402,learned
+13,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0027018156739525402,learned
+13,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0016976815239497112,learned
+13,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0022320472062155854,learned
+13,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.00040591130890048474,learned
+13,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.0009346638150692047,learned
+13,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0013405751239696894,learned
+13,currier_language_AB,DIFF slot_pattern - length,-0.0019818931334789187,learned
+13,illustration_section,slot_pattern,-0.01739278030116831,learned
+13,illustration_section,first_last_pair,-0.03368468836936785,learned
+13,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),0.01034044250154037,learned
+13,illustration_section,DIFF slot_pattern - first_last_pair,0.016291908068199544,learned
+13,illustration_section,DIFF slot_pattern - second_penult_pair,0.01034044250154037,learned
+13,illustration_section,DIFF slot_pattern - covered_flag,-0.01701622294908515,learned
+13,illustration_section,DIFF first_last+slot - first_last_pair,-0.007056685386394819,learned
+13,illustration_section,DIFF first_last+second_penult - first_last_pair,0.007794047241273021,learned
+13,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.01485073262766784,learned
+13,illustration_section,DIFF slot_pattern - length,-0.011041130838661591,learned
+14,currier_language_AB,slot_pattern,-0.0010585047491193816,learned
+14,currier_language_AB,first_last_pair,-0.0073159434029341315,learned
+14,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),0.0015424812828950807,learned
+14,currier_language_AB,DIFF slot_pattern - first_last_pair,0.0062574386538147495,learned
+14,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0015424812828950807,learned
+14,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0010571407184181618,learned
+14,currier_language_AB,DIFF first_last+slot - first_last_pair,0.002095115326033993,learned
+14,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.0011177973463430734,learned
+14,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.0009773179796909197,learned
+14,currier_language_AB,DIFF slot_pattern - length,0.0011872661375352742,learned
+14,illustration_section,slot_pattern,-0.022926206142233875,learned
+14,illustration_section,first_last_pair,-0.03204025274020533,learned
+14,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),0.009114046597971458,learned
+14,illustration_section,DIFF slot_pattern - first_last_pair,0.009114046597971458,learned
+14,illustration_section,DIFF slot_pattern - second_penult_pair,0.020409346092235083,learned
+14,illustration_section,DIFF slot_pattern - covered_flag,-0.022722173725576167,learned
+14,illustration_section,DIFF first_last+slot - first_last_pair,-0.0073081051681388245,learned
+14,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.010144239900648867,learned
+14,illustration_section,DIFF first_last+slot - first_last+second_penult,0.0028361347325100428,learned
+14,illustration_section,DIFF slot_pattern - length,-0.015996760414252527,learned
+15,currier_language_AB,slot_pattern,-0.005276653893528323,learned
+15,currier_language_AB,first_last_pair,-0.0038285681734993447,learned
+15,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.002716697096889586,learned
+15,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0014480857200289778,learned
+15,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0006500316853888565,learned
+15,currier_language_AB,DIFF slot_pattern - covered_flag,-0.005278441669551133,learned
+15,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.008162861630851437,learned
+15,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.00036497190313457403,learned
+15,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.007797889727716863,learned
+15,currier_language_AB,DIFF slot_pattern - length,-0.0009021683690819083,learned
+15,illustration_section,slot_pattern,-0.017452785138870275,learned
+15,illustration_section,first_last_pair,-0.017152123711213607,learned
+15,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.008497860227092398,learned
+15,illustration_section,DIFF slot_pattern - first_last_pair,-0.0003006614276566677,learned
+15,illustration_section,DIFF slot_pattern - second_penult_pair,-0.008497860227092398,learned
+15,illustration_section,DIFF slot_pattern - covered_flag,-0.017385937591863156,learned
+15,illustration_section,DIFF first_last+slot - first_last_pair,-0.012036150819793152,learned
+15,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.004644792246358848,learned
+15,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.007391358573434304,learned
+15,illustration_section,DIFF slot_pattern - length,-0.010327340532744518,learned
+16,currier_language_AB,slot_pattern,0.00017628968911320508,learned
+16,currier_language_AB,first_last_pair,-0.002064989893697573,learned
+16,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0009535472312319645,learned
+16,currier_language_AB,DIFF slot_pattern - first_last_pair,0.002241279582810778,learned
+16,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0009535472312319645,learned
+16,currier_language_AB,DIFF slot_pattern - covered_flag,0.00016968275467131507,learned
+16,currier_language_AB,DIFF first_last+slot - first_last_pair,-5.5411925953449334e-05,learned
+16,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.0007498836992694967,learned
+16,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.000805295625222946,learned
+16,currier_language_AB,DIFF slot_pattern - length,-0.00032092850143079413,learned
+16,illustration_section,slot_pattern,-0.029262426377025922,learned
+16,illustration_section,first_last_pair,-0.030105123536023057,learned
+16,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.001678659965063018,learned
+16,illustration_section,DIFF slot_pattern - first_last_pair,0.0008426971589971348,learned
+16,illustration_section,DIFF slot_pattern - second_penult_pair,-0.001678659965063018,learned
+16,illustration_section,DIFF slot_pattern - covered_flag,0.16641808515498147,learned
+16,illustration_section,DIFF first_last+slot - first_last_pair,-0.006419438029267054,learned
+16,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.0037255979060360836,learned
+16,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.00269384012323097,learned
+16,illustration_section,DIFF slot_pattern - length,0.018356744462884347,learned
+17,currier_language_AB,slot_pattern,-0.0008104878561462677,learned
+17,currier_language_AB,first_last_pair,-0.0005424746509517412,learned
+17,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0002680132051945265,learned
+17,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0002680132051945265,learned
+17,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0008148327547960099,learned
+17,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0008034844537794826,learned
+17,currier_language_AB,DIFF first_last+slot - first_last_pair,-4.5821641375390766e-05,learned
+17,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0007785155568989125,learned
+17,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.0007326939155235218,learned
+17,currier_language_AB,DIFF slot_pattern - length,-0.0009682655166450611,learned
+17,illustration_section,slot_pattern,-0.009577663573023733,learned
+17,illustration_section,first_last_pair,-0.01558786597706589,learned
+17,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),0.0008434287718404963,learned
+17,illustration_section,DIFF slot_pattern - first_last_pair,0.006010202404042157,learned
+17,illustration_section,DIFF slot_pattern - second_penult_pair,0.006970524744964325,learned
+17,illustration_section,DIFF slot_pattern - covered_flag,-0.009550824457210219,learned
+17,illustration_section,DIFF first_last+slot - first_last_pair,0.002413307548979249,learned
+17,illustration_section,DIFF first_last+second_penult - first_last_pair,0.005674900915763698,learned
+17,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.0032615933667844484,learned
+17,illustration_section,DIFF slot_pattern - length,-0.008589690432439512,learned
+18,currier_language_AB,slot_pattern,-0.003529534088127892,learned
+18,currier_language_AB,first_last_pair,-0.008468750019058766,learned
+18,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),0.0033801933141126006,learned
+18,currier_language_AB,DIFF slot_pattern - first_last_pair,0.0049392159309308735,learned
+18,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0033801933141126006,learned
+18,currier_language_AB,DIFF slot_pattern - covered_flag,-0.003522753001583302,learned
+18,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.00521398578622926,learned
+18,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0009711941069661233,learned
+18,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.004242791679263136,learned
+18,currier_language_AB,DIFF slot_pattern - length,-0.0027266317865986336,learned
+18,illustration_section,slot_pattern,-0.04592178016807372,learned
+18,illustration_section,first_last_pair,-0.05755397830977313,learned
+18,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),0.011632198141699412,learned
+18,illustration_section,DIFF slot_pattern - first_last_pair,0.011632198141699412,learned
+18,illustration_section,DIFF slot_pattern - second_penult_pair,0.0223928109892398,learned
+18,illustration_section,DIFF slot_pattern - covered_flag,-0.045751109243487034,learned
+18,illustration_section,DIFF first_last+slot - first_last_pair,0.004196295587952516,learned
+18,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.019540527558079113,learned
+18,illustration_section,DIFF first_last+slot - first_last+second_penult,0.02373682314603163,learned
+18,illustration_section,DIFF slot_pattern - length,-0.03212292677273824,learned
+19,currier_language_AB,slot_pattern,-0.0029801260164100535,learned
+19,currier_language_AB,first_last_pair,0.00188869712190526,learned
+19,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.004868823138315314,learned
+19,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.004868823138315314,learned
+19,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.003480158829189756,learned
+19,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0029831919044440497,learned
+19,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.004071849391583292,learned
+19,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0028854120040613784,learned
+19,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.001186437387521913,learned
+19,currier_language_AB,DIFF slot_pattern - length,-0.0030768865022982087,learned
+19,illustration_section,slot_pattern,-0.016034067829943262,learned
+19,illustration_section,first_last_pair,-0.030303942329137454,learned
+19,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),0.013517417914042859,learned
+19,illustration_section,DIFF slot_pattern - first_last_pair,0.014269874499194191,learned
+19,illustration_section,DIFF slot_pattern - second_penult_pair,0.014453765555695212,learned
+19,illustration_section,DIFF slot_pattern - covered_flag,-0.01599389847046092,learned
+19,illustration_section,DIFF first_last+slot - first_last_pair,-0.0026591179027756692,learned
+19,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.010261022526294468,learned
+19,illustration_section,DIFF first_last+slot - first_last+second_penult,0.007601904623518799,learned
+19,illustration_section,DIFF slot_pattern - length,-0.00852740066263562,learned
+20,currier_language_AB,slot_pattern,-0.000277159967267645,learned
+20,currier_language_AB,first_last_pair,-0.0005769522486257908,learned
+20,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.00023635054381193084,learned
+20,currier_language_AB,DIFF slot_pattern - first_last_pair,0.00029979228135814577,learned
+20,currier_language_AB,DIFF slot_pattern - second_penult_pair,-5.526004286401587e-05,learned
+20,currier_language_AB,DIFF slot_pattern - covered_flag,-0.00028241625653111944,learned
+20,currier_language_AB,DIFF first_last+slot - first_last_pair,0.0014762894037719978,learned
+20,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.0011348847416378482,learned
+20,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.0003414046621341496,learned
+20,currier_language_AB,DIFF slot_pattern - length,0.0002208160333593618,learned
+20,illustration_section,slot_pattern,-0.017660653469943183,learned
+20,illustration_section,first_last_pair,-0.03337801316985461,learned
+20,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),0.004835116387151752,learned
+20,illustration_section,DIFF slot_pattern - first_last_pair,0.015717359699911424,learned
+20,illustration_section,DIFF slot_pattern - second_penult_pair,0.004835116387151752,learned
+20,illustration_section,DIFF slot_pattern - covered_flag,-0.017322500050285784,learned
+20,illustration_section,DIFF first_last+slot - first_last_pair,-0.01894097566204332,learned
+20,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.01679256093999852,learned
+20,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.0021484147220448002,learned
+20,illustration_section,DIFF slot_pattern - length,-0.009043328939770758,learned
+21,currier_language_AB,slot_pattern,-0.002200128315337261,learned
+21,currier_language_AB,first_last_pair,-0.004111206329691507,learned
+21,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),6.578217480657147e-05,learned
+21,currier_language_AB,DIFF slot_pattern - first_last_pair,0.0019110780143542457,learned
+21,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.00027642324928316316,learned
+21,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0021983557759951053,learned
+21,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.002983131390529344,learned
+21,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.003674327208195027,learned
+21,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.0006911958176656829,learned
+21,currier_language_AB,DIFF slot_pattern - length,-0.0025163716398317773,learned
+21,illustration_section,slot_pattern,-0.030515101295989003,learned
+21,illustration_section,first_last_pair,-0.023621652796244525,learned
+21,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.006893448499744478,learned
+21,illustration_section,DIFF slot_pattern - first_last_pair,-0.006893448499744478,learned
+21,illustration_section,DIFF slot_pattern - second_penult_pair,0.010349982911778539,learned
+21,illustration_section,DIFF slot_pattern - covered_flag,-0.030486369754364823,learned
+21,illustration_section,DIFF first_last+slot - first_last_pair,-0.011557300167611358,learned
+21,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.01778787089477964,learned
+21,illustration_section,DIFF first_last+slot - first_last+second_penult,0.006230570727168282,learned
+21,illustration_section,DIFF slot_pattern - length,-0.02575273410171235,learned
+22,currier_language_AB,slot_pattern,-0.0034800043549764203,learned
+22,currier_language_AB,first_last_pair,-0.002950636660786823,learned
+22,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0014203176977760903,learned
+22,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0005293676941895975,learned
+22,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0014203176977760903,learned
+22,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0034861949696180874,learned
+22,currier_language_AB,DIFF first_last+slot - first_last_pair,5.4588385440789474e-05,learned
+22,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.0010018677427807837,learned
+22,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0009472793573399943,learned
+22,currier_language_AB,DIFF slot_pattern - length,-0.002602729110948489,learned
+22,illustration_section,slot_pattern,-0.020082566864728837,learned
+22,illustration_section,first_last_pair,-0.015286622641940136,learned
+22,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.004795944222788701,learned
+22,illustration_section,DIFF slot_pattern - first_last_pair,-0.004795944222788701,learned
+22,illustration_section,DIFF slot_pattern - second_penult_pair,0.0027783320543393088,learned
+22,illustration_section,DIFF slot_pattern - covered_flag,-0.02004859108957083,learned
+22,illustration_section,DIFF first_last+slot - first_last_pair,-0.016708404567345996,learned
+22,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.010621726724806105,learned
+22,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.006086677842539891,learned
+22,illustration_section,DIFF slot_pattern - length,-0.016683780643212232,learned
+23,currier_language_AB,slot_pattern,-0.003593251012429378,learned
+23,currier_language_AB,first_last_pair,-0.0038125746481229273,learned
+23,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.001737925501421299,learned
+23,currier_language_AB,DIFF slot_pattern - first_last_pair,0.00021932363569354945,learned
+23,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.001352802611503561,learned
+23,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0035756735021622876,learned
+23,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.002565197985997351,learned
+23,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.00015584020983407847,learned
+23,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0024093577761632725,learned
+23,currier_language_AB,DIFF slot_pattern - length,-0.0029730529303919717,learned
+23,illustration_section,slot_pattern,-0.021377836598376148,learned
+23,illustration_section,first_last_pair,-0.037364337388031695,learned
+23,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),0.0012818166727017154,learned
+23,illustration_section,DIFF slot_pattern - first_last_pair,0.015986500789655547,learned
+23,illustration_section,DIFF slot_pattern - second_penult_pair,0.015949118123080783,learned
+23,illustration_section,DIFF slot_pattern - covered_flag,-0.02114097980300185,learned
+23,illustration_section,DIFF first_last+slot - first_last_pair,0.004052608750842172,learned
+23,illustration_section,DIFF first_last+second_penult - first_last_pair,0.0026924631965354884,learned
+23,illustration_section,DIFF first_last+slot - first_last+second_penult,0.001360145554306684,learned
+23,illustration_section,DIFF slot_pattern - length,-0.01838178286991117,learned
+24,currier_language_AB,slot_pattern,-0.0007229884774942997,learned
+24,currier_language_AB,first_last_pair,-0.0019250557038929213,learned
+24,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),0.0006844727242542167,learned
+24,currier_language_AB,DIFF slot_pattern - first_last_pair,0.0012020672263986217,learned
+24,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0006844727242542167,learned
+24,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0007210726376365345,learned
+24,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.0011360367714323145,learned
+24,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0023919199851423862,learned
+24,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.001255883213710072,learned
+24,currier_language_AB,DIFF slot_pattern - length,-0.00031623221754514477,learned
+24,illustration_section,slot_pattern,-0.08012290281769854,learned
+24,illustration_section,first_last_pair,-0.08600002653875333,learned
+24,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),0.005877123721054783,learned
+24,illustration_section,DIFF slot_pattern - first_last_pair,0.005877123721054783,learned
+24,illustration_section,DIFF slot_pattern - second_penult_pair,0.05738917132734275,learned
+24,illustration_section,DIFF slot_pattern - covered_flag,0.46722684645267054,learned
+24,illustration_section,DIFF first_last+slot - first_last_pair,0.00933067773281128,learned
+24,illustration_section,DIFF first_last+second_penult - first_last_pair,0.007182063428383123,learned
+24,illustration_section,DIFF first_last+slot - first_last+second_penult,0.0021486143044281564,learned
+24,illustration_section,DIFF slot_pattern - length,0.05385467800611299,learned
+25,currier_language_AB,slot_pattern,-0.007947689962332144,learned
+25,currier_language_AB,first_last_pair,-0.007838476667264614,learned
+25,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0007273863254906188,learned
+25,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0001092132950675298,learned
+25,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0013638649584105413,learned
+25,currier_language_AB,DIFF slot_pattern - covered_flag,-0.00795340032734974,learned
+25,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.007317375030582277,learned
+25,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.006163120994434362,learned
+25,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.001154254036147915,learned
+25,currier_language_AB,DIFF slot_pattern - length,-0.007966693997200016,learned
+25,illustration_section,slot_pattern,-0.023993316298305263,learned
+25,illustration_section,first_last_pair,-0.042549775122522136,learned
+25,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),0.010466044249470514,learned
+25,illustration_section,DIFF slot_pattern - first_last_pair,0.018556458824216873,learned
+25,illustration_section,DIFF slot_pattern - second_penult_pair,0.010466044249470514,learned
+25,illustration_section,DIFF slot_pattern - covered_flag,-0.02380900943627251,learned
+25,illustration_section,DIFF first_last+slot - first_last_pair,-0.005341902891309383,learned
+25,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.013711115482517654,learned
+25,illustration_section,DIFF first_last+slot - first_last+second_penult,0.00836921259120827,learned
+25,illustration_section,DIFF slot_pattern - length,-0.01451630872742786,learned
+26,currier_language_AB,slot_pattern,-0.008205646355217635,learned
+26,currier_language_AB,first_last_pair,-0.007290420653688236,learned
+26,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0016009241330398405,learned
+26,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0009152257015293992,learned
+26,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0016009241330398405,learned
+26,currier_language_AB,DIFF slot_pattern - covered_flag,-0.008189329838896718,learned
+26,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.007030297955987015,learned
+26,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.005141943839493011,learned
+26,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0018883541164940038,learned
+26,currier_language_AB,DIFF slot_pattern - length,-0.006077809908796253,learned
+26,illustration_section,slot_pattern,-0.056544854134375676,learned
+26,illustration_section,first_last_pair,-0.057499707772578006,learned
+26,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.002808678534818622,learned
+26,illustration_section,DIFF slot_pattern - first_last_pair,0.0009548536382023298,learned
+26,illustration_section,DIFF slot_pattern - second_penult_pair,0.003251530662116378,learned
+26,illustration_section,DIFF slot_pattern - covered_flag,-0.05639511949277475,learned
+26,illustration_section,DIFF first_last+slot - first_last_pair,-0.0006907368779145925,learned
+26,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.00890812854899873,learned
+26,illustration_section,DIFF first_last+slot - first_last+second_penult,0.008217391671084137,learned
+26,illustration_section,DIFF slot_pattern - length,-0.03876723630200632,learned
+27,currier_language_AB,slot_pattern,-0.006886984541016286,learned
+27,currier_language_AB,first_last_pair,-0.008695902371290257,learned
+27,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0055432246042886255,learned
+27,currier_language_AB,DIFF slot_pattern - first_last_pair,0.0018089178302739713,learned
+27,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0010707504708815062,learned
+27,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0068880035862656334,learned
+27,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.006299471668430916,learned
+27,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0035136827868997283,learned
+27,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0027857888815311874,learned
+27,currier_language_AB,DIFF slot_pattern - length,-0.006418626756008883,learned
+27,illustration_section,slot_pattern,-0.02652129692494717,learned
+27,illustration_section,first_last_pair,-0.02755093557839871,learned
+27,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-1.5341456832334427e-05,learned
+27,illustration_section,DIFF slot_pattern - first_last_pair,0.0010296386534515388,learned
+27,illustration_section,DIFF slot_pattern - second_penult_pair,0.0038349131074875663,learned
+27,illustration_section,DIFF slot_pattern - covered_flag,-0.02641610689375029,learned
+27,illustration_section,DIFF first_last+slot - first_last_pair,-0.0013852737769991345,learned
+27,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.005213009028912759,learned
+27,illustration_section,DIFF first_last+slot - first_last+second_penult,0.003827735251913624,learned
+27,illustration_section,DIFF slot_pattern - length,-0.0211184856458979,learned
+28,currier_language_AB,slot_pattern,-0.0025002330058651314,learned
+28,currier_language_AB,first_last_pair,-0.0034943047732074904,learned
+28,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0010395322216109214,learned
+28,currier_language_AB,DIFF slot_pattern - first_last_pair,0.000994071767342359,learned
+28,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0019237124454741595,learned
+28,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0024951271075795384,learned
+28,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.002244629576648759,learned
+28,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0018809852089654872,learned
+28,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0003636443676832716,learned
+28,currier_language_AB,DIFF slot_pattern - length,0.0019559364449486588,learned
+28,illustration_section,slot_pattern,-0.017252868269967487,learned
+28,illustration_section,first_last_pair,-0.047810184386327566,learned
+28,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),0.014769302098469331,learned
+28,illustration_section,DIFF slot_pattern - first_last_pair,0.03055731611636008,learned
+28,illustration_section,DIFF slot_pattern - second_penult_pair,0.015751580357380213,learned
+28,illustration_section,DIFF slot_pattern - covered_flag,-0.017151175345596674,learned
+28,illustration_section,DIFF first_last+slot - first_last_pair,0.011576694061116083,learned
+28,illustration_section,DIFF first_last+second_penult - first_last_pair,0.004494175181159875,learned
+28,illustration_section,DIFF first_last+slot - first_last+second_penult,0.007082518879956208,learned
+28,illustration_section,DIFF slot_pattern - length,-0.010191370562094421,learned
+29,currier_language_AB,slot_pattern,-0.0001725708555797297,learned
+29,currier_language_AB,first_last_pair,-0.0014782323954251576,learned
+29,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0025498040861942736,learned
+29,currier_language_AB,DIFF slot_pattern - first_last_pair,0.001305661539845428,learned
+29,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0013527358775667002,learned
+29,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0001711157583635118,learned
+29,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.003662916289197961,learned
+29,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.001539163047355527,learned
+29,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.002123753241842434,learned
+29,currier_language_AB,DIFF slot_pattern - length,-0.00010870980198696262,learned
+29,illustration_section,slot_pattern,-0.037982196444418165,learned
+29,illustration_section,first_last_pair,-0.046839189906221934,learned
+29,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.016593690400666074,learned
+29,illustration_section,DIFF slot_pattern - first_last_pair,0.00885699346180377,learned
+29,illustration_section,DIFF slot_pattern - second_penult_pair,-0.016593690400666074,learned
+29,illustration_section,DIFF slot_pattern - covered_flag,-0.037788620712327116,learned
+29,illustration_section,DIFF first_last+slot - first_last_pair,-0.0037236174855841547,learned
+29,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.005537522139958569,learned
+29,illustration_section,DIFF first_last+slot - first_last+second_penult,0.001813904654374414,learned
+29,illustration_section,DIFF slot_pattern - length,-0.03264901068839592,learned
+30,currier_language_AB,slot_pattern,-0.008558497642839237,learned
+30,currier_language_AB,first_last_pair,-0.007275326868216628,learned
+30,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0012831707746226084,learned
+30,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0012831707746226084,learned
+30,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0037709513645241798,learned
+30,currier_language_AB,DIFF slot_pattern - covered_flag,-0.008561430952315704,learned
+30,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.002590529229811649,learned
+30,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.006570887957389999,learned
+30,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.00398035872757835,learned
+30,currier_language_AB,DIFF slot_pattern - length,-0.007774939480872829,learned
+30,illustration_section,slot_pattern,-0.021213799195990223,learned
+30,illustration_section,first_last_pair,-0.033034426348781454,learned
+30,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.0013905534943754218,learned
+30,illustration_section,DIFF slot_pattern - first_last_pair,0.011820627152791231,learned
+30,illustration_section,DIFF slot_pattern - second_penult_pair,0.010663612833394918,learned
+30,illustration_section,DIFF slot_pattern - covered_flag,-0.021034574232239495,learned
+30,illustration_section,DIFF first_last+slot - first_last_pair,-0.0027468505037449367,learned
+30,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.008610988343100631,learned
+30,illustration_section,DIFF first_last+slot - first_last+second_penult,0.0058641378393556945,learned
+30,illustration_section,DIFF slot_pattern - length,-0.01640462879846492,learned
+31,currier_language_AB,slot_pattern,-0.0015484341515729359,learned
+31,currier_language_AB,first_last_pair,-0.004258456665278834,learned
+31,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),0.0006965450828516006,learned
+31,currier_language_AB,DIFF slot_pattern - first_last_pair,0.0027100225137058976,learned
+31,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0012662350420278485,learned
+31,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0015532691803422343,learned
+31,currier_language_AB,DIFF first_last+slot - first_last_pair,0.0010567344735252617,learned
+31,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0006196071638744421,learned
+31,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.0016763416373997038,learned
+31,currier_language_AB,DIFF slot_pattern - length,-0.0013485314549716238,learned
+31,illustration_section,slot_pattern,-0.008980445340893595,learned
+31,illustration_section,first_last_pair,-0.009750768393094847,learned
+31,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),0.0007703230522012518,learned
+31,illustration_section,DIFF slot_pattern - first_last_pair,0.0007703230522012518,learned
+31,illustration_section,DIFF slot_pattern - second_penult_pair,0.01748891023144534,learned
+31,illustration_section,DIFF slot_pattern - covered_flag,-0.008864900985264847,learned
+31,illustration_section,DIFF first_last+slot - first_last_pair,-0.011491203219717494,learned
+31,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.0146337261065626,learned
+31,illustration_section,DIFF first_last+slot - first_last+second_penult,0.003142522886845106,learned
+31,illustration_section,DIFF slot_pattern - length,-0.008033822918821702,learned
+32,currier_language_AB,slot_pattern,-0.001707378014073904,learned
+32,currier_language_AB,first_last_pair,-0.0019956721355203068,learned
+32,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0007156864861830364,learned
+32,currier_language_AB,DIFF slot_pattern - first_last_pair,0.00028829412144640277,learned
+32,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0007156864861830364,learned
+32,currier_language_AB,DIFF slot_pattern - covered_flag,-0.001711496475864515,learned
+32,currier_language_AB,DIFF first_last+slot - first_last_pair,1.0771744431399902e-06,learned
+32,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.00014102447910850158,learned
+32,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.00014210165355164157,learned
+32,currier_language_AB,DIFF slot_pattern - length,-0.001494530080607644,learned
+32,illustration_section,slot_pattern,-0.09420393232672486,learned
+32,illustration_section,first_last_pair,-0.10389935948212592,learned
+32,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.044246527726069705,learned
+32,illustration_section,DIFF slot_pattern - first_last_pair,0.00969542715540106,learned
+32,illustration_section,DIFF slot_pattern - second_penult_pair,-0.044246527726069705,learned
+32,illustration_section,DIFF slot_pattern - covered_flag,0.28007668941131564,learned
+32,illustration_section,DIFF first_last+slot - first_last_pair,0.04630170036900937,learned
+32,illustration_section,DIFF first_last+second_penult - first_last_pair,0.04193749784582986,learned
+32,illustration_section,DIFF first_last+slot - first_last+second_penult,0.004364202523179511,learned
+32,illustration_section,DIFF slot_pattern - length,-0.002826615370117233,learned
+33,currier_language_AB,slot_pattern,-0.012720921235750119,learned
+33,currier_language_AB,first_last_pair,-0.008425560266624225,learned
+33,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.004295360969125894,learned
+33,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.004295360969125894,learned
+33,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0023662137930645106,learned
+33,currier_language_AB,DIFF slot_pattern - covered_flag,-0.012725018007147065,learned
+33,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.007627894146074284,learned
+33,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.002768252688580563,learned
+33,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.004859641457493721,learned
+33,currier_language_AB,DIFF slot_pattern - length,-0.008453115430703451,learned
+33,illustration_section,slot_pattern,-0.013815321403082923,learned
+33,illustration_section,first_last_pair,-0.0033069310176931637,learned
+33,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.01050839038538976,learned
+33,illustration_section,DIFF slot_pattern - first_last_pair,-0.01050839038538976,learned
+33,illustration_section,DIFF slot_pattern - second_penult_pair,2.674963728811243e-05,learned
+33,illustration_section,DIFF slot_pattern - covered_flag,-0.013731304669239972,learned
+33,illustration_section,DIFF first_last+slot - first_last_pair,-0.010698634966712814,learned
+33,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.010382031381387716,learned
+33,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.0003166035853250978,learned
+33,illustration_section,DIFF slot_pattern - length,-0.013766999590270225,learned
+34,currier_language_AB,slot_pattern,-0.0017939108098135763,learned
+34,currier_language_AB,first_last_pair,-0.001252192980375206,learned
+34,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0005417178294383704,learned
+34,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0005417178294383704,learned
+34,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0002907334923218281,learned
+34,currier_language_AB,DIFF slot_pattern - covered_flag,-0.001793304008816754,learned
+34,currier_language_AB,DIFF first_last+slot - first_last_pair,0.00011669471438741563,learned
+34,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.00029075593564244565,learned
+34,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.00017406122125503002,learned
+34,currier_language_AB,DIFF slot_pattern - length,-0.000650874985308569,learned
+34,illustration_section,slot_pattern,-0.007793316582984228,learned
+34,illustration_section,first_last_pair,-0.007593265286853514,learned
+34,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.0032550109015545576,learned
+34,illustration_section,DIFF slot_pattern - first_last_pair,-0.00020005129613071427,learned
+34,illustration_section,DIFF slot_pattern - second_penult_pair,-0.0032550109015545576,learned
+34,illustration_section,DIFF slot_pattern - covered_flag,-0.007654943491631109,learned
+34,illustration_section,DIFF first_last+slot - first_last_pair,-0.010826323534056659,learned
+34,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.012071958820275168,learned
+34,illustration_section,DIFF first_last+slot - first_last+second_penult,0.001245635286218509,learned
+34,illustration_section,DIFF slot_pattern - length,-0.00407513346181751,learned
+35,currier_language_AB,slot_pattern,-0.0026208336977068107,learned
+35,currier_language_AB,first_last_pair,-0.0008946335526574667,learned
+35,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0028050841882328805,learned
+35,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0017262001450493438,learned
+35,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0011507216849758037,learned
+35,currier_language_AB,DIFF slot_pattern - covered_flag,-0.002607279131456225,learned
+35,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.002102197144605643,learned
+35,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0020994391626643237,learned
+35,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-2.7579819413194213e-06,learned
+35,currier_language_AB,DIFF slot_pattern - length,-0.002275861398150225,learned
+35,illustration_section,slot_pattern,-0.023730530331619617,learned
+35,illustration_section,first_last_pair,-0.020968251426308256,learned
+35,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.0027622789053113606,learned
+35,illustration_section,DIFF slot_pattern - first_last_pair,-0.0027622789053113606,learned
+35,illustration_section,DIFF slot_pattern - second_penult_pair,0.007434566873587921,learned
+35,illustration_section,DIFF slot_pattern - covered_flag,-0.023689574963060803,learned
+35,illustration_section,DIFF first_last+slot - first_last_pair,-0.009228274264244822,learned
+35,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.01366073716494597,learned
+35,illustration_section,DIFF first_last+slot - first_last+second_penult,0.004432462900701147,learned
+35,illustration_section,DIFF slot_pattern - length,-0.019870251710207034,learned
+36,currier_language_AB,slot_pattern,-0.010640850439654037,learned
+36,currier_language_AB,first_last_pair,-0.005721225987864788,learned
+36,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.006456629715775121,learned
+36,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.004919624451789249,learned
+36,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.006456629715775121,learned
+36,currier_language_AB,DIFF slot_pattern - covered_flag,-0.010632564814766893,learned
+36,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.010340642760237087,learned
+36,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.006002677344510926,learned
+36,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.004337965415726161,learned
+36,currier_language_AB,DIFF slot_pattern - length,-0.01093689429794999,learned
+36,illustration_section,slot_pattern,-0.044872089839196196,learned
+36,illustration_section,first_last_pair,-0.041314327818265634,learned
+36,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.003557762020930562,learned
+36,illustration_section,DIFF slot_pattern - first_last_pair,-0.003557762020930562,learned
+36,illustration_section,DIFF slot_pattern - second_penult_pair,0.0017166298521343673,learned
+36,illustration_section,DIFF slot_pattern - covered_flag,-0.0446712769739696,learned
+36,illustration_section,DIFF first_last+slot - first_last_pair,-0.005827053175594454,learned
+36,illustration_section,DIFF first_last+second_penult - first_last_pair,0.001260673106376023,learned
+36,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.007087726281970477,learned
+36,illustration_section,DIFF slot_pattern - length,-0.03903158856073287,learned
+37,currier_language_AB,slot_pattern,-0.018928112259354955,learned
+37,currier_language_AB,first_last_pair,-0.008951716329212578,learned
+37,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.009976395930142377,learned
+37,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.009976395930142377,learned
+37,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0064884493073683516,learned
+37,currier_language_AB,DIFF slot_pattern - covered_flag,-0.018894561612866324,learned
+37,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.023571542757014355,learned
+37,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.010356612679325033,learned
+37,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.013214930077689323,learned
+37,currier_language_AB,DIFF slot_pattern - length,-0.013829903864475364,learned
+37,illustration_section,slot_pattern,-0.0031626089605528485,learned
+37,illustration_section,first_last_pair,-0.016996435973437377,learned
+37,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),0.009880357825753926,learned
+37,illustration_section,DIFF slot_pattern - first_last_pair,0.013833827012884528,learned
+37,illustration_section,DIFF slot_pattern - second_penult_pair,0.014531683594430281,learned
+37,illustration_section,DIFF slot_pattern - covered_flag,-0.003121221275836762,learned
+37,illustration_section,DIFF first_last+slot - first_last_pair,0.005540798081847155,learned
+37,illustration_section,DIFF first_last+second_penult - first_last_pair,0.001694280884167617,learned
+37,illustration_section,DIFF first_last+slot - first_last+second_penult,0.0038465171976795384,learned
+37,illustration_section,DIFF slot_pattern - length,-0.0011722897259745808,learned
+38,currier_language_AB,slot_pattern,0.00023462404439291204,learned
+38,currier_language_AB,first_last_pair,-0.0023835991705299887,learned
+38,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),0.0009785677416847625,learned
+38,currier_language_AB,DIFF slot_pattern - first_last_pair,0.002618223214922901,learned
+38,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0009785677416847625,learned
+38,currier_language_AB,DIFF slot_pattern - covered_flag,0.00023534335512716699,learned
+38,currier_language_AB,DIFF first_last+slot - first_last_pair,0.0021931866840165203,learned
+38,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.00206833362242455,learned
+38,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.00012485306159196993,learned
+38,currier_language_AB,DIFF slot_pattern - length,-0.00011249722055333469,learned
+38,illustration_section,slot_pattern,-0.04077211097680257,learned
+38,illustration_section,first_last_pair,-0.06433340364836972,learned
+38,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),0.01462965190532467,learned
+38,illustration_section,DIFF slot_pattern - first_last_pair,0.023561292671567147,learned
+38,illustration_section,DIFF slot_pattern - second_penult_pair,0.0170012127648332,learned
+38,illustration_section,DIFF slot_pattern - covered_flag,-0.04069969088943834,learned
+38,illustration_section,DIFF first_last+slot - first_last_pair,0.008450345843590043,learned
+38,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.005071188013175243,learned
+38,illustration_section,DIFF first_last+slot - first_last+second_penult,0.013521533856765286,learned
+38,illustration_section,DIFF slot_pattern - length,-0.031225120657380416,learned
+39,currier_language_AB,slot_pattern,-0.0029623978896092546,learned
+39,currier_language_AB,first_last_pair,-0.0027491479847851293,learned
+39,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.00021324990482412534,learned
+39,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.00021324990482412534,learned
+39,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0014493726571131885,learned
+39,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0029554685948827352,learned
+39,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.003138286872292934,learned
+39,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0023812209035230848,learned
+39,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0007570659687698494,learned
+39,currier_language_AB,DIFF slot_pattern - length,-0.0014027537678875208,learned
+39,illustration_section,slot_pattern,-0.06243166413165919,learned
+39,illustration_section,first_last_pair,-0.0849243939440957,learned
+39,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.005961113867888147,learned
+39,illustration_section,DIFF slot_pattern - first_last_pair,0.022492729812436517,learned
+39,illustration_section,DIFF slot_pattern - second_penult_pair,0.009900994469351755,learned
+39,illustration_section,DIFF slot_pattern - covered_flag,0.19691961998451757,learned
+39,illustration_section,DIFF first_last+slot - first_last_pair,0.03978688247017624,learned
+39,illustration_section,DIFF first_last+second_penult - first_last_pair,0.03202314941043531,learned
+39,illustration_section,DIFF first_last+slot - first_last+second_penult,0.007763733059740929,learned
+39,illustration_section,DIFF slot_pattern - length,0.0011340009376567192,learned
+0,currier_language_AB,slot_pattern,-0.0022589976147369146,zattera
+0,currier_language_AB,first_last_pair,-0.005884508872138554,zattera
+0,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),0.001876816976064009,zattera
+0,currier_language_AB,DIFF slot_pattern - first_last_pair,0.0036255112574016396,zattera
+0,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.002824468725473257,zattera
+0,currier_language_AB,DIFF slot_pattern - covered_flag,-0.003269714760719887,zattera
+0,currier_language_AB,DIFF first_last+slot - first_last_pair,0.00030523854577268767,zattera
+0,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.0017461442937680653,zattera
+0,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0014409057479953776,zattera
+0,currier_language_AB,DIFF slot_pattern - length,-0.0004296202363202816,zattera
+0,illustration_section,slot_pattern,-0.12150361758477542,zattera
+0,illustration_section,first_last_pair,-0.1093803084267586,zattera
+0,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.05299152572544176,zattera
+0,illustration_section,DIFF slot_pattern - first_last_pair,-0.01212330915801682,zattera
+0,illustration_section,DIFF slot_pattern - second_penult_pair,-0.05299152572544176,zattera
+0,illustration_section,DIFF slot_pattern - covered_flag,0.07727564489645454,zattera
+0,illustration_section,DIFF first_last+slot - first_last_pair,0.03296762721287341,zattera
+0,illustration_section,DIFF first_last+second_penult - first_last_pair,0.04103966888576566,zattera
+0,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.008072041672892244,zattera
+0,illustration_section,DIFF slot_pattern - length,-0.022419961668777397,zattera
+1,currier_language_AB,slot_pattern,-0.0005797788820264148,zattera
+1,currier_language_AB,first_last_pair,0.0011824430989337985,zattera
+1,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.002598778384058014,zattera
+1,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0017622219809602132,zattera
+1,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0013766819819023002,zattera
+1,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0001655367129604514,zattera
+1,currier_language_AB,DIFF first_last+slot - first_last_pair,0.001005835090738385,zattera
+1,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.00015918671396787307,zattera
+1,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.001165021804706258,zattera
+1,currier_language_AB,DIFF slot_pattern - length,-0.0011121960814733745,zattera
+1,illustration_section,slot_pattern,-0.002641482569165685,zattera
+1,illustration_section,first_last_pair,-0.003275819424082364,zattera
+1,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),0.0006343368549166788,zattera
+1,illustration_section,DIFF slot_pattern - first_last_pair,0.0006343368549166788,zattera
+1,illustration_section,DIFF slot_pattern - second_penult_pair,0.003403526250894256,zattera
+1,illustration_section,DIFF slot_pattern - covered_flag,-0.002589351930544884,zattera
+1,illustration_section,DIFF first_last+slot - first_last_pair,-0.003956366072788888,zattera
+1,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.004908069211849105,zattera
+1,illustration_section,DIFF first_last+slot - first_last+second_penult,0.0009517031390602173,zattera
+1,illustration_section,DIFF slot_pattern - length,-0.003080552618467164,zattera
+2,currier_language_AB,slot_pattern,-0.0011372477690810285,zattera
+2,currier_language_AB,first_last_pair,-0.0022803021729459376,zattera
+2,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),0.0007894980935571219,zattera
+2,currier_language_AB,DIFF slot_pattern - first_last_pair,0.001143054403864909,zattera
+2,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0015751454725163772,zattera
+2,currier_language_AB,DIFF slot_pattern - covered_flag,-0.001096527716692691,zattera
+2,currier_language_AB,DIFF first_last+slot - first_last_pair,0.0005831329273425073,zattera
+2,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.0003093948949814433,zattera
+2,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.00027373803236106406,zattera
+2,currier_language_AB,DIFF slot_pattern - length,0.0011734353918847413,zattera
+2,illustration_section,slot_pattern,-0.13142160202355566,zattera
+2,illustration_section,first_last_pair,-0.050023847292035364,zattera
+2,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.08139775473152029,zattera
+2,illustration_section,DIFF slot_pattern - first_last_pair,-0.08139775473152029,zattera
+2,illustration_section,DIFF slot_pattern - second_penult_pair,-0.01818379723351199,zattera
+2,illustration_section,DIFF slot_pattern - covered_flag,0.04764090140615951,zattera
+2,illustration_section,DIFF first_last+slot - first_last_pair,-0.015369033748165367,zattera
+2,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.0028195627431161427,zattera
+2,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.012549471005049224,zattera
+2,illustration_section,DIFF slot_pattern - length,-0.0133946322562188,zattera
+3,currier_language_AB,slot_pattern,-0.006714971552853518,zattera
+3,currier_language_AB,first_last_pair,-0.009679007873775895,zattera
+3,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0006179001897877621,zattera
+3,currier_language_AB,DIFF slot_pattern - first_last_pair,0.002964036320922377,zattera
+3,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0006179001897877621,zattera
+3,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0068781721096562625,zattera
+3,currier_language_AB,DIFF first_last+slot - first_last_pair,0.0005035668858973854,zattera
+3,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.001815748386576917,zattera
+3,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0013121815006795316,zattera
+3,currier_language_AB,DIFF slot_pattern - length,-0.005043451633168821,zattera
+3,illustration_section,slot_pattern,-0.027906820993544825,zattera
+3,illustration_section,first_last_pair,-0.02437648696435876,zattera
+3,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.012365713059928013,zattera
+3,illustration_section,DIFF slot_pattern - first_last_pair,-0.0035303340291860663,zattera
+3,illustration_section,DIFF slot_pattern - second_penult_pair,-0.007077667256934747,zattera
+3,illustration_section,DIFF slot_pattern - covered_flag,-0.02669294066760319,zattera
+3,illustration_section,DIFF first_last+slot - first_last_pair,0.0021015210546877425,zattera
+3,illustration_section,DIFF first_last+second_penult - first_last_pair,0.007101152387048358,zattera
+3,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.004999631332360616,zattera
+3,illustration_section,DIFF slot_pattern - length,-0.022001259627171896,zattera
+4,currier_language_AB,slot_pattern,-0.016302186174710957,zattera
+4,currier_language_AB,first_last_pair,-0.010107364656955529,zattera
+4,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.007341188083435205,zattera
+4,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0061948215177554285,zattera
+4,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.007341188083435205,zattera
+4,currier_language_AB,DIFF slot_pattern - covered_flag,-0.015458392898799722,zattera
+4,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.0020523720630943945,zattera
+4,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.00012805877994214072,zattera
+4,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0019243132831522538,zattera
+4,currier_language_AB,DIFF slot_pattern - length,-0.015059796732144103,zattera
+4,illustration_section,slot_pattern,-0.015860824408431732,zattera
+4,illustration_section,first_last_pair,-0.020926416517355915,zattera
+4,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),0.001663026334314633,zattera
+4,illustration_section,DIFF slot_pattern - first_last_pair,0.005065592108924183,zattera
+4,illustration_section,DIFF slot_pattern - second_penult_pair,0.004101275666685451,zattera
+4,illustration_section,DIFF slot_pattern - covered_flag,-0.01130581937999887,zattera
+4,illustration_section,DIFF first_last+slot - first_last_pair,0.0007778398774645687,zattera
+4,illustration_section,DIFF first_last+second_penult - first_last_pair,0.0019868387865875047,zattera
+4,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.001208998909122936,zattera
+4,illustration_section,DIFF slot_pattern - length,-0.014559545874606394,zattera
+5,currier_language_AB,slot_pattern,-0.0010269071467876821,zattera
+5,currier_language_AB,first_last_pair,-0.000562942850297104,zattera
+5,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.00046396429649057816,zattera
+5,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.00046396429649057816,zattera
+5,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0002571341785234493,zattera
+5,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0010825316123749312,zattera
+5,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.0020094168600494357,zattera
+5,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0017818331638746743,zattera
+5,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.00022758369617476145,zattera
+5,currier_language_AB,DIFF slot_pattern - length,-0.0010756918338979988,zattera
+5,illustration_section,slot_pattern,-0.03530469380376274,zattera
+5,illustration_section,first_last_pair,-0.029397192559935708,zattera
+5,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.017835429420254463,zattera
+5,illustration_section,DIFF slot_pattern - first_last_pair,-0.005907501243827034,zattera
+5,illustration_section,DIFF slot_pattern - second_penult_pair,-0.017835429420254463,zattera
+5,illustration_section,DIFF slot_pattern - covered_flag,-0.0313351160912352,zattera
+5,illustration_section,DIFF first_last+slot - first_last_pair,-0.014598377791459675,zattera
+5,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.004361200873328846,zattera
+5,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.010237176918130829,zattera
+5,illustration_section,DIFF slot_pattern - length,-0.03255576487169293,zattera
+6,currier_language_AB,slot_pattern,-0.0006483737722919754,zattera
+6,currier_language_AB,first_last_pair,-0.0014093418710486969,zattera
+6,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),0.0007609680987567214,zattera
+6,currier_language_AB,DIFF slot_pattern - first_last_pair,0.0007609680987567214,zattera
+6,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.001111402138574082,zattera
+6,currier_language_AB,DIFF slot_pattern - covered_flag,-0.000330236030029869,zattera
+6,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.000200780328356871,zattera
+6,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0006150494089822759,zattera
+6,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.0004142690806254049,zattera
+6,currier_language_AB,DIFF slot_pattern - length,-0.00023416198187411742,zattera
+6,illustration_section,slot_pattern,-0.02818574478016216,zattera
+6,illustration_section,first_last_pair,-0.02580266357878504,zattera
+6,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.01338887858296467,zattera
+6,illustration_section,DIFF slot_pattern - first_last_pair,-0.0023830812013771185,zattera
+6,illustration_section,DIFF slot_pattern - second_penult_pair,-0.01338887858296467,zattera
+6,illustration_section,DIFF slot_pattern - covered_flag,-0.026007501693856044,zattera
+6,illustration_section,DIFF first_last+slot - first_last_pair,-0.00950967834758162,zattera
+6,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.001208348298669358,zattera
+6,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.008301330048912262,zattera
+6,illustration_section,DIFF slot_pattern - length,-0.0179665099879439,zattera
+7,currier_language_AB,slot_pattern,-0.0015689260225785085,zattera
+7,currier_language_AB,first_last_pair,0.00030590792600209294,zattera
+7,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0018748339485806014,zattera
+7,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0018748339485806014,zattera
+7,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0005489972272968791,zattera
+7,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0015592774784542515,zattera
+7,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.0033002971903317796,zattera
+7,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0036871966861621824,zattera
+7,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.0003868994958304028,zattera
+7,currier_language_AB,DIFF slot_pattern - length,-0.0005031257227606095,zattera
+7,illustration_section,slot_pattern,-0.016485178506049365,zattera
+7,illustration_section,first_last_pair,-0.01609629071749855,zattera
+7,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.006477153078245207,zattera
+7,illustration_section,DIFF slot_pattern - first_last_pair,-0.0003888877885508159,zattera
+7,illustration_section,DIFF slot_pattern - second_penult_pair,-0.006477153078245207,zattera
+7,illustration_section,DIFF slot_pattern - covered_flag,-0.01258910823518126,zattera
+7,illustration_section,DIFF first_last+slot - first_last_pair,-0.012405793862975939,zattera
+7,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.005201295916491114,zattera
+7,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.007204497946484825,zattera
+7,illustration_section,DIFF slot_pattern - length,-0.014975851819996824,zattera
+8,currier_language_AB,slot_pattern,-9.769100202518949e-05,zattera
+8,currier_language_AB,first_last_pair,0.00037871717060991203,zattera
+8,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0010261895466271032,zattera
+8,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0004764081726351015,zattera
+8,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0005422747088624175,zattera
+8,currier_language_AB,DIFF slot_pattern - covered_flag,-0.00012155118053206503,zattera
+8,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.002813312966292174,zattera
+8,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-4.7858467452836545e-05,zattera
+8,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0027654544988393375,zattera
+8,currier_language_AB,DIFF slot_pattern - length,-0.0009302429942873361,zattera
+8,illustration_section,slot_pattern,-0.03877228457858361,zattera
+8,illustration_section,first_last_pair,-0.017927486729466324,zattera
+8,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.020844797849117285,zattera
+8,illustration_section,DIFF slot_pattern - first_last_pair,-0.020844797849117285,zattera
+8,illustration_section,DIFF slot_pattern - second_penult_pair,0.0008842182003811552,zattera
+8,illustration_section,DIFF slot_pattern - covered_flag,-0.03586967736548104,zattera
+8,illustration_section,DIFF first_last+slot - first_last_pair,-0.02690101004619092,zattera
+8,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.025909984569312625,zattera
+8,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.0009910254768782933,zattera
+8,illustration_section,DIFF slot_pattern - length,-0.03161791586507898,zattera
+9,currier_language_AB,slot_pattern,-0.005633902007603435,zattera
+9,currier_language_AB,first_last_pair,-0.009499114531526904,zattera
+9,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.00093206305531716,zattera
+9,currier_language_AB,DIFF slot_pattern - first_last_pair,0.0038652125239234687,zattera
+9,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.00093206305531716,zattera
+9,currier_language_AB,DIFF slot_pattern - covered_flag,-0.006348780226970482,zattera
+9,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.0012238561504296728,zattera
+9,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0035063879000495294,zattera
+9,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.0022825317496198566,zattera
+9,currier_language_AB,DIFF slot_pattern - length,-0.0052592675043835364,zattera
+9,illustration_section,slot_pattern,-0.0409229590253399,zattera
+9,illustration_section,first_last_pair,-0.028171891160252253,zattera
+9,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.012751067865087645,zattera
+9,illustration_section,DIFF slot_pattern - first_last_pair,-0.012751067865087645,zattera
+9,illustration_section,DIFF slot_pattern - second_penult_pair,-0.00549670622893212,zattera
+9,illustration_section,DIFF slot_pattern - covered_flag,-0.04008000436932079,zattera
+9,illustration_section,DIFF first_last+slot - first_last_pair,-0.01610716154849213,zattera
+9,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.007302097761333309,zattera
+9,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.00880506378715882,zattera
+9,illustration_section,DIFF slot_pattern - length,-0.03481318354620521,zattera
+10,currier_language_AB,slot_pattern,-0.003323194100124198,zattera
+10,currier_language_AB,first_last_pair,-0.002294069998150233,zattera
+10,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0031695976829907583,zattera
+10,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0010291241019739646,zattera
+10,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.001434898777377818,zattera
+10,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0033171760213366198,zattera
+10,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.0027902416386705524,zattera
+10,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0012844043886938257,zattera
+10,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0015058372499767267,zattera
+10,currier_language_AB,DIFF slot_pattern - length,-0.0034278527736885146,zattera
+10,illustration_section,slot_pattern,-0.0415432706508848,zattera
+10,illustration_section,first_last_pair,-0.04224165937926549,zattera
+10,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.009788940718036376,zattera
+10,illustration_section,DIFF slot_pattern - first_last_pair,0.0006983887283806903,zattera
+10,illustration_section,DIFF slot_pattern - second_penult_pair,0.0006889784969900878,zattera
+10,illustration_section,DIFF slot_pattern - covered_flag,-0.03809136450783921,zattera
+10,illustration_section,DIFF first_last+slot - first_last_pair,-0.007550155027929627,zattera
+10,illustration_section,DIFF first_last+second_penult - first_last_pair,0.0015639523376572914,zattera
+10,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.009114107365586918,zattera
+10,illustration_section,DIFF slot_pattern - length,-0.03738492184725392,zattera
+11,currier_language_AB,slot_pattern,-0.0026338359179224778,zattera
+11,currier_language_AB,first_last_pair,-0.001968846233558903,zattera
+11,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0006649896843635749,zattera
+11,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0006649896843635749,zattera
+11,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0008271333902679723,zattera
+11,currier_language_AB,DIFF slot_pattern - covered_flag,-0.003010580948719468,zattera
+11,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.0022719002844091007,zattera
+11,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0023307075527358974,zattera
+11,currier_language_AB,DIFF first_last+slot - first_last+second_penult,5.8807268326796676e-05,zattera
+11,currier_language_AB,DIFF slot_pattern - length,-0.002489750679440035,zattera
+11,illustration_section,slot_pattern,-0.02952521465157798,zattera
+11,illustration_section,first_last_pair,-0.031908487611630135,zattera
+11,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.006739121936234559,zattera
+11,illustration_section,DIFF slot_pattern - first_last_pair,0.0023832729600521546,zattera
+11,illustration_section,DIFF slot_pattern - second_penult_pair,-0.001056578575049507,zattera
+11,illustration_section,DIFF slot_pattern - covered_flag,-0.028505207356780072,zattera
+11,illustration_section,DIFF first_last+slot - first_last_pair,-0.0005449489140945396,zattera
+11,illustration_section,DIFF first_last+second_penult - first_last_pair,0.0024020767683149806,zattera
+11,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.00294702568240952,zattera
+11,illustration_section,DIFF slot_pattern - length,-0.024357422547291608,zattera
+12,currier_language_AB,slot_pattern,-0.004209318427615207,zattera
+12,currier_language_AB,first_last_pair,-0.0032825592241628805,zattera
+12,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0009267592034523267,zattera
+12,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0009267592034523267,zattera
+12,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.00015677355648152647,zattera
+12,currier_language_AB,DIFF slot_pattern - covered_flag,-0.004195462298864959,zattera
+12,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.0010669240294574694,zattera
+12,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0019115923856854104,zattera
+12,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.000844668356227941,zattera
+12,currier_language_AB,DIFF slot_pattern - length,-0.003904065877513033,zattera
+12,illustration_section,slot_pattern,-0.04557304694347213,zattera
+12,illustration_section,first_last_pair,-0.017465563883505487,zattera
+12,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.028107483059966645,zattera
+12,illustration_section,DIFF slot_pattern - first_last_pair,-0.028107483059966645,zattera
+12,illustration_section,DIFF slot_pattern - second_penult_pair,-0.017244380688743635,zattera
+12,illustration_section,DIFF slot_pattern - covered_flag,-0.0383692932501725,zattera
+12,illustration_section,DIFF first_last+slot - first_last_pair,-0.025476493302393807,zattera
+12,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.012210863933259094,zattera
+12,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.013265629369134713,zattera
+12,illustration_section,DIFF slot_pattern - length,-0.04045653711476403,zattera
+13,currier_language_AB,slot_pattern,-0.002766104390068317,zattera
+13,currier_language_AB,first_last_pair,0.0006571854506567838,zattera
+13,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.003423289840725101,zattera
+13,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.003423289840725101,zattera
+13,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0019381667922565913,zattera
+13,currier_language_AB,DIFF slot_pattern - covered_flag,-0.002761644263287224,zattera
+13,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.0014893830376983019,zattera
+13,currier_language_AB,DIFF first_last+second_penult - first_last_pair,5.308205191317046e-06,zattera
+13,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.001494691242889619,zattera
+13,currier_language_AB,DIFF slot_pattern - length,-0.00243428587060493,zattera
+13,illustration_section,slot_pattern,-0.023372696619003454,zattera
+13,illustration_section,first_last_pair,-0.03333427859916952,zattera
+13,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.0004815389266709866,zattera
+13,illustration_section,DIFF slot_pattern - first_last_pair,0.009961581980166067,zattera
+13,illustration_section,DIFF slot_pattern - second_penult_pair,-0.0004815389266709866,zattera
+13,illustration_section,DIFF slot_pattern - covered_flag,-0.0195841186514946,zattera
+13,illustration_section,DIFF first_last+slot - first_last_pair,0.00121775369749582,zattera
+13,illustration_section,DIFF first_last+second_penult - first_last_pair,0.011345628838567007,zattera
+13,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.010127875141071187,zattera
+13,illustration_section,DIFF slot_pattern - length,-0.018193307733981715,zattera
+14,currier_language_AB,slot_pattern,-0.004239565792392996,zattera
+14,currier_language_AB,first_last_pair,-0.007099000488734098,zattera
+14,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.001659584800514178,zattera
+14,currier_language_AB,DIFF slot_pattern - first_last_pair,0.002859434696341102,zattera
+14,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.001659584800514178,zattera
+14,currier_language_AB,DIFF slot_pattern - covered_flag,-0.004032201159669363,zattera
+14,currier_language_AB,DIFF first_last+slot - first_last_pair,0.0009121733047835279,zattera
+14,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.000978506079273295,zattera
+14,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-6.633277448976713e-05,zattera
+14,currier_language_AB,DIFF slot_pattern - length,-0.0008737722195368662,zattera
+14,illustration_section,slot_pattern,-0.03945057902736447,zattera
+14,illustration_section,first_last_pair,-0.03142491521193693,zattera
+14,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.00802566381542754,zattera
+14,illustration_section,DIFF slot_pattern - first_last_pair,-0.00802566381542754,zattera
+14,illustration_section,DIFF slot_pattern - second_penult_pair,0.0004044161896184714,zattera
+14,illustration_section,DIFF slot_pattern - covered_flag,-0.03919811797563139,zattera
+14,illustration_section,DIFF first_last+slot - first_last_pair,-0.014750192390899843,zattera
+14,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.008176074739440951,zattera
+14,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.006574117651458891,zattera
+14,illustration_section,DIFF slot_pattern - length,-0.03142833610566921,zattera
+15,currier_language_AB,slot_pattern,-0.0023368559900803767,zattera
+15,currier_language_AB,first_last_pair,-0.00379845604343416,zattera
+15,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),0.0004065940107320582,zattera
+15,currier_language_AB,DIFF slot_pattern - first_last_pair,0.0014616000533537832,zattera
+15,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.005938210889020956,zattera
+15,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0024599889431073728,zattera
+15,currier_language_AB,DIFF first_last+slot - first_last_pair,-3.696489607509044e-05,zattera
+15,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.006813372403038807,zattera
+15,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.006776407506963716,zattera
+15,currier_language_AB,DIFF slot_pattern - length,0.00016513194133087588,zattera
+15,illustration_section,slot_pattern,-0.021684054056104414,zattera
+15,illustration_section,first_last_pair,-0.024788668852210614,zattera
+15,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.005106741852082132,zattera
+15,illustration_section,DIFF slot_pattern - first_last_pair,0.0031046147961062004,zattera
+15,illustration_section,DIFF slot_pattern - second_penult_pair,-0.0045024117357195075,zattera
+15,illustration_section,DIFF slot_pattern - covered_flag,-0.020918467499016356,zattera
+15,illustration_section,DIFF first_last+slot - first_last_pair,-0.003702937676016746,zattera
+15,illustration_section,DIFF first_last+second_penult - first_last_pair,0.00018788022876469954,zattera
+15,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.0038908179047814455,zattera
+15,illustration_section,DIFF slot_pattern - length,-0.015410315245445078,zattera
+16,currier_language_AB,slot_pattern,0.0005511944086239986,zattera
+16,currier_language_AB,first_last_pair,-0.002288523164046434,zattera
+16,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),0.0001986572627399853,zattera
+16,currier_language_AB,DIFF slot_pattern - first_last_pair,0.002839717572670433,zattera
+16,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.000815628268630012,zattera
+16,currier_language_AB,DIFF slot_pattern - covered_flag,0.000514857594949775,zattera
+16,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.0006294516481049994,zattera
+16,currier_language_AB,DIFF first_last+second_penult - first_last_pair,4.7807134619185995e-05,zattera
+16,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0006772587827241854,zattera
+16,currier_language_AB,DIFF slot_pattern - length,0.00018900056741996273,zattera
+16,illustration_section,slot_pattern,-0.06403994877838612,zattera
+16,illustration_section,first_last_pair,-0.02944058139761535,zattera
+16,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.03483632052267922,zattera
+16,illustration_section,DIFF slot_pattern - first_last_pair,-0.03459936738077077,zattera
+16,illustration_section,DIFF slot_pattern - second_penult_pair,-0.03483632052267922,zattera
+16,illustration_section,DIFF slot_pattern - covered_flag,0.007030510754034158,zattera
+16,illustration_section,DIFF first_last+slot - first_last_pair,-0.013750878045465223,zattera
+16,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.005011957826359298,zattera
+16,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.008738920219105925,zattera
+16,illustration_section,DIFF slot_pattern - length,-0.015154837064546803,zattera
+17,currier_language_AB,slot_pattern,-0.0015750298386840139,zattera
+17,currier_language_AB,first_last_pair,-0.0007310871595911702,zattera
+17,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0014767168585649816,zattera
+17,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0008439426790928437,zattera
+17,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0014767168585649816,zattera
+17,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0014565251371194275,zattera
+17,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.00111911295858084,zattera
+17,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0007086743871878762,zattera
+17,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0004104385713929637,zattera
+17,currier_language_AB,DIFF slot_pattern - length,-0.0010017755776718516,zattera
+17,illustration_section,slot_pattern,-0.0139611207554624,zattera
+17,illustration_section,first_last_pair,-0.008066099650566346,zattera
+17,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.007950925320601283,zattera
+17,illustration_section,DIFF slot_pattern - first_last_pair,-0.005895021104896054,zattera
+17,illustration_section,DIFF slot_pattern - second_penult_pair,-0.007950925320601283,zattera
+17,illustration_section,DIFF slot_pattern - covered_flag,-0.0143398559985816,zattera
+17,illustration_section,DIFF first_last+slot - first_last_pair,-0.004654823220999065,zattera
+17,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.0030148643374101353,zattera
+17,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.0016399588835889298,zattera
+17,illustration_section,DIFF slot_pattern - length,-0.01301233391635498,zattera
+18,currier_language_AB,slot_pattern,-0.009446208835399091,zattera
+18,currier_language_AB,first_last_pair,-0.008043601072339845,zattera
+18,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.00421970951627119,zattera
+18,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0014026077630592462,zattera
+18,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.00421970951627119,zattera
+18,currier_language_AB,DIFF slot_pattern - covered_flag,-0.008757301329217378,zattera
+18,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.0024382381176491965,zattera
+18,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.00011994405634299828,zattera
+18,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0023182940613061982,zattera
+18,currier_language_AB,DIFF slot_pattern - length,-0.008524898063462528,zattera
+18,illustration_section,slot_pattern,-0.06499885640569505,zattera
+18,illustration_section,first_last_pair,-0.05740674030268516,zattera
+18,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.007592116103009895,zattera
+18,illustration_section,DIFF slot_pattern - first_last_pair,-0.007592116103009895,zattera
+18,illustration_section,DIFF slot_pattern - second_penult_pair,-0.004046883504531251,zattera
+18,illustration_section,DIFF slot_pattern - covered_flag,-0.06328814088469749,zattera
+18,illustration_section,DIFF first_last+slot - first_last_pair,-0.012327241942177651,zattera
+18,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.010944335690592562,zattera
+18,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.0013829062515850893,zattera
+18,illustration_section,DIFF slot_pattern - length,-0.048898379880964696,zattera
+19,currier_language_AB,slot_pattern,-0.00022142304612632105,zattera
+19,currier_language_AB,first_last_pair,0.0018375502090099936,zattera
+19,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.002058973255136315,zattera
+19,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.002058973255136315,zattera
+19,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0014556612422331483,zattera
+19,currier_language_AB,DIFF slot_pattern - covered_flag,-0.00029745120661148227,zattera
+19,currier_language_AB,DIFF first_last+slot - first_last_pair,0.0009260100748987089,zattera
+19,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.004072126252629864,zattera
+19,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.004998136327528572,zattera
+19,currier_language_AB,DIFF slot_pattern - length,-0.0005762003414374079,zattera
+19,illustration_section,slot_pattern,-0.04044096495024783,zattera
+19,illustration_section,first_last_pair,-0.029787647087200494,zattera
+19,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.010653317863047334,zattera
+19,illustration_section,DIFF slot_pattern - first_last_pair,-0.010653317863047334,zattera
+19,illustration_section,DIFF slot_pattern - second_penult_pair,-0.0076159145719483234,zattera
+19,illustration_section,DIFF slot_pattern - covered_flag,-0.037473336123387366,zattera
+19,illustration_section,DIFF first_last+slot - first_last_pair,-0.011182085061442627,zattera
+19,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.009004971415535561,zattera
+19,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.0021771136459070653,zattera
+19,illustration_section,DIFF slot_pattern - length,-0.03208420853650949,zattera
+20,currier_language_AB,slot_pattern,0.0005376722494371195,zattera
+20,currier_language_AB,first_last_pair,-0.0007791817229887077,zattera
+20,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),0.0010256732854787105,zattera
+20,currier_language_AB,DIFF slot_pattern - first_last_pair,0.0013168539724258271,zattera
+20,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0021224719187575335,zattera
+20,currier_language_AB,DIFF slot_pattern - covered_flag,0.0003787181159014719,zattera
+20,currier_language_AB,DIFF first_last+slot - first_last_pair,0.0011748396621784547,zattera
+20,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.0016519231688351013,zattera
+20,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.00047708350665664654,zattera
+20,currier_language_AB,DIFF slot_pattern - length,0.0015407870892788038,zattera
+20,illustration_section,slot_pattern,-0.03891949099721735,zattera
+20,illustration_section,first_last_pair,-0.03364720824134683,zattera
+20,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.0200844347615968,zattera
+20,illustration_section,DIFF slot_pattern - first_last_pair,-0.005272282755870522,zattera
+20,illustration_section,DIFF slot_pattern - second_penult_pair,-0.0200844347615968,zattera
+20,illustration_section,DIFF slot_pattern - covered_flag,-0.032691969653468135,zattera
+20,illustration_section,DIFF first_last+slot - first_last_pair,-0.021983286108635883,zattera
+20,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.012044379173649276,zattera
+20,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.009938906934986606,zattera
+20,illustration_section,DIFF slot_pattern - length,-0.03327956038328725,zattera
+21,currier_language_AB,slot_pattern,-0.006799611194976826,zattera
+21,currier_language_AB,first_last_pair,-0.004167574658807317,zattera
+21,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.00525001406743157,zattera
+21,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.002632036536169509,zattera
+21,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.00525001406743157,zattera
+21,currier_language_AB,DIFF slot_pattern - covered_flag,-0.006795566273139334,zattera
+21,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.006670817857813084,zattera
+21,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.00226268459295769,zattera
+21,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.004408133264855394,zattera
+21,currier_language_AB,DIFF slot_pattern - length,-0.0066088431798951176,zattera
+21,illustration_section,slot_pattern,-0.04665678195752815,zattera
+21,illustration_section,first_last_pair,-0.024176091924660408,zattera
+21,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.02248069003286774,zattera
+21,illustration_section,DIFF slot_pattern - first_last_pair,-0.02248069003286774,zattera
+21,illustration_section,DIFF slot_pattern - second_penult_pair,-0.006980494497305145,zattera
+21,illustration_section,DIFF slot_pattern - covered_flag,-0.04346571406037998,zattera
+21,illustration_section,DIFF first_last+slot - first_last_pair,-0.02479854118553748,zattera
+21,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.015353264005221329,zattera
+21,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.009445277180316153,zattera
+21,illustration_section,DIFF slot_pattern - length,-0.04143504097936044,zattera
+22,currier_language_AB,slot_pattern,-0.0033986588463883337,zattera
+22,currier_language_AB,first_last_pair,-0.0027354475111342267,zattera
+22,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0017218883215920134,zattera
+22,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.000663211335254107,zattera
+22,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0017218883215920134,zattera
+22,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0024055255662808117,zattera
+22,currier_language_AB,DIFF first_last+slot - first_last_pair,8.273420676276413e-06,zattera
+22,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.0011566111897297641,zattera
+22,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0011483377690534877,zattera
+22,currier_language_AB,DIFF slot_pattern - length,-0.0021235369913976112,zattera
+22,illustration_section,slot_pattern,-0.027648774043566714,zattera
+22,illustration_section,first_last_pair,-0.015562919701860368,zattera
+22,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.012085854341706346,zattera
+22,illustration_section,DIFF slot_pattern - first_last_pair,-0.012085854341706346,zattera
+22,illustration_section,DIFF slot_pattern - second_penult_pair,-0.002664001049125276,zattera
+22,illustration_section,DIFF slot_pattern - covered_flag,-0.026739981285296904,zattera
+22,illustration_section,DIFF first_last+slot - first_last_pair,-0.01701447690449212,zattera
+22,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.013803696243246568,zattera
+22,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.0032107806612455547,zattera
+22,illustration_section,DIFF slot_pattern - length,-0.02552883519821426,zattera
+23,currier_language_AB,slot_pattern,-0.0036650385364086907,zattera
+23,currier_language_AB,first_last_pair,-0.003714503166396895,zattera
+23,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.001043693551947489,zattera
+23,currier_language_AB,DIFF slot_pattern - first_last_pair,4.946462998820433e-05,zattera
+23,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.001043693551947489,zattera
+23,currier_language_AB,DIFF slot_pattern - covered_flag,-0.00352157493953403,zattera
+23,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.0014602906883381833,zattera
+23,currier_language_AB,DIFF first_last+second_penult - first_last_pair,2.813162780293879e-05,zattera
+23,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.001488422316141122,zattera
+23,currier_language_AB,DIFF slot_pattern - length,-0.0028911494217816387,zattera
+23,illustration_section,slot_pattern,-0.025409438781645866,zattera
+23,illustration_section,first_last_pair,-0.03735721625737824,zattera
+23,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),0.000249723191845453,zattera
+23,illustration_section,DIFF slot_pattern - first_last_pair,0.011947777475732377,zattera
+23,illustration_section,DIFF slot_pattern - second_penult_pair,0.009553150119526344,zattera
+23,illustration_section,DIFF slot_pattern - covered_flag,-0.025302233863686765,zattera
+23,illustration_section,DIFF first_last+slot - first_last_pair,0.0026253032554284933,zattera
+23,illustration_section,DIFF first_last+second_penult - first_last_pair,0.0032900179244793465,zattera
+23,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.0006647146690508532,zattera
+23,illustration_section,DIFF slot_pattern - length,-0.020410264794738262,zattera
+24,currier_language_AB,slot_pattern,-0.0021418561339073433,zattera
+24,currier_language_AB,first_last_pair,-0.0018588817017323777,zattera
+24,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0002829744321749656,zattera
+24,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0002829744321749656,zattera
+24,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0002180323375812318,zattera
+24,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0020936278754447243,zattera
+24,currier_language_AB,DIFF first_last+slot - first_last_pair,0.00024196370556741936,zattera
+24,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0014744407009049704,zattera
+24,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.0017164044064723898,zattera
+24,currier_language_AB,DIFF slot_pattern - length,-0.0017615214930491443,zattera
+24,illustration_section,slot_pattern,-0.15990511378579825,zattera
+24,illustration_section,first_last_pair,-0.08424927107940386,zattera
+24,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.07565584270639439,zattera
+24,illustration_section,DIFF slot_pattern - first_last_pair,-0.07565584270639439,zattera
+24,illustration_section,DIFF slot_pattern - second_penult_pair,-0.023205796502894782,zattera
+24,illustration_section,DIFF slot_pattern - covered_flag,0.04761166810899256,zattera
+24,illustration_section,DIFF first_last+slot - first_last_pair,-0.008665448094647171,zattera
+24,illustration_section,DIFF first_last+second_penult - first_last_pair,0.009539924637270353,zattera
+24,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.018205372731917524,zattera
+24,illustration_section,DIFF slot_pattern - length,-0.021389322151404766,zattera
+25,currier_language_AB,slot_pattern,-0.0067311787694981735,zattera
+25,currier_language_AB,first_last_pair,-0.006119207133600878,zattera
+25,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0006119716358972951,zattera
+25,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0006119716358972951,zattera
+25,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0002475454213231986,zattera
+25,currier_language_AB,DIFF slot_pattern - covered_flag,-0.006711005356243704,zattera
+25,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.002481714704191746,zattera
+25,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.007776126202334472,zattera
+25,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.005294411498142726,zattera
+25,currier_language_AB,DIFF slot_pattern - length,-0.007141156553431254,zattera
+25,illustration_section,slot_pattern,-0.052362796870405987,zattera
+25,illustration_section,first_last_pair,-0.0426110413146353,zattera
+25,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.015452178752548652,zattera
+25,illustration_section,DIFF slot_pattern - first_last_pair,-0.009751755555770687,zattera
+25,illustration_section,DIFF slot_pattern - second_penult_pair,-0.0038176133241555263,zattera
+25,illustration_section,DIFF slot_pattern - covered_flag,-0.049936450959036295,zattera
+25,illustration_section,DIFF first_last+slot - first_last_pair,-0.014938561341031324,zattera
+25,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.010599285369905113,zattera
+25,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.004339275971126211,zattera
+25,illustration_section,DIFF slot_pattern - length,-0.04401475429830211,zattera
+26,currier_language_AB,slot_pattern,-0.010399915640169323,zattera
+26,currier_language_AB,first_last_pair,-0.0073261604735920405,zattera
+26,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.004040059001509042,zattera
+26,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0030737551665772824,zattera
+26,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.004040059001509042,zattera
+26,currier_language_AB,DIFF slot_pattern - covered_flag,-0.008233352541919616,zattera
+26,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.004489301416894086,zattera
+26,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.005697825692537246,zattera
+26,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.00120852427564316,zattera
+26,currier_language_AB,DIFF slot_pattern - length,-0.008937165437562717,zattera
+26,illustration_section,slot_pattern,-0.061999073082947595,zattera
+26,illustration_section,first_last_pair,-0.05688414877778096,zattera
+26,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.0059123182022278314,zattera
+26,illustration_section,DIFF slot_pattern - first_last_pair,-0.005114924305166635,zattera
+26,illustration_section,DIFF slot_pattern - second_penult_pair,-0.0059123182022278314,zattera
+26,illustration_section,DIFF slot_pattern - covered_flag,-0.0596903597044351,zattera
+26,illustration_section,DIFF first_last+slot - first_last_pair,-0.009489308206602876,zattera
+26,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.002876434601141363,zattera
+26,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.0066128736054615125,zattera
+26,illustration_section,DIFF slot_pattern - length,-0.04960587240337236,zattera
+27,currier_language_AB,slot_pattern,-0.014068317625719544,zattera
+27,currier_language_AB,first_last_pair,-0.009035967725866682,zattera
+27,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.01270564508257428,zattera
+27,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0050323498998528626,zattera
+27,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0069181975105764215,zattera
+27,currier_language_AB,DIFF slot_pattern - covered_flag,-0.013937829102164267,zattera
+27,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.007588730953956697,zattera
+27,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0038454989786990777,zattera
+27,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.003743231975257619,zattera
+27,currier_language_AB,DIFF slot_pattern - length,-0.013841543278361236,zattera
+27,illustration_section,slot_pattern,-0.031229413754384233,zattera
+27,illustration_section,first_last_pair,-0.02740254699974782,zattera
+27,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.005271765344380959,zattera
+27,illustration_section,DIFF slot_pattern - first_last_pair,-0.003826866754636414,zattera
+27,illustration_section,DIFF slot_pattern - second_penult_pair,-0.000491482145876767,zattera
+27,illustration_section,DIFF slot_pattern - covered_flag,-0.02954969956841314,zattera
+27,illustration_section,DIFF first_last+slot - first_last_pair,-0.005172831329022944,zattera
+27,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.005827472987853528,zattera
+27,illustration_section,DIFF first_last+slot - first_last+second_penult,0.0006546416588305848,zattera
+27,illustration_section,DIFF slot_pattern - length,-0.024510434667035466,zattera
+28,currier_language_AB,slot_pattern,-0.0013827401233672534,zattera
+28,currier_language_AB,first_last_pair,-0.003812199294569828,zattera
+28,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),0.0010717221508105986,zattera
+28,currier_language_AB,DIFF slot_pattern - first_last_pair,0.0024294591712025744,zattera
+28,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0019827015819308988,zattera
+28,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0015102753878752677,zattera
+28,currier_language_AB,DIFF first_last+slot - first_last_pair,0.00014517071748447984,zattera
+28,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.002201433953152037,zattera
+28,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.0023466046706365168,zattera
+28,currier_language_AB,DIFF slot_pattern - length,0.0030724547250134213,zattera
+28,illustration_section,slot_pattern,-0.035445483614334077,zattera
+28,illustration_section,first_last_pair,-0.04789852870057277,zattera
+28,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.005046016813046596,zattera
+28,illustration_section,DIFF slot_pattern - first_last_pair,0.012453045086238693,zattera
+28,illustration_section,DIFF slot_pattern - second_penult_pair,-0.005046016813046596,zattera
+28,illustration_section,DIFF slot_pattern - covered_flag,-0.03499200657430742,zattera
+28,illustration_section,DIFF first_last+slot - first_last_pair,0.002120253459417444,zattera
+28,illustration_section,DIFF first_last+second_penult - first_last_pair,0.008434290983204161,zattera
+28,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.006314037523786717,zattera
+28,illustration_section,DIFF slot_pattern - length,-0.027753181798866405,zattera
+29,currier_language_AB,slot_pattern,0.001415322232728284,zattera
+29,currier_language_AB,first_last_pair,-0.001404012940627129,zattera
+29,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.000919591149472717,zattera
+29,currier_language_AB,DIFF slot_pattern - first_last_pair,0.002819335173355413,zattera
+29,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.001117036759593996,zattera
+29,currier_language_AB,DIFF slot_pattern - covered_flag,0.0007493833550113201,zattera
+29,currier_language_AB,DIFF first_last+slot - first_last_pair,0.0003664362964052592,zattera
+29,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.00383629410625349,zattera
+29,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.004202730402658749,zattera
+29,currier_language_AB,DIFF slot_pattern - length,0.0010280774627912431,zattera
+29,illustration_section,slot_pattern,-0.054489629857590205,zattera
+29,illustration_section,first_last_pair,-0.0469441756986308,zattera
+29,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.03576777477252316,zattera
+29,illustration_section,DIFF slot_pattern - first_last_pair,-0.007545454158959408,zattera
+29,illustration_section,DIFF slot_pattern - second_penult_pair,-0.03576777477252316,zattera
+29,illustration_section,DIFF slot_pattern - covered_flag,-0.05244488219402819,zattera
+29,illustration_section,DIFF first_last+slot - first_last_pair,-0.017445767770051135,zattera
+29,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.00244263124919767,zattera
+29,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.015003136520853465,zattera
+29,illustration_section,DIFF slot_pattern - length,-0.04820534737180683,zattera
+30,currier_language_AB,slot_pattern,-0.008910969267463351,zattera
+30,currier_language_AB,first_last_pair,-0.007552424846477671,zattera
+30,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.00135854442098568,zattera
+30,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.00135854442098568,zattera
+30,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.002168977514945998,zattera
+30,currier_language_AB,DIFF slot_pattern - covered_flag,-0.00883975597197257,zattera
+30,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.0053666811701306005,zattera
+30,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0045610584790363295,zattera
+30,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.000805622691094271,zattera
+30,currier_language_AB,DIFF slot_pattern - length,-0.008067674855672297,zattera
+30,illustration_section,slot_pattern,-0.032863153971578345,zattera
+30,illustration_section,first_last_pair,-0.032960237312182464,zattera
+30,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.00666634624088909,zattera
+30,illustration_section,DIFF slot_pattern - first_last_pair,9.70833406041191e-05,zattera
+30,illustration_section,DIFF slot_pattern - second_penult_pair,-0.001644332554560396,zattera
+30,illustration_section,DIFF slot_pattern - covered_flag,-0.026842258600511655,zattera
+30,illustration_section,DIFF first_last+slot - first_last_pair,-0.006261384236606833,zattera
+30,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.005762346836711833,zattera
+30,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.0004990373998949998,zattera
+30,illustration_section,DIFF slot_pattern - length,-0.028203954390053642,zattera
+31,currier_language_AB,slot_pattern,-0.0027351791258832755,zattera
+31,currier_language_AB,first_last_pair,-0.004179675404296185,zattera
+31,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0006384041552052184,zattera
+31,currier_language_AB,DIFF slot_pattern - first_last_pair,0.0014444962784129095,zattera
+31,currier_language_AB,DIFF slot_pattern - second_penult_pair,-1.8644281616797976e-05,zattera
+31,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0027384935326030127,zattera
+31,currier_language_AB,DIFF first_last+slot - first_last_pair,0.0002292412866757819,zattera
+31,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.00026236056587046735,zattera
+31,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.0004916018525462492,zattera
+31,currier_language_AB,DIFF slot_pattern - length,-0.002256566515706562,zattera
+31,illustration_section,slot_pattern,-0.023145064732955953,zattera
+31,illustration_section,first_last_pair,-0.009567944499678738,zattera
+31,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.013577120233277215,zattera
+31,illustration_section,DIFF slot_pattern - first_last_pair,-0.013577120233277215,zattera
+31,illustration_section,DIFF slot_pattern - second_penult_pair,0.003103349231696001,zattera
+31,illustration_section,DIFF slot_pattern - covered_flag,-0.021337755030839223,zattera
+31,illustration_section,DIFF first_last+slot - first_last_pair,-0.01672945388127214,zattera
+31,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.011995488133428493,zattera
+31,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.004733965747843648,zattera
+31,illustration_section,DIFF slot_pattern - length,-0.020594415000899466,zattera
+32,currier_language_AB,slot_pattern,-0.0021628113457082825,zattera
+32,currier_language_AB,first_last_pair,-0.0019352324995087658,zattera
+32,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0003168643498239062,zattera
+32,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0002275788461995167,zattera
+32,currier_language_AB,DIFF slot_pattern - second_penult_pair,5.9494112764527964e-05,zattera
+32,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0020251469928562814,zattera
+32,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.001187122304948324,zattera
+32,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.0007716112775266405,zattera
+32,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.001958733582474965,zattera
+32,currier_language_AB,DIFF slot_pattern - length,-0.0020075213665341285,zattera
+32,illustration_section,slot_pattern,-0.1160965612791705,zattera
+32,illustration_section,first_last_pair,-0.10174743509196651,zattera
+32,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.0166741011321382,zattera
+32,illustration_section,DIFF slot_pattern - first_last_pair,-0.014349126187203978,zattera
+32,illustration_section,DIFF slot_pattern - second_penult_pair,-0.0166741011321382,zattera
+32,illustration_section,DIFF slot_pattern - covered_flag,0.02530258753538321,zattera
+32,illustration_section,DIFF first_last+slot - first_last_pair,0.029432271178381014,zattera
+32,illustration_section,DIFF first_last+second_penult - first_last_pair,0.04420880696112519,zattera
+32,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.014776535782744175,zattera
+32,illustration_section,DIFF slot_pattern - length,-0.021463850780910787,zattera
+33,currier_language_AB,slot_pattern,-0.016578490959758295,zattera
+33,currier_language_AB,first_last_pair,-0.008560921736143664,zattera
+33,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.00801756922361463,zattera
+33,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.00801756922361463,zattera
+33,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0069183297259375574,zattera
+33,currier_language_AB,DIFF slot_pattern - covered_flag,-0.015077800782955453,zattera
+33,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.009581422511782242,zattera
+33,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0016618171662065358,zattera
+33,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.007919605345575707,zattera
+33,currier_language_AB,DIFF slot_pattern - length,-0.011998898590022244,zattera
+33,illustration_section,slot_pattern,-0.016249235480015854,zattera
+33,illustration_section,first_last_pair,-0.0031742995391565343,zattera
+33,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.01307493594085932,zattera
+33,illustration_section,DIFF slot_pattern - first_last_pair,-0.01307493594085932,zattera
+33,illustration_section,DIFF slot_pattern - second_penult_pair,-0.004136105392640541,zattera
+33,illustration_section,DIFF slot_pattern - covered_flag,-0.015267836443599199,zattera
+33,illustration_section,DIFF first_last+slot - first_last_pair,-0.014066755766855687,zattera
+33,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.008658122597062853,zattera
+33,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.005408633169792834,zattera
+33,illustration_section,DIFF slot_pattern - length,-0.01625540373038418,zattera
+34,currier_language_AB,slot_pattern,-0.00313204693995788,zattera
+34,currier_language_AB,first_last_pair,-0.0014349866635080845,zattera
+34,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.0016970602764497956,zattera
+34,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.0016970602764497956,zattera
+34,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0010428648012506922,zattera
+34,currier_language_AB,DIFF slot_pattern - covered_flag,-0.0030132338389991732,zattera
+34,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.00010705952929493563,zattera
+34,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.0006581726493502361,zattera
+34,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.0007652321786451717,zattera
+34,currier_language_AB,DIFF slot_pattern - length,-0.0008247272837379927,zattera
+34,illustration_section,slot_pattern,-0.019337344136439553,zattera
+34,illustration_section,first_last_pair,-0.007775760574865217,zattera
+34,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.01691833374848094,zattera
+34,illustration_section,DIFF slot_pattern - first_last_pair,-0.011561583561574336,zattera
+34,illustration_section,DIFF slot_pattern - second_penult_pair,-0.01691833374848094,zattera
+34,illustration_section,DIFF slot_pattern - covered_flag,-0.01726054458038446,zattera
+34,illustration_section,DIFF first_last+slot - first_last_pair,-0.015693302357048466,zattera
+34,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.010100097412918979,zattera
+34,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.005593204944129487,zattera
+34,illustration_section,DIFF slot_pattern - length,-0.016362493142578143,zattera
+35,currier_language_AB,slot_pattern,-0.004242844771635577,zattera
+35,currier_language_AB,first_last_pair,-0.0005067181763247642,zattera
+35,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.004995748759252313,zattera
+35,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.003736126595310812,zattera
+35,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.0027922441537300384,zattera
+35,currier_language_AB,DIFF slot_pattern - covered_flag,-0.004473345221679825,zattera
+35,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.002024491306502945,zattera
+35,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0024528737167698687,zattera
+35,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.000428382410266923,zattera
+35,currier_language_AB,DIFF slot_pattern - length,-0.004030441249763724,zattera
+35,illustration_section,slot_pattern,-0.03249633491923453,zattera
+35,illustration_section,first_last_pair,-0.021335774284318026,zattera
+35,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.011160560634916505,zattera
+35,illustration_section,DIFF slot_pattern - first_last_pair,-0.011160560634916505,zattera
+35,illustration_section,DIFF slot_pattern - second_penult_pair,0.00021775384905826922,zattera
+35,illustration_section,DIFF slot_pattern - covered_flag,-0.029495669285194936,zattera
+35,illustration_section,DIFF first_last+slot - first_last_pair,-0.014054468734819022,zattera
+35,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.010626668435641914,zattera
+35,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.0034278002991771084,zattera
+35,illustration_section,DIFF slot_pattern - length,-0.029033150684209905,zattera
+36,currier_language_AB,slot_pattern,-0.011916718772997194,zattera
+36,currier_language_AB,first_last_pair,-0.0056458253422551315,zattera
+36,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.006270893430742062,zattera
+36,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.006270893430742062,zattera
+36,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.006256189973038965,zattera
+36,currier_language_AB,DIFF slot_pattern - covered_flag,-0.010824238761895942,zattera
+36,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.003109941066972966,zattera
+36,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.0084079446869059,zattera
+36,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.005298003619932936,zattera
+36,currier_language_AB,DIFF slot_pattern - length,-0.012182879066762064,zattera
+36,illustration_section,slot_pattern,-0.05477817605155894,zattera
+36,illustration_section,first_last_pair,-0.026719783062521974,zattera
+36,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.02805839298903697,zattera
+36,illustration_section,DIFF slot_pattern - first_last_pair,-0.02805839298903697,zattera
+36,illustration_section,DIFF slot_pattern - second_penult_pair,-0.009012299931202214,zattera
+36,illustration_section,DIFF slot_pattern - covered_flag,-0.051553373242458185,zattera
+36,illustration_section,DIFF first_last+slot - first_last_pair,-0.02642718363555571,zattera
+36,illustration_section,DIFF first_last+second_penult - first_last_pair,-0.014123972889182285,zattera
+36,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.012303210746373423,zattera
+36,illustration_section,DIFF slot_pattern - length,-0.05056004460305073,zattera
+37,currier_language_AB,slot_pattern,-0.02543571045366116,zattera
+37,currier_language_AB,first_last_pair,-0.00968833832589915,zattera
+37,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.015747372127762012,zattera
+37,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.015747372127762012,zattera
+37,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.015243758102166374,zattera
+37,currier_language_AB,DIFF slot_pattern - covered_flag,-0.025330225192627016,zattera
+37,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.006885866841495319,zattera
+37,currier_language_AB,DIFF first_last+second_penult - first_last_pair,-0.00742518834388144,zattera
+37,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.0005393215023861211,zattera
+37,currier_language_AB,DIFF slot_pattern - length,-0.018682922933804774,zattera
+37,illustration_section,slot_pattern,-0.015316361334175806,zattera
+37,illustration_section,first_last_pair,-0.013831126591299005,zattera
+37,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.005514107798422006,zattera
+37,illustration_section,DIFF slot_pattern - first_last_pair,-0.0014852347428768002,zattera
+37,illustration_section,DIFF slot_pattern - second_penult_pair,-0.0021116945993377868,zattera
+37,illustration_section,DIFF slot_pattern - covered_flag,-0.01578743273064745,zattera
+37,illustration_section,DIFF first_last+slot - first_last_pair,-0.000780181780068126,zattera
+37,illustration_section,DIFF first_last+second_penult - first_last_pair,0.0018730147450799466,zattera
+37,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.0026531965251480726,zattera
+37,illustration_section,DIFF slot_pattern - length,-0.01321123510469842,zattera
+38,currier_language_AB,slot_pattern,0.00015038893496913184,zattera
+38,currier_language_AB,first_last_pair,-0.0022647653117770544,zattera
+38,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),0.0015873613378125952,zattera
+38,currier_language_AB,DIFF slot_pattern - first_last_pair,0.002415154246746186,zattera
+38,currier_language_AB,DIFF slot_pattern - second_penult_pair,0.0015873613378125952,zattera
+38,currier_language_AB,DIFF slot_pattern - covered_flag,0.00024776683750820733,zattera
+38,currier_language_AB,DIFF first_last+slot - first_last_pair,0.0022565976686449427,zattera
+38,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.0011684244781188053,zattera
+38,currier_language_AB,DIFF first_last+slot - first_last+second_penult,0.0010881731905261376,zattera
+38,currier_language_AB,DIFF slot_pattern - length,-8.975384060644432e-05,zattera
+38,illustration_section,slot_pattern,-0.060904049922560564,zattera
+38,illustration_section,first_last_pair,-0.06620885762861799,zattera
+38,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.011016341675186787,zattera
+38,illustration_section,DIFF slot_pattern - first_last_pair,0.0053048077060574225,zattera
+38,illustration_section,DIFF slot_pattern - second_penult_pair,-0.011016341675186787,zattera
+38,illustration_section,DIFF slot_pattern - covered_flag,-0.05366217946673244,zattera
+38,illustration_section,DIFF first_last+slot - first_last_pair,-0.005649470070322654,zattera
+38,illustration_section,DIFF first_last+second_penult - first_last_pair,0.006184507643915635,zattera
+38,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.011833977714238289,zattera
+38,illustration_section,DIFF slot_pattern - length,-0.04873254797770837,zattera
+39,currier_language_AB,slot_pattern,-0.0034877338916866575,zattera
+39,currier_language_AB,first_last_pair,-0.0029240531977659935,zattera
+39,currier_language_AB,DIFF slot_pattern - best_letter_feature(max of 4),-0.00223484667087623,zattera
+39,currier_language_AB,DIFF slot_pattern - first_last_pair,-0.000563680693920664,zattera
+39,currier_language_AB,DIFF slot_pattern - second_penult_pair,-0.00223484667087623,zattera
+39,currier_language_AB,DIFF slot_pattern - covered_flag,-0.004092398718997931,zattera
+39,currier_language_AB,DIFF first_last+slot - first_last_pair,-0.005501360208979738,zattera
+39,currier_language_AB,DIFF first_last+second_penult - first_last_pair,0.000216459805791274,zattera
+39,currier_language_AB,DIFF first_last+slot - first_last+second_penult,-0.005717820014771013,zattera
+39,currier_language_AB,DIFF slot_pattern - length,-0.0032809938702837165,zattera
+39,illustration_section,slot_pattern,-0.08167681685631945,zattera
+39,illustration_section,first_last_pair,-0.08463288315094526,zattera
+39,illustration_section,DIFF slot_pattern - best_letter_feature(max of 4),-0.027231676633091555,zattera
+39,illustration_section,DIFF slot_pattern - first_last_pair,0.002956066294625817,zattera
+39,illustration_section,DIFF slot_pattern - second_penult_pair,-0.010467061009827222,zattera
+39,illustration_section,DIFF slot_pattern - covered_flag,0.015331841866142573,zattera
+39,illustration_section,DIFF first_last+slot - first_last_pair,0.026316183401041186,zattera
+39,illustration_section,DIFF first_last+second_penult - first_last_pair,0.03442891426304215,zattera
+39,illustration_section,DIFF first_last+slot - first_last+second_penult,-0.008112730862000962,zattera
+39,illustration_section,DIFF slot_pattern - length,-0.015933279899588537,zattera
