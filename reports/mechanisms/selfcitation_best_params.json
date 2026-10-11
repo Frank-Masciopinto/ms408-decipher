@@ -1,0 +1,17 @@
+{
+ "method.morph.add_remove.probability": 55,
+ "method.morph.combine_split.probability": 47,
+ "method.morph.replace.probability": 88,
+ "method.morph.reuse_last.probability": 5,
+ "method.morph.combined.dismiss_as_source_probability": 26,
+ "method.sourceChooser.same_position_probability": 48,
+ "text.max_repeat_count": 5,
+ "method.canFollow.error_rate": 4,
+ "method.suggestions.probability": 1,
+ "method.suggestions.iType_min_percentage": 17,
+ "method.suggestions.olType_min_percentage": 19,
+ "method.suggestions.dyType_min_percentage": 16,
+ "method.sourceChooser": "position",
+ "method.suggestions": "random",
+ "method.morph.use_word_final_substitutions": "false"
+}
