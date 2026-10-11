@@ -23,6 +23,9 @@ def gen_table(res: dict) -> pd.DataFrame:
         for col, lab, sek in STATS:
             v = CI.interval_verdict(float(ms[col]), unc.get(sek), g[col].astype(float).tolist())
             r[lab] = f"{g[col].mean():.3f} ± {g[col].std(ddof=1):.3f} {v['verdict']}"
+        for col, lab in (("nb_langA", "within-A NB acc."), ("nb_langB", "within-B NB acc.")):
+            v = CI.interval_verdict(float(ms[col]), 0.03, g[col].astype(float).tolist())
+            r[lab] = f"{g[col].mean():.3f} ± {g[col].std(ddof=1):.3f} {v['verdict']}"
         r["seeds with NB perm p<0.05"] = f"{int((g.nb_p < 0.05).sum())}/{len(g)}"
         rows.append(r)
     return pd.DataFrame(rows)
@@ -43,6 +46,22 @@ def findings(res: dict) -> list[str]:
              f"{mean('SC defaults', 'nb_bal_acc'):.3f}, fitted {mean('SC fitted', 'nb_bal_acc'):.3f}; JS excess {mean('C0|none', 'js_excess'):.3f} / "
              f"{mean('SC defaults', 'js_excess'):.3f} / {mean('SC fitted', 'js_excess'):.3f}. These measure how much section signal copying/drift alone produces "
              "(sections are contiguous runs of folios).")
+    g = lambda m, c: float(gen[gen.model == m][c].mean())        # noqa: E731
+    pure = ["A1|matched", "A1|mixed", "C0|none", "Naibbe pure|matched", "Naibbe pure|mixed", "SC defaults", "SC fitted", "B|matched", "B|mixed"]
+    L.append(f"* **Drift-aware reading.** Against labels circularly shifted along the folio order (contiguous section runs kept) MS 408's NB accuracy {ms['nb_bal_acc']:.3f} exceeds "
+             f"the null mean {ms['nb_shift_null_mean']:.3f} and its maximum {ms['nb_shift_null_max']:.3f} over {ms['n_shifts']} shifts (p = {ms['nb_shift_p']:.4f}, the smallest attainable). "
+             f"The exchangeable-folio permutation is passed by almost every drifting generator, so only the comparison with generators on the same layout is informative: "
+             f"the best no-codebook generator reaches NB {max(g(m, 'nb_bal_acc') for m in pure):.3f} (self-citation Java), all hybrids with Naibbe-token or edit-driven plaintext stay at "
+             f"{min(g(m, 'nb_bal_acc') for m in ('A1|matched', 'B|matched')):.2f}-{max(g(m, 'nb_bal_acc') for m in ('A1|matched', 'B|matched')):.2f}, and the only generator that reaches MS 408's level is the whole-word codebook with topic-matched plaintext, "
+             f"which overshoots (NB {g('A2|matched', 'nb_bal_acc'):.2f}, JS excess {g('A2|matched', 'js_excess'):.2f} vs MS {ms['js_excess']:.2f}).")
+    L.append(f"* **Within a Currier language** (language/scribe is confounded with section): MS 408 NB accuracy {ms['nb_langA']:.3f} (A: herbal vs pharmaceutical) and {ms['nb_langB']:.3f} "
+             f"(B: herbal/biological/recipes). Generators on the same restricted layouts: self-citation {g('SC defaults', 'nb_langA'):.2f} / {g('SC defaults', 'nb_langB'):.2f}, C0 "
+             f"{g('C0|none', 'nb_langA'):.2f} / {g('C0|none', 'nb_langB'):.2f}, topic-matched A1 {g('A1|matched', 'nb_langA'):.2f} / {g('A1|matched', 'nb_langB'):.2f}, topic-matched A2 "
+             f"{g('A2|matched', 'nb_langA'):.2f} / {g('A2|matched', 'nb_langB'):.2f}. The section signal does not reduce to the Currier A/B split.")
+    L.append("* **What this does and does not show.** MS 408's folio-level vocabulary differs by section more than drift in any of these generators produces, and more than Currier language "
+             "alone explains. It is therefore *consistent with* section-dependent content passing into the text (a topic-structured plaintext carried by a word-level code is one such "
+             "source), but a generator whose parameters or seed page change by section would also produce it, and that alternative was not tested. A codebook with arbitrary Latin "
+             "topics overshoots the observed strength, so the data neither demand nor reject a strong topic link.")
     return L
 
 
@@ -56,16 +75,23 @@ def report_markdown(res: dict) -> str:
          f"{res['n_seeds']} seeds per model (permutation null per corpus: 100). Hybrid parameters: the all-MS-408 fits of step 1 (`hybrid_params_all_ms408.json`).", "",
          "## 2. MS 408", "",
          "| statistic | value | permutation null mean | p | folio-bootstrap 95 % CI |", "|---|---|---|---|---|",
-         f"| between-section JS (bits) | {ms['js']:.3f} | {ms['js_null_mean']:.3f} | {ms['js_p']:.4f} | {unc['js_ci'][0]:.3f}–{unc['js_ci'][1]:.3f} |",
+         f"| between-section JS (bits) | {ms['js']:.3f} | {ms['js_null_mean']:.3f} | {ms['js_p']:.4f} | SE {unc['js_se']:.3f} † |",
          f"| NB balanced accuracy | {ms['nb_bal_acc']:.3f} | {ms['nb_null_mean']:.3f} | {ms['nb_p']:.4f} | {unc['nb_bal_acc_ci'][0]:.3f}–{unc['nb_bal_acc_ci'][1]:.3f} |",
          f"| LR balanced accuracy | {ms['lr_bal_acc']:.3f} | – | – | {unc['lr_bal_acc_ci'][0]:.3f}–{unc['lr_bal_acc_ci'][1]:.3f} |",
          f"| NB macro-F1 / LR macro-F1 | {ms['nb_macro_f1']:.3f} / {ms['lr_macro_f1']:.3f} | – | – | – |",
-         f"| section-keyword overlap | {ms['keyword_overlap']:.3f} | {ms['keyword_null_mean']:.3f} | {ms['keyword_p']:.4f} | {unc['keyword_ci'][0]:.3f}–{unc['keyword_ci'][1]:.3f} |", "",
+         f"| section-keyword overlap | {ms['keyword_overlap']:.3f} | {ms['keyword_null_mean']:.3f} | {ms['keyword_p']:.4f} | SE {unc['keyword_se']:.3f} † |",
+         "", "† resampling folios with replacement duplicates documents, which biases JS and split-half overlap upward, so only the bootstrap SE is reported for those two "
+         "(accuracy CIs use per-folio correctness of held-out predictions and are unaffected).", "",
+         "**Drift-aware null.** The label permutation above breaks the contiguity of sections, so any generator that drifts along the folio order beats it. "
+         f"Circularly shifting the labels along the folio order ({ms['n_shifts']} shifts) keeps contiguous section runs and breaks only the section↔content link: "
+         f"NB balanced accuracy null mean {ms['nb_shift_null_mean']:.3f} (max {ms['nb_shift_null_max']:.3f}), MS 408 {ms['nb_bal_acc']:.3f}, p = {ms['nb_shift_p']:.4f}; "
+         f"JS null mean {ms['js_shift_null_mean']:.3f} (MS {ms['js']:.3f}), p = {ms['js_shift_p']:.4f}.", "",
          "Top over-represented word types per section (EVA, collapsed text; relative-frequency ratio vs the other sections):", ""] + md(res["top"]) + [""]
     if len(res["within"]):
         L += ["Within a Currier language (language is confounded with section in MS 408, so this is the stricter question):", ""] + md(res["within"], 3) + [""]
     L += ["## 3. Generated corpora on the same folio layout", "",
-          "Entries: mean ± SD over seeds, then the prediction-interval verdict of MS 408 against the model (`≈` inside; `↑`/`↓` MS 408 above/below the model; SE = folio bootstrap).", ""]
+          "Entries: mean ± SD over seeds, then the prediction-interval verdict of MS 408 against the model (`≈` inside; `↑`/`↓` MS 408 above/below the model; SE = folio bootstrap; "
+          "for the within-language columns a nominal SE of 0.03 is used). 'seeds with NB perm p<0.05' uses the exchangeable-folio permutation, which drifting generators pass by construction.", ""]
     L += md(gen_table(res)) + [""]
     L += ["## 4. Reading", ""] + findings(res) + [""]
     L += ["## 5. Limitations", "",

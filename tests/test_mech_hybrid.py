@@ -124,3 +124,12 @@ def test_hybrid_layout_generation_matched_vs_mixed_uses_different_plaintexts():
     a = T.generated_words("A1|matched", lay, params, None, 1, random.Random(1))
     b = T.generated_words("A1|mixed", lay, params, None, 1, random.Random(1))
     assert len(a) == len(b) == 600 and a != b
+
+
+def test_shift_null_and_within_language():
+    docs = sorted(_docs(True), key=lambda e: T.CLASSES.index(e["cls"]))      # contiguous section runs, as in the manuscript
+    X, y, _, _ = T.design(docs)
+    r = T.shift_null(X, y, 0)
+    assert r["n_shifts"] == len(y) - 20 and r["nb_shift_p"] < 0.1       # topical folios: only the unshifted order matches the content
+    assert T.within_language_nb(docs, "A") > 0.9
+    assert np.isnan(T.within_language_nb(docs, "B"))

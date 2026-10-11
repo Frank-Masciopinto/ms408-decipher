@@ -190,6 +190,28 @@ def stats_for(docs: list[dict], n_perm: int = 200, seed: int = 0, lr: bool = Tru
     return out
 
 
+def shift_null(X, y, seed: int = 0, min_shift: int = 10) -> dict:
+    """Drift-aware null: labels circularly shifted along the folio order (contiguous section runs preserved, section<->content link broken)."""
+    n = len(y)
+    ks = [k for k in range(min_shift, n - min_shift)]
+    js = np.array([mean_pairwise_js(X, np.roll(y, k)) for k in ks])
+    nb = np.array([class_scores(np.roll(y, k), cv_predict(X, np.roll(y, k), "nb", seed, repeats=1))[0] for k in ks])
+    js_obs = mean_pairwise_js(X, y)
+    nb_obs = class_scores(y, cv_predict(X, y, "nb", seed, repeats=1))[0]
+    return {"n_shifts": len(ks), "js_shift_null_mean": float(js.mean()), "js_shift_p": p_upper(js_obs, js),
+            "nb_shift_null_mean": float(nb.mean()), "nb_shift_null_max": float(nb.max()), "nb_shift_p": p_upper(nb_obs, nb)}
+
+
+def within_language_nb(docs: list[dict], lg: str, seed: int = 0) -> float:
+    try:
+        X, y, _, _ = design(docs, lang=lg)
+        if len(set(y)) < 2:
+            return float("nan")
+        return class_scores(y, cv_predict(X, y, "nb", seed))[0]
+    except ValueError:
+        return float("nan")
+
+
 def ms_uncertainty(docs: list[dict], n_boot: int = 300, seed: int = 0) -> dict:
     """Folio-block bootstrap SEs / CIs for MS 408 (folios resampled with replacement within the whole corpus)."""
     X, y, _, _ = design(docs)
@@ -291,6 +313,8 @@ def _model_job(job):
     w = generated_words(model, layout, params, ctx, seed, random.Random(seed * 17 + 3))
     docs = corpus_from_layout(layout, w)
     st = stats_for(docs, n_perm=n_perm, seed=seed)
+    st["nb_langA"] = within_language_nb(docs, "A", seed)
+    st["nb_langB"] = within_language_nb(docs, "B", seed)
     return {"model": model, "seed": seed, **st}
 
 
@@ -314,6 +338,8 @@ def run_topics(out_dir: Path | None = None, n_perm: int = 1000, n_seeds: int = 1
     ms = stats_for(msdocs, n_perm=n_perm, seed=0)
     unc = ms_uncertainty(msdocs, 300)
     X, y, folios, _ = design(msdocs)
+    ms.update(shift_null(X, y, 0))
+    ms["nb_langA"], ms["nb_langB"] = within_language_nb(msdocs, "A"), within_language_nb(msdocs, "B")
     classes = pd.Series(y).value_counts().to_dict()
     # within-language diagnostics (does the section signal survive inside a Currier language?)
     within = []
