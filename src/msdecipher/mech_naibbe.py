@@ -89,6 +89,7 @@ class NaibbeCipher:
                     for L2 in ALPHABET:
                         self.bi_decode[p + self.glyph[("suffix", t2, L2)]].add((L1, L2))
         self.retries = 0
+        self.bigrams = 0
 
     # ---- encryption
     def _deck(self, rng: random.Random) -> list[str]:
@@ -122,6 +123,7 @@ class NaibbeCipher:
             if len(g) == 1:
                 words.append(self.glyph[("unigram", draw(), g)])
                 continue
+            self.bigrams += 1
             for _ in range(self.max_retries):
                 t1, t2 = draw(), draw()
                 p, s = self.glyph[("prefix", t1, g[0])], self.glyph[("suffix", t2, g[1])]

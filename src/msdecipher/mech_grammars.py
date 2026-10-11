@@ -767,3 +767,19 @@ def compare_grammars(words: Sequence[str], blocks: Sequence, seg: Callable[[str]
     for n in names:
         out[n]["hand_coded"] = n in [m.name for m in mk() if m.hand_coded]
     return out
+
+
+def zattera_covered(word: str) -> bool:
+    """Hard test: can Zattera's 12-slot table generate ``word`` (units assigned to distinct, increasing slots)?"""
+    z = zattera_segment(word)
+    if z is None or not z:
+        return False
+    n = len(z)
+    f = [True] + [False] * n
+    for slot in ZATTERA_SLOTS:
+        g = f[:]
+        for j in range(n):
+            if f[j] and z[j] in slot:
+                g[j + 1] = True
+        f = g
+    return f[n]
