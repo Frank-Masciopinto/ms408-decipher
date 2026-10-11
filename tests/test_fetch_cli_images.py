@@ -103,18 +103,17 @@ def test_extract_pages_with_tiny_pdf(tmp_path):
     assert all(p.stat().st_size > 0 for p in out)
 
 
-def test_cli_stub_and_help(capsys):
-    assert main(["segment-glyphs"]) == 2
-    assert "NOT IMPLEMENTED" in capsys.readouterr().err
+def test_cli_help_lists_image_stage_commands(capsys):
     with pytest.raises(SystemExit):
         main(["--help"])
+    out = capsys.readouterr().out
+    assert "segment-glyphs" in out and "page-index" in out
 
 
-def test_glyph_segmentation_stub_raises():
-    from msdecipher import glyph_segmentation as gs
-    assert gs.STATUS == "not implemented"
-    with pytest.raises(NotImplementedError):
-        gs.segment_page("x.png")
+def test_segment_glyphs_help_is_real_command(capsys):
+    with pytest.raises(SystemExit):
+        main(["segment-glyphs", "--help"])
+    assert "--pages" in capsys.readouterr().out
 
 
 def test_python_dash_m_runs():

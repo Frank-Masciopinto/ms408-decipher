@@ -47,6 +47,20 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--dpi", type=int, default=100)
     p.add_argument("--first", type=int)
     p.add_argument("--last", type=int)
+    p.add_argument("--native", action="store_true",
+                   help="instead extract the embedded scans at native resolution (data/images/native/*.jpg)")
+
+    sub.add_parser("page-index", help="PDF page -> folio index (pdftotext captions) -> data/page_index.csv")
+
+    p = sub.add_parser("segment-glyphs",
+                       help="image glyph stage: lines/words/glyph candidates, clustering, QA report (best effort)")
+    p.add_argument("--pages", help="comma list of PDF page numbers (default: text-dominant pages of the index)")
+    p.add_argument("--mode", choices=["text", "exact"], default="text",
+                   help="page selection when --pages is absent: text = text-only/stars pages (default), "
+                        "exact = every 1:1 folio page")
+    p.add_argument("--units", default="collapsed", help="EVA unit segmentation used to label crops (default: collapsed)")
+    p.add_argument("--no-report", action="store_true", help="only segment; skip clustering/QA report")
+    p.add_argument("--seed", type=int, default=1)
 
     sub.add_parser("controls-fetch", help="download public-domain control texts into data/controls/ (git-ignored) + manifest")
     sub.add_parser("controls-verify", help="check data/controls/ against its MANIFEST.json")
@@ -56,7 +70,6 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--file", help="MS 408 transcription (default data/transcriptions/ZL3b-n.txt)")
     p.add_argument("--no-plots", action="store_true")
 
-    sub.add_parser("segment-glyphs", help="image glyph segmentation (NOT IMPLEMENTED; stub)")
     return ap
 
 
@@ -119,6 +132,11 @@ def _cmd_run(a) -> int:
 
 
 def _cmd_images(a) -> int:
+    if a.native:
+        from .images import extract_native
+        out = extract_native(first=a.first, last=a.last)
+        print(f"{len(out)} native-resolution scans in data/images/native/ (git-ignored)")
+        return 0
     from .images import extract_pages
     out = extract_pages(dpi=a.dpi, first=a.first, last=a.last)
     print(f"wrote {len(out)} page images (PDF page numbers, not folio ids) to data/images/ (git-ignored)")
@@ -126,9 +144,18 @@ def _cmd_images(a) -> int:
     return 0
 
 
+def _cmd_page_index(a) -> int:
+    from .pageindex import build_index, summarize, index_path
+    rows = build_index()
+    print(f"wrote {index_path()} ({len(rows)} PDF pages): {summarize(rows)}")
+    return 0
+
+
 def _cmd_segment(a) -> int:
-    print("segment-glyphs: NOT IMPLEMENTED (stub). See docs/IMAGE_STAGE.md.", file=sys.stderr)
-    return 2
+    from .image_report import run_image_stage
+    pages = [int(x) for x in a.pages.split(",")] if a.pages else None
+    run_image_stage(pages=pages, mode=a.mode, units=a.units, report=not a.no_report, seed=a.seed)
+    return 0
 
 
 def _cmd_controls_fetch(a) -> int:
@@ -157,7 +184,7 @@ def main(argv=None) -> int:
     try:
         return {"fetch": _cmd_fetch, "verify": _cmd_verify, "parse": _cmd_parse, "catalog": _cmd_catalog,
                 "stats": _cmd_run, "run-all": _cmd_run, "images": _cmd_images,
-                "segment-glyphs": _cmd_segment,
+                "segment-glyphs": _cmd_segment, "page-index": _cmd_page_index,
                 "controls-fetch": _cmd_controls_fetch, "controls-verify": _cmd_controls_verify,
                 "controls-run": _cmd_controls_run}[a.cmd](a)
     except FileNotFoundError as e:

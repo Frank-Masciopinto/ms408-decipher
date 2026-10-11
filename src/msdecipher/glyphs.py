@@ -2,7 +2,7 @@
 
 This catalogues the symbols *a transcriber used*. It says nothing yet about whether the
 physical glyphs on the page really split into these classes: that needs the image stage
-(see :mod:`msdecipher.images` / :mod:`msdecipher.glyph_segmentation`, not done).
+(see :mod:`msdecipher.glyph_stage`).
 """
 from __future__ import annotations
 

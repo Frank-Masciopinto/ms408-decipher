@@ -1,0 +1,215 @@
+pdf_page,caption,kind,caption_folios,folios,match,illustration,language,hand,n_p_lines,text_page_candidate
+1,Yale University Library Digital Collections,non_folio,,,non_folio,,,,0,0
+2,[Front cover],non_folio,,,non_folio,,,,0,0
+3,[Inside front cover],non_folio,,,non_folio,,,,0,0
+4,1r,folio,1r,f1r,exact,T,A,1,28,1
+5,1v,folio,1v,f1v,exact,H,A,1,10,0
+6,2r,folio,2r,f2r,exact,H,A,1,13,0
+7,2v,folio,2v,f2v,exact,H,A,1,8,0
+8,3r,folio,3r,f3r,exact,H,A,1,20,0
+9,3v,folio,3v,f3v,exact,H,A,1,14,0
+10,4r,folio,4r,f4r,exact,H,A,1,13,0
+11,4v,folio,4v,f4v,exact,H,A,1,14,0
+12,5r,folio,5r,f5r,exact,H,A,1,7,0
+13,5v,folio,5v,f5v,exact,H,A,1,6,0
+14,6r,folio,6r,f6r,exact,H,A,1,14,0
+15,6v,folio,6v,f6v,exact,H,A,1,21,0
+16,7r,folio,7r,f7r,exact,H,A,1,10,0
+17,7v,folio,7v,f7v,exact,H,A,1,9,0
+18,8r,folio,8r,f8r,exact,H,A,1,21,0
+19,8v,folio,8v,f8v,exact,H,A,1,17,0
+20,9r,folio,9r,f9r,exact,H,A,1,10,0
+21,9v,folio,9v,f9v,exact,H,A,1,12,0
+22,10r,folio,10r,f10r,exact,H,A,1,12,0
+23,10v,folio,10v,f10v,exact,H,A,1,7,0
+24,11r,folio,11r,f11r,exact,H,A,1,7,0
+25,11v,folio,11v,f11v,exact,H,A,1,6,0
+26,13r,folio,13r,f13r,exact,H,A,1,10,0
+27,13v,folio,13v,f13v,exact,H,A,1,10,0
+28,14r,folio,14r,f14r,exact,H,A,1,13,0
+29,14v,folio,14v,f14v,exact,H,A,1,9,0
+30,15r,folio,15r,f15r,exact,H,A,1,15,0
+31,15v,folio,15v,f15v,exact,H,A,1,12,0
+32,16r,folio,16r,f16r,exact,H,A,1,13,0
+33,16v,folio,16v,f16v,exact,H,A,1,13,0
+34,17r,folio,17r,f17r,exact,H,A,1,12,0
+35,17v,folio,17v,f17v,exact,H,A,1,23,0
+36,18r,folio,18r,f18r,exact,H,A,1,14,0
+37,18v,folio,18v,f18v,exact,H,A,1,10,0
+38,19r,folio,19r,f19r,exact,H,A,1,13,0
+39,19v,folio,19v,f19v,exact,H,A,1,14,0
+40,20r,folio,20r,f20r,exact,H,A,1,13,0
+41,20v,folio,20v,f20v,exact,H,A,1,11,0
+42,21r,folio,21r,f21r,exact,H,A,1,12,0
+43,21v,folio,21v,f21v,exact,H,A,1,8,0
+44,22r,folio,22r,f22r,exact,H,A,1,13,0
+45,22v,folio,22v,f22v,exact,H,A,1,16,0
+46,23r,folio,23r,f23r,exact,H,A,1,11,0
+47,23v,folio,23v,f23v,exact,H,A,1,12,0
+48,24r,folio,24r,f24r,exact,H,A,1,20,0
+49,24v,folio,24v,f24v,exact,H,A,1,16,0
+50,25r,folio,25r,f25r,exact,H,A,1,7,0
+51,25v,folio,25v,f25v,exact,H,A,1,7,0
+52,26r,folio,26r,f26r,exact,H,B,2,10,0
+53,26v,folio,26v,f26v,exact,H,B,2,9,0
+54,27r,folio,27r,f27r,exact,H,A,1,13,0
+55,27v,folio,27v,f27v,exact,H,A,1,8,0
+56,28r,folio,28r,f28r,exact,H,A,1,9,0
+57,28v,folio,28v,f28v,exact,H,A,1,9,0
+58,29r,folio,29r,f29r,exact,H,A,1,9,0
+59,29v,folio,29v,f29v,exact,H,A,1,12,0
+60,30r,folio,30r,f30r,exact,H,A,1,13,0
+61,30v,folio,30v,f30v,exact,H,A,1,11,0
+62,31r,folio,31r,f31r,exact,H,B,2,16,0
+63,31v,folio,31v,f31v,exact,H,B,2,11,0
+64,32r,folio,32r,f32r,exact,H,A,1,19,0
+65,32v,folio,32v,f32v,exact,H,A,1,11,0
+66,33r,folio,33r,f33r,exact,H,B,2,7,0
+67,33v,folio,33v,f33v,exact,H,B,2,11,0
+68,34r,folio,34r,f34r,exact,H,B,2,15,0
+69,34v,folio,34v,f34v,exact,H,B,2,11,0
+70,35r,folio,35r,f35r,exact,H,A,1,15,0
+71,35v,folio,35v,f35v,exact,H,A,1,21,0
+72,36r,folio,36r,f36r,exact,H,A,1,9,0
+73,36v,folio,36v,f36v,exact,H,A,1,14,0
+74,37r,folio,37r,f37r,exact,H,A,1,11,0
+75,37v,folio,37v,f37v,exact,H,A,1,23,0
+76,38r,folio,38r,f38r,exact,H,A,1,6,0
+77,38v,folio,38v,f38v,exact,H,A,1,8,0
+78,39r,folio,39r,f39r,exact,H,B,2,16,0
+79,39v,folio,39v,f39v,exact,H,B,2,14,0
+80,40r,folio,40r,f40r,exact,H,B,2,11,0
+81,40v,folio,40v,f40v,exact,H,B,2,19,0
+82,41r,folio,41r,f41r,exact,H,B,5,11,0
+83,41v,folio,41v,f41v,exact,H,B,5,7,0
+84,42r,folio,42r,f42r,exact,H,A,1,23,0
+85,42v,folio,42v,f42v,exact,H,A,1,16,0
+86,43r,folio,43r,f43r,exact,H,B,2,14,0
+87,43v,folio,43v,f43v,exact,H,B,2,16,0
+88,44r,folio,44r,f44r,exact,H,A,1,11,0
+89,44v,folio,44v,f44v,exact,H,A,1,13,0
+90,45r,folio,45r,f45r,exact,H,A,1,11,0
+91,45v,folio,45v,f45v,exact,H,A,1,11,0
+92,46r,folio,46r,f46r,exact,H,B,2,15,0
+93,46v,folio,46v,f46v,exact,H,B,2,13,0
+94,47r,folio,47r,f47r,exact,H,A,1,11,0
+95,47v,folio,47v,f47v,exact,H,A,1,14,0
+96,48r,folio,48r,f48r,exact,H,B,5,9,0
+97,48v,folio,48v,f48v,exact,H,B,5,11,0
+98,49r,folio,49r,f49r,exact,H,A,1,21,0
+99,49v,folio,49v,f49v,exact,H,A,1,26,0
+100,50r,folio,50r,f50r,exact,H,B,2,10,0
+101,50v,folio,50v,f50v,exact,H,B,2,11,0
+102,51r,folio,51r,f51r,exact,H,A,1,15,0
+103,51v,folio,51v,f51v,exact,H,A,1,13,0
+104,52r,folio,52r,f52r,exact,H,A,1,8,0
+105,52v,folio,52v,f52v,exact,H,A,1,14,0
+106,53r,folio,53r,f53r,exact,H,A,1,9,0
+107,53v,folio,53v,f53v,exact,H,A,1,13,0
+108,54r,folio,54r,f54r,exact,H,A,1,12,0
+109,54v,folio,54v,f54v,exact,H,A,1,16,0
+110,55r,folio,55r,f55r,exact,H,B,2,13,0
+111,55v,folio,55v,f55v,exact,H,B,2,12,0
+112,56r,folio,56r,f56r,exact,H,A,1,19,0
+113,56v,folio,56v,f56v,exact,H,A,1,16,0
+114,57r,folio,57r,f57r,exact,H,B,5,11,0
+115,57v,folio,57v,f57v,exact,C,,1,0,0
+116,58r,folio,58r,f58r,exact,S,A,3,41,1
+117,58v,folio,58v,f58v,exact,S,A,3,39,1
+118,65r,folio,65r,f65r,exact,H,,3,0,0
+119,65v,folio,65v,f65v,exact,H,,3,6,0
+120,66r,folio,66r,f66r,exact,T,B,5,32,1
+121,66v,folio,66v,f66v,exact,H,B,5,13,0
+122,67r,folio,67r,f67r1;f67r2,multi_subfolio,,,,0,0
+123,67v,folio,67v,f67v2;f67v1,multi_subfolio,,,,0,0
+124,68r,folio,68r,f68r1;f68r2;f68r3,multi_subfolio,,,,0,0
+125,68v,folio,68v,f68v3;f68v2;f68v1,multi_subfolio,,,,0,0
+126,69r,folio,69r,f69r,exact,C,,4,4,0
+127,69v and 70r,multi,69v;70r,f69v;f70r1;f70r2,multi_folio,,,,0,0
+128,70v (part),part,70v,f70v2;f70v1,multi_folio,,,,0,0
+129,70v (part),part,70v,f70v2;f70v1,multi_folio,,,,0,0
+130,71r,folio,71r,f71r,exact,Z,,4,0,0
+131,71v and 72r,multi,71v;72r,f71v;f72r1;f72r2;f72r3,multi_folio,,,,0,0
+132,72v (part),part,72v,f72v3;f72v2;f72v1,multi_folio,,,,0,0
+133,72v (part),part,72v,f72v3;f72v2;f72v1,multi_folio,,,,0,0
+134,73r,folio,73r,f73r,exact,Z,,4,0,0
+135,73v,folio,73v,f73v,exact,Z,,4,0,0
+136,75r,folio,75r,f75r,exact,B,B,2,53,0
+137,75v,folio,75v,f75v,exact,B,B,2,37,0
+138,76r,folio,76r,f76r,exact,T,B,2,47,1
+139,76v,folio,76v,f76v,exact,B,B,2,41,0
+140,77r,folio,77r,f77r,exact,B,B,2,40,0
+141,77v,folio,77v,f77v,exact,B,B,2,37,0
+142,78r,folio,78r,f78r,exact,B,B,2,41,0
+143,78v,folio,78v,f78v,exact,B,B,2,32,0
+144,79r,folio,79r,f79r,exact,B,B,2,44,0
+145,79v,folio,79v,f79v,exact,B,B,2,42,0
+146,80r,folio,80r,f80r,exact,B,B,2,43,0
+147,80v,folio,80v,f80v,exact,B,B,2,44,0
+148,81r,folio,81r,f81r,exact,B,B,2,31,0
+149,81v,folio,81v,f81v,exact,B,B,2,27,0
+150,82r,folio,82r,f82r,exact,B,B,2,32,0
+151,82v,folio,82v,f82v,exact,B,B,2,34,0
+152,83r,folio,83r,f83r,exact,B,B,2,51,0
+153,83v,folio,83v,f83v,exact,B,B,2,31,0
+154,84r,folio,84r,f84r,exact,B,B,2,34,0
+155,84v,folio,84v,f84v,exact,B,B,2,51,0
+156,85r (part) (part of 85-86 foldout),foldout,85r,f85r1;f85r2,multi_folio,,,,0,0
+157,85r (part) 86v (part) (part of 85-86 foldout),foldout,85r;86v,f85r1;f85r2;f86v4;f86v6;f86v5;f86v3,multi_folio,,,,0,0
+158,86v (part) (part of 85-86 foldout),foldout,86v,f86v4;f86v6;f86v5;f86v3,multi_folio,,,,0,0
+159,85v and 86r (foldout),foldout,85v;86r,,no_transcription,,,,0,0
+160,87r,folio,87r,f87r,exact,H,A,1,16,0
+161,87v,folio,87v,f87v,exact,H,A,1,16,0
+162,88r,folio,88r,f88r,exact,P,A,1,16,0
+163,88v and 89r,multi,88v;89r,f88v;f89r1;f89r2,multi_folio,,,,0,0
+164,89v (part),part,89v,f89v2;f89v1,multi_folio,,,,0,0
+165,89v (part) and 90r,part,89v;90r,f89v2;f89v1;f90r1;f90r2,multi_folio,,,,0,0
+166,90r,folio,90r,f90r1;f90r2,multi_subfolio,,,,0,0
+167,90v (part),part,90v,f90v2;f90v1,multi_folio,,,,0,0
+168,93r,folio,93r,f93r,exact,H,A,1,32,0
+169,93v,folio,93v,f93v,exact,H,A,1,10,0
+170,94r,folio,94r,f94r,exact,H,B,3,9,0
+171,94v and 95r,multi,94v;95r,f94v;f95r1;f95r2,multi_folio,,,,0,0
+172,95v (part),part,95v,f95v2;f95v1,multi_folio,,,,0,0
+173,95v,folio,95v,f95v2;f95v1,multi_subfolio,,,,0,0
+174,96r,folio,96r,f96r,exact,H,A,1,13,0
+175,96v,folio,96v,f96v,exact,H,A,1,13,0
+176,99r,folio,99r,f99r,exact,P,A,1,18,0
+177,99v,folio,99v,f99v,exact,P,A,1,19,0
+178,100r,folio,100r,f100r,exact,P,A,1,10,0
+179,100v and 101r,multi,100v;101r,f100v;f101r,multi_folio,,,,0,0
+180,101v (part),part,101v,f101v,multi_folio,,,,0,0
+181,101v (part) and 102r,part,101v;102r,f101v;f102r1;f102r2,multi_folio,,,,0,0
+182,102v (part),part,102v,f102v2;f102v1,multi_folio,,,,0,0
+183,102v (part),part,102v,f102v2;f102v1,multi_folio,,,,0,0
+184,103r,folio,103r,f103r,exact,S,B,3,54,1
+185,103v,folio,103v,f103v,exact,S,B,3,46,1
+186,104r,folio,104r,f104r,exact,S,B,3,45,1
+187,104v,folio,104v,f104v,exact,S,B,3,44,1
+188,105r,folio,105r,f105r,exact,S,B,3,37,1
+189,105v,folio,105v,f105v,exact,S,B,3,38,1
+190,106r,folio,106r,f106r,exact,S,B,3,47,1
+191,106v,folio,106v,f106v,exact,S,B,3,47,1
+192,107r,folio,107r,f107r,exact,S,B,3,51,1
+193,107v,folio,107v,f107v,exact,S,B,3,49,1
+194,108r,folio,108r,f108r,exact,S,B,3,50,1
+195,108v,folio,108v,f108v,exact,S,B,3,53,1
+196,111r,folio,111r,f111r,exact,S,B,3,54,1
+197,111v,folio,111v,f111v,exact,S,B,3,51,1
+198,112r,folio,112r,f112r,exact,S,B,3,45,1
+199,112v,folio,112v,f112v,exact,S,B,3,47,1
+200,113r,folio,113r,f113r,exact,S,B,3,51,1
+201,113v,folio,113v,f113v,exact,S,B,3,49,1
+202,114r,folio,114r,f114r,exact,S,B,3,45,1
+203,114v,folio,114v,f114v,exact,S,B,3,41,1
+204,115r,folio,115r,f115r,exact,S,B,@,45,1
+205,115v,folio,115v,f115v,exact,S,B,3,45,1
+206,116r,folio,116r,f116r,exact,S,B,3,50,1
+207,116v,folio,116v,f116v,exact,T,,3,0,0
+208,[Back flyleaf recto],non_folio,,,non_folio,,,,0,0
+209,[Back flyleaf verso-inside back cover],non_folio,,,non_folio,,,,0,0
+210,[Head],non_folio,,,non_folio,,,,0,0
+211,[Tail],non_folio,,,non_folio,,,,0,0
+212,[Fore-edge],non_folio,,,non_folio,,,,0,0
+213,[Spine],non_folio,,,non_folio,,,,0,0
+214,[Back cover],non_folio,,,non_folio,,,,0,0
