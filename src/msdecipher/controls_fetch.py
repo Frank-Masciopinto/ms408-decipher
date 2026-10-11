@@ -1,7 +1,7 @@
 """Fetch public-domain / openly licensed control texts (NOT redistributed; only URLs + SHA256 are committed).
 
 The controls give the MS 408 statistics something to be compared with. Texts come from
-Project Gutenberg (public domain in the USA), Wikisource (Latin Vulgate 1598 and Arabic
+Project Gutenberg (public domain in the USA), Perseus Digital Library (Pliny, CC BY-SA 4.0), Wikisource (Latin Vulgate 1598 and Arabic
 Ibn Khaldun, wiki platform text CC BY-SA), Sefaria (Hebrew: ``Tanach with Text Only``,
 public domain; Maimonides' Mishneh Torah, ``Torat Emet 363``, public domain) and Tanzil
 (Quran, Simple Clean 1.1, CC BY 3.0 but *verbatim copies only, changing the text is not
@@ -28,6 +28,8 @@ USER_AGENT = "msdecipher/0.1 (research tool; +https://github.com/Frank-Masciopin
 WIKISOURCE_LA_API = "https://la.wikisource.org/w/api.php"
 WIKISOURCE_AR_API = "https://ar.wikisource.org/w/api.php"
 SEFARIA_API = "https://www.sefaria.org/api/v3/texts/"
+PERSEUS_PLINY_URL = ("https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/"
+                     "data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml")
 TANZIL_URL = "https://tanzil.net/pub/download/index.php?quranType=simple-clean&outType=txt-2&agree=true"
 
 
@@ -82,6 +84,38 @@ SOURCES = [
      "index_page": "مقدمة ابن خلدون - الجزء الأول", "link_prefix": "مقدمة ابن خلدون/",
      "lang": "Arabic", "desc": "Ibn Khaldun, al-Muqaddimah (14th c., medieval Arabic prose), Part 1 sub-pages in book order, via ar.wikisource.org",
      "licence": "text of a pre-modern work (public domain); Wikisource platform text CC BY-SA 4.0", "start_regex": None},
+    # ---- third pass: herbal / medical / encyclopaedic Latin, more Italian, German
+    {"id": "la_pliny_herbal", "file": "la_pliny_naturalis_historia_perseus.xml", "kind": "perseus",
+     "url": PERSEUS_PLINY_URL, "books": [20, 21, 22, 23, 24, 25, 26, 27], "topic": "herbal/medical", "max_windows": 4,
+     "lang": "Latin", "desc": "Pliny the Elder, Naturalis Historia books XX-XXVII (remedies from garden plants, flowers, field plants, trees; Mayhoff 1906, Perseus TEI XML; apparatus notes dropped)",
+     "licence": "Perseus Digital Library canonical-latinLit, CC BY-SA 4.0 (attribution: Perseus Project, Tufts University; ed. Mayhoff, Teubner 1906); the XML is git-ignored, only URL + SHA256 committed",
+     "start_regex": None},
+    {"id": "la_pliny_general", "file": "la_pliny_naturalis_historia_perseus.xml", "kind": "perseus",
+     "url": PERSEUS_PLINY_URL, "books": [7, 8, 9, 10, 11], "topic": "natural history (non-botanical)", "max_windows": 3,
+     "lang": "Latin", "desc": "Pliny the Elder, Naturalis Historia books VII-XI (man, land animals, aquatic animals, birds, insects; same edition/file as la_pliny_herbal)",
+     "licence": "Perseus Digital Library canonical-latinLit, CC BY-SA 4.0 (same file as la_pliny_herbal)", "start_regex": None, "shared_file": True},
+    {"id": "la_celsus", "file": "la_celsus_de_medicina.txt", "kind": "wikisource",
+     "pages": ["De medicina (Celsus)/" + r for r in ("I", "II", "III", "IV", "V", "VI", "VII", "VIII")], "topic": "medical", "max_windows": 3,
+     "lang": "Latin", "desc": "Celsus, De medicina books I-VIII (1st c. medical prose), via la.wikisource.org",
+     "licence": "ancient text (public domain); Wikisource platform text CC BY-SA 4.0", "start_regex": None},
+    {"id": "la_macer", "file": "la_macer_floridus.txt", "kind": "wikisource", "pages": ["De viribus herbarum"], "topic": "herbal",
+     "lang": "Latin", "desc": "Macer Floridus (Odo of Meung), De viribus herbarum (11th-c. medieval Latin hexameter herbal; Panckoucke ed.), via la.wikisource.org; only ~14k words, SMALLER than MS 408",
+     "licence": "medieval text (public domain); Wikisource platform text CC BY-SA 4.0", "start_regex": None},
+    {"id": "la_isidore", "file": "la_isidore_etymologiae.txt", "kind": "wikisource", "pages": ["Etymologiae (Isidorus)"], "topic": "encyclopaedic (medieval)", "max_windows": 3,
+     "lang": "Latin", "desc": "Isidore of Seville, Etymologiae (7th c. medieval Latin encyclopaedia), via la.wikisource.org",
+     "licence": "medieval text (public domain); Wikisource platform text CC BY-SA 4.0", "start_regex": r"^Domino meo, et Dei servo"},
+    {"id": "it_sidrach", "file": "pg44549.txt", "kind": "gutenberg", "pg": 44549, "max_windows": 2,
+     "lang": "Italian", "desc": "Il libro di Sidrach (14th-c. Italian prose encyclopaedia; Project Gutenberg #44549, Bartoli 1868 ed.)",
+     "licence": "Project Gutenberg, public domain in the USA",
+     "start_regex": r"^Questo è lo libro lo quale si chiama Sidracco"},
+    {"id": "it_ariosto", "file": "pg3747.txt", "kind": "gutenberg", "pg": 3747, "max_windows": 3,
+     "lang": "Italian", "desc": "Ariosto, Orlando furioso (Project Gutenberg #3747), 16th-c. verse",
+     "licence": "Project Gutenberg, public domain in the USA",
+     "start_regex": r"^CANTO PRIMO"},
+    {"id": "de_faust", "file": "pg2229.txt", "kind": "gutenberg", "pg": 2229,
+     "lang": "German", "desc": "Goethe, Faust I (Project Gutenberg #2229), verse; ~28k words, SMALLER than the target size",
+     "licence": "Project Gutenberg, public domain in the USA",
+     "start_regex": r"^Ihr naht euch wieder"},
 ]
 
 
@@ -169,6 +203,10 @@ def fetch_all(directory: Path | None = None, only: list[str] | None = None) -> d
         elif s["kind"] == "sefaria":
             url = SEFARIA_API + " (version=" + s["version"] + ") " + " | ".join(s["refs"])
             data = fetch_sefaria(s["refs"], s["version"])
+        elif s["kind"] == "perseus":
+            url = s["url"] + " (books " + ",".join(map(str, s["books"])) + ")"
+            f = d / s["file"]
+            data = f.read_bytes() if (s.get("shared_file") and f.exists()) else _get(s["url"]).content
         elif s["kind"] == "tanzil":
             url = TANZIL_URL
             data = _get(url).content

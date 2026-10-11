@@ -99,6 +99,94 @@
       "desc": "Ibn Khaldun, al-Muqaddimah (14th c., medieval Arabic prose), Part 1 sub-pages in book order, via ar.wikisource.org",
       "licence": "text of a pre-modern work (public domain); Wikisource platform text CC BY-SA 4.0",
       "fetched": "2026-10-11T14:30:58Z"
+    },
+    {
+      "id": "la_pliny_herbal",
+      "file": "la_pliny_naturalis_historia_perseus.xml",
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml (books 20,21,22,23,24,25,26,27)",
+      "bytes": 13243638,
+      "sha256": "113b3df1fa7efe9fbb337fac01aec07cee474ca533386c1b6f3332fd34251c37",
+      "lang": "Latin",
+      "desc": "Pliny the Elder, Naturalis Historia books XX-XXVII (remedies from garden plants, flowers, field plants, trees; Mayhoff 1906, Perseus TEI XML; apparatus notes dropped)",
+      "licence": "Perseus Digital Library canonical-latinLit, CC BY-SA 4.0 (attribution: Perseus Project, Tufts University; ed. Mayhoff, Teubner 1906); the XML is git-ignored, only URL + SHA256 committed",
+      "fetched": "2026-10-11T14:55:57Z"
+    },
+    {
+      "id": "la_pliny_general",
+      "file": "la_pliny_naturalis_historia_perseus.xml",
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml (books 7,8,9,10,11)",
+      "bytes": 13243638,
+      "sha256": "113b3df1fa7efe9fbb337fac01aec07cee474ca533386c1b6f3332fd34251c37",
+      "lang": "Latin",
+      "desc": "Pliny the Elder, Naturalis Historia books VII-XI (man, land animals, aquatic animals, birds, insects; same edition/file as la_pliny_herbal)",
+      "licence": "Perseus Digital Library canonical-latinLit, CC BY-SA 4.0 (same file as la_pliny_herbal)",
+      "fetched": "2026-10-11T14:55:57Z"
+    },
+    {
+      "id": "la_celsus",
+      "file": "la_celsus_de_medicina.txt",
+      "url": "https://la.wikisource.org/w/api.php (prop=revisions) De medicina (Celsus)/I | De medicina (Celsus)/II | De medicina (Celsus)/III | De medicina (Celsus)/IV | De medicina (Celsus)/V | De medicina (Celsus)/VI | De medicina (Celsus)/VII | De medicina (Celsus)/VIII",
+      "bytes": 750208,
+      "sha256": "0abc16bac2e786097c1af0f6b599a60beafd25433393e38ddde4af925fb1b883",
+      "lang": "Latin",
+      "desc": "Celsus, De medicina books I-VIII (1st c. medical prose), via la.wikisource.org",
+      "licence": "ancient text (public domain); Wikisource platform text CC BY-SA 4.0",
+      "fetched": "2026-10-11T14:55:59Z"
+    },
+    {
+      "id": "la_macer",
+      "file": "la_macer_floridus.txt",
+      "url": "https://la.wikisource.org/w/api.php (prop=revisions) De viribus herbarum",
+      "bytes": 107926,
+      "sha256": "41ca63622e4fbcc4f52c40d7c9261541c5b6d24ee59ebb2964ece69cee480e26",
+      "lang": "Latin",
+      "desc": "Macer Floridus (Odo of Meung), De viribus herbarum (11th-c. medieval Latin hexameter herbal; Panckoucke ed.), via la.wikisource.org; only ~14k words, SMALLER than MS 408",
+      "licence": "medieval text (public domain); Wikisource platform text CC BY-SA 4.0",
+      "fetched": "2026-10-11T14:55:59Z"
+    },
+    {
+      "id": "la_isidore",
+      "file": "la_isidore_etymologiae.txt",
+      "url": "https://la.wikisource.org/w/api.php (prop=revisions) Etymologiae (Isidorus)",
+      "bytes": 1019067,
+      "sha256": "f3b6d3a5e9b091b8c0c25a616bdb70e2b4d71f2c3b59c67240378a86e64de9e3",
+      "lang": "Latin",
+      "desc": "Isidore of Seville, Etymologiae (7th c. medieval Latin encyclopaedia), via la.wikisource.org",
+      "licence": "medieval text (public domain); Wikisource platform text CC BY-SA 4.0",
+      "fetched": "2026-10-11T14:56:00Z"
+    },
+    {
+      "id": "it_sidrach",
+      "file": "pg44549.txt",
+      "url": "https://www.gutenberg.org/cache/epub/44549/pg44549.txt",
+      "bytes": 908678,
+      "sha256": "25b8128f4954e29c8ce76536c3c9739ad383f28ad103888813d7958ffcfe65fc",
+      "lang": "Italian",
+      "desc": "Il libro di Sidrach (14th-c. Italian prose encyclopaedia; Project Gutenberg #44549, Bartoli 1868 ed.)",
+      "licence": "Project Gutenberg, public domain in the USA",
+      "fetched": "2026-10-11T14:56:00Z"
+    },
+    {
+      "id": "it_ariosto",
+      "file": "pg3747.txt",
+      "url": "https://www.gutenberg.org/cache/epub/3747/pg3747.txt",
+      "bytes": 1660661,
+      "sha256": "d87954ab7bdd5286104d0097476b0a8de589062afde02a0962fb61e121de359a",
+      "lang": "Italian",
+      "desc": "Ariosto, Orlando furioso (Project Gutenberg #3747), 16th-c. verse",
+      "licence": "Project Gutenberg, public domain in the USA",
+      "fetched": "2026-10-11T14:56:01Z"
+    },
+    {
+      "id": "de_faust",
+      "file": "pg2229.txt",
+      "url": "https://www.gutenberg.org/cache/epub/2229/pg2229.txt",
+      "bytes": 218440,
+      "sha256": "fed2a58edd6910ee96d27ada614d34bcc41f03750d86541c41246bb74c564ff7",
+      "lang": "German",
+      "desc": "Goethe, Faust I (Project Gutenberg #2229), verse; ~28k words, SMALLER than the target size",
+      "licence": "Project Gutenberg, public domain in the USA",
+      "fetched": "2026-10-11T14:56:01Z"
     }
   ]
 }

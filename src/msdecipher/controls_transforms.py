@@ -25,7 +25,7 @@ from collections import Counter
 from typing import Callable, Sequence
 
 LATIN_ALPHABET = "abcdefghijklmnopqrstuvwxyz"
-GREEK = "αβγδεζηθικλμνξοπρστυφχψω"   # 24 distinct symbols for code alphabets
+GREEK = "αβγδεζηθικλμνξοπρστυφχψω" + "бгджзилпфцшщэюя"   # 39 distinct symbols for code alphabets
 VOWELS = "aeiou"
 
 

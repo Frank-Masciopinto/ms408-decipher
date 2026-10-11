@@ -126,6 +126,37 @@ def transliterate(tokens: list[str], script: str) -> list[str]:
     return ["".join(table[c] for c in t) for t in tokens]
 
 
+_TEI = "{http://www.tei-c.org/ns/1.0}"
+
+
+def perseus_book_text(xml_bytes: bytes, books: list[int]) -> str:
+    """Plain text of the given books of a Perseus TEI edition (<div subtype="book" n=...>); apparatus
+    (<note>) elements are dropped, their tail text is kept."""
+    import io
+    import xml.etree.ElementTree as ET
+    root = ET.parse(io.BytesIO(xml_bytes)).getroot()
+    want = {str(b) for b in books}
+    found = {d.get("n"): d for d in root.iter(_TEI + "div") if d.get("subtype") == "book" and d.get("n") in want}
+
+    def text(el):
+        out = []
+        if el.tag != _TEI + "note":
+            out.append(el.text or "")
+            for ch in el:
+                out.append(text(ch))
+        out.append(el.tail or "")
+        return "".join(out)
+    parts = []
+    for b in books:
+        el = found.get(str(b))
+        if el is None:
+            continue
+        el = ET.fromstring(ET.tostring(el))      # detach (drop the tail of the book div itself)
+        el.tail = None
+        parts.append(text(el))
+    return "\n".join(parts)
+
+
 def source_by_id(cid: str) -> dict:
     for s in SOURCES:
         if s["id"] == cid:
@@ -133,16 +164,19 @@ def source_by_id(cid: str) -> dict:
     raise KeyError(cid)
 
 
-def load_tokens(cid: str, n_tokens: int = TARGET_TOKENS, directory: Path | None = None,
+def load_tokens(cid: str, n_tokens: int | None = TARGET_TOKENS, directory: Path | None = None,
                 variant: str = "main") -> list[str]:
-    """First ``n_tokens`` normalised tokens of control ``cid`` (fewer if the text is shorter).
+    """First ``n_tokens`` normalised tokens of control ``cid`` (fewer if the text is shorter; ``None`` = the whole text).
     ``variant="folded"`` only changes abjad texts (see module docstring)."""
     s = source_by_id(cid)
     p = (directory or controls_dir()) / s["file"]
     if not p.exists():
         raise FileNotFoundError(f"{p} not found; run `python -m msdecipher controls-fetch` first")
-    raw = p.read_text(encoding="utf-8", errors="replace")
+    raw = p.read_text(encoding="utf-8", errors="replace") if s["kind"] != "perseus" else ""
     script = s.get("script")
+    if s["kind"] == "perseus":
+        raw = perseus_book_text(p.read_bytes(), s["books"])
+        return normalise_word_text(raw, latin=True)[:n_tokens]
     if script:
         if s["kind"] == "tanzil":
             raw = "\n".join(l.split("|", 2)[2] for l in raw.splitlines() if l and not l.startswith("#") and l.count("|") >= 2)
@@ -161,3 +195,21 @@ def load_tokens(cid: str, n_tokens: int = TARGET_TOKENS, directory: Path | None 
             raw = raw[m.start():]
     toks = normalise_word_text(raw, latin=s["lang"] == "Latin")
     return toks[:n_tokens]
+
+
+def load_windows(cid: str, n_tokens: int = TARGET_TOKENS, max_windows: int | None = None,
+                 variant: str = "main", directory: Path | None = None,
+                 min_share: float = 0.8) -> list[list[str]]:
+    """Consecutive, NON-overlapping windows of ``n_tokens`` tokens from the start of the text
+    (size-matched samples). A trailing remainder shorter than ``min_share * n_tokens`` is dropped;
+    a text shorter than one window gives a single, shorter window (callers must flag it as
+    undersized). ``max_windows`` defaults to the source's ``max_windows`` entry (3 if absent)."""
+    s = source_by_id(cid)
+    mw = max_windows if max_windows is not None else s.get("max_windows", 3)
+    toks = load_tokens(cid, None, directory=directory, variant=variant)
+    out = []
+    for i in range(mw):
+        w = toks[i * n_tokens:(i + 1) * n_tokens]
+        if len(w) >= min_share * n_tokens or (i == 0 and w):
+            out.append(w)
+    return out
