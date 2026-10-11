@@ -18,7 +18,7 @@ A research framework for studying the undeciphered **Beinecke MS 408** ("Cipher 
 6. **Hypothesis testing.** Candidate languages and cipher families, cribs from plant and star labels, and falsification criteria.
 7. **Validation and reproducibility.**
 
-Detailed write-ups from the research pass will land in `docs/`.
+Start with [docs/WORKFLOW.md](docs/WORKFLOW.md) (14-stage pipeline), then [docs/PRIOR_WORK.md](docs/PRIOR_WORK.md) and [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md).
 
 ## Layout
 - `source/` the manuscript PDF (two halves)
