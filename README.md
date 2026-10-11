@@ -16,14 +16,15 @@ A research framework for studying the undeciphered **Beinecke MS 408** ("Cipher 
 |---|---|
 | 2 Transcription ingestion (download, IVTFF parser) | **Done** for IVTFF 2.0 EVA files (ZL 3b primary; IT 2a, RF 1b replication; GC 2a parse-only) |
 | 3a Glyph catalogue from a transcription | **Done** (`glyphs/`) |
-| 3b Glyph catalogue from the page images | **Not done.** Page rendering works; glyph segmentation is a stub ([docs/IMAGE_STAGE.md](docs/IMAGE_STAGE.md)) |
+| 1 PDF page → folio index | **Done** ([`data/page_index.csv`](data/page_index.csv); 177 of 214 pages map 1:1, fold-outs/multi-folio scans are flagged, not resolved) |
+| 3b Glyph catalogue from the page images | **Done, best effort** on 28 text-dominant pages ([docs/IMAGE_STAGE.md](docs/IMAGE_STAGE.md), [reports/image_stage/REPORT.md](reports/image_stage/REPORT.md)): lines found ±1 on 57% of pages, glyph candidates match the transcribed unit count for ~25% of words, image clusters agree only weakly with EVA units (NMI ≈ 0.16). Proxy metrics only, tuned on the same pages; no inventory size is supported by the images |
 | 4 Unit segmentation (configurable `ch`, `sh`, …) | **Done** (4 presets or any custom list; not data-driven BPE yet) |
 | 5 Basic statistics: Zipf, Heaps, H1/h2/h3, positional, Currier A/B | **Done**, no control corpora yet |
 | 6 Sukhotin vowel/consonant test (after segmentation) | **Done** (page-bootstrap stability); HMMs/slot grammars **not done** |
 | 10a Control corpora + transformations + null generators, same stats on all, comparison table | **Done (first pass)**: [docs/CONTROLS.md](docs/CONTROLS.md), `reports/controls/`. 5 control texts (Latin ×2, Italian ×2, MHG ×1), 12 transformations, 5 generators; not done: abjad natural text, herbal Latin, real Naibbe / Timm-Schinner code, CIs |
 | 1, 7–14 (folio index, word-class induction, cribs, nulls, candidate-plaintext attacks, validation gates) | **Not started** |
 
-Honest limits: control texts and simulated families now exist (stage 10a) but are few, small and simplified, so the numbers still cannot say whether the text is language, cipher or neither (see [docs/CONTROLS.md](docs/CONTROLS.md)); the glyph catalogue has not been checked against the images; samples are pooled over non-independent pages.
+Honest limits: control texts and simulated families now exist (stage 10a) but are few, small and simplified, so the numbers still cannot say whether the text is language, cipher or neither (see [docs/CONTROLS.md](docs/CONTROLS.md)); the glyph catalogue was compared with the images only on 28 text pages with proxy metrics (stage 3b); samples are pooled over non-independent pages.
 
 ## Install and run
 
@@ -31,8 +32,8 @@ Python ≥ 3.10, `poppler-utils` for the image step.
 
 ```bash
 python -m venv .venv && . .venv/bin/activate
-pip install -e ".[dev]"            # or: pip install -r requirements-dev.txt  (then run from repo root with PYTHONPATH=src)
-python -m pytest                   # 47 tests; real-data tests skip until the data is fetched
+pip install -e ".[dev,images]"     # [images] = opencv/scipy/scikit-image/scikit-learn for the image stage; or: pip install -r requirements-dev.txt  (then run from repo root with PYTHONPATH=src)
+python -m pytest                   # real-data tests skip until the data is fetched; image-stage tests skip without the [images] extra
 
 python -m msdecipher fetch         # voynich.nu IVTFF files -> data/transcriptions/ + SHA256 manifest
 python -m msdecipher verify        # check files against data/transcriptions/MANIFEST.json
@@ -41,7 +42,9 @@ python -m msdecipher catalog       # glyphs/catalog.csv, digraph_candidates.csv,
 python -m msdecipher run-all       # catalogue + statistics + plots + replication -> glyphs/, reports/  (~15 s)
 python -m msdecipher run-all --units ch,sh --uncertain-spaces join   # other segmentation / space policy
 python -m msdecipher images --dpi 100   # render PDF pages -> data/images/ (git-ignored; PDF page numbers)
-python -m msdecipher segment-glyphs     # NOT IMPLEMENTED (exits 2)
+python -m msdecipher images --native    # native-resolution scans (pdfimages) -> data/images/native/ (git-ignored)
+python -m msdecipher page-index         # PDF page -> folio index -> data/page_index.csv
+python -m msdecipher segment-glyphs     # lines/words/glyph candidates + clustering + QA -> reports/image_stage/ (~1 min; needs  pip install -e ".[images]")
 python -m msdecipher controls-fetch     # Latin/Italian/MHG control texts -> data/controls/ (git-ignored) + MANIFEST.json
 python -m msdecipher controls-verify    # SHA256 check
 python -m msdecipher controls-run       # stats on MS 408 + all controls/nulls -> reports/controls/ (~2 min; --tokens, --seeds)
@@ -59,7 +62,7 @@ python -m msdecipher controls-run       # stats on MS 408 + all controls/nulls -
 The voynich.nu transliteration files state no open licence, so they are **not committed**; only `data/transcriptions/MANIFEST.json` (URLs + SHA256) and the fetch script are. See [data/transcriptions/README.md](data/transcriptions/README.md).
 
 ## Package layout (`src/msdecipher/`)
-`fetch.py` download + manifest · `ivtff.py` IVTFF parser (folio, locus, hand, section, tokens, comments, alternative readings, uncertain spaces, ligatures, rare codes) · `segment.py` unit segmentation · `glyphs.py` catalogue · `stats.py` entropy / Zipf / Heaps / Sukhotin / JSD · `analysis.py` pipeline and Markdown · `plots.py` · `images.py` page rendering · `controls_fetch.py` / `controls_text.py` / `controls_transforms.py` / `controls_metrics.py` / `controls_run.py` / `controls_plots.py` control stage · `glyph_segmentation.py` stub · `cli.py`
+`fetch.py` download + manifest · `ivtff.py` IVTFF parser (folio, locus, hand, section, tokens, comments, alternative readings, uncertain spaces, ligatures, rare codes) · `segment.py` unit segmentation · `glyphs.py` catalogue · `stats.py` entropy / Zipf / Heaps / Sukhotin / JSD · `analysis.py` pipeline and Markdown · `plots.py` · `images.py` page rendering / native scan extraction · `pageindex.py` PDF page→folio index · `imgproc.py` / `glyph_stage.py` / `image_report.py` image glyph stage · `controls_fetch.py` / `controls_text.py` / `controls_transforms.py` / `controls_metrics.py` / `controls_run.py` / `controls_plots.py` control stage · `cli.py`
 
 ## Layout
 - `source/` the manuscript PDF (two halves)
@@ -71,4 +74,4 @@ The voynich.nu transliteration files state no open licence, so they are **not co
 - `docs/` workflow, prior work, data sources, stats note, image-stage status
 
 ## Planned next
-More controls (Hebrew/Arabic abjad text, herbal Latin, Occitan/Old French/Czech; the real Naibbe and Timm-Schinner generators), group-level units for verbose ciphers, quire-level confidence intervals, BPE/data-driven units, the PDF-page→folio index and image glyph segmentation, then the later stages of [docs/WORKFLOW.md](docs/WORKFLOW.md). Background: [docs/PRIOR_WORK.md](docs/PRIOR_WORK.md), [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md).
+More controls (Hebrew/Arabic abjad text, herbal Latin, Occitan/Old French/Czech; the real Naibbe and Timm-Schinner generators), group-level units for verbose ciphers, quire-level confidence intervals, BPE/data-driven units, a held-out evaluation and higher-resolution scans for the image stage (herbal pages, per-hand comparison), then the later stages of [docs/WORKFLOW.md](docs/WORKFLOW.md). Background: [docs/PRIOR_WORK.md](docs/PRIOR_WORK.md), [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md).
