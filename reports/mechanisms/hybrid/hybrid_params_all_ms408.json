@@ -1,0 +1,34 @@
+{
+ "A1 Naibbe tokens + copy-modify": {
+  "p_copy": 0.22098981996590508,
+  "window": 34,
+  "p_prev": 0.10230701285637386,
+  "p_exact": 0.12634244481505683,
+  "p_suffix": 0.7270321610690159,
+  "p_prefix": 0.02787792354173393
+ },
+ "A2 whole-word codebook + copy-modify": {
+  "p_copy": 0.05414351967591095,
+  "window": 7,
+  "p_prev": 0.9494944193476151,
+  "p_exact": 0.07392309051983409,
+  "p_suffix": 0.34597860575772676,
+  "p_prefix": 0.23566291143162338
+ },
+ "B reverse: copy-modify base, plaintext-driven edits": {
+  "p_copy": 0.6,
+  "window": 21,
+  "p_prev": 0.0,
+  "p_exact": 0.35574447204481396,
+  "p_suffix": 0.11790509535853955,
+  "p_prefix": 0.5263504325966464
+ },
+ "C0 control: grammar innovations + copy-modify (no plaintext)": {
+  "p_copy": 0.027279234273523745,
+  "window": 7,
+  "p_prev": 0.9005703848106154,
+  "p_exact": 0.2054254176237172,
+  "p_suffix": 0.34597860575772676,
+  "p_prefix": 0.23566291143162338
+ }
+}
