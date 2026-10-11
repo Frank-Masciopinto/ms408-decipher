@@ -12,9 +12,8 @@ language.
   reported side by side).
 * **Language-like numbers are weak evidence.** Zipf-like rank–frequency, a Heaps exponent below 1,
   low conditional entropy and a clean vowel/consonant split have been reproduced by meaningless text
-  generators, hand-made gibberish and some ciphers (see `PRIOR_WORK.md`). No control corpora (Latin,
-  Italian, Hebrew, shuffled text, cipher or gibberish generators) have been run yet, so these numbers
-  cannot currently discriminate between hypotheses. That is Stages 5/10 of `WORKFLOW.md`.
+  generators, hand-made gibberish and some ciphers (see `PRIOR_WORK.md`). On their own these numbers cannot discriminate between hypotheses; the control corpora
+  and generators are in `CONTROLS.md` / `reports/controls/` (stage 10a), and the overall picture is in `../FINDINGS.md`.
 * **Sukhotin's algorithm** only proposes which units behave like "vowels" *distributionally*. It is run
   after segmentation (raw EVA calls `h` a vowel purely because `ch`/`sh` are split) and its labels are
   reported with page-bootstrap stability. Treat the labels as hypotheses; nothing is claimed about
