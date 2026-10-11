@@ -489,3 +489,46 @@ def calendar_tests(M: np.ndarray, n_perm: int = 20000, seed: int = 0) -> dict:
             "partial_circular_given_folio_order": obs[1], "p_partial": float((1 + (null[:, 1] >= obs[1]).sum()) / (1 + n_perm)),
             "adjacent_minus_distant": obs[2], "p_adjacent_minus_distant": float((1 + (null[:, 2] >= obs[2]).sum()) / (1 + n_perm)),
             "spearman_folio_order_drift": float(lin), "p_folio_order": float((1 + (np.array(lnull) >= lin).sum()) / (1 + len(lnull))), "n_pairs": len(pairs)}
+
+
+# ================================================================== zodiac as one more 'section': fit on half of the zodiac pages, test on the other half
+
+def zodiac_cv(zm: ZodiacModels, ring: dict, lab: dict, n_seeds: int = 10, S: int = 50) -> pd.DataFrame:
+    odd, even = PAGES[0::2], PAGES[1::2]
+    rows = []
+    for fold, (train, test) in enumerate(((odd, even), (even, odd))):
+        rt = [w for p in train for w in ring[p]]
+        lt = [w for p in train for w in lab[p]]
+        base = {**zm.gm_all.params, "p_pool": 0.2}
+        g_one, _ = L.fit_group(zm.sh, rt + lt, S, True, L.PARAMS, base, seed=fold)
+        g_r, _ = L.fit_group(zm.sh, rt, S, True, L.PARAMS, base, seed=fold)
+        g_l, _ = L.fit_group(zm.sh, lt, S, True, L.PARAMS, base, seed=fold)
+        gens = {
+            "C0g (fit on non-zodiac)": ({"__all__": zm.gm_all}, lambda k: "__all__", 0),
+            "SV per-section, group cosmo-astro (fit on non-zodiac)": (zm.sec_models, lambda k: "cosmo-astro", 0),
+            f"SV zodiac group (ring+labels pooled), fit on {len(train)} zodiac pages": ({"z": g_one, "__all__": zm.gm_all}, lambda k: "z", 3 * S + 7 + zm.sh.n_units),
+            f"SV zodiac ring group + zodiac label group, fit on {len(train)} zodiac pages": ({"zr": g_r, "zl": g_l, "__all__": zm.gm_all}, lambda k: "zr" if k == "ring" else "zl", 2 * (2 * S + 7 + zm.sh.n_units)),
+        }
+        rr = {p: ring[p] for p in test}
+        ll = {p: lab[p] for p in test}
+        real = zodiac_stats(rr, ll, zm.rest.words, zm.rest.types, zm.rest.units, zm.rest.counter, test)
+        jk = [zodiac_stats(rr, ll, zm.rest.words, zm.rest.types, zm.rest.units, zm.rest.counter, [q for q in test if q != p]) for p in test]
+        se = {k: CI.jackknife_se([j[k] for j in jk]) for k in real}
+        steps = [(k, p, n) for p in test for k, n in (("ring", len(ring[p])), ("lab", len(lab[p])))]
+        for name, (models, grp, kparams) in gens.items():
+            runs = []
+            for s in range(1, n_seeds + 1):
+                specs = [{"group": grp("ring" if k == "ring" else "lab"), "n": n, "page": p} for k, p, n in steps]
+                flat = [w for part in L.sv_generate(specs, models, zm.sh, 100 * fold + s) for w in part]
+                i = 0
+                gr, gl = {}, {}
+                for p in test:
+                    gr[p] = flat[i:i + len(ring[p])]
+                    i += len(ring[p])
+                    gl[p] = flat[i:i + len(lab[p])]
+                    i += len(lab[p])
+                runs.append(zodiac_stats(gr, gl, zm.rest.words, zm.rest.types, zm.rest.units, zm.rest.counter, test))
+            for k in real:
+                v = CI.interval_verdict(real[k], se[k], [r[k] for r in runs])
+                rows.append({"fold": fold, "test_pages": " ".join(test), "generator": name, "k_zodiac_params": kparams, "stat": k, "zodiac": real[k], "se": se[k], **v})
+    return pd.DataFrame(rows)

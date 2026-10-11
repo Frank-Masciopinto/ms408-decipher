@@ -1,0 +1,23 @@
+stat,label,zodiac,se_page_jackknife,nonzodiac_window_null_mean,nonzodiac_window_null_sd
+zod_js_vs_rest,zodiac vs rest-of-MS word JS (bits),0.5782418078203378,0.01230110419495806,0.34395857443255734,0.014093732244225712
+zod_oov_share,zodiac tokens absent from non-zodiac text,0.2826771653543307,0.014758519712229919,0.0,0.0
+zod_unit_js_vs_rest,zodiac vs rest unit JS (bits),0.03284907581026709,0.003255355034253915,0.0037520102880495253,0.0013577454005201763
+ring_label_unit_js,ring vs label unit JS (bits),0.02286297676470363,0.008745216691235356,,
+ring_label_word_js,ring vs label word JS (bits),0.7245977931874025,0.031083507761652487,,
+label_o_initial,label o-initial share,0.6726190476190477,0.03235462561876265,,
+ring_o_initial,ring o-initial share,0.4068522483940043,0.01718293701223151,,
+label_q_share,labels containing q,0.002976190476190476,0.002981475393683929,,
+ring_q_share,ring tokens containing q,0.014989293361884369,0.006735814353543426,,
+rep_ring,ring: within-page repeated-token share,0.23018899798178702,0.01879840951874825,,
+rep_label,labels: within-page repeated share,0.08379387948812912,0.017728952051297965,,
+label_hapax_types,label hapax share of types,0.8492647058823529,0.021513321990294074,,
+label_page_once,label words occurring once on their page,0.9162061205118709,0.017728952051297972,,
+label_len_mean,label length mean (units),5.413690476190476,0.12422404525390822,,
+label_len_sd,label length SD (units),1.636176786176721,0.12412906061551222,,
+ring_len_mean,ring word length mean (units),4.782655246252677,0.07411616684744578,,
+jaccard_ring,page-to-page type Jaccard (ring),0.0877313788487585,0.008854406075796288,,
+jaccard_label,page-to-page type Jaccard (labels),0.019697553474530026,0.0064320797064262684,,
+cos_ring,page-to-page unit-bigram cosine (ring),0.8761573181982756,0.017277714867343363,,
+cos_label,page-to-page unit-bigram cosine (labels),0.7433907099159254,0.023785050695574683,,
+ring_ttr,ring type/token ratio,0.5749464668094219,0.018725966933769243,,
+ring_adj_edit1,ring adjacent edit-1 rate,0.03579175704989154,0.0053709270188774345,,

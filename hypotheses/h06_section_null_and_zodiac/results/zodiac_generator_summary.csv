@@ -1,0 +1,9 @@
+generator,n_reproduced_of_22,n_above,n_below,rms_z_clipped20,median_abs_z
+A1 cipher + copy-modify (Isidore plaintext),12,6,4,4.42307983529534,2.1043665581279005
+A2 codebook + copy-modify (Isidore plaintext),10,5,7,5.453184970945188,3.006008198580373
+"Naibbe cipher (Isidore plaintext, no copying)",10,7,5,4.8763623309442,2.7495748898605967
+"C0g no plaintext, global (copy-modify)",9,10,3,4.984820431889009,2.657644514182188
+"SV no plaintext, per-section EUP50 (group cosmo-astro)",11,8,3,4.760715059100488,2.2389094560271894
+SV + label mode (labels group fitted on non-zodiac labels),13,6,3,4.347318895610779,1.1145188711432652
+"Self-citation (Java, fitted)",7,9,6,4.715533745735689,3.028526146187361
+i.i.d. words of non-zodiac cosmo-astro folios (memorised vocabulary),8,10,4,6.75443751483068,3.221153578261513

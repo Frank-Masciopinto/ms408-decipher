@@ -1,0 +1,23 @@
+label,zodiac (± page-jackknife SE),A1 cipher + copy-modify (Isidore plaintext),A2 codebook + copy-modify (Isidore plaintext),"C0g no plaintext, global (copy-modify)","Naibbe cipher (Isidore plaintext, no copying)",SV + label mode (labels group fitted on non-zodiac labels),"SV no plaintext, per-section EUP50 (group cosmo-astro)","Self-citation (Java, fitted)",i.i.d. words of non-zodiac cosmo-astro folios (memorised vocabulary)
+label hapax share of types,0.849 ± 0.022,0.838 ≈,0.832 ≈,0.833 ≈,0.817 ≈,0.840 ≈,0.814 ≈,0.697 ↑,0.716 ↑
+label length SD (units),1.636 ± 0.124,1.516 ≈,1.534 ≈,1.444 ≈,1.543 ≈,1.536 ≈,1.483 ≈,1.238 ↑,1.633 ≈
+label length mean (units),5.414 ± 0.124,4.803 ↑,5.609 ≈,4.466 ↑,4.834 ↑,4.141 ↑,4.289 ↑,4.328 ↑,4.522 ↑
+label o-initial share,0.673 ± 0.032,0.234 ↑,0.191 ↑,0.215 ↑,0.238 ↑,0.327 ↑,0.209 ↑,0.166 ↑,0.224 ↑
+label words occurring once on their page,0.916 ± 0.018,0.906 ≈,0.822 ≈,0.932 ≈,0.903 ≈,0.927 ≈,0.896 ≈,0.792 ↑,0.881 ≈
+labels containing q,0.003 ± 0.003,0.169 ↓,0.110 ↓,0.144 ↓,0.171 ↓,0.037 ↓,0.100 ↓,0.083 ↓,0.105 ↓
+labels: within-page repeated share,0.084 ± 0.018,0.094 ≈,0.178 ≈,0.068 ≈,0.097 ≈,0.073 ≈,0.104 ≈,0.208 ↓,0.119 ≈
+page-to-page type Jaccard (labels),0.020 ± 0.006,0.033 ≈,0.043 ↓,0.029 ≈,0.051 ↓,0.027 ≈,0.045 ↓,0.069 ↓,0.054 ↓
+page-to-page type Jaccard (ring),0.088 ± 0.009,0.066 ≈,0.061 ↑,0.065 ↑,0.091 ≈,0.091 ≈,0.094 ≈,0.129 ≈,0.113 ↓
+page-to-page unit-bigram cosine (labels),0.743 ± 0.024,0.770 ≈,0.710 ≈,0.784 ≈,0.816 ↓,0.736 ≈,0.786 ≈,0.749 ≈,0.786 ≈
+page-to-page unit-bigram cosine (ring),0.876 ± 0.017,0.891 ≈,0.864 ≈,0.913 ≈,0.926 ↓,0.901 ≈,0.906 ≈,0.843 ≈,0.911 ≈
+ring adjacent edit-1 rate,0.036 ± 0.005,0.037 ≈,0.048 ≈,0.044 ≈,0.014 ↑,0.034 ≈,0.032 ≈,0.063 ≈,0.023 ≈
+ring o-initial share,0.407 ± 0.017,0.246 ↑,0.186 ↑,0.218 ↑,0.249 ↑,0.204 ↑,0.203 ↑,0.165 ↑,0.216 ↑
+ring tokens containing q,0.015 ± 0.007,0.175 ↓,0.112 ↓,0.149 ↓,0.173 ↓,0.099 ↓,0.099 ↓,0.095 ↓,0.107 ↓
+ring type/token ratio,0.575 ± 0.019,0.636 ↓,0.608 ≈,0.642 ↓,0.580 ≈,0.573 ≈,0.574 ≈,0.381 ↑,0.429 ↑
+ring vs label unit JS (bits),0.023 ± 0.009,0.003 ≈,0.006 ≈,0.005 ≈,0.003 ≈,0.046 ↓,0.005 ≈,0.004 ≈,0.005 ≈
+ring vs label word JS (bits),0.725 ± 0.031,0.625 ↑,0.598 ↑,0.631 ↑,0.562 ↑,0.703 ≈,0.562 ↑,0.372 ↑,0.397 ↑
+ring word length mean (units),4.783 ± 0.074,4.828 ≈,5.599 ↓,4.452 ↑,4.843 ≈,4.278 ↑,4.275 ↑,4.353 ↑,4.500 ↑
+ring: within-page repeated-token share,0.230 ± 0.019,0.213 ≈,0.292 ↓,0.155 ↑,0.200 ≈,0.226 ≈,0.218 ≈,0.426 ↓,0.245 ≈
+zodiac tokens absent from non-zodiac text,0.283 ± 0.015,0.350 ↓,0.660 ↓,0.229 ↑,0.275 ≈,0.242 ≈,0.214 ↑,0.353 ≈,0.000 ↑
+zodiac vs rest unit JS (bits),0.033 ± 0.003,0.007 ↑,0.015 ↑,0.002 ↑,0.007 ↑,0.010 ↑,0.009 ↑,0.074 ≈,0.007 ↑
+zodiac vs rest-of-MS word JS (bits),0.578 ± 0.012,0.545 ↑,0.863 ↓,0.465 ↑,0.507 ↑,0.470 ↑,0.455 ↑,0.705 ↓,0.480 ↑

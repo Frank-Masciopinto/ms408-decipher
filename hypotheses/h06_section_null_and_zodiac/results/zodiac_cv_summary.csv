@@ -1,0 +1,5 @@
+generator,k_zodiac_params,n_reproduced_mean_of_22_per_half,rms_z_clipped20
+C0g (fit on non-zodiac),0,12.5,3.7082162166737573
+"SV per-section, group cosmo-astro (fit on non-zodiac)",0,11.5,3.887526961171813
+"SV zodiac group (ring+labels pooled), fit on 6 zodiac pages",258,14.5,2.4685176653288523
+"SV zodiac ring group + zodiac label group, fit on 6 zodiac pages",416,15.0,2.2812909889551167
