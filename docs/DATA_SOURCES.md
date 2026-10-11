@@ -70,4 +70,4 @@ data/raw/RF1b-e.txt   https://www.voynich.nu/data/RF1b-e.txt   sha256:<fill>
 data/raw/000_README.txt https://www.voynich.nu/data/000_README.txt
 data/raw/ivtt.c       https://www.voynich.nu/software/ivtt/ivtt.c
 ```
-Download with `curl -L` (plain `curl`; one test with a browser-style User-Agent header was refused with HTTP 406 by voynich.nu, so do not spoof a UA).
+Download with `python -m msdecipher fetch` (checksums in `data/transcriptions/MANIFEST.json`; the files themselves are git-ignored, see `data/transcriptions/README.md`). Plain `curl -L` also works. voynich.nu answers HTTP 406 to browser-spoofing User-Agents and (observed 11 Oct 2026) to the stock `python-requests` and `Python-urllib` ones, but accepts curl's default and an honest descriptive User-Agent, which is what the fetcher sends.
