@@ -5,6 +5,14 @@ statistic: lower-case; diacritics removed (NFKD); ligatures expanded (æ->ae, œ
 Latin ``j->i`` and ``v->u`` (classical convention); apostrophes split words (Italian elisions);
 only ``a-z`` kept; whitespace-delimited tokens. Digits, verse numbers, footnote brackets,
 Gutenberg boilerplate and wiki markup are removed first.
+
+Abjad texts (Hebrew, Arabic; ``script`` in the source table) use :func:`normalise_abjad_text`:
+points/vowel signs/cantillation/tatweel are removed, only consonant letters are kept, and **every
+letter stays one native Unicode code point = one unit** (so the single-character segmenter of
+:mod:`controls_metrics` applies unchanged; a 1-to-1 Latin transliteration would give identical
+numbers, which a test checks). Variants (``variant="folded"``): Hebrew final forms
+(ך ם ן ף ץ) folded into the medial letters; Arabic hamza-carriers / alif maqsura / ta marbuta folded
+into a reduced alphabet. See docs/CONTROLS.md.
 """
 from __future__ import annotations
 
@@ -51,6 +59,73 @@ def normalise_word_text(text: str, latin: bool = False) -> list[str]:
     return text.split()
 
 
+# ----------------------------------------------------------------------------- abjad texts
+
+_HEB_MARKS = re.compile("[\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7]")   # cantillation, niqqud, points (maqaf/paseq/sof pasuq handled apart)
+_HEB_FINAL = str.maketrans("ךםןףץ", "כמנפצ")
+_HEB_KEEP = re.compile("[^\u05D0-\u05EA]+")
+_AR_MARKS = re.compile("[\u064B-\u065F\u0670\u0640\u06D6-\u06ED\u08D3-\u08FF\u200c-\u200f\u0610-\u061A]")
+_AR_PERSIAN = str.maketrans({"ک": "ك", "ی": "ي", "ە": "ه", "ۀ": "ه", "ہ": "ه"})
+_AR_ALEF = str.maketrans({"أ": "ا", "إ": "ا", "آ": "ا", "ٱ": "ا"})
+_AR_REDUCE = str.maketrans({"ى": "ي", "ة": "ه", "ؤ": "و", "ئ": "ي", "ء": None})
+_AR_KEEP = re.compile("[^\u0621-\u064A]+")
+
+# 1-to-1 single-character Latin transliterations (Hebrew: ad hoc; Arabic: Buckwalter). Metrics are
+# label-free, so using these instead of native code points cannot change any number (tested).
+HEBREW_TRANSLIT = {"א": "a", "ב": "b", "ג": "g", "ד": "d", "ה": "h", "ו": "w", "ז": "z", "ח": "H", "ט": "T",
+                   "י": "y", "כ": "k", "ך": "K", "ל": "l", "מ": "m", "ם": "M", "נ": "n", "ן": "N", "ס": "s",
+                   "ע": "e", "פ": "p", "ף": "P", "צ": "c", "ץ": "C", "ק": "q", "ר": "r", "ש": "S", "ת": "t"}
+ARABIC_TRANSLIT = {"ء": "'", "ا": "A", "ب": "b", "ة": "p", "ت": "t", "ث": "v", "ج": "j", "ح": "H", "خ": "x",
+                   "د": "d", "ذ": "*", "ر": "r", "ز": "z", "س": "s", "ش": "$", "ص": "S", "ض": "D", "ط": "T",
+                   "ظ": "Z", "ع": "E", "غ": "g", "ف": "f", "ق": "q", "ك": "k", "ل": "l", "م": "m", "ن": "n",
+                   "ه": "h", "و": "w", "ى": "Y", "ي": "y", "ؤ": "&", "ئ": "}"}
+
+
+def strip_html(raw: str) -> str:
+    """Remove HTML tags; contents of <small> (Sefaria scripture citations), <sup> and footnote <i> are dropped."""
+    raw = re.sub(r"<small>.*?</small>|<sup[^>]*>.*?</sup>|<i class=\"footnote\">.*?</i>", " ", raw, flags=re.S)
+    raw = re.sub(r"<[^>]+>|&[a-z]+;|&#\d+;", " ", raw)
+    return raw
+
+
+def clean_wikitext_ar(raw: str) -> str:
+    for _ in range(6):                                   # nested templates
+        new = re.sub(r"\{\{[^{}]*\}\}", " ", raw)
+        if new == raw:
+            break
+        raw = new
+    raw = re.sub(r"\[\[(?:تصنيف|Category|[a-z]{2,3}):[^\]]*\]\]", " ", raw)
+    raw = re.sub(r"\{\|.*?\|\}", " ", raw, flags=re.S)
+    return clean_wikitext(raw)
+
+
+def normalise_abjad_text(text: str, script: str, variant: str = "main") -> list[str]:
+    """Tokens of a Hebrew or Arabic text: consonant letters only, one native code point per unit."""
+    text = text.lower()
+    if script == "hebrew":
+        text = re.sub(r"\[[^\]]*\]|\{[^}]*\}", " ", text)           # {פ} {ס} paragraph marks, editorial brackets
+        text = text.replace("\u05be", " ")                            # maqaf: hyphen-like joiner -> word boundary
+        text = _HEB_MARKS.sub("", text)
+        text = _HEB_KEEP.sub(lambda m: " ", text)
+        if variant == "folded":
+            text = text.translate(_HEB_FINAL)
+    elif script == "arabic":
+        text = re.sub(r"\[[^\]]*\]|\{[^}]*\}", " ", text)
+        text = _AR_MARKS.sub("", text).translate(_AR_PERSIAN).translate(_AR_ALEF)
+        if variant == "folded":
+            text = text.translate(_AR_REDUCE)
+        text = _AR_KEEP.sub(" ", text)
+    else:
+        raise ValueError(script)
+    return text.split()
+
+
+def transliterate(tokens: list[str], script: str) -> list[str]:
+    """1-to-1 Latin (single-character) transliteration; raises KeyError on an unmapped letter."""
+    table = HEBREW_TRANSLIT if script == "hebrew" else ARABIC_TRANSLIT
+    return ["".join(table[c] for c in t) for t in tokens]
+
+
 def source_by_id(cid: str) -> dict:
     for s in SOURCES:
         if s["id"] == cid:
@@ -58,13 +133,24 @@ def source_by_id(cid: str) -> dict:
     raise KeyError(cid)
 
 
-def load_tokens(cid: str, n_tokens: int = TARGET_TOKENS, directory: Path | None = None) -> list[str]:
-    """First ``n_tokens`` normalised tokens of control ``cid`` (fewer if the text is shorter)."""
+def load_tokens(cid: str, n_tokens: int = TARGET_TOKENS, directory: Path | None = None,
+                variant: str = "main") -> list[str]:
+    """First ``n_tokens`` normalised tokens of control ``cid`` (fewer if the text is shorter).
+    ``variant="folded"`` only changes abjad texts (see module docstring)."""
     s = source_by_id(cid)
     p = (directory or controls_dir()) / s["file"]
     if not p.exists():
         raise FileNotFoundError(f"{p} not found; run `python -m msdecipher controls-fetch` first")
     raw = p.read_text(encoding="utf-8", errors="replace")
+    script = s.get("script")
+    if script:
+        if s["kind"] == "tanzil":
+            raw = "\n".join(l.split("|", 2)[2] for l in raw.splitlines() if l and not l.startswith("#") and l.count("|") >= 2)
+        elif s["kind"] == "wikisource_ar":
+            raw = clean_wikitext_ar(raw)
+        else:
+            raw = strip_html(raw)
+        return normalise_abjad_text(raw, script, variant)[:n_tokens]
     if s["kind"] == "gutenberg":
         raw = strip_gutenberg(raw)
     else:

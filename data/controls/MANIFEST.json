@@ -55,6 +55,50 @@
       "desc": "Walther von der Vogelweide, Gedichte und Sprüche in Auswahl (PG #35795); only ~12k words, SMALLER than MS 408",
       "licence": "Project Gutenberg, public domain in the USA",
       "fetched": "2026-10-11T14:13:19Z"
+    },
+    {
+      "id": "he_tanakh",
+      "file": "he_tanakh_genesis_exodus.txt",
+      "url": "https://www.sefaria.org/api/v3/texts/ (version=hebrew|Tanach with Text Only) Genesis | Exodus",
+      "bytes": 320892,
+      "sha256": "b9ba202434f9c2624f8822757b553de5ad3b2cb9bca5547020374be7f3ca78cf",
+      "lang": "Hebrew",
+      "desc": "Hebrew Bible, Genesis + Exodus (Sefaria version 'Tanach with Text Only', consonantal, no niqqud/cantillation)",
+      "licence": "Sefaria lists this version as Public Domain",
+      "fetched": "2026-10-11T14:30:52Z"
+    },
+    {
+      "id": "he_mishneh_torah",
+      "file": "he_mishneh_torah_madda.txt",
+      "url": "https://www.sefaria.org/api/v3/texts/ (version=hebrew|Torat Emet 363) Mishneh Torah, Foundations of the Torah | Mishneh Torah, Human Dispositions | Mishneh Torah, Torah Study | Mishneh Torah, Foreign Worship and Customs of the Nations | Mishneh Torah, Repentance | Mishneh Torah, Sabbath",
+      "bytes": 1119276,
+      "sha256": "acd7b03505fc0e9fcbeabb36220e1d81e8ea2df8466a1968d7b90c08f66954a1",
+      "lang": "Hebrew",
+      "desc": "Maimonides, Mishneh Torah (12th c., medieval rabbinic Hebrew prose; Sefaria 'Torat Emet 363', vocalised, vowels stripped on load), 5 Sefer Madda' books + Sabbath",
+      "licence": "Sefaria lists this version as Public Domain",
+      "fetched": "2026-10-11T14:30:55Z"
+    },
+    {
+      "id": "ar_quran",
+      "file": "ar_quran_tanzil_simple_clean.txt",
+      "url": "https://tanzil.net/pub/download/index.php?quranType=simple-clean&outType=txt-2&agree=true",
+      "bytes": 781176,
+      "sha256": "228df2a717671aeb9d2ff573002bd28d6b3f973f4bc7153554e3a81663d67610",
+      "lang": "Arabic",
+      "desc": "Quran, Tanzil 'Simple Clean' v1.1 (Classical Arabic, rhymed prose, 78k words; first 35k tokens used)",
+      "licence": "Tanzil, CC BY 3.0 with 'verbatim copies only, changing the text is not allowed': only the fetch URL and SHA256 are committed, no copy of the text and no derived text file",
+      "fetched": "2026-10-11T14:30:55Z"
+    },
+    {
+      "id": "ar_muqaddimah",
+      "file": "ar_ibn_khaldun_muqaddimah_part1.txt",
+      "url": "https://ar.wikisource.org/w/api.php (prop=revisions) sub-pages linked from مقدمة ابن خلدون - الجزء الأول",
+      "bytes": 414821,
+      "sha256": "83b355c546c90e1f999fdc7d5d2a324f047e5ac1c3e7f43f2441f216fcc8405e",
+      "lang": "Arabic",
+      "desc": "Ibn Khaldun, al-Muqaddimah (14th c., medieval Arabic prose), Part 1 sub-pages in book order, via ar.wikisource.org",
+      "licence": "text of a pre-modern work (public domain); Wikisource platform text CC BY-SA 4.0",
+      "fetched": "2026-10-11T14:30:58Z"
     }
   ]
 }

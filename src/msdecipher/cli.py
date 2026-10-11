@@ -62,7 +62,8 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--no-report", action="store_true", help="only segment; skip clustering/QA report")
     p.add_argument("--seed", type=int, default=1)
 
-    sub.add_parser("controls-fetch", help="download public-domain control texts into data/controls/ (git-ignored) + manifest")
+    p = sub.add_parser("controls-fetch", help="download public-domain control texts into data/controls/ (git-ignored) + manifest")
+    p.add_argument("--only", nargs="+", metavar="ID", help="fetch only these control ids (the manifest keeps the other entries)")
     sub.add_parser("controls-verify", help="check data/controls/ against its MANIFEST.json")
     p = sub.add_parser("controls-run", help="run the stats suite on MS 408 and all controls -> reports/controls/")
     p.add_argument("--tokens", type=int, default=35000, help="tokens per control (default 35000)")
@@ -160,7 +161,7 @@ def _cmd_segment(a) -> int:
 
 def _cmd_controls_fetch(a) -> int:
     from .controls_fetch import fetch_all
-    for e in fetch_all()["files"]:
+    for e in fetch_all(only=a.only)["files"]:
         print(f"{e['id']:16s} {e['bytes']:>9d} B  sha256:{e['sha256'][:16]}…")
     return 0
 
