@@ -93,6 +93,18 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--workers", type=int, default=None)
     p.add_argument("--no-plots", action="store_true")
 
+    p = sub.add_parser("hybrid-run", help="hybrid generators (cipher-like plaintext dependence + copy-and-modify reuse): fit on training folios, held-out full-suite test, penalised comparison -> reports/mechanisms/hybrid/")
+    p.add_argument("--runs", type=int, default=5, help="fresh-seed runs per model per fold")
+    p.add_argument("--reuse", action="store_true", help="rebuild the report from the CSVs already present")
+    p.add_argument("--file", help="MS 408 transcription")
+    p.add_argument("--workers", type=int, default=None)
+
+    p = sub.add_parser("hybrid-topics", help="plaintext-signal test: section vocabulary of MS 408 vs topic-driven hybrids vs pure generators -> reports/mechanisms/hybrid/topics/")
+    p.add_argument("--perms", type=int, default=1000)
+    p.add_argument("--seeds", type=int, default=10)
+    p.add_argument("--file", help="MS 408 transcription")
+    p.add_argument("--workers", type=int, default=None)
+
     return ap
 
 
@@ -100,6 +112,20 @@ def _cmd_mechanisms(a) -> int:
     from .mechanisms_run import run_mechanisms
     res = run_mechanisms(n_tokens=a.tokens, seeds=a.seeds, workers=a.workers, sweep=not a.no_sweep, reuse=a.reuse,
                          make_plots=not a.no_plots, main_file=a.file)
+    print("report:", res["out"] / "REPORT.md")
+    return 0
+
+
+def _cmd_hybrid(a) -> int:
+    from .mech_hybrid_run import run_hybrid
+    res = run_hybrid(n_runs=a.runs, workers=a.workers, reuse=a.reuse, main_file=a.file)
+    print("report:", res["out"] / "REPORT.md")
+    return 0
+
+
+def _cmd_hybrid_topics(a) -> int:
+    from .mech_hybrid_topics import run_topics
+    res = run_topics(n_perm=a.perms, n_seeds=a.seeds, workers=a.workers, main_file=a.file)
     print("report:", res["out"] / "REPORT.md")
     return 0
 
@@ -226,7 +252,8 @@ def main(argv=None) -> int:
                 "segment-glyphs": _cmd_segment, "page-index": _cmd_page_index,
                 "controls-fetch": _cmd_controls_fetch, "controls-verify": _cmd_controls_verify,
                 "controls-run": _cmd_controls_run, "word-structure": _cmd_word_structure,
-                "mechanisms-run": _cmd_mechanisms}[a.cmd](a)
+                "mechanisms-run": _cmd_mechanisms, "hybrid-run": _cmd_hybrid,
+                "hybrid-topics": _cmd_hybrid_topics}[a.cmd](a)
     except FileNotFoundError as e:
         print(f"error: {e}", file=sys.stderr)
         return 1
