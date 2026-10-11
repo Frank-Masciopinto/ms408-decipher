@@ -16,3 +16,8 @@ data/transcriptions/*
 # Derived / bulky artefacts (regenerate with the CLI)
 data/images/
 data/processed/
+
+# Control texts (Gutenberg / Wikisource): only the fetch script and manifest are committed
+data/controls/*
+!data/controls/MANIFEST.json
+!data/controls/README.md

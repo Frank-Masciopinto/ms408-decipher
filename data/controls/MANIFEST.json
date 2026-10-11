@@ -1,0 +1,60 @@
+{
+  "note": "Downloaded control texts are git-ignored; this manifest records where they come from. Project Gutenberg/Wikisource texts may be updated upstream, so a SHA256 mismatch after re-fetching means the upstream text changed (re-run the controls and update the manifest).",
+  "files": [
+    {
+      "id": "la_vulgate",
+      "file": "la_vulgate_genesis_exodus.txt",
+      "url": "https://la.wikisource.org/w/api.php (prop=revisions) Vulgata Clementina/Liber Genesis | Vulgata Clementina/Liber Exodus",
+      "bytes": 358176,
+      "sha256": "1766e7bb26cac2a3f884947f00d51f6d3061d6586d07b3254da364e81863c6d7",
+      "lang": "Latin",
+      "desc": "Vulgata Clementina (1598 ed.), Genesis + Exodus, via la.wikisource.org",
+      "licence": "text of a 1598 edition (public domain); Wikisource platform text CC BY-SA 4.0",
+      "fetched": "2026-10-11T14:13:18Z"
+    },
+    {
+      "id": "la_augustine",
+      "file": "pg33849.txt",
+      "url": "https://www.gutenberg.org/cache/epub/33849/pg33849.txt",
+      "bytes": 988043,
+      "sha256": "30287aab673c861ae500f06fe55d4396f529a0c251b37178e7220b6c51317189",
+      "lang": "Latin",
+      "desc": "Augustine, Confessiones (Project Gutenberg #33849; Rivington 1838 ed.)",
+      "licence": "Project Gutenberg, public domain in the USA",
+      "fetched": "2026-10-11T14:13:18Z"
+    },
+    {
+      "id": "it_dante",
+      "file": "pg1000.txt",
+      "url": "https://www.gutenberg.org/cache/epub/1000/pg1000.txt",
+      "bytes": 597903,
+      "sha256": "4669dcc00ee61ceffe92d871e61ea430cec87b35cbab24f19a4c0b1c7da521b2",
+      "lang": "Italian",
+      "desc": "Dante, La Divina Commedia (Project Gutenberg #1000), verse",
+      "licence": "Project Gutenberg, public domain in the USA",
+      "fetched": "2026-10-11T14:13:18Z"
+    },
+    {
+      "id": "it_manzoni",
+      "file": "pg45334.txt",
+      "url": "https://www.gutenberg.org/cache/epub/45334/pg45334.txt",
+      "bytes": 1472526,
+      "sha256": "4cdd962f1910a49091b945eff4233798b8c13f74b011cee75a8cccc7467d3612",
+      "lang": "Italian",
+      "desc": "Manzoni, I promessi sposi (Project Gutenberg #45334), 19th-c. prose",
+      "licence": "Project Gutenberg, public domain in the USA",
+      "fetched": "2026-10-11T14:13:19Z"
+    },
+    {
+      "id": "de_walther_mhg",
+      "file": "pg35795.txt",
+      "url": "https://www.gutenberg.org/cache/epub/35795/pg35795.txt",
+      "bytes": 86610,
+      "sha256": "d96073724d2a249090a84983d38f1e8652b0d7c21ac13fdc145f20d6bc108e08",
+      "lang": "Middle High German",
+      "desc": "Walther von der Vogelweide, Gedichte und Sprüche in Auswahl (PG #35795); only ~12k words, SMALLER than MS 408",
+      "licence": "Project Gutenberg, public domain in the USA",
+      "fetched": "2026-10-11T14:13:19Z"
+    }
+  ]
+}
