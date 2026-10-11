@@ -252,8 +252,8 @@ def selfcitation(n_tokens: int, seed: int = 0, p_mutate: float = 0.3, window: in
                  alphabet: str = "abcdefghijklmnopqrstu") -> list[str]:
     """Self-citation generator in the spirit of Timm & Schinner (2020): each new word is a copy
     of a word from the recent past (geometric-ish distance, mean ~``window``/2) which with
-    probability ``p_mutate`` is changed by one random edit (replace 70 %, insert 15 %, delete
-    15 %). Letters are drawn from a Zipf-like distribution. No lexicon, no grammar, no meaning.
+    probability ``p_mutate`` is changed by one random edit (replace 70 %, insert up to 15 % when
+    the word has < 9 letters, otherwise delete when it has > 2). Letters are drawn from a Zipf-like distribution. No lexicon, no grammar, no meaning.
     Parameters are NOT fitted to MS 408."""
     rng = random.Random(seed)
     k = len(alphabet)
@@ -267,11 +267,13 @@ def selfcitation(n_tokens: int, seed: int = 0, p_mutate: float = 0.3, window: in
         if rng.random() < p_mutate and w:
             r = rng.random()
             pos = rng.randrange(len(w))
+            # length-regulated edits (insertion only for short words, deletion only for longer
+            # ones) keep word length from drifting; without this the mean length random-walks.
             if r < 0.70:
                 w = w[:pos] + rl() + w[pos + 1:]
-            elif r < 0.85:
+            elif r < 0.85 and len(w) < 9:
                 w = w[:pos] + rl() + w[pos:]
-            elif len(w) > 1:
+            elif len(w) > 2:
                 w = w[:pos] + w[pos + 1:]
         text.append(w)
     return text[:n_tokens]
@@ -289,7 +291,12 @@ SLOT_INVENTORIES = (
 def slot_grammar(n_tokens: int, seed: int = 0, p_second_core: float = 0.35) -> list[str]:
     """Slot-grammar word generator: word = onset + head + vowel [+ head + vowel] + tail, each slot
     drawn independently from a small Zipf-weighted inventory. Words have strong positional
-    constraints by construction but no meaning. Slot inventories are arbitrary."""
+    constraints by construction but no meaning.
+
+    CAUTION: the inventories were written with the published *descriptions* of Voynichese word
+    structure in mind (q- onsets, -y/-n/-in endings, a few frequent 'gallows-like' heads); the
+    letters are abstract but the design is not independent of MS 408. Resembling MS 408's
+    positional statistics is therefore expected and is NOT evidence for a slot-grammar origin."""
     rng = random.Random(seed)
     def pick(i):
         s, w = SLOT_INVENTORIES[i]

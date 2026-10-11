@@ -1,0 +1,271 @@
+family,metric,n_members,min,max
+natural-language plaintext (Latin/Italian/MHG),type_token_ratio,5,0.1858857142857143,0.321572470870086
+natural-language plaintext (Latin/Italian/MHG),hapax_share_of_types,5,0.5922509225092251,0.6838702950682932
+natural-language plaintext (Latin/Italian/MHG),top10_token_coverage,5,0.15550473701404768,0.23131428571428572
+natural-language plaintext (Latin/Italian/MHG),word_entropy_H1,5,9.663788746513182,10.678386460741981
+natural-language plaintext (Latin/Italian/MHG),zipf_mle_s_r10_1000,5,0.8751827829390249,1.0452494101196241
+natural-language plaintext (Latin/Italian/MHG),heaps_beta_in_order,5,0.7518580353079315,0.8627211108246247
+natural-language plaintext (Latin/Italian/MHG),heaps_beta_shuffled,5,0.7460849074045531,0.8044776491585222
+natural-language plaintext (Latin/Italian/MHG),mean_word_length_units,5,3.9276857142857144,5.436742857142857
+natural-language plaintext (Latin/Italian/MHG),word_length_sd_units,5,2.2323976383051036,2.827355901017841
+natural-language plaintext (Latin/Italian/MHG),unit_H1,5,3.914853222615387,4.070275421378384
+natural-language plaintext (Latin/Italian/MHG),unit_h2,5,2.9637125007960385,3.212868184989306
+natural-language plaintext (Latin/Italian/MHG),unit_h3,5,2.2833888050172666,2.5788301777374647
+natural-language plaintext (Latin/Italian/MHG),shuffle_gap_h2,5,0.6655346343258968,0.955763425244367
+natural-language plaintext (Latin/Italian/MHG),sukhotin_vowel_like_share,5,0.23809523809523808,0.30434782608695654
+natural-language plaintext (Latin/Italian/MHG),pos_jsd_initial_final,5,0.21499004234470778,0.5577954265483215
+natural-language plaintext (Latin/Italian/MHG),pos_skewed_unit_share,5,0.4090909090909091,0.8095238095238095
+natural-language plaintext (Latin/Italian/MHG),adjacent_identical_rate,5,0.00028572244921283465,0.002600074287836795
+natural-language plaintext (Latin/Italian/MHG),adjacent_edit1_rate,5,0.003057230206577331,0.019914854710134575
+abjad (vowels removed),type_token_ratio,2,0.12851828890266584,0.12936760034652037
+abjad (vowels removed),hapax_share_of_types,2,0.5334821428571429,0.5530631934394598
+abjad (vowels removed),top10_token_coverage,2,0.2819809413803061,0.32141971481711096
+abjad (vowels removed),word_entropy_H1,2,8.664108033552424,8.962648309588971
+abjad (vowels removed),zipf_mle_s_r10_1000,2,0.9799921983510085,1.0416393149673229
+abjad (vowels removed),heaps_beta_in_order,2,0.7323719569942696,0.7723059442080642
+abjad (vowels removed),heaps_beta_shuffled,2,0.7029692378635708,0.7117663260045475
+abjad (vowels removed),mean_word_length_units,2,2.673000619962802,2.8324862835691595
+abjad (vowels removed),word_length_sd_units,2,1.5177344229715868,1.5948702503762557
+abjad (vowels removed),unit_H1,2,3.567613372652276,3.6781862551548987
+abjad (vowels removed),unit_h2,2,3.0019901706681065,3.0289855157235572
+abjad (vowels removed),unit_h3,2,2.3451320643857425,2.4302366708745415
+abjad (vowels removed),shuffle_gap_h2,2,0.4542427061667196,0.48183567018963513
+abjad (vowels removed),sukhotin_vowel_like_share,2,0.3125,0.5294117647058824
+abjad (vowels removed),pos_jsd_initial_final,2,0.23051032252495113,0.26332919963936324
+abjad (vowels removed),pos_skewed_unit_share,2,0.3125,0.47058823529411764
+abjad (vowels removed),adjacent_identical_rate,2,0.007537035432729793,0.008090765367804334
+abjad (vowels removed),adjacent_edit1_rate,2,0.06791995148574893,0.07876871570724449
+monoalphabetic substitution,type_token_ratio,4,0.1858857142857143,0.20131428571428572
+monoalphabetic substitution,hapax_share_of_types,4,0.5922509225092251,0.618659698739625
+monoalphabetic substitution,top10_token_coverage,4,0.1808,0.21562857142857142
+monoalphabetic substitution,word_entropy_H1,4,9.831007670946038,10.221667793587248
+monoalphabetic substitution,zipf_mle_s_r10_1000,4,0.8751827829390249,0.9854905921275252
+monoalphabetic substitution,heaps_beta_in_order,4,0.7836340071914812,0.827548953184231
+monoalphabetic substitution,heaps_beta_shuffled,4,0.7460849074045531,0.7552632360203052
+monoalphabetic substitution,mean_word_length_units,4,4.5876,5.315142857142857
+monoalphabetic substitution,word_length_sd_units,4,2.6160164606609375,2.702662276877587
+monoalphabetic substitution,unit_H1,4,3.949230856989491,4.005096424354586
+monoalphabetic substitution,unit_h2,4,2.996038632010049,3.212868184989306
+monoalphabetic substitution,unit_h3,4,2.4387149007364126,2.513179418470667
+monoalphabetic substitution,shuffle_gap_h2,4,0.6648470871638826,0.9007077204271496
+monoalphabetic substitution,sukhotin_vowel_like_share,4,0.23809523809523805,0.2727272727272727
+monoalphabetic substitution,pos_jsd_initial_final,4,0.2187495191857654,0.5577954265483217
+monoalphabetic substitution,pos_skewed_unit_share,4,0.4090909090909091,0.8095238095238096
+monoalphabetic substitution,adjacent_identical_rate,4,0.00028572244921283465,0.002600074287836795
+monoalphabetic substitution,adjacent_edit1_rate,4,0.003057230206577331,0.01145747021343467
+polyalphabetic (Vigenere),type_token_ratio,4,0.2726,0.3781428571428571
+polyalphabetic (Vigenere),hapax_share_of_types,4,0.6616996870746935,0.7052970734969342
+polyalphabetic (Vigenere),top10_token_coverage,4,0.0794,0.12664761904761904
+polyalphabetic (Vigenere),word_entropy_H1,4,11.040350489437465,12.166968459556452
+polyalphabetic (Vigenere),zipf_mle_s_r10_1000,4,0.6832293652026443,0.9197604986585902
+polyalphabetic (Vigenere),heaps_beta_in_order,4,0.8224047049949613,0.874677359618426
+polyalphabetic (Vigenere),heaps_beta_shuffled,4,0.79602816200069,0.8451919872897982
+polyalphabetic (Vigenere),mean_word_length_units,4,4.5876,5.315142857142857
+polyalphabetic (Vigenere),word_length_sd_units,4,2.6160164606609375,2.702662276877587
+polyalphabetic (Vigenere),unit_H1,4,4.356344092177113,4.594909899863335
+polyalphabetic (Vigenere),unit_h2,4,3.7432638991195026,4.1904729531670135
+polyalphabetic (Vigenere),unit_h3,4,2.7861357679129886,3.1879972215775556
+polyalphabetic (Vigenere),shuffle_gap_h2,4,0.3493160420052928,0.596348499592159
+polyalphabetic (Vigenere),sukhotin_vowel_like_share,4,0.3595317725752509,0.4358974358974359
+polyalphabetic (Vigenere),pos_jsd_initial_final,4,0.055718643320597984,0.3151071957703305
+polyalphabetic (Vigenere),pos_skewed_unit_share,4,0.08974358974358976,0.4559643255295429
+polyalphabetic (Vigenere),adjacent_identical_rate,4,2.857224492128347e-05,0.0010000285722449214
+polyalphabetic (Vigenere),adjacent_edit1_rate,4,0.0014190881644237454,0.0076002171490614015
+nomenclator-like syllable code,type_token_ratio,2,0.1858857142857143,0.2013142857142857
+nomenclator-like syllable code,hapax_share_of_types,2,0.5922509225092251,0.618659698739625
+nomenclator-like syllable code,top10_token_coverage,2,0.1808,0.21562857142857142
+nomenclator-like syllable code,word_entropy_H1,2,9.831007670946038,10.221667793587248
+nomenclator-like syllable code,zipf_mle_s_r10_1000,2,0.8751827829390249,0.9854905921275252
+nomenclator-like syllable code,heaps_beta_in_order,2,0.7836340071914812,0.8275489531842309
+nomenclator-like syllable code,heaps_beta_shuffled,2,0.7478720779411393,0.7538465456535305
+nomenclator-like syllable code,mean_word_length_units,2,3.897771428571429,4.1402
+nomenclator-like syllable code,word_length_sd_units,2,2.26478776155691,2.316271872766975
+nomenclator-like syllable code,unit_H1,2,4.284753179024424,4.290622214726407
+nomenclator-like syllable code,unit_h2,2,3.9054814904631265,4.057649316106363
+nomenclator-like syllable code,unit_h3,2,3.2186662309135134,3.4260955884496265
+nomenclator-like syllable code,shuffle_gap_h2,2,0.16522778541933025,0.28842422626115355
+nomenclator-like syllable code,sukhotin_vowel_like_share,2,0.5,0.5
+nomenclator-like syllable code,pos_jsd_initial_final,2,0.06107447267381544,0.07530741735654507
+nomenclator-like syllable code,pos_skewed_unit_share,2,0.016666666666666666,0.05000000000000001
+nomenclator-like syllable code,adjacent_identical_rate,2,0.00028572244921283465,0.002600074287836795
+nomenclator-like syllable code,adjacent_edit1_rate,2,0.01320037715363296,0.018629103688676818
+verbose cipher (letter -> 2 symbols),type_token_ratio,2,0.48173333333333335,0.5663714285714286
+verbose cipher (letter -> 2 symbols),hapax_share_of_types,2,0.8408726639606968,0.8484239096214584
+verbose cipher (letter -> 2 symbols),top10_token_coverage,2,0.10180952380952381,0.11301904761904762
+verbose cipher (letter -> 2 symbols),word_entropy_H1,2,12.169638991924929,12.902799686222926
+verbose cipher (letter -> 2 symbols),zipf_mle_s_r10_1000,2,0.7463339704285618,0.9950700156107096
+verbose cipher (letter -> 2 symbols),heaps_beta_in_order,2,0.9112552272660889,0.9356549681549765
+verbose cipher (letter -> 2 symbols),heaps_beta_shuffled,2,0.8874541034639994,0.916628111702544
+verbose cipher (letter -> 2 symbols),mean_word_length_units,2,9.1752,10.630285714285714
+verbose cipher (letter -> 2 symbols),word_length_sd_units,2,5.232032921321875,5.405324553755174
+verbose cipher (letter -> 2 symbols),unit_H1,2,3.7979431534156376,3.845178538458908
+verbose cipher (letter -> 2 symbols),unit_h2,2,2.864186248309755,2.8703019270174415
+verbose cipher (letter -> 2 symbols),unit_h3,2,2.2864977850773855,2.3653710594263906
+verbose cipher (letter -> 2 symbols),shuffle_gap_h2,2,0.9009192000195467,0.9417758760453178
+verbose cipher (letter -> 2 symbols),sukhotin_vowel_like_share,2,0.5,0.5
+verbose cipher (letter -> 2 symbols),pos_jsd_initial_final,2,0.21549881210707655,0.24423544932463473
+verbose cipher (letter -> 2 symbols),pos_skewed_unit_share,2,0.3958333333333333,0.4791666666666667
+verbose cipher (letter -> 2 symbols),adjacent_identical_rate,2,2.857224492128347e-05,0.0003428669390554016
+verbose cipher (letter -> 2 symbols),adjacent_edit1_rate,2,5.714448984256693e-05,0.0007714506128746536
+Naibbe-inspired homophonic tiles,type_token_ratio,2,0.5475619047619048,0.6510761904761905
+Naibbe-inspired homophonic tiles,hapax_share_of_types,2,0.8755320183644356,0.885691420562094
+Naibbe-inspired homophonic tiles,top10_token_coverage,2,0.07008571428571429,0.07635238095238095
+Naibbe-inspired homophonic tiles,word_entropy_H1,2,12.692061234720379,13.415466192950403
+Naibbe-inspired homophonic tiles,zipf_mle_s_r10_1000,2,0.8792124310563924,0.9238162456639932
+Naibbe-inspired homophonic tiles,heaps_beta_in_order,2,0.9201392311879751,0.9449967914597082
+Naibbe-inspired homophonic tiles,heaps_beta_shuffled,2,0.9010928248805685,0.9346797620181997
+Naibbe-inspired homophonic tiles,mean_word_length_units,2,9.407647619047617,11.06557142857143
+Naibbe-inspired homophonic tiles,word_length_sd_units,2,5.693150709429031,5.73505291340766
+Naibbe-inspired homophonic tiles,unit_H1,2,3.7509716333508867,3.7583361830799764
+Naibbe-inspired homophonic tiles,unit_h2,2,3.315671250775388,3.3354345089947492
+Naibbe-inspired homophonic tiles,unit_h3,2,2.628518910772445,2.6643084923863563
+Naibbe-inspired homophonic tiles,shuffle_gap_h2,2,0.40645179227980605,0.42344214360072
+Naibbe-inspired homophonic tiles,sukhotin_vowel_like_share,2,0.4761904761904762,0.4761904761904762
+Naibbe-inspired homophonic tiles,pos_jsd_initial_final,2,0.07761629832961513,0.11939506897145043
+Naibbe-inspired homophonic tiles,pos_skewed_unit_share,2,0.07142857142857142,0.07142857142857142
+Naibbe-inspired homophonic tiles,adjacent_identical_rate,2,1.9048163280855645e-05,0.0001333371429659895
+Naibbe-inspired homophonic tiles,adjacent_edit1_rate,2,0.0001238130613255617,0.0006095412249873805
+word reversal,type_token_ratio,2,0.1858857142857143,0.20131428571428572
+word reversal,hapax_share_of_types,2,0.5922509225092251,0.618659698739625
+word reversal,top10_token_coverage,2,0.1808,0.21562857142857142
+word reversal,word_entropy_H1,2,9.831007670946038,10.221667793587248
+word reversal,zipf_mle_s_r10_1000,2,0.8751827829390249,0.9854905921275252
+word reversal,heaps_beta_in_order,2,0.7836340071914812,0.827548953184231
+word reversal,heaps_beta_shuffled,2,0.7460849074045531,0.7552632360203052
+word reversal,mean_word_length_units,2,4.5876,5.315142857142857
+word reversal,word_length_sd_units,2,2.6160164606609375,2.702662276877587
+word reversal,unit_H1,2,3.949230856989491,4.005096424354586
+word reversal,unit_h2,2,3.2944770021018663,3.2984770338630884
+word reversal,unit_h3,2,2.574395748115169,2.6752744668873705
+word reversal,shuffle_gap_h2,2,0.5844984549018966,0.5982229092727129
+word reversal,sukhotin_vowel_like_share,2,0.23809523809523808,0.2727272727272727
+word reversal,pos_jsd_initial_final,2,0.21874951918576546,0.5577954265483214
+word reversal,pos_skewed_unit_share,2,0.4090909090909091,0.8095238095238095
+word reversal,adjacent_identical_rate,2,0.00028572244921283465,0.002600074287836795
+word reversal,adjacent_edit1_rate,2,0.003057230206577331,0.01145747021343467
+anagram (alphagram),type_token_ratio,2,0.17925714285714286,0.19428571428571428
+anagram (alphagram),hapax_share_of_types,2,0.5832352941176471,0.6117309531399426
+anagram (alphagram),top10_token_coverage,2,0.18614285714285714,0.221
+anagram (alphagram),word_entropy_H1,2,9.75286057445834,10.13212590100582
+anagram (alphagram),zipf_mle_s_r10_1000,2,0.8825229455038714,0.9882699366048797
+anagram (alphagram),heaps_beta_in_order,2,0.7781925413017559,0.822803066868329
+anagram (alphagram),heaps_beta_shuffled,2,0.7415688791692916,0.7509508859398657
+anagram (alphagram),mean_word_length_units,2,4.5876,5.315142857142857
+anagram (alphagram),word_length_sd_units,2,2.6160164606609375,2.702662276877587
+anagram (alphagram),unit_H1,2,3.949230856989491,4.005096424354586
+anagram (alphagram),unit_h2,2,2.5323877151165832,2.656105247428562
+anagram (alphagram),unit_h3,2,2.219732917935054,2.3311316940112397
+anagram (alphagram),shuffle_gap_h2,2,1.2399578213687676,1.344872559890089
+anagram (alphagram),sukhotin_vowel_like_share,2,0.3333333333333333,0.36363636363636365
+anagram (alphagram),pos_jsd_initial_final,2,0.8842757768023839,0.8869037444707688
+anagram (alphagram),pos_skewed_unit_share,2,0.9545454545454546,1.0
+anagram (alphagram),adjacent_identical_rate,2,0.001228606531615189,0.002600074287836795
+anagram (alphagram),adjacent_edit1_rate,2,0.005685876739335409,0.011200320009143118
+letters shuffled inside words,type_token_ratio,2,0.5049238095238096,0.6103714285714286
+letters shuffled inside words,hapax_share_of_types,2,0.8979070515266564,0.901689627424056
+letters shuffled inside words,top10_token_coverage,2,0.14217142857142856,0.1498857142857143
+letters shuffled inside words,word_entropy_H1,2,11.855405227341299,12.77941570070714
+letters shuffled inside words,zipf_mle_s_r10_1000,2,0.8041469919479539,1.1385821874094908
+letters shuffled inside words,heaps_beta_in_order,2,0.9278863155631494,0.9464975675960133
+letters shuffled inside words,heaps_beta_shuffled,2,0.9025527495764766,0.9323405600174626
+letters shuffled inside words,mean_word_length_units,2,4.5876,5.315142857142857
+letters shuffled inside words,word_length_sd_units,2,2.6160164606609375,2.702662276877587
+letters shuffled inside words,unit_H1,2,3.949230856989491,4.005096424354586
+letters shuffled inside words,unit_h2,2,3.8786358742052065,3.8969344903099046
+letters shuffled inside words,unit_h3,2,3.7041231065348055,3.7536822404660044
+letters shuffled inside words,shuffle_gap_h2,2,-0.02365137824519777,-0.008410375543219217
+letters shuffled inside words,sukhotin_vowel_like_share,2,0.23809523809523805,0.2727272727272727
+letters shuffled inside words,pos_jsd_initial_final,2,0.0002204101983824331,0.0002333135515597671
+letters shuffled inside words,pos_skewed_unit_share,2,0.0,0.0
+letters shuffled inside words,adjacent_identical_rate,2,0.0004952522453022467,0.0005238244902235302
+letters shuffled inside words,adjacent_edit1_rate,2,0.003276284084307171,0.009428840824023545
+shuffled tokens,type_token_ratio,2,0.1858857142857143,0.2013142857142857
+shuffled tokens,hapax_share_of_types,2,0.5922509225092251,0.618659698739625
+shuffled tokens,top10_token_coverage,2,0.1808,0.21562857142857142
+shuffled tokens,word_entropy_H1,2,9.831007670946038,10.221667793587248
+shuffled tokens,zipf_mle_s_r10_1000,2,0.8751827829390249,0.9854905921275252
+shuffled tokens,heaps_beta_in_order,2,0.7438469309563955,0.7573516673320376
+shuffled tokens,heaps_beta_shuffled,2,0.7468684275098467,0.7559867669149033
+shuffled tokens,mean_word_length_units,2,4.5876,5.315142857142857
+shuffled tokens,word_length_sd_units,2,2.6160164606609375,2.702662276877587
+shuffled tokens,unit_H1,2,3.949230856989491,4.005096424354586
+shuffled tokens,unit_h2,2,2.9960386320100496,3.212868184989306
+shuffled tokens,unit_h3,2,2.4387149007364126,2.513179418470667
+shuffled tokens,shuffle_gap_h2,2,0.6644042018718531,0.8996544439184998
+shuffled tokens,sukhotin_vowel_like_share,2,0.23809523809523805,0.2727272727272727
+shuffled tokens,pos_jsd_initial_final,2,0.21874951918576546,0.5577954265483215
+shuffled tokens,pos_skewed_unit_share,2,0.4090909090909091,0.8095238095238096
+shuffled tokens,adjacent_identical_rate,2,0.006714477556501615,0.007524024495937979
+shuffled tokens,adjacent_edit1_rate,2,0.008343095517014771,0.02103869634370506
+Markov character gibberish,type_token_ratio,4,0.38970476190476183,0.5437333333333334
+Markov character gibberish,hapax_share_of_types,4,0.8551994999121941,0.9138749119872683
+Markov character gibberish,top10_token_coverage,4,0.1394,0.18331428571428574
+Markov character gibberish,word_entropy_H1,4,11.074373586992516,12.09782098565975
+Markov character gibberish,zipf_mle_s_r10_1000,4,0.8762971141433997,1.0947048297491804
+Markov character gibberish,heaps_beta_in_order,4,0.871731278752297,0.9210339967449079
+Markov character gibberish,heaps_beta_shuffled,4,0.8633788023665963,0.9175363406096905
+Markov character gibberish,mean_word_length_units,4,4.591695238095238,5.323152380952381
+Markov character gibberish,word_length_sd_units,4,3.397800688338169,4.617734098808659
+Markov character gibberish,unit_H1,4,3.947134838656258,4.00552963107684
+Markov character gibberish,unit_h2,4,2.995672771999805,3.2125443615029745
+Markov character gibberish,unit_h3,4,2.4274921406350463,3.225738120133562
+Markov character gibberish,shuffle_gap_h2,4,0.6893107896866191,0.9447316963175915
+Markov character gibberish,sukhotin_vowel_like_share,4,0.23809523809523805,0.2727272727272727
+Markov character gibberish,pos_jsd_initial_final,4,0.22015384208441993,0.5275721717671217
+Markov character gibberish,pos_skewed_unit_share,4,0.41630591630591635,0.7619047619047619
+Markov character gibberish,adjacent_identical_rate,4,0.0038096326561711286,0.0052382449022353025
+Markov character gibberish,adjacent_edit1_rate,4,0.013114660418869111,0.042677409830757074
+iid letters (no structure),type_token_ratio,2,0.6540857142857143,0.7802571428571429
+iid letters (no structure),hapax_share_of_types,2,0.921266438155684,0.9415814423982368
+iid letters (no structure),top10_token_coverage,2,0.022495238095238096,0.07525714285714286
+iid letters (no structure),word_entropy_H1,2,13.303558948249075,14.144986458396266
+iid letters (no structure),zipf_mle_s_r10_1000,2,0.8657618668678952,0.8837521022375808
+iid letters (no structure),heaps_beta_in_order,2,0.9329015902038429,0.9570681510876958
+iid letters (no structure),heaps_beta_shuffled,2,0.9314898034302805,0.9565745439431413
+iid letters (no structure),mean_word_length_units,2,4.576447619047619,5.315780952380952
+iid letters (no structure),word_length_sd_units,2,2.614304740933772,2.690934654549284
+iid letters (no structure),unit_H1,2,3.94866044454381,4.005443187262483
+iid letters (no structure),unit_h2,2,3.946394178183905,4.003743664309848
+iid letters (no structure),unit_h3,2,3.8910027206012994,3.935667637303536
+iid letters (no structure),shuffle_gap_h2,2,-0.00022580048407820166,0.0002842575112163755
+iid letters (no structure),sukhotin_vowel_like_share,2,0.2857142857142857,0.28787878787878785
+iid letters (no structure),pos_jsd_initial_final,2,0.0002857149740704594,0.000295272862106367
+iid letters (no structure),pos_skewed_unit_share,2,0.0,0.0
+iid letters (no structure),adjacent_identical_rate,2,0.00019048163280855645,0.000847643265998076
+iid letters (no structure),adjacent_edit1_rate,2,0.0054096783717630026,0.01948627103631532
+self-citation generator,type_token_ratio,3,0.11665714285714286,0.34145714285714285
+self-citation generator,hapax_share_of_types,3,0.37773981563414694,0.5230809140658715
+self-citation generator,top10_token_coverage,3,0.04792380952380953,0.06265714285714286
+self-citation generator,word_entropy_H1,3,10.428537094999427,12.545763954419362
+self-citation generator,zipf_mle_s_r10_1000,3,0.5526322665974162,0.7027187974867726
+self-citation generator,heaps_beta_in_order,3,0.9115723104159631,0.9514941442541867
+self-citation generator,heaps_beta_shuffled,3,0.6403383934020068,0.8339878523108983
+self-citation generator,mean_word_length_units,3,4.939057142857143,5.786466666666667
+self-citation generator,word_length_sd_units,3,1.8013004710750018,2.060240104525047
+self-citation generator,unit_H1,3,3.6033722220034936,3.6761367442131316
+self-citation generator,unit_h2,3,3.382973680573922,3.5849676111177087
+self-citation generator,unit_h3,3,2.4335945432062935,3.1480138694569852
+self-citation generator,shuffle_gap_h2,3,0.04634200779143945,0.22278882504333422
+self-citation generator,sukhotin_vowel_like_share,3,0.25396825396825395,0.30158730158730157
+self-citation generator,pos_jsd_initial_final,3,0.022621970064595414,0.11683972741751501
+self-citation generator,pos_skewed_unit_share,3,0.0,0.30158730158730157
+self-citation generator,adjacent_identical_rate,3,0.04685848167090489,0.15362343686010077
+self-citation generator,adjacent_edit1_rate,3,0.09481223273045897,0.16916673809727897
+slot-grammar generator,type_token_ratio,3,0.1399809523809524,0.2324857142857143
+slot-grammar generator,hapax_share_of_types,3,0.5237281239179116,0.5998667186829499
+slot-grammar generator,top10_token_coverage,3,0.08347619047619048,0.1322095238095238
+slot-grammar generator,word_entropy_H1,3,9.712983761958483,11.25542928283852
+slot-grammar generator,zipf_mle_s_r10_1000,3,0.7832103818490929,0.950188927933484
+slot-grammar generator,heaps_beta_in_order,3,0.6756934635635528,0.7694709397126079
+slot-grammar generator,heaps_beta_shuffled,3,0.6764181879491503,0.7666371587405204
+slot-grammar generator,mean_word_length_units,3,3.7803142857142853,4.424933333333334
+slot-grammar generator,word_length_sd_units,3,1.231964634273793,1.4087027843703108
+slot-grammar generator,unit_H1,3,3.6549798626716825,3.6868496654002207
+slot-grammar generator,unit_h2,3,2.2446723379948423,2.342797063359822
+slot-grammar generator,unit_h3,3,2.3248707179441372,2.429470306864231
+slot-grammar generator,shuffle_gap_h2,3,1.195621461517746,1.2558792124968632
+slot-grammar generator,sukhotin_vowel_like_share,3,0.4000000000000001,0.4000000000000001
+slot-grammar generator,pos_jsd_initial_final,3,0.8898712844698173,0.8902581549821252
+slot-grammar generator,pos_skewed_unit_share,3,0.8666666666666667,0.8666666666666667
+slot-grammar generator,adjacent_identical_rate,3,0.0016762383687152968,0.003504862043677438
+slot-grammar generator,adjacent_edit1_rate,3,0.016267131441850716,0.03799156166366658

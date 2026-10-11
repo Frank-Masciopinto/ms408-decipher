@@ -20,9 +20,10 @@ A research framework for studying the undeciphered **Beinecke MS 408** ("Cipher 
 | 4 Unit segmentation (configurable `ch`, `sh`, …) | **Done** (4 presets or any custom list; not data-driven BPE yet) |
 | 5 Basic statistics: Zipf, Heaps, H1/h2/h3, positional, Currier A/B | **Done**, no control corpora yet |
 | 6 Sukhotin vowel/consonant test (after segmentation) | **Done** (page-bootstrap stability); HMMs/slot grammars **not done** |
+| 10a Control corpora + transformations + null generators, same stats on all, comparison table | **Done (first pass)**: [docs/CONTROLS.md](docs/CONTROLS.md), `reports/controls/`. 5 control texts (Latin ×2, Italian ×2, MHG ×1), 12 transformations, 5 generators; not done: abjad natural text, herbal Latin, real Naibbe / Timm-Schinner code, CIs |
 | 1, 7–14 (folio index, word-class induction, cribs, nulls, candidate-plaintext attacks, validation gates) | **Not started** |
 
-Honest limits: no Latin/Italian/cipher/gibberish controls have been run, so none of the numbers can say whether the text is language, cipher or neither; the glyph catalogue has not been checked against the images; samples are pooled over non-independent pages.
+Honest limits: control texts and simulated families now exist (stage 10a) but are few, small and simplified, so the numbers still cannot say whether the text is language, cipher or neither (see [docs/CONTROLS.md](docs/CONTROLS.md)); the glyph catalogue has not been checked against the images; samples are pooled over non-independent pages.
 
 ## Install and run
 
@@ -41,6 +42,9 @@ python -m msdecipher run-all       # catalogue + statistics + plots + replicatio
 python -m msdecipher run-all --units ch,sh --uncertain-spaces join   # other segmentation / space policy
 python -m msdecipher images --dpi 100   # render PDF pages -> data/images/ (git-ignored; PDF page numbers)
 python -m msdecipher segment-glyphs     # NOT IMPLEMENTED (exits 2)
+python -m msdecipher controls-fetch     # Latin/Italian/MHG control texts -> data/controls/ (git-ignored) + MANIFEST.json
+python -m msdecipher controls-verify    # SHA256 check
+python -m msdecipher controls-run       # stats on MS 408 + all controls/nulls -> reports/controls/ (~2 min; --tokens, --seeds)
 ```
 
 `--units` accepts a preset (`raw`, `basic` = ch/sh, `collapsed` = ch, sh, cth, ckh, cph, cfh (default), `extended` = + ee, ii, iin, in) or a comma list such as `ch,sh,qo`.
@@ -55,7 +59,7 @@ python -m msdecipher segment-glyphs     # NOT IMPLEMENTED (exits 2)
 The voynich.nu transliteration files state no open licence, so they are **not committed**; only `data/transcriptions/MANIFEST.json` (URLs + SHA256) and the fetch script are. See [data/transcriptions/README.md](data/transcriptions/README.md).
 
 ## Package layout (`src/msdecipher/`)
-`fetch.py` download + manifest · `ivtff.py` IVTFF parser (folio, locus, hand, section, tokens, comments, alternative readings, uncertain spaces, ligatures, rare codes) · `segment.py` unit segmentation · `glyphs.py` catalogue · `stats.py` entropy / Zipf / Heaps / Sukhotin / JSD · `analysis.py` pipeline and Markdown · `plots.py` · `images.py` page rendering · `glyph_segmentation.py` stub · `cli.py`
+`fetch.py` download + manifest · `ivtff.py` IVTFF parser (folio, locus, hand, section, tokens, comments, alternative readings, uncertain spaces, ligatures, rare codes) · `segment.py` unit segmentation · `glyphs.py` catalogue · `stats.py` entropy / Zipf / Heaps / Sukhotin / JSD · `analysis.py` pipeline and Markdown · `plots.py` · `images.py` page rendering · `controls_fetch.py` / `controls_text.py` / `controls_transforms.py` / `controls_metrics.py` / `controls_run.py` / `controls_plots.py` control stage · `glyph_segmentation.py` stub · `cli.py`
 
 ## Layout
 - `source/` the manuscript PDF (two halves)
@@ -67,4 +71,4 @@ The voynich.nu transliteration files state no open licence, so they are **not co
 - `docs/` workflow, prior work, data sources, stats note, image-stage status
 
 ## Planned next
-Control corpora and null models (Latin/Italian/Hebrew texts, shuffles, Markov and cipher generators), quire-level confidence intervals, BPE/data-driven units, the PDF-page→folio index and image glyph segmentation, then the later stages of [docs/WORKFLOW.md](docs/WORKFLOW.md). Background: [docs/PRIOR_WORK.md](docs/PRIOR_WORK.md), [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md).
+More controls (Hebrew/Arabic abjad text, herbal Latin, Occitan/Old French/Czech; the real Naibbe and Timm-Schinner generators), group-level units for verbose ciphers, quire-level confidence intervals, BPE/data-driven units, the PDF-page→folio index and image glyph segmentation, then the later stages of [docs/WORKFLOW.md](docs/WORKFLOW.md). Background: [docs/PRIOR_WORK.md](docs/PRIOR_WORK.md), [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md).

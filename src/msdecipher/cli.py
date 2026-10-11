@@ -48,6 +48,14 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--first", type=int)
     p.add_argument("--last", type=int)
 
+    sub.add_parser("controls-fetch", help="download public-domain control texts into data/controls/ (git-ignored) + manifest")
+    sub.add_parser("controls-verify", help="check data/controls/ against its MANIFEST.json")
+    p = sub.add_parser("controls-run", help="run the stats suite on MS 408 and all controls -> reports/controls/")
+    p.add_argument("--tokens", type=int, default=35000, help="tokens per control (default 35000)")
+    p.add_argument("--seeds", type=int, default=3, help="seeds for stochastic controls (default 3)")
+    p.add_argument("--file", help="MS 408 transcription (default data/transcriptions/ZL3b-n.txt)")
+    p.add_argument("--no-plots", action="store_true")
+
     sub.add_parser("segment-glyphs", help="image glyph segmentation (NOT IMPLEMENTED; stub)")
     return ap
 
@@ -123,12 +131,35 @@ def _cmd_segment(a) -> int:
     return 2
 
 
+def _cmd_controls_fetch(a) -> int:
+    from .controls_fetch import fetch_all
+    for e in fetch_all()["files"]:
+        print(f"{e['id']:16s} {e['bytes']:>9d} B  sha256:{e['sha256'][:16]}…")
+    return 0
+
+
+def _cmd_controls_verify(a) -> int:
+    from .controls_fetch import verify
+    res = verify()
+    for f, st in res:
+        print(f"{f:34s} {st}")
+    return 1 if (not res or any(st != "ok" for _, st in res)) else 0
+
+
+def _cmd_controls_run(a) -> int:
+    from .controls_run import run_controls
+    run_controls(n_tokens=a.tokens, seeds=a.seeds, main_file=a.file, make_plots=not a.no_plots)
+    return 0
+
+
 def main(argv=None) -> int:
     a = build_parser().parse_args(argv)
     try:
         return {"fetch": _cmd_fetch, "verify": _cmd_verify, "parse": _cmd_parse, "catalog": _cmd_catalog,
                 "stats": _cmd_run, "run-all": _cmd_run, "images": _cmd_images,
-                "segment-glyphs": _cmd_segment}[a.cmd](a)
+                "segment-glyphs": _cmd_segment,
+                "controls-fetch": _cmd_controls_fetch, "controls-verify": _cmd_controls_verify,
+                "controls-run": _cmd_controls_run}[a.cmd](a)
     except FileNotFoundError as e:
         print(f"error: {e}", file=sys.stderr)
         return 1
