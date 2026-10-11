@@ -74,7 +74,7 @@ The voynich.nu transliteration files state no open licence, so they are **not co
 - `data/transcriptions/` manifest (+ git-ignored third-party files)
 - `reports/` generated statistics, tables and figures
 - `src/msdecipher/`, `tests/` code and tests
-- `hypotheses/` tests of outside claims about the script, one folder each (`h01_tone_sheet/`: the "Codex Translation Sheet" tone/glyph/meaning table)
+- `hypotheses/` tests of outside claims about the script, one folder each (`h01_tone_sheet/`: the "Codex Translation Sheet" tone/glyph/meaning table; `h02_full_tone_map/`: 39 candidate Hz maps for every unit, tested against nulls and controls)
 - `notebooks/` exploration (empty)
 - `docs/` workflow, prior work, data sources, stats note, image-stage status
 

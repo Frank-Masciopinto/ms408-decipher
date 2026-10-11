@@ -1,0 +1,40 @@
+map,group,description
+a_freq_ext,a: extend the sheet's own pattern,"sheet pattern extended: Hz = a + b*rank in the 'freq' ordering (a,b regressed on the sheet's 8 values where those units exist; else 174 + 35.57 Hz per rank), the 8 sheet units keep their printed Hz"
+a_freq_cmp,a: extend the sheet's own pattern,sheet range compressed: ranks in the 'freq' ordering spread evenly over the sheet's 174-433 Hz span
+a_slot_ext,a: extend the sheet's own pattern,"sheet pattern extended: Hz = a + b*rank in the 'slot' ordering (a,b regressed on the sheet's 8 values where those units exist; else 174 + 35.57 Hz per rank), the 8 sheet units keep their printed Hz"
+a_slot_cmp,a: extend the sheet's own pattern,sheet range compressed: ranks in the 'slot' ordering spread evenly over the sheet's 174-433 Hz span
+a_alpha_ext,a: extend the sheet's own pattern,"sheet pattern extended: Hz = a + b*rank in the 'alpha' ordering (a,b regressed on the sheet's 8 values where those units exist; else 174 + 35.57 Hz per rank), the 8 sheet units keep their printed Hz"
+a_alpha_cmp,a: extend the sheet's own pattern,sheet range compressed: ranks in the 'alpha' ordering spread evenly over the sheet's 174-433 Hz span
+a_vowel_ext,a: extend the sheet's own pattern,"sheet pattern extended: Hz = a + b*rank in the 'vowel' ordering (a,b regressed on the sheet's 8 values where those units exist; else 174 + 35.57 Hz per rank), the 8 sheet units keep their printed Hz"
+a_vowel_cmp,a: extend the sheet's own pattern,sheet range compressed: ranks in the 'vowel' ordering spread evenly over the sheet's 174-433 Hz span
+a_entropy_ext,a: extend the sheet's own pattern,"sheet pattern extended: Hz = a + b*rank in the 'entropy' ordering (a,b regressed on the sheet's 8 values where those units exist; else 174 + 35.57 Hz per rank), the 8 sheet units keep their printed Hz"
+a_entropy_cmp,a: extend the sheet's own pattern,sheet range compressed: ranks in the 'entropy' ordering spread evenly over the sheet's 174-433 Hz span
+a_seriation_ext,a: extend the sheet's own pattern,"sheet pattern extended: Hz = a + b*rank in the 'seriation' ordering (a,b regressed on the sheet's 8 values where those units exist; else 174 + 35.57 Hz per rank), the 8 sheet units keep their printed Hz"
+a_seriation_cmp,a: extend the sheet's own pattern,sheet range compressed: ranks in the 'seriation' ordering spread evenly over the sheet's 174-433 Hz span
+a_slotgrammar_ext,a: extend the sheet's own pattern,"sheet pattern extended: Hz = a + b*rank in the 'slotgrammar' ordering (a,b regressed on the sheet's 8 values where those units exist; else 174 + 35.57 Hz per rank), the 8 sheet units keep their printed Hz"
+a_slotgrammar_cmp,a: extend the sheet's own pattern,sheet range compressed: ranks in the 'slotgrammar' ordering spread evenly over the sheet's 174-433 Hz span
+b_chromatic12_freq,b: musical scale,"chromatic12 scale from 174 Hz tonic, one scale degree per unit going up, units ordered by 'freq'"
+b_chromatic12_slot,b: musical scale,"chromatic12 scale from 174 Hz tonic, one scale degree per unit going up, units ordered by 'slot'"
+b_chromatic12_vowel,b: musical scale,"chromatic12 scale from 174 Hz tonic, one scale degree per unit going up, units ordered by 'vowel'"
+b_major12_freq,b: musical scale,"major12 scale from 174 Hz tonic, one scale degree per unit going up, units ordered by 'freq'"
+b_major12_slot,b: musical scale,"major12 scale from 174 Hz tonic, one scale degree per unit going up, units ordered by 'slot'"
+b_major12_vowel,b: musical scale,"major12 scale from 174 Hz tonic, one scale degree per unit going up, units ordered by 'vowel'"
+b_pentatonic_freq,b: musical scale,"pentatonic scale from 174 Hz tonic, one scale degree per unit going up, units ordered by 'freq'"
+b_pentatonic_slot,b: musical scale,"pentatonic scale from 174 Hz tonic, one scale degree per unit going up, units ordered by 'slot'"
+b_pentatonic_vowel,b: musical scale,"pentatonic scale from 174 Hz tonic, one scale degree per unit going up, units ordered by 'vowel'"
+b_just_diatonic_freq,b: musical scale,"just_diatonic scale from 174 Hz tonic, one scale degree per unit going up, units ordered by 'freq'"
+b_just_diatonic_slot,b: musical scale,"just_diatonic scale from 174 Hz tonic, one scale degree per unit going up, units ordered by 'slot'"
+b_just_diatonic_vowel,b: musical scale,"just_diatonic scale from 174 Hz tonic, one scale degree per unit going up, units ordered by 'vowel'"
+b_pythagorean_freq,b: musical scale,"pythagorean scale from 174 Hz tonic, one scale degree per unit going up, units ordered by 'freq'"
+b_pythagorean_slot,b: musical scale,"pythagorean scale from 174 Hz tonic, one scale degree per unit going up, units ordered by 'slot'"
+b_pythagorean_vowel,b: musical scale,"pythagorean scale from 174 Hz tonic, one scale degree per unit going up, units ordered by 'vowel'"
+c_pos,c: data-driven (behaviour -> pitch),"log-Hz linear in mean relative position in word (initial = 174, final = 433)"
+c_final,c: data-driven (behaviour -> pitch),log-Hz linear in (share word-final - share word-initial)
+c_entropy,c: data-driven (behaviour -> pitch),log-Hz linear in H(next unit | this unit)
+c_seriation,c: data-driven (behaviour -> pitch),log-Hz linear in the Fiedler (seriation) coordinate of the within-word adjacency graph
+c_cluster_pentatonic,c: data-driven (behaviour -> pitch),k-means (k=5) cluster of positional behaviour -> pentatonic degree; units of a cluster share a pitch
+c_vowelclass,c: data-driven (behaviour -> pitch),"Sukhotin class: vowel-like = 174 Hz, consonant-like = 433 Hz"
+c_slotgrammar,c: data-driven (behaviour -> pitch),log-Hz linear in the expected slot of the learned 12-slot grammar
+d_surprisal,d: objective-driven,log-Hz linear in surprisal -log2 p(unit): pitch spread proportional to information content
+d_smooth,d: objective-driven,equally spaced pitches assigned to minimise sum W_ij|p_i - p_j| over within-word neighbours (smoothest melody)
+d_slotmono,d: objective-driven,equally spaced pitches in order of expected slot (monotone with slot index so that words become contours)
