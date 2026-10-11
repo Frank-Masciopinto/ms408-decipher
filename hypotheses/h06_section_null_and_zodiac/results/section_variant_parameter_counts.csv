@@ -1,0 +1,58 @@
+fold,variant,k_engine_groups,k_units,k_pool,k_group_specific,n_groups_fitted
+0,"C0g global, no section dependence",0,0,0,0,0
+0,E per-section engine parameters,36,0,0,36,6
+0,"U3 per-section favoured units, 3 units",0,18,0,18,6
+0,"U8 per-section favoured units, 8 units",0,48,0,48,6
+0,U per-section favoured units,0,474,0,474,6
+0,P10 per-section pool of 10 types,6,0,60,66,6
+0,P50 per-section pool of 50 types,6,0,300,306,6
+0,P200 per-section pool of 200 types,6,0,1200,1206,6
+0,EUP10 per-section engine+units+pool 10,42,474,60,576,6
+0,EUP25 per-section engine+units+pool 25,42,474,150,666,6
+0,EUP50 per-section engine+units+pool 50,42,474,300,816,6
+0,EUP100 per-section engine+units+pool 100,42,474,600,1116,6
+0,EUP200 per-section engine+units+pool 200,42,474,1200,1716,6
+0,LANG EUP50 by Currier language only,21,237,150,408,3
+0,SECLANG EUP50 by section x language,98,1106,700,1904,14
+0,RAND EUP50 random folio blocks (null),35,395,250,680,5
+0,RAND EUP200 random folio blocks (null),35,395,1000,1430,5
+0,"RAND U random folio blocks, all units (null)",0,395,0,395,5
+0,RAND P200 random folio blocks (null),5,0,1000,1005,5
+1,"C0g global, no section dependence",0,0,0,0,0
+1,E per-section engine parameters,36,0,0,36,6
+1,"U3 per-section favoured units, 3 units",0,18,0,18,6
+1,"U8 per-section favoured units, 8 units",0,48,0,48,6
+1,U per-section favoured units,0,504,0,504,6
+1,P10 per-section pool of 10 types,6,0,60,66,6
+1,P50 per-section pool of 50 types,6,0,300,306,6
+1,P200 per-section pool of 200 types,6,0,1200,1206,6
+1,EUP10 per-section engine+units+pool 10,42,504,60,606,6
+1,EUP25 per-section engine+units+pool 25,42,504,150,696,6
+1,EUP50 per-section engine+units+pool 50,42,504,300,846,6
+1,EUP100 per-section engine+units+pool 100,42,504,600,1146,6
+1,EUP200 per-section engine+units+pool 200,42,504,1200,1746,6
+1,LANG EUP50 by Currier language only,21,252,150,423,3
+1,SECLANG EUP50 by section x language,91,1092,650,1833,13
+1,RAND EUP50 random folio blocks (null),35,420,250,705,5
+1,RAND EUP200 random folio blocks (null),35,420,1000,1455,5
+1,"RAND U random folio blocks, all units (null)",0,420,0,420,5
+1,RAND P200 random folio blocks (null),5,0,1000,1005,5
+2,"C0g global, no section dependence",0,0,0,0,0
+2,E per-section engine parameters,36,0,0,36,6
+2,"U3 per-section favoured units, 3 units",0,18,0,18,6
+2,"U8 per-section favoured units, 8 units",0,48,0,48,6
+2,U per-section favoured units,0,516,0,516,6
+2,P10 per-section pool of 10 types,6,0,60,66,6
+2,P50 per-section pool of 50 types,6,0,300,306,6
+2,P200 per-section pool of 200 types,6,0,1200,1206,6
+2,EUP10 per-section engine+units+pool 10,42,516,60,618,6
+2,EUP25 per-section engine+units+pool 25,42,516,150,708,6
+2,EUP50 per-section engine+units+pool 50,42,516,300,858,6
+2,EUP100 per-section engine+units+pool 100,42,516,600,1158,6
+2,EUP200 per-section engine+units+pool 200,42,516,1200,1758,6
+2,LANG EUP50 by Currier language only,21,258,150,429,3
+2,SECLANG EUP50 by section x language,98,1204,700,2002,14
+2,RAND EUP50 random folio blocks (null),35,430,250,715,5
+2,RAND EUP200 random folio blocks (null),35,430,1000,1465,5
+2,"RAND U random folio blocks, all units (null)",0,430,0,430,5
+2,RAND P200 random folio blocks (null),5,0,1000,1005,5

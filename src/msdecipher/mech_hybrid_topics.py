@@ -190,10 +190,10 @@ def stats_for(docs: list[dict], n_perm: int = 200, seed: int = 0, lr: bool = Tru
     return out
 
 
-def shift_null(X, y, seed: int = 0, min_shift: int = 10) -> dict:
+def shift_null(X, y, seed: int = 0, min_shift: int = 10, stride: int = 1) -> dict:
     """Drift-aware null: labels circularly shifted along the folio order (contiguous section runs preserved, section<->content link broken)."""
     n = len(y)
-    ks = [k for k in range(min_shift, n - min_shift)]
+    ks = [k for k in range(min_shift, n - min_shift, stride)]
     js = np.array([mean_pairwise_js(X, np.roll(y, k)) for k in ks])
     nb = np.array([class_scores(np.roll(y, k), cv_predict(X, np.roll(y, k), "nb", seed, repeats=1))[0] for k in ks])
     js_obs = mean_pairwise_js(X, y)
