@@ -1,0 +1,144 @@
+name,family,n_metrics,within_2se,median_abs_z
+markov_o2:ms408,Markov o2 TRAINED ON MS 408 (matches by construction),23,17,0.45353914805761514
+alphagram:ar_quran,anagram (alphagram),23,8,7.654892458448279
+alphagram:la_celsus,anagram (alphagram),23,6,5.682974908545877
+shuffle_tokens:it_manzoni,shuffled tokens,23,6,7.123277680110715
+plain:it_manzoni,natural-language plaintext (Latin/Italian/German),23,6,8.259329793972112
+caesar3:it_manzoni,monoalphabetic substitution,23,6,8.259329793972132
+monoalphabetic:it_manzoni,monoalphabetic substitution,23,6,8.259329793972134
+reverse_words:it_manzoni,word reversal,23,6,8.259329793972164
+alphagram:ar_muqaddimah,anagram (alphagram),23,5,5.240986114685135
+plain:de_walther_mhg,"natural plaintext, UNDERSIZED (<80% of target; sensitivity only)",23,5,5.294209243166815
+slot_grammar_p0.35,slot-grammar generator,23,5,5.823629815867088
+vigenere_k3:it_sidrach,polyalphabetic (Vigenere),23,5,6.083914215137726
+alphagram:la_vulgate,anagram (alphagram),23,5,6.594451900290442
+alphagram:it_manzoni,anagram (alphagram),23,5,7.206184212819611
+shuffle_tokens:ar_quran,shuffled tokens,23,5,7.294880821732619
+slot_grammar_p0.5,slot-grammar generator,23,5,8.937069274378786
+alphagram:he_mishneh_torah,anagram (alphagram),23,5,9.826906188621866
+shuffle_tokens:la_vulgate,shuffled tokens,23,5,9.973996957943022
+alphagram:he_tanakh,anagram (alphagram),23,5,10.049245007230532
+selfcitation_p0.3,self-citation generator,23,5,10.544300075973897
+vigenere_k6:it_sidrach,polyalphabetic (Vigenere),23,5,13.77352762472532
+plain:de_faust,natural-language plaintext (Latin/Italian/German),23,4,5.69681646584437
+slot_grammar_p0.2,slot-grammar generator,23,4,6.439705313472766
+alphagram:it_sidrach,anagram (alphagram),23,4,6.659039220246652
+alphagram:la_pliny_herbal,anagram (alphagram),23,4,6.791982647912198
+plain:ar_quran,natural abjad text (Hebrew/Arabic),23,4,7.261799698204979
+reverse_words:ar_quran,word reversal,23,4,7.261799698204979
+plain:it_sidrach,natural-language plaintext (Latin/Italian/German),23,4,8.113004406443638
+monoalphabetic:it_sidrach,monoalphabetic substitution,23,4,8.113004406443638
+caesar3:it_sidrach,monoalphabetic substitution,23,4,8.113004406443638
+selfcitation_p0.15,self-citation generator,23,4,8.225929844989874
+reverse_words:it_sidrach,word reversal,23,4,8.988092713564923
+shuffle_tokens:it_sidrach,shuffled tokens,23,4,9.074952732184753
+shuffle_tokens:la_celsus,shuffled tokens,23,4,10.357435308441554
+plain:la_augustine,natural-language plaintext (Latin/Italian/German),23,4,11.5984317014567
+plain:la_celsus,natural-language plaintext (Latin/Italian/German),23,4,12.552839566744053
+monoalphabetic:la_celsus,monoalphabetic substitution,23,4,12.552839566744053
+caesar3:la_celsus,monoalphabetic substitution,23,4,12.552839566744053
+reverse_words:la_celsus,word reversal,23,4,12.552839566744053
+plain:la_macer,"natural plaintext, UNDERSIZED (<80% of target; sensitivity only)",23,4,12.676791846776892
+abjad:la_vulgate,abjad (vowels removed),23,4,13.48131097744197
+nomenclator:la_celsus,nomenclator-like syllable code,23,4,16.93453290012609
+nomenclator:it_manzoni,nomenclator-like syllable code,23,4,18.01546053204903
+plain:ar_muqaddimah,natural abjad text (Hebrew/Arabic),23,3,4.086406860791477
+reverse_words:ar_muqaddimah,word reversal,23,3,4.086406860791477
+selfcitation_p0.5,self-citation generator,23,3,9.355209995599816
+plain:it_dante,natural-language plaintext (Latin/Italian/German),23,3,9.605518894916539
+reverse_words:he_tanakh,word reversal,23,3,9.996198947755854
+plain:he_tanakh,natural abjad text (Hebrew/Arabic),23,3,10.041416868780054
+plain:la_isidore,natural-language plaintext (Latin/Italian/German),23,3,10.452695925273854
+plain:la_vulgate,natural-language plaintext (Latin/Italian/German),23,3,11.43258505861677
+monoalphabetic:la_vulgate,monoalphabetic substitution,23,3,11.43258505861677
+caesar3:la_vulgate,monoalphabetic substitution,23,3,11.43258505861677
+reverse_words:la_vulgate,word reversal,23,3,11.43258505861677
+plain:it_ariosto,natural-language plaintext (Latin/Italian/German),23,3,11.839216929106843
+nomenclator:la_vulgate,nomenclator-like syllable code,23,3,12.109302327451765
+shuffle_tokens:he_tanakh,shuffled tokens,23,3,12.905994756897826
+vigenere_k3:it_manzoni,polyalphabetic (Vigenere),23,3,14.094625593139627
+abjad:it_manzoni,abjad (vowels removed),23,3,14.45872078744262
+markov_o1:la_celsus,Markov character gibberish,23,3,15.728453333419523
+markov_o2:ar_muqaddimah,Markov character gibberish,23,3,18.2865682768473
+shuffle_letters:ar_quran,letters shuffled inside words,23,3,21.264692673833927
+shuffle_letters:ar_muqaddimah,letters shuffled inside words,23,3,21.398668683645006
+markov_o1:ar_muqaddimah,Markov character gibberish,23,3,22.499577586377118
+iid_letters:it_sidrach,iid letters (no structure),23,3,27.32503561855942
+iid_letters:ar_quran,iid letters (no structure),23,3,29.678628777874707
+iid_letters:ar_muqaddimah,iid letters (no structure),23,3,34.00182447535546
+shuffle_tokens:ar_muqaddimah,shuffled tokens,23,2,6.824520363765261
+markov_o2:it_sidrach,Markov character gibberish,23,2,9.43047082269167
+plain:he_mishneh_torah,natural abjad text (Hebrew/Arabic),23,2,10.512638341597835
+reverse_words:he_mishneh_torah,word reversal,23,2,10.512638341597835
+abjad:la_celsus,abjad (vowels removed),23,2,10.882342556246284
+markov_o1:it_manzoni,Markov character gibberish,23,2,11.418277728915342
+markov_o2:it_manzoni,Markov character gibberish,23,2,11.551847550735596
+vigenere_k3:ar_quran,polyalphabetic (Vigenere),23,2,12.661150683127538
+abjad:la_pliny_herbal,abjad (vowels removed),23,2,13.064509795339504
+abjad:it_sidrach,abjad (vowels removed),23,2,13.082986675436509
+vigenere_k6:it_manzoni,polyalphabetic (Vigenere),23,2,13.85804656311464
+shuffle_tokens:he_mishneh_torah,shuffled tokens,23,2,14.6054446575396
+nomenclator:it_sidrach,nomenclator-like syllable code,23,2,15.440703367312121
+shuffle_letters:it_sidrach,letters shuffled inside words,23,2,15.546141312622474
+plain:la_pliny_herbal,natural-language plaintext (Latin/Italian/German),23,2,16.446375763838176
+monoalphabetic:la_pliny_herbal,monoalphabetic substitution,23,2,16.446375763838176
+caesar3:la_pliny_herbal,monoalphabetic substitution,23,2,16.446375763838176
+nomenclator:la_pliny_herbal,nomenclator-like syllable code,23,2,16.93453290012609
+markov_o1:ar_quran,Markov character gibberish,23,2,17.011873545569372
+reverse_words:la_pliny_herbal,word reversal,23,2,17.903844649374037
+markov_o1:la_pliny_herbal,Markov character gibberish,23,2,19.022202406340664
+naibbe_like:it_sidrach,Naibbe-inspired homophonic tiles,23,2,19.696360697718244
+shuffle_letters:it_manzoni,letters shuffled inside words,23,2,20.433964810930174
+shuffle_letters:la_celsus,letters shuffled inside words,23,2,28.946750028560054
+iid_letters:it_manzoni,iid letters (no structure),23,2,31.955950036516708
+iid_letters:la_celsus,iid letters (no structure),23,2,36.28330449604119
+markov_o2:he_tanakh,Markov character gibberish,23,1,9.785847867078921
+verbose_2sym:it_sidrach,verbose cipher (letter -> 2 symbols),23,1,10.850773665592481
+markov_o1:it_sidrach,Markov character gibberish,23,1,11.815988541063849
+verbose_2sym:it_manzoni,verbose cipher (letter -> 2 symbols),23,1,11.91264296027363
+vigenere_k3:ar_muqaddimah,polyalphabetic (Vigenere),23,1,12.043337246461016
+vigenere_k3:la_vulgate,polyalphabetic (Vigenere),23,1,12.427550017965677
+vigenere_k6:ar_quran,polyalphabetic (Vigenere),23,1,14.00287878325631
+vigenere_k6:ar_muqaddimah,polyalphabetic (Vigenere),23,1,14.107639652296719
+markov_o2:ar_quran,Markov character gibberish,23,1,14.40992470557217
+markov_o2:he_mishneh_torah,Markov character gibberish,23,1,15.059706926527285
+vigenere_k3:he_mishneh_torah,polyalphabetic (Vigenere),23,1,16.00027682379303
+markov_o1:la_vulgate,Markov character gibberish,23,1,16.206213000737108
+shuffle_tokens:la_pliny_herbal,shuffled tokens,23,1,16.68185807113949
+markov_o1:he_tanakh,Markov character gibberish,23,1,17.150666867274378
+plain:la_pliny_general,natural-language plaintext (Latin/Italian/German),23,1,17.634724492289795
+vigenere_k6:he_tanakh,polyalphabetic (Vigenere),23,1,17.944456735135695
+vigenere_k6:la_vulgate,polyalphabetic (Vigenere),23,1,18.91374419924373
+vigenere_k3:la_pliny_herbal,polyalphabetic (Vigenere),23,1,20.188406751625347
+markov_o1:he_mishneh_torah,Markov character gibberish,23,1,21.29616382883325
+iid_letters:he_tanakh,iid letters (no structure),23,1,26.938117616482682
+shuffle_letters:la_pliny_herbal,letters shuffled inside words,23,1,34.485762108652544
+iid_letters:la_vulgate,iid letters (no structure),23,1,34.71244772601735
+iid_letters:la_pliny_herbal,iid letters (no structure),23,1,36.959243016137
+vigenere_k3:he_tanakh,polyalphabetic (Vigenere),23,0,12.598932291562335
+verbose_2sym:la_celsus,verbose cipher (letter -> 2 symbols),23,0,13.387819801436367
+verbose_2sym:la_vulgate,verbose cipher (letter -> 2 symbols),23,0,13.827339449231275
+verbose_2sym:la_pliny_herbal,verbose cipher (letter -> 2 symbols),23,0,14.217434021224168
+markov_o2:la_vulgate,Markov character gibberish,23,0,14.874289698287448
+markov_o2:la_celsus,Markov character gibberish,23,0,15.309805422408889
+verbose_2sym:ar_muqaddimah,verbose cipher (letter -> 2 symbols),23,0,16.10694127792003
+verbose_2sym:he_tanakh,verbose cipher (letter -> 2 symbols),23,0,16.404632655183658
+vigenere_k3:la_celsus,polyalphabetic (Vigenere),23,0,16.465525626194463
+verbose_2sym:ar_quran,verbose cipher (letter -> 2 symbols),23,0,16.664300992145353
+verbose_2sym:he_mishneh_torah,verbose cipher (letter -> 2 symbols),23,0,17.36302769843061
+vigenere_k6:he_mishneh_torah,polyalphabetic (Vigenere),23,0,18.37315562220309
+markov_o2:la_pliny_herbal,Markov character gibberish,23,0,18.441162137848256
+vigenere_k6:la_celsus,polyalphabetic (Vigenere),23,0,19.052284068241626
+shuffle_letters:he_tanakh,letters shuffled inside words,23,0,19.439756911315726
+naibbe_like:he_tanakh,Naibbe-inspired homophonic tiles,23,0,19.79542909415431
+vigenere_k6:la_pliny_herbal,polyalphabetic (Vigenere),23,0,20.188406751625347
+naibbe_like:ar_muqaddimah,Naibbe-inspired homophonic tiles,23,0,20.26540549181369
+naibbe_like:ar_quran,Naibbe-inspired homophonic tiles,23,0,20.43269159871985
+naibbe_like:he_mishneh_torah,Naibbe-inspired homophonic tiles,23,0,20.630107157937452
+shuffle_letters:he_mishneh_torah,letters shuffled inside words,23,0,21.774012352001435
+naibbe_like:la_vulgate,Naibbe-inspired homophonic tiles,23,0,23.269712003960365
+naibbe_like:it_manzoni,Naibbe-inspired homophonic tiles,23,0,23.34289225159414
+naibbe_like:la_celsus,Naibbe-inspired homophonic tiles,23,0,23.4383306099233
+naibbe_like:la_pliny_herbal,Naibbe-inspired homophonic tiles,23,0,24.57903947559655
+shuffle_letters:la_vulgate,letters shuffled inside words,23,0,27.360220902629923
+iid_letters:he_mishneh_torah,iid letters (no structure),23,0,28.98044922876646

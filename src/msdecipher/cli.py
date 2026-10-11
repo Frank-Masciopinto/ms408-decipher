@@ -70,6 +70,18 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--seeds", type=int, default=3, help="seeds for stochastic controls (default 3)")
     p.add_argument("--file", help="MS 408 transcription (default data/transcriptions/ZL3b-n.txt)")
     p.add_argument("--no-plots", action="store_true")
+    p.add_argument("--boot", type=int, default=100, help="MS 408 bootstrap resamples per scheme (page / 8-page block; default 100, 0 = skip all MS 408 CIs); the delete-one-page/block jackknives always run when > 0")
+    p.add_argument("--control-jack", type=int, default=20, help="delete-one-group jackknife groups per control row (default 20, 0 = skip)")
+    p.add_argument("--workers", type=int, default=None, help="parallel workers (default: all cores up to 8)")
+
+    p = sub.add_parser("word-structure", help="Stage 6+7: slot grammar / affixes / behavioural clusters on MS 408 and all controls -> reports/word_structure/")
+    p.add_argument("--k", type=int, default=12, help="number of slots (default 12)")
+    p.add_argument("--no-jackknife", action="store_true", help="skip the MS 408 delete-one-block jackknife (CIs)")
+    p.add_argument("--tokens", type=int, default=35000)
+    p.add_argument("--file", help="MS 408 transcription (default data/transcriptions/ZL3b-n.txt)")
+    p.add_argument("--workers", type=int, default=None)
+    p.add_argument("--no-plots", action="store_true")
+    p.add_argument("--no-sweep", action="store_true", help="skip the slot-count sweep over controls")
 
     return ap
 
@@ -176,7 +188,15 @@ def _cmd_controls_verify(a) -> int:
 
 def _cmd_controls_run(a) -> int:
     from .controls_run import run_controls
-    run_controls(n_tokens=a.tokens, seeds=a.seeds, main_file=a.file, make_plots=not a.no_plots)
+    run_controls(n_tokens=a.tokens, seeds=a.seeds, main_file=a.file, make_plots=not a.no_plots,
+                 boot=a.boot, control_jack=a.control_jack, workers=a.workers)
+    return 0
+
+
+def _cmd_word_structure(a) -> int:
+    from .word_structure_run import run_word_structure
+    run_word_structure(n_tokens=a.tokens, main_file=a.file, K=a.k, jackknife=not a.no_jackknife, workers=a.workers, make_plots=not a.no_plots,
+                       do_sweep=not a.no_sweep)
     return 0
 
 
@@ -187,7 +207,7 @@ def main(argv=None) -> int:
                 "stats": _cmd_run, "run-all": _cmd_run, "images": _cmd_images,
                 "segment-glyphs": _cmd_segment, "page-index": _cmd_page_index,
                 "controls-fetch": _cmd_controls_fetch, "controls-verify": _cmd_controls_verify,
-                "controls-run": _cmd_controls_run}[a.cmd](a)
+                "controls-run": _cmd_controls_run, "word-structure": _cmd_word_structure}[a.cmd](a)
     except FileNotFoundError as e:
         print(f"error: {e}", file=sys.stderr)
         return 1

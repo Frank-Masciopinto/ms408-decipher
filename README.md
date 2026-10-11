@@ -21,7 +21,7 @@ A research framework for studying the undeciphered **Beinecke MS 408** ("Cipher 
 | 4 Unit segmentation (configurable `ch`, `sh`, …) | **Done** (4 presets or any custom list; not data-driven BPE yet) |
 | 5 Basic statistics: Zipf, Heaps, H1/h2/h3, positional, Currier A/B | **Done**, no control corpora yet |
 | 6 Sukhotin vowel/consonant test (after segmentation) | **Done** (page-bootstrap stability); HMMs/slot grammars **not done** |
-| 10a Control corpora + transformations + null generators, same stats on all, comparison table | **Done (second pass)**: [docs/CONTROLS.md](docs/CONTROLS.md), `reports/controls/`. 9 control texts (Latin ×2, Italian ×2, MHG ×1, **Hebrew ×2, Arabic ×2** consonantal abjad), 12 transformations (8 also applied to the Hebrew/Arabic texts), 5 generators; not done: herbal Latin, Syriac/Ethiopic, real Naibbe / Timm-Schinner code, CIs |
+| 10a Control corpora + transformations + null generators, same stats on all, comparison table | **Done (third pass, hardened)**: [docs/CONTROLS.md](docs/CONTROLS.md), `reports/controls/`. 17 base texts (Latin ×7 incl. Pliny/Celsus/Isidore/Macer herbal-medical-encyclopaedic, Italian ×4, German ×2, Hebrew ×2, Arabic ×2 consonantal), up to 3 size-matched 35k-token windows each, 12 transformations, 5 generators; jackknife (+bootstrap) CIs for MS 408 and per-control SEs, prediction-interval and z-score verdicts, alphabet-size-normalised metrics and regression; not done: Dioscorides/Pseudo-Apuleius, Syriac/Ethiopic, real Naibbe / Timm-Schinner code, folio→quire map |
 | 1, 7–14 (folio index, word-class induction, cribs, nulls, candidate-plaintext attacks, validation gates) | **Not started** |
 
 Honest limits: control texts and simulated families now exist (stage 10a) but are few, small and simplified, so the numbers still cannot say whether the text is language, cipher or neither (see [docs/CONTROLS.md](docs/CONTROLS.md)); the glyph catalogue was compared with the images only on 28 text pages with proxy metrics (stage 3b); samples are pooled over non-independent pages.
@@ -47,7 +47,7 @@ python -m msdecipher page-index         # PDF page -> folio index -> data/page_i
 python -m msdecipher segment-glyphs     # lines/words/glyph candidates + clustering + QA -> reports/image_stage/ (~1 min; needs  pip install -e ".[images]")
 python -m msdecipher controls-fetch     # Latin/Italian/MHG/Hebrew/Arabic control texts -> data/controls/ (git-ignored) + MANIFEST.json (--only ID ... for a subset)
 python -m msdecipher controls-verify    # SHA256 check
-python -m msdecipher controls-run       # stats on MS 408 + all controls/nulls -> reports/controls/ (~5 min; --tokens, --seeds)
+python -m msdecipher controls-run       # stats + CIs on MS 408 + all controls/nulls -> reports/controls/ (~10-15 min; --tokens, --seeds, --boot, --workers)
 ```
 
 `--units` accepts a preset (`raw`, `basic` = ch/sh, `collapsed` = ch, sh, cth, ckh, cph, cfh (default), `extended` = + ee, ii, iin, in) or a comma list such as `ch,sh,qo`.

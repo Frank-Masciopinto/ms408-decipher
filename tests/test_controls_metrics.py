@@ -89,26 +89,35 @@ def test_family_verdicts_on_handmade_table():
             R.MS_RAW: dict(family="MS 408", base="-", **{**cols, "unit_h2": 2.0}),
             "natural_a": dict(family="nat", base="x", **{**cols, "unit_h2": 3.2}),
             "natural_b": dict(family="nat", base="x", **{**cols, "unit_h2": 3.0}),
-            "slot": dict(family="slot", base="-", **{**cols, "unit_h2": 2.3})}
+            "natural_c": dict(family="nat", base="x", **{**cols, "unit_h2": 3.1}),
+            "natural_d": dict(family="nat", base="x", **{**cols, "unit_h2": 3.15}),
+            "slot_a": dict(family="slot", base="-", **{**cols, "unit_h2": 2.3}),
+            "slot_b": dict(family="slot", base="-", **{**cols, "unit_h2": 2.1}),
+            "slot_c": dict(family="slot", base="-", **{**cols, "unit_h2": 2.2}),
+            "pair_a": dict(family="pair", base="-", **{**cols, "unit_h2": 2.2}),
+            "pair_b": dict(family="pair", base="-", **{**cols, "unit_h2": 2.3})}
     comp = pd.DataFrame.from_dict(rows, orient="index")
-    ranges, verd, summ = R.family_verdicts(comp)
+    ranges, verd, summ = R.family_verdicts(comp, {"collapsed": {"unit_h2": 0.05}, "raw": {}})
     v = verd.set_index(["family", "metric"])
     assert v.loc[("nat", "unit_h2"), "verdict_collapsed"] == "↓"
+    assert v.loc[("nat", "unit_h2"), "z_collapsed"] < -5
     assert v.loc[("slot", "unit_h2"), "verdict_collapsed"] == "≈"
-    assert v.loc[("nat", "unit_H1"), "verdict_collapsed"] == "≈"
-    assert summ.iloc[0]["family"] == "slot"
+    assert v.loc[("nat", "unit_H1"), "verdict_collapsed"] == "≈"      # identical values: zero spread, MS equal -> inside
+    assert v.loc[("pair", "unit_h2"), "verdict_collapsed"] == "?"      # 2 members: no honest SD
+    assert summ.iloc[0]["family"] in ("slot", "nat")
 
 
 def test_run_controls_end_to_end_small(tmp_path, monkeypatch):
     base = ("in principio creavit deus caelum et terram terra autem erat inanis et vacua "
             "tenebrae erant super faciem abyssi spiritus dei ferebatur super aquas dixitque fiat lux").split()
-    def fake_load(cid, n_tokens=0, directory=None, variant="main"):
-        return (base * 100)[:n_tokens]
-    monkeypatch.setattr(R, "load_tokens", fake_load)
+    def fake_windows(cid, n_tokens=0, max_windows=None, variant="main", directory=None, min_share=0.8):
+        return [(base * 100)[:n_tokens], (base * 100)[7:n_tokens + 7]]
+    monkeypatch.setattr(R, "load_windows", fake_windows)
     monkeypatch.setattr(R, "ms_variants", lambda *a, **k: ({}, None))
-    res = R.run_controls(n_tokens=800, seeds=1, out_dir=tmp_path, make_plots=True, quiet=True)
+    res = R.run_controls(n_tokens=800, seeds=1, out_dir=tmp_path, make_plots=True, quiet=True, boot=0, control_jack=3, workers=1)
     df = pd.read_csv(tmp_path / "comparison.csv")
-    assert {"plain:la_vulgate", "selfcitation_p0.3", "naibbe_like:it_manzoni"} <= set(df["name"])
+    assert {"plain:la_vulgate", "plain:la_vulgate@w1", "selfcitation_p0.3", "naibbe_like:it_manzoni"} <= set(df["name"])
+    assert (tmp_path / "comparison_ci.csv").exists()
     assert (tmp_path / "comparison.md").exists() and (tmp_path / "comparison_runs.csv").exists()
     assert (tmp_path / "figures" / "scatter_panels.png").exists()
     assert "undeciphered" in (tmp_path / "comparison.md").read_text(encoding="utf-8")

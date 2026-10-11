@@ -116,11 +116,34 @@ def metrics(words: Sequence[str], segmenter: Callable[[str], tuple] | None = Non
         "adjacent_identical_rate": ident, "adjacent_edit1_rate": near,
     }
     out.update(positional_skew(seqs))
+    out.update(normalised_entropies(out))
     return out
 
 
+def normalised_entropies(m: dict) -> dict:
+    """Alphabet-size-aware versions of the entropy metrics (computed from the plain ones).
+
+    H1 and the conditional entropies grow with the alphabet (a 33-letter Arabic alphabet has a
+    higher ceiling than a 20-letter EVA one), so absolute bits are not directly comparable:
+    * ``unit_H1_norm`` = H1 / log2(A) (evenness of the unit distribution, A = units with >= 20 tokens);
+    * ``unit_h2_over_H1`` / ``unit_h3_over_H1`` = h2/H1, h3/H1 (share of the unit entropy that survives
+      conditioning on the previous 1 / 2 units; 1 = no dependence);
+    * ``unit_mi_adjacent`` = H1 - h2 (bits of information the previous unit gives about the next);
+    * ``shuffle_gap_over_H1`` = (h2 rise after within-word shuffling) / H1."""
+    A, H1, h2, h3 = m["alphabet_size_ge20"], m["unit_H1"], m["unit_h2"], m["unit_h3"]
+    ok = A and A > 1 and H1 and not math.isnan(H1)
+    return {
+        "unit_H1_norm": H1 / math.log2(A) if ok else float("nan"),
+        "unit_h2_over_H1": h2 / H1 if ok else float("nan"),
+        "unit_h3_over_H1": h3 / H1 if ok else float("nan"),
+        "unit_mi_adjacent": H1 - h2 if ok else float("nan"),
+        "shuffle_gap_over_H1": m["shuffle_gap_h2"] / H1 if ok else float("nan"),
+    }
+
+
 # metric -> (label, tolerance used for the "within the family's range" verdict, group)
-# Tolerances are rough, round numbers (NOT statistical confidence intervals).
+# The tolerance column (rough round numbers) is only used by the legacy :func:`verdict`; the
+# reported verdicts are CI / prediction-interval based (see :mod:`msdecipher.controls_ci`).
 METRIC_INFO: dict[str, tuple[str, float, str]] = {
     "type_token_ratio": ("type/token ratio", 0.05, "lexicon"),
     "hapax_share_of_types": ("hapax share of types", 0.05, "lexicon"),
@@ -135,6 +158,11 @@ METRIC_INFO: dict[str, tuple[str, float, str]] = {
     "unit_h2": ("conditional entropy h2 (bits)", 0.15, "letter statistics"),
     "unit_h3": ("conditional entropy h3 (bits)", 0.15, "letter statistics"),
     "shuffle_gap_h2": ("h2 rise after within-word shuffle (bits)", 0.2, "letter statistics"),
+    "unit_H1_norm": ("H1 / log2(alphabet size)", 0.03, "alphabet-normalised"),
+    "unit_h2_over_H1": ("h2 / H1", 0.03, "alphabet-normalised"),
+    "unit_h3_over_H1": ("h3 / H1", 0.03, "alphabet-normalised"),
+    "unit_mi_adjacent": ("H1 - h2 (bits)", 0.1, "alphabet-normalised"),
+    "shuffle_gap_over_H1": ("h2 rise after shuffle / H1", 0.03, "alphabet-normalised"),
     "sukhotin_vowel_like_share": ("Sukhotin vowel-like share of alphabet", 0.05, "letter statistics"),
     "pos_jsd_initial_final": ("word-initial vs final unit JSD (bits)", 0.05, "positional"),
     "pos_skewed_unit_share": ("share of positionally skewed units", 0.1, "positional"),

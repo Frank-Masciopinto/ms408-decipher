@@ -118,14 +118,15 @@ def _row(family, base, **kw):
 
 def test_verdict_shift_detects_band_change():
     rows = {R.MS_MAIN: _row("MS 408", "-", unit_h2=2.2), R.MS_RAW: _row("MS 408", "-", unit_h2=2.0),
-            "nat_a": _row("nat", "la", unit_h2=3.2), "nat_b": _row("nat", "it", unit_h2=3.0),
-            "nat_he": _row("nat", "he_tanakh", unit_h2=2.1),
+            "nat_a": _row("nat", "la", unit_h2=3.2), "nat_b": _row("nat", "it", unit_h2=3.0), "nat_c": _row("nat", "it", unit_h2=3.1),
+            "nat_he": _row("nat", "he_tanakh", unit_h2=2.1), "nat_he2": _row("nat", "he_tanakh", unit_h2=2.3),
             "plain:he_tanakh": _row(R.FAMILY_ABJAD, "he_tanakh", unit_h2=2.1)}
     sh = R.verdict_shift(pd.DataFrame.from_dict(rows, orient="index"))
     r = sh.set_index(["family", "metric"])
     assert r.loc[("nat", "unit_h2"), "verdict_before"] == "↓" and r.loc[("nat", "unit_h2"), "verdict_after"] == "≈"
     assert r.loc[("nat", "unit_h2"), "changed"]
     assert r.loc[(R.FAMILY_ABJAD, "unit_h2"), "verdict_before"] == "(family is new)"
+    assert r.loc[(R.FAMILY_ABJAD, "unit_h2"), "verdict_after"] == "?"                # one member: no honest SD
     assert not r.loc[("nat", "unit_H1"), "changed"]
     # no abjad rows -> None
     assert R.verdict_shift(pd.DataFrame.from_dict({k: v for k, v in rows.items() if "he" not in k}, orient="index")) is None
@@ -136,14 +137,14 @@ def test_run_controls_small_with_abjad(tmp_path, monkeypatch):
            "tenebrae erant super faciem abyssi spiritus dei ferebatur super aquas dixitque fiat lux").split()
     heb = X.normalise_abjad_text("בראשית ברא אלהים את השמים ואת הארץ והארץ היתה תהו ובהו וחשך על פני תהום ורוח אלהים מרחפת על פני המים", "hebrew")
 
-    def fake_load(cid, n_tokens=0, directory=None, variant="main"):
+    def fake_windows(cid, n_tokens=0, max_windows=None, variant="main", directory=None, min_share=0.8):
         base = heb if cid.startswith(("he_", "ar_")) else lat
         if variant == "folded":
             base = X.normalise_abjad_text(" ".join(base), "hebrew", "folded")
-        return (base * 200)[:n_tokens]
-    monkeypatch.setattr(R, "load_tokens", fake_load)
+        return [(base * 200)[:n_tokens]]
+    monkeypatch.setattr(R, "load_windows", fake_windows)
     monkeypatch.setattr(R, "ms_variants", lambda *a, **k: ({}, None))
-    R.run_controls(n_tokens=600, seeds=1, out_dir=tmp_path, make_plots=False, quiet=True)
+    R.run_controls(n_tokens=600, seeds=1, out_dir=tmp_path, make_plots=False, quiet=True, boot=0, control_jack=0, workers=1)
     df = pd.read_csv(tmp_path / "comparison.csv")
     names = set(df["name"])
     assert {"plain:he_tanakh", "plain_folded:ar_quran", "vigenere_k3:he_mishneh_torah", "naibbe_like:ar_muqaddimah",

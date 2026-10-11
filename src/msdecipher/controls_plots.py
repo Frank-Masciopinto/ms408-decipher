@@ -82,8 +82,8 @@ def verdict_heatmap(verd, summ, path: Path) -> str:
     ax.set_xticklabels([f if len(f) < 34 else f[:32] + "…" for f in fams], rotation=60, ha="right", fontsize=7)
     ax.set_yticks(range(len(mets)))
     ax.set_yticklabels([METRIC_INFO[m][0] for m in mets], fontsize=8)
-    ax.set_title("MS 408 (collapsed units) relative to each family's observed band\n"
-                 "≈ inside (yellow), ↑ MS above (red), ↓ MS below (green); coarse screening, tolerance-widened min..max", fontsize=9)
+    ax.set_title("MS 408 (collapsed units) relative to each family's 95% prediction interval\n"
+                 "≈ inside (yellow), ↑ MS above (red), ↓ MS below (green), – undefined; ? (too few members) shown as –; coarse screening", fontsize=9)
     return _save(fig, path)
 
 
@@ -105,12 +105,12 @@ def rank_frequency(samples: dict, path: Path) -> str:
     return _save(fig, path)
 
 
-def strip_plots(comp, path: Path) -> str:
+def strip_plots(comp, path: Path, res_se: dict | None = None) -> str:
     mets = ["unit_h2", "unit_h3", "shuffle_gap_h2", "zipf_mle_s_r10_1000", "type_token_ratio", "pos_skewed_unit_share"]
     ctrl = comp[~comp["family"].eq("MS 408")]
     fams = list(dict.fromkeys(ctrl["family"]))
     cols = _colors(fams)
-    fig, axs = plt.subplots(2, 3, figsize=(15, 9), sharey=True)
+    fig, axs = plt.subplots(2, 3, figsize=(15, 10), sharey=True)
     ypos = {f: i for i, f in enumerate(fams)}
     for ax, m in zip(axs.flat, mets):
         for fam, g in ctrl.groupby("family", sort=False):
@@ -118,12 +118,15 @@ def strip_plots(comp, path: Path) -> str:
             ax.scatter(g[m], [ypos[fam]] * len(g), color=cols[fam], s=sz - 6, marker=mk, edgecolor="k", linewidth=0.3)
         if MS_MAIN in comp.index:
             ax.axvline(comp.loc[MS_MAIN, m], color="k", lw=1.5)
+            se = (res_se or {}).get(m)
+            if se and se == se:
+                ax.axvspan(comp.loc[MS_MAIN, m] - 1.96 * se, comp.loc[MS_MAIN, m] + 1.96 * se, color="k", alpha=0.15)
         ax.set_title(METRIC_INFO[m][0], fontsize=9)
     for ax in axs[:, 0]:
         ax.set_yticks(range(len(fams)))
         ax.set_yticklabels([f if len(f) < 40 else f[:38] + "…" for f in fams], fontsize=7)
     axs[0, 0].invert_yaxis()
-    fig.suptitle("Per-family control values (dots) vs MS 408 (black line)", fontsize=10)
+    fig.suptitle("Per-family control values (dots, every base x window) vs MS 408 (black line, grey = 95% bootstrap CI)", fontsize=10)
     return _save(fig, path)
 
 
@@ -131,7 +134,7 @@ def make_all(res: dict, samples: dict, fig_dir: Path) -> list[str]:
     fig_dir.mkdir(parents=True, exist_ok=True)
     comp = res["comparison"]
     out = [scatter_panels(comp, fig_dir / "scatter_panels.png"),
-           strip_plots(comp, fig_dir / "strip_by_family.png"),
+           strip_plots(comp, fig_dir / "strip_by_family.png", (res.get("ms_se") or {}).get("collapsed")),
            rank_frequency(samples, fig_dir / "rank_frequency.png")]
     if "verdicts" in res:
         out.append(verdict_heatmap(res["verdicts"], res["summary"], fig_dir / "verdict_heatmap.png"))

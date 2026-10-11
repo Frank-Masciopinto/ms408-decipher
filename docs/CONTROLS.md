@@ -2,7 +2,7 @@
 
 > **MS 408 is undeciphered.** Nothing here decodes it. This stage only asks: *for each descriptive statistic already computed by the repo, what values do known kinds of text (natural language, simple ciphers, meaningless generators) give at about the same size?* No single metric is decisive.
 
-Run: `python -m msdecipher controls-fetch && python -m msdecipher controls-run` (about 5 minutes with the Hebrew/Arabic controls; `controls-fetch --only ID ...` fetches a subset). Outputs are in `reports/controls/` (`comparison.md`, `comparison.csv`, `comparison_sd.csv`, `comparison_runs.csv`, `family_ranges.csv`, `verdicts.csv`, `verdict_summary.csv`, `verdict_shift_abjad.csv`, `size_sensitivity.csv`, `figures/`). Without the abjad files the run still works (they are skipped with a message).
+Run: `python -m msdecipher controls-fetch && python -m msdecipher controls-run` (about 10-15 minutes on several cores with the jackknife/bootstrap resampling, `--workers N`; `controls-fetch --only ID ...` fetches a subset). Outputs are in `reports/controls/` (`comparison.md`, `comparison.csv`, `comparison_sd.csv`, `comparison_runs.csv`, `family_ranges.csv`, `verdicts.csv`, `verdict_summary.csv`, `verdict_shift_abjad.csv`, `size_sensitivity.csv`, `figures/`). Without the abjad files the run still works (they are skipped with a message).
 
 ## 1. Control texts (`controls_fetch.py`, `controls_text.py`)
 Only fetch scripts and `data/controls/MANIFEST.json` (URL, SHA256, licence note) are committed; the texts are git-ignored (`python -m msdecipher controls-verify`).
@@ -14,6 +14,23 @@ Only fetch scripts and `data/controls/MANIFEST.json` (URL, SHA256, licence note)
 | `it_dante` | Dante, *Divina Commedia* (Gutenberg #1000), verse | 35,000 |
 | `it_manzoni` | Manzoni, *I promessi sposi* (Gutenberg #45334) | 35,000 |
 | `de_walther_mhg` | Walther von der Vogelweide, selected poems, Middle High German (Gutenberg #35795) | 9,183 (all there is: **smaller** than MS 408) |
+
+Third-pass additions (hardening; herbal/medical/encyclopaedic Latin and more Italian/German; all fetched by `controls-fetch`, git-ignored, SHA256 in the manifest):
+
+| id | text | tokens used | licence |
+|---|---|---|---|
+| `la_pliny_herbal` | Pliny the Elder, *Naturalis Historia* XX-XXVII (remedies from garden plants, flowers, field plants, trees; Mayhoff 1906), Perseus TEI XML, apparatus notes dropped | 35,000 × up to 3 windows | Perseus canonical-latinLit, CC BY-SA 4.0 |
+| `la_pliny_general` | Pliny, *NH* VII-XI (man, animals, birds, insects), same file | 35,000 | same |
+| `la_celsus` | Celsus, *De medicina* I-VIII (medical prose), la.wikisource.org | 35,000 × 3 | PD text; Wikisource CC BY-SA |
+| `la_macer` | Macer Floridus, *De viribus herbarum* (11th-c. hexameter herbal), la.wikisource.org | ~14,000 (**undersized**, sensitivity only) | PD text; Wikisource CC BY-SA |
+| `la_isidore` | Isidore, *Etymologiae* (encyclopaedia), la.wikisource.org | 35,000 × 3 | PD text; Wikisource CC BY-SA |
+| `it_sidrach` | *Il libro di Sidrach* (medieval Italian encyclopaedic prose), Gutenberg | 35,000 | PD (Gutenberg) |
+| `it_ariosto` | Ariosto, *Orlando furioso*, Gutenberg, verse | 35,000 | PD (Gutenberg) |
+| `de_faust` | Goethe, *Faust*, Gutenberg, verse | 30,891 (all there is, ≥80% of target) | PD (Gutenberg) |
+
+Not found/used: Dioscorides *De materia medica* (no clean open Latin text found quickly), Pseudo-Apuleius *Herbarius* (only scans / hard-to-clean editions), Hildegard *Physica*. Pliny XX-XXVII is the largest clean plant-remedy text available here; none of these is a medieval illustrated herbal in the vernacular of MS 408's time and place, so "herbal Latin" is a topic control, not a genre-matched one.
+
+Size-matched sampling: every plain text contributes up to `--max-windows` (default 3) non-overlapping windows of exactly 35,000 tokens; stochastic controls are means over `--seeds` seeds; a text shorter than 80% of the target is labelled UNDERSIZED and excluded from family verdicts (kept for sensitivity). Sample windows from the same base text are *not* independent members of a family.
 
 Natural abjad controls (consonantal Hebrew and Arabic; added in the second pass):
 
@@ -57,8 +74,13 @@ Applied to `la_vulgate` and `it_manzoni` (two bases per family, so each family b
 ## 3. Metrics (`controls_metrics.py`, reusing `stats.py`)
 Zipf exponent (MLE, ranks 10-1000), Heaps beta (text order and shuffled), type/token ratio, hapax share, top-10 coverage, word entropy, mean/SD word length, unit H1, conditional entropies h2 and h3, h2 rise after shuffling letters inside words, Sukhotin vowel-like share (min count 20), positional skew (initial-vs-final JSD; share of units whose initial or final propensity is >3x over/under the baseline) and adjacent identical / edit-distance-1 token rates. Controls use single characters as units; MS 408 uses the collapsed EVA units (ch, sh, cth, ckh, cph, cfh) with a raw-EVA row beside it (`verdict_raw` columns).
 
-## 4. Screening verdicts
-For each family and metric the band is [min, max] of its members' means, widened by a round tolerance per metric; MS 408 is marked `≈` inside, `↑` above, `↓` below. This is a **screen**, not a test: families have 2-5 members from 1-2 base texts; tolerances are arbitrary; metrics are strongly correlated; counting `≈` cells is only used to order columns.
+## 4. Confidence intervals and verdicts (third pass; replaces the min/max + tolerance bands)
+- **MS 408 SEs.** Delete-one-page jackknife (one replicate per folio) and delete-one-block jackknife (blocks of 8 consecutive folios, a stand-in for quires: the repo has no folio→quire map); 100 page-bootstrap and 100 block-bootstrap resamples are also reported. **The jackknife SE (larger of the two) is what verdicts use.** Resampling pages *with* replacement duplicates text, which lowers the number of distinct types and biases TTR, hapax share, Heaps beta, word entropy and Zipf downwards; its percentile CIs are off-centre (`ms408_ci.csv`, `boot_*` columns). The jackknife drops data instead of duplicating it.
+- **Control SEs.** Delete-one-group jackknife over 20 contiguous groups of each control row (`comparison_ci.csv`).
+- **Verdicts.** For each family and metric the members (one per base text × window, seeds averaged) give a mean and an SD; MS 408 is `≈` when it lies in the 95% prediction interval mean ± t·sqrt(SD²(1+1/n) + SE_MS²), `↑`/`↓` outside, `?` for fewer than 3 members. z-scores against selected families are in section 3 of the report; per-control z in `control_z.csv`. Excluded as hypotheses: the Markov model trained on MS 408 (circular), folded-alphabet rows, undersized texts.
+- **Alphabet-size normalisation.** (i) Normalised metrics `H1/log2 A`, `h2/H1`, `h3/H1`, `H1−h2`, shuffle-gap/H1; (ii) an OLS of each metric on log2(alphabet size) over the natural-language rows (31 rows, 21-33 unit types), with MS 408's value (27 unit types) compared with the prediction interval at its own alphabet size (`alphabet_adjusted.csv`).
+
+Still a **screen**, not a hypothesis test: families have few independent base texts, windows from one text are correlated, metrics are strongly correlated, SEs capture sampling noise only (not transcription uncertainty, not unit segmentation), and counting `≈` cells is only used to order columns.
 
 ## 5. What the run shows (as of the committed reports; ZL 3b, collapsed units)
 - **Lexicon-level statistics are not discriminating.** Zipf s (0.98), TTR (0.21) and Heaps beta (0.75) fall inside the bands of natural-language plaintext *and* of most substitution/transposition/code controls, and of the slot-grammar generator. Only iid letters, Markov gibberish, verbose/homophonic and shuffled-letter controls miss on TTR/Heaps (they create too many new word types).
@@ -78,8 +100,18 @@ Four consonantal texts (Genesis+Exodus; Maimonides; Quran; Ibn Khaldun, 35k toke
 - **Verdict changes:** the new family "natural abjad text" contains MS 408 for 10 of 18 metrics, all lexicon/word-shape ones, and misses on unit H1/h2/h3, within-word shuffle gap, vowel-like share, positional JSD/skew and adjacent edit-distance-1 rate. Merging Hebrew/Arabic bases into the existing transformation families changes 13 of the existing 270 family-metric verdicts (only dispersion-type metrics: word length SD, hapax share and top-10 coverage for the shuffle/reversal/anagram families, vowel-like share for iid letters); **no verdict on h2, h3, within-word shuffle gap, positional skew, Zipf, Heaps or TTR changes.**
 - **Caveats:** one language family, two scripts, four texts (Biblical, medieval rabbinic and Quranic/medieval Arabic prose; genres differ: the Quran is rhymed, the Muqaddimah and Maimonides expository); consonantal Hebrew/Arabic words are short and root-dense, orthographic choices (maqaf split, attached clitics, alif folding) are ours; the abjad texts are read left-to-right as codepoints, which is irrelevant for the statistics; and none of this says anything about what language MS 408 might encode. Absence of a Hebrew/Arabic match on these metrics is weak evidence against a plain abjad hypothesis *with these normalisations*; it does not exclude abjad + a transformation (e.g. verbose substitution), whose bands in the table are only crude simulations (`verbose_2sym`/`naibbe_like` on Hebrew/Arabic give h2 ≈ 2.9-3.3, Δh2 0.5-0.8).
 
+### 5c. What the hardened run adds (third pass)
+Numbers from `reports/controls/comparison.md` (ZL 3b, collapsed units; ± are 95% = 1.96 jackknife SE):
+- **MS 408 CIs are tight enough to matter for the letter-level metrics:** h2 = 2.217 ± 0.092, h3 = 1.954 ± 0.079, within-word-shuffle rise 1.348 ± 0.068 bits, TTR 0.205 ± 0.027, Zipf s 0.985 ± 0.049, Heaps beta 0.745 ± 0.039.
+- **Letter-level outlier survives every family.** MS 408 h2 is below the prediction interval of *every* family except anagram (alphagram) and the slot-grammar generator (and, by construction, the Markov model trained on MS 408, which is not a hypothesis). Natural-language plaintext z(h2) = −6.8, Latin only −16.9, herbal/medical Latin −16.3, natural abjad −13.3; shuffle-gap z = +4.7 / +17.1 / +17.8 / +12.0.
+- **Herbal/medical Latin does not move the picture.** Pliny XX-XXVII, Celsus, Isidore, Macer give h2 3.17-3.25 and shuffle gap 0.66-0.73 (like other Latin); their vocabulary metrics vary with topic (Pliny herbal TTR 0.273, Zipf 0.81 vs MS 408 0.205, 0.985; MS 408 hapax share is above the herbal-Latin interval, z = +1.9, top-10 coverage below it, z = −2.2) but within the spread of other plaintext. MS 408 mean word length (4.47 units) is far below Latin (5.5-6.0 chars): Latin is measured in characters, MS 408 in collapsed units, so this is partly a unit-definition effect.
+- **Alphabet size does not explain the entropy gap.** Regressing on log2(alphabet size) over 31 natural rows, MS 408's expected h2 at 27 unit types is 3.46 bits vs observed 2.22 (z = −5.9); h2/H1 = 0.568 vs natural 0.72-0.91 (min is above MS 408); H1−h2 = 1.68 vs 0.39-1.15. Only `H1/log2 A` (0.821 vs 0.824-0.913) is at the edge of natural range, so MS 408's unit inventory is used about as uniformly as in natural texts while its *conditional* entropy is much lower.
+- **Lexicon-level metrics remain non-discriminating** (TTR, Zipf, Heaps, top-10 coverage are inside natural-language intervals); hapax share is high relative to herbal Latin and abjad (z ≈ +1.9 to +2.2).
+- **Per-control z-scores:** no single control is within 2 SE on more than 8 of 23 metrics (excluding the Markov-on-MS-408 model); closest are alphagram of Quran/Celsus and Manzoni-based rows, and the closeness is on lexicon metrics.
+- **Family ordering by number of metrics inside the interval** (not a likelihood): anagram 17/23, slot-grammar generator 15, shuffled tokens 14, word reversal 13, self-citation 13, natural plaintext (all) 12, ..., verbose ciphers 3/23, Naibbe-inspired tiles 2/23. Shuffled-token and reversal rows score highly only because they preserve word-level statistics and share the plaintext's lexicon, not because they fit the letter-level metrics (they are `↓` on h2/h3).
+
 ## 6. Limits / TODO
-- More and better controls (Syriac / Ethiopic abjad/abugida text, further Semitic genres, medieval herbal Latin, abbreviation-heavy Latin, Occitan/Old French/Czech); group-level units for verbose ciphers; the real Naibbe code (GitHub) and Timm-Schinner generator.
-- Bootstrap confidence intervals per quire/bifolio for MS 408 and per chunk for controls; the verdict tolerances are placeholders until then.
-- MHG control is only 9k tokens; see `size_sensitivity.csv` for how TTR, Zipf, Heaps and entropies shift when the sample shrinks.
-- Currier A/B and sections are pooled; hands/sections are not modelled.
+- Not done: Syriac / Ethiopic, Greek, Occitan/Old French/Czech controls; Dioscorides, Pseudo-Apuleius *Herbarius*, a vernacular medieval herbal; group-level units for verbose ciphers; the real Naibbe code (GitHub) and Timm-Schinner generator; a folio→quire map for true quire-level resampling.
+- Windows from the same base text are correlated; the number of independent base texts per family is 3-13, so prediction intervals are optimistic.
+- Currier A/B, hands and sections are pooled here (they are separated in the word-structure stage, [docs/WORD_STRUCTURE.md](WORD_STRUCTURE.md)).
+- MHG (Walther) and Macer are undersized and excluded from verdicts; `size_sensitivity.csv` shows how TTR, Zipf, Heaps and entropies shift for a 9,000-token sample.
