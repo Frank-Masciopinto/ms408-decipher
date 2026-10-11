@@ -21,7 +21,7 @@ A research framework for studying the undeciphered **Beinecke MS 408** ("Cipher 
 | 4 Unit segmentation (configurable `ch`, `sh`, …) | **Done** (4 presets or any custom list; not data-driven BPE yet) |
 | 5 Basic statistics: Zipf, Heaps, H1/h2/h3, positional, Currier A/B | **Done**, no control corpora yet |
 | 6 Sukhotin vowel/consonant test (after segmentation) | **Done** (page-bootstrap stability); HMMs/slot grammars **not done** |
-| 10a Control corpora + transformations + null generators, same stats on all, comparison table | **Done (first pass)**: [docs/CONTROLS.md](docs/CONTROLS.md), `reports/controls/`. 5 control texts (Latin ×2, Italian ×2, MHG ×1), 12 transformations, 5 generators; not done: abjad natural text, herbal Latin, real Naibbe / Timm-Schinner code, CIs |
+| 10a Control corpora + transformations + null generators, same stats on all, comparison table | **Done (second pass)**: [docs/CONTROLS.md](docs/CONTROLS.md), `reports/controls/`. 9 control texts (Latin ×2, Italian ×2, MHG ×1, **Hebrew ×2, Arabic ×2** consonantal abjad), 12 transformations (8 also applied to the Hebrew/Arabic texts), 5 generators; not done: herbal Latin, Syriac/Ethiopic, real Naibbe / Timm-Schinner code, CIs |
 | 1, 7–14 (folio index, word-class induction, cribs, nulls, candidate-plaintext attacks, validation gates) | **Not started** |
 
 Honest limits: control texts and simulated families now exist (stage 10a) but are few, small and simplified, so the numbers still cannot say whether the text is language, cipher or neither (see [docs/CONTROLS.md](docs/CONTROLS.md)); the glyph catalogue was compared with the images only on 28 text pages with proxy metrics (stage 3b); samples are pooled over non-independent pages.
@@ -45,9 +45,9 @@ python -m msdecipher images --dpi 100   # render PDF pages -> data/images/ (git-
 python -m msdecipher images --native    # native-resolution scans (pdfimages) -> data/images/native/ (git-ignored)
 python -m msdecipher page-index         # PDF page -> folio index -> data/page_index.csv
 python -m msdecipher segment-glyphs     # lines/words/glyph candidates + clustering + QA -> reports/image_stage/ (~1 min; needs  pip install -e ".[images]")
-python -m msdecipher controls-fetch     # Latin/Italian/MHG control texts -> data/controls/ (git-ignored) + MANIFEST.json
+python -m msdecipher controls-fetch     # Latin/Italian/MHG/Hebrew/Arabic control texts -> data/controls/ (git-ignored) + MANIFEST.json (--only ID ... for a subset)
 python -m msdecipher controls-verify    # SHA256 check
-python -m msdecipher controls-run       # stats on MS 408 + all controls/nulls -> reports/controls/ (~2 min; --tokens, --seeds)
+python -m msdecipher controls-run       # stats on MS 408 + all controls/nulls -> reports/controls/ (~5 min; --tokens, --seeds)
 ```
 
 `--units` accepts a preset (`raw`, `basic` = ch/sh, `collapsed` = ch, sh, cth, ckh, cph, cfh (default), `extended` = + ee, ii, iin, in) or a comma list such as `ch,sh,qo`.
@@ -74,4 +74,4 @@ The voynich.nu transliteration files state no open licence, so they are **not co
 - `docs/` workflow, prior work, data sources, stats note, image-stage status
 
 ## Planned next
-More controls (Hebrew/Arabic abjad text, herbal Latin, Occitan/Old French/Czech; the real Naibbe and Timm-Schinner generators), group-level units for verbose ciphers, quire-level confidence intervals, BPE/data-driven units, a held-out evaluation and higher-resolution scans for the image stage (herbal pages, per-hand comparison), then the later stages of [docs/WORKFLOW.md](docs/WORKFLOW.md). Background: [docs/PRIOR_WORK.md](docs/PRIOR_WORK.md), [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md).
+More controls (herbal Latin, Syriac/Ethiopic, Occitan/Old French/Czech; the real Naibbe and Timm-Schinner generators), group-level units for verbose ciphers, quire-level confidence intervals, BPE/data-driven units, a held-out evaluation and higher-resolution scans for the image stage (herbal pages, per-hand comparison), then the later stages of [docs/WORKFLOW.md](docs/WORKFLOW.md). Background: [docs/PRIOR_WORK.md](docs/PRIOR_WORK.md), [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md).
