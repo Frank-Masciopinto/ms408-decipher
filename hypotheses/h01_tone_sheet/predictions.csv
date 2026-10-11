@@ -1,0 +1,14 @@
+# Operationalisation of the sheet's 'meaning' column into testable illustration-section predictions.
+# WRITTEN BEFORE the section enrichment was computed (only unit counts had been looked at). The sheet itself names no illustration.
+# strict  = the section a reader of the meaning text would most directly expect; blank = no direct expectation, unit excluded from that test
+# liberal = every section for which a charitable reader could argue the meaning fits (used only to show how easily the mapping is satisfied)
+# priority: primary = pairs the requester named explicitly (water->biological, galactic->cosmological, lunar->astronomical); secondary = my extra pairs
+glyph,meaning,strict_sections,liberal_sections,priority,rationale
+qo,"root compression, memory seed",herbal,herbal;pharmaceutical,secondary,roots and seeds = plants
+ka,emergence of form,herbal,herbal;biological,secondary,growth/emergence = plants
+dy,water bridge of recall,biological,biological;pharmaceutical,primary,water = bathing/biological pages (nymphs in pools); also liquids in pharmaceutical
+ri,radiant expansion mirror ring,astronomical,astronomical;cosmological;stars,secondary,radiant / ring = sun-and-star diagrams
+ae,"galactic spiral, rebirth",cosmological,cosmological;astronomical,primary,galactic = cosmological diagrams
+ya,"dimensional fold, veil",,cosmological;astronomical,none,no direct illustration expectation
+ny,"lunar line, return path",astronomical,astronomical;cosmological;zodiac,primary,lunar = astronomical pages (zodiac only in the all-loci sensitivity run)
+ly,"flame descent, dream flow",,pharmaceutical;biological,none,no direct illustration expectation

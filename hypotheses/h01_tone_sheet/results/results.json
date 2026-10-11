@@ -1,0 +1,555 @@
+{
+ "tones": {
+  "sorted_hz": [
+   174.0,
+   233.0,
+   261.0,
+   294.0,
+   322.0,
+   365.0,
+   400.0,
+   433.0
+  ],
+  "best_12tet_rms_cents": 21.537693419633598,
+  "best_12tet_ref_hz": 1.017185874875326,
+  "best_12tet_max_dev_cents": 43.12742772967067,
+  "fixed_ref_rms": {
+   "12-TET, A4=440": 23.05039949759782,
+   "12-TET, A4=432": 24.486200018729654
+  },
+  "printed_order_inversions": 1,
+  "printed_order_p_under_random": 0.0001984126984126984,
+  "linear_rank_fit": {
+   "intercept": 185.74999999999986,
+   "step_hz": 35.571428571428605,
+   "r2": 0.9937212256231693,
+   "rms_hz": 6.478673806089816
+  },
+  "adjacent_steps_semitones": [
+   5.054911785666623,
+   1.9646382229872508,
+   2.061196179197758,
+   1.5749343993390328,
+   2.1700293078331523,
+   1.5852424320881404,
+   1.3724042994240029
+  ],
+  "adjacent_steps_hz": [
+   59.0,
+   28.0,
+   33.0,
+   28.0,
+   43.0,
+   35.0,
+   33.0
+  ]
+ },
+ "corpus": {
+  "file": "ZL3b-n.txt",
+  "folios": 207,
+  "tokens": 34977,
+  "types": 7171,
+  "glyph_tokens": 174634,
+  "hapax_types": 4925
+ },
+ "coverage": {
+  "n_tokens": 34977,
+  "n_types": 7171,
+  "chars": 174634,
+  "char_cov": 0.17110070203969444,
+  "tokens_fully_tileable": 0.010206707264773995,
+  "types_fully_tileable": 0.0018128573420722353,
+  "n_types_fully_tileable": 13,
+  "tokens_containing_a_unit": 0.3567201303713869,
+  "types_containing_a_unit": 0.3094408032352531,
+  "ambiguous_tilings_share_of_full": 0.0,
+  "n_lines": 4130,
+  "lines_fully_tileable": 0,
+  "lines_fully_tileable_multiword": 0,
+  "sheet_letters": "adeiklnoqry",
+  "tokens_made_only_of_sheet_letters": 0.3953169225491037,
+  "types_made_only_of_sheet_letters": 0.20025101101659462,
+  "glyph_share_outside_sheet_letters": 0.25657661165637846,
+  "top_units_reference": {
+   "top_units": [
+    "a",
+    "ch",
+    "d",
+    "e",
+    "i",
+    "l",
+    "o",
+    "y"
+   ],
+   "unit_share": 0.7182578299060155,
+   "tokens_fully_tileable": 0.17257054635903593
+  },
+  "units_for_90pct": 13,
+  "units_for_95pct": 14,
+  "units_for_99pct": 19,
+  "n_collapsed_units": 101,
+  "catalog_eva_symbols_P": 27,
+  "catalog_rare_codes_P": 85,
+  "catalog_symbols_ge_1pct": 15,
+  "catalog_has_standalone_unit": {
+   "qo": false,
+   "ka": false,
+   "dy": false,
+   "ri": false,
+   "ae": false,
+   "ya": false,
+   "ny": false,
+   "ly": false
+  },
+  "catalog_letters_present": {
+   "a": true,
+   "d": true,
+   "e": true,
+   "i": true,
+   "k": true,
+   "l": true,
+   "n": true,
+   "o": true,
+   "q": true,
+   "r": true,
+   "y": true
+  },
+  "tileable_word_examples": [
+   {
+    "word": "dy",
+    "count": 244,
+    "n_tilings": 1
+   },
+   {
+    "word": "qo",
+    "count": 49,
+    "n_tilings": 1
+   },
+   {
+    "word": "qokaly",
+    "count": 17,
+    "n_tilings": 1
+   },
+   {
+    "word": "qody",
+    "count": 16,
+    "n_tilings": 1
+   },
+   {
+    "word": "ly",
+    "count": 12,
+    "n_tilings": 1
+   },
+   {
+    "word": "qoly",
+    "count": 7,
+    "n_tilings": 1
+   },
+   {
+    "word": "dydy",
+    "count": 3,
+    "n_tilings": 1
+   },
+   {
+    "word": "kaly",
+    "count": 2,
+    "n_tilings": 1
+   },
+   {
+    "word": "qokady",
+    "count": 2,
+    "n_tilings": 1
+   },
+   {
+    "word": "qoka",
+    "count": 2,
+    "n_tilings": 1
+   },
+   {
+    "word": "ka",
+    "count": 1,
+    "n_tilings": 1
+   },
+   {
+    "word": "dydydy",
+    "count": 1,
+    "n_tilings": 1
+   },
+   {
+    "word": "dykaly",
+    "count": 1,
+    "n_tilings": 1
+   }
+  ]
+ },
+ "earlier_stage_flags": {
+  "in_digraph_candidates": [
+   "qo"
+  ],
+  "in_top_pmi_bigrams": [
+   "qo",
+   "ka",
+   "dy"
+  ],
+  "top_pmi_columns": [
+   "pair",
+   "count",
+   "pmi_bits",
+   "p_second_given_first"
+  ]
+ },
+ "controls": {
+  "median_tokens_fully_tileable": 0.0,
+  "max_tokens_fully_tileable": 0.0006571428571428571,
+  "median_char_cov": 0.03255100217567241,
+  "median_tokens_containing_a_unit": 0.08534285714285714,
+  "median_oe": {
+   "qo": 0.0,
+   "ka": 2.353233342081921,
+   "dy": 1.2331058416128673,
+   "ri": 1.8558967745971546,
+   "ae": 0.8722380737255695,
+   "ya": 0.10958536690502761,
+   "ny": 0.0,
+   "ly": 2.590386917240853
+  },
+  "n_controls": 13
+ },
+ "sections": {
+  "n_folios_by_section": {
+   "text-only": 6,
+   "herbal": 128,
+   "stars": 25,
+   "astronomical": 5,
+   "cosmological": 8,
+   "biological": 19,
+   "pharmaceutical": 16
+  },
+  "tokens_by_section": {
+   "astronomical": 279,
+   "biological": 6251,
+   "cosmological": 697,
+   "herbal": 11538,
+   "pharmaceutical": 2318,
+   "stars": 11603,
+   "text-only": 2291
+  },
+  "mapping_strict": {
+   "sheet_score": 1.2884338059523441,
+   "frac_of_8!_pairings_at_least_as_good": 0.08551587301587302,
+   "n_pairings": 40320,
+   "max_pairing_score": 1.8166630138622344,
+   "median_pairing_score": 0.2750080153299157,
+   "label_perm_p": 0.027990669776741087,
+   "label_perm_null_mean": 0.6735595496049236
+  },
+  "mapping_liberal": {
+   "sheet_score": 0.38358058930334815,
+   "frac_of_8!_pairings_at_least_as_good": 0.37976190476190474,
+   "n_pairings": 40320,
+   "max_pairing_score": 1.4087442801123258,
+   "median_pairing_score": 0.20255801367113901,
+   "label_perm_p": 0.28357214261912694,
+   "label_perm_null_mean": 0.20742463850223938
+  },
+  "avg_sections_accepted_strict": 1.0,
+  "avg_sections_accepted_liberal": 2.25,
+  "language_by_section": {
+   "astronomical": {
+    "?": 5
+   },
+   "biological": {
+    "B": 19
+   },
+   "cosmological": {
+    "?": 4,
+    "B": 4
+   },
+   "herbal": {
+    "A": 95,
+    "B": 32,
+    "?": 1
+   },
+   "pharmaceutical": {
+    "A": 16
+   },
+   "stars": {
+    "A": 2,
+    "B": 23
+   },
+   "text-only": {
+    "A": 1,
+    "B": 5
+   }
+  },
+  "mapping_strict_units_ge30": {
+   "units": [
+    "qo",
+    "ka",
+    "dy",
+    "ly"
+   ],
+   "sheet_score": -0.31960716354012536,
+   "frac_of_8!_pairings_at_least_as_good": 0.6666666666666666,
+   "n_pairings": 24,
+   "max_pairing_score": -0.05903143505154388,
+   "median_pairing_score": -0.25419779200110915,
+   "label_perm_p": 0.9965017491254373,
+   "label_perm_null_mean": -0.0046089740479100215
+  },
+  "cells_enriched_holm05": [
+   {
+    "unit": "qo",
+    "section": "biological",
+    "occurrences_in_section": 1530,
+    "log2_ratio": 0.9302044093548164,
+    "p_enriched": 0.0001999600079984003,
+    "holm_p_enriched_all_cells": 0.011197760447910418
+   },
+   {
+    "unit": "dy",
+    "section": "biological",
+    "occurrences_in_section": 1911,
+    "log2_ratio": 0.9639965787063164,
+    "p_enriched": 0.0001999600079984003,
+    "holm_p_enriched_all_cells": 0.011197760447910418
+   }
+  ],
+  "cells_depleted_holm05": [
+   {
+    "unit": "qo",
+    "section": "herbal",
+    "occurrences_in_section": 1046,
+    "log2_ratio": -0.9735767297020089,
+    "p_depleted": 0.0001999600079984003,
+    "holm_p_depleted_all_cells": 0.011197760447910418
+   },
+   {
+    "unit": "ka",
+    "section": "herbal",
+    "occurrences_in_section": 585,
+    "log2_ratio": -0.9492413396246836,
+    "p_depleted": 0.0001999600079984003,
+    "holm_p_depleted_all_cells": 0.011197760447910418
+   },
+   {
+    "unit": "dy",
+    "section": "herbal",
+    "occurrences_in_section": 1468,
+    "log2_ratio": -0.7293187539716468,
+    "p_depleted": 0.0001999600079984003,
+    "holm_p_depleted_all_cells": 0.011197760447910418
+   },
+   {
+    "unit": "ri",
+    "section": "biological",
+    "occurrences_in_section": 0,
+    "log2_ratio": -2.6579633404622665,
+    "p_depleted": 0.0001999600079984003,
+    "holm_p_depleted_all_cells": 0.011197760447910418
+   },
+   {
+    "unit": "ae",
+    "section": "biological",
+    "occurrences_in_section": 0,
+    "log2_ratio": -0.9699073467770066,
+    "p_depleted": 0.0001999600079984003,
+    "holm_p_depleted_all_cells": 0.011197760447910418
+   },
+   {
+    "unit": "ka",
+    "section": "pharmaceutical",
+    "occurrences_in_section": 48,
+    "log2_ratio": -2.0525065791193446,
+    "p_depleted": 0.0003999200159968006,
+    "holm_p_depleted_all_cells": 0.020395920815836834
+   },
+   {
+    "unit": "ae",
+    "section": "text-only",
+    "occurrences_in_section": 0,
+    "log2_ratio": 0.6641130225480523,
+    "p_depleted": 0.0007998400319936012,
+    "holm_p_depleted_all_cells": 0.03999200159968006
+   }
+  ]
+ },
+ "specificity_biological": {
+  "n_pool": 50,
+  "pool_with_p_enriched_lt_0.01": 6,
+  "pool_with_log2_ratio_ge_dy": 2,
+  "dy_log2_ratio": 0.9639965787063164,
+  "pool_median_abs_log2_ratio": 0.6294265324353486,
+  "sheet_units_enriched_p_lt_0.01": [
+   "dy",
+   "qo"
+  ]
+ },
+ "predictive": {
+  "n_folios_used": 193,
+  "majority_section_acc": 0.6321243523316062,
+  "majority_lang_acc": 0.5647668393782384,
+  "section": {
+   "sheet_units": {
+    "accuracy": 0.46632124352331605,
+    "balanced_accuracy": 0.3758699001602367
+   },
+   "random_frequent_bigram_sets": {
+    "acc_median": 0.6606217616580311,
+    "acc_p05": 0.5699481865284974,
+    "acc_p95": 0.7253886010362695,
+    "bal_median": 0.4189069497514277,
+    "frac_sets_ge_sheet_acc": 0.985,
+    "frac_sets_ge_sheet_bal": 0.875
+   },
+   "label_shuffled_sheet_units": {
+    "acc_median": 0.20725388601036268,
+    "acc_p95": 0.3686528497409324,
+    "bal_median": 0.12502311105632935,
+    "bal_p95": 0.19575565964090552
+   },
+   "top8_frequent_bigrams": {
+    "accuracy": 0.5803108808290155,
+    "balanced_accuracy": 0.4397848103866223
+   },
+   "only_qo_ka_dy_ly": {
+    "accuracy": 0.45595854922279794,
+    "balanced_accuracy": 0.3735279797855294
+   },
+   "only_ri_ae_ya_ny": {
+    "accuracy": 0.6269430051813472,
+    "balanced_accuracy": 0.14168618266978922
+   }
+  },
+  "language": {
+   "sheet_units": {
+    "accuracy": 0.9533678756476683,
+    "balanced_accuracy": 0.6472609204515423
+   },
+   "random_frequent_bigram_sets": {
+    "acc_median": 0.8367875647668394,
+    "acc_p05": 0.6994818652849741,
+    "acc_p95": 0.9227979274611396,
+    "bal_median": 0.5734700041529807,
+    "frac_sets_ge_sheet_acc": 0.025,
+    "frac_sets_ge_sheet_bal": 0.09
+   },
+   "label_shuffled_sheet_units": {
+    "acc_median": 0.37305699481865284,
+    "acc_p95": 0.5129533678756477,
+    "bal_median": 0.3116623249141088,
+    "bal_p95": 0.5119983388077168
+   },
+   "top8_frequent_bigrams": {
+    "accuracy": 0.9015544041450777,
+    "balanced_accuracy": 0.6166798806961906
+   }
+  }
+ },
+ "neighbour_mi": [
+  {
+   "unit": "qo",
+   "occurrences": 5220,
+   "mi_bits": 0.0018612671165109153,
+   "null_mean": 0.0008965995594831707,
+   "null_sd": 0.00026683843059061913,
+   "z": 3.6151747515998847,
+   "n_pairs": 30847,
+   "n_matched_controls": 14,
+   "control_median_z": 9.973849071089155,
+   "control_median_mi_bits": 0.003656263923637655,
+   "frac_controls_with_mi_ge_unit": 0.5714285714285714
+  },
+  {
+   "unit": "ka",
+   "occurrences": 2881,
+   "mi_bits": 0.001268856261306051,
+   "null_mean": 0.0012399636482762213,
+   "null_sd": 0.0003461552163881907,
+   "z": 0.08346721835163273,
+   "n_pairs": 30847,
+   "n_matched_controls": 14,
+   "control_median_z": 8.071995195568878,
+   "control_median_mi_bits": 0.0030587419751529252,
+   "frac_controls_with_mi_ge_unit": 0.7857142857142857
+  },
+  {
+   "unit": "dy",
+   "occurrences": 6413,
+   "mi_bits": 0.015504248219238018,
+   "null_mean": 0.003563203972384271,
+   "null_sd": 0.0005613971149746357,
+   "z": 21.270227310293983,
+   "n_pairs": 30847,
+   "n_matched_controls": 10,
+   "control_median_z": 2.7890223769804434,
+   "control_median_mi_bits": 0.001134277407868442,
+   "frac_controls_with_mi_ge_unit": 0.1
+  },
+  {
+   "unit": "ri",
+   "occurrences": 14,
+   "mi_bits": 1.9110901148986915e-07,
+   "null_mean": 2.154924102835108e-05,
+   "null_sd": 6.295067699641848e-05,
+   "z": -0.33928359528327806,
+   "n_pairs": 30847,
+   "n_matched_controls": 0,
+   "control_median_z": null,
+   "control_median_mi_bits": null,
+   "frac_controls_with_mi_ge_unit": null
+  },
+  {
+   "unit": "ae",
+   "occurrences": 4,
+   "mi_bits": 1.819613702221118e-08,
+   "null_mean": 1.6315835597614764e-08,
+   "null_sd": 4.832617328501679e-09,
+   "z": 0.3890855196638113,
+   "n_pairs": 30847,
+   "n_matched_controls": 0,
+   "control_median_z": null,
+   "control_median_mi_bits": null,
+   "frac_controls_with_mi_ge_unit": null
+  },
+  {
+   "unit": "ya",
+   "occurrences": 16,
+   "mi_bits": 1.1374983047848501e-07,
+   "null_mean": 2.2294567744214e-06,
+   "null_sd": 1.915338791820161e-05,
+   "z": -0.11046123813596144,
+   "n_pairs": 30847,
+   "n_matched_controls": 0,
+   "control_median_z": null,
+   "control_median_mi_bits": null,
+   "frac_controls_with_mi_ge_unit": null
+  },
+  {
+   "unit": "ny",
+   "occurrences": 13,
+   "mi_bits": 5.004505623489136e-08,
+   "null_mean": 3.107740721557525e-06,
+   "null_sd": 2.5109048760042255e-05,
+   "z": -0.12177664293633271,
+   "n_pairs": 30847,
+   "n_matched_controls": 0,
+   "control_median_z": null,
+   "control_median_mi_bits": null,
+   "frac_controls_with_mi_ge_unit": null
+  },
+  {
+   "unit": "ly",
+   "occurrences": 383,
+   "mi_bits": 0.0002802297374966465,
+   "null_mean": 0.00011118474237630832,
+   "null_sd": 0.00010509391060535932,
+   "z": 1.6085137011898158,
+   "n_pairs": 30847,
+   "n_matched_controls": 26,
+   "control_median_z": 0.5311750730766515,
+   "control_median_mi_bits": 0.0001084851979780434,
+   "frac_controls_with_mi_ge_unit": 0.15384615384615385
+  }
+ ]
+}

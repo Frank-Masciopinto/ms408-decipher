@@ -1,0 +1,17 @@
+{
+  "title": "VOYNICH MANUSCRIPT / CODEX TRANSLATION SHEET",
+  "source": "codex_translation_sheet.png (user-supplied image; unsourced, no author, date, provenance or method on the sheet)",
+  "transcription_notes": "Transcribed verbatim from the image, row order as printed. Note the printed order is not monotonic in Hz (ri 261 Hz is printed after dy 294 Hz). The glyph column is printed as lower-case Latin letter pairs in a modern italic typeface; it is read here as EVA-style transliteration strings.",
+  "columns": ["glyph", "tone_hz", "action", "meaning"],
+  "rows": [
+    {"glyph": "qo", "tone_hz": 174, "action": "inward spiral",   "meaning": "root compression, memory seed"},
+    {"glyph": "ka", "tone_hz": 233, "action": "rising arc",      "meaning": "emergence of form"},
+    {"glyph": "dy", "tone_hz": 294, "action": "dual loop",       "meaning": "water bridge of recall"},
+    {"glyph": "ri", "tone_hz": 261, "action": "upward spiral",   "meaning": "radiant expansion mirror ring"},
+    {"glyph": "ae", "tone_hz": 322, "action": "outer loop",      "meaning": "galactic spiral, rebirth"},
+    {"glyph": "ya", "tone_hz": 365, "action": "coiling",         "meaning": "dimensional fold, veil"},
+    {"glyph": "ny", "tone_hz": 400, "action": "curving",         "meaning": "lunar line, return path"},
+    {"glyph": "ly", "tone_hz": 433, "action": "descending curve","meaning": "flame descent, dream flow"}
+  ],
+  "not_on_the_sheet": ["any rule for combining glyphs", "any word separator rule", "any reading direction", "any mapping for the other manuscript letters (h, c, s, t, p, m, f, g, ...)", "any example translation", "any illustration/section association", "a source, date or author"]
+}
