@@ -84,7 +84,24 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--no-plots", action="store_true")
     p.add_argument("--no-sweep", action="store_true", help="skip the slot-count sweep over controls")
 
+    p = sub.add_parser("mechanisms-run", help="candidate generating mechanisms (Naibbe, self-citation, Zattera/Stolfi grammars, slot-conditioned bigram) through the full metric suite -> reports/mechanisms/")
+    p.add_argument("--seeds", type=int, default=5, help="seeds (runs) per mechanism variant")
+    p.add_argument("--tokens", type=int, default=35000)
+    p.add_argument("--no-sweep", action="store_true", help="skip the self-citation parameter search (re-use selfcitation_best_params.json if present)")
+    p.add_argument("--reuse", action="store_true", help="re-use runs.csv / sweep tables already in reports/mechanisms (redo verdicts, grammar comparison, report only)")
+    p.add_argument("--file", help="MS 408 transcription")
+    p.add_argument("--workers", type=int, default=None)
+    p.add_argument("--no-plots", action="store_true")
+
     return ap
+
+
+def _cmd_mechanisms(a) -> int:
+    from .mechanisms_run import run_mechanisms
+    res = run_mechanisms(n_tokens=a.tokens, seeds=a.seeds, workers=a.workers, sweep=not a.no_sweep, reuse=a.reuse,
+                         make_plots=not a.no_plots, main_file=a.file)
+    print("report:", res["out"] / "REPORT.md")
+    return 0
 
 
 def _cmd_fetch(a) -> int:
@@ -208,7 +225,8 @@ def main(argv=None) -> int:
                 "stats": _cmd_run, "run-all": _cmd_run, "images": _cmd_images,
                 "segment-glyphs": _cmd_segment, "page-index": _cmd_page_index,
                 "controls-fetch": _cmd_controls_fetch, "controls-verify": _cmd_controls_verify,
-                "controls-run": _cmd_controls_run, "word-structure": _cmd_word_structure}[a.cmd](a)
+                "controls-run": _cmd_controls_run, "word-structure": _cmd_word_structure,
+                "mechanisms-run": _cmd_mechanisms}[a.cmd](a)
     except FileNotFoundError as e:
         print(f"error: {e}", file=sys.stderr)
         return 1
