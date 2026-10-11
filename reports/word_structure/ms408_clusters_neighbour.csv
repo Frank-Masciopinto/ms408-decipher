@@ -1,0 +1,6 @@
+cluster,n_words,tokens,token_share,line_initial_rate,line_final_rate,top_section,top_section_share,top_language,top_language_share,behavioural_tags,top_words
+C1,42,4040,0.11550447436887097,0.08118811881188119,0.060148514851485146,stars,0.4,B,0.8972772277227723,none above thresholds,qokeedy qokeey qokain qokedy qokaiin qokal okeey qokar qoky qol lchedy okedy
+C2,34,3585,0.10249592589415901,0.03626220362622036,0.06415620641562064,stars,0.3536959553695955,B,0.8594142259414226,rarely line-initial,chedy shedy chey shey cheey cheol sheey otedy chdy chckhy sheol oteedy
+C3,31,1869,0.05343511450381679,0.11021936864633494,0.07758159443552702,herbal,0.36329588014981273,B,0.6013911182450509,none above thresholds,s l r cheor kaiin sol raiin keedy kar keey sor qo
+C4,49,5445,0.15567372845012437,0.07860422405876952,0.10192837465564739,stars,0.3862258953168044,B,0.7535353535353535,none above thresholds,ol aiin or ar dar y al okaiin o otaiin okain okal
+C5,44,4537,0.12971381193355633,0.09918448313863787,0.12497244875468372,herbal,0.5847476305929028,A,0.6213356843729336,"herbal-leaning, Currier-A-leaning",daiin chol dy dal dain chor shol chy sho dol cthy oty

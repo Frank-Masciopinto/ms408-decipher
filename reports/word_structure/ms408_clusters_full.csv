@@ -1,0 +1,6 @@
+cluster,n_words,tokens,token_share,line_initial_rate,line_final_rate,top_section,top_section_share,top_language,top_language_share,behavioural_tags,top_words
+C1,19,1725,0.04931812333819367,0.04463768115942029,0.3171014492753623,herbal,0.41043478260869565,B,0.6301449275362319,"line-final-leaning, rarely line-initial",dar dy dal qoky oty oky qoty dam am cheky oly otam
+C2,25,2639,0.07544958115332934,0.02993558165971959,0.05683971201212581,stars,0.42895035998484277,B,0.7150435771125426,"rarely line-initial, rarely line-final",aiin ar shey cheey okeey o sheey ain sheol cheody cheo okol
+C3,84,8631,0.246762157989536,0.04611284903255706,0.06059552774881242,stars,0.41420461128490327,B,0.9083536090835361,rarely line-initial,ol chedy shedy chey qokeedy qokeey qokain qokedy qokaiin al okaiin qokal
+C4,54,4994,0.14277954084112418,0.10292350820985183,0.08089707649179015,herbal,0.5682819383259912,A,0.6421706047256708,"herbal-leaning, Currier-A-leaning",daiin chol s dain chor shol cheol chy r sho dol cthy
+C5,18,1487,0.042513651828344344,0.3187626092804304,0.07800941492938802,herbal,0.32078009414929387,B,0.6987222595830531,line-initial-leaning,or y saiin dair sar sol sain sor qo ykaiin taiin tol

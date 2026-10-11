@@ -20,9 +20,10 @@ A research framework for studying the undeciphered **Beinecke MS 408** ("Cipher 
 | 3b Glyph catalogue from the page images | **Done, best effort** on 28 text-dominant pages ([docs/IMAGE_STAGE.md](docs/IMAGE_STAGE.md), [reports/image_stage/REPORT.md](reports/image_stage/REPORT.md)): lines found ±1 on 57% of pages, glyph candidates match the transcribed unit count for ~25% of words, image clusters agree only weakly with EVA units (NMI ≈ 0.16). Proxy metrics only, tuned on the same pages; no inventory size is supported by the images |
 | 4 Unit segmentation (configurable `ch`, `sh`, …) | **Done** (4 presets or any custom list; not data-driven BPE yet) |
 | 5 Basic statistics: Zipf, Heaps, H1/h2/h3, positional, Currier A/B | **Done**, no control corpora yet |
-| 6 Sukhotin vowel/consonant test (after segmentation) | **Done** (page-bootstrap stability); HMMs/slot grammars **not done** |
+| 6 Sukhotin vowel/consonant test; intra-word structure | Sukhotin **done** (page-bootstrap stability); **learned slot grammar + prefix-core-suffix model with MDL and held-out folio CV, vs shuffled null and all controls, done** ([docs/WORD_STRUCTURE.md](docs/WORD_STRUCTURE.md), `reports/word_structure/`): position matters unusually much (null gap 2.9 bits/type vs ≤1.5 in natural text) but a 12-slot independent-emission grammar fits worse than a within-word bigram |
+| 7 Word classes (behavioural clustering only) | **Done as behavioural tags, not grammar**: top-200 words clustered by neighbour/line/section/Currier/hand features with bootstrap / half-split ARI; MS 408 clusters are as stable as Latin/Italian/Hebrew/Arabic ones (ARI 0.42 vs 0.43), far above shuffled text (0.05); no category is named. Syntax induction **not done** |
 | 10a Control corpora + transformations + null generators, same stats on all, comparison table | **Done (third pass, hardened)**: [docs/CONTROLS.md](docs/CONTROLS.md), `reports/controls/`. 17 base texts (Latin ×7 incl. Pliny/Celsus/Isidore/Macer herbal-medical-encyclopaedic, Italian ×4, German ×2, Hebrew ×2, Arabic ×2 consonantal), up to 3 size-matched 35k-token windows each, 12 transformations, 5 generators; jackknife (+bootstrap) CIs for MS 408 and per-control SEs, prediction-interval and z-score verdicts, alphabet-size-normalised metrics and regression; not done: Dioscorides/Pseudo-Apuleius, Syriac/Ethiopic, real Naibbe / Timm-Schinner code, folio→quire map |
-| 1, 7–14 (folio index, word-class induction, cribs, nulls, candidate-plaintext attacks, validation gates) | **Not started** |
+| 1, 8–14 (cribs, nulls, candidate-plaintext attacks, validation gates) | **Not started** |
 
 Honest limits: control texts and simulated families now exist (stage 10a) but are few, small and simplified, so the numbers still cannot say whether the text is language, cipher or neither (see [docs/CONTROLS.md](docs/CONTROLS.md)); the glyph catalogue was compared with the images only on 28 text pages with proxy metrics (stage 3b); samples are pooled over non-independent pages.
 
@@ -48,6 +49,7 @@ python -m msdecipher segment-glyphs     # lines/words/glyph candidates + cluster
 python -m msdecipher controls-fetch     # Latin/Italian/MHG/Hebrew/Arabic control texts -> data/controls/ (git-ignored) + MANIFEST.json (--only ID ... for a subset)
 python -m msdecipher controls-verify    # SHA256 check
 python -m msdecipher controls-run       # stats + CIs on MS 408 + all controls/nulls -> reports/controls/ (~10-15 min; --tokens, --seeds, --boot, --workers)
+python -m msdecipher word-structure # Stage 6+7: slot grammar / affixes / behavioural clusters on MS 408 + all controls -> reports/word_structure/ (~10-15 min; --reuse rebuilds the report from the CSVs)
 ```
 
 `--units` accepts a preset (`raw`, `basic` = ch/sh, `collapsed` = ch, sh, cth, ckh, cph, cfh (default), `extended` = + ee, ii, iin, in) or a comma list such as `ch,sh,qo`.
@@ -62,7 +64,7 @@ python -m msdecipher controls-run       # stats + CIs on MS 408 + all controls/n
 The voynich.nu transliteration files state no open licence, so they are **not committed**; only `data/transcriptions/MANIFEST.json` (URLs + SHA256) and the fetch script are. See [data/transcriptions/README.md](data/transcriptions/README.md).
 
 ## Package layout (`src/msdecipher/`)
-`fetch.py` download + manifest · `ivtff.py` IVTFF parser (folio, locus, hand, section, tokens, comments, alternative readings, uncertain spaces, ligatures, rare codes) · `segment.py` unit segmentation · `glyphs.py` catalogue · `stats.py` entropy / Zipf / Heaps / Sukhotin / JSD · `analysis.py` pipeline and Markdown · `plots.py` · `images.py` page rendering / native scan extraction · `pageindex.py` PDF page→folio index · `imgproc.py` / `glyph_stage.py` / `image_report.py` image glyph stage · `controls_fetch.py` / `controls_text.py` / `controls_transforms.py` / `controls_metrics.py` / `controls_run.py` / `controls_plots.py` control stage · `cli.py`
+`fetch.py` download + manifest · `ivtff.py` IVTFF parser (folio, locus, hand, section, tokens, comments, alternative readings, uncertain spaces, ligatures, rare codes) · `segment.py` unit segmentation · `glyphs.py` catalogue · `stats.py` entropy / Zipf / Heaps / Sukhotin / JSD · `analysis.py` pipeline and Markdown · `plots.py` · `images.py` page rendering / native scan extraction · `pageindex.py` PDF page→folio index · `imgproc.py` / `glyph_stage.py` / `image_report.py` image glyph stage · `controls_fetch.py` / `controls_text.py` / `controls_transforms.py` / `controls_metrics.py` / `controls_run.py` / `controls_plots.py` / `controls_ci.py` control stage · `slot_grammar.py` / `word_structure.py` / `word_classes.py` / `word_structure_run.py` / `word_structure_plots.py` word-structure stage · `cli.py`
 
 ## Layout
 - `source/` the manuscript PDF (two halves)
@@ -74,4 +76,4 @@ The voynich.nu transliteration files state no open licence, so they are **not co
 - `docs/` workflow, prior work, data sources, stats note, image-stage status
 
 ## Planned next
-More controls (herbal Latin, Syriac/Ethiopic, Occitan/Old French/Czech; the real Naibbe and Timm-Schinner generators), group-level units for verbose ciphers, quire-level confidence intervals, BPE/data-driven units, a held-out evaluation and higher-resolution scans for the image stage (herbal pages, per-hand comparison), then the later stages of [docs/WORKFLOW.md](docs/WORKFLOW.md). Background: [docs/PRIOR_WORK.md](docs/PRIOR_WORK.md), [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md).
+More controls (Dioscorides/Pseudo-Apuleius, Syriac/Ethiopic, Occitan/Old French/Czech; the real Naibbe and Timm-Schinner generators), group-level units for verbose ciphers, quire-level confidence intervals, BPE/data-driven units, richer word grammars (slot-conditioned bigrams, Zattera/Stolfi tables as baselines), Brown/syntax induction, and higher-resolution scans for the image stage (herbal pages, per-hand comparison), then the later stages of [docs/WORKFLOW.md](docs/WORKFLOW.md). Background: [docs/PRIOR_WORK.md](docs/PRIOR_WORK.md), [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md).

@@ -77,6 +77,7 @@ def build_parser() -> argparse.ArgumentParser:
     p = sub.add_parser("word-structure", help="Stage 6+7: slot grammar / affixes / behavioural clusters on MS 408 and all controls -> reports/word_structure/")
     p.add_argument("--k", type=int, default=12, help="number of slots (default 12)")
     p.add_argument("--no-jackknife", action="store_true", help="skip the MS 408 delete-one-block jackknife (CIs)")
+    p.add_argument("--reuse", action="store_true", help="re-use comparison.csv / jackknife replicates already in reports/word_structure (re-do verdicts, report, plots only)")
     p.add_argument("--tokens", type=int, default=35000)
     p.add_argument("--file", help="MS 408 transcription (default data/transcriptions/ZL3b-n.txt)")
     p.add_argument("--workers", type=int, default=None)
@@ -196,7 +197,7 @@ def _cmd_controls_run(a) -> int:
 def _cmd_word_structure(a) -> int:
     from .word_structure_run import run_word_structure
     run_word_structure(n_tokens=a.tokens, main_file=a.file, K=a.k, jackknife=not a.no_jackknife, workers=a.workers, make_plots=not a.no_plots,
-                       do_sweep=not a.no_sweep)
+                       do_sweep=not a.no_sweep, reuse=a.reuse)
     return 0
 
 
