@@ -27,6 +27,17 @@ def _colors(families):
     return {f: cmap(i % 20) for i, f in enumerate(families)}
 
 
+def _marker(fam: str) -> tuple[str, int]:
+    """Marker and size per family: natural-language plaintext squares, Hebrew/Arabic diamonds."""
+    if fam.startswith("natural abjad text"):
+        return "D", 46
+    if fam.startswith("natural abjad, folded"):
+        return "d", 40
+    if fam.startswith("natural-language"):
+        return "s", 34
+    return "o", 28
+
+
 def scatter_panels(comp, path: Path) -> str:
     pairs = [("unit_H1", "unit_h2"), ("zipf_mle_s_r10_1000", "heaps_beta_shuffled"),
              ("pos_skewed_unit_share", "adjacent_edit1_rate"), ("unit_h3", "shuffle_gap_h2")]
@@ -35,7 +46,8 @@ def scatter_panels(comp, path: Path) -> str:
     fig, axs = plt.subplots(2, 2, figsize=(13, 9.5))
     for ax, (x, y) in zip(axs.flat, pairs):
         for fam, g in ctrl.groupby("family", sort=False):
-            ax.scatter(g[x], g[y], color=cols[fam], s=28, label=fam, alpha=0.9, edgecolor="k", linewidth=0.3)
+            mk, sz = _marker(fam)
+            ax.scatter(g[x], g[y], color=cols[fam], s=sz, marker=mk, label=fam, alpha=0.9, edgecolor="k", linewidth=0.3)
         ms = comp[comp["family"].eq("MS 408")]
         for name, r in ms.iterrows():
             main = name == MS_MAIN
@@ -76,7 +88,7 @@ def verdict_heatmap(verd, summ, path: Path) -> str:
 
 
 def rank_frequency(samples: dict, path: Path) -> str:
-    pick = [MS_MAIN, "plain:la_vulgate", "plain:it_manzoni", "plain:de_walther_mhg", "abjad:la_vulgate",
+    pick = [MS_MAIN, "plain:la_vulgate", "plain:it_manzoni", "plain:de_walther_mhg", "plain:he_tanakh", "plain:ar_muqaddimah", "abjad:la_vulgate",
             "vigenere_k6:la_vulgate", "nomenclator:la_vulgate", "verbose_2sym:la_vulgate", "naibbe_like:la_vulgate",
             "selfcitation_p0.3", "markov_o2:la_vulgate", "slot_grammar_p0.35", "shuffle_tokens:la_vulgate"]
     fig, ax = plt.subplots(figsize=(8, 6))
@@ -102,7 +114,8 @@ def strip_plots(comp, path: Path) -> str:
     ypos = {f: i for i, f in enumerate(fams)}
     for ax, m in zip(axs.flat, mets):
         for fam, g in ctrl.groupby("family", sort=False):
-            ax.scatter(g[m], [ypos[fam]] * len(g), color=cols[fam], s=22, edgecolor="k", linewidth=0.3)
+            mk, sz = _marker(fam)
+            ax.scatter(g[m], [ypos[fam]] * len(g), color=cols[fam], s=sz - 6, marker=mk, edgecolor="k", linewidth=0.3)
         if MS_MAIN in comp.index:
             ax.axvline(comp.loc[MS_MAIN, m], color="k", lw=1.5)
         ax.set_title(METRIC_INFO[m][0], fontsize=9)

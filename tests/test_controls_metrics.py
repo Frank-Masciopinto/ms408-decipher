@@ -102,7 +102,7 @@ def test_family_verdicts_on_handmade_table():
 def test_run_controls_end_to_end_small(tmp_path, monkeypatch):
     base = ("in principio creavit deus caelum et terram terra autem erat inanis et vacua "
             "tenebrae erant super faciem abyssi spiritus dei ferebatur super aquas dixitque fiat lux").split()
-    def fake_load(cid, n_tokens=0, directory=None):
+    def fake_load(cid, n_tokens=0, directory=None, variant="main"):
         return (base * 100)[:n_tokens]
     monkeypatch.setattr(R, "load_tokens", fake_load)
     monkeypatch.setattr(R, "ms_variants", lambda *a, **k: ({}, None))

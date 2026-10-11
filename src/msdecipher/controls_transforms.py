@@ -49,6 +49,25 @@ def monoalphabetic(tokens: Sequence[str], seed: int = 0) -> list[str]:
     return ["".join(key[c] for c in t) for t in tokens]
 
 
+def vigenere_generic(tokens: Sequence[str], key_len: int = 6, seed: int = 0) -> list[str]:
+    """Vigenere over the text's own alphabet (sorted code points, cyclic shifts); used for
+    Hebrew/Arabic where the a-z version does not apply. Same rule as :func:`vigenere`
+    (key advances over letters only)."""
+    rng = random.Random(seed)
+    alpha = sorted({c for t in tokens for c in t})
+    idx = {c: i for i, c in enumerate(alpha)}
+    n = len(alpha)
+    key = [rng.randrange(1, n) for _ in range(key_len)]
+    out, i = [], 0
+    for t in tokens:
+        w = []
+        for c in t:
+            w.append(alpha[(idx[c] + key[i % key_len]) % n])
+            i += 1
+        out.append("".join(w))
+    return out
+
+
 def caesar(tokens: Sequence[str], shift: int = 3) -> list[str]:
     return ["".join(chr((ord(c) - 97 + shift) % 26 + 97) for c in t) for t in tokens]
 
@@ -318,6 +337,21 @@ TRANSFORMS: dict[str, Callable] = {
     "vigenere_k3": lambda t, seed=0: vigenere(t, 3, seed),
     "vigenere_k6": lambda t, seed=0: vigenere(t, 6, seed),
     "nomenclator": nomenclator,
+    "verbose_2sym": verbose_2sym,
+    "naibbe_like": naibbe_like,
+    "reverse_words": lambda t, seed=0: reverse_words(t),
+    "alphagram": lambda t, seed=0: alphagram(t),
+    "shuffle_letters": shuffle_letters,
+    "shuffle_tokens": shuffle_tokens,
+}
+
+
+# Alphabet-independent subset: these work on any script (Hebrew, Arabic ...). Not included on
+# purpose: monoalphabetic/caesar (provably invisible, already demonstrated), abjad (a natural
+# abjad text already has no vowel letters) and nomenclator (its syllabifier needs Latin vowels).
+GENERIC_TRANSFORMS: dict[str, Callable] = {
+    "vigenere_k3": lambda t, seed=0: vigenere_generic(t, 3, seed),
+    "vigenere_k6": lambda t, seed=0: vigenere_generic(t, 6, seed),
     "verbose_2sym": verbose_2sym,
     "naibbe_like": naibbe_like,
     "reverse_words": lambda t, seed=0: reverse_words(t),
