@@ -1,0 +1,351 @@
+folio,sign,locus,band,clock,word,readable,units_T1,n_words_in_label
+f70v2,Pisces,f70v2.2,outer,09:00,otalalg,True,o t a l a l g,1
+f70v2,Pisces,f70v2.3,outer,10:00,ykary,True,y k a r y,1
+f70v2,Pisces,f70v2.4,outer,10:30,otar?,False,,1
+f70v2,Pisces,f70v2.5,outer,11:00,oty,True,o t y,1
+f70v2,Pisces,f70v2.6,outer,11:30,oky,True,o k y,2
+f70v2,Pisces,f70v2.6,outer,11:30,ody,True,o d y,2
+f70v2,Pisces,f70v2.7,outer,00:00,oty,True,o t y,2
+f70v2,Pisces,f70v2.7,outer,00:00,ar,True,a r,2
+f70v2,Pisces,f70v2.8,outer,00:30,okala,True,o k a l a,1
+f70v2,Pisces,f70v2.9,outer,01:00,otody,True,o t o d y,1
+f70v2,Pisces,f70v2.10,outer,01:30,otald,True,o t a l d,1
+f70v2,Pisces,f70v2.11,outer,02:00,otaldar,True,o t a l d a r,1
+f70v2,Pisces,f70v2.12,outer,02:45,okody,True,o k o d y,1
+f70v2,Pisces,f70v2.13,outer,03:15,opysam,True,o p y s a m,1
+f70v2,Pisces,f70v2.14,outer,04:00,chXy,False,,1
+f70v2,Pisces,f70v2.15,outer,04:30,otaly,True,o t a l y,1
+f70v2,Pisces,f70v2.16,outer,05:30,otal,True,o t a l,2
+f70v2,Pisces,f70v2.16,outer,05:30,arar,True,a r a r,2
+f70v2,Pisces,f70v2.17,outer,06:30,otaldy,True,o t a l d y,1
+f70v2,Pisces,f70v2.18,outer,07:00,okeoly,True,o k e o l y,1
+f70v2,Pisces,f70v2.19,outer,08:00,okydy,True,o k y d y,1
+f70v2,Pisces,f70v2.20,outer,08:30,okees,True,o k e e s,1
+f70v2,Pisces,f70v2.22,inner,10:00,otar,True,o t a r,2
+f70v2,Pisces,f70v2.22,inner,10:00,am,True,a m,2
+f70v2,Pisces,f70v2.23,inner,11:00,otar,True,o t a r,2
+f70v2,Pisces,f70v2.23,inner,11:00,al,True,a l,2
+f70v2,Pisces,f70v2.24,inner,00:00,otalar,True,o t a l a r,1
+f70v2,Pisces,f70v2.25,inner,01:30,otalam,True,o t a l a m,1
+f70v2,Pisces,f70v2.26,inner,03:00,dolaram,True,d o l a r a m,1
+f70v2,Pisces,f70v2.27,inner,04:00,okaram,True,o k a r a m,1
+f70v2,Pisces,f70v2.28,inner,05:00,oteosal,True,o t e o s a l,1
+f70v2,Pisces,f70v2.29,inner,06:30,salols,True,s a l o l s,1
+f70v2,Pisces,f70v2.30,inner,08:00,okaldal,True,o k a l d a l,1
+f70v2,Pisces,f70v2.31,inner,09:00,ykolaiin,True,y k o l a i i n,1
+f70v2,Pisces,f70v2.33,centre,,otolal,True,o t o l a l,1
+f70v1,Aries,f70v1.2,outer,10:30,otalchy,True,o t a l ch y,4
+f70v1,Aries,f70v1.2,outer,10:30,tar,True,t a r,4
+f70v1,Aries,f70v1.2,outer,10:30,am,True,a m,4
+f70v1,Aries,f70v1.2,outer,10:30,dy,True,d y,4
+f70v1,Aries,f70v1.3,outer,00:00,opchey,True,o p ch e y,2
+f70v1,Aries,f70v1.3,outer,00:00,sal,True,s a l,2
+f70v1,Aries,f70v1.4,outer,01:00,otakaizan,True,o t a k a i z a n,1
+f70v1,Aries,f70v1.5,outer,02:30,okalal,True,o k a l a l,1
+f70v1,Aries,f70v1.6,outer,03:30,otaly,True,o t a l y,1
+f70v1,Aries,f70v1.7,outer,04:30,oalcheg,True,o a l ch e g,1
+f70v1,Aries,f70v1.8,outer,06:00,otchodals,True,o t ch o d a l s,1
+f70v1,Aries,f70v1.9,outer,07:00,okolshy,True,o k o l sh y,1
+f70v1,Aries,f70v1.10,outer,08:00,otshshdy,True,o t sh sh d y,1
+f70v1,Aries,f70v1.11,outer,09:00,otal,True,o t a l,2
+f70v1,Aries,f70v1.11,outer,09:00,ypsharal,True,y p sh a r a l,2
+f70v1,Aries,f70v1.13,inner,10:30,okoly,True,o k o l y,1
+f70v1,Aries,f70v1.14,inner,00:00,otalaiin,True,o t a l a i i n,1
+f70v1,Aries,f70v1.15,inner,02:00,oteo,True,o t e o,3
+f70v1,Aries,f70v1.15,inner,02:00,alals,True,a l a l s,3
+f70v1,Aries,f70v1.15,inner,02:00,araly,True,a r a l y,3
+f70v1,Aries,f70v1.16,inner,05:00,oteoeey,True,o t e o e e y,3
+f70v1,Aries,f70v1.16,inner,05:00,otal,True,o t a l,3
+f70v1,Aries,f70v1.16,inner,05:00,okealar,True,o k e a l a r,3
+f70v1,Aries,f70v1.17,inner,08:00,otear,True,o t e a r,2
+f70v1,Aries,f70v1.17,inner,08:00,araydy,True,a r a y d y,2
+f71r,Aries,f71r.2,outer,10:00,oteos,True,o t e o s,2
+f71r,Aries,f71r.2,outer,10:00,arar,True,a r a r,2
+f71r,Aries,f71r.3,outer,11:00,okldam,True,o k l d a m,1
+f71r,Aries,f71r.4,outer,00:00,oteoaldy,True,o t e o a l d y,1
+f71r,Aries,f71r.5,outer,01:00,oteolar,True,o t e o l a r,1
+f71r,Aries,f71r.6,outer,02:00,okeoaly,True,o k e o a l y,1
+f71r,Aries,f71r.7,outer,03:00,otaleky,True,o t a l e k y,1
+f71r,Aries,f71r.8,outer,04:30,otalsar,True,o t a l s a r,1
+f71r,Aries,f71r.9,outer,05:30,cheary,True,ch e a r y,1
+f71r,Aries,f71r.10,outer,07:00,oteotey,True,o t e o t e y,2
+f71r,Aries,f71r.10,outer,07:00,rary,True,r a r y,2
+f71r,Aries,f71r.11,outer,08:30,otalaly,True,o t a l a l y,1
+f71r,Aries,f71r.13,inner,11:00,otolchdy,True,o t o l ch d y,1
+f71r,Aries,f71r.14,inner,00:30,otoloaram,True,o t o l o a r a m,1
+f71r,Aries,f71r.15,inner,03:30,oteeol,True,o t e e o l,1
+f71r,Aries,f71r.16,inner,05:30,otolchd,True,o t o l ch d,1
+f71r,Aries,f71r.17,inner,08:00,otaldar,True,o t a l d a r,1
+f71v,Taurus,f71v.2,outer,10:00,char,True,ch a r,2
+f71v,Taurus,f71v.2,outer,10:00,arom,True,a r o m,2
+f71v,Taurus,f71v.3,outer,11:00,chfaly,True,ch f a l y,1
+f71v,Taurus,f71v.4,outer,00:00,okolar,True,o k o l a r,1
+f71v,Taurus,f71v.5,outer,01:00,otchody,True,o t ch o d y,1
+f71v,Taurus,f71v.6,outer,02:00,alcphy,True,a l cph y,1
+f71v,Taurus,f71v.7,outer,03:00,otaiin,True,o t a i i n,1
+f71v,Taurus,f71v.8,outer,04:30,okaraiin,True,o k a r a i i n,1
+f71v,Taurus,f71v.9,outer,05:30,otar,True,o t a r,3
+f71v,Taurus,f71v.9,outer,05:30,ar,True,a r,3
+f71v,Taurus,f71v.9,outer,05:30,aly,True,a l y,3
+f71v,Taurus,f71v.10,outer,07:00,opalar,True,o p a l a r,3
+f71v,Taurus,f71v.10,outer,07:00,am,True,a m,3
+f71v,Taurus,f71v.10,outer,07:00,dan,True,d a n,3
+f71v,Taurus,f71v.11,outer,09:00,opalor,True,o p a l o r,2
+f71v,Taurus,f71v.11,outer,09:00,ar,True,a r,2
+f71v,Taurus,f71v.13,inner,10:00,ofaXom,False,,1
+f71v,Taurus,f71v.14,inner,00:00,otalody,True,o t a l o d y,1
+f71v,Taurus,f71v.15,inner,03:00,otalaiin,True,o t a l a i i n,1
+f71v,Taurus,f71v.16,inner,05:30,otar,True,o t a r,2
+f71v,Taurus,f71v.16,inner,05:30,shar,True,sh a r,2
+f71v,Taurus,f71v.17,inner,08:30,sholshdy,True,sh o l sh d y,1
+f72r1,Taurus,f72r1.2,outer,09:30,oshodady,True,o sh o d a d y,1
+f72r1,Taurus,f72r1.3,outer,10:30,chdaiirdainy,True,ch d a i i r d a i n y,1
+f72r1,Taurus,f72r1.4,outer,00:00,oaiin,True,o a i i n,3
+f72r1,Taurus,f72r1.4,outer,00:00,ar,True,a r,3
+f72r1,Taurus,f72r1.4,outer,00:00,ary,True,a r y,3
+f72r1,Taurus,f72r1.5,outer,01:00,okalam,True,o k a l a m,1
+f72r1,Taurus,f72r1.6,outer,02:00,ytalshdy,True,y t a l sh d y,1
+f72r1,Taurus,f72r1.7,outer,03:00,char,True,ch a r,2
+f72r1,Taurus,f72r1.7,outer,03:00,alif,True,a l i f,2
+f72r1,Taurus,f72r1.8,outer,03:30,otaraldy,True,o t a r a l d y,1
+f72r1,Taurus,f72r1.9,outer,05:00,otaiin,True,o t a i i n,2
+f72r1,Taurus,f72r1.9,outer,05:00,otain,True,o t a i n,2
+f72r1,Taurus,f72r1.10,outer,07:00,otalef,True,o t a l e f,3
+f72r1,Taurus,f72r1.10,outer,07:00,ys,True,y s,3
+f72r1,Taurus,f72r1.10,outer,07:00,ainam,True,a i n a m,3
+f72r1,Taurus,f72r1.11,outer,08:30,ochol,True,o ch o l,2
+f72r1,Taurus,f72r1.11,outer,08:30,sharam,True,sh a r a m,2
+f72r1,Taurus,f72r1.13,inner,09:00,ofaralar,True,o f a r a l a r,1
+f72r1,Taurus,f72r1.14,inner,00:00,otchoshy,True,o t ch o sh y,1
+f72r1,Taurus,f72r1.15,inner,02:00,otchdal,True,o t ch d a l,1
+f72r1,Taurus,f72r1.16,inner,04:00,okeey,True,o k e e y,2
+f72r1,Taurus,f72r1.16,inner,04:00,ary,True,a r y,2
+f72r1,Taurus,f72r1.17,inner,07:00,otainy,True,o t a i n y,1
+f72r2,Gemini,f72r2.1,top,10:30,ofchdamy,True,o f ch d a m y,1
+f72r2,Gemini,f72r2.2,top,11:00,oklairdy,True,o k l a i r d y,1
+f72r2,Gemini,f72r2.3,top,00:00,okaram,True,o k a r a m,1
+f72r2,Gemini,f72r2.4,top,00:30,okairy,True,o k a i r y,1
+f72r2,Gemini,f72r2.5,top,01:00,okealar,True,o k e a l a r,1
+f72r2,Gemini,f72r2.7,outer,10:00,otaraldy,True,o t a r a l d y,1
+f72r2,Gemini,f72r2.8,outer,11:00,okalar,True,o k a l a r,1
+f72r2,Gemini,f72r2.9,outer,11:45,okal,True,o k a l,1
+f72r2,Gemini,f72r2.10,outer,00:15,okaly,True,o k a l y,1
+f72r2,Gemini,f72r2.11,outer,01:00,okal,True,o k a l,1
+f72r2,Gemini,f72r2.12,outer,02:00,okeey,True,o k e e y,2
+f72r2,Gemini,f72r2.12,outer,02:00,ary,True,a r y,2
+f72r2,Gemini,f72r2.13,outer,03:00,oteeary,True,o t e e a r y,1
+f72r2,Gemini,f72r2.14,outer,04:00,otair,True,o t a i r,2
+f72r2,Gemini,f72r2.14,outer,04:00,dy,True,d y,2
+f72r2,Gemini,f72r2.15,outer,05:00,okaircham,True,o k a i r ch a m,1
+f72r2,Gemini,f72r2.16,outer,06:00,okeal,True,o k e a l,1
+f72r2,Gemini,f72r2.17,outer,06:30,otarX,False,,1
+f72r2,Gemini,f72r2.18,outer,07:30,okaly,True,o k a l y,1
+f72r2,Gemini,f72r2.19,outer,08:00,orary,True,o r a r y,1
+f72r2,Gemini,f72r2.20,outer,09:00,okyd,True,o k y d,1
+f72r2,Gemini,f72r2.21,outer,09:30,otolam,True,o t o l a m,1
+f72r2,Gemini,f72r2.23,inner,10:30,otal,True,o t a l,1
+f72r2,Gemini,f72r2.24,inner,11:30,ralal,True,r a l a l,1
+f72r2,Gemini,f72r2.25,inner,00:30,okam,True,o k a m,1
+f72r2,Gemini,f72r2.26,inner,02:00,otalshy,True,o t a l sh y,1
+f72r2,Gemini,f72r2.27,inner,03:30,okaldy,True,o k a l d y,1
+f72r2,Gemini,f72r2.28,inner,05:00,chosar,True,ch o s a r,1
+f72r2,Gemini,f72r2.29,inner,06:30,otam,True,o t a m,1
+f72r2,Gemini,f72r2.30,inner,08:00,ainaly,True,a i n a l y,1
+f72r2,Gemini,f72r2.31,inner,09:00,okarcham,True,o k a r ch a m,1
+f72r3,Cancer,f72r3.2,outer,10:30,olkalaiin,True,o l k a l a i i n,1
+f72r3,Cancer,f72r3.3,outer,11:00,olalsy,True,o l a l s y,1
+f72r3,Cancer,f72r3.4,outer,00:00,oraiinam,True,o r a i i n a m,1
+f72r3,Cancer,f72r3.5,outer,01:00,osarsheeeo,True,o s a r sh e e e o,1
+f72r3,Cancer,f72r3.6,outer,02:00,otoXaiin,False,,1
+f72r3,Cancer,f72r3.7,outer,02:30,opoiiinoin,True,o p o i i i n o i n,3
+f72r3,Cancer,f72r3.7,outer,02:30,al,True,a l,3
+f72r3,Cancer,f72r3.7,outer,02:30,ches,True,ch e s,3
+f72r3,Cancer,f72r3.8,outer,04:00,ypaiin,True,y p a i i n,2
+f72r3,Cancer,f72r3.8,outer,04:00,alaly,True,a l a l y,2
+f72r3,Cancer,f72r3.9,outer,05:00,oteey,True,o t e e y,2
+f72r3,Cancer,f72r3.9,outer,05:00,daiin,True,d a i i n,2
+f72r3,Cancer,f72r3.10,outer,06:30,oeeodaiin,True,o e e o d a i i n,1
+f72r3,Cancer,f72r3.11,outer,07:00,ofsholdy,True,o f sh o l d y,1
+f72r3,Cancer,f72r3.12,outer,07:00,opoeey,True,o p o e e y,2
+f72r3,Cancer,f72r3.12,outer,07:00,okaiin,True,o k a i i n,2
+f72r3,Cancer,f72r3.13,outer,10:00,ykolairol,True,y k o l a i r o l,1
+f72r3,Cancer,f72r3.15,middle,11:00,oralkam,True,o r a l k a m,1
+f72r3,Cancer,f72r3.16,middle,00:00,ytairal,True,y t a i r a l,1
+f72r3,Cancer,f72r3.17,middle,01:00,oeeesaiin,True,o e e e s a i i n,1
+f72r3,Cancer,f72r3.18,middle,01:30,ory,True,o r y,1
+f72r3,Cancer,f72r3.19,middle,02:30,ochey,True,o ch e y,2
+f72r3,Cancer,f72r3.19,middle,02:30,fydy,True,f y d y,2
+f72r3,Cancer,f72r3.20,middle,03:30,of???,False,,3
+f72r3,Cancer,f72r3.20,middle,03:30,o,True,o,3
+f72r3,Cancer,f72r3.20,middle,03:30,eeesaly,True,e e e s a l y,3
+f72r3,Cancer,f72r3.21,middle,05:00,ykaraiin,True,y k a r a i i n,2
+f72r3,Cancer,f72r3.21,middle,05:00,airal,True,a i r a l,2
+f72r3,Cancer,f72r3.22,middle,06:30,okalar,True,o k a l a r,1
+f72r3,Cancer,f72r3.23,middle,08:00,orara,True,o r a r a,1
+f72r3,Cancer,f72r3.24,middle,09:00,olaiin,True,o l a i i n,2
+f72r3,Cancer,f72r3.24,middle,09:00,olaXy,False,,2
+f72r3,Cancer,f72r3.25,middle,10:00,olfsheoral,True,o l f sh e o r a l,1
+f72r3,Cancer,f72r3.27,inner,10:30,opalal,True,o p a l a l,1
+f72r3,Cancer,f72r3.28,inner,00:00,yfary,True,y f a r y,1
+f72r3,Cancer,f72r3.29,inner,01:30,oraiiral,True,o r a i i r a l,1
+f72r3,Cancer,f72r3.30,inner,03:00,ytoar,True,y t o a r,2
+f72r3,Cancer,f72r3.30,inner,03:00,shar,True,sh a r,2
+f72r3,Cancer,f72r3.31,inner,06:00,octho,True,o cth o,1
+f72r3,Cancer,f72r3.32,inner,07:30,aral,True,a r a l,1
+f72r3,Cancer,f72r3.33,inner,09:00,oletal,True,o l e t a l,1
+f72v3,Leo,f72v3.2,outer,10:00,ocham,True,o ch a m,1
+f72v3,Leo,f72v3.3,outer,11:00,orchey,True,o r ch e y,1
+f72v3,Leo,f72v3.4,outer,11:30,okam,True,o k a m,1
+f72v3,Leo,f72v3.5,outer,00:00,okey,True,o k e y,1
+f72v3,Leo,f72v3.6,outer,00:30,otcheody,True,o t ch e o d y,1
+f72v3,Leo,f72v3.7,outer,01:00,okyeeshy,True,o k y e e sh y,1
+f72v3,Leo,f72v3.8,outer,01:30,Xofaiin,False,,1
+f72v3,Leo,f72v3.9,outer,02:00,okaly,True,o k a l y,1
+f72v3,Leo,f72v3.10,outer,02:45,otoly,True,o t o l y,1
+f72v3,Leo,f72v3.11,outer,03:30,ofalals,True,o f a l a l s,1
+f72v3,Leo,f72v3.12,outer,04:00,sheeos,True,sh e e o s,2
+f72v3,Leo,f72v3.12,outer,04:00,oXy,False,,2
+f72v3,Leo,f72v3.13,outer,05:00,daiin,True,d a i i n,2
+f72v3,Leo,f72v3.13,outer,05:00,chepy,True,ch e p y,2
+f72v3,Leo,f72v3.14,outer,06:00,oteey,True,o t e e y,2
+f72v3,Leo,f72v3.14,outer,06:00,deeal,True,d e e a l,2
+f72v3,Leo,f72v3.15,outer,07:00,chealpy,True,ch e a l p y,1
+f72v3,Leo,f72v3.16,outer,07:30,okeeol,True,o k e e o l,1
+f72v3,Leo,f72v3.17,outer,08:30,okaly,True,o k a l y,1
+f72v3,Leo,f72v3.18,outer,09:00,okaldy,True,o k a l d y,1
+f72v3,Leo,f72v3.19,outer,09:30,okeolyd,True,o k e o l y d,1
+f72v3,Leo,f72v3.21,inner,10:30,choleey,True,ch o l e e y,1
+f72v3,Leo,f72v3.22,inner,11:30,oky,True,o k y,1
+f72v3,Leo,f72v3.23,inner,00:30,chXy,False,,1
+f72v3,Leo,f72v3.24,inner,01:00,laly,True,l a l y,1
+f72v3,Leo,f72v3.25,inner,02:00,oeedy,True,o e e d y,1
+f72v3,Leo,f72v3.26,inner,03:00,odairan,True,o d a i r a n,1
+f72v3,Leo,f72v3.27,inner,04:00,okary,True,o k a r y,1
+f72v3,Leo,f72v3.28,inner,05:00,oeesaiin,True,o e e s a i i n,1
+f72v3,Leo,f72v3.29,inner,06:30,oteesed,True,o t e e s e d,1
+f72v3,Leo,f72v3.30,inner,07:30,opal,True,o p a l,1
+f72v3,Leo,f72v3.31,inner,08:30,otaly,True,o t a l y,1
+f72v3,Leo,f72v3.32,inner,09:30,otaly,True,o t a l y,2
+f72v3,Leo,f72v3.32,inner,09:30,yty,True,y t y,2
+f72v2,Virgo,f72v2.2,outer,10:00,oeedey,True,o e e d e y,1
+f72v2,Virgo,f72v2.3,outer,11:00,oeeodaiin,True,o e e o d a i i n,1
+f72v2,Virgo,f72v2.4,outer,11:45,okeoram,True,o k e o r a m,1
+f72v2,Virgo,f72v2.5,outer,00:30,air,True,a i r,2
+f72v2,Virgo,f72v2.5,outer,00:30,aim,True,a i m,2
+f72v2,Virgo,f72v2.6,outer,01:00,oshesy,True,o sh e s y,1
+f72v2,Virgo,f72v2.7,outer,02:00,okeary,True,o k e a r y,1
+f72v2,Virgo,f72v2.8,outer,02:30,cheoetey,True,ch e o e t e y,1
+f72v2,Virgo,f72v2.9,outer,03:00,cheoldy,True,ch e o l d y,1
+f72v2,Virgo,f72v2.10,outer,04:00,sheoeky,True,sh e o e k y,1
+f72v2,Virgo,f72v2.11,outer,04:30,oteodar,True,o t e o d a r,1
+f72v2,Virgo,f72v2.12,outer,05:30,ofchdysd,True,o f ch d y s d,1
+f72v2,Virgo,f72v2.13,outer,06:00,oteoyd,True,o t e o y d,1
+f72v2,Virgo,f72v2.14,outer,06:30,yteody,True,y t e o d y,1
+f72v2,Virgo,f72v2.15,outer,07:00,okeody,True,o k e o d y,1
+f72v2,Virgo,f72v2.16,outer,08:00,okeoldy,True,o k e o l d y,1
+f72v2,Virgo,f72v2.17,outer,08:30,ykeeor,True,y k e e o r,1
+f72v2,Virgo,f72v2.18,outer,09:00,opaiinam,True,o p a i i n a m,1
+f72v2,Virgo,f72v2.19,outer,09:30,cheoldy,True,ch e o l d y,1
+f72v2,Virgo,f72v2.21,inner,10:30,okaiin,True,o k a i i n,1
+f72v2,Virgo,f72v2.22,inner,11:30,ockhol,True,o ckh o l,1
+f72v2,Virgo,f72v2.23,inner,00:30,oeedy,True,o e e d y,1
+f72v2,Virgo,f72v2.24,inner,01:00,opalg,True,o p a l g,1
+f72v2,Virgo,f72v2.25,inner,02:00,okeeom,True,o k e e o m,1
+f72v2,Virgo,f72v2.26,inner,03:00,olkar,True,o l k a r,1
+f72v2,Virgo,f72v2.27,inner,04:00,oeedaly,True,o e e d a l y,1
+f72v2,Virgo,f72v2.28,inner,05:00,cheosy,True,ch e o s y,1
+f72v2,Virgo,f72v2.29,inner,06:30,ofcheay,True,o f ch e a y,1
+f72v2,Virgo,f72v2.30,inner,07:30,yteedy,True,y t e e d y,1
+f72v2,Virgo,f72v2.31,inner,08:30,onaiin,True,o n a i i n,1
+f72v2,Virgo,f72v2.32,inner,09:30,okeorar,True,o k e o r a r,1
+f72v1,Libra,f72v1.2,outer,08:45,oeeoty,True,o e e o t y,1
+f72v1,Libra,f72v1.3,outer,09:30,octhy,True,o cth y,1
+f72v1,Libra,f72v1.4,outer,10:00,oteoly,True,o t e o l y,1
+f72v1,Libra,f72v1.5,outer,10:30,okeoly,True,o k e o l y,1
+f72v1,Libra,f72v1.6,outer,11:00,oeees,True,o e e e s,1
+f72v1,Libra,f72v1.7,outer,11:30,oXy,False,,1
+f72v1,Libra,f72v1.8,outer,01:45,oees,True,o e e s,1
+f72v1,Libra,f72v1.9,outer,01:00,okeeoly,True,o k e e o l y,1
+f72v1,Libra,f72v1.10,outer,01:30,odal,True,o d a l,1
+f72v1,Libra,f72v1.11,outer,02:00,aiinod,True,a i i n o d,1
+f72v1,Libra,f72v1.12,outer,02:45,od?dy,False,,1
+f72v1,Libra,f72v1.13,outer,03:15,oteod,True,o t e o d,1
+f72v1,Libra,f72v1.14,outer,03:45,yteod,True,y t e o d,1
+f72v1,Libra,f72v1.15,outer,04:30,ok?ody,False,,1
+f72v1,Libra,f72v1.16,outer,05:00,okal,True,o k a l,1
+f72v1,Libra,f72v1.17,outer,05:30,ytaly,True,y t a l y,1
+f72v1,Libra,f72v1.18,outer,06:00,oeeeos,True,o e e e o s,1
+f72v1,Libra,f72v1.19,outer,06:30,oteofy,True,o t e o f y,1
+f72v1,Libra,f72v1.20,outer,07:30,cheoepy,True,ch e o e p y,1
+f72v1,Libra,f72v1.21,outer,08:00,ykeedy,True,y k e e d y,1
+f72v1,Libra,f72v1.23,inner,08:45,oeeoly,True,o e e o l y,1
+f72v1,Libra,f72v1.24,inner,10:00,okydy,True,o k y d y,1
+f72v1,Libra,f72v1.25,inner,11:30,okeey,True,o k e e y,1
+f72v1,Libra,f72v1.26,inner,00:00,oiiny,True,o i i n y,1
+f72v1,Libra,f72v1.27,inner,01:00,oeey,True,o e e y,1
+f72v1,Libra,f72v1.28,inner,03:00,okedy,True,o k e d y,1
+f72v1,Libra,f72v1.29,inner,04:30,ypaim,True,y p a i m,1
+f72v1,Libra,f72v1.30,inner,05:30,okalair,True,o k a l a i r,1
+f72v1,Libra,f72v1.31,inner,06:30,oeeody,True,o e e o d y,1
+f72v1,Libra,f72v1.32,inner,07:30,okeol,True,o k e o l,1
+f73r,Scorpio,f73r.1,top,11:15,otaly,True,o t a l y,1
+f73r,Scorpio,f73r.2,top,11:45,chockhy,True,ch o ckh y,1
+f73r,Scorpio,f73r.3,top,00:30,otedy,True,o t e d y,1
+f73r,Scorpio,f73r.4,top,01:00,yteeody,True,y t e e o d y,1
+f73r,Scorpio,f73r.6,outer,11:00,otaly,True,o t a l y,1
+f73r,Scorpio,f73r.7,outer,11:30,okeody,True,o k e o d y,1
+f73r,Scorpio,f73r.8,outer,00:00,oteedyl,True,o t e e d y l,1
+f73r,Scorpio,f73r.9,outer,00:30,ykeedy,True,y k e e d y,1
+f73r,Scorpio,f73r.10,outer,01:00,okeey,True,o k e e y,1
+f73r,Scorpio,f73r.11,outer,02:00,okeedy,True,o k e e d y,1
+f73r,Scorpio,f73r.12,outer,02:30,ykeeory,True,y k e e o r y,1
+f73r,Scorpio,f73r.13,outer,03:30,oteeosy,True,o t e e o s y,1
+f73r,Scorpio,f73r.14,outer,04:30,shekal,True,sh e k a l,1
+f73r,Scorpio,f73r.15,outer,05:30,oteedyy,True,o t e e d y y,1
+f73r,Scorpio,f73r.16,outer,06:30,okedal,True,o k e d a l,1
+f73r,Scorpio,f73r.17,outer,07:00,chdy,True,ch d y,1
+f73r,Scorpio,f73r.18,outer,08:00,dalshey,True,d a l sh e y,1
+f73r,Scorpio,f73r.19,outer,08:45,opaiin,True,o p a i i n,1
+f73r,Scorpio,f73r.20,outer,09:30,okeos,True,o k e o s,1
+f73r,Scorpio,f73r.21,outer,10:00,otey,True,o t e y,1
+f73r,Scorpio,f73r.23,inner,11:30,okary,True,o k a r y,1
+f73r,Scorpio,f73r.24,inner,01:00,okeeody,True,o k e e o d y,1
+f73r,Scorpio,f73r.25,inner,02:00,oyteedy,True,o y t e e d y,1
+f73r,Scorpio,f73r.26,inner,03:00,oky,True,o k y,1
+f73r,Scorpio,f73r.27,inner,04:30,chefy,True,ch e f y,1
+f73r,Scorpio,f73r.28,inner,06:00,otal,True,o t a l,1
+f73r,Scorpio,f73r.29,inner,07:00,chek,True,ch e k,1
+f73r,Scorpio,f73r.30,inner,08:30,ar,True,a r,1
+f73r,Scorpio,f73r.31,inner,09:30,kar,True,k a r,1
+f73r,Scorpio,f73r.32,inner,10:30,okeeos,True,o k e e o s,1
+f73v,Sagittarius,f73v.1,top,11:00,okol,True,o k o l,1
+f73v,Sagittarius,f73v.2,top,11:45,oteody,True,o t e o d y,1
+f73v,Sagittarius,f73v.3,top,00:30,oteedy,True,o t e e d y,1
+f73v,Sagittarius,f73v.4,top,01:00,eeeody,True,e e e o d y,1
+f73v,Sagittarius,f73v.6,outer,10:00,okeody,True,o k e o d y,1
+f73v,Sagittarius,f73v.7,outer,10:30,sheol,True,sh e o l,1
+f73v,Sagittarius,f73v.8,outer,11:30,odees,True,o d e e s,1
+f73v,Sagittarius,f73v.9,outer,00:00,eery,True,e e r y,1
+f73v,Sagittarius,f73v.10,outer,01:00,okeor,True,o k e o r,1
+f73v,Sagittarius,f73v.11,outer,01:30,ofals,True,o f a l s,1
+f73v,Sagittarius,f73v.12,outer,02:00,ykeody,True,y k e o d y,1
+f73v,Sagittarius,f73v.13,outer,03:00,oteody,True,o t e o d y,1
+f73v,Sagittarius,f73v.14,outer,03:30,ypaiin,True,y p a i i n,1
+f73v,Sagittarius,f73v.15,outer,04:00,yfaiin,True,y f a i i n,2
+f73v,Sagittarius,f73v.15,outer,04:00,y,True,y,2
+f73v,Sagittarius,f73v.16,outer,05:00,ofcheesy,True,o f ch e e s y,1
+f73v,Sagittarius,f73v.17,outer,06:00,oraiiny,True,o r a i i n y,1
+f73v,Sagittarius,f73v.18,outer,07:00,ykeeody,True,y k e e o d y,1
+f73v,Sagittarius,f73v.19,outer,07:30,okeos,True,o k e o s,1
+f73v,Sagittarius,f73v.20,outer,08:30,ykeear,True,y k e e a r,1
+f73v,Sagittarius,f73v.21,outer,09:00,qokeoly,True,q o k e o l y,1
+f73v,Sagittarius,f73v.23,inner,09:30,otedy,True,o t e d y,1
+f73v,Sagittarius,f73v.24,inner,11:00,eeed,True,e e e d,1
+f73v,Sagittarius,f73v.25,inner,01:00,oky,True,o k y,1
+f73v,Sagittarius,f73v.26,inner,02:00,oia?,False,,1
+f73v,Sagittarius,f73v.27,inner,02:30,okal,True,o k a l,1
+f73v,Sagittarius,f73v.28,inner,03:30,ykey,True,y k e y,1
+f73v,Sagittarius,f73v.29,inner,05:00,ykeee,True,y k e e e,1
+f73v,Sagittarius,f73v.30,inner,06:00,okeod,True,o k e o d,1
+f73v,Sagittarius,f73v.31,inner,07:30,ykey,True,y k e y,1
+f73v,Sagittarius,f73v.32,inner,08:30,ypal,True,y p a l,1

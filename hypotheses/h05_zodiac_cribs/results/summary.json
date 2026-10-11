@@ -1,0 +1,555 @@
+{
+ "n_pages": 12,
+ "n_labels": 299,
+ "n_label_words": 336,
+ "n_ring_words": 935,
+ "missing_signs": [
+  "Capricorn",
+  "Aquarius"
+ ],
+ "affix_share_range": {
+  "starts_o": [
+   0.476,
+   0.833
+  ],
+  "starts_ot": [
+   0.026,
+   0.706
+  ],
+  "starts_ok": [
+   0.053,
+   0.533
+  ],
+  "starts_qo": [
+   0.0,
+   0.0
+  ],
+  "ends_y": [
+   0.263,
+   0.667
+  ],
+  "ends_l": [
+   0.0,
+   0.237
+  ],
+  "ends_r": [
+   0.0,
+   0.429
+  ],
+  "ends_m": [
+   0.0,
+   0.2
+  ],
+  "ends_n": [
+   0.0,
+   0.237
+  ],
+  "ends_ar_or": [
+   0.0,
+   0.429
+  ],
+  "ends_al": [
+   0.0,
+   0.211
+  ],
+  "ends_dy_ly_ry": [
+   0.158,
+   0.4
+  ],
+  "mean_len_units": [
+   4.667,
+   6.412
+  ],
+  "mean_len_letters": [
+   5.0,
+   6.588
+  ]
+ },
+ "tests_sign_specificity": {
+  "same_sign_pairs_label_bigram": {
+   "obs_mean_same_sign_pairs": 0.7796231253529465,
+   "p_random_pair_of_pairs": 0.11839408029598521,
+   "mean_all_pairs": 0.7154517132336315,
+   "mean_adjacent_different_sign": 0.7718424576912587,
+   "n_adjacent_diff": 9,
+   "max_adjacent_diff": 0.8296776382422438,
+   "same_sign_pairs": [
+    0.7698605017954009,
+    0.7893857489104922
+   ],
+   "rank_of_each_same_pair_among_66": [
+    20,
+    14
+   ]
+  },
+  "same_sign_pairs_label_type": {
+   "obs_mean_same_sign_pairs": 0.07767604812371837,
+   "p_random_pair_of_pairs": 0.1495925203739813,
+   "mean_all_pairs": 0.04059306271784286,
+   "mean_adjacent_different_sign": 0.06362198678304123,
+   "n_adjacent_diff": 9,
+   "max_adjacent_diff": 0.1333333333333333,
+   "same_sign_pairs": [
+    0.0,
+    0.15535209624743673
+   ],
+   "rank_of_each_same_pair_among_66": [
+    66,
+    2
+   ]
+  },
+  "same_sign_pairs_ring_bigram": {
+   "obs_mean_same_sign_pairs": 0.9048029844872205,
+   "p_random_pair_of_pairs": 0.09869506524673766,
+   "mean_all_pairs": 0.8819195519601946,
+   "mean_adjacent_different_sign": 0.8925132707968694,
+   "n_adjacent_diff": 9,
+   "max_adjacent_diff": 0.9261844048151653,
+   "same_sign_pairs": [
+    0.8900901063414832,
+    0.9195158626329578
+   ],
+   "rank_of_each_same_pair_among_66": [
+    27,
+    6
+   ]
+  },
+  "bre_months_cohesion_label_bigram": {
+   "obs": 0.8112999882837678,
+   "p_all_subsets": 0.00202020202020202,
+   "n_subsets": 495,
+   "p_contiguous_windows": 0.1111111111111111,
+   "n_windows": 9,
+   "mean_all": 0.7154517132336315
+  },
+  "bre_months_cohesion_ring_bigram": {
+   "obs": 0.8766824235339613,
+   "p_all_subsets": 0.6444444444444445,
+   "n_subsets": 495,
+   "p_contiguous_windows": 0.8888888888888888,
+   "n_windows": 9,
+   "mean_all": 0.8819195519601948
+  },
+  "classify_page_from_label": {
+   "acc": 0.24702380952380953,
+   "null_mean": 0.0824702380952381,
+   "null_max": 0.13095238095238096,
+   "p": 0.004975124378109453,
+   "n_labels": 336,
+   "n_classes": 12,
+   "chance_majority": 0.1130952380952381
+  },
+  "classify_sign_from_label": {
+   "acc": 0.2708333333333333,
+   "null_mean": 0.09952380952380953,
+   "null_max": 0.15773809523809523,
+   "p": 0.004975124378109453,
+   "n_labels": 336,
+   "n_classes": 10,
+   "chance_majority": 0.13095238095238096
+  },
+  "chi2_label_features_vs_page": {
+   "first_unit": {
+    "chi2": 99.40884636902462,
+    "null_mean": 66.33167712789954,
+    "p": 0.00639872025594881,
+    "n_categories": 7,
+    "n": 336
+   },
+   "first_two_units": {
+    "chi2": 234.9109133399288,
+    "null_mean": 110.68192127808831,
+    "p": 0.0001999600079984003,
+    "n_categories": 11,
+    "n": 336
+   },
+   "last_unit": {
+    "chi2": 120.2116816470463,
+    "null_mean": 77.23196624153125,
+    "p": 0.0013997200559888023,
+    "n_categories": 8,
+    "n": 336
+   },
+   "last_two_units": {
+    "chi2": 147.7065709486188,
+    "null_mean": 99.22080088204707,
+    "p": 0.0013997200559888023,
+    "n_categories": 10,
+    "n": 336
+   },
+   "length_units": {
+    "chi2": 123.3886993651316,
+    "null_mean": 88.42563941917078,
+    "p": 0.007798440311937612,
+    "n_categories": 9,
+    "n": 336
+   }
+  },
+  "top_shared_affixes": [
+   {
+    "kind": "prefix",
+    "affix": "o",
+    "min_share": 0.47619047619047616,
+    "median_share": 0.6787096774193548,
+    "ms_running_text_share": 0.20510621265402978
+   },
+   {
+    "kind": "suffix",
+    "affix": "y",
+    "min_share": 0.2631578947368421,
+    "median_share": 0.46862745098039216,
+    "ms_running_text_share": 0.4072962232324099
+   },
+   {
+    "kind": "suffix",
+    "affix": "dy",
+    "min_share": 0.05263157894736842,
+    "median_share": 0.1380952380952381,
+    "ms_running_text_share": 0.006976012808416959
+   },
+   {
+    "kind": "prefix",
+    "affix": "ok",
+    "min_share": 0.05263157894736842,
+    "median_share": 0.22956989247311826,
+    "ms_running_text_share": 0.05835263172942219
+   },
+   {
+    "kind": "prefix",
+    "affix": "ot",
+    "min_share": 0.02631578947368421,
+    "median_share": 0.25,
+    "ms_running_text_share": 0.05303485147382566
+   },
+   {
+    "kind": "suffix",
+    "affix": "lam",
+    "min_share": 0.0,
+    "median_share": 0.0,
+    "ms_running_text_share": 0.0009434771421219659
+   },
+   {
+    "kind": "suffix",
+    "affix": "epy",
+    "min_share": 0.0,
+    "median_share": 0.0,
+    "ms_running_text_share": 0.00031449238070732193
+   },
+   {
+    "kind": "suffix",
+    "affix": "lsy",
+    "min_share": 0.0,
+    "median_share": 0.0,
+    "ms_running_text_share": 0.00017154129856763016
+   }
+  ],
+  "label_type_overlap": {
+   "mean_pairwise_jaccard": 0.019697553474530026,
+   "null_mean": 0.02326361827793086,
+   "null_max": 0.029841281881718324,
+   "p": 0.9765117441279361,
+   "n_label_word_types": 272,
+   "types_on_2plus_pages": 37,
+   "types_on_2plus_signs": 35
+  },
+  "drift_with_page_order": {
+   "starts_ot": {
+    "spearman_rho": -0.7482517482517484,
+    "p": 0.006798640271945611
+   },
+   "starts_ok": {
+    "spearman_rho": 0.34965034965034975,
+    "p": 0.27654469106178764
+   },
+   "ends_y": {
+    "spearman_rho": 0.6853146853146854,
+    "p": 0.017996400719856028
+   },
+   "ends_ar_or": {
+    "spearman_rho": -0.7473730217009665,
+    "p": 0.008998200359928014
+   },
+   "mean_len_units": {
+    "spearman_rho": -0.07692307692307693,
+    "p": 0.8108378324335133
+   }
+  }
+ },
+ "n_units_enriched_holm05": 12,
+ "enriched_units_holm05": [
+  [
+   "f",
+   0.0093,
+   0.0023
+  ],
+  [
+   "m",
+   0.0159,
+   0.006
+  ],
+  [
+   "a",
+   0.1413,
+   0.0826
+  ],
+  [
+   "t",
+   0.0533,
+   0.033
+  ],
+  [
+   "l",
+   0.0841,
+   0.0608
+  ],
+  [
+   "o",
+   0.1798,
+   0.1434
+  ],
+  [
+   "d",
+   0.0506,
+   0.0761
+  ],
+  [
+   "i",
+   0.0456,
+   0.0709
+  ],
+  [
+   "n",
+   0.0214,
+   0.0372
+  ],
+  [
+   "sh",
+   0.0126,
+   0.0273
+  ],
+  [
+   "ch",
+   0.0214,
+   0.065
+  ],
+  [
+   "q",
+   0.0005,
+   0.0342
+  ]
+ ],
+ "label_initial_o_share": 0.6736526946107785,
+ "ms_initial_o_share": 0.2077261844944285,
+ "label_final_y_share": 0.45808383233532934,
+ "ms_final_y_share": 0.4134720539118612,
+ "length_tests": {
+  "n_tests": 72,
+  "min_p": 0.014699265036748163,
+  "min_holm_p": 1.0,
+  "n_p_lt_005_uncorrected": 5,
+  "expected_false_positives_at_005": 3.6,
+  "best": [
+   {
+    "names": "sign:french",
+    "voynich_metric": "label_mean_letters",
+    "spearman_rho": -0.7542,
+    "p_perm_two_sided": 0.0147,
+    "holm_p": 1.0
+   },
+   {
+    "names": "month:latin",
+    "voynich_metric": "ring_mean_letters",
+    "spearman_rho": 0.7293,
+    "p_perm_two_sided": 0.0215,
+    "holm_p": 1.0
+   },
+   {
+    "names": "sign:french",
+    "voynich_metric": "label_mean_units",
+    "spearman_rho": -0.6732,
+    "p_perm_two_sided": 0.0374,
+    "holm_p": 1.0
+   },
+   {
+    "names": "sign:arabic",
+    "voynich_metric": "label_mean_units",
+    "spearman_rho": 0.6767,
+    "p_perm_two_sided": 0.0409,
+    "holm_p": 1.0
+   },
+   {
+    "names": "month:german",
+    "voynich_metric": "ring_mean_letters",
+    "spearman_rho": 0.6524,
+    "p_perm_two_sided": 0.0474,
+    "holm_p": 1.0
+   }
+  ],
+  "latin_sign_label_letters": [
+   {
+    "names": "sign:latin",
+    "voynich_metric": "label_mean_letters",
+    "spearman_rho": -0.405,
+    "p_perm_two_sided": 0.242,
+    "holm_p": 1.0
+   }
+  ]
+ },
+ "isomorph_tests": {
+  "n_tests": 36,
+  "min_p": 0.016849157542122895,
+  "min_holm_p": 0.6065696715164243,
+  "n_p_lt_005_uncorrected": 3,
+  "best": [
+   {
+    "names": "sign:arabic",
+    "mode": "window",
+    "sum_z_true_pairing": -16.9389,
+    "null_mean": -20.7895,
+    "z_vs_null": 2.1194,
+    "p_perm": 0.0168,
+    "observed_matching_items": 1849.0,
+    "expected_by_ms_rate": 1980.235,
+    "n_names_with_repeat": 0,
+    "holm_p": 0.6066
+   },
+   {
+    "names": "sign:latin",
+    "mode": "exact",
+    "sum_z_true_pairing": 8.4899,
+    "null_mean": 0.4768,
+    "z_vs_null": 2.0391,
+    "p_perm": 0.0241,
+    "observed_matching_items": 54.0,
+    "expected_by_ms_rate": 61.6698,
+    "n_names_with_repeat": 6,
+    "holm_p": 0.8452
+   },
+   {
+    "names": "month:roman_words_schwerdtfeger_via_bax",
+    "mode": "exact",
+    "sum_z_true_pairing": 12.4042,
+    "null_mean": -2.3281,
+    "z_vs_null": 2.5932,
+    "p_perm": 0.0294,
+    "observed_matching_items": 64.0,
+    "expected_by_ms_rate": 79.3733,
+    "n_names_with_repeat": 6,
+    "holm_p": 1.0
+   },
+   {
+    "names": "sign:latin",
+    "mode": "window",
+    "sum_z_true_pairing": 5.6074,
+    "null_mean": -1.1763,
+    "z_vs_null": 1.533,
+    "p_perm": 0.0593,
+    "observed_matching_items": 463.0,
+    "expected_by_ms_rate": 507.5098,
+    "n_names_with_repeat": 6,
+    "holm_p": 1.0
+   },
+   {
+    "names": "sign:hebrew",
+    "mode": "window",
+    "sum_z_true_pairing": -20.2921,
+    "null_mean": -22.9074,
+    "z_vs_null": 1.2212,
+    "p_perm": 0.1179,
+    "observed_matching_items": 1589.0,
+    "expected_by_ms_rate": 1752.4485,
+    "n_names_with_repeat": 1,
+    "holm_p": 1.0
+   }
+  ]
+ },
+ "crib_drag": {
+  "n_lists": 11,
+  "min_p_transfer_vs_A": 0.0024937655860349127,
+  "min_p_transfer_vs_B": 0.022443890274314215,
+  "min_p_matched_A": 0.005555555555555556,
+  "min_p_matched_B": 0.04780876494023904,
+  "min_holm_p": 0.12222222222222223,
+  "n_perm": 400,
+  "best_by_B": [
+   {
+    "names": "sign:german",
+    "n_signs_with_candidate": 6,
+    "n_units_mapped": 16,
+    "conflicts": 4,
+    "rest_hit_types": 29,
+    "rest_hit_types_null_B_random_mean": 9.595,
+    "rest_hit_types_p_ge_B_random": 0.0224,
+    "rest_hit_types_p_matched_B_random": 0.1154,
+    "rest_hit_types_p_matched_A_perm": 0.0238
+   },
+   {
+    "names": "sign:latin",
+    "n_signs_with_candidate": 7,
+    "n_units_mapped": 13,
+    "conflicts": 8,
+    "rest_hit_types": 78,
+    "rest_hit_types_null_B_random_mean": 34.3375,
+    "rest_hit_types_p_ge_B_random": 0.0399,
+    "rest_hit_types_p_matched_B_random": 0.0478,
+    "rest_hit_types_p_matched_A_perm": 0.0056
+   },
+   {
+    "names": "month:arabic_west_kunitsch",
+    "n_signs_with_candidate": 9,
+    "n_units_mapped": 12,
+    "conflicts": 9,
+    "rest_hit_types": 45,
+    "rest_hit_types_null_B_random_mean": 34.3125,
+    "rest_hit_types_p_ge_B_random": 0.2768,
+    "rest_hit_types_p_matched_B_random": 0.3153,
+    "rest_hit_types_p_matched_A_perm": 0.105
+   },
+   {
+    "names": "sign:italian",
+    "n_signs_with_candidate": 3,
+    "n_units_mapped": 9,
+    "conflicts": 3,
+    "rest_hit_types": 32,
+    "rest_hit_types_null_B_random_mean": 29.29,
+    "rest_hit_types_p_ge_B_random": 0.3766,
+    "rest_hit_types_p_matched_B_random": 0.1582,
+    "rest_hit_types_p_matched_A_perm": 0.0307
+   }
+  ],
+  "signs_with_candidate_range": [
+   3,
+   10
+  ]
+ },
+ "bax_taurus_check": {
+  "doary": {
+   "zodiac_label_or_ring_count_by_sign": {},
+   "whole_ms_running_text_count": 0
+  },
+  "doaro": {
+   "zodiac_label_or_ring_count_by_sign": {},
+   "whole_ms_running_text_count": 0
+  }
+ },
+ "label_pitch": {
+  "mean_hz_by_sign": {
+   "Pisces": 297.8,
+   "Aries": 296.6,
+   "Taurus": 303.5,
+   "Gemini": 299.1,
+   "Cancer": 305.5,
+   "Leo": 298.1,
+   "Virgo": 296.3,
+   "Libra": 296.8,
+   "Scorpio": 289.5,
+   "Sagittarius": 294.5
+  },
+  "eta2_sign": 0.06233159386688499,
+  "p_perm_eta2": 0.015396920615876825,
+  "label_mean_hz_overall": 298.1574381637587,
+  "n_label_types_with_sheet_unit": 92,
+  "n_label_types": 272,
+  "share_rising_or_falling": 0.10294117647058823
+ }
+}

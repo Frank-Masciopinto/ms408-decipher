@@ -1,0 +1,11 @@
+sign,pages,roman_month_word,n_label_words,n_label_types,type_token,hapax_share,n_ring_words,most_frequent_labels,most_sign_specific_labels(w:count_here/count_elsewhere),first_label_word_per_page,first_ring_word_per_page
+Pisces,f70v2,Mars,33,31,0.9393939393939394,0.8787878787878788,93,oty:2 otar:2 otalalg:1 ykary:1 oky:1 ody:1,oty:2/0 otalalg:1/0 ykary:1/0 ody:1/0 okala:1/0 otody:1/0,otalalg,okcheo
+Aries,f70v1;f71r,Abril,42,41,0.9761904761904762,0.9523809523809523,132,otal:2 otalchy:1 tar:1 am:1 dy:1 opchey:1,otalchy:1/0 tar:1/0 opchey:1/0 sal:1/0 otakaizan:1/0 okalal:1/0,otalchy oteos,dalalody olkeeody
+Taurus,f71v;f72r1,May,44,38,0.8636363636363636,0.75,157,ar:3 char:2 otaiin:2 otar:2 ary:2 arom:1,char:2/0 otaiin:2/0 arom:1/0 chfaly:1/0 okolar:1/0 otchody:1/0,char oshodady,osheo oteeo
+Gemini,f72r2,Yuny?,30,28,0.9333333333333333,0.8666666666666667,78,okal:2 okaly:2 ofchdamy:1 oklairdy:1 okaram:1 okairy:1,ofchdamy:1/0 oklairdy:1/0 okairy:1/0 oteeary:1/0 otair:1/0 okaircham:1/0,ofchdamy,oteos
+Cancer,f72r3,Jollet?,38,38,1.0,1.0,118,olkalaiin:1 olalsy:1 oraiinam:1 osarsheeeo:1 opoiiinoin:1 al:1,olkalaiin:1/0 olalsy:1/0 oraiinam:1/0 osarsheeeo:1/0 opoiiinoin:1/0 ches:1/0,olkalaiin,okeey
+Leo,f72v3,Augst,31,29,0.9354838709677419,0.8709677419354839,81,okaly:2 otaly:2 ocham:1 orchey:1 okam:1 okey:1,ocham:1/0 orchey:1/0 okey:1/0 otcheody:1/0 okyeeshy:1/0 otoly:1/0,ocham,soees
+Virgo,f72v2,Septembre?,31,30,0.967741935483871,0.9354838709677419,74,cheoldy:2 oeedey:1 oeeodaiin:1 okeoram:1 air:1 aim:1,cheoldy:2/0 oeedey:1/0 okeoram:1/0 air:1/0 aim:1/0 oshesy:1/0,oeedey,otos
+Libra,f72v1,Octembre,27,27,1.0,1.0,71,oeeoty:1 octhy:1 oteoly:1 okeoly:1 oeees:1 oees:1,oeeoty:1/0 octhy:1/0 oteoly:1/0 oeees:1/0 oees:1/0 okeeoly:1/0,oeeoty,oteos
+Scorpio,f73r,Novembre,30,29,0.9666666666666667,0.9333333333333333,63,otaly:2 chockhy:1 otedy:1 yteeody:1 okeody:1 oteedyl:1,chockhy:1/0 yteeody:1/0 oteedyl:1/0 okeedy:1/0 ykeeory:1/0 oteeosy:1/0,otaly,ypolcheey
+Sagittarius,f73v,Decembre?,30,28,0.9333333333333333,0.8666666666666667,68,oteody:2 ykey:2 okol:1 oteedy:1 eeeody:1 okeody:1,oteody:2/0 ykey:2/0 okol:1/0 oteedy:1/0 eeeody:1/0 sheol:1/0,okol,otoar

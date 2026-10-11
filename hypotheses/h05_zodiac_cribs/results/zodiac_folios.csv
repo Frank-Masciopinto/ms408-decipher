@@ -1,0 +1,13 @@
+folio,sign,roman_month_word_near_centre,pdf_page,image_check,n_ring_loci,n_label_loci,n_label_words,n_ring_words,labels_by_band,voynichese_text_in_the_centre
+f70v2,Pisces,Mars,128,two fish; Roman word under them; two stars in centre; 29-30 nymphs in two rings plus ring text,3,30,35,93,"{'outer': 19, 'inner': 10, 'centre': 1}",otolal
+f70v1,Aries,Abril,129,ram eating a plant (dark); Roman word under it; 5 inner + 10 outer nymphs,2,15,25,60,"{'outer': 10, 'inner': 5}",
+f71r,Aries,Abril,130,"ram (light) with plant; Roman word under it; 5 inner + 10 outer nymphs, clothed, in barrels",3,15,17,72,"{'outer': 10, 'inner': 5}",
+f71v,Taurus,May,131 (1st panel),bull (light) at a manger; 15 nymphs,3,15,22,76,"{'outer': 10, 'inner': 5}",
+f72r1,Taurus,May,131 (2nd panel),red bull (dark); hole in the vellum on the inner band; 15 nymphs,3,15,23,81,"{'outer': 10, 'inner': 5}",
+f72r2,Gemini,Yuny?,131 (3rd panel),"two people holding hands; 30 nymphs, 5 above the circle",3,29,31,78,"{'top': 5, 'outer': 15, 'inner': 9}",
+f72r3,Cancer,Jollet?,131 (4th panel),"red crab; 30 nymphs, 12 in the outer band",4,30,41,118,"{'outer': 12, 'middle': 11, 'inner': 7}",
+f72v3,Leo,Augst,132 (left),lion; 30 nymphs,3,30,34,81,"{'outer': 18, 'inner': 12}",
+f72v2,Virgo,Septembre?,132 (right),standing woman in blue with a plant/star; 30 nymphs,3,30,31,74,"{'outer': 18, 'inner': 12}",
+f72v1,Libra,Octembre,133,balance scales; Roman word under them; hole in vellum; 30 nymphs,3,30,30,71,"{'outer': 20, 'inner': 10}",
+f73r,Scorpio,Novembre,134,"greenish four-legged animal with curved tail (looks like a lizard) and a star; 30 nymphs, 4 above the circle",3,30,30,63,"{'top': 4, 'outer': 16, 'inner': 10}",
+f73v,Sagittarius,Decembre?,135,"man with a crossbow; 30 nymphs, 4 above the circle",3,30,31,68,"{'top': 4, 'outer': 16, 'inner': 10}",
