@@ -53,8 +53,8 @@ Tokens most over-represented in **A** (log2 ratio B/A most negative; ≥20 token
 | dchor | 23 | 1 | -5.003 |
 | cthol | 52 | 3 | -4.940 |
 | cthy | 94 | 6 | -4.895 |
-| kchor | 19 | 1 | -4.734 |
 | ckhol | 19 | 1 | -4.734 |
+| kchor | 19 | 1 | -4.734 |
 
 Tokens most over-represented in **B**:
 

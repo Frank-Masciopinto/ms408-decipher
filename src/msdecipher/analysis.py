@@ -294,7 +294,7 @@ def _currier_ab(A, B, seg, uc, ucA, ucB, seed, perms, out_r) -> dict:
     # per-unit comparison
     nA_u, nB_u = sum(ucA.values()), sum(ucB.values())
     rows = []
-    for u in sorted(set(ucA) | set(ucB), key=lambda x: -(ucA[x] + ucB[x])):
+    for u in sorted(set(ucA) | set(ucB), key=lambda x: (-(ucA[x] + ucB[x]), x)):
         fa, fb = (ucA[u] + 0.5) / (nA_u + 0.5), (ucB[u] + 0.5) / (nB_u + 0.5)
         rows.append({"unit": render(u), "count_A": ucA[u], "count_B": ucB[u],
                      "share_A": ucA[u] / nA_u, "share_B": ucB[u] / nB_u, "log2_ratio_B_over_A": math.log2(fb / fa)})
@@ -308,7 +308,7 @@ def _currier_ab(A, B, seg, uc, ucA, ucB, seed, perms, out_r) -> dict:
         wcb.update(c)
     tA, tB = sum(wca.values()), sum(wcb.values())
     wrows = []
-    for w in set(wca) | set(wcb):
+    for w in sorted(set(wca) | set(wcb)):
         n = wca[w] + wcb[w]
         if n < 20:
             continue
@@ -317,7 +317,7 @@ def _currier_ab(A, B, seg, uc, ucA, ucB, seed, perms, out_r) -> dict:
                       "per_1000_A": 1000 * wca[w] / tA, "per_1000_B": 1000 * wcb[w] / tB,
                       "log2_ratio_B_over_A": math.log2(fb / fa)})
     wdf = pd.DataFrame(wrows, columns=["word", "count_A", "count_B", "per_1000_A", "per_1000_B",
-                                       "log2_ratio_B_over_A"]).sort_values("log2_ratio_B_over_A")
+                                       "log2_ratio_B_over_A"]).sort_values(["log2_ratio_B_over_A", "word"], kind="stable")
     wdf.to_csv(out_r / "currier_ab_words.csv", index=False)
     return {"unit_jsd": obs_u, "unit_perm_p": pu, "unit_null_mean": float(np.mean(null_u)),
             "word_jsd": obs_w, "word_perm_p": pw, "word_null_mean": float(np.mean(null_w)),
