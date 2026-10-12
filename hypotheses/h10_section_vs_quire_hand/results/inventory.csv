@@ -1,0 +1,69 @@
+level,unit,by,n_classes,detail,min_class_tokens,total_tokens
+quire,1,section,2,herbal:15p/1291t; text-only:1p/204t,204,1495
+quire,1,illustration,2,H:15p/1291t; T:1p/204t,204,1495
+quire,10,section,2,cosmological:4p/594t; zodiac:2p/153t,153,747
+quire,10,illustration,2,C:4p/594t; Z:2p/153t,153,747
+quire,13,section,2,biological:19p/6205t; text-only:1p/560t,560,6765
+quire,13,illustration,2,B:19p/6205t; T:1p/560t,560,6765
+quire,14,section,2,cosmological:3p/611t; text-only:3p/1218t,611,1829
+quire,14,illustration,2,C:3p/611t; T:3p/1218t,611,1829
+quire,15,section,2,herbal:6p/461t; pharmaceutical:6p/896t,461,1357
+quire,15,illustration,2,H:6p/461t; P:6p/896t,461,1357
+quire,8,section,4,cosmological:1p/172t; herbal:4p/241t; stars:2p/742t; text-only:1p/292t,172,1447
+quire,8,illustration,4,C:1p/172t; H:4p/241t; S:2p/742t; T:1p/292t,172,1447
+quire,9,section,2,astronomical:8p/723t; cosmological:2p/214t,214,937
+quire,9,illustration,2,A:8p/723t; C:2p/214t,214,937
+hand,1,section,4,cosmological:1p/172t; herbal:95p/7855t; pharmaceutical:16p/2267t; text-only:1p/204t,172,10498
+hand,1,illustration,4,C:1p/172t; H:95p/7855t; P:16p/2267t; T:1p/204t,172,10498
+hand,2,section,4,biological:19p/6205t; cosmological:3p/611t; herbal:20p/2313t; text-only:4p/1778t,611,10907
+hand,2,illustration,4,B:19p/6205t; C:3p/611t; H:20p/2313t; T:4p/1778t,611,10907
+hand,3,section,2,herbal:8p/574t; stars:24p/11047t,574,11621
+hand,3,illustration,2,H:8p/574t; S:24p/11047t,574,11621
+hand,4,section,3,astronomical:8p/723t; cosmological:6p/808t; zodiac:12p/935t,723,2466
+hand,4,illustration,3,A:8p/723t; C:6p/808t; Z:12p/935t,723,2466
+hand,5,section,2,herbal:6p/574t; text-only:1p/292t,292,866
+hand,5,illustration,2,H:6p/574t; T:1p/292t,292,866
+quire x hand x lang,Q10|h4|?,section,2,cosmological:4p/594t; zodiac:2p/153t,153,747
+quire x hand x lang,Q10|h4|?,illustration,2,C:4p/594t; Z:2p/153t,153,747
+quire x hand x lang,Q13|h2|B,section,2,biological:19p/6205t; text-only:1p/560t,560,6765
+quire x hand x lang,Q13|h2|B,illustration,2,B:19p/6205t; T:1p/560t,560,6765
+quire x hand x lang,Q14|h2|B,section,2,cosmological:3p/611t; text-only:3p/1218t,611,1829
+quire x hand x lang,Q14|h2|B,illustration,2,C:3p/611t; T:3p/1218t,611,1829
+quire x hand x lang,Q15|h1|A,section,2,herbal:6p/461t; pharmaceutical:6p/896t,461,1357
+quire x hand x lang,Q15|h1|A,illustration,2,H:6p/461t; P:6p/896t,461,1357
+quire x hand x lang,Q1|h1|A,section,2,herbal:15p/1291t; text-only:1p/204t,204,1495
+quire x hand x lang,Q1|h1|A,illustration,2,H:15p/1291t; T:1p/204t,204,1495
+quire x hand x lang,Q8|h5|B,section,2,herbal:2p/197t; text-only:1p/292t,197,489
+quire x hand x lang,Q8|h5|B,illustration,2,H:2p/197t; T:1p/292t,197,489
+quire x hand x lang,Q9|h4|?,section,2,astronomical:8p/723t; cosmological:2p/214t,214,937
+quire x hand x lang,Q9|h4|?,illustration,2,A:8p/723t; C:2p/214t,214,937
+hand x lang,1|A,section,3,herbal:95p/7855t; pharmaceutical:16p/2267t; text-only:1p/204t,204,10326
+hand x lang,1|A,illustration,3,H:95p/7855t; P:16p/2267t; T:1p/204t,204,10326
+hand x lang,2|B,section,4,biological:19p/6205t; cosmological:3p/611t; herbal:20p/2313t; text-only:4p/1778t,611,10907
+hand x lang,2|B,illustration,4,B:19p/6205t; C:3p/611t; H:20p/2313t; T:4p/1778t,611,10907
+hand x lang,3|B,section,2,herbal:6p/530t; stars:22p/10305t,530,10835
+hand x lang,3|B,illustration,2,H:6p/530t; S:22p/10305t,530,10835
+hand x lang,4|?,section,3,astronomical:8p/723t; cosmological:6p/808t; zodiac:12p/935t,723,2466
+hand x lang,4|?,illustration,3,A:8p/723t; C:6p/808t; Z:12p/935t,723,2466
+hand x lang,5|B,section,2,herbal:6p/574t; text-only:1p/292t,292,866
+hand x lang,5|B,illustration,2,H:6p/574t; T:1p/292t,292,866
+within section cosmological,cosmological,hand,3,1:1p/172t; 2:3p/611t; 4:6p/808t,172,1591
+within section cosmological,cosmological,lang,2,?:7p/980t; B:3p/611t,611,1591
+within section cosmological,cosmological,quire,4,10:4p/594t; 14:3p/611t; 8:1p/172t; 9:2p/214t,172,1591
+within section cosmological,cosmological,stratum,4,Q10|h4|?:4p/594t; Q14|h2|B:3p/611t; Q8|h1|?:1p/172t; Q9|h4|?:2p/214t,172,1591
+within section herbal,herbal,hand,4,1:95p/7855t; 2:20p/2313t; 3:8p/574t; 5:6p/574t,574,11316
+within section herbal,herbal,lang,3,?:2p/44t; A:95p/7855t; B:32p/3417t,44,11316
+within section herbal,herbal,quire,10,1:15p/1291t; 15:6p/461t; 17:10p/902t; 2:14p/1026t; 3:16p/1421t; 4:16p/1255t; 5:16p/1535t; 6:16p/1681t; 7:16p/1503t; 8:4p/241t,241,11316
+within section herbal,herbal,stratum,17,Q15|h1|A:6p/461t; Q17|h1|A:4p/372t; Q17|h3|B:6p/530t; Q1|h1|A:15p/1291t; Q2|h1|A:14p/1026t; Q3|h1|A:16p/1421t; Q4|h1|A:12p/866t; Q4|h2|B:4p/389t; Q5|h1|A:8p/590t; Q5|h2|B:8p/945t; Q6|h1|A:8p/740t; Q6|h2|B:4p/564t; Q6|h5|B:4p/377t; Q7|h1|A:12p/1088t; Q7|h2|B:4p/415t; Q8|h3|?:2p/44t; Q8|h5|B:2p/197t,44,11316
+within section pharmaceutical,pharmaceutical,quire,2,15:6p/896t; 19:10p/1371t,896,2267
+within section pharmaceutical,pharmaceutical,stratum,2,Q15|h1|A:6p/896t; Q19|h1|A:10p/1371t,896,2267
+within section stars,stars,hand,2,3:24p/11047t; @:1p/458t,458,11505
+within section stars,stars,lang,2,A:2p/742t; B:23p/10763t,742,11505
+within section stars,stars,quire,2,20:23p/10763t; 8:2p/742t,742,11505
+within section stars,stars,stratum,3,Q20|h3|B:22p/10305t; Q20|h@|B:1p/458t; Q8|h3|A:2p/742t,458,11505
+within section text-only,text-only,hand,3,1:1p/204t; 2:4p/1778t; 5:1p/292t,204,2274
+within section text-only,text-only,lang,2,A:1p/204t; B:5p/2070t,204,2274
+within section text-only,text-only,quire,4,1:1p/204t; 13:1p/560t; 14:3p/1218t; 8:1p/292t,204,2274
+within section text-only,text-only,stratum,4,Q13|h2|B:1p/560t; Q14|h2|B:3p/1218t; Q1|h1|A:1p/204t; Q8|h5|B:1p/292t,204,2274
+within section zodiac,zodiac,quire,3,10:2p/153t; 11:8p/651t; 12:2p/131t,131,935
+within section zodiac,zodiac,stratum,3,Q10|h4|?:2p/153t; Q11|h4|?:8p/651t; Q12|h4|?:2p/131t,131,935
