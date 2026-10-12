@@ -1,0 +1,233 @@
+{
+ "pool_n": 121,
+ "shape_token_rate": 0.010271734055467364,
+ "pool_mean": [
+  0.049586776859504134,
+  0.026170798898071623,
+  0.00915699502718429
+ ],
+ "res": {
+  "primary": {
+   "folios": [
+    "f16v",
+    "f31v",
+    "f33v",
+    "f39v",
+    "f50v",
+    "f96r"
+   ],
+   "informative_in_quireHL": 6,
+   "obs": [
+    0.0,
+    0.0,
+    0.015777441253793094
+   ],
+   "null_quireHL": [
+    0.0842166666666635,
+    0.035116666666665144,
+    0.013876348627403258
+   ],
+   "p_quireHL": [
+    1.0,
+    1.0,
+    0.26147385261473854
+   ],
+   "null_HL": [
+    0.08136666666666366,
+    0.036255555555553834,
+    0.01576851484111737
+   ],
+   "p_HL": [
+    1.0,
+    1.0,
+    0.49625037496250374
+   ],
+   "words": {
+    "f16v": {
+     "first": "pchroiin",
+     "para": [
+      "pchroiin",
+      "pchocthy"
+     ],
+     "hits": []
+    },
+    "f31v": {
+     "first": "podair",
+     "para": [
+      "podair",
+      "pcheeody"
+     ],
+     "hits": [
+      "keeody",
+      "keedy",
+      "keeol"
+     ]
+    },
+    "f33v": {
+     "first": "tar",
+     "para": [
+      "tar",
+      "tshdy"
+     ],
+     "hits": [
+      "kchdy",
+      "keedy"
+     ]
+    },
+    "f39v": {
+     "first": "pdair",
+     "para": [
+      "pdair",
+      "pardy"
+     ],
+     "hits": [
+      "kchdy"
+     ]
+    },
+    "f50v": {
+     "first": "tchy",
+     "para": [
+      "tchy"
+     ],
+     "hits": [
+      "keody",
+      "kchdy",
+      "kchdy"
+     ]
+    },
+    "f96r": {
+     "first": "tor",
+     "para": [
+      "tor"
+     ],
+     "hits": [
+      "keody"
+     ]
+    }
+   }
+  },
+  "noVatne": {
+   "folios": [
+    "f16v",
+    "f31v",
+    "f50v"
+   ],
+   "informative_in_quireHL": 3,
+   "obs": [
+    0.0,
+    0.0,
+    0.019275322027615605
+   ],
+   "null_quireHL": [
+    0.168433333333327,
+    0.07023333333333029,
+    0.016502974523980352
+   ],
+   "p_quireHL": [
+    1.0,
+    1.0,
+    0.23327667233276672
+   ],
+   "null_HL": [
+    0.08316666666666862,
+    0.0368277777777775,
+    0.0158587872573632
+   ],
+   "p_HL": [
+    1.0,
+    1.0,
+    0.30226977302269775
+   ],
+   "words": {
+    "f16v": {
+     "first": "pchroiin",
+     "para": [
+      "pchroiin",
+      "pchocthy"
+     ],
+     "hits": []
+    },
+    "f31v": {
+     "first": "podair",
+     "para": [
+      "podair",
+      "pcheeody"
+     ],
+     "hits": [
+      "keeody",
+      "keedy",
+      "keeol"
+     ]
+    },
+    "f50v": {
+     "first": "tchy",
+     "para": [
+      "tchy"
+     ],
+     "hits": [
+      "keody",
+      "kchdy",
+      "kchdy"
+     ]
+    }
+   }
+  }
+ },
+ "n_calib": 66,
+ "calib_percentile_of_shape_p": {
+  "noVatne": [
+   1.0,
+   1.0,
+   0.19696969696969696
+  ],
+  "primary": [
+   1.0,
+   1.0,
+   0.2727272727272727
+  ]
+ },
+ "calib_frac_p05": {
+  "noVatne": [
+   0.0,
+   0.0,
+   0.030303030303030304
+  ],
+  "primary": [
+   0.0,
+   0.0,
+   0.030303030303030304
+  ]
+ },
+ "primary": [
+  {
+   "test": "primary_O1",
+   "p": 1.0,
+   "holm": 1.0
+  },
+  {
+   "test": "primary_O2",
+   "p": 1.0,
+   "holm": 1.0
+  },
+  {
+   "test": "primary_O3",
+   "p": 0.26147385261473854,
+   "holm": 1.0
+  },
+  {
+   "test": "noVatne_O1",
+   "p": 1.0,
+   "holm": 1.0
+  },
+  {
+   "test": "noVatne_O2",
+   "p": 1.0,
+   "holm": 1.0
+  },
+  {
+   "test": "noVatne_O3",
+   "p": 0.23327667233276672,
+   "holm": 1.0
+  }
+ ]
+}
