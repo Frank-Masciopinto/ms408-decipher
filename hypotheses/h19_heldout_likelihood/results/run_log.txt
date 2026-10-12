@@ -1,0 +1,10 @@
+done CTRL_la_celsus
+done CTRL_la_vulgate
+done MS_1A
+done MS_3B
+done CTRL_it_sidrach
+done CTRL_it_dante
+done CIPH_naibbe_la_pliny
+done MS_2B
+done CIPH_naibbe_it_ariosto
+done SYNTH_copy0.2
