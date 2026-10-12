@@ -1,0 +1,358 @@
+           null feature     obs  null_mean  null_sd       z       p  p_holm
+0        global    pre2  0.0209    -0.0001   0.0056  3.7570  0.0005  0.0040
+1        global    suf2  0.0052     0.0000   0.0027  1.9060  0.0345  0.1379
+2        global    word  0.0007    -0.0000   0.0002  3.9191  0.0010  0.0060
+3        global   first  0.0699    -0.0005   0.0154  4.5667  0.0005  0.0040
+4  within_quire    pre2  0.0209     0.0209   0.0012 -0.0485  0.5012  1.0000
+5  within_quire    suf2  0.0052     0.0034   0.0007  2.7147  0.0060  0.0300
+6  within_quire    word  0.0007     0.0006   0.0001  0.4435  0.3928  1.0000
+7  within_quire   first  0.0699     0.0685   0.0040  0.3518  0.3488  1.0000
+                subset          null feature     obs       z       p  p_holm
+0   pharma_jar_vs_part        global    pre2  0.0002  0.0202  0.4688  1.0000
+1   pharma_jar_vs_part        global    suf2  0.0134  2.2873  0.0175  0.1224
+2   pharma_jar_vs_part        global    word  0.0006  1.3205  0.1559  0.8546
+3   pharma_jar_vs_part        global   first  0.0162  0.3977  0.3198  1.0000
+4   pharma_jar_vs_part  within_quire    pre2  0.0002  0.2609  0.3788  1.0000
+5   pharma_jar_vs_part  within_quire    suf2  0.0134  2.5872  0.0110  0.0880
+6   pharma_jar_vs_part  within_quire    word  0.0006  1.3711  0.1424  0.8546
+7   pharma_jar_vs_part  within_quire   first  0.0162  0.6285  0.2509  1.0000
+8    bio_nymph_vs_tube        global    pre2 -0.0013 -0.1171  0.4873  1.0000
+9    bio_nymph_vs_tube        global    suf2  0.0061  0.7111  0.2124  1.0000
+10   bio_nymph_vs_tube        global    word -0.0007 -0.6335  0.8311  1.0000
+11   bio_nymph_vs_tube        global   first -0.0156 -0.9936  0.9190  1.0000
+12   bio_nymph_vs_tube  within_quire    pre2 -0.0013 -0.1332  0.4793  1.0000
+13   bio_nymph_vs_tube  within_quire    suf2  0.0061  0.7602  0.1929  1.0000
+14   bio_nymph_vs_tube  within_quire    word -0.0007 -0.5897  0.8231  1.0000
+15   bio_nymph_vs_tube  within_quire   first -0.0156 -0.9834  0.9175  1.0000
+t2 {
+"n_pairs": 12,
+"mean_rank_pct": 0.4867571059431525,
+"p": 0.5664867026594681
+}
+t3 {
+"within_quire": {
+"obs": 64,
+"n_labels": 697,
+"null_mean": 57.051,
+"ratio": 1.1218032988028255,
+"p": 0.08945527236381809
+},
+"within_object_type": {
+"obs": 64,
+"n_labels": 697,
+"null_mean": 56.708,
+"ratio": 1.1285885589334839,
+"p": 0.08945527236381809
+}
+}
+t5_root_robustness {
+"k=5": {
+"n_cand": 5,
+"log_rate_ratio": 0.4424487043949993,
+"p_random_words": 0.04447776111944028,
+"p_random_tags": 0.1679160419790105,
+"n_target_pages": 29,
+"n_pages": 128
+},
+"k=5|lang=A": {
+"n_cand": 5,
+"log_rate_ratio": 0.6953272109009195,
+"p_random_words": 0.004497751124437781,
+"p_random_tags": 0.06296851574212893,
+"n_target_pages": 22,
+"n_pages": 95
+},
+"k=5|lang=B": {
+"n_cand": 5,
+"log_rate_ratio": -0.4440158519342565,
+"p_random_words": 0.7536231884057971,
+"p_random_tags": 0.7246376811594203,
+"n_target_pages": 7,
+"n_pages": 32
+},
+"k=10": {
+"n_cand": 10,
+"log_rate_ratio": 0.33765177332856283,
+"p_random_words": 0.0079960019990005,
+"p_random_tags": 0.0069965017491254375,
+"n_target_pages": 29,
+"n_pages": 128
+},
+"k=10|lang=A": {
+"n_cand": 10,
+"log_rate_ratio": 0.4414841748286572,
+"p_random_words": 0.00849575212393803,
+"p_random_tags": 0.04247876061969016,
+"n_target_pages": 22,
+"n_pages": 95
+},
+"k=10|lang=B": {
+"n_cand": 10,
+"log_rate_ratio": 0.28249170770599924,
+"p_random_words": 0.10994502748625687,
+"p_random_tags": 0.0079960019990005,
+"n_target_pages": 7,
+"n_pages": 32
+},
+"k=20": {
+"n_cand": 20,
+"log_rate_ratio": 0.14180107902285602,
+"p_random_words": 0.022488755622188907,
+"p_random_tags": 0.01649175412293853,
+"n_target_pages": 29,
+"n_pages": 128
+},
+"k=20|lang=A": {
+"n_cand": 20,
+"log_rate_ratio": 0.18379708800567274,
+"p_random_words": 0.017491254372813594,
+"p_random_tags": 0.03498250874562719,
+"n_target_pages": 22,
+"n_pages": 95
+},
+"k=20|lang=B": {
+"n_cand": 20,
+"log_rate_ratio": 0.04777058826816193,
+"p_random_words": 0.33483258370814595,
+"p_random_tags": 0.035982008995502246,
+"n_target_pages": 7,
+"n_pages": 32
+},
+"k=30": {
+"n_cand": 30,
+"log_rate_ratio": 0.12653773261583762,
+"p_random_words": 0.01199400299850075,
+"p_random_tags": 0.03798100949525238,
+"n_target_pages": 29,
+"n_pages": 128
+},
+"k=30|lang=A": {
+"n_cand": 30,
+"log_rate_ratio": 0.16295452174341313,
+"p_random_words": 0.01699150424787606,
+"p_random_tags": 0.05697151424287856,
+"n_target_pages": 22,
+"n_pages": 95
+},
+"k=30|lang=B": {
+"n_cand": 30,
+"log_rate_ratio": 0.034556489980500385,
+"p_random_words": 0.3823088455772114,
+"p_random_tags": 0.10794602698650675,
+"n_target_pages": 7,
+"n_pages": 32
+}
+}
+t4_quire_block_null {
+"water": {
+"observed_global_holm05": 71,
+"quire_block_null": [
+12,
+3,
+24,
+85,
+12,
+13,
+3,
+8,
+17,
+8,
+4,
+1,
+13,
+10,
+5,
+1,
+116,
+4,
+13,
+67,
+86,
+0,
+7,
+13,
+7,
+8,
+103,
+1,
+76,
+11
+],
+"frac_null_ge_obs": 0.16666666666666666
+},
+"star": {
+"observed_global_holm05": 31,
+"quire_block_null": [
+24,
+0,
+24,
+13,
+0,
+2,
+10,
+29,
+40,
+4,
+0,
+0,
+13,
+4,
+10,
+2,
+45,
+15,
+14,
+1,
+6,
+3,
+20,
+2,
+4,
+3,
+13,
+4,
+9,
+0
+],
+"frac_null_ge_obs": 0.06666666666666667
+},
+"root": {
+"observed_global_holm05": 12,
+"quire_block_null": [
+54,
+4,
+17,
+5,
+1,
+1,
+53,
+1,
+4,
+1,
+1,
+65,
+60,
+0,
+14,
+4,
+5,
+0,
+0,
+0,
+1,
+0,
+10,
+8,
+0,
+0,
+34,
+0,
+13,
+7
+],
+"frac_null_ge_obs": 0.26666666666666666
+},
+"jar": {
+"observed_global_holm05": 19,
+"quire_block_null": [
+1,
+0,
+0,
+4,
+78,
+4,
+13,
+7,
+5,
+5,
+12,
+15,
+7,
+3,
+4,
+1,
+17,
+2,
+76,
+3,
+7,
+5,
+40,
+8,
+129,
+48,
+64,
+37,
+5,
+13
+],
+"frac_null_ge_obs": 0.23333333333333334
+},
+"nymph": {
+"observed_global_holm05": 16,
+"quire_block_null": [
+23,
+2,
+65,
+4,
+7,
+3,
+1,
+1,
+1,
+126,
+5,
+55,
+4,
+11,
+6,
+5,
+5,
+3,
+1,
+2,
+5,
+3,
+1,
+1,
+10,
+51,
+8,
+110,
+4,
+2
+],
+"frac_null_ge_obs": 0.2
+}
+}
+t6_pattern_base_rate {
+"latin": 0.019840751860070487,
+"italian": 0.019840751860070487,
+"german": 0.09045816473045294,
+"hebrew": 0.002480093982508811,
+"arabic": 0.05860853674455032,
+"greek": 0.09045816473045294,
+"occitan": 0.004829656702780316,
+"czech": 0.09567941521994518
+}
+      word  star_mean  null_mean      p  latin  italian  german  hebrew  arabic  greek  occitan  czech
+0   cheody      0.500      0.365  0.186    0.5      0.5     0.5     0.5     0.0    0.5      0.5    1.0
+1    ckhol      0.625      0.531  0.268    0.5      0.5     1.0     0.5     0.5    1.0      0.5    0.5
+2   olaiin      0.562      0.302  0.000    1.0      1.0     0.5     0.5     0.0    0.5      0.5    0.5
+3   otaiin      0.562      0.302  0.000    1.0      1.0     0.5     0.5     0.0    0.5      0.5    0.5
+4   qokaly      0.500      0.365  0.180    0.5      0.5     0.5     0.5     0.0    0.5      0.5    1.0
+5    dchol      0.625      0.531  0.249    0.5      0.5     1.0     0.5     0.5    1.0      0.5    0.5
+6  qotoear      0.312      0.104  0.009    0.5      0.5     0.0     0.5     0.0    0.0      0.5    0.5
+7   dchdar      0.500      0.302  0.019    0.5      0.5     0.5     0.5     0.0    0.5      1.0    0.5
+8   saldal      0.438      0.302  0.113    0.5      0.5     0.5     0.5     0.0    0.5      0.5    0.5
+9   ytodal      0.500      0.365  0.193    0.5      0.5     0.5     0.5     0.0    0.5      0.5    1.0
+water|within_quire 26 25.9 0 [('ykain', 0.18, 2.4, '1'), ('am', -0.03, 0.5, '1'), ('cheeo', -0.09, 0.3, '1'), ('tedy', 0.46, 3.9, '1'), ('qoeey', -0.07, 0.3, '1')]
+water|global 150 25.9 71 [('qol', 0.75, 9.7, '0'), ('olkedy', 0.63, 8.5, '0'), ('qokain', 0.64, 4.9, '0'), ('qoteedy', 0.57, 4.5, '0'), ('qokedy', 0.56, 5.0, '0')]
+star|within_quire 20 25.9 0 [('cheody', 0.27, 1.5, '1'), ('ckhol', -0.09, 0.2, '1'), ('olaiin', 0.11, 1.2, '1'), ('otaiin', 0.21, 2.5, '1'), ('qokaly', 0.03, 1.8, '1')]
+star|global 137 25.9 31 [('cheeo', 0.41, 14.6, '0'), ('lkaiin', 0.4, 6.6, '0'), ('oteey', 0.37, 3.2, '0'), ('al', 0.38, 4.2, '0'), ('oteedy', 0.38, 3.2, '0')]
+root|within_quire 40 25.9 0 [('qokol', 0.31, 3.6, '1'), ('aiin', 0.03, 0.9, '1'), ('qokchol', 0.16, 6.7, '1'), ('ykar', 0.02, 1.4, '1'), ('ychol', 0.18, 5.5, '1')]
+root|global 59 25.9 12 [('ctheol', 0.5, 11.0, '0'), ('ckhey', 0.43, 8.4, '0'), ('qoor', 0.39, 11.0, '0'), ('qokeody', 0.37, 8.6, '0'), ('qockhey', 0.37, 6.1, '0')]
+jar|within_quire 29 25.9 0 [('odaiin', 0.15, 1.6, '0.46'), ('ols', 0.28, 4.4, '1'), ('aiin', 0.13, 1.1, '1'), ('chody', 0.19, 2.3, '1'), ('dy', 0.03, 0.9, '1')]
+jar|global 74 25.9 19 [('ctheol', 0.45, 12.8, '0'), ('qokeody', 0.45, 14.5, '0'), ('qoor', 0.45, 25.4, '0'), ('qokeol', 0.41, 13.6, '0'), ('okeol', 0.41, 10.7, '0')]
+nymph|within_quire 27 25.9 0 [('ykain', 0.09, 1.3, '0.24'), ('am', 0.17, 0.5, '1'), ('otey', 0.55, 3.0, '1'), ('tedy', 0.19, 4.1, '1'), ('cheeo', -0.09, 0.3, '1')]
+nymph|global 88 25.9 16 [('otey', 0.55, 3.0, '0'), ('oteos', 0.56, 3.9, '0'), ('oteody', 0.36, 2.1, '0'), ('oteey', 0.34, 1.4, '0'), ('otshedy', 0.35, 2.3, '0.0001')]

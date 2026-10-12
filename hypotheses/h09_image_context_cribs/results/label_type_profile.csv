@@ -1,0 +1,8 @@
+obj,n,folios,quires,top_pre2,top_suf2,o_initial,mean_len,repeated_words
+astro_elem,6,2,1,"ot:2, ok:2, so:1","in:2, dy:1, al:1",0.833,6.83,0
+jar,36,12,2,"ok:9, ot:5, da:3","dy:5, in:4, al:3",0.528,6.94,0
+nymph,62,8,1,"ok:17, da:8, ot:8","dy:17, al:8, ly:7",0.548,5.18,4
+plant_part,186,15,2,"ot:32, ok:28, ch:18","ol:19, dy:19, or:17",0.532,5.85,9
+star,74,4,1,"ot:18, ok:13, ch:6","ar:12, dy:12, or:8",0.635,6.19,1
+tube_tub,47,10,1,"ot:14, ok:11, ol:7","dy:9, al:8, ol:6",0.723,6.04,1
+zodiac_elem,288,12,3,"ot:77, ok:75, ch:17","dy:48, ly:26, al:26",0.75,5.99,31
