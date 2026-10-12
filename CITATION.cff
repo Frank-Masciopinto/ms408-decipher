@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this toolkit, please cite it as below."
+title: "Voynich Manuscript Decipherment Toolkit (MS 408)"
+authors:
+  - name: "ms408-decipher contributors"
+repository-code: "https://github.com/Frank-Masciopinto/ms408-decipher"
+license: MIT
+date-released: 2026-10-12
+keywords: [voynich manuscript, MS 408, Beinecke, decipherment, cryptanalysis, computational linguistics, EVA transcription]
