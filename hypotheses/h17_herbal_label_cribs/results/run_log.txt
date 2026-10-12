@@ -1,0 +1,606 @@
+{
+ "A": {
+  "n_pairs": 16,
+  "obs": [
+   0.22052453195692154,
+   0.004910551488647959,
+   0.0
+  ],
+  "quireHL": {
+   "null_mean": [
+    0.20921161079989428,
+    0.0049418401284802745,
+    0.0051004315476194
+   ],
+   "p": [
+    0.20757924207579243,
+    0.5045495450454954,
+    1.0
+   ]
+  },
+  "HL": {
+   "null_mean": [
+    0.21877136754271154,
+    0.0062488543479882145,
+    0.0056746459961663255
+   ],
+   "p": [
+    0.45655434456554345,
+    0.7801219878012199,
+    1.0
+   ]
+  },
+  "any": {
+   "null_mean": [
+    0.2167803644890398,
+    0.005763785209290298,
+    0.003932006481433064
+   ],
+   "p": [
+    0.41525847415258477,
+    0.6742325767423257,
+    1.0
+   ]
+  }
+ },
+ "B": [
+  {
+   "level": "genus",
+   "min_cons": 1,
+   "n_folios": 106,
+   "n_pairs": 59,
+   "obs": [
+    0.20542754736303118,
+    0.3989439324116742,
+    0.06454275667501355
+   ],
+   "all_pairs_mean": [
+    0.23547184072790203,
+    0.40594938604372244,
+    0.06141471147378172
+   ],
+   "null_mean": [
+    0.24208145225294378,
+    0.4163017389912954,
+    0.061486469432219255
+   ],
+   "p": [
+    0.9397060293970603,
+    0.7544245575442455,
+    0.1608839116088391
+   ],
+   "null": "HL"
+  },
+  {
+   "level": "genus",
+   "min_cons": 2,
+   "n_folios": 106,
+   "n_pairs": 3,
+   "obs": [
+    0.14285714285714288,
+    0.37142857142857144,
+    0.05724003730736544
+   ],
+   "all_pairs_mean": [
+    0.23547184072790203,
+    0.40594938604372244,
+    0.06141471147378172
+   ],
+   "null_mean": [
+    0.24816085978835958,
+    0.42823992063492317,
+    0.05559230678150557
+   ],
+   "p": [
+    0.8557144285571443,
+    0.7050294970502949,
+    0.42995700429957007
+   ],
+   "null": "HL"
+  },
+  {
+   "level": "genus",
+   "min_cons": 1,
+   "n_folios": 106,
+   "n_pairs": 59,
+   "obs": [
+    0.20542754736303118,
+    0.3989439324116742,
+    0.06454275667501355
+   ],
+   "all_pairs_mean": [
+    0.23547184072790203,
+    0.40594938604372244,
+    0.06141471147378172
+   ],
+   "null_mean": [
+    0.22698435841817385,
+    0.39695430719035424,
+    0.05935647399485224
+   ],
+   "p": [
+    0.8333166683331666,
+    0.46115388461153883,
+    0.07229277072292771
+   ],
+   "null": "quireHL"
+  },
+  {
+   "level": "genus",
+   "min_cons": 2,
+   "n_folios": 106,
+   "n_pairs": 3,
+   "obs": [
+    0.14285714285714288,
+    0.37142857142857144,
+    0.05724003730736544
+   ],
+   "all_pairs_mean": [
+    0.23547184072790203,
+    0.40594938604372244,
+    0.06141471147378172
+   ],
+   "null_mean": [
+    0.24816085978835958,
+    0.42823992063492317,
+    0.05559230678150557
+   ],
+   "p": [
+    0.8557144285571443,
+    0.7050294970502949,
+    0.42995700429957007
+   ],
+   "null": "HL_ELVmerged"
+  },
+  {
+   "level": "family",
+   "min_cons": 1,
+   "n_folios": 106,
+   "n_pairs": 406,
+   "obs": [
+    0.21974284464441973,
+    0.39300868641419817,
+    0.06008727322694127
+   ],
+   "all_pairs_mean": [
+    0.23547184072790203,
+    0.40594938604372244,
+    0.06141471147378172
+   ],
+   "null_mean": [
+    0.23218884795650543,
+    0.4027626288901371,
+    0.0601640083946872
+   ],
+   "p": [
+    0.8265173482651735,
+    0.6983301669833016,
+    0.5038496150384961
+   ],
+   "null": "HL"
+  },
+  {
+   "level": "family",
+   "min_cons": 2,
+   "n_folios": 106,
+   "n_pairs": 88,
+   "obs": [
+    0.2074686716791979,
+    0.33981620718462835,
+    0.05598275083190592
+   ],
+   "all_pairs_mean": [
+    0.23547184072790203,
+    0.40594938604372244,
+    0.06141471147378172
+   ],
+   "null_mean": [
+    0.22540951587301578,
+    0.3902249527986642,
+    0.05908574589641529
+   ],
+   "p": [
+    0.75002499750025,
+    0.9234076592340766,
+    0.7415258474152585
+   ],
+   "null": "HL"
+  },
+  {
+   "level": "family",
+   "min_cons": 1,
+   "n_folios": 106,
+   "n_pairs": 406,
+   "obs": [
+    0.21974284464441973,
+    0.39300868641419817,
+    0.06008727322694127
+   ],
+   "all_pairs_mean": [
+    0.23547184072790203,
+    0.40594938604372244,
+    0.06141471147378172
+   ],
+   "null_mean": [
+    0.23331983683921823,
+    0.4040166773434034,
+    0.05977981516645668
+   ],
+   "p": [
+    0.8387161283871613,
+    0.7114288571142886,
+    0.43845615438456154
+   ],
+   "null": "quireHL"
+  },
+  {
+   "level": "family",
+   "min_cons": 2,
+   "n_folios": 106,
+   "n_pairs": 88,
+   "obs": [
+    0.20883977900552478,
+    0.3431903884942559,
+    0.0566688779834306
+   ],
+   "all_pairs_mean": [
+    0.23547184072790203,
+    0.40594938604372244,
+    0.06141471147378172
+   ],
+   "null_mean": [
+    0.22705324169078286,
+    0.39245323752521244,
+    0.05971476148140666
+   ],
+   "p": [
+    0.7516248375162484,
+    0.9163083691630837,
+    0.7361263873612639
+   ],
+   "null": "HL_ELVmerged"
+  }
+ ],
+ "C": {
+  "genus": {
+   "obs": 0.4047619047619048,
+   "null_mean": 0.27902934523809525,
+   "p": 0.23067693230676933,
+   "k": 1
+  },
+  "family": {
+   "obs": 0.3226934523809524,
+   "null_mean": 0.2249946473214286,
+   "p": 0.00039996000399960006,
+   "k": 4
+  }
+ },
+ "C_without_Bax_IDs": {
+  "genus": {
+   "obs": 0.4047619047619048,
+   "null_mean": 0.27902934523809525,
+   "p": 0.23067693230676933,
+   "k": 1
+  },
+  "family": {
+   "obs": 0.3096643518518518,
+   "null_mean": 0.2241523258377425,
+   "p": 0.0028997100289971,
+   "k": 4
+  }
+ },
+ "C_control_all_k_initial": {
+  "n": 120,
+  "frac_p05": 0.05,
+  "median_gap": 0.009398129960317414,
+  "n_k": 26,
+  "frac_p05_k": 0.07692307692307693,
+  "median_gap_k": -0.005713750000000007,
+  "k_rows": [
+   {
+    "folio": "f13v",
+    "word": "koair",
+    "family": "Crassulaceae",
+    "gap": -0.048,
+    "p": 0.669
+   },
+   {
+    "folio": "f1v",
+    "word": "kchsy",
+    "family": "Convolvulaceae",
+    "gap": 0.046,
+    "p": 0.264
+   },
+   {
+    "folio": "f1v",
+    "word": "kchsy",
+    "family": "Ranunculaceae",
+    "gap": -0.01,
+    "p": 0.581
+   },
+   {
+    "folio": "f1v",
+    "word": "kchsy",
+    "family": "Solanaceae",
+    "gap": -0.008,
+    "p": 0.55
+   },
+   {
+    "folio": "f27r",
+    "word": "ksor",
+    "family": "Aristolochiaceae",
+    "gap": -0.049,
+    "p": 0.753
+   },
+   {
+    "folio": "f27r",
+    "word": "ksor",
+    "family": "Solanaceae",
+    "gap": -0.012,
+    "p": 0.575
+   },
+   {
+    "folio": "f28v",
+    "word": "kshol",
+    "family": "Asteraceae",
+    "gap": 0.051,
+    "p": 0.1
+   },
+   {
+    "folio": "f29v",
+    "word": "kooiin",
+    "family": "Ranunculaceae",
+    "gap": 0.119,
+    "p": 0.039
+   },
+   {
+    "folio": "f2r",
+    "word": "kydainy",
+    "family": "Asteraceae",
+    "gap": -0.003,
+    "p": 0.526
+   },
+   {
+    "folio": "f2v",
+    "word": "kooiin",
+    "family": "Araceae",
+    "gap": 0.024,
+    "p": 0.421
+   },
+   {
+    "folio": "f2v",
+    "word": "kooiin",
+    "family": "Menyanthaceae",
+    "gap": -0.111,
+    "p": 0.739
+   },
+   {
+    "folio": "f2v",
+    "word": "kooiin",
+    "family": "Nymphaeaceae",
+    "gap": 0.185,
+    "p": 0.245
+   },
+   {
+    "folio": "f31r",
+    "word": "keedey",
+    "family": "Solanaceae",
+    "gap": 0.043,
+    "p": 0.223
+   },
+   {
+    "folio": "f32v",
+    "word": "kcheodaiin",
+    "family": "Convolvulaceae",
+    "gap": 0.142,
+    "p": 0.043
+   },
+   {
+    "folio": "f34v",
+    "word": "ke'chdy",
+    "family": "Apiaceae",
+    "gap": -0.003,
+    "p": 0.53
+   },
+   {
+    "folio": "f3v",
+    "word": "koaiin",
+    "family": "Ranunculaceae",
+    "gap": 0.116,
+    "p": 0.056
+   },
+   {
+    "folio": "f45v",
+    "word": "korary",
+    "family": "Lamiaceae",
+    "gap": -0.04,
+    "p": 0.739
+   },
+   {
+    "folio": "f49v",
+    "word": "kshor",
+    "family": "Brassicaceae",
+    "gap": -0.428,
+    "p": 1.0
+   },
+   {
+    "folio": "f53r",
+    "word": "kodam",
+    "family": "Asteraceae",
+    "gap": -0.011,
+    "p": 0.65
+   },
+   {
+    "folio": "f56v",
+    "word": "kcheat",
+    "family": "Aristolochiaceae",
+    "gap": 0.053,
+    "p": 0.239
+   },
+   {
+    "folio": "f5r",
+    "word": "kchody",
+    "family": "Melanthiaceae",
+    "gap": -0.04,
+    "p": 0.634
+   },
+   {
+    "folio": "f5v",
+    "word": "k",
+    "family": "Geraniaceae",
+    "gap": -0.004,
+    "p": 0.573
+   },
+   {
+    "folio": "f5v",
+    "word": "k",
+    "family": "Urticaceae",
+    "gap": -0.068,
+    "p": 1.0
+   },
+   {
+    "folio": "f6v",
+    "word": "koary",
+    "family": "Euphorbiaceae",
+    "gap": -0.04,
+    "p": 0.629
+   },
+   {
+    "folio": "f93r",
+    "word": "kodshol",
+    "family": "Asteraceae",
+    "gap": 0.049,
+    "p": 0.054
+   },
+   {
+    "folio": "f95r1",
+    "word": "kshdor",
+    "family": "Ranunculaceae",
+    "gap": -0.014,
+    "p": 0.596
+   }
+  ]
+ },
+ "C_drop_crib_folios": {
+  "per_crib": [
+   {
+    "crib": "kydainy",
+    "obs": 0.2056547619047619,
+    "null_mean": 0.20567606150793655,
+    "p": 0.4961503849615039
+   },
+   {
+    "crib": "koaiin",
+    "obs": 0.31216931216931215,
+    "null_mean": 0.23933029541446213,
+    "p": 0.16828317168283172
+   },
+   {
+    "crib": "kooiin",
+    "obs": 0.2916666666666667,
+    "null_mean": 0.21772367724867728,
+    "p": 0.12208779122087791
+   },
+   {
+    "crib": "keerodal",
+    "obs": 0.375,
+    "null_mean": 0.21556694444444444,
+    "p": 0.007599240075992401
+   }
+  ],
+  "obs": 0.2961226851851852,
+  "null_mean": 0.2195742446538801,
+  "p": 0.0053994600539946005,
+  "p_without_keerodal": 0.0795920407959204
+ },
+ "primary": [
+  {
+   "test": "A_S1",
+   "p": 0.20757924207579243,
+   "holm": 1.0
+  },
+  {
+   "test": "A_S2",
+   "p": 0.5045495450454954,
+   "holm": 1.0
+  },
+  {
+   "test": "A_S3",
+   "p": 1.0,
+   "holm": 1.0
+  },
+  {
+   "test": "B_genus_F1",
+   "p": 0.9397060293970603,
+   "holm": 1.0
+  },
+  {
+   "test": "B_genus_F2",
+   "p": 0.7544245575442455,
+   "holm": 1.0
+  },
+  {
+   "test": "B_genus_F3",
+   "p": 0.1608839116088391,
+   "holm": 1.0
+  },
+  {
+   "test": "B_family_F1",
+   "p": 0.8265173482651735,
+   "holm": 1.0
+  },
+  {
+   "test": "B_family_F2",
+   "p": 0.6983301669833016,
+   "holm": 1.0
+  },
+  {
+   "test": "B_family_F3",
+   "p": 0.5038496150384961,
+   "holm": 1.0
+  },
+  {
+   "test": "C_genus",
+   "p": 0.23067693230676933,
+   "holm": 1.0
+  },
+  {
+   "test": "C_family",
+   "p": 0.00039996000399960006,
+   "holm": 0.004399560043995601
+  }
+ ],
+ "n_id_folios": 107,
+ "n_consensus2": 46,
+ "n_consensus3": 13
+}
+   herbal  pharma                                      source  uncertain pharma_pages  n_labels        S1        S2   S3
+0     f1v  f102r1                      ZL3b: Petersen, Stolfi          0       f102r1         4  0.198810  0.000000  0.0
+1    f18v  f102r2                           ZL3b: FSG, Stolfi          1       f102r2         4  0.240575  0.000000  0.0
+2    f19r  f102v1                                ZL3b: Stolfi          1       f102v1         8  0.196181  0.000000  0.0
+3    f23r  f102r2                               ZL3b: FSG, GL          0       f102r2         4  0.237103  0.000000  0.0
+4    f32v  f102r2                           ZL3b: FSG, Stolfi          1       f102r2         4  0.325000  0.000000  0.0
+5    f37v  f102r1                                ZL3b: Stolfi          1       f102r1         4  0.223810  0.000000  0.0
+6    f47v  f102r2                              ZL3b: Petersen          0       f102r2         4  0.250000  0.000000  0.0
+7    f48r   f89v2                                ZL3b: Stolfi          1        f89v2        15  0.146296  0.010753  0.0
+8    f48v    f89v                                ZL3b: Stolfi          1  f89v1 f89v2        23  0.275794  0.008547  0.0
+9   f90v2   f100r                                ZL3b: Stolfi          1        f100r        19  0.180434  0.000000  0.0
+10  f90v1   f100r                                ZL3b: Stolfi          1        f100r        19  0.283590  0.010989  0.0
+11   f96v    f99r                                    ZL3b: GL          1         f99r        33  0.088384  0.000000  0.0
+12   f53r  f102r1       Petersen marginal (cf fol.102 no 217)          1       f102r1         4  0.192857  0.000000  0.0
+13   f55r    f99r  Petersen marginal (root cf fol.99 rot 113)          1         f99r        33  0.226190  0.028846  0.0
+14   f87r   f89r2   Petersen marginal (cf root 40 fol 89r p2)          1        f89r2        21  0.252910  0.009434  0.0
+15  f90v1    f99v       Petersen marginal (cf fol.99v nr 110)          1         f99v        28  0.210459  0.010000  0.0
+       crib folio   level          taxon                                                                                                targets       obs  null_mean         p                                                                                                                                                                                                                                                      best
+0   kydainy   f2r  family     Asteraceae  f13r f18r f20v f26r f28v f29r f33v f38v f40v f41r f43r f47v f50r f53r f53v f54r f65v f90r2 f93r f95v1  0.205655   0.208211  0.524848  f13r:torshor f18r:pdrairdy f20v:faiis f26r:psheoky f28v:kshol f29r:posaiin f33v:tar f38v:okchop f40v:pchedain f41r:pshey f43r:tarodaiin f47v:pchodaiin f50r:psheor f53r:kodam f53v:tshor f54r:podaiin f65v:cphy f90r2:toealchs f93r:kodshol f95v1:tshdal
+1    koaiin   f3v   genus     Helleborus                                                                                              f10v f42v  0.404762   0.279029  0.230677                                                                                                                                                                                                                                   f10v:paiin f42v:posheor
+2    koaiin   f3v  family  Ranunculaceae                                                       f10v f16r f1v f29v f42r f42v f4v f95r1 f95v2 f9r  0.364286   0.249321  0.057894                                                                                                                                  f10v:paiin f16r:toror f1v:kchsy f29v:kooiin f42r:pydaiin f42v:posheor f4v:pchooiin f95r1:kshdor f95v2:tchody f9r:pshoain
+3    kooiin  f29v  family  Ranunculaceae                                                        f10v f16r f1v f3v f42r f42v f4v f95r1 f95v2 f9r  0.345833   0.228121  0.040296                                                                                                                                   f10v:paiin f16r:toror f1v:kchsy f3v:koaiin f42r:pydaiin f42v:posheor f4v:pchooiin f95r1:kshdor f95v2:tchody f9r:pshoain
+4  keerodal  f41v  family       Apiaceae                                                                                   f16v f31v f34v f90v1  0.375000   0.214325  0.008099                                                                                                                                                                                                     f16v:pchroiin f31v:podair f34v:ke'chdy f90v1:ksheodal
+       crib folio   level          taxon                                                                                                targets       obs  null_mean         p                                                                                                                                                                                                                                                      best
+0   kydainy   f2r  family     Asteraceae  f13r f18r f20v f26r f28v f29r f33v f38v f40v f41r f43r f47v f50r f53r f53v f54r f65v f90r2 f93r f95v1  0.205655   0.208211  0.524848  f13r:torshor f18r:pdrairdy f20v:faiis f26r:psheoky f28v:kshol f29r:posaiin f33v:tar f38v:okchop f40v:pchedain f41r:pshey f43r:tarodaiin f47v:pchodaiin f50r:psheor f53r:kodam f53v:tshor f54r:podaiin f65v:cphy f90r2:toealchs f93r:kodshol f95v1:tshdal
+1    koaiin   f3v   genus     Helleborus                                                                                              f10v f42v  0.404762   0.279029  0.230677                                                                                                                                                                                                                                   f10v:paiin f42v:posheor
+2    koaiin   f3v  family  Ranunculaceae                                                            f10v f16r f1v f42r f42v f4v f95r1 f95v2 f9r  0.312169   0.245922  0.189881                                                                                                                                              f10v:paiin f16r:toror f1v:kchsy f42r:pydaiin f42v:posheor f4v:pchooiin f95r1:kshdor f95v2:tchody f9r:pshoain
+3    kooiin  f29v  family  Ranunculaceae                                                        f10v f16r f1v f3v f42r f42v f4v f95r1 f95v2 f9r  0.345833   0.228316  0.040296                                                                                                                                   f10v:paiin f16r:toror f1v:kchsy f3v:koaiin f42r:pydaiin f42v:posheor f4v:pchooiin f95r1:kshdor f95v2:tchody f9r:pshoain
+4  keerodal  f41v  family       Apiaceae                                                                                   f16v f31v f34v f90v1  0.375000   0.214160  0.008299                                                                                                                                                                                                     f16v:pchroiin f31v:podair f34v:ke'chdy f90v1:ksheodal
+{'n': 120, 'frac_p05': 0.05, 'median_gap': 0.009398129960317414, 'n_k': 26, 'frac_p05_k': 0.07692307692307693, 'median_gap_k': -0.005713750000000007, 'k_rows': [{'folio': 'f13v', 'word': 'koair', 'family': 'Crassulaceae', 'gap': -0.048, 'p': 0.669}, {'folio': 'f1v', 'word': 'kchsy', 'family': 'Convolvulaceae', 'gap': 0.046, 'p': 0.264}, {'folio': 'f1v', 'word': 'kchsy', 'family': 'Ranunculaceae', 'gap': -0.01, 'p': 0.581}, {'folio': 'f1v', 'word': 'kchsy', 'family': 'Solanaceae', 'gap': -0.008, 'p': 0.55}, {'folio': 'f27r', 'word': 'ksor', 'family': 'Aristolochiaceae', 'gap': -0.049, 'p': 0.753}, {'folio': 'f27r', 'word': 'ksor', 'family': 'Solanaceae', 'gap': -0.012, 'p': 0.575}, {'folio': 'f28v', 'word': 'kshol', 'family': 'Asteraceae', 'gap': 0.051, 'p': 0.1}, {'folio': 'f29v', 'word': 'kooiin', 'family': 'Ranunculaceae', 'gap': 0.119, 'p': 0.039}, {'folio': 'f2r', 'word': 'kydainy', 'family': 'Asteraceae', 'gap': -0.003, 'p': 0.526}, {'folio': 'f2v', 'word': 'kooiin', 'family': 'Araceae', 'gap': 0.024, 'p': 0.421}, {'folio': 'f2v', 'word': 'kooiin', 'family': 'Menyanthaceae', 'gap': -0.111, 'p': 0.739}, {'folio': 'f2v', 'word': 'kooiin', 'family': 'Nymphaeaceae', 'gap': 0.185, 'p': 0.245}, {'folio': 'f31r', 'word': 'keedey', 'family': 'Solanaceae', 'gap': 0.043, 'p': 0.223}, {'folio': 'f32v', 'word': 'kcheodaiin', 'family': 'Convolvulaceae', 'gap': 0.142, 'p': 0.043}, {'folio': 'f34v', 'word': "ke'chdy", 'family': 'Apiaceae', 'gap': -0.003, 'p': 0.53}, {'folio': 'f3v', 'word': 'koaiin', 'family': 'Ranunculaceae', 'gap': 0.116, 'p': 0.056}, {'folio': 'f45v', 'word': 'korary', 'family': 'Lamiaceae', 'gap': -0.04, 'p': 0.739}, {'folio': 'f49v', 'word': 'kshor', 'family': 'Brassicaceae', 'gap': -0.428, 'p': 1.0}, {'folio': 'f53r', 'word': 'kodam', 'family': 'Asteraceae', 'gap': -0.011, 'p': 0.65}, {'folio': 'f56v', 'word': 'kcheat', 'family': 'Aristolochiaceae', 'gap': 0.053, 'p': 0.239}, {'folio': 'f5r', 'word': 'kchody', 'family': 'Melanthiaceae', 'gap': -0.04, 'p': 0.634}, {'folio': 'f5v', 'word': 'k', 'family': 'Geraniaceae', 'gap': -0.004, 'p': 0.573}, {'folio': 'f5v', 'word': 'k', 'family': 'Urticaceae', 'gap': -0.068, 'p': 1.0}, {'folio': 'f6v', 'word': 'koary', 'family': 'Euphorbiaceae', 'gap': -0.04, 'p': 0.629}, {'folio': 'f93r', 'word': 'kodshol', 'family': 'Asteraceae', 'gap': 0.049, 'p': 0.054}, {'folio': 'f95r1', 'word': 'kshdor', 'family': 'Ranunculaceae', 'gap': -0.014, 'p': 0.596}]}

@@ -1,0 +1,6 @@
+crib,folio,level,taxon,targets,obs,null_mean,p,best
+kydainy,f2r,family,Asteraceae,f13r f18r f20v f26r f28v f29r f33v f38v f40v f41r f43r f47v f50r f53r f53v f54r f65v f90r2 f93r f95v1,0.2056547619047619,0.20821124007936506,0.5248475152484752,f13r:torshor f18r:pdrairdy f20v:faiis f26r:psheoky f28v:kshol f29r:posaiin f33v:tar f38v:okchop f40v:pchedain f41r:pshey f43r:tarodaiin f47v:pchodaiin f50r:psheor f53r:kodam f53v:tshor f54r:podaiin f65v:cphy f90r2:toealchs f93r:kodshol f95v1:tshdal
+koaiin,f3v,genus,Helleborus,f10v f42v,0.4047619047619048,0.27902934523809525,0.23067693230676933,f10v:paiin f42v:posheor
+koaiin,f3v,family,Ranunculaceae,f10v f16r f1v f42r f42v f4v f95r1 f95v2 f9r,0.31216931216931215,0.24592220017636682,0.18988101189881013,f10v:paiin f16r:toror f1v:kchsy f42r:pydaiin f42v:posheor f4v:pchooiin f95r1:kshdor f95v2:tchody f9r:pshoain
+kooiin,f29v,family,Ranunculaceae,f10v f16r f1v f3v f42r f42v f4v f95r1 f95v2 f9r,0.3458333333333333,0.22831551587301588,0.0402959704029597,f10v:paiin f16r:toror f1v:kchsy f3v:koaiin f42r:pydaiin f42v:posheor f4v:pchooiin f95r1:kshdor f95v2:tchody f9r:pshoain
+keerodal,f41v,family,Apiaceae,f16v f31v f34v f90v1,0.375,0.2141603472222222,0.0082991700829917,f16v:pchroiin f31v:podair f34v:ke'chdy f90v1:ksheodal
