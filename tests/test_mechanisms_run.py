@@ -1,4 +1,7 @@
 import math
+from pathlib import Path
+
+import pytest
 
 import pandas as pd
 
@@ -61,6 +64,8 @@ def test_grammar_coverage_counts_tokens():
     assert math.isclose(c["cov_zattera_tok"], 0.75) and math.isclose(c["cov_stolfi_tok"], 0.75)
 
 
+@pytest.mark.skipif(not (Path(__file__).resolve().parents[1] / "data/controls/la_vulgate_genesis_exodus.txt").exists(),
+                    reason="control corpus not fetched (run `python -m msdecipher controls-fetch`)")
 def test_naibbe_info_roundtrips():
     info = R.naibbe_info()
     assert info["roundtrip"].endswith("True")
