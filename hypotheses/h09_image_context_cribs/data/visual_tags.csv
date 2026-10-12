@@ -1,0 +1,225 @@
+folio,nymphs,pools,pipes,stars,jars,roots,leaves,flowers,green_water,blue_water,circles,animals,conf,note,root_size,blue_flower,red_flower,quire,section
+f57v,0,0,0,0,0,0,0,0,0,0,4,0,med,concentric rings 4 figures centre; blue star-like blobs below,0,0,0,8.0,cosmological
+f58r,0,0,0,4,0,0,0,0,0,0,0,0,med,text with marginal stars,0,0,0,8.0,stars
+f58v,0,0,0,1,0,0,0,0,0,0,0,0,med,"text, star top",0,0,0,8.0,stars
+f66r,1,0,0,0,0,0,0,0,0,0,0,0,med,text with marginal single-letters; reclining figure bottom,0,0,0,8.0,text-only
+f67r1,0,0,0,1,0,0,0,0,0,0,1,0,med,red/blue rays rosette sun-like,0,0,0,9.0,astronomical
+f67r2,0,0,0,12,0,0,0,0,0,0,1,0,med,"circle with 12 sectors, moons/stars",0,0,0,9.0,astronomical
+f67v2,0,0,0,5,0,0,0,0,0,0,1,0,low,"cross diagram with small figures/stars, red-blue disc",0,0,0,9.0,cosmological
+f67v1,0,0,0,25,0,0,0,0,0,0,1,0,med,star circle with face centre,0,0,0,9.0,astronomical
+f68r1,0,0,0,25,0,0,0,0,0,0,1,0,med,"labelled stars, moon",0,0,0,9.0,astronomical
+f68r2,0,0,0,25,0,0,0,0,0,0,1,0,med,"labelled stars, sun",0,0,0,9.0,astronomical
+f68r3,0,0,0,30,0,0,0,0,0,0,1,0,med,circle sectors with dots/stars,0,0,0,9.0,astronomical
+f68v3,0,0,0,10,0,0,0,0,0,0,1,0,low,swirl circle,0,0,0,9.0,cosmological
+f68v2,0,0,0,0,0,0,0,0,0,0,1,0,med,blue 8-petal rosette,0,0,0,9.0,astronomical
+f68v1,0,0,0,0,0,0,0,0,0,0,1,0,med,blue many-ray rosette,0,0,0,9.0,astronomical
+f69r,0,0,0,1,0,0,0,0,0,0,1,0,med,"wheel of blue/green tubes, star centre",0,0,0,10.0,cosmological
+f69v,0,0,0,0,0,0,0,0,0,0,1,0,low,blue rays circle,0,0,0,10.0,cosmological
+f70r1,0,0,0,0,0,0,0,0,0,0,1,0,low,circle,0,0,0,10.0,cosmological
+f70r2,0,0,0,8,0,0,0,0,0,0,1,0,low,blue star/sun center,0,0,0,10.0,cosmological
+f70v2,30,0,0,2,0,0,0,0,0,0,1,1,high,zodiac Pisces,0,0,0,10.0,zodiac
+f70v1,15,0,0,10,0,0,0,0,0,0,1,1,high,zodiac Aries,0,0,0,10.0,zodiac
+f71r,15,0,0,10,0,0,0,0,0,0,1,1,high,"zodiac Aries, nymphs in barrels",0,0,0,11.0,zodiac
+f71v,15,0,0,10,0,0,0,0,0,0,1,1,med,zodiac Taurus,0,0,0,11.0,zodiac
+f72r1,15,0,0,10,0,0,0,0,0,0,1,1,med,zodiac Taurus,0,0,0,11.0,zodiac
+f72r2,30,0,0,10,0,0,0,0,0,0,1,1,med,zodiac Gemini,0,0,0,11.0,zodiac
+f72r3,30,0,0,10,0,0,0,0,0,0,1,1,med,zodiac Cancer,0,0,0,11.0,zodiac
+f72v3,30,0,0,10,0,0,0,0,0,0,1,1,med,zodiac Leo,0,0,0,11.0,zodiac
+f72v2,30,0,0,10,0,0,0,0,0,0,1,1,med,zodiac Virgo,0,0,0,11.0,zodiac
+f72v1,30,0,0,10,0,0,0,0,0,0,1,1,high,zodiac Libra,0,0,0,11.0,zodiac
+f73r,30,0,0,15,0,0,0,0,0,0,1,1,high,zodiac Scorpio,0,0,0,12.0,zodiac
+f73v,30,0,0,10,0,0,0,0,0,0,1,1,high,zodiac Sagittarius,0,0,0,12.0,zodiac
+f75r,12,2,1,0,0,0,0,0,1,0,0,0,high,"green pipe/channel with nymphs, green pool bottom",0,0,0,13.0,biological
+f75v,20,2,1,0,0,0,0,0,1,1,0,0,high,"top pool from pipe w/ labels, nymphs row, lower pool",0,0,0,13.0,biological
+f76r,0,0,0,0,0,0,0,0,0,0,0,0,high,text only,0,0,0,13.0,text-only
+f76v,4,1,1,0,0,0,0,0,0,1,0,0,high,"nymphs on left margin, tube with stripes",0,0,0,13.0,biological
+f77r,5,0,3,0,0,0,0,0,0,1,0,0,high,"arch pipe top with labels, serpent tube, nymphs",0,0,0,13.0,biological
+f77v,8,2,3,0,0,0,0,0,0,1,0,0,high,"three nymphs in tubs top, pipes, nymphs",0,0,0,13.0,biological
+f78r,20,2,3,0,0,0,0,0,1,0,0,0,high,"pipe system top, two green pools of nymphs",0,0,0,13.0,biological
+f78v,12,1,1,0,0,0,0,0,1,1,0,0,high,green pool with nymphs over arcade,0,0,0,13.0,biological
+f79r,10,1,2,0,0,0,0,0,1,1,0,0,high,"nymphs in left margin column of tubes, green pool bottom",0,0,0,13.0,biological
+f79v,6,1,1,0,0,0,0,0,1,0,0,2,high,"left margin nymphs, green pool bottom with animals",0,0,0,13.0,biological
+f80r,14,1,2,0,0,0,0,0,0,1,0,0,high,"top row nymphs, blue water band with nymphs",0,0,0,13.0,biological
+f80v,10,1,2,0,0,0,0,0,0,1,0,0,high,"nymphs margins, blue water bottom, figure on tub top",0,0,0,13.0,biological
+f81r,14,2,1,0,0,0,0,0,1,1,0,0,high,two green pools of nymphs joined by pipe,0,0,0,13.0,biological
+f81v,15,1,1,0,0,0,0,0,1,0,0,0,high,green pool of 15 nymphs,0,0,0,13.0,biological
+f82r,10,1,2,0,0,0,0,0,1,1,0,0,high,"nymphs on tubs top, green pool with nymphs bottom",0,0,0,13.0,biological
+f82v,8,1,2,0,0,0,0,0,1,1,0,0,high,"rainbow tube, nymphs, green pool bottom",0,0,0,13.0,biological
+f83r,6,0,3,0,0,0,0,0,0,1,0,0,high,"nymphs left column, rainbow arc pipe",0,0,0,13.0,biological
+f83v,4,2,2,0,0,0,0,0,1,0,0,0,high,"two green spheres/vats, nymphs, tube",0,0,0,13.0,biological
+f84r,25,3,1,0,0,0,0,0,1,1,0,0,high,"canopied green pool row, two more pools of nymphs",0,0,0,13.0,biological
+f84v,10,2,1,0,0,0,0,0,0,1,0,0,high,two blue pools with nymphs,0,0,0,13.0,biological
+f85r1,0,0,0,0,0,0,0,0,0,0,0,0,high,text only,0,0,0,14.0,text-only
+f85r2,0,0,0,1,0,0,0,0,0,0,1,0,low,"circle with 4 figures, blue centre",0,0,0,14.0,cosmological
+f86v4,0,0,0,0,0,0,0,0,0,0,1,0,low,rosette page circle,0,0,0,14.0,cosmological
+f86v6,0,0,0,0,0,0,0,0,0,0,1,0,low,four corner figures/circle,0,0,0,14.0,text-only
+f86v5,0,0,1,0,0,0,0,0,0,0,1,0,low,"corner figures, tube-like shapes",0,0,0,14.0,text-only
+f86v3,0,0,0,0,0,0,0,0,0,0,1,0,low,foldout rosettes,0,0,0,14.0,cosmological
+f88r,0,0,0,0,3,9,6,0,0,0,0,0,high,"3 jars left, roots and leaves",0,0,0,15.0,pharmaceutical
+f88v,0,0,0,0,3,8,6,0,0,0,0,0,med,"jars, roots, leaves",0,0,0,15.0,pharmaceutical
+f89r1,0,0,0,0,1,6,5,0,0,0,0,0,low,foldout pharma,0,0,0,15.0,pharmaceutical
+f89r2,0,0,0,0,1,6,5,0,0,0,0,0,low,foldout pharma,0,0,0,15.0,pharmaceutical
+f89v2,0,0,0,0,3,6,6,0,0,0,0,0,med,"jars blue, roots and leaves",0,0,0,15.0,pharmaceutical
+f89v1,0,0,0,0,3,6,6,0,0,0,0,0,med,"jars blue, roots and leaves",0,0,0,15.0,pharmaceutical
+f99r,0,0,0,0,4,12,4,0,0,0,0,0,high,"4 red jars, many roots, worm-like root",0,0,0,19.0,pharmaceutical
+f99v,0,0,0,0,4,14,3,0,0,0,0,0,high,"4 jars, many roots",0,0,0,19.0,pharmaceutical
+f100r,0,0,0,0,2,4,12,1,0,0,0,0,high,"2 jars, mostly leaves",0,0,0,19.0,pharmaceutical
+f100v,0,0,0,0,1,2,10,0,0,0,0,0,low,leaves page,0,0,0,19.0,pharmaceutical
+f101r,0,0,0,0,0,0,0,0,0,0,1,0,low,foldout circle (cosmological) - only text visible at this res,0,0,0,19.0,pharmaceutical
+f101v,0,0,0,0,3,2,14,1,0,0,0,0,high,"3 jars, many leaves",0,0,0,19.0,pharmaceutical
+f102r1,0,0,0,0,2,3,5,0,0,0,0,0,low,pharma,0,0,0,19.0,pharmaceutical
+f102r2,0,0,0,0,1,6,3,0,0,0,0,0,low,pharma roots,0,0,0,19.0,pharmaceutical
+f102v2,0,0,0,0,1,2,12,0,0,0,0,0,high,"1 tall jar, leaves",0,0,0,19.0,pharmaceutical
+f102v1,0,0,0,0,2,8,3,0,0,0,0,0,high,"2 jars, roots",0,0,0,19.0,pharmaceutical
+f103r,0,0,0,19,0,0,0,0,0,0,0,0,high,marginal stars,0,0,0,20.0,stars
+f103v,0,0,0,14,0,0,0,0,0,0,0,0,high,marginal stars,0,0,0,20.0,stars
+f104r,0,0,0,12,0,0,0,0,0,0,0,0,high,marginal stars,0,0,0,20.0,stars
+f104v,0,0,0,14,0,0,0,0,0,0,0,0,high,marginal stars,0,0,0,20.0,stars
+f105r,0,0,0,10,0,0,0,0,0,0,0,0,high,marginal stars,0,0,0,20.0,stars
+f105v,0,0,0,13,0,0,0,0,0,0,0,0,high,marginal stars,0,0,0,20.0,stars
+f106r,0,0,0,15,0,0,0,0,0,0,0,0,high,marginal stars,0,0,0,20.0,stars
+f106v,0,0,0,14,0,0,0,0,0,0,0,0,high,marginal stars,0,0,0,20.0,stars
+f107r,0,0,0,15,0,0,0,0,0,0,0,0,high,marginal stars,0,0,0,20.0,stars
+f107v,0,0,0,16,0,0,0,0,0,0,0,0,high,marginal stars,0,0,0,20.0,stars
+f108r,0,0,0,15,0,0,0,0,0,0,0,0,high,marginal stars,0,0,0,20.0,stars
+f108v,0,0,0,17,0,0,0,0,0,0,0,0,high,marginal stars,0,0,0,20.0,stars
+f111r,0,0,0,4,0,0,0,0,0,0,0,0,low,stars faint at this resolution,0,0,0,20.0,stars
+f111v,0,0,0,16,0,0,0,0,0,0,0,0,high,marginal stars,0,0,0,20.0,stars
+f112r,0,0,0,10,0,0,0,0,0,0,0,0,med,marginal stars,0,0,0,20.0,stars
+f112v,0,0,0,12,0,0,0,0,0,0,0,0,med,marginal stars,0,0,0,20.0,stars
+f113r,0,0,0,2,0,0,0,0,0,0,0,0,low,stars faint,0,0,0,20.0,stars
+f113v,0,0,0,17,0,0,0,0,0,0,0,0,high,marginal stars,0,0,0,20.0,stars
+f114r,0,0,0,6,0,0,0,0,0,0,0,0,low,stars faint,0,0,0,20.0,stars
+f114v,0,0,0,15,0,0,0,0,0,0,0,0,high,marginal stars,0,0,0,20.0,stars
+f115r,0,0,0,13,0,0,0,0,0,0,0,0,high,marginal stars,0,0,0,20.0,stars
+f115v,0,0,0,15,0,0,0,0,0,0,0,0,high,marginal stars,0,0,0,20.0,stars
+f116r,0,0,0,1,0,0,0,0,0,0,0,0,low,"text, stars not visible",0,0,0,20.0,stars
+f1v,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,1.0,herbal
+f2r,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,1.0,herbal
+f2v,0,0,0,0,0,0,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,0,0,0,1.0,herbal
+f3r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,1,1.0,herbal
+f3v,0,0,0,0,0,2,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,2,1,0,1.0,herbal
+f4r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,1,1.0,herbal
+f4v,0,0,0,0,0,2,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,2,1,0,1.0,herbal
+f5r,0,0,0,0,0,0,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,0,0,0,1.0,herbal
+f5v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,1,1.0,herbal
+f6r,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,1.0,herbal
+f6v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,1.0,herbal
+f7r,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,1.0,herbal
+f7v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,1,1.0,herbal
+f8r,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,1.0,herbal
+f8v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,1,1.0,herbal
+f9r,0,0,0,0,0,2,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,2,0,0,2.0,herbal
+f9v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,2.0,herbal
+f10r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,1,2.0,herbal
+f10v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,2.0,herbal
+f11r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,2.0,herbal
+f11v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,1,2.0,herbal
+f13r,0,0,0,0,0,2,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,2,1,0,2.0,herbal
+f13v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,2.0,herbal
+f14r,0,0,0,0,0,2,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,2,0,1,2.0,herbal
+f14v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,1,2.0,herbal
+f15r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,1,2.0,herbal
+f15v,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,2.0,herbal
+f16r,0,0,0,0,0,2,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,2,0,0,2.0,herbal
+f16v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,1,2.0,herbal
+f17r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,3.0,herbal
+f17v,0,0,0,0,0,2,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,2,0,1,3.0,herbal
+f18r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,1,3.0,herbal
+f18v,0,0,0,0,0,2,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,2,0,1,3.0,herbal
+f19r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,3.0,herbal
+f19v,0,0,0,0,0,2,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,2,0,0,3.0,herbal
+f20r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,1,3.0,herbal
+f20v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,3.0,herbal
+f21r,0,0,0,0,0,0,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,0,0,0,3.0,herbal
+f21v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,3.0,herbal
+f22r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,1,3.0,herbal
+f22v,0,0,0,0,0,2,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,2,1,0,3.0,herbal
+f23r,0,0,0,0,0,2,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,2,1,0,3.0,herbal
+f23v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,3.0,herbal
+f24r,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,3.0,herbal
+f24v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,3.0,herbal
+f25r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,1,4.0,herbal
+f25v,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,4.0,herbal
+f26r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,4.0,herbal
+f26v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,4.0,herbal
+f27r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,4.0,herbal
+f27v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,1,4.0,herbal
+f28r,0,0,0,0,0,2,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,2,0,1,4.0,herbal
+f28v,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,4.0,herbal
+f29r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,1,4.0,herbal
+f29v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,4.0,herbal
+f30r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,4.0,herbal
+f30v,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,4.0,herbal
+f31r,0,0,0,0,0,2,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,2,0,0,4.0,herbal
+f31v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,1,4.0,herbal
+f32r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,4.0,herbal
+f32v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,4.0,herbal
+f33r,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,5.0,herbal
+f33v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,5.0,herbal
+f34r,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,5.0,herbal
+f34v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,1,5.0,herbal
+f35r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,5.0,herbal
+f35v,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,5.0,herbal
+f36r,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,5.0,herbal
+f36v,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,5.0,herbal
+f37r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,1,5.0,herbal
+f37v,0,0,0,0,0,2,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,2,1,1,5.0,herbal
+f38r,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,5.0,herbal
+f38v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,5.0,herbal
+f39r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,5.0,herbal
+f39v,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,5.0,herbal
+f40r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,5.0,herbal
+f40v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,1,5.0,herbal
+f41r,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,6.0,herbal
+f41v,0,0,0,0,0,2,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,2,0,1,6.0,herbal
+f42r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,1,6.0,herbal
+f42v,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,6.0,herbal
+f43r,0,0,0,0,0,2,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,2,0,0,6.0,herbal
+f43v,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,6.0,herbal
+f44r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,6.0,herbal
+f44v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,1,6.0,herbal
+f45r,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,6.0,herbal
+f45v,0,0,0,0,0,2,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,2,1,0,6.0,herbal
+f46r,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,6.0,herbal
+f46v,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,6.0,herbal
+f47r,0,0,0,0,0,0,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,0,0,1,6.0,herbal
+f47v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,6.0,herbal
+f48r,0,0,0,0,0,0,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,0,0,0,6.0,herbal
+f48v,0,0,0,0,0,0,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,0,1,0,6.0,herbal
+f49r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,1,7.0,herbal
+f49v,0,0,0,0,0,0,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,0,0,0,7.0,herbal
+f50r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,7.0,herbal
+f50v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,7.0,herbal
+f51r,0,0,0,0,0,2,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,2,0,1,7.0,herbal
+f51v,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,7.0,herbal
+f52r,0,0,0,0,0,2,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,2,0,1,7.0,herbal
+f52v,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,7.0,herbal
+f53r,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,7.0,herbal
+f53v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,7.0,herbal
+f54r,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,7.0,herbal
+f54v,0,0,0,0,0,2,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,2,1,1,7.0,herbal
+f55r,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,1,7.0,herbal
+f55v,0,0,0,0,0,2,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,2,0,1,7.0,herbal
+f56r,0,0,0,0,0,0,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,0,1,0,7.0,herbal
+f56v,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,7.0,herbal
+f57r,0,0,0,0,0,0,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,0,1,0,8.0,herbal
+f65r,0,0,0,0,0,2,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,2,0,0,8.0,herbal
+f65v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,1,0,8.0,herbal
+f66v,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,8.0,herbal
+f87r,0,0,0,0,0,2,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,2,0,0,15.0,herbal
+f87v,0,0,0,0,0,2,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,2,0,1,15.0,herbal
+f93r,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,17.0,herbal
+f93v,0,0,0,0,0,2,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,2,0,1,17.0,herbal
+f94r,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,17.0,herbal
+f96r,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,17.0,herbal
+f96v,0,0,0,0,0,1,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,1,17.0,herbal
+f94v,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,17.0,herbal
+f95r1,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,17.0,herbal
+f95r2,0,0,0,0,0,2,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,2,0,0,17.0,herbal
+f95v1,0,0,0,0,0,2,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,2,0,0,17.0,herbal
+f95v2,0,0,0,0,0,2,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,2,1,0,17.0,herbal
+f90r1,0,0,0,0,0,2,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,2,0,0,15.0,herbal
+f90r2,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,15.0,herbal
+f90v1,0,0,0,0,0,2,1,1,0,0,0,0,med,herbal plant; tagged from 300px montage,2,1,0,15.0,herbal
+f90v2,0,0,0,0,0,1,1,0,0,0,0,0,med,herbal plant; tagged from 300px montage,1,0,0,15.0,herbal
