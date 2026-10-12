@@ -72,7 +72,7 @@ Held-out data uses bifolium folds and quire folds; hyperparameters come from inn
 ## Verdicts
 | | Prediction | Result |
 |---|---|---|
-| P1 | control context gain > 2× MS | **pass** (0.94 vs 0.25 bifolium; 0.96 vs 0.60 quire fails 2×) |
+| P1 | control context gain > 2× MS | **pass** (0.94 vs 0.25 bifolium; quire folds 0.97 vs 0.60 would fail the 2× test) |
 | P2 | MS λ identified, in [0.01, 0.2], above controls; synthetic recovered | **fail**: identified (CI width ≤ 0.04) and in range, synthetic recovered, but MS λ is not above controls (Vulgate and Sidrach are higher) |
 | P3 | Naibbe beats SLOT on ciphertexts but not on MS | **fail**: wins on ciphertexts, but also "beats" SLOT on MS because SLOT is weak and NAIBBE contains G as escape |
 | P4 | MS winner context-light (KN1/COPY1/SLOT); KN3 gain < 0.3 | **fail** on the winner list: the winner is NAIBBE≈G (5/6), COPY1 in 3B quire. Context-light in substance, and KN3 is worse than KN1 |
