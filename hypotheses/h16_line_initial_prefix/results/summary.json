@@ -1,0 +1,256 @@
+{
+ "A": {
+  "primary_2B3B": {
+   "all:a1_onset|S1": {
+    "ratio": 1.7131684814146955,
+    "z": 17.529368253914516,
+    "p": 8.551428977139211e-69
+   },
+   "all:a2_common_stripped|S1": {
+    "ratio": 3.3026714824429266,
+    "z": 31.67996640246601,
+    "p": 2.933261799647067e-220
+   },
+   "onset:a2_common_stripped|S1": {
+    "ratio": 1.8192115073788069,
+    "z": 20.1624921135922,
+    "p": 2.0908149733870293e-90
+   },
+   "onset:a3_stripped_eq_next|S1": {
+    "ratio": 1.9609646349538652,
+    "z": 2.4751699662081132,
+    "p": 0.01331727817552466
+   },
+   "onset:a4_log_midfreq|S1": {
+    "ratio": 1.8612021886572052,
+    "z": 21.449272781930375,
+    "p": 4.638467652079249e-102
+   },
+   "all:a1_onset|S1L": {
+    "ratio": 1.8835171532271977,
+    "z": 21.118943436651733,
+    "p": 5.327312075836226e-99
+   },
+   "all:a2_common_stripped|S1L": {
+    "ratio": 3.289661896243512,
+    "z": 32.40527506734111,
+    "p": 2.3130862890617265e-230
+   },
+   "onset:a2_common_stripped|S1L": {
+    "ratio": 1.6221025751150202,
+    "z": 18.1336253523087,
+    "p": 1.729703383122929e-73
+   },
+   "onset:a3_stripped_eq_next|S1L": {
+    "ratio": 2.200105401750505,
+    "z": 2.9296887548345043,
+    "p": 0.0033930167086062193
+   },
+   "onset:a4_log_midfreq|S1L": {
+    "ratio": 1.6078763706259005,
+    "z": 18.572799454140906,
+    "p": 5.334763992092368e-77
+   }
+  },
+  "descriptives": {
+   "false": {
+    "n": 3142.0,
+    "share_strippable": 0.9267982176957352,
+    "share_common": 0.27753023551877787,
+    "mean_a4": 1.2062589333916565,
+    "share_eq_next": 0.003500954805856143
+   },
+   "true": {
+    "n": 727.0,
+    "share_strippable": 0.9766162310866575,
+    "share_common": 0.6918844566712518,
+    "mean_a4": 3.1949449535795718,
+    "share_eq_next": 0.012379642365887207
+   }
+  },
+  "top_initial_ds_words": {
+   "daiin": 85,
+   "saiin": 48,
+   "dain": 35,
+   "sain": 33,
+   "sol": 28,
+   "sar": 26,
+   "dshedy": 26,
+   "dar": 21,
+   "sor": 20,
+   "dair": 19,
+   "dchedy": 16,
+   "s": 11,
+   "sal": 9,
+   "sair": 8,
+   "shedy": 7
+  },
+  "robust_excl_7": {
+   "S1": {
+    "a2": {
+     "obs": 248.0,
+     "exp": 113.26705479930547,
+     "ratio": 2.189515746122505,
+     "z": 16.40378873344608,
+     "p": 1.7967457206862994e-60,
+     "n_slot": 472
+    },
+    "a4": {
+     "obs": 1103.9034201788481,
+     "exp": 485.08031794594507,
+     "ratio": 2.2757126589948795,
+     "z": 18.252596497901827,
+     "p": 1.9730475743405026e-74,
+     "n_slot": 472
+    }
+   },
+   "S1L": {
+    "a2": {
+     "obs": 248.0,
+     "exp": 116.66242280901555,
+     "ratio": 2.12579161334574,
+     "z": 17.273369158531185,
+     "p": 7.465399539807632e-67,
+     "n_slot": 472
+    },
+    "a4": {
+     "obs": 1103.9034201788481,
+     "exp": 516.3753466140753,
+     "ratio": 2.137792649120941,
+     "z": 19.049300934957895,
+     "p": 6.658542981842387e-81,
+     "n_slot": 472
+    }
+   },
+   "n_init_tokens": 472,
+   "n_init_types": 221,
+   "n_init_types_common_stripped": 60,
+   "top_initial_examples": {
+    "dshedy": 26,
+    "dar": 21,
+    "sor": 20,
+    "dair": 19,
+    "dchedy": 16,
+    "sal": 9,
+    "sair": 8,
+    "schedy": 6,
+    "dol": 6,
+    "dshey": 6,
+    "dsheey": 6,
+    "dcheey": 5,
+    "dor": 5,
+    "dsheol": 5,
+    "solchedy": 5
+   }
+  }
+ },
+ "B": {
+  "1A": {
+   "n_words": 83
+  },
+  "2B": {
+   "n_words": 106
+  },
+  "3B": {
+   "n_words": 90
+  },
+  "survivors": {
+   "1A|is_init|enriched": {
+    "dchor": 2.95,
+    "sor": 2.78,
+    "sho": 2.0
+   },
+   "1A|is_init|depleted": {},
+   "1A|is_final|enriched": {
+    "dam": 3.95,
+    "dy": 2.96,
+    "dal": 2.51,
+    "dar": 2.29,
+    "daiin": 1.46
+   },
+   "1A|is_final|depleted": {
+    "sho": 0.03,
+    "chol": 0.07,
+    "shol": 0.09,
+    "chor": 0.26
+   },
+   "2B|is_init|enriched": {
+    "dshedy": 6.4,
+    "sor": 5.2,
+    "tchedy": 4.71,
+    "sol": 4.39,
+    "pchedy": 3.71,
+    "saiin": 3.54,
+    "sain": 3.29,
+    "sar": 3.29,
+    "y": 2.3
+   },
+   "2B|is_init|depleted": {
+    "aiin": 0.03,
+    "chedy": 0.15
+   },
+   "2B|is_final|enriched": {
+    "am": 6.34,
+    "oly": 5.71,
+    "dam": 4.41,
+    "lol": 3.59,
+    "dy": 2.87
+   },
+   "2B|is_final|depleted": {
+    "qokeedy": 0.18
+   },
+   "3B|is_init|enriched": {
+    "saiin": 6.49,
+    "sain": 6.37,
+    "sar": 5.65,
+    "daiin": 4.12,
+    "dain": 3.81,
+    "dair": 3.32,
+    "y": 3.3
+   },
+   "3B|is_init|depleted": {
+    "aiin": 0.02,
+    "chedy": 0.13
+   },
+   "3B|is_final|enriched": {
+    "am": 7.71
+   },
+   "3B|is_final|depleted": {}
+  }
+ },
+ "A1": {
+  "pass_": true
+ },
+ "A2": {
+  "pass_": true
+ },
+ "A3": {
+  "pass_": false
+ },
+ "B1": {
+  "n_init": 3,
+  "n_final": 5,
+  "pass_": true
+ },
+ "B2": {
+  "overlap": [
+   "sor"
+  ],
+  "pass_": true
+ },
+ "B3": {
+  "1A": [
+   "dam",
+   "dy"
+  ],
+  "2B": [
+   "am",
+   "dam",
+   "dy"
+  ],
+  "3B": [
+   "am"
+  ],
+  "pass_": true
+ }
+}
