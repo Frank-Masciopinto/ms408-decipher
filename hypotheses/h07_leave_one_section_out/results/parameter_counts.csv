@@ -1,0 +1,56 @@
+held_out,generator,k_specific,k_global_engine,note
+herbal,C0g global copy-modify (baseline),0,6,
+herbal,SV P50 nearest,255,6,
+herbal,SV P50 pooled,306,6,
+herbal,SV U nearest,310,6,
+herbal,SV U pooled,372,6,
+herbal,SV EUP25 nearest,470,6,
+herbal,SV EUP25 pooled,564,6,
+herbal,SV EUP25 random-section (null),470,6,
+herbal,A1 topic-matched,0,6,engine params + fixed plaintext choice; codebook/grammar fitted on training text
+herbal,A2 topic-matched,0,6,engine params + fixed plaintext choice; codebook/grammar fitted on training text
+herbal,A2 random-topic (null),0,6,
+recipes,C0g global copy-modify (baseline),0,6,
+recipes,SV P50 nearest,255,6,
+recipes,SV P50 pooled,306,6,
+recipes,SV U nearest,470,6,
+recipes,SV U pooled,564,6,
+recipes,SV EUP25 nearest,630,6,
+recipes,SV EUP25 pooled,756,6,
+recipes,SV EUP25 random-section (null),630,6,
+recipes,A1 topic-matched,0,6,engine params + fixed plaintext choice; codebook/grammar fitted on training text
+recipes,A2 topic-matched,0,6,engine params + fixed plaintext choice; codebook/grammar fitted on training text
+recipes,A2 random-topic (null),0,6,
+biological,C0g global copy-modify (baseline),0,6,
+biological,SV P50 nearest,255,6,
+biological,SV P50 pooled,306,6,
+biological,SV U nearest,490,6,
+biological,SV U pooled,588,6,
+biological,SV EUP25 nearest,650,6,
+biological,SV EUP25 pooled,780,6,
+biological,SV EUP25 random-section (null),650,6,
+biological,A1 topic-matched,0,6,engine params + fixed plaintext choice; codebook/grammar fitted on training text
+biological,A2 topic-matched,0,6,engine params + fixed plaintext choice; codebook/grammar fitted on training text
+biological,A2 random-topic (null),0,6,
+pharmaceutical,C0g global copy-modify (baseline),0,6,
+pharmaceutical,SV P50 nearest,255,6,
+pharmaceutical,SV P50 pooled,306,6,
+pharmaceutical,SV U nearest,485,6,
+pharmaceutical,SV U pooled,582,6,
+pharmaceutical,SV EUP25 nearest,645,6,
+pharmaceutical,SV EUP25 pooled,774,6,
+pharmaceutical,SV EUP25 random-section (null),645,6,
+pharmaceutical,A1 topic-matched,0,6,engine params + fixed plaintext choice; codebook/grammar fitted on training text
+pharmaceutical,A2 topic-matched,0,6,engine params + fixed plaintext choice; codebook/grammar fitted on training text
+pharmaceutical,A2 random-topic (null),0,6,
+cosmo-astro,C0g global copy-modify (baseline),0,6,
+cosmo-astro,SV P50 nearest,255,6,
+cosmo-astro,SV P50 pooled,306,6,
+cosmo-astro,SV U nearest,500,6,
+cosmo-astro,SV U pooled,600,6,
+cosmo-astro,SV EUP25 nearest,660,6,
+cosmo-astro,SV EUP25 pooled,792,6,
+cosmo-astro,SV EUP25 random-section (null),660,6,
+cosmo-astro,A1 topic-matched,0,6,engine params + fixed plaintext choice; codebook/grammar fitted on training text
+cosmo-astro,A2 topic-matched,0,6,engine params + fixed plaintext choice; codebook/grammar fitted on training text
+cosmo-astro,A2 random-topic (null),0,6,

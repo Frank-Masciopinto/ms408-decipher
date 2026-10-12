@@ -1,0 +1,10 @@
+herbal: done (127s)
+recipes: done (477s)
+biological: done (634s)
+/workspace/decipher/hypotheses/h07_leave_one_section_out/h07_lib.py:105: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  out["top30_rank_rho"] = float(spearmanr([rc[w] for w in top], [hc.get(w, 0) for w in top]).statistic)
+pharmaceutical: done (1153s)
+/workspace/decipher/hypotheses/h07_leave_one_section_out/h07_lib.py:105: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  out["top30_rank_rho"] = float(spearmanr([rc[w] for w in top], [hc.get(w, 0) for w in top]).statistic)
+cosmo-astro: done (1330s)
+predictions written + manifest {'prereg.json': 'a9dd0b93532bed8adb12a519900abcc5081b71687dcfdf0cc96a7f4c69490aa6', 'predictions_runs.csv': '2851d572a4f7b9a98492cc82e25db435562803a69b6407765a5837997bea4bb6', 'written': '2026-10-12 17:37:52 CEST'}

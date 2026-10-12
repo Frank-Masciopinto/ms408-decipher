@@ -1,0 +1,77 @@
+{
+ "held_out_settings_rules": {
+  "nearest": "the training section whose share of Currier-A folios is closest to the held-out section's share (folio metadata only, no text); ties -> the training section with more folios",
+  "pooled": "one model fitted on all training text pooled (engine, pool and unit tilt from the union of the other sections)",
+  "random-section (null)": "a training section drawn uniformly at random per seed"
+ },
+ "topic_rule": "held-out section's plaintext = the work of mech_hybrid_topics.TOPIC_WORK (fixed in the hybrid stage before this test); null: a random other work per seed",
+ "primary_comparison": "SV P50 nearest (best no-plaintext accuracy variant of h06) vs A2 codebook topic-matched (the only topic hybrid that reached the section signal in step 2); secondary: all other rows",
+ "score": "per (section, statistic): z = (generator mean - MS 408) / sqrt(SD_gen^2 (1 + 1/n) + SE_MS^2), SE_MS = delete-one-block jackknife over blocks of 3 consecutive held-out folios; family score = mean |z| (clipped at 10) over 5 sections x statistics, and number inside the 95 % prediction interval; paired Wilcoxon over (section, statistic) cells",
+ "seeds": 8,
+ "resolved_nearest": {
+  "herbal": "pharmaceutical",
+  "recipes": "biological",
+  "biological": "cosmo-astro",
+  "pharmaceutical": "herbal",
+  "cosmo-astro": "biological"
+ },
+ "generators": {
+  "C0g global copy-modify (baseline)": [
+   "baseline",
+   "one global engine, no section dependence"
+  ],
+  "SV P50 nearest": [
+   "a: setting switch",
+   "per-section pool of 50 types; held-out = nearest section's settings"
+  ],
+  "SV P50 pooled": [
+   "a: setting switch",
+   "held-out = pool fitted on all training text"
+  ],
+  "SV U nearest": [
+   "a: setting switch",
+   "per-section unit tilt (all units); nearest rule"
+  ],
+  "SV U pooled": [
+   "a: setting switch",
+   "unit tilt of all training text"
+  ],
+  "SV EUP25 nearest": [
+   "a: setting switch",
+   "per-section engine+units+pool 25; nearest rule"
+  ],
+  "SV EUP25 pooled": [
+   "a: setting switch",
+   "engine+units+pool 25 fitted on all training text"
+  ],
+  "SV EUP25 random-section (null)": [
+   "null model",
+   "held-out uses a random training section's EUP25 settings"
+  ],
+  "A1 topic-matched": [
+   "b: topic plaintext",
+   "Naibbe-token hybrid; held-out encodes its topical Latin work"
+  ],
+  "A2 topic-matched": [
+   "b: topic plaintext",
+   "whole-word codebook hybrid; held-out encodes its topical Latin work"
+  ],
+  "A2 random-topic (null)": [
+   "null model",
+   "codebook hybrid; held-out encodes a random other work"
+  ]
+ },
+ "stats": [
+  "overlap_tokens",
+  "new_type_rate",
+  "hapax_share",
+  "ttr",
+  "js_mean_to_others",
+  "unit_js_to_others",
+  "len_mean",
+  "unit_H1",
+  "unit_h2",
+  "top30_rank_rho"
+ ],
+ "written": "2026-10-12 17:15:43 CEST"
+}
