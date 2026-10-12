@@ -1,0 +1,195 @@
+{
+ "n_tokens": 37816,
+ "n_top": 100,
+ "pos_sig": {
+  "line_initial_enriched": [
+   "daiin",
+   "dain",
+   "saiin",
+   "sain",
+   "sar",
+   "sol",
+   "y"
+  ],
+  "line_initial_depleted": [
+   "aiin",
+   "ain",
+   "al",
+   "ar",
+   "chckhy",
+   "chdy",
+   "chedy",
+   "cheey",
+   "chey",
+   "chol",
+   "chor",
+   "chy",
+   "cthy",
+   "dal",
+   "dam",
+   "dy",
+   "l",
+   "ol",
+   "otal",
+   "otar",
+   "r",
+   "s",
+   "shedy",
+   "shey"
+  ],
+  "line_final_enriched": [
+   "am",
+   "dam",
+   "dy"
+  ],
+  "line_final_depleted": [
+   "chol",
+   "chor",
+   "l",
+   "o",
+   "or",
+   "qokain",
+   "qokar",
+   "qokedy",
+   "qokeedy",
+   "qokeey",
+   "qokol",
+   "shedy",
+   "sheey",
+   "sho",
+   "shol"
+  ],
+  "para_initial_enriched": [],
+  "para_initial_depleted": [
+   "aiin",
+   "daiin",
+   "ol"
+  ],
+  "label_enriched": [],
+  "label_depleted": [
+   "aiin",
+   "daiin"
+  ]
+ },
+ "silhouette": 0.015501159988728207,
+ "silhouette_null_mean": 0.0064505477056652745,
+ "silhouette_null_max": 0.02267639308247478,
+ "silhouette_p": 0.09523809523809523,
+ "cluster_freq_kruskal_p": 0.06572787268896227,
+ "clusters": [
+  {
+   "cluster": 1,
+   "n": 41,
+   "rank_min": 3,
+   "rank_median": 48.0,
+   "rank_max": 100,
+   "top_HL": "2B",
+   "top_HL_share": 0.432705770096444,
+   "members": "chedy shedy chey qokeey qokeedy y qokain shey qokedy qokaiin qokal o okeey cheey cheol otedy otaiin sheey oteey chckhy saiin lchedy okedy okeedy qokey sheol oteedy cheody qotedy sheedy chcthy cho qotaiin qoteedy cheo okey cheky keedy shckhy otey qotain"
+  },
+  {
+   "cluster": 2,
+   "n": 2,
+   "rank_min": 79,
+   "rank_median": 85.0,
+   "rank_max": 91,
+   "top_HL": "3B",
+   "top_HL_share": 0.5614035087719298,
+   "members": "kaiin raiin"
+  },
+  {
+   "cluster": 3,
+   "n": 23,
+   "rank_min": 2,
+   "rank_median": 43.0,
+   "rank_max": 87,
+   "top_HL": "3B",
+   "top_HL_share": 0.40974092922323596,
+   "members": "ol aiin ar or s al l r qokar okal otar qol okain otal okar ain otain cheor am char air sar sol"
+  },
+  {
+   "cluster": 4,
+   "n": 3,
+   "rank_min": 54,
+   "rank_median": 85.0,
+   "rank_max": 89,
+   "top_HL": "1A",
+   "top_HL_share": 0.6910279289597594,
+   "members": "dair dor d"
+  },
+  {
+   "cluster": 5,
+   "n": 27,
+   "rank_min": 1,
+   "rank_median": 50.0,
+   "rank_max": 97,
+   "top_HL": "1A",
+   "top_HL_share": 0.5617536454569243,
+   "members": "daiin chol dar dy dal okaiin dain chor shol chy chdy qoky sho oty dol cthy oky shy qokol shor chody dam qoty qokchy okeol qotchy odaiin"
+  },
+  {
+   "cluster": 6,
+   "n": 1,
+   "rank_min": 82,
+   "rank_median": 82.0,
+   "rank_max": 82,
+   "top_HL": "1A",
+   "top_HL_share": 0.6666666666666666,
+   "members": "okol"
+  },
+  {
+   "cluster": 7,
+   "n": 2,
+   "rank_min": 77,
+   "rank_median": 84.5,
+   "rank_max": 92,
+   "top_HL": "2B",
+   "top_HL_share": 0.376984126984127,
+   "members": "otol sain"
+  },
+  {
+   "cluster": 8,
+   "n": 1,
+   "rank_min": 94,
+   "rank_median": 94.0,
+   "rank_max": 94,
+   "top_HL": "3B",
+   "top_HL_share": 0.5084745762711864,
+   "members": "qotar"
+  }
+ ],
+ "n_rule_pairs": 5,
+ "n_ed2_pairs": 885,
+ "rule_cos_mean": 0.1870939526203023,
+ "other_ed2_cos_mean": 0.1552273952878448,
+ "rule_cos_p_one_sided": 0.1347730453909218,
+ "cross_n": 24,
+ "cross_mean_cos": 0.0557524286245541,
+ "cross_random_mean": 0.05391255463934985,
+ "cross_wilcoxon_p_one_sided": 0.5942321419715881,
+ "cross_signflip_p": 0.42091581683663265,
+ "cross_median_rank_pct": 0.47777777777777775,
+ "n_image_tests": 868,
+ "n_image_tests_page": 700,
+ "n_pages": 223,
+ "image_surviving": [],
+ "image_raw_p05": 46,
+ "P1": {
+  "n_initial": 7,
+  "n_final": 3,
+  "pass_": false
+ },
+ "P2": {
+  "beats_null": false,
+  "n_nonband_classes": 3,
+  "pass_": false
+ },
+ "P3": {
+  "p": 0.5942321419715881,
+  "pass_": false
+ },
+ "P4": {
+  "n": 0,
+  "pass_": true
+ }
+}
