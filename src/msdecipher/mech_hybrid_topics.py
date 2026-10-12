@@ -212,14 +212,29 @@ def within_language_nb(docs: list[dict], lg: str, seed: int = 0) -> float:
         return float("nan")
 
 
-def ms_uncertainty(docs: list[dict], n_boot: int = 300, seed: int = 0) -> dict:
-    """Folio-block bootstrap SEs / CIs for MS 408 (folios resampled with replacement within the whole corpus)."""
-    X, y, _, _ = design(docs)
+def _group_draw(rng, n: int, groups) -> np.ndarray:
+    """Indices of a cluster bootstrap: draw whole groups with replacement (folio bootstrap when ``groups`` is None)."""
+    if groups is None:
+        return rng.integers(0, n, n)
+    members: dict = {}
+    for i, g in enumerate(groups):
+        members.setdefault(g, []).append(i)
+    keys = list(members)
+    pick = rng.integers(0, len(keys), len(keys))
+    return np.array([i for k in pick for i in members[keys[k]]], dtype=int)
+
+
+def ms_uncertainty(docs: list[dict], n_boot: int = 300, seed: int = 0, group_of: dict | None = None) -> dict:
+    """Folio-block bootstrap SEs / CIs for MS 408 (folios resampled with replacement within the whole corpus).
+    ``group_of`` (folio -> group, e.g. quire; h08) switches to a cluster bootstrap over groups and adds
+    delete-one-group jackknife SEs (``*_jack_se``); the default behaviour is unchanged."""
+    X, y, folios, _ = design(docs)
+    groups = None if group_of is None else [group_of.get(f, f"?{f}") for f in folios]
     rng = np.random.default_rng(seed)
     js, kw = [], []
     n = len(y)
     for _ in range(n_boot):
-        ix = rng.integers(0, n, n)
+        ix = _group_draw(rng, n, groups)
         yy = y[ix]
         if len(set(yy)) < len(set(y)):
             continue
@@ -233,11 +248,29 @@ def ms_uncertainty(docs: list[dict], n_boot: int = 300, seed: int = 0) -> dict:
         corr = np.array([[1.0 if pr[i, r] == y[i] else 0.0 for r in range(pr.shape[1])] for i in range(n)]).mean(axis=1)
         accs = []
         for _ in range(n_boot):
-            ix = rng.integers(0, n, n)
+            ix = _group_draw(rng, n, groups)
             yy = y[ix]
+            if groups is not None and len(set(yy)) < 2:
+                continue
             accs.append(np.mean([balanced_accuracy_score(yy, pr[ix, r]) for r in range(pr.shape[1])]))
         res[f"{model}_bal_acc_se"] = float(np.std(accs, ddof=1))
         res[f"{model}_bal_acc_ci"] = (float(np.quantile(accs, .025)), float(np.quantile(accs, .975)))
+        if groups is not None:
+            jk = []
+            for g in dict.fromkeys(groups):
+                keep = np.array([gg != g for gg in groups])
+                if len(set(y[keep])) < 2:
+                    continue
+                jk.append(np.mean([balanced_accuracy_score(y[keep], pr[keep, r]) for r in range(pr.shape[1])]))
+            res[f"{model}_bal_acc_jack_se"] = CI.jackknife_se(jk)
+    if groups is not None:
+        jk = []
+        for g in dict.fromkeys(groups):
+            keep = np.array([gg != g for gg in groups])
+            if len(set(y[keep])) == len(set(y)):
+                jk.append(mean_pairwise_js(X[keep], y[keep]))
+        res["js_jack_se"] = CI.jackknife_se(jk)
+        res["n_groups"] = len(set(groups))
     return res
 
 

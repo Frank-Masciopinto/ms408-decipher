@@ -1,0 +1,9 @@
+family,metric,units,old,new,se_old,se_quire
+abjad (vowels removed),unit_h3,collapsed,↓,≈,0.0403634664197494,0.060765307037751265
+polyalphabetic (Vigenere),type_token_ratio,collapsed,↓,≈,0.0139161075591752,0.02805636937429186
+polyalphabetic (Vigenere),type_token_ratio,raw,↓,≈,0.0139161075591752,0.02805636937429186
+slot-grammar generator,shuffle_gap_h2,raw,↑,≈,0.0343485960110822,0.06244057332935348
+slot-grammar generator,unit_h2_over_H1,raw,↓,≈,0.0093290621581779,0.01602246460552457
+slot-grammar generator,shuffle_gap_over_H1,raw,↑,≈,0.0090140619073339,0.016302652797726837
+slot-grammar generator,adjacent_identical_rate,collapsed,↑,≈,0.0006563167520167,0.0008742623796285897
+slot-grammar generator,adjacent_identical_rate,raw,↑,≈,0.0006563167520167,0.0008742623796285897

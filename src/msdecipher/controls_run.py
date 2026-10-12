@@ -192,6 +192,56 @@ def ms_pages(main_file=None, uncertain: str = "split") -> list[list[str]]:
     return [w for w in pages.values() if w]
 
 
+def ms_pages_named(main_file=None, uncertain: str = "split") -> list[tuple[str, list[str]]]:
+    """Like ``ms_pages`` but keeps the page name: ``[(page, words), ...]`` in manuscript order (h08)."""
+    from .analysis import groups, load_corpus
+    from .ivtff import readable
+    try:
+        corpus = load_corpus(main_file)
+    except FileNotFoundError:
+        return []
+    pages: dict[str, list[str]] = {}
+    for ln in groups(corpus, uncertain)["P"]:
+        pages.setdefault(ln.page, []).extend(w for w in ln.words if readable(w))
+    return [(p, w) for p, w in pages.items() if w]
+
+
+def resample_ms_groups(pages, keys, segs: dict, B: int = 100, workers: int | None = None, log=lambda *a: None,
+                       name: str = "quire") -> dict[str, pd.DataFrame]:
+    """Group-level (e.g. quire) bootstrap (``B`` resamples) and delete-one-group jackknife of every metric,
+    same columns as ``_resample_ms``; returns ``{name: ..., f"jack_{name}": ...}`` (h08)."""
+    gb = CI.make_group_blocks(pages, keys)
+    jobs = [(name, b) for b in range(B)] + [(f"jack_{name}", i) for i in range(len(gb))]
+
+    def one(job):
+        kind, b = job
+        w = CI.resample_blocks(gb, random.Random(31337 + b)) if kind == name else CI.leave_out(gb, b)
+        row = {}
+        for tag, seg in segs.items():
+            m = metrics(w, seg, seed=b + 1, n_shuffles=3)
+            for k in METRIC_INFO:
+                row[f"{k}__{tag}"] = m[k]
+        return kind, row
+    log(f"MS 408 {name} resampling: {B} bootstraps, jackknife over {len(gb)} groups")
+    res = CI.pmap(one, jobs, workers)
+    return {kind: pd.DataFrame([r for k, r in res if k == kind]) for kind in (name, f"jack_{name}")}
+
+
+def group_ci_table(point: dict[str, pd.Series], reps: dict[str, pd.DataFrame], name: str = "quire") -> pd.DataFrame:
+    """Per metric / unit variant: group bootstrap SE + percentile CI, group jackknife SE, and the CI
+    estimate ± 1.96 · jackknife SE (same convention as ``ms_ci_table``)."""
+    rows = []
+    for tag, pt in point.items():
+        for m in METRIC_INFO:
+            r = {"metric": m, "units": tag, "estimate": float(pt[m])}
+            s = CI.summarize(reps[name][f"{m}__{tag}"].values)
+            r[f"boot_se_{name}"], r[f"boot_lo_{name}"], r[f"boot_hi_{name}"] = s["se"], s["lo"], s["hi"]
+            r[f"se_jack_{name}"] = se = CI.jackknife_se(reps[f"jack_{name}"][f"{m}__{tag}"].values)
+            r[f"ci_lo_{name}"], r[f"ci_hi_{name}"] = r["estimate"] - 1.96 * se, r["estimate"] + 1.96 * se
+            rows.append(r)
+    return pd.DataFrame(rows)
+
+
 def _shuffle_units_in_tokens(words, seg, seed):
     rng = random.Random(seed)
     out = []

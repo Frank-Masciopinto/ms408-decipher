@@ -50,6 +50,18 @@ def make_blocks(pages: Sequence[Sequence[str]], block: int = 1) -> list[list[str
     return out
 
 
+def make_group_blocks(pages: Sequence[Sequence[str]], keys: Sequence) -> list[list[str]]:
+    """Group pages by an arbitrary key (e.g. quire or bifolium, see ``msdecipher.quires``), keeping first-seen
+    order; each group is one flat word list. Use with ``resample_blocks`` / ``leave_out`` exactly like
+    ``make_blocks`` (h08: quire-level bootstrap / jackknife)."""
+    if len(keys) != len(pages):
+        raise ValueError("one key per page required")
+    groups: dict = {}
+    for p, k in zip(pages, keys):
+        groups.setdefault(k, []).extend(p)
+    return list(groups.values())
+
+
 def resample_blocks(blocks: Sequence[Sequence[str]], rng: random.Random) -> list[str]:
     """Draw ``len(blocks)`` blocks with replacement and concatenate them."""
     n = len(blocks)
