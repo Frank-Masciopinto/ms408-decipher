@@ -1,0 +1,379 @@
+{
+ "n_lines": 4118,
+ "n_tokens": 34489,
+ "n_S1_strata": 167,
+ "share_gapshort_lines": 0.2340942204953861,
+ "share_gap_lines": 0.149587178241865,
+ "survivors": {
+  "init_enriched": {
+   "raw": [
+    "daiin",
+    "dain",
+    "saiin",
+    "sain",
+    "sar",
+    "sol",
+    "y"
+   ],
+   "S1": [
+    "daiin",
+    "dain",
+    "saiin",
+    "sain",
+    "sar",
+    "sol",
+    "y"
+   ],
+   "S2": [
+    "daiin",
+    "dain",
+    "saiin",
+    "sain",
+    "sar",
+    "sol",
+    "y"
+   ],
+   "S1L": [
+    "dain",
+    "saiin",
+    "sain",
+    "sar",
+    "sol",
+    "y"
+   ]
+  },
+  "init_depleted": {
+   "raw": [
+    "aiin",
+    "ain",
+    "al",
+    "ar",
+    "chckhy",
+    "chdy",
+    "chedy",
+    "cheey",
+    "chey",
+    "chol",
+    "chor",
+    "chy",
+    "cthy",
+    "dal",
+    "dam",
+    "dy",
+    "l",
+    "ol",
+    "otal",
+    "otar",
+    "r",
+    "s",
+    "shedy",
+    "shey"
+   ],
+   "S1": [
+    "aiin",
+    "ain",
+    "al",
+    "ar",
+    "chckhy",
+    "chdy",
+    "chedy",
+    "cheey",
+    "chey",
+    "chol",
+    "chor",
+    "chy",
+    "cthy",
+    "dal",
+    "dam",
+    "dy",
+    "l",
+    "ol",
+    "otal",
+    "otar",
+    "r",
+    "s",
+    "shedy",
+    "shey"
+   ],
+   "S2": [
+    "aiin",
+    "ain",
+    "al",
+    "ar",
+    "chckhy",
+    "chdy",
+    "chedy",
+    "cheey",
+    "chey",
+    "chol",
+    "chor",
+    "chy",
+    "cthy",
+    "dal",
+    "dam",
+    "dy",
+    "l",
+    "ol",
+    "otal",
+    "otar",
+    "r",
+    "s",
+    "shedy",
+    "shey"
+   ],
+   "S1L": [
+    "aiin",
+    "ain",
+    "al",
+    "ar",
+    "chckhy",
+    "chdy",
+    "chedy",
+    "cheey",
+    "chey",
+    "chol",
+    "cthy",
+    "dal",
+    "dam",
+    "dy",
+    "otal",
+    "shedy",
+    "shey"
+   ]
+  },
+  "final_enriched": {
+   "raw": [
+    "am",
+    "dam",
+    "dy"
+   ],
+   "S1": [
+    "am",
+    "dam",
+    "dy"
+   ],
+   "S2": [
+    "am",
+    "dam",
+    "dy"
+   ],
+   "S1L": [
+    "am",
+    "dam",
+    "dy"
+   ]
+  },
+  "final_depleted": {
+   "raw": [
+    "chol",
+    "chor",
+    "l",
+    "o",
+    "or",
+    "qokain",
+    "qokar",
+    "qokedy",
+    "qokeedy",
+    "qokeey",
+    "qokol",
+    "shedy",
+    "sheey",
+    "sho",
+    "shol"
+   ],
+   "S1": [
+    "chol",
+    "chor",
+    "l",
+    "o",
+    "or",
+    "qokain",
+    "qokar",
+    "qokedy",
+    "qokeedy",
+    "qokeey",
+    "qokol",
+    "shedy",
+    "sheey",
+    "sho",
+    "shol"
+   ],
+   "S2": [
+    "chol",
+    "chor",
+    "l",
+    "o",
+    "or",
+    "qokain",
+    "qokar",
+    "qokedy",
+    "qokeedy",
+    "qokeey",
+    "qokol",
+    "shedy",
+    "sheey",
+    "sho",
+    "shol"
+   ],
+   "S1L": [
+    "chol",
+    "chor",
+    "l",
+    "o",
+    "or",
+    "qokain",
+    "qokar",
+    "qokedy",
+    "qokeedy",
+    "qokeey",
+    "qokol",
+    "shedy",
+    "sheey",
+    "sho",
+    "shol"
+   ]
+  }
+ },
+ "plain_lines_S1": {
+  "daiin": {
+   "obs": 121,
+   "ratio": 1.7626858980775844,
+   "p": 9.999000099990002e-05
+  },
+  "dain": {
+   "obs": 34,
+   "ratio": 2.1822874167409907,
+   "p": 9.999000099990002e-05
+  },
+  "saiin": {
+   "obs": 41,
+   "ratio": 4.588677576293675,
+   "p": 9.999000099990002e-05
+  },
+  "sain": {
+   "obs": 31,
+   "ratio": 4.508243645523243,
+   "p": 9.999000099990002e-05
+  },
+  "sar": {
+   "obs": 27,
+   "ratio": 4.386314698141797,
+   "p": 9.999000099990002e-05
+  },
+  "sol": {
+   "obs": 27,
+   "ratio": 5.226447726020107,
+   "p": 9.999000099990002e-05
+  },
+  "y": {
+   "obs": 50,
+   "ratio": 2.5078214232507325,
+   "p": 9.999000099990002e-05
+  },
+  "am": {
+   "obs": 36,
+   "ratio": 6.684491978609626,
+   "p": 9.999000099990002e-05
+  },
+  "dam": {
+   "obs": 29,
+   "ratio": 5.2144094460352814,
+   "p": 9.999000099990002e-05
+  },
+  "dy": {
+   "obs": 58,
+   "ratio": 3.760606839804577,
+   "p": 9.999000099990002e-05
+  }
+ },
+ "final_length_S1": {
+  "obs_mean": 4.351438492063492,
+  "null_mean": 4.462433750926473,
+  "z": -4.894298234867044,
+  "n": 4032
+ },
+ "final_length_S2_line": {
+  "obs_mean": 4.351438492063492,
+  "null_mean": 4.48968070255129,
+  "z": -6.030762128098039,
+  "n": 4032
+ },
+ "init_length_S1": {
+  "obs_mean": 4.914977755808206,
+  "null_mean": 4.463976967478645,
+  "z": 19.929107515719117,
+  "n": 4046
+ },
+ "final_length_by_HL": {
+  "1A": {
+   "obs_mean": 4.248088950660181,
+   "null_mean": 4.151827927237751,
+   "z": 2.595590092490142,
+   "n": 1439
+  },
+  "2B": {
+   "obs_mean": 4.269933554817276,
+   "null_mean": 4.514682790257569,
+   "z": -6.00411265967903,
+   "n": 1204
+  },
+  "3B": {
+   "obs_mean": 4.5769944341372915,
+   "null_mean": 4.785379750299123,
+   "z": -4.532505856308973,
+   "n": 1078
+  }
+ },
+ "mean_ulen_final_vs_other": [
+  4.351438492063492,
+  4.468233903536133
+ ],
+ "procrustes": {
+  "n": 90,
+  "top1": 0.011111111111111112,
+  "top5": 0.17777777777777778,
+  "chance_top1": 0.011111111111111112,
+  "chance_top5": 0.05555555555555555,
+  "median_rank": 33.5,
+  "rule_pairs_n": 20,
+  "rule_median_pct": 0.7613636363636364,
+  "rule_p_one_sided": 0.0004999500049995
+ },
+ "P1": {
+  "survive_S1_S2": [
+   "daiin",
+   "dain",
+   "saiin",
+   "sain",
+   "sar",
+   "sol",
+   "y"
+  ],
+  "pass_": true
+ },
+ "P2": {
+  "survive_S1_S1L": [
+   "am",
+   "dam",
+   "dy"
+  ],
+  "pass_": true
+ },
+ "P3": {
+  "squeeze": 1.0,
+  "final_survive_S1L": [
+   "am",
+   "dam",
+   "dy"
+  ],
+  "pass_": true
+ },
+ "P4": {
+  "n": 39,
+  "of": 39,
+  "pass_": true
+ },
+ "P5": {
+  "pass_": false
+ }
+}
