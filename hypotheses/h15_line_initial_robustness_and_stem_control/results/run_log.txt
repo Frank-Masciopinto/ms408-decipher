@@ -1,0 +1,94 @@
+/workspace/decipher/hypotheses/h15_line_initial_robustness_and_stem_control/h15_lib.py:41: RuntimeWarning: invalid value encountered in scalar divide
+  w = 1 / v; mu_f = (w * y).sum() / w.sum(); Q = float((w * (y - mu_f) ** 2).sum()); k = len(y)
+/workspace/decipher/hypotheses/h15_line_initial_robustness_and_stem_control/h15_lib.py:43: RuntimeWarning: invalid value encountered in scalar divide
+  ws = 1 / (v + tau2); mu = (ws * y).sum() / ws.sum(); se = np.sqrt(1 / ws.sum())
+/workspace/decipher/hypotheses/h15_line_initial_robustness_and_stem_control/h15_lib.py:43: RuntimeWarning: divide by zero encountered in scalar divide
+  ws = 1 / (v + tau2); mu = (ws * y).sum() / ws.sum(); se = np.sqrt(1 / ws.sum())
+/workspace/decipher/hypotheses/h15_line_initial_robustness_and_stem_control/h15_lib.py:41: RuntimeWarning: invalid value encountered in scalar divide
+  w = 1 / v; mu_f = (w * y).sum() / w.sum(); Q = float((w * (y - mu_f) ** 2).sum()); k = len(y)
+/workspace/decipher/hypotheses/h15_line_initial_robustness_and_stem_control/h15_lib.py:43: RuntimeWarning: invalid value encountered in scalar divide
+  ws = 1 / (v + tau2); mu = (ws * y).sum() / ws.sum(); se = np.sqrt(1 / ws.sum())
+/workspace/decipher/hypotheses/h15_line_initial_robustness_and_stem_control/h15_lib.py:43: RuntimeWarning: divide by zero encountered in scalar divide
+  ws = 1 / (v + tau2); mu = (ws * y).sum() / ws.sum(); se = np.sqrt(1 / ws.sum())
+{
+ "A1": {
+  "pass_": true
+ },
+ "A2": {
+  "pass_": true
+ },
+ "A3": {
+  "I2": 0.10345942406044474,
+  "pass_": true
+ },
+ "A4": {
+  "power_combined": 1.0,
+  "n_words_power80": 5,
+  "diff_z": 6.199139298070659,
+  "pass_": true
+ },
+ "B": {
+  "n_pairs": 20,
+  "pct_all": {
+   "median": 0.7613636363636364,
+   "mean": 0.7079545454545453,
+   "n": 20,
+   "signflip_p": 0.0008999100089991
+  },
+  "pct_stem": {
+   "median": 0.5982142857142857,
+   "mean": 0.5845238095238096,
+   "n": 20,
+   "signflip_p": 0.0974902509749025
+  },
+  "pct_ed": {
+   "median": 0.7333333333333334,
+   "mean": 0.6634904616084353,
+   "n": 20,
+   "signflip_p": 0.012598740125987402
+  },
+  "calibration_median": 0.5,
+  "calibration_mean": 0.49759409751924716,
+  "calibration_n": 668,
+  "mw_p": 0.11548273924634472
+ },
+ "B1": {
+  "pass_": false
+ },
+ "B2": {
+  "pass_": true
+ },
+ "B3": {
+  "pass_": false
+ }
+}
+       word  Q_ratio   Q_lo   Q_hi  Q_n_pos  Q_n_units   Q_I2  Q_Q_p  Q_loo_min_ratio  Q_loo_min_lo  B_ratio   B_lo  B_n_pos  B_n_units  B_I2  B_loo_min_lo  1A_obs   1A_exp  1A_ratio  1A_power_at_BB_ratio  1A_diff_z
+0  combined    3.284  2.480  4.349        7          8  0.103  0.350            2.693         1.975    3.194  2.519       17         18   0.0         2.333     102  106.661     0.957                 1.000      6.199
+1     daiin    2.510  1.676  3.759        7          8  0.000  0.632            1.851         1.101    2.410  1.609       12         16   0.0         1.465      57   69.431     0.822                 1.000      4.097
+2      dain    2.761  1.456  5.236        3          3  0.000  0.652            2.104         0.887    2.613  1.411        6          6   0.0         1.245      14   14.438     0.971                 0.999      2.123
+3     saiin    4.439  2.288  8.613        3          3  0.000  0.659            3.442         1.454    4.363  2.277        4          4   0.0         2.002       7    5.518     1.246                 1.000      1.975
+4      sain    4.258  1.945  9.324        3          3  0.000  0.693            3.183         1.129    4.915  2.157        1          1   0.0           NaN       1    0.845     1.115                 0.489      1.069
+5       sar    3.860  1.657  8.996        3          3  0.000  0.679            2.973         0.992    4.514  1.846        1          1   0.0           NaN       4    2.073     1.749                 0.799      0.887
+6       sol    4.132  1.812  9.424        2          2  0.000  0.975            4.022         0.618    3.598  1.625        4          4   0.0         1.185       8    2.519     2.815                 0.886      0.485
+7         y    2.702  1.541  4.737        3          3  0.000  0.572            2.188         1.009    2.451  1.436        7          8   0.0         1.301      11   11.836     0.932                 0.996      2.128
+      x_2B    y_1A      rule onset  ed  n_stem  n_ed  pct_all  pct_stem  pct_ed
+0    chedy    chol  -edy/-ol    ch   3      14    17     0.55      0.57    0.53
+1     chol   chedy  -edy/-ol    ch   3      14    28     0.40      0.36    0.32
+2    chedy    chor  -edy/-or    ch   3      14    17     0.97      0.93    0.94
+3     chor   chedy  -edy/-or    ch   3      14    29     0.36      0.29    0.38
+4    chedy   cheol   -dy/-ol    ch   2      14     9     0.50      0.50    0.56
+5    cheol   chedy   -dy/-ol    ch   2      14    13     0.98      1.00    1.00
+6    shedy    shol  -edy/-ol    sh   3       8    20     0.91      0.50    1.00
+7     shol   shedy  -edy/-ol    sh   3       8    32     0.34      0.25    0.28
+8    shedy    shor  -edy/-or    sh   3       8    20     0.97      0.88    1.00
+9     shor   shedy  -edy/-or    sh   3       8    31     0.93      0.88    0.94
+10   shedy   sheol   -dy/-ol    sh   2       8     9     1.00      1.00    1.00
+11   sheol   shedy   -dy/-ol    sh   2       8    14     0.52      0.25    0.36
+12  qokedy   qokol  -edy/-ol   qok   3       8    14     0.49      0.00    0.14
+13   qokol  qokedy  -edy/-ol   qok   3       8    16     0.74      0.62    0.56
+14      dy      ol   -dy/-ol     d   2       8    24     0.60      0.33    0.67
+15      ol      dy   -dy/-ol   NaN   2      15    22     0.86      0.75    0.82
+16    chdy    chol   -dy/-ol    ch   2      14    15     0.93      0.79    0.80
+17    chol    chdy   -dy/-ol    ch   2      14    19     0.41      0.43    0.26
+18  sheedy   sheol  -edy/-ol    sh   3       8    12     0.78      0.62    0.83
+19   sheol  sheedy  -edy/-ol    sh   3       8    17     0.92      0.75    0.88
