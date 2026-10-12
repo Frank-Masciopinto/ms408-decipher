@@ -1,0 +1,16 @@
+bifolium 0 1A done
+bifolium 0 2B done
+bifolium 0 3B done
+bifolium 1 1A done
+bifolium 1 2B done
+bifolium 1 3B done
+bifolium 2 1A done
+bifolium 2 2B done
+bifolium 2 3B done
+quire 0 1A done
+quire 0 2B done
+quire 1 1A done
+quire 1 2B done
+quire 2 1A done
+quire 2 2B done
+total 1010.5993638038635

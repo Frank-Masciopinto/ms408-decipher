@@ -1,0 +1,17 @@
+{
+ "OWN<POOLED|rms_z": "12/15 folds",
+ "OWN<SHUF|rms_z": "13/15 folds",
+ "OWN<POOLED|top_js": "14/15 folds",
+ "OWN<SHUF|top_js": "14/15 folds",
+ "closure_mean": {
+  "bifolium|1A<-2B": 0.489,
+  "bifolium|2B<-1A": 0.592,
+  "quire|1A<-2B": 0.453,
+  "quire|2B<-1A": 0.691
+ },
+ "p_copy_range_OWN": [
+  0.0169712947864055,
+  0.0434116688899958
+ ],
+ "fit_secs_OWN_median": 8.531520366668701
+}
