@@ -13,6 +13,9 @@ Thanks for helping study the Voynich manuscript (MS 408). Ground rules: **no cla
 4. Run, then report verdict, numbers and caveats in the README, and add a row to `FINDINGS.md` (keep existing content).
 5. Tests: unit tests for new functions; real-data tests may skip if data is missing.
 
+## Research log
+Every PR that adds or changes analysis must add (or update) an entry in [RESEARCH_LOG.md](RESEARCH_LOG.md), following its "How to add an entry" note, and must update its Dead ends / Open leads summary if the verdict changes them.
+
 ## Pull requests
 Small, focused PRs. Do not commit transcription files or rendered page images (git-ignored). Use the PR template.
 

@@ -8,7 +8,7 @@ An open, reproducible research toolkit for **deciphering the Voynich manuscript*
 
 > **Status: MS 408 is undeciphered.** No claimed solution is accepted by scholars. This repo contains **no translation and makes no decipherment claim**. Its results are statistical tests, not decoding; see [docs/STATS_NOTE.md](docs/STATS_NOTE.md).
 
-## Key findings so far ([full summary: FINDINGS.md](FINDINGS.md))
+## Key findings so far ([full summary: FINDINGS.md](FINDINGS.md); everything tried, in order: [RESEARCH_LOG.md](RESEARCH_LOG.md))
 - **Scribal hand × Currier language is the largest factor** in word usage, larger than manuscript section (h10, h11).
 - Hands look like **one system with spelling habits** (e.g. a learned `-edy → -ol` rule) plus largely different vocabulary (h11, h12).
 - **Line layout is structured:** `am`/`dam`/`dy` favour line ends for every hand; `saiin`/`sar`/`sol`/`y` favour line starts in hands 2B/3B but not 1A (h14, h15).
