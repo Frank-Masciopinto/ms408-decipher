@@ -1,0 +1,65 @@
+{
+ "R2_HL_alone": 0.16374793910434432,
+ "R2_lang_alone": 0.12938143378701375,
+ "R2_HL_quire": 0.2956257140281911,
+ "R2_section_alone": 0.15712116594369166,
+ "R2_section_given_HL": 0.07885407668609601,
+ "R2_full_h10": 0.3185365577439543,
+ "residual_A_full_R2": 0.17350644804555726,
+ "gap_closure_summary": {
+  "js_before|mean": {
+   "hand gap: herbal 1A vs herbal 2B": 0.6132,
+   "hand gap: herbal 1A vs herbal 3B": 0.7097,
+   "noise floor: 1A herbal split": 0.3668,
+   "noise floor: 2B biological split": 0.2929,
+   "section gap: 1A herbal vs 1A pharma": 0.4994,
+   "section gap: 2B herbal vs 2B biological": 0.4862,
+   "section gap: 3B herbal vs 3B stars": 0.5944
+  },
+  "js_before|std": {
+   "hand gap: herbal 1A vs herbal 2B": 0.015,
+   "hand gap: herbal 1A vs herbal 3B": 0.0047,
+   "noise floor: 1A herbal split": 0.0113,
+   "noise floor: 2B biological split": 0.0095,
+   "section gap: 1A herbal vs 1A pharma": 0.0146,
+   "section gap: 2B herbal vs 2B biological": 0.015,
+   "section gap: 3B herbal vs 3B stars": 0.0172
+  },
+  "js_after|mean": {
+   "hand gap: herbal 1A vs herbal 2B": 0.474,
+   "hand gap: herbal 1A vs herbal 3B": 0.6174,
+   "noise floor: 1A herbal split": 0.37,
+   "noise floor: 2B biological split": 0.3038,
+   "section gap: 1A herbal vs 1A pharma": 0.4441,
+   "section gap: 2B herbal vs 2B biological": 0.4603,
+   "section gap: 3B herbal vs 3B stars": 0.5869
+  },
+  "js_after|std": {
+   "hand gap: herbal 1A vs herbal 2B": 0.0175,
+   "hand gap: herbal 1A vs herbal 3B": 0.013,
+   "noise floor: 1A herbal split": 0.0107,
+   "noise floor: 2B biological split": 0.017,
+   "section gap: 1A herbal vs 1A pharma": 0.0204,
+   "section gap: 2B herbal vs 2B biological": 0.0077,
+   "section gap: 3B herbal vs 3B stars": 0.0255
+  },
+  "closed|mean": {
+   "hand gap: herbal 1A vs herbal 2B": 0.227,
+   "hand gap: herbal 1A vs herbal 3B": 0.1299,
+   "noise floor: 1A herbal split": -0.009,
+   "noise floor: 2B biological split": -0.0368,
+   "section gap: 1A herbal vs 1A pharma": 0.1105,
+   "section gap: 2B herbal vs 2B biological": 0.0529,
+   "section gap: 3B herbal vs 3B stars": 0.0125
+  },
+  "closed|std": {
+   "hand gap: herbal 1A vs herbal 2B": 0.0165,
+   "hand gap: herbal 1A vs herbal 3B": 0.0218,
+   "noise floor: 1A herbal split": 0.0067,
+   "noise floor: 2B biological split": 0.0411,
+   "section gap: 1A herbal vs 1A pharma": 0.0365,
+   "section gap: 2B herbal vs 2B biological": 0.0148,
+   "section gap: 3B herbal vs 3B stars": 0.0327
+  }
+ }
+}

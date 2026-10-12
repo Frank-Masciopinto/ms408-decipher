@@ -1,0 +1,36 @@
+comparison,seed,js_before,js_after,closed,rules
+hand gap: herbal 1A vs herbal 2B,0,0.6154057411310128,0.48294571128353747,0.21524015944998487,end:edy->ol ; end:hdy->hor ; start:ai->dai ; start:a->cho ; any:ed->∅ ; start:yk->ch ; start:oke->d ; any:he->h ; end:eey->or ; end:am->y
+hand gap: herbal 1A vs herbal 2B,1,0.6106339582318285,0.46043749070819207,0.24596808857232608,end:edy->ol ; end:hdy->hor ; start:ai->dai ; end:ar->chy ; any:ed->∅ ; end:ir->r ; end:am->y ; start:chd->cth ; start:ol->cho ; start:a->o
+hand gap: herbal 1A vs herbal 2B,2,0.5932121938581315,0.4636049636345566,0.2184837593789767,end:edy->ol ; end:hdy->hor ; start:ai->dai ; end:ar->y ; any:ed->∅ ; start:yk->d ; start:oke->cth ; end:ody->or ; start:ol->cho ; start:a->o
+hand gap: herbal 1A vs herbal 2B,3,0.6114645928411994,0.4623452515729815,0.24387240571907481,end:edy->ol ; end:hdy->hor ; start:ai->dai ; end:ar->chy ; start:oke->cth ; end:ir->r ; start:a->cho ; start:she->sh ; end:am->or ; any:ed->∅
+hand gap: herbal 1A vs herbal 2B,4,0.6353231103078228,0.5009037022386972,0.2115764496651123,any:edy->ol ; end:hdy->hor ; start:ai->dai ; start:oke->cth ; any:ed->∅ ; start:a->cho ; end:kar->∅ ; end:d->o ; start:ol->∅ ; start:t->∅
+hand gap: herbal 1A vs herbal 3B,0,0.7161769703917161,0.6176018059076476,0.13764079069751772,any:dy->y ; start:qok->d ; start:olk->cth ; end:eey->ol ; start:chd->d ; end:ey->or ; any:e->∅ ; start:chc->c ; start:yk->che ; end:kar->o
+hand gap: herbal 1A vs herbal 3B,1,0.7051119844218088,0.6188341271894717,0.12236050320869929,end:dy->y ; start:qok->d ; start:ota->cho ; start:chd->d ; end:eey->ol ; start:yk->cth ; end:ey->or ; any:e->o ; end:kar->∅ ; start:ol->sho
+hand gap: herbal 1A vs herbal 3B,2,0.7080134102208447,0.6256445784425639,0.11633795432291061,any:dy->y ; start:qok->d ; start:olk->ch ; end:eey->ol ; start:yk->cth ; start:chd->d ; start:ol->sho ; end:tar->l ; start:oka->sho ; any:ka->o
+hand gap: herbal 1A vs herbal 3B,3,0.7061752997007034,0.6291423208373823,0.10908478234224528,end:dy->ol ; start:qok->d ; any:e->∅ ; start:chd->d ; end:tar->∅ ; start:t->∅ ; start:chd->s ; end:d->o ; start:ol->sho ; start:ota->o
+hand gap: herbal 1A vs herbal 3B,4,0.7128412315376937,0.5958249434979599,0.16415476948115654,end:edy->ol ; end:hdy->hor ; start:qok->d ; start:olk->cth ; any:e->∅ ; start:chd->d ; start:ota->∅ ; start:yk->ot ; start:t->∅ ; end:ody->o
+section gap: 1A herbal vs 1A pharma,0,0.5095418929467004,0.44608482755954365,0.1245374840921952,any:he->h ; any:ee->ch ; any:ke->t ; end:ody->y ; end:eo->eey ; start:ai->dai ; end:al->y ; start:yk->d ; end:m->iin ; end:eor->ody
+section gap: 1A herbal vs 1A pharma,1,0.4799755255332595,0.4358164798731061,0.09200270286925999,any:e->∅ ; end:ody->ey ; start:oko->cho ; start:ol->d ; start:qok->∅ ; start:yk->qok ; start:ai->dai ; end:am->chy ; end:m->dy ; start:oke->cth
+section gap: 1A herbal vs 1A pharma,2,0.4959207760575658,0.4640296999328556,0.06430679589235103,any:e->∅ ; start:ok->che ; start:qok->d ; end:ody->ey ; start:ai->dai ; end:eol->or ; start:ck->ct ; start:qo->∅ ; start:q->qo ; start:ol->qot
+section gap: 1A herbal vs 1A pharma,3,0.4938432918520728,0.41380748322265415,0.16206721838674445,any:he->h ; start:oke->cth ; any:ee->ch ; any:ke->t ; start:ol->d ; start:oko->o ; start:ai->da ; end:eol->eey ; end:eo->∅
+section gap: 1A herbal vs 1A pharma,4,0.5174740019679971,0.4608275188584316,0.10946730250048149,any:e->∅ ; start:yk->che ; end:ody->ey ; start:qok->cth ; start:oke->qok ; any:ke->d ; start:ai->da ; end:m->iin ; end:ody->or ; end:eey->ody
+section gap: 2B herbal vs 2B biological,0,0.4838820143170718,0.45927315733190444,0.05085714338835083,start:qot->ok ; start:olk->yk ; start:sa->a ; end:ain->ar ; start:l->∅ ; end:ty->∅ ; start:sa->ai ; start:l->ol
+section gap: 2B herbal vs 2B biological,1,0.4849906963071396,0.4561907840433628,0.05938240152454003,start:l->∅ ; end:hey->hdy ; start:qot->ok ; end:ain->ar ; start:olk->yk ; start:so->o ; start:sa->a ; end:al->ain ; end:eol->ody ; start:olk->ch
+section gap: 2B herbal vs 2B biological,2,0.5060592042179608,0.4711536255526742,0.06897528663514375,start:qot->ok ; start:she->ch ; start:l->∅ ; start:olk->yk ; end:ain->ar ; start:ote->she ; end:ly->in ; start:t->k ; end:eol->ody
+section gap: 2B herbal vs 2B biological,3,0.4914540071193656,0.4638752306621998,0.05611669872999402,start:l->∅ ; end:ain->ar ; start:sa->a ; end:d->ody ; end:eol->ody ; end:hey->hdy ; end:ey->y ; end:eey->am
+section gap: 2B herbal vs 2B biological,4,0.46442781500945485,0.4508424357085769,0.02925186403962771,start:l->∅ ; start:qot->ok ; start:she->ch ; start:sa->a ; start:olk->sh ; end:ain->ar ; start:r->yk ; end:ly->r ; end:eol->ody ; start:l->ol
+section gap: 3B herbal vs 3B stars,0,0.6126762498498634,0.5884142631132491,0.03960001182118565,any:ee->∅ ; start:l->∅ ; start:ote->ch ; end:o->ody ; end:ir->r ; start:oke->∅ ; end:ey->dy ; end:eol->ey ; end:ir->l ; end:s->kar
+section gap: 3B herbal vs 3B stars,1,0.5675514051651086,0.5530492648380894,0.02555211773777631,start:she->ch ; end:eey->y ; start:l->∅ ; end:o->dy ; end:al->or ; end:eol->dy ; start:ai->da ; end:m->iin ; start:ote->sh ; end:ir->l
+section gap: 3B herbal vs 3B stars,2,0.6022974781290473,0.5808483978933197,0.03561210367733272,any:ee->∅ ; start:l->∅ ; end:o->dy ; end:ir->r ; start:ote->∅ ; end:ey->dy ; end:s->dy ; start:cho->o ; any:che->ch ; start:oke->che
+section gap: 3B herbal vs 3B stars,3,0.5887069245978098,0.587883554867391,0.0013986071778947747,any:ee->∅ ; start:lk->chd ; end:o->ody ; end:eol->ar ; end:ir->in ; start:ote->∅ ; start:l->∅ ; start:oke->l ; end:m->iin ; start:ote->ol
+section gap: 3B herbal vs 3B stars,4,0.6007179567922276,0.6245171519413373,-0.03961791865885769,start:she->ch ; end:ain->y ; start:lk->yk ; end:eol->dy ; start:l->∅ ; end:o->dy ; end:al->or ; end:hey->hdy ; start:oke->ch ; end:ir->r
+noise floor: 1A herbal split,0,0.3641523530202434,0.3641523530202434,0.0,
+noise floor: 1A herbal split,1,0.3600577144666643,0.3631160679383294,-0.008494064559053532,end:d->l ; end:al->y ; end:m->l
+noise floor: 1A herbal split,2,0.381519888696885,0.38429829129629817,-0.007282458088628154,start:yk->qot ; end:eor->or
+noise floor: 1A herbal split,3,0.3746514503622554,0.3785756466665221,-0.010474258942471348,end:d->r
+noise floor: 1A herbal split,4,0.3534620316314053,0.3600642017105241,-0.01867858352040372,end:eol->ey ; start:dc->otc
+noise floor: 2B biological split,0,0.2863922530753315,0.29345636002964026,-0.024665845107376707,end:d->dy ; end:key->∅ ; end:hdy->hey
+noise floor: 2B biological split,1,0.2873192623892859,0.2873192623892859,0.0,
+noise floor: 2B biological split,2,0.3093968887793699,0.32633320192327286,-0.05473976551839286,end:eol->edy ; end:hdy->hey ; end:s->dy ; start:lch->qok
+noise floor: 2B biological split,3,0.2929274435418831,0.2944254215364799,-0.005113819232790986,start:k->qot
+noise floor: 2B biological split,4,0.2886585520913971,0.31737887496823314,-0.09949583225146359,start:k->ch ; start:l->∅ ; end:d->ol ; end:or->ol ; end:ly->r ; end:or->l
