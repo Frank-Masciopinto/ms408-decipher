@@ -340,3 +340,20 @@ Status key:
 - **Commits:** (this commit)
 - **Status:** closed
 - **Led to:** future entries
+
+### L29 · 2026-10-12 21:09–21:40 · h19 held-out likelihood comparison of mechanisms (issue #3, option 3)
+- **Folder:** [hypotheses/h19_heldout_likelihood/](hypotheses/h19_heldout_likelihood/)
+- **Question:** scored on held-out pages, does MS 408 behave like language, generated (copy-and-modify) text, or a Naibbe cipher?
+- **Done:**
+  - Per hand × language (1A, 2B, 3B) with bifolium and quire folds; hyperparameters fitted on inner splits.
+  - Models: char LM, slot grammar, Kneser–Ney 1–3, copy-and-modify as a probabilistic model (EM copy rate and edit channel), Naibbe likelihood with Latin/Italian plaintext LMs, and a line-start onset feature.
+  - Calibration: 4 plain controls, 2 Naibbe ciphertexts and a synthetic copy text.
+- **Result:**
+  - Context gain is 0.25 bits/word in MS vs 0.94 in the controls, and n-grams hurt. The best MS model is context-free.
+  - Not Naibbe-like: escape weight 0.94–0.99 on MS vs ≤ 0.009 on real ciphertext.
+  - ML copy rate 0.10–0.13 (CIs ±0.02), inside the controls' range of 0.07–0.17. The synthetic rate of 0.2 is recovered.
+  - The onset feature saves 0.25–0.59 bits on line-initial tokens.
+  - P1 passes; P2–P5 fail.
+- **Commits:** 2726c9e, a71ad8b, 44b3838, (FINDINGS/README/log commit)
+- **Status:** closed
+- **Led to:** —
