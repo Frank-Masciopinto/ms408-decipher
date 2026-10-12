@@ -1,0 +1,225 @@
+folio,source,proposal,genus,family
+f1v,Petersen,Solanum / Atropa belladonna,Atropa,Solanaceae
+f1v,ELV_Grolier,Atropa,Atropa,Solanaceae
+f1v,ELV_Beinecke,Atropa belladonna,Atropa,Solanaceae
+f1v,TuckerTalbert,Ipomoea arborescens,Ipomoea,Convolvulaceae
+f1v,Vatne2022,Ranunculus flammula,Ranunculus,Ranunculaceae
+f2r,Petersen,Cyanus (O'Neill) / Centaurea (Holm),Centaurea,Asteraceae
+f2r,ELV_Grolier,Cyanus?,Centaurea,Asteraceae
+f2r,TuckerTalbert,Centaurea diffusa (via list),Centaurea,Asteraceae
+f2r,Sherwood_Bax,Centaurea diffusa,Centaurea,Asteraceae
+f2v,Petersen,Colocasia / Egyptian lotus,Colocasia,Araceae
+f2v,ELV_Grolier,Villarsia / Limnanthemum,Nymphoides,Menyanthaceae
+f2v,TuckerTalbert,Nymphoides aquatica,Nymphoides,Menyanthaceae
+f2v,Vatne2022,Nymphaea alba,Nymphaea,Nymphaeaceae
+f2v,Zandbergen_ZL,Nymphoides peltata,Nymphoides,Menyanthaceae
+f3r,Petersen,Crassulacea (Cretan dittany),Dictamnus,Lamiaceae
+f3r,ELV_Grolier,Dictamnus?,Dictamnus,Lamiaceae
+f3v,TuckerTalbert,Aconitum columbianum,Aconitum,Ranunculaceae
+f3v,Vatne2022,Aconitum napellus,Aconitum,Ranunculaceae
+f3v,Sherwood_Bax,Helleborus foetidus,Helleborus,Ranunculaceae
+f4r,Petersen,Hypericum / Centaurium,Hypericum,Hypericaceae
+f4r,ELV_Grolier,Hypericum?,Hypericum,Hypericaceae
+f4r,ELV_Beinecke,Hypericum,Hypericum,Hypericaceae
+f4v,Petersen,Convolvulus/Ipomoea?,Ipomoea,Convolvulaceae
+f4v,ELV_Grolier,Ipomoea? Scammonia?,Ipomoea,Convolvulaceae
+f4v,Vatne2022,Pulsatilla vulgaris,Pulsatilla,Ranunculaceae
+f5r,Petersen,Paris,Paris,Melanthiaceae
+f5r,ELV_Grolier,Paris?,Paris,Melanthiaceae
+f5v,Petersen,Parietaria (O'Neill),Parietaria,Urticaceae
+f5v,ELV_Grolier,Geranium,Geranium,Geraniaceae
+f6r,Petersen,Asclepias,Asclepias,Apocynaceae
+f6r,ELV_Grolier,Aristolochia?,Aristolochia,Aristolochiaceae
+f6v,Petersen,Ricinus / Arctium,Ricinus,Euphorbiaceae
+f6v,ELV_Grolier,Ricinus,Ricinus,Euphorbiaceae
+f6v,ELV_Beinecke,Castor oil plant,Ricinus,Euphorbiaceae
+f6v,TuckerTalbert,Cnidoscolus texanus,Cnidoscolus,Euphorbiaceae
+f7r,Petersen,Nymphaea alba,Nymphaea,Nymphaeaceae
+f7r,ELV_Grolier,Paeonia,Paeonia,Paeoniaceae
+f7v,Petersen,Polygonum persicaria,Polygonum,Polygonaceae
+f7v,ELV_Grolier,Polygonum,Polygonum,Polygonaceae
+f8r,Petersen,Prenanthes / Atriplex,Atriplex,Amaranthaceae
+f8r,ELV_Grolier,Atriplex,Atriplex,Amaranthaceae
+f8v,Petersen,Silene,Silene,Caryophyllaceae
+f8v,ELV_Grolier,Oleander? Verbena?,Nerium,Apocynaceae
+f9r,Petersen,Chelidonium majus,Chelidonium,Papaveraceae
+f9r,ELV_Grolier,Delphinium?,Delphinium,Ranunculaceae
+f9v,Petersen,Viola tricolor (O'Neill),Viola,Violaceae
+f9v,ELV_Grolier,Viola,Viola,Violaceae
+f9v,ELV_Beinecke,Pansy,Viola,Violaceae
+f9v,TuckerTalbert,Viola bicolor,Viola,Violaceae
+f9v,Vatne2022,Viola tricolor,Viola,Violaceae
+f9v,Zandbergen_ZL,Viola (upside down),Viola,Violaceae
+f10r,Petersen,Scabiosa,Scabiosa,Caprifoliaceae
+f10v,Petersen,Helleborus orientalis?,Helleborus,Ranunculaceae
+f10v,ELV_Grolier,Helleborus?,Helleborus,Ranunculaceae
+f11r,Petersen,Silene,Silene,Caryophyllaceae
+f11v,Petersen,Leonurus,Leonurus,Lamiaceae
+f13r,Petersen,Tussilago / Petasites,Petasites,Asteraceae
+f13r,ELV_Grolier,Tussilago,Tussilago,Asteraceae
+f13r,TuckerTalbert,Petasites frigidus,Petasites,Asteraceae
+f13v,Petersen,Crassulacea (Fetthenne),Sedum,Crassulaceae
+f14r,Petersen,Sagittaria,Sagittaria,Alismataceae
+f14v,Petersen,Osmunda (fern root),Osmunda,Osmundaceae
+f14v,ELV_Grolier,Botrychium,Botrychium,Ophioglossaceae
+f15v,Petersen,Herba Paris,Paris,Melanthiaceae
+f15v,ELV_Grolier,Lilium?,Lilium,Liliaceae
+f16r,Petersen,Cannabis,Cannabis,Cannabaceae
+f16r,ELV_Grolier,Aconitum?,Aconitum,Ranunculaceae
+f16r,Sherwood_Bax,Juniperus (Bax reading),Juniperus,Cupressaceae
+f16v,ELV_Grolier,Eryngium?,Eryngium,Apiaceae
+f17v,Petersen,Smilax / Tamus communis,Tamus,Dioscoreaceae
+f17v,ELV_Grolier,Tamus?,Tamus,Dioscoreaceae
+f17v,TuckerTalbert,Dioscorea composita,Dioscorea,Dioscoreaceae
+f18r,Petersen,Calendula (O'Neill),Calendula,Asteraceae
+f18r,ELV_Grolier,Aster? Calendula,Calendula,Asteraceae
+f20r,Petersen,Polytrichum (O'Neill) / cranberry,Vaccinium,Ericaceae
+f20r,ELV_Grolier,Arctostaphylos,Arctostaphylos,Ericaceae
+f20v,Petersen,Compositae / chicory / salsify,Tragopogon,Asteraceae
+f20v,ELV_Grolier,Tragopogon,Tragopogon,Asteraceae
+f21r,Petersen,Polygonum,Polygonum,Polygonaceae
+f21r,ELV_Grolier,Herniaria?,Herniaria,Caryophyllaceae
+f21r,TuckerTalbert,Euphorbia thymifolia,Euphorbia,Euphorbiaceae
+f21v,Petersen,Salvia? Saxifraga,Salvia,Lamiaceae
+f21v,ELV_Grolier,Crassula? Sedum?,Sedum,Crassulaceae
+f22v,ELV_Grolier,Sedum?,Sedum,Crassulaceae
+f23r,Petersen,Veronica / Helleborus,Veronica,Plantaginaceae
+f23r,ELV_Grolier,Veronica,Veronica,Plantaginaceae
+f23v,TuckerTalbert,Passiflora morifolia,Passiflora,Passifloraceae
+f24r,Petersen,Lychnis,Lychnis,Caryophyllaceae
+f24r,ELV_Grolier,Lychnis?,Lychnis,Caryophyllaceae
+f24v,ELV_Grolier,Lychnis?,Lychnis,Caryophyllaceae
+f25r,Petersen,Mentha / Urtica,Mentha,Lamiaceae
+f25r,ELV_Grolier,Parietaria / Urtica?,Urtica,Urticaceae
+f25r,TuckerTalbert,Urtica chamaedryoides,Urtica,Urticaceae
+f25v,Petersen,Leontopodium / Plantago,Plantago,Plantaginaceae
+f25v,ELV_Grolier,Plantago,Plantago,Plantaginaceae
+f25v,ELV_Beinecke,Plantain,Plantago,Plantaginaceae
+f25v,TuckerTalbert,Isatis tinctoria (via list),Isatis,Brassicaceae
+f26r,Petersen,Gnaphalium,Gnaphalium,Asteraceae
+f26r,TuckerTalbert,Wigandia urens,Wigandia,Boraginaceae
+f26v,Petersen,Verbena,Verbena,Verbenaceae
+f27r,Petersen,Asarum,Asarum,Aristolochiaceae
+f27r,ELV_Grolier,Datura?,Datura,Solanaceae
+f28r,Petersen,Arum,Arum,Araceae
+f28r,ELV_Grolier,Rumex,Rumex,Polygonaceae
+f28v,ELV_Grolier,Arnica?,Arnica,Asteraceae
+f29r,Petersen,Lappa (burdock),Arctium,Asteraceae
+f29r,ELV_Grolier,Arctium? Xanthium?,Arctium,Asteraceae
+f29r,ELV_Beinecke,Burdock,Arctium,Asteraceae
+f29v,Sherwood_Bax,Nigella sativa (Bax reading),Nigella,Ranunculaceae
+f30r,Petersen,Menyanthes trifoliata,Menyanthes,Menyanthaceae
+f30r,ELV_Grolier,Menyanthes,Menyanthes,Menyanthaceae
+f30v,Petersen,Boraginaceae,Lithospermum,Boraginaceae
+f30v,ELV_Grolier,Lithospermum,Lithospermum,Boraginaceae
+f31r,Petersen,Hyoscyamus (henbane),Hyoscyamus,Solanaceae
+f31r,ELV_Grolier,Hyoscyamus,Hyoscyamus,Solanaceae
+f31r,ELV_Beinecke,Henbane,Hyoscyamus,Solanaceae
+f31v,Petersen,Heracleum,Heracleum,Apiaceae
+f32r,Petersen,Mentha (O'Neill),Mentha,Lamiaceae
+f32r,ELV_Grolier,Mentha,Mentha,Lamiaceae
+f32r,ELV_Beinecke,Some kind of mint,Mentha,Lamiaceae
+f32r,TuckerTalbert,Ocimum campechianum,Ocimum,Lamiaceae
+f32v,Petersen,Campanula / Convolvulus,Campanula,Campanulaceae
+f32v,ELV_Grolier,Malva?,Malva,Malvaceae
+f32v,TuckerTalbert,Ipomoea pubescens,Ipomoea,Convolvulaceae
+f33r,ELV_Grolier,Mandragora?,Mandragora,Solanaceae
+f33r,TuckerTalbert,Allionia incarnata,Allionia,Nyctaginaceae
+f33v,Petersen,Scabiosa,Scabiosa,Caprifoliaceae
+f33v,ELV_Grolier,Knautia / Scabiosa,Scabiosa,Caprifoliaceae
+f33v,TuckerTalbert,Psacalium?,Psacalium,Asteraceae
+f34r,Petersen,Scabiosa,Scabiosa,Caprifoliaceae
+f34r,ELV_Grolier,Scabiosa,Scabiosa,Caprifoliaceae
+f34v,Petersen,Libanotis (umbellifer),Seseli,Apiaceae
+f34v,ELV_Grolier,Eryngium?,Eryngium,Apiaceae
+f35v,Petersen,Uva quercina / vitis,Vitis,Vitaceae
+f35v,ELV_Grolier,Uva quercina,Vitis,Vitaceae
+f36r,ELV_Grolier,Geranium,Geranium,Geraniaceae
+f36r,Zandbergen_ZL,Geranium,Geranium,Geraniaceae
+f36v,ELV_Grolier,Cannabis,Cannabis,Cannabaceae
+f36v,ELV_Beinecke,Indian hemp,Cannabis,Cannabaceae
+f36v,TuckerTalbert,Dorstenia contrajerva,Dorstenia,Moraceae
+f37r,Petersen,Valeriana,Valeriana,Caprifoliaceae
+f37r,ELV_Grolier,Sambucus?,Sambucus,Adoxaceae
+f37r,ELV_Beinecke,Dwarf elder,Sambucus,Adoxaceae
+f38v,Petersen,Cichorium / Lactuca,Lactuca,Asteraceae
+f38v,ELV_Grolier,Cynara?,Cynara,Asteraceae
+f39r,ELV_Grolier,Colchicum / Crocus,Colchicum,Colchicaceae
+f39r,Zandbergen_ZL,Crocus?,Crocus,Iridaceae
+f39v,ELV_Grolier,Primula?,Primula,Primulaceae
+f39v,TuckerTalbert,Phacelia crenulata,Phacelia,Boraginaceae
+f40r,ELV_Grolier,Primula?,Primula,Primulaceae
+f40v,Petersen,Helianthus tuberosus / thistle,Helianthus,Asteraceae
+f40v,TuckerTalbert,Smallanthus,Smallanthus,Asteraceae
+f41r,Petersen,Thistle,Carduus,Asteraceae
+f41r,ELV_Grolier,Carduus? Cnicus?,Carduus,Asteraceae
+f41v,ELV_Grolier,Daucus,Daucus,Apiaceae
+f41v,Sherwood_Bax,Coriandrum (Bax reading),Coriandrum,Apiaceae
+f42r,Petersen,Arum,Arum,Araceae
+f42r,ELV_Grolier,Ranunculus?,Ranunculus,Ranunculaceae
+f42v,Petersen,Ranunculaceae / Helleborus (ELV),Helleborus,Ranunculaceae
+f42v,ELV_Grolier,Aquilegia?,Aquilegia,Ranunculaceae
+f43r,Petersen,Gnaphalium / Antennaria,Gnaphalium,Asteraceae
+f43v,Petersen,Polygonum / Bistorta,Polygonum,Polygonaceae
+f43v,ELV_Grolier,Polygonum,Polygonum,Polygonaceae
+f44r,Petersen,Veratrum,Veratrum,Melanthiaceae
+f44r,ELV_Grolier,Veratrum?,Veratrum,Melanthiaceae
+f45r,ELV_Grolier,Glycyrrhiza?,Glycyrrhiza,Fabaceae
+f45r,TuckerTalbert,Salvia cacaliifolia,Salvia,Lamiaceae
+f45v,Petersen,Scutellaria / Veronica / Teucrium,Teucrium,Lamiaceae
+f45v,ELV_Grolier,Teucrium?,Teucrium,Lamiaceae
+f45v,TuckerTalbert,Hyptis albida,Hyptis,Lamiaceae
+f46r,Petersen,Asclepias,Asclepias,Apocynaceae
+f46r,ELV_Grolier,Asclepias?,Asclepias,Apocynaceae
+f46v,Petersen,Anchusa,Anchusa,Boraginaceae
+f47v,Petersen,Doronicum (Holm),Doronicum,Asteraceae
+f47v,ELV_Grolier,Anchusa?,Anchusa,Boraginaceae
+f47v,TuckerTalbert,Cynoglossum grande,Cynoglossum,Boraginaceae
+f48r,ELV_Grolier,Hyoscyamus,Hyoscyamus,Solanaceae
+f48v,ELV_Grolier,Geum?,Geum,Rosaceae
+f49r,Petersen,Tamus communis (Holm),Tamus,Dioscoreaceae
+f49r,ELV_Grolier,Convolvulus?,Convolvulus,Convolvulaceae
+f49v,Petersen,Lunaria / Cyclamen (Holm),Lunaria,Brassicaceae
+f49v,ELV_Grolier,Lunaria,Lunaria,Brassicaceae
+f50r,Petersen,Artichoke / sunflower?,Helianthus,Asteraceae
+f51r,Petersen,Mandragora (Manley),Mandragora,Solanaceae
+f51v,Petersen,Lycopsis / Verbascum,Lycopsis,Boraginaceae
+f51v,ELV_Grolier,Lycopsis / Symphytum,Lycopsis,Boraginaceae
+f51v,ELV_Beinecke,Lycopsis or allied Boraginaceae,Lycopsis,Boraginaceae
+f51v,TuckerTalbert,Phacelia integrifolia,Phacelia,Boraginaceae
+f52r,ELV_Grolier,Aristolochia?,Aristolochia,Aristolochiaceae
+f52v,ELV_Grolier,Acanthus?,Acanthus,Acanthaceae
+f53r,Petersen,Elecampane,Inula,Asteraceae
+f53r,ELV_Grolier,Inula,Inula,Asteraceae
+f53r,TuckerTalbert,Ambrosia,Ambrosia,Asteraceae
+f53v,Petersen,Hieracium,Hieracium,Asteraceae
+f54r,Petersen,Thistle,Carduus,Asteraceae
+f54r,ELV_Grolier,Carduus?,Carduus,Asteraceae
+f56r,Petersen,Borago / Echium,Borago,Boraginaceae
+f56r,ELV_Grolier,Borago,Borago,Boraginaceae
+f56r,ELV_Beinecke,Borage,Borago,Boraginaceae
+f56r,TuckerTalbert,Phacelia campanularia,Phacelia,Boraginaceae
+f56v,ELV_Grolier,Aristolochia?,Aristolochia,Aristolochiaceae
+f57r,ELV_Grolier,Geranium,Geranium,Geraniaceae
+f57r,TuckerTalbert,Ipomoea nil,Ipomoea,Convolvulaceae
+f65r,Petersen,Filipendula / Oenanthe,Filipendula,Rosaceae
+f65r,ELV_Grolier,Geranium,Geranium,Geraniaceae
+f65v,Petersen,Chamomile,Anthemis,Asteraceae
+f65v,ELV_Grolier,Anthemis,Anthemis,Asteraceae
+f65v,ELV_Beinecke,Chamomile,Anthemis,Asteraceae
+f66v,Petersen,Primula?,Primula,Primulaceae
+f66v,ELV_Grolier,Aristolochia?,Aristolochia,Aristolochiaceae
+f90r1,Petersen,Papaver somniferum (Holm),Papaver,Papaveraceae
+f90r1,ELV_Grolier,Papaver,Papaver,Papaveraceae
+f90r2,Petersen,Artemisia absinthium,Artemisia,Asteraceae
+f90v1,Petersen,Heracleum sphondylium?,Heracleum,Apiaceae
+f93r,Petersen,Helianthus (O'Neill),Helianthus,Asteraceae
+f93r,TuckerTalbert,Helianthus annuus,Helianthus,Asteraceae
+f94r,Petersen,Botrychium,Botrychium,Ophioglossaceae
+f95r1,TuckerTalbert,Actaea rubra,Actaea,Ranunculaceae
+f95v2,Petersen,Actaea (baneberry),Actaea,Ranunculaceae
+f95v2,ELV_Grolier,Actaea?,Actaea,Ranunculaceae
+f95v1,Petersen,Artemisia absinthium,Artemisia,Asteraceae
+f96r,Petersen,Dipsacus / Calendula (O'Neill),Dipsacus,Caprifoliaceae
+f96v,Petersen,Smilax / Chenopodium,Smilax,Smilacaceae
+f96v,TuckerTalbert,Dioscorea mexicana,Dioscorea,Dioscoreaceae
