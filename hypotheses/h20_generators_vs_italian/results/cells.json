@@ -1,0 +1,157 @@
+{
+ "MS_1A": {
+  "kind": "ms",
+  "n_tokens": 10326,
+  "n_pages": 112
+ },
+ "MS_2B": {
+  "kind": "ms",
+  "n_tokens": 10722,
+  "n_pages": 46
+ },
+ "MS_3B": {
+  "kind": "ms",
+  "n_tokens": 10835,
+  "n_pages": 28
+ },
+ "IT_it_dante": {
+  "kind": "ctrl",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "IT_it_sidrach": {
+  "kind": "ctrl",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "IT_it_ariosto": {
+  "kind": "ctrl",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "IT_it_boccaccio": {
+  "kind": "ctrl",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "IT_it_cennini": {
+  "kind": "ctrl",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "IT_it_fioretti": {
+  "kind": "ctrl",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "IT_it_cucina": {
+  "kind": "ctrl",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "IT_it_vitanuova": {
+  "kind": "ctrl",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "IT_it_villani": {
+  "kind": "ctrl",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "GEN_C0_1A": {
+  "kind": "synth",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "GEN_C0_2B": {
+  "kind": "synth",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "GEN_C0_3B": {
+  "kind": "synth",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "GEN_SC_default_s1": {
+  "kind": "synth",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "GEN_SC_default_s2": {
+  "kind": "synth",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "GEN_SC_fitted_s1": {
+  "kind": "synth",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "GEN_SC_fitted_s2": {
+  "kind": "synth",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "ENC_naibbe_it_boccaccio": {
+  "kind": "ciph",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "ENC_syll_it_boccaccio": {
+  "kind": "ciph",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "ENC_novowel_it_boccaccio": {
+  "kind": "ctrl",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "ENC_suspend_it_boccaccio": {
+  "kind": "ctrl",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "ENC_naibbe_it_cucina": {
+  "kind": "ciph",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "ENC_syll_it_cucina": {
+  "kind": "ciph",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "ENC_novowel_it_cucina": {
+  "kind": "ctrl",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "ENC_suspend_it_cucina": {
+  "kind": "ctrl",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "ENC_naibbe_it_sidrach": {
+  "kind": "ciph",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "ENC_syll_it_sidrach": {
+  "kind": "ciph",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "ENC_novowel_it_sidrach": {
+  "kind": "ctrl",
+  "n_tokens": 10500,
+  "n_pages": 70
+ },
+ "ENC_suspend_it_sidrach": {
+  "kind": "ctrl",
+  "n_tokens": 10500,
+  "n_pages": 70
+ }
+}

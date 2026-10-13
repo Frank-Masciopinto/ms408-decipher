@@ -1,0 +1,77 @@
+{
+ "note": "h20 Italian texts: downloaded bytes are git-ignored (data/controls/italian/); only URL + SHA256 here.",
+ "files": [
+  {
+   "id": "it_boccaccio",
+   "file": "boccaccio_decameron_g1_g2.txt",
+   "url": "https://it.wikisource.org/w/api.php (action=parse) Decameron/Giornata prima/Introduzione | Decameron/Giornata prima/Novella prima | Decameron/Giornata prima/Novella seconda ... (22 pages)",
+   "bytes": 755490,
+   "sha256": "9620d926521e6812cf282ebcab4f1a51a0292dc162c7007a52fa277bd1df2cd7",
+   "desc": "Boccaccio, Decameron, Giornate I-II (it.wikisource, transcluded edition text)",
+   "century": "14th",
+   "genre": "prose novellas",
+   "licence": "medieval text, public domain; Wikisource platform text CC BY-SA 4.0",
+   "fetched": "2026-10-13T06:39:25Z"
+  },
+  {
+   "id": "it_cennini",
+   "file": "cennini_libro_dell_arte.txt",
+   "url": "https://it.wikisource.org/w/api.php (action=parse) Il libro dell'arte/Capitolo I | Il libro dell'arte/Capitolo II | Il libro dell'arte/Capitolo III ... (189 pages)",
+   "bytes": 2787898,
+   "sha256": "3a21c61c1bff8932ae8d135c74c134cd25416bd2ac7fe965447334e8056db899",
+   "desc": "Cennino Cennini, Il libro dell'arte (1859 ed., it.wikisource), all chapters",
+   "century": "c.1400",
+   "genre": "workshop recipes",
+   "licence": "medieval text, public domain; Wikisource platform text CC BY-SA 4.0",
+   "fetched": "2026-10-13T06:40:08Z"
+  },
+  {
+   "id": "it_fioretti",
+   "file": "fioretti_san_francesco.txt",
+   "url": "https://it.wikisource.org/w/api.php (action=parse) Fioretti di San Francesco/Capitolo cinquantaduesimo | Fioretti di San Francesco/Capitolo cinquantatreesimo | Fioretti di San Francesco/Capitolo cinquantesimo ... (53 pages)",
+   "bytes": 1041384,
+   "sha256": "4642d0073227f9759902afbec03b2998310861832c63f25d0a93c5fdf6b28998",
+   "desc": "I Fioretti di San Francesco (Cesari 1860 ed., it.wikisource)",
+   "century": "14th",
+   "genre": "religious prose",
+   "licence": "medieval text, public domain; Wikisource platform text CC BY-SA 4.0",
+   "fetched": "2026-10-13T06:40:20Z"
+  },
+  {
+   "id": "it_cucina",
+   "file": "pg33954.txt",
+   "url": "https://www.gutenberg.org/cache/epub/33954/pg33954.txt",
+   "bytes": 183970,
+   "sha256": "124f23ba81ef44756d21dc4e86d1579d4d5a0e8da6304b1d4345fe8ee2146848",
+   "desc": "Il libro della cucina del sec. XIV (Zambrini 1863 ed.; PG #33954)",
+   "century": "14th",
+   "genre": "ricettario (cookery recipes)",
+   "licence": "Project Gutenberg, public domain in the USA",
+   "fetched": "2026-10-13T06:39:10Z"
+  },
+  {
+   "id": "it_vitanuova",
+   "file": "pg71218.txt",
+   "url": "https://www.gutenberg.org/cache/epub/71218/pg71218.txt",
+   "bytes": 163888,
+   "sha256": "1ddfc7c4a1eca519fefa3ce3c7dfb699121dfe425ee78006e47f32ae3883db7a",
+   "desc": "Dante, La vita nuova (PG #71218)",
+   "century": "13th",
+   "genre": "prose + verse",
+   "licence": "Project Gutenberg, public domain in the USA",
+   "fetched": "2026-10-13T06:39:10Z"
+  },
+  {
+   "id": "it_villani",
+   "file": "pg69898.txt",
+   "url": "https://www.gutenberg.org/cache/epub/69898/pg69898.txt",
+   "bytes": 497831,
+   "sha256": "a5e31c4a5013263f405d023d4fd8a3fcdf0c733d379d2ef3b9fc38605f6c629d",
+   "desc": "Matteo Villani, Cronica vol. 1 (PG #69898)",
+   "century": "14th",
+   "genre": "chronicle prose",
+   "licence": "Project Gutenberg, public domain in the USA",
+   "fetched": "2026-10-13T06:39:10Z"
+  }
+ ]
+}
