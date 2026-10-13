@@ -515,3 +515,12 @@ Status key:
 - **Commits:** 814b9e6, (results and log commit)
 - **Status:** closed
 - **Led to:** —
+
+### L40 · 2026-10-13 · h30 line structure per hand
+- **Folder:** [hypotheses/h30_line_structure/](hypotheses/h30_line_structure/)
+- **Question:** is the MS line verse, a list/table entry, or margin-broken prose?
+- **Done:** M1–M6 for 1A, 2B, 3B, 3A plus Dante, Ariosto, Macer, Augustine, Manzoni, Sidrach and Cucina. The nulls permute within the hand|quire stratum (positional MI and paragraph onsets) or shuffle lines within a page (across-line MI). Held-out bag, positional, bigram and HMM models.
+- **Result:** L1, L3 and L4 pass for 1A, 2B and 3B: no rhyme, CV .26–.44, END→ONSET dependency within lines but not across breaks, gallows paragraph onsets (JS .41–.57). L2 passes for 1A and 3B, and 2B misses it at the threshold. L5 fails for all hands (position gain .03–.04 bits/token). 3A has only 80 lines and is underpowered.
+- **Commits:** f137ec3 (prereg), (code + results + docs commit)
+- **Status:** closed
+- **Led to:** entry-level model (paragraph → body → line-final marker)
