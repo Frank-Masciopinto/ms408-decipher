@@ -357,3 +357,19 @@ Status key:
 - **Commits:** 2726c9e, a71ad8b, 44b3838, (FINDINGS/README/log commit)
 - **Status:** closed
 - **Led to:** —
+
+### L30 · 2026-10-13 08:32–09:20 · h20 generators and Italian encodings vs the MS likelihood fingerprint
+- **Folder:** [hypotheses/h20_generators_vs_italian/](hypotheses/h20_generators_vs_italian/)
+- **Question:** which condition reproduces MS 408's held-out fingerprint from h19 (no n-gram gain, cache gain of real-text size, a 5-word copy rate, char-level dominance)? Italian is the primary real-language reference.
+- **Done:**
+  - 9 Italian texts, with a new download script and manifest (texts git-ignored).
+  - h12 C0 engine per hand; Timm–Schinner self-citation (authors' Java).
+  - Italian through Naibbe, a syllabic cipher, vowel removal and suspension.
+  - Added a position-conditioned char LM (PCLM); `rapidfuzz` became a project dependency.
+- **Result:**
+  - Only C0 (2B, 3B) reproduces all five statistics; self-citation reaches up to 4/5.
+  - No Italian text or Italian encoding reproduces. Italian keeps an n-gram gain of +0.24 to +1.42 bits/word; Naibbe-Italian lacks local repetition.
+  - P1–P4 and P6 pass; P5 fails on its threshold.
+- **Commits:** 38ae92c, ba444aa, (FINDINGS/README/log commit)
+- **Status:** closed
+- **Led to:** —
