@@ -1,0 +1,6 @@
+done A_cucina_syll_K8_shuf_r0.7
+done A_cennini_syll_K8_noshuf_r0.7
+done A_cennini_syll_K8_shuf_r0.7
+done A_cucina_syll_K8_noshuf_r0.7
+done A_sidrach_syll_K8_shuf_r0.7
+done A_sidrach_syll_K8_noshuf_r0.7
