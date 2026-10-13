@@ -18,7 +18,7 @@ import requests
 HERE = Path(__file__).resolve().parent; ROOT = HERE.parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 OUT = ROOT / "data" / "controls" / "italian"; MAN = HERE / "data" / "ITALIAN_MANIFEST.json"
-UA = "msdecipher/0.1 (research tool; +https://github.com/Frank-Masciopinto/ms408-decipher)"
+UA = "msdecipher/0.1 (research tool; +https://github.com/Frank-Masciopinto/voynich-manuscript-decipher)"
 WS = "https://it.wikisource.org/w/api.php"
 NUM = ["prima", "seconda", "terza", "quarta", "quinta", "sesta", "settima", "ottava", "nona", "decima"]
 

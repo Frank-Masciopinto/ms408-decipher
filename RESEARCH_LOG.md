@@ -405,3 +405,19 @@ Status key:
 - **Commits:** b37c88b, da1c19d, (FINDINGS/README/log commit)
 - **Status:** closed
 - **Led to:** —
+
+### L33 · 2026-10-13 13:45–14:35 · h23 copy-rule variants and hand 2B diagnostics
+- **Folder:** [hypotheses/h23_copy_rule_variants/](hypotheses/h23_copy_rule_variants/)
+- **Question:** can a copy rule raise the 5-word copy rate without lowering word-vs-char dominance (D4)? What makes 2B distinct?
+- **Done:**
+  - 7 copy rules × 3 copy rates on Naibbe-Boccaccio; syllabic secondary.
+  - Top-2 transfer to Cucina, Sidrach and Cennini.
+  - 2B diagnostics: descriptives, size-matched section subsets, -edy removed.
+- **Result:**
+  - Suffix-swap copying at 5 % gives 5/5 on Boccaccio (distance 3.0) and 4/5 on all transfers (D4 just out); within-line copying gives 5/5 on Cennini. Distances are in the C0 range.
+  - So the fingerprint does not separate cipher + copying from a generator.
+  - 2B's low bits/glyph sits in biological pages and in -edy.
+  - RA1, RA2, RA4, RA5 and RB2 pass; RA3 and RB1 fail.
+- **Commits:** 1d5d29c, 346606e, (FINDINGS/README/log commit; also repo rename URLs and README title)
+- **Status:** closed
+- **Led to:** —
