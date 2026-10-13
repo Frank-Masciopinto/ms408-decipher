@@ -1,0 +1,10 @@
+todo 9
+done X_cucina_homo2_inline_c0.03_s2
+done X_cucina_homo2_inline_c0.03_s3
+done X_cucina_homo2_inline_c0.03_s1
+done X_cennini_homo2_inline_c0.03_s1
+done X_sidrach_homo2_inline_c0.03_s3
+done X_sidrach_homo2_inline_c0.03_s1
+done X_sidrach_homo2_inline_c0.03_s2
+done X_cennini_homo2_inline_c0.03_s3
+done X_cennini_homo2_inline_c0.03_s2

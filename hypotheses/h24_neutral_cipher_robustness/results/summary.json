@@ -1,0 +1,164 @@
+{
+ "predictions": {
+  "S1": {
+   "rate5": 0.35,
+   "n": 20,
+   "dist": [
+    3.6105429332947905,
+    3.2144091339422562,
+    4.006676732647325
+   ],
+   "by_rule": [
+    {
+     "variant": "inline",
+     "c": 0.03,
+     "n": 20,
+     "rate5": 0.15,
+     "rate4": 1.0,
+     "dist_mean": 3.167,
+     "dist_lo": 2.728,
+     "dist_hi": 3.606,
+     "D4": -0.099,
+     "D5": 1.808,
+     "D3": 0.031,
+     "signal": 0.974
+    },
+    {
+     "variant": "swap",
+     "c": 0.05,
+     "n": 20,
+     "rate5": 0.35,
+     "rate4": 1.0,
+     "dist_mean": 3.611,
+     "dist_lo": 3.214,
+     "dist_hi": 4.007,
+     "D4": -0.087,
+     "D5": 1.825,
+     "D3": 0.023,
+     "signal": 0.951
+    },
+    {
+     "variant": "unit",
+     "c": 0.05,
+     "n": 20,
+     "rate5": 0.35,
+     "rate4": 1.0,
+     "dist_mean": 3.541,
+     "dist_lo": 3.197,
+     "dist_hi": 3.886,
+     "D4": -0.085,
+     "D5": 1.865,
+     "D3": 0.021,
+     "signal": 0.956
+    }
+   ],
+   "pass_": false
+  },
+  "S2": {
+   "max_n_nocopy": 3,
+   "pass_": true
+  },
+  "S3": {
+   "best": [
+    "homo2",
+    "inline",
+    0.03
+   ],
+   "best_dist": [
+    126.45769195134035,
+    121.45510317261538,
+    131.46028073006534
+   ],
+   "best_rate5": 0.0,
+   "best_rate4": 0.0,
+   "settings_with_5of5": [],
+   "transfer": [
+    {
+     "src": "it_cennini",
+     "n": 3,
+     "rate5": 0.0,
+     "rate4": 0.0,
+     "dist_mean": 123.464,
+     "dist_lo": 106.665,
+     "dist_hi": 140.264,
+     "D4": -0.121,
+     "D5": 3.387,
+     "D3": 0.05,
+     "signal": 0.972
+    },
+    {
+     "src": "it_cucina",
+     "n": 3,
+     "rate5": 0.0,
+     "rate4": 0.0,
+     "dist_mean": 88.624,
+     "dist_lo": 82.816,
+     "dist_hi": 94.433,
+     "D4": -0.047,
+     "D5": 3.18,
+     "D3": 0.042,
+     "signal": 0.972
+    },
+    {
+     "src": "it_sidrach",
+     "n": 3,
+     "rate5": 0.0,
+     "rate4": 0.0,
+     "dist_mean": 189.78,
+     "dist_lo": 169.834,
+     "dist_hi": 209.726,
+     "D4": -0.358,
+     "D5": 3.624,
+     "D3": 0.067,
+     "signal": 0.973
+    }
+   ],
+   "survives": false,
+   "any5": false,
+   "pass_": false
+  },
+  "S4": {
+   "min_dist_by_family": {
+    "homo": 125.65,
+    "nome": 1045.22,
+    "verb": 1276.22
+   },
+   "pass_": false
+  },
+  "S5": {
+   "D5": {
+    "H_1A_herb0": 1.954,
+    "H_1A_herbS0": 2.022,
+    "H_1A_herbS1": 2.007,
+    "H_2B_bio": 1.684,
+    "H_2B_herb": 1.99,
+    "H_2B_nonbio": 1.953,
+    "H_3B_stars0": 1.927,
+    "H_3B_stars1": 1.815
+   },
+   "D1": {
+    "H_1A_herb0": -0.181,
+    "H_1A_herbS0": -0.215,
+    "H_1A_herbS1": -0.187,
+    "H_2B_bio": -0.16,
+    "H_2B_herb": -0.183,
+    "H_2B_nonbio": -0.176,
+    "H_3B_stars0": -0.199,
+    "H_3B_stars1": -0.166
+   },
+   "n_tokens": {
+    "H_1A_herb0": 4440.0,
+    "H_1A_herbS0": 2299.0,
+    "H_1A_herbS1": 2317.0,
+    "H_2B_bio": 4624.0,
+    "H_2B_herb": 2313.0,
+    "H_2B_nonbio": 4517.0,
+    "H_3B_stars0": 4461.0,
+    "H_3B_stars1": 4527.0
+   },
+   "herb_2B_minus_1A": -0.024644842528947164,
+   "section_effect": true,
+   "hand_effect": false
+  }
+ }
+}
