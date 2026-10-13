@@ -470,7 +470,7 @@ Status key:
   - The real Naibbe tables in the same engine give 3.43. So the match depends on the hand-designed tables.
   - Word length is the top property (ρ +0.85).
   - G1–G5 all fail.
-- **Commits:** b66763a, ed4398d, 7cd2011, (results commit), (FINDINGS/README/log commit)
+- **Commits:** b66763a, ed4398d, 7cd2011, b11119f, 47d2f5e
 - **Status:** closed
 - **Led to:** —
 
