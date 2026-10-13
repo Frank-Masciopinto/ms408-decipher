@@ -1,0 +1,33 @@
+unit_change_share 0.755072 (1563/2070)
+boccaccio_tokens 61623
+score T_boccaccio_letter_s1 n_swap=1045 signal=0.9503
+done T_boccaccio_letter_s1 36.9s
+score T_boccaccio_letter_s2 n_swap=1061 signal=0.9508
+done T_boccaccio_letter_s2 40.5s
+score T_boccaccio_letter_s3 n_swap=1014 signal=0.9524
+done T_boccaccio_letter_s3 40.1s
+score T_boccaccio_letter_s4 n_swap=1061 signal=0.9510
+done T_boccaccio_letter_s4 40.9s
+score T_boccaccio_letter_s5 n_swap=993 signal=0.9528
+done T_boccaccio_letter_s5 38.6s
+score T_boccaccio_state_s1 n_swap=1043 signal=0.9509
+done T_boccaccio_state_s1 35.5s
+score T_boccaccio_state_s2 n_swap=1056 signal=0.9507
+done T_boccaccio_state_s2 34.8s
+score T_boccaccio_state_s3 n_swap=1004 signal=0.9525
+done T_boccaccio_state_s3 33.4s
+score T_boccaccio_state_s4 n_swap=1067 signal=0.9510
+done T_boccaccio_state_s4 31.5s
+score T_boccaccio_state_s5 n_swap=990 signal=0.9530
+done T_boccaccio_state_s5 32.5s
+score T_boccaccio_unit_s1 n_swap=1032 signal=0.9512
+done T_boccaccio_unit_s1 30.7s
+score T_boccaccio_unit_s2 n_swap=1053 signal=0.9508
+done T_boccaccio_unit_s2 30.5s
+score T_boccaccio_unit_s3 n_swap=1005 signal=0.9529
+done T_boccaccio_unit_s3 30.3s
+score T_boccaccio_unit_s4 n_swap=1068 signal=0.9510
+done T_boccaccio_unit_s4 29.5s
+score T_boccaccio_unit_s5 n_swap=994 signal=0.9527
+done T_boccaccio_unit_s5 29.2s
+runtime_sec 516.7

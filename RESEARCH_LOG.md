@@ -22,6 +22,7 @@ Status key:
   - Section vocabulary is not above drift once quires are resampled (h08, h10).
 - **Copy-modify:** the copy step is inert in per-hand copy-modify fits; the gain comes from the word grammar (h12).
 - **Italian plaintext under the real Naibbe tables (h27):** shuffling Boccaccio, or replacing it with Zipf nonsense on the same letter frequencies, leaves the likelihood-fingerprint match. The tables and the copy layer carry it. The plaintext does not.
+- **One cut of the Naibbe tables (h28):** shuffling which letter owns which string, which strings are prefixes versus suffixes, or the order of units inside each string each takes the fingerprint outside the match rule. The order cut is the large one. No one of the three is the sole carrier.
 
 ## Open leads
 - **Line structure (h13–h16):**
@@ -482,6 +483,20 @@ Status key:
   - Bifolium distance 3.432 (real), 3.294 (shuffle), 2.808 (zipf). Each is ≥4/5 in 5/5 seeds.
   - The real arm matches the h26 anchor seeds exactly, so the engine path is the same one.
   - P1 and P3 pass; P2 fails. Plaintext structure is not what carries the match. The predicted split between word order and spelling does not appear.
+- **Commits:** 814b9e6, (results and log commit)
+- **Status:** closed
+- **Led to:** L38
+
+### L38 · 2026-10-13 18:39 · h28 permutations of the real Naibbe tables
+- **Folder:** [hypotheses/h28_table_permutation/](hypotheses/h28_table_permutation/)
+- **Question:** which level of the author's tables carries the h26 match: the letter-to-string mapping, the prefix/suffix split, or the order inside each string?
+- **Done:**
+  - Pre-registered, then 15 Boccaccio cells. Real tables permuted three ways (letter, state, unit), then the h27 engine and 5% suffix-swap copy.
+  - The original table file was not modified. The h26 anchor was not recomputed.
+- **Result:**
+  - Bifolium distance 21.96 (letter), 27.50 (state), 143.08 (unit). None matches (rule: distance ≤ 5.43 and ≥4/5 in ≥60% of seeds).
+  - Letter and state still reach ≥4/5 in 4/5 seeds. The miss is D4 in every seed (−0.39 and −0.45). The unit shuffle also misses D4 (−1.12) and D5 in 3/5 seeds. Unit order changed in 75.5% of strings.
+  - A1 fails; A2 and A3 pass. The pre-registered reading is that no single one of these three cuts is the carrier.
 - **Commits:** 814b9e6, (results and log commit)
 - **Status:** closed
 - **Led to:** —

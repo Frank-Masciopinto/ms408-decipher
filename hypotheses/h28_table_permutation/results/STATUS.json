@@ -1,0 +1,56 @@
+{
+  "predictions": {
+    "A1": {
+      "pass": false,
+      "cond": "letter",
+      "matches": false,
+      "dist_mean": 21.9584535881124,
+      "dist_lo": 17.80464018854706,
+      "dist_hi": 26.112266987677735,
+      "rate4": 0.8,
+      "rate5": 0.0,
+      "n": 5
+    },
+    "A2": {
+      "pass": true,
+      "cond": "state",
+      "matches": false,
+      "dist_mean": 27.498357037496618,
+      "dist_lo": 19.864992357079327,
+      "dist_hi": 35.131721717913905,
+      "rate4": 0.8,
+      "rate5": 0.0,
+      "n": 5
+    },
+    "A3": {
+      "pass": true,
+      "cond": "unit",
+      "matches": false,
+      "dist_mean": 143.07746832775496,
+      "dist_lo": 124.83867509159825,
+      "dist_hi": 161.31626156391167,
+      "rate4": 0.4,
+      "rate5": 0.0,
+      "n": 5
+    }
+  },
+  "dist_mean": {
+    "letter": 21.9584535881124,
+    "state": 27.498357037496618,
+    "unit": 143.07746832775496
+  },
+  "rate4": {
+    "letter": 0.8,
+    "state": 0.8,
+    "unit": 0.4
+  },
+  "rate5": {
+    "letter": 0.0,
+    "state": 0.0,
+    "unit": 0.0
+  },
+  "unit_change_share": 0.755072463768116,
+  "reading": "none",
+  "tests_passed": true,
+  "runtime_sec": 516.7173900870002
+}
