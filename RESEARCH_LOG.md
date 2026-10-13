@@ -406,7 +406,7 @@ Status key:
 - **Status:** closed
 - **Led to:** —
 
-### L33 · 2026-10-13 13:45–14:35 · h23 copy-rule variants and hand 2B diagnostics
+### L33 · 2026-10-13 13:45–14:07 · h23 copy-rule variants and hand 2B diagnostics
 - **Folder:** [hypotheses/h23_copy_rule_variants/](hypotheses/h23_copy_rule_variants/)
 - **Question:** can a copy rule raise the 5-word copy rate without lowering word-vs-char dominance (D4)? What makes 2B distinct?
 - **Done:**
