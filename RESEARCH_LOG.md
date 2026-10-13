@@ -438,3 +438,19 @@ Status key:
 - **Commits:** f327363, 381f275, (README fix), (FINDINGS/README/log/rename commit)
 - **Status:** closed
 - **Led to:** —
+
+### L35 · 2026-10-13 14:55–16:22 · h25 neutral hybrid cipher (Naibbe structure, random tables)
+- **Folder:** [hypotheses/h25_neutral_hybrid_cipher/](hypotheses/h25_neutral_hybrid_cipher/)
+- **Question:** is Naibbe's design alone, with random non-MS tables, enough to reach the MS fingerprint? Which structural parameter matters most?
+- **Done:**
+  - 138 cells: baseline × 4 copy conditions, × 4 sources, × char/EVA-like rendering; 9 one-at-a-time variants.
+  - Base seeds reduced from 10 to 6 for runtime after an interruption.
+- **Result:**
+  - No 5/5 anywhere; the best is long codes without copying (distance 8.9, 3/5).
+  - Copying worsens NH, and EVA rendering wrecks D4.
+  - The number of tables has the largest effect.
+  - So the Naibbe match is carried by its MS-like tables.
+  - T2, T3 and T5 pass; T1 and T4 fail.
+- **Commits:** be8e60e, c30b486, (FINDINGS/README/log commit)
+- **Status:** closed
+- **Led to:** —

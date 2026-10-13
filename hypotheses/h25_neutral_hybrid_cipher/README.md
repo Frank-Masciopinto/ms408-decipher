@@ -37,7 +37,7 @@ Naibbe-Italian plus copying is close to MS (h23/h24), but ciphers that were not 
 | *best h24 neutral cipher* | | 0 | 0 | ≥ 89 | | | | |
 | *C0 cross-hand (h21/h22)* | 30 | 100 % | 93 % | 1.9–6.0 | | | | |
 
-- **No NH cell reaches 5/5** in any seed, segmentation or source (154 cells on bifolium folds; 7 reach 5/5 on the wider quire range). Sixteen cells reach 4/5, all without copying or with EVA rendering.
+- **No NH cell reaches 5/5** in any seed, segmentation or source (138 cells on bifolium folds; 7 reach 5/5 on the wider quire range). Sixteen cells reach 4/5, all without copying or with EVA rendering.
 - **Transfer of NH base** (char segmentation, no copy): Cucina, Sidrach and Cennini come out at 18.8–19.3, with ≥ 4/5 in 0–50 % of seeds.
 - **Copying hurts NH.** Random short codes already collide, so NH without copying has a cache gain and copy rate at or above MS (D2 0.25, λ5 0.05). Adding the copy layer overshoots, and D4 falls. Naibbe needed copying because its MS-like tables have few collisions.
 - **The EVA rendering** fixes bits/glyph: |D5 − MS| falls from 0.46 to 0.18. But it wrecks D4 (−0.75 to −2.6). Spelled out in EVA units, random codes are long and have no internal glyph regularity, so character models pay many bits per word. Naibbe's tables have exactly that regularity (MS-like glyph sequences such as *qokchdy*, *chey*), and NH cannot reproduce it.
