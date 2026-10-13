@@ -1,0 +1,7 @@
+todo 6
+done A_sidrach_naibbe_c0.05_W20_clean
+done A_cucina_naibbeShuf_c0.05_W20_clean
+done A_cennini_naibbe_c0.05_W20_clean
+done A_sidrach_naibbeShuf_c0.05_W20_clean
+done A_cucina_naibbe_c0.05_W20_clean
+done A_cennini_naibbeShuf_c0.05_W20_clean
