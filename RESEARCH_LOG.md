@@ -23,6 +23,7 @@ Status key:
 - **Copy-modify:** the copy step is inert in per-hand copy-modify fits; the gain comes from the word grammar (h12).
 - **Italian plaintext under the real Naibbe tables (h27):** shuffling Boccaccio, or replacing it with Zipf nonsense on the same letter frequencies, leaves the likelihood-fingerprint match. The tables and the copy layer carry it. The plaintext does not.
 - **One cut of the Naibbe tables (h28):** shuffling which letter owns which string, which strings are prefixes versus suffixes, or the order of units inside each string each takes the fingerprint outside the match rule. The order cut is the large one. No one of the three is the sole carrier.
+- **A decodable toy table hitting MS's D4 window (h29):** three length × suffix-pool settings are ≥0.8 decodable and clear the D4 floor of −0.07, but their D4 (+0.38 to +0.48) is above the MS band. No setting of the 25 reproduces the five-statistic fingerprint.
 
 ## Open leads
 - **Line structure (h13–h16):**
@@ -497,6 +498,20 @@ Status key:
   - Bifolium distance 21.96 (letter), 27.50 (state), 143.08 (unit). None matches (rule: distance ≤ 5.43 and ≥4/5 in ≥60% of seeds).
   - Letter and state still reach ≥4/5 in 4/5 seeds. The miss is D4 in every seed (−0.39 and −0.45). The unit shuffle also misses D4 (−1.12) and D5 in 3/5 seeds. Unit order changed in 75.5% of strings.
   - A1 fails; A2 and A3 pass. The pre-registered reading is that no single one of these three cuts is the carrier.
+- **Commits:** 814b9e6, (results and log commit)
+- **Status:** closed
+- **Led to:** L39
+
+### L39 · 2026-10-13 19:16 · h29 D4 toys and stored-cell correlations
+- **Folder:** [hypotheses/h29_d4_toy_tables/](hypotheses/h29_d4_toy_tables/)
+- **Question:** which stored property tracks the fingerprint distance, and can a two-knob toy table be both decodable and above the D4 floor of −0.07?
+- **Done:**
+  - Spearman on the committed h26, h25, and h24 bifolium tables. No new ciphertext for that part.
+  - 25 toy cells: code length L from 1 to 5, suffix-pool size V in {8, 16, 32, 64, 128}, one seed, character segmentation, no copy layer. Bifolium only.
+- **Result:**
+  - On 66 h26 cells, mean word length has the largest correlation with distance (ρ +0.85) and moves against D4 (ρ −0.81). R1 passes.
+  - Three cells are ≥0.8 decodable and have D4 ≥ −0.07 (L=3 with V=64 and V=128, L=4 with V=128). Their D4 is +0.38 to +0.48, above the MS window, so T1 fails and none of them is a two-sided D4 match.
+  - ρ(D4, V) is +0.11, so T2 fails. No cell is 5/5. The closest are L=2, V=16 and V=32 (4/5, distance 12.7 and 16.8), both under 0.51 decodable.
 - **Commits:** 814b9e6, (results and log commit)
 - **Status:** closed
 - **Led to:** —
