@@ -373,3 +373,18 @@ Status key:
 - **Commits:** 38ae92c, ba444aa, (FINDINGS/README/log commit)
 - **Status:** closed
 - **Led to:** —
+
+### L31 · 2026-10-13 09:30–10:10 · h21 order-breaking Italian encodings and cross-hand C0
+- **Folder:** [hypotheses/h21_italian_order_breaking_and_cross_hand/](hypotheses/h21_italian_order_breaking_and_cross_hand/)
+- **Question:** can Italian that is encoded to break word order but keep local repetition reproduce the h20 fingerprint, and how contrived must it be? Does C0's match survive fitting on other hands?
+- **Done:**
+  - Within-line shuffle, nulls drawn from MS 2B tokens, recency homophones and Naibbe, applied to Boccaccio, Cucina, Sidrach and Cennini: 24 base cells.
+  - An 18-setting grid on Boccaccio, with the top 2 settings transferred to the other sources.
+  - C0 fitted per hand (seeds 20 and 21) and on pooled other hands, point-matched across hands.
+- **Result:**
+  - Shuffling removes the n-gram gain, but char dominance and bits/glyph stay non-MS. The best encoding, Naibbe plus 33 % nulls, reaches 3/5; the best grid setting reaches 1–2/5 on bifolium folds.
+  - Cross-hand C0 stays inside the MS range but point-matches unseen hands unevenly.
+  - PA1, PA2 and PB3 pass; PA3, PB1 and PB2 fail.
+- **Commits:** 2408d3e, 5d2852a, (FINDINGS/README/log commit)
+- **Status:** closed
+- **Led to:** —
