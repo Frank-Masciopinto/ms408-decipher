@@ -454,3 +454,19 @@ Status key:
 - **Commits:** be8e60e, c30b486, (FINDINGS/README/log commit)
 - **Status:** closed
 - **Led to:** —
+
+### L36 · 2026-10-13 16:56–17:20 · h26 Naibbe-structure cipher with glyph-grammar tables
+- **Folder:** [hypotheses/h26_neutral_glyph_grammar_tables/](hypotheses/h26_neutral_glyph_grammar_tables/)
+- **Question:** is any orderly word-internal glyph grammar in the tables enough to reach MS's fingerprint, or only an MS-like one? Which property matters?
+- **Done:**
+  - 71 Boccaccio cells (RS slot grammars and variants, Latin chain, MS chain; ± swap; EVA-like rendering).
+  - Real-Naibbe-tables anchor (10 cells, diagnostic).
+  - Transfer (18 cells).
+- **Result:**
+  - No grammar-generated tables match; even the MS-trained chain fails (94–103).
+  - The real Naibbe tables in the same engine give 3.43. So the match depends on the hand-designed tables.
+  - Word length is the top property (ρ +0.85).
+  - G1–G5 all fail.
+- **Commits:** b66763a, ed4398d, 7cd2011, (results commit), (FINDINGS/README/log commit)
+- **Status:** closed
+- **Led to:** —
