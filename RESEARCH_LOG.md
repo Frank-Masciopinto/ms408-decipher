@@ -539,3 +539,17 @@ Status key:
 - **Commits:** e97c4d1 (prereg), 9432f07 (code + results), (docs commit)
 - **Status:** lead (junction dependence)
 - **Led to:** a junction-rule generator, and line-position controls for A1
+
+### L42 · 2026-10-13 22:20 · h32 shared spelling system between hands
+- **Folder:** [hypotheses/h32_hand_spelling_system/](hypotheses/h32_hand_spelling_system/)
+- **Question:** how much of the hand 1A vs 2B difference is a mappable spelling system once section is held fixed, and do the hands write the same content in different spelling?
+- **Done:**
+  - Pre-registered, then learned up to 30 context-dependent unit rewrite rules (word edge or neighbouring unit as context) on herbal 1A vs herbal 2B (and 3B), scored on held-out page halves over 5 splits, against h11's rules on the same splits, same-hand cross-section gaps, split halves and 20 permuted-hand controls.
+  - Mapped 2B herbal into 1A spelling and ran Smith-Waterman on every 2B×1A page pair (200 shuffles each), shared bigram/trigram counts, and a same-plant-family profile test (h17 families).
+- **Result:**
+  - The transducer closes 29.3 % ± 1.3 % of the section-matched gap (h11 22.7 %; permuted hands ≤ 7.1 %; same hand cross-section 3.3–15.2 %). With 10 rules it is no better than h11 (23.2 %). 70.7 % remains, so most of the difference is vocabulary.
+  - No same-content signal: 0 of 1900 page pairs align beyond shuffles after BH; mapped n-gram sharing is at the shuffle level (bigram ratio 0.98, against 1.22 within 1A); same-family pages are not more alike (p = 0.90).
+  - Only four rules recur across splits (`#ai→dai`, `-edy→-ol`, `#a→cho`, `chd→ch`). They are word-edge habits; the rest is a split-specific tail. P1–P3 pass, S1 fails, Q1 partial.
+- **Commits:** 299b769 (prereg), ac8a559 (code), a9ed537 (results + README), (log commit)
+- **Status:** closed (same content); lead (word-edge habits)
+- **Led to:** an EM-trained weighted FST on word-pair alignments, and checking whether the four edge habits coincide with h30's line-edge rules
