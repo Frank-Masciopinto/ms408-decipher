@@ -21,6 +21,7 @@ Status key:
   - A topic-plaintext codebook doesn't predict an unseen section better than a setting switch or a global baseline (h07).
   - Section vocabulary is not above drift once quires are resampled (h08, h10).
 - **Copy-modify:** the copy step is inert in per-hand copy-modify fits; the gain comes from the word grammar (h12).
+- **Italian plaintext under the real Naibbe tables (h27):** shuffling Boccaccio, or replacing it with Zipf nonsense on the same letter frequencies, leaves the likelihood-fingerprint match. The tables and the copy layer carry it. The plaintext does not.
 
 ## Open leads
 - **Line structure (h13–h16):**
@@ -468,5 +469,19 @@ Status key:
   - Word length is the top property (ρ +0.85).
   - G1–G5 all fail.
 - **Commits:** b66763a, ed4398d, 7cd2011, (results commit), (FINDINGS/README/log commit)
+- **Status:** closed
+- **Led to:** —
+
+### L37 · 2026-10-13 18:36 · h27 real Naibbe tables with the plaintext removed
+- **Folder:** [hypotheses/h27_plaintext_ablation/](hypotheses/h27_plaintext_ablation/)
+- **Question:** with the author's tables and a 5% suffix-swap copy held fixed, does the fingerprint still appear if the plaintext is not Italian?
+- **Done:**
+  - Pre-registered, then 15 Boccaccio cells: real tokens, the same tokens shuffled, and Zipf nonsense (4000 types, Italian letter unigrams, Zipf ranks).
+  - Same engine and seeds as the h26 real-table anchor. Bifolium primary; quire also scored.
+- **Result:**
+  - Bifolium distance 3.432 (real), 3.294 (shuffle), 2.808 (zipf). Each is ≥4/5 in 5/5 seeds.
+  - The real arm matches the h26 anchor seeds exactly, so the engine path is the same one.
+  - P1 and P3 pass; P2 fails. Plaintext structure is not what carries the match. The predicted split between word order and spelling does not appear.
+- **Commits:** 814b9e6, (results and log commit)
 - **Status:** closed
 - **Led to:** —

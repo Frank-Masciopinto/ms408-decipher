@@ -1,0 +1,21 @@
+{
+ "runtime_sec": 750.3146568289999,
+ "wall_sec_this_process": 750.3146568289999,
+ "cells": {
+  "P_boccaccio_real_s1": 49.28383548000011,
+  "P_boccaccio_real_s2": 49.46908884200002,
+  "P_boccaccio_real_s3": 50.40153120600007,
+  "P_boccaccio_real_s4": 50.17891775700036,
+  "P_boccaccio_real_s5": 50.286282476999986,
+  "P_boccaccio_shuffle_s1": 50.86031030000004,
+  "P_boccaccio_shuffle_s2": 49.38468767999984,
+  "P_boccaccio_shuffle_s3": 49.473803580000094,
+  "P_boccaccio_shuffle_s4": 49.18628349899973,
+  "P_boccaccio_shuffle_s5": 48.791459039000074,
+  "P_boccaccio_zipf_s1": 50.31587334100004,
+  "P_boccaccio_zipf_s2": 49.77902686300013,
+  "P_boccaccio_zipf_s3": 51.526142729000185,
+  "P_boccaccio_zipf_s4": 48.20588067999961,
+  "P_boccaccio_zipf_s5": 53.125176523999926
+ }
+}
