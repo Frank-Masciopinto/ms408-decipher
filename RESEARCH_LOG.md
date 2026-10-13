@@ -388,3 +388,20 @@ Status key:
 - **Commits:** 2408d3e, 5d2852a, (FINDINGS/README/log commit)
 - **Status:** closed
 - **Led to:** —
+
+### L32 · 2026-10-13 10:12–10:35 · h22 Italian cipher plus a generic copy-and-modify layer
+- **Folder:** [hypotheses/h22_italian_cipher_plus_copy/](hypotheses/h22_italian_cipher_plus_copy/)
+- **Question:** is local copying the one ingredient missing from Italian encodings? How much plaintext signal survives it? Is hand 2B genuinely distinct?
+- **Done:**
+  - Copy layer (c × W grid, edits not fitted to MS) on Naibbe, Naibbe+nulls, syllabic+nulls and Naibbe+shuffle, with clean vs leaky nulls.
+  - Top-2 transfer to Cucina, Sidrach and Cennini; plaintext recovery (signal share, oracle decoding, MI).
+  - Cross-hand C0 with 5 seeds.
+- **Result:**
+  - Naibbe + 5 % copying (W = 20) reaches 4/5 on all four sources, at distance 5.4–7.9; it fails only D4, and nothing reaches 5/5 on bifolium folds.
+  - The h21 null benefit was mostly the MS leak.
+  - The plaintext signal largely survives.
+  - Blind C0 fits never match 2B (but match 1A every time).
+  - QA1–QA3, QA6 and QB1 pass; QA4 and QA5 fail.
+- **Commits:** b37c88b, da1c19d, (FINDINGS/README/log commit)
+- **Status:** closed
+- **Led to:** —
