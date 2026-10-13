@@ -1,0 +1,347 @@
+{
+ "predictions": {
+  "T1": {
+   "base_swap": {
+    "char": {
+     "rate4": 0.0,
+     "rate5": 0.0,
+     "dist": [
+      54.56444230071102,
+      43.862132073704416,
+      65.26675252771763
+     ],
+     "dist_min": 45.21098021714084
+    },
+    "eva": {
+     "rate4": 0.5,
+     "rate5": 0.0,
+     "dist": [
+      67.50226814826715,
+      53.55739225293418,
+      81.44714404360012
+     ],
+     "dist_min": 54.05766203864497
+    }
+   },
+   "any5_NH_copy": 0,
+   "five_cells": [],
+   "T1_holds": false,
+   "design_enough": false
+  },
+  "T2": {
+   "nocopy": [
+    {
+     "src": "it_boccaccio",
+     "variant": "A15",
+     "render": "char",
+     "dist_mean": 18.98,
+     "nmax": 3
+    },
+    {
+     "src": "it_boccaccio",
+     "variant": "A25",
+     "render": "char",
+     "dist_mean": 15.39,
+     "nmax": 4
+    },
+    {
+     "src": "it_boccaccio",
+     "variant": "T1",
+     "render": "char",
+     "dist_mean": 92.45,
+     "nmax": 1
+    },
+    {
+     "src": "it_boccaccio",
+     "variant": "T3",
+     "render": "char",
+     "dist_mean": 12.51,
+     "nmax": 2
+    },
+    {
+     "src": "it_boccaccio",
+     "variant": "base",
+     "render": "char",
+     "dist_mean": 17.94,
+     "nmax": 4
+    },
+    {
+     "src": "it_boccaccio",
+     "variant": "base",
+     "render": "eva",
+     "dist_mean": 75.62,
+     "nmax": 2
+    },
+    {
+     "src": "it_boccaccio",
+     "variant": "long",
+     "render": "char",
+     "dist_mean": 8.93,
+     "nmax": 3
+    },
+    {
+     "src": "it_boccaccio",
+     "variant": "p30",
+     "render": "char",
+     "dist_mean": 13.28,
+     "nmax": 3
+    },
+    {
+     "src": "it_boccaccio",
+     "variant": "p70",
+     "render": "char",
+     "dist_mean": 13.18,
+     "nmax": 4
+    },
+    {
+     "src": "it_boccaccio",
+     "variant": "short",
+     "render": "char",
+     "dist_mean": 19.5,
+     "nmax": 4
+    },
+    {
+     "src": "it_boccaccio",
+     "variant": "uniform",
+     "render": "char",
+     "dist_mean": 16.08,
+     "nmax": 4
+    },
+    {
+     "src": "it_cennini",
+     "variant": "base",
+     "render": "char",
+     "dist_mean": 19.16,
+     "nmax": 4
+    },
+    {
+     "src": "it_cucina",
+     "variant": "base",
+     "render": "char",
+     "dist_mean": 19.34,
+     "nmax": 3
+    },
+    {
+     "src": "it_sidrach",
+     "variant": "base",
+     "render": "char",
+     "dist_mean": 18.76,
+     "nmax": 4
+    }
+   ],
+   "pass_": true
+  },
+  "T3": {
+   "absdiff_D5": {
+    "char": 0.45922278336958283,
+    "eva": 0.1803442366247335
+   },
+   "D5": {
+    "char": 2.4476390592390245,
+    "eva": 1.8080720392447087
+   },
+   "pass_": true
+  },
+  "T4": {
+   "dist": {
+    "A15": {
+     "none": 18.98,
+     "swap": 54.4
+    },
+    "A25": {
+     "none": 15.39,
+     "swap": 47.43
+    },
+    "T1": {
+     "none": 92.45,
+     "swap": 79.66
+    },
+    "T3": {
+     "none": 12.51,
+     "swap": 28.5
+    },
+    "base": {
+     "none": 17.94,
+     "swap": 54.56
+    },
+    "long": {
+     "none": 8.93,
+     "swap": 19.25
+    },
+    "p30": {
+     "none": 13.28,
+     "swap": 45.87
+    },
+    "p70": {
+     "none": 13.18,
+     "swap": 45.33
+    },
+    "short": {
+     "none": 19.5,
+     "swap": 50.39
+    },
+    "uniform": {
+     "none": 16.08,
+     "swap": 50.03
+    }
+   },
+   "log_effect": {
+    "A15": 0.03,
+    "A25": 0.147,
+    "T1": 1.009,
+    "T3": 0.505,
+    "long": 0.87,
+    "p30": 0.237,
+    "p70": 0.247,
+    "short": 0.081,
+    "uniform": 0.098
+   },
+   "by_parameter": {
+    "tables": 1.009,
+    "code length": 0.87,
+    "p_unigram": 0.247,
+    "alphabet": 0.147,
+    "card weights": 0.098
+   },
+   "top": "tables",
+   "pass_": false
+  },
+  "T5": {
+   "best": "long/swap/char",
+   "decodable": 0.9733485179733874,
+   "signal": 0.9514920634920635,
+   "pass_": true
+  },
+  "best_variant_for_eva_transfer": "long",
+  "eva_transfer": [
+   {
+    "src": "it_boccaccio",
+    "n": 3,
+    "rate4": 0.0,
+    "rate5": 0.0,
+    "dist_mean": 545.778,
+    "dist_lo": 127.473,
+    "dist_hi": 964.082
+   },
+   {
+    "src": "it_cennini",
+    "n": 3,
+    "rate4": 0.0,
+    "rate5": 0.0,
+    "dist_mean": 527.616,
+    "dist_lo": 128.941,
+    "dist_hi": 926.292
+   },
+   {
+    "src": "it_cucina",
+    "n": 3,
+    "rate4": 0.0,
+    "rate5": 0.0,
+    "dist_mean": 537.899,
+    "dist_lo": 181.336,
+    "dist_hi": 894.461
+   },
+   {
+    "src": "it_sidrach",
+    "n": 3,
+    "rate4": 0.0,
+    "rate5": 0.0,
+    "dist_mean": 535.494,
+    "dist_lo": 146.646,
+    "dist_hi": 924.341
+   }
+  ],
+  "transfer_base_char": [
+   {
+    "src": "it_boccaccio",
+    "copy": "inline",
+    "rate4": 0.0,
+    "rate5": 0.0,
+    "dist_mean": 30.307,
+    "nmax": 2
+   },
+   {
+    "src": "it_boccaccio",
+    "copy": "none",
+    "rate4": 0.333,
+    "rate5": 0.0,
+    "dist_mean": 17.944,
+    "nmax": 4
+   },
+   {
+    "src": "it_boccaccio",
+    "copy": "swap",
+    "rate4": 0.0,
+    "rate5": 0.0,
+    "dist_mean": 54.564,
+    "nmax": 1
+   },
+   {
+    "src": "it_boccaccio",
+    "copy": "unit",
+    "rate4": 0.0,
+    "rate5": 0.0,
+    "dist_mean": 49.451,
+    "nmax": 1
+   },
+   {
+    "src": "it_cennini",
+    "copy": "none",
+    "rate4": 0.5,
+    "rate5": 0.0,
+    "dist_mean": 19.16,
+    "nmax": 4
+   },
+   {
+    "src": "it_cennini",
+    "copy": "swap",
+    "rate4": 0.0,
+    "rate5": 0.0,
+    "dist_mean": 56.775,
+    "nmax": 1
+   },
+   {
+    "src": "it_cucina",
+    "copy": "none",
+    "rate4": 0.0,
+    "rate5": 0.0,
+    "dist_mean": 19.34,
+    "nmax": 3
+   },
+   {
+    "src": "it_cucina",
+    "copy": "swap",
+    "rate4": 0.0,
+    "rate5": 0.0,
+    "dist_mean": 57.792,
+    "nmax": 1
+   },
+   {
+    "src": "it_sidrach",
+    "copy": "none",
+    "rate4": 0.167,
+    "rate5": 0.0,
+    "dist_mean": 18.758,
+    "nmax": 4
+   },
+   {
+    "src": "it_sidrach",
+    "copy": "swap",
+    "rate4": 0.0,
+    "rate5": 0.0,
+    "dist_mean": 56.581,
+    "nmax": 1
+   }
+  ],
+  "quire_any5": [
+   "NH_boccaccio_A15_none_char_s1",
+   "NH_boccaccio_base_swap_eva_s3",
+   "NH_boccaccio_base_swap_eva_s5",
+   "NH_boccaccio_long_swap_char_s1",
+   "NH_boccaccio_long_swap_char_s2",
+   "NH_boccaccio_long_swap_char_s3",
+   "NH_boccaccio_p30_none_char_s3"
+  ],
+  "quire_n5": 7
+ }
+}

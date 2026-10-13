@@ -1,0 +1,13 @@
+todo 12
+done NH_boccaccio_long_swap_eva_s2
+done NH_cucina_long_swap_eva_s2
+done NH_boccaccio_long_swap_eva_s3
+done NH_cucina_long_swap_eva_s3
+done NH_cucina_long_swap_eva_s1
+done NH_boccaccio_long_swap_eva_s1
+done NH_sidrach_long_swap_eva_s1
+done NH_cennini_long_swap_eva_s2
+done NH_sidrach_long_swap_eva_s2
+done NH_sidrach_long_swap_eva_s3
+done NH_cennini_long_swap_eva_s3
+done NH_cennini_long_swap_eva_s1
