@@ -1,0 +1,606 @@
+{
+ "predictions": {
+  "RA1": {
+   "cells": [
+    "A_boccaccio_naibbe_swap_c0.05"
+   ],
+   "max_D4_with_lam": -0.06256484972644216,
+   "pass_": true
+  },
+  "RA2": {
+   "five": [
+    "A_boccaccio_naibbe_swap_c0.05",
+    "A_boccaccio_naibbe_swap_c0.03"
+   ],
+   "best": "A_boccaccio_naibbe_swap_c0.05",
+   "best_n": 5,
+   "best_dist": 3.0116278289734835,
+   "pass_": true
+  },
+  "RA3": {
+   "transfer": {
+    "A_cennini_naibbe_inline_c0.03": [
+     5,
+     2.29
+    ],
+    "A_cennini_naibbe_swap_c0.05": [
+     4,
+     2.96
+    ],
+    "A_cucina_naibbe_inline_c0.03": [
+     4,
+     2.42
+    ],
+    "A_cucina_naibbe_swap_c0.05": [
+     4,
+     3.65
+    ],
+    "A_sidrach_naibbe_inline_c0.03": [
+     4,
+     3.64
+    ],
+    "A_sidrach_naibbe_swap_c0.05": [
+     4,
+     3.69
+    ]
+   },
+   "pass_": false
+  },
+  "RA4": {
+   "signal_share": 0.9512380952380952,
+   "pass_": true
+  },
+  "RA5": {
+   "D4": {
+    "heavy": {
+     "0.0": NaN,
+     "0.03": -0.176,
+     "0.05": -0.285,
+     "0.1": -0.438
+    },
+    "inline": {
+     "0.0": NaN,
+     "0.03": -0.082,
+     "0.05": -0.151,
+     "0.1": -0.373
+    },
+    "prevline": {
+     "0.0": NaN,
+     "0.03": -0.083,
+     "0.05": -0.169,
+     "0.1": -0.396
+    },
+    "ref": {
+     "0.0": 0.018,
+     "0.03": -0.097,
+     "0.05": -0.161,
+     "0.1": -0.384
+    },
+    "slot": {
+     "0.0": NaN,
+     "0.03": -0.108,
+     "0.05": -0.136,
+     "0.1": -0.319
+    },
+    "swap": {
+     "0.0": NaN,
+     "0.03": -0.046,
+     "0.05": -0.063,
+     "0.1": -0.157
+    },
+    "unit": {
+     "0.0": NaN,
+     "0.03": -0.027,
+     "0.05": -0.09,
+     "0.1": -0.099
+    }
+   },
+   "pass_": true
+  },
+  "syll": [
+   {
+    "cell": "A_boccaccio_syll_unit_c0.05",
+    "m_n_match": 3,
+    "m_distance": 299.801,
+    "D4": -1.617,
+    "oracle_acc": 0.593,
+    "mi_frac": 0.899
+   },
+   {
+    "cell": "A_boccaccio_syll_ref_c0.05",
+    "m_n_match": 3,
+    "m_distance": 368.733,
+    "D4": -1.818,
+    "oracle_acc": 0.592,
+    "mi_frac": 0.896
+   },
+   {
+    "cell": "A_boccaccio_syll_slot_c0.05",
+    "m_n_match": 3,
+    "m_distance": 372.619,
+    "D4": -1.826,
+    "oracle_acc": 0.588,
+    "mi_frac": 0.899
+   },
+   {
+    "cell": "A_boccaccio_syll_inline_c0.05",
+    "m_n_match": 3,
+    "m_distance": 374.744,
+    "D4": -1.832,
+    "oracle_acc": 0.59,
+    "mi_frac": 0.896
+   },
+   {
+    "cell": "A_boccaccio_syll_swap_c0.05",
+    "m_n_match": 3,
+    "m_distance": 375.211,
+    "D4": -1.831,
+    "oracle_acc": 0.59,
+    "mi_frac": 0.899
+   },
+   {
+    "cell": "A_boccaccio_syll_prevline_c0.05",
+    "m_n_match": 3,
+    "m_distance": 378.647,
+    "D4": -1.842,
+    "oracle_acc": 0.588,
+    "mi_frac": 0.897
+   },
+   {
+    "cell": "A_boccaccio_syll_heavy_c0.05",
+    "m_n_match": 3,
+    "m_distance": 382.501,
+    "D4": -1.845,
+    "oracle_acc": 0.588,
+    "mi_frac": 0.899
+   }
+  ],
+  "RB1": {
+   "D5": {
+    "B_1A_sub": 1.966,
+    "B_2B_bio": 1.684,
+    "B_2B_nonbio": 1.953,
+    "B_2B_sub": 1.856,
+    "B_3B_sub": 1.939
+   },
+   "pass_": false
+  },
+  "RB2": {
+   "dD5": 0.12269750008365099,
+   "dD1": -0.0482610255235425,
+   "dD5_3B": 0.06710556161848702,
+   "pass_": true
+  }
+ },
+ "search_best": [
+  [
+   "swap",
+   0.05
+  ],
+  [
+   "inline",
+   0.03
+  ]
+ ],
+ "partB_descriptives": {
+  "1A": {
+   "n": 10326,
+   "types": 2864,
+   "top50": 0.3714894441216347,
+   "edy": 0.0015494867325198528,
+   "qo": 0.09403447607979856,
+   "mean_len": 4.76786751888437,
+   "sections": {
+    "herbal": 0.761,
+    "pharmaceutical": 0.22,
+    "text-only": 0.02
+   },
+   "init_top": {
+    "o": 0.179,
+    "d": 0.154,
+    "y": 0.15,
+    "q": 0.137
+   }
+  },
+  "2B": {
+   "n": 10722,
+   "types": 2376,
+   "top50": 0.4315426226450289,
+   "edy": 0.2054653982465958,
+   "qo": 0.19259466517440776,
+   "mean_len": 4.926506248834173,
+   "sections": {
+    "biological": 0.579,
+    "herbal": 0.216,
+    "text-only": 0.166,
+    "cosmological": 0.04
+   },
+   "init_top": {
+    "q": 0.191,
+    "s": 0.175,
+    "d": 0.144,
+    "y": 0.122
+   }
+  },
+  "3B": {
+   "n": 10835,
+   "types": 3008,
+   "top50": 0.3553299492385787,
+   "edy": 0.14296262113520997,
+   "qo": 0.16455929856945084,
+   "mean_len": 5.212090447623442,
+   "sections": {
+    "stars": 0.951,
+    "herbal": 0.049
+   },
+   "init_top": {
+    "y": 0.167,
+    "d": 0.159,
+    "s": 0.156,
+    "p": 0.147
+   }
+  }
+ },
+ "partB_fingerprints": [
+  {
+   "cell": "B_1A_sub",
+   "n_tokens": 4583.0,
+   "D1": -0.185,
+   "D2": 0.324,
+   "D3": 0.052,
+   "D4": 0.01,
+   "D5": 1.966
+  },
+  {
+   "cell": "B_2B_bio",
+   "n_tokens": 4624.0,
+   "D1": -0.16,
+   "D2": 0.36,
+   "D3": 0.044,
+   "D4": -0.046,
+   "D5": 1.684
+  },
+  {
+   "cell": "B_2B_noedy",
+   "n_tokens": 8519.0,
+   "D1": -0.18,
+   "D2": 0.275,
+   "D3": 0.042,
+   "D4": 0.037,
+   "D5": 1.892
+  },
+  {
+   "cell": "B_2B_nonbio",
+   "n_tokens": 4517.0,
+   "D1": -0.176,
+   "D2": 0.359,
+   "D3": 0.052,
+   "D4": 0.04,
+   "D5": 1.953
+  },
+  {
+   "cell": "B_2B_sub",
+   "n_tokens": 4648.0,
+   "D1": -0.167,
+   "D2": 0.318,
+   "D3": 0.049,
+   "D4": 0.024,
+   "D5": 1.856
+  },
+  {
+   "cell": "B_3B_noedy",
+   "n_tokens": 9286.0,
+   "D1": -0.173,
+   "D2": 0.281,
+   "D3": 0.033,
+   "D4": 0.033,
+   "D5": 1.908
+  },
+  {
+   "cell": "B_3B_sub",
+   "n_tokens": 4531.0,
+   "D1": -0.203,
+   "D2": 0.429,
+   "D3": 0.055,
+   "D4": -0.051,
+   "D5": 1.939
+  },
+  {
+   "cell": "MS_1A",
+   "n_tokens": NaN,
+   "D1": -0.178,
+   "D2": 0.225,
+   "D3": 0.043,
+   "D4": 0.08,
+   "D5": 1.939
+  },
+  {
+   "cell": "MS_2B",
+   "n_tokens": NaN,
+   "D1": -0.132,
+   "D2": 0.248,
+   "D3": 0.039,
+   "D4": 0.048,
+   "D5": 1.769
+  },
+  {
+   "cell": "MS_3B",
+   "n_tokens": NaN,
+   "D1": -0.163,
+   "D2": 0.267,
+   "D3": 0.032,
+   "D4": 0.031,
+   "D5": 1.841
+  }
+ ],
+ "naibbe": [
+  {
+   "cell": "A_boccaccio_naibbe_swap_c0.05",
+   "m_n_match": 5,
+   "m_distance": 3.012,
+   "signal_share": 0.951,
+   "D1": -0.213,
+   "D2": 0.186,
+   "D3": 0.023,
+   "D4": -0.063,
+   "D5": 1.824
+  },
+  {
+   "cell": "A_boccaccio_naibbe_inline_c0.03",
+   "m_n_match": 4,
+   "m_distance": 3.152,
+   "signal_share": 0.976,
+   "D1": -0.21,
+   "D2": 0.173,
+   "D3": 0.028,
+   "D4": -0.082,
+   "D5": 1.809
+  },
+  {
+   "cell": "A_boccaccio_naibbe_unit_c0.1",
+   "m_n_match": 4,
+   "m_distance": 3.441,
+   "signal_share": 0.902,
+   "D1": -0.203,
+   "D2": 0.285,
+   "D3": 0.029,
+   "D4": -0.099,
+   "D5": 1.951
+  },
+  {
+   "cell": "A_boccaccio_naibbe_unit_c0.05",
+   "m_n_match": 4,
+   "m_distance": 3.56,
+   "signal_share": 0.953,
+   "D1": -0.21,
+   "D2": 0.254,
+   "D3": 0.022,
+   "D4": -0.09,
+   "D5": 1.874
+  },
+  {
+   "cell": "A_boccaccio_naibbe_unit_c0.03",
+   "m_n_match": 4,
+   "m_distance": 3.638,
+   "signal_share": 0.973,
+   "D1": -0.21,
+   "D2": 0.168,
+   "D3": 0.016,
+   "D4": -0.027,
+   "D5": 1.834
+  },
+  {
+   "cell": "A_boccaccio_naibbe_swap_c0.03",
+   "m_n_match": 5,
+   "m_distance": 3.686,
+   "signal_share": 0.969,
+   "D1": -0.21,
+   "D2": 0.153,
+   "D3": 0.02,
+   "D4": -0.046,
+   "D5": 1.816
+  },
+  {
+   "cell": "A_boccaccio_naibbe_inline_c0.05",
+   "m_n_match": 4,
+   "m_distance": 4.495,
+   "signal_share": 0.958,
+   "D1": -0.205,
+   "D2": 0.249,
+   "D3": 0.043,
+   "D4": -0.151,
+   "D5": 1.827
+  },
+  {
+   "cell": "A_boccaccio_naibbe_ref_c0.03",
+   "m_n_match": 4,
+   "m_distance": 4.5,
+   "signal_share": 0.969,
+   "D1": -0.212,
+   "D2": 0.193,
+   "D3": 0.019,
+   "D4": -0.097,
+   "D5": 1.816
+  },
+  {
+   "cell": "A_boccaccio_naibbe_prevline_c0.03",
+   "m_n_match": 3,
+   "m_distance": 4.735,
+   "signal_share": 0.97,
+   "D1": -0.207,
+   "D2": 0.194,
+   "D3": 0.015,
+   "D4": -0.083,
+   "D5": 1.811
+  },
+  {
+   "cell": "A_boccaccio_naibbe_slot_c0.05",
+   "m_n_match": 4,
+   "m_distance": 4.756,
+   "signal_share": 0.953,
+   "D1": -0.21,
+   "D2": 0.259,
+   "D3": 0.024,
+   "D4": -0.136,
+   "D5": 1.843
+  },
+  {
+   "cell": "A_boccaccio_naibbe_slot_c0.03",
+   "m_n_match": 4,
+   "m_distance": 4.924,
+   "signal_share": 0.971,
+   "D1": -0.211,
+   "D2": 0.19,
+   "D3": 0.019,
+   "D4": -0.108,
+   "D5": 1.823
+  },
+  {
+   "cell": "A_boccaccio_naibbe_swap_c0.1",
+   "m_n_match": 4,
+   "m_distance": 5.225,
+   "signal_share": 0.901,
+   "D1": -0.225,
+   "D2": 0.289,
+   "D3": 0.031,
+   "D4": -0.157,
+   "D5": 1.864
+  },
+  {
+   "cell": "A_boccaccio_naibbe_ref_c0.05",
+   "m_n_match": 4,
+   "m_distance": 6.152,
+   "signal_share": 0.951,
+   "D1": -0.222,
+   "D2": 0.275,
+   "D3": 0.023,
+   "D4": -0.161,
+   "D5": 1.831
+  },
+  {
+   "cell": "A_boccaccio_naibbe_prevline_c0.05",
+   "m_n_match": 4,
+   "m_distance": 6.854,
+   "signal_share": 0.951,
+   "D1": -0.214,
+   "D2": 0.286,
+   "D3": 0.02,
+   "D4": -0.169,
+   "D5": 1.836
+  },
+  {
+   "cell": "A_boccaccio_naibbe_heavy_c0.03",
+   "m_n_match": 4,
+   "m_distance": 6.971,
+   "signal_share": 0.967,
+   "D1": -0.206,
+   "D2": 0.322,
+   "D3": 0.024,
+   "D4": -0.176,
+   "D5": 1.864
+  },
+  {
+   "cell": "A_boccaccio_naibbe_ref_c0.0",
+   "m_n_match": 3,
+   "m_distance": 8.977,
+   "signal_share": 1.0,
+   "D1": -0.207,
+   "D2": 0.043,
+   "D3": 0.007,
+   "D4": 0.018,
+   "D5": 1.777
+  },
+  {
+   "cell": "A_boccaccio_naibbe_heavy_c0.05",
+   "m_n_match": 3,
+   "m_distance": 14.159,
+   "signal_share": 0.946,
+   "D1": -0.209,
+   "D2": 0.393,
+   "D3": 0.031,
+   "D4": -0.285,
+   "D5": 1.906
+  },
+  {
+   "cell": "A_boccaccio_naibbe_slot_c0.1",
+   "m_n_match": 3,
+   "m_distance": 19.014,
+   "signal_share": 0.897,
+   "D1": -0.212,
+   "D2": 0.463,
+   "D3": 0.043,
+   "D4": -0.319,
+   "D5": 1.898
+  },
+  {
+   "cell": "A_boccaccio_naibbe_prevline_c0.1",
+   "m_n_match": 3,
+   "m_distance": 30.398,
+   "signal_share": 0.899,
+   "D1": -0.221,
+   "D2": 0.558,
+   "D3": 0.032,
+   "D4": -0.396,
+   "D5": 1.885
+  },
+  {
+   "cell": "A_boccaccio_naibbe_ref_c0.1",
+   "m_n_match": 3,
+   "m_distance": 30.721,
+   "signal_share": 0.898,
+   "D1": -0.216,
+   "D2": 0.578,
+   "D3": 0.045,
+   "D4": -0.384,
+   "D5": 1.892
+  },
+  {
+   "cell": "A_boccaccio_naibbe_inline_c0.1",
+   "m_n_match": 2,
+   "m_distance": 34.518,
+   "signal_share": 0.915,
+   "D1": -0.216,
+   "D2": 0.53,
+   "D3": 0.081,
+   "D4": -0.373,
+   "D5": 1.864
+  },
+  {
+   "cell": "A_boccaccio_naibbe_heavy_c0.1",
+   "m_n_match": 3,
+   "m_distance": 41.795,
+   "signal_share": 0.901,
+   "D1": -0.203,
+   "D2": 0.65,
+   "D3": 0.047,
+   "D4": -0.438,
+   "D5": 1.985
+  }
+ ],
+ "quire_A_5": [
+  "A_boccaccio_naibbe_heavy_c0.03",
+  "A_boccaccio_naibbe_heavy_c0.05",
+  "A_boccaccio_naibbe_heavy_c0.1",
+  "A_boccaccio_naibbe_inline_c0.03",
+  "A_boccaccio_naibbe_inline_c0.05",
+  "A_boccaccio_naibbe_prevline_c0.05",
+  "A_boccaccio_naibbe_prevline_c0.1",
+  "A_boccaccio_naibbe_ref_c0.03",
+  "A_boccaccio_naibbe_ref_c0.05",
+  "A_boccaccio_naibbe_ref_c0.1",
+  "A_boccaccio_naibbe_slot_c0.03",
+  "A_boccaccio_naibbe_slot_c0.05",
+  "A_boccaccio_naibbe_slot_c0.1",
+  "A_boccaccio_naibbe_swap_c0.03",
+  "A_boccaccio_naibbe_swap_c0.05",
+  "A_boccaccio_naibbe_swap_c0.1",
+  "A_boccaccio_naibbe_unit_c0.05",
+  "A_boccaccio_naibbe_unit_c0.1",
+  "A_cennini_naibbe_inline_c0.03",
+  "A_cennini_naibbe_swap_c0.05",
+  "A_cucina_naibbe_inline_c0.03",
+  "A_cucina_naibbe_swap_c0.05",
+  "A_sidrach_naibbe_inline_c0.03",
+  "A_sidrach_naibbe_swap_c0.05"
+ ]
+}

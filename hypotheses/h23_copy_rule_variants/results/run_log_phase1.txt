@@ -1,0 +1,44 @@
+todo 36
+done B_1A_sub
+done B_3B_sub
+done B_2B_nonbio
+/usr/local/lib/python3.13/dist-packages/numpy/_core/fromnumeric.py:3862: RuntimeWarning: Mean of empty slice
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ~~~~^^^^^^^^^^^^^^^
+  File "/workspace/decipher/hypotheses/h20_generators_vs_italian/run_h20.py", line 84, in run_cell
+    bt, ex = R19.run_split(trp, tep, cell, rng); extras.append(ex)
+             ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/decipher/hypotheses/h19_heldout_likelihood/run_h19.py", line 162, in run_split
+    ff = Fitted(train, seg, hyp); bt = ff.base(test); cdt = L.CopyData([p["words"] for p in test])
+                                       ~~~~~~~^^^^^^
+  File "/workspace/decipher/hypotheses/h19_heldout_likelihood/run_h19.py", line 112, in base
+    for n in (1, 2, 3): out[f"KN{n}"] += [self.kn[n].logp(w, ws[:i]) for i, w in enumerate(ws)]
+                                          ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/workspace/decipher/hypotheses/h19_heldout_likelihood/h19_lib.py", line 109, in logp
+    return math.log2(self.prob(w, hist))
+                     ~~~~~~~~~^^^^^^^^^
+  File "/workspace/decipher/hypotheses/h19_heldout_likelihood/h19_lib.py", line 103, in prob
+    if self.n == 1: return self.p1(w, False)
+                           ~~~~~~~^^^^^^^^^^
+  File "/workspace/decipher/hypotheses/h19_heldout_likelihood/h19_lib.py", line 91, in p1
+    return max(self.c1.get(w, 0) - self.d, 0) / self.N + self.d * self.T / self.N * g
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+ZeroDivisionError: division by zero
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/decipher/hypotheses/h23_copy_rule_variants/run_h23.py", line 66, in <module>
+    for n in pool.imap_unordered(R20.run_cell, todo): print("done", n, flush=True)
+             ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 873, in next
+    raise value
+ZeroDivisionError: division by zero
