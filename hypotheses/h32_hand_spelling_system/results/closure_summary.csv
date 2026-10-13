@@ -1,0 +1,36 @@
+,,,js_before,js_before,closed_10,closed_10,closed_30,closed_30
+,,,mean,std,mean,std,mean,std
+pair,kind,method,,,,,,
+1A herbal <- 1A pharmaceutical,"same hand, cross-section",transducer,0.499,0.015,0.12,0.013,0.152,0.029
+1A herbal <- 2B biological,hand + section,transducer,0.646,0.008,0.274,0.018,0.334,0.018
+1A herbal <- 2B herbal,"hand, section-matched",context-free,0.613,0.015,0.117,0.049,0.123,0.044
+1A herbal <- 2B herbal,"hand, section-matched",h11,0.613,0.015,0.227,0.017,,
+1A herbal <- 2B herbal,"hand, section-matched",transducer,0.613,0.015,0.232,0.021,0.293,0.013
+1A herbal <- 3B herbal,"hand, section-matched",context-free,0.71,0.005,0.014,0.013,0.014,0.013
+1A herbal <- 3B herbal,"hand, section-matched",h11,0.71,0.005,0.13,0.022,,
+1A herbal <- 3B herbal,"hand, section-matched",transducer,0.71,0.005,0.128,0.014,0.164,0.019
+1A herbal half <- 1A herbal half,noise floor,transducer,0.366,0.013,0.013,0.019,0.008,0.028
+2B herbal <- 1A herbal,"hand, section-matched",transducer,0.595,0.012,0.23,0.019,0.281,0.024
+2B herbal <- 2B biological,"same hand, cross-section",transducer,0.486,0.015,0.073,0.017,0.104,0.028
+2B herbal half <- 2B herbal half,noise floor,transducer,0.509,0.007,-0.027,0.028,-0.02,0.028
+3B herbal <- 3B stars,"same hand, cross-section",transducer,0.594,0.017,0.032,0.025,0.033,0.015
+permuted hands #0,permuted-hand control,transducer,0.459,,0.017,,0.026,
+permuted hands #1,permuted-hand control,transducer,0.399,,0.004,,0.007,
+permuted hands #10,permuted-hand control,transducer,0.391,,0.01,,0.016,
+permuted hands #11,permuted-hand control,transducer,0.427,,0.017,,0.039,
+permuted hands #12,permuted-hand control,transducer,0.418,,0.025,,0.035,
+permuted hands #13,permuted-hand control,transducer,0.434,,-0.001,,0.015,
+permuted hands #14,permuted-hand control,transducer,0.422,,0.023,,0.045,
+permuted hands #15,permuted-hand control,transducer,0.411,,0.007,,0.016,
+permuted hands #16,permuted-hand control,transducer,0.43,,-0.008,,0.003,
+permuted hands #17,permuted-hand control,transducer,0.459,,0.028,,0.066,
+permuted hands #18,permuted-hand control,transducer,0.425,,-0.003,,0.011,
+permuted hands #19,permuted-hand control,transducer,0.405,,0.016,,0.033,
+permuted hands #2,permuted-hand control,transducer,0.425,,0.017,,0.058,
+permuted hands #3,permuted-hand control,transducer,0.391,,0.015,,0.046,
+permuted hands #4,permuted-hand control,transducer,0.408,,-0.02,,-0.005,
+permuted hands #5,permuted-hand control,transducer,0.455,,0.02,,0.061,
+permuted hands #6,permuted-hand control,transducer,0.45,,0.033,,0.049,
+permuted hands #7,permuted-hand control,transducer,0.42,,-0.003,,-0.002,
+permuted hands #8,permuted-hand control,transducer,0.463,,0.042,,0.071,
+permuted hands #9,permuted-hand control,transducer,0.422,,-0.0,,0.009,
