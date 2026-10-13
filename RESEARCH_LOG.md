@@ -524,3 +524,18 @@ Status key:
 - **Commits:** f137ec3 (prereg), (code + results + docs commit)
 - **Status:** closed
 - **Led to:** entry-level model (paragraph → body → line-final marker)
+
+### L41 · 2026-10-13 · h31 MS 408's word-construction system
+- **Folder:** [hypotheses/h31_word_construction/](hypotheses/h31_word_construction/)
+- **Question:** are MS words built from a small inventory of morpheme-like pieces (language-like), or freely combined pieces (generator-like decoration)?
+- **Done:**
+  - Pre-registered, then segmented with Morfessor (MDL), a Bayesian stem + suffix model and the project's affix model.
+  - Corpora: hands 1A, 2B and 3B; 6 natural texts (Latin, Italian, Hebrew, Arabic); Naibbe on Pliny and Ariosto; C0 fitted on 2B.
+  - Measured inventory, productivity, stem–suffix constraint, paradigm reuse, cross-word agreement, and held-out bits/word against the h19 CharLM.
+- **Result:**
+  - Neither H-morph nor H-decor passes.
+  - Inventory is generator-sized: 0.07–0.085 morphs/type (NAT 0.21–0.54, GEN 0.06–0.07). Productivity 0.67–0.73 sits between the groups. Morph − CharLM gap is 1.3–1.4 bits/word (NAT 2.7–3.7).
+  - Words depend on their neighbours: ending → next word's first letter 0.07–0.17 bits, last letter 0.11–0.23. No generator shows this (≤ 0.03).
+- **Commits:** e97c4d1 (prereg), 9432f07 (code + results), (docs commit)
+- **Status:** lead (junction dependence)
+- **Led to:** a junction-rule generator, and line-position controls for A1
