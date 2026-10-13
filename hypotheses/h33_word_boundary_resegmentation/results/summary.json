@@ -1,0 +1,12 @@
+{
+ "P1": false,
+ "H_straddle_passing_transforms": {
+  "1A": [],
+  "2B": [],
+  "3B": []
+ },
+ "H_straddle": false,
+ "H_true_space": false,
+ "S1": true,
+ "S1_nat_max": 0.7569381920065323
+}

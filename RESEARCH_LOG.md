@@ -553,3 +553,17 @@ Status key:
 - **Commits:** 299b769 (prereg), ac8a559 (code), a9ed537 (results + README), (log commit)
 - **Status:** closed (same content); lead (word-edge habits)
 - **Led to:** an EM-trained weighted FST on word-pair alignments, and checking whether the four edge habits coincide with h30's line-edge rules
+
+### L43 · 2026-10-14 · h33 are MS spaces true word boundaries?
+- **Folder:** [hypotheses/h33_word_boundary_resegmentation/](hypotheses/h33_word_boundary_resegmentation/)
+- **Question:** do the real units straddle the spaces, given h31's strong last-glyph → next-first-glyph link?
+- **Done:**
+  - Pre-registered, then re-cut hands 1A, 2B and 3B, 5 natural texts and 3 generators identically. Transforms: join pairs, shift ±1/±2 glyphs, Morfessor on stripped lines.
+  - Each run in full and line-interior variants. Scored TTR, Zipf, morphs/type, held-out KN gain, junction MI and space predictability.
+- **Result:**
+  - No re-cut makes MS more word-like. TTR rises 35–60 % and Zipf flattens, as in real text and generators.
+  - The n-gram gain rise after shifting is a split-word artifact, also seen in generators. This is a pre-registration flaw and is recorded.
+  - Spaces are predictable from ±2 glyphs: .75–.82 of entropy removed, against natural ≤ .757 and generators .82–.88. H-straddle 0/3; S1 passes 2/3; P1 fails as written.
+- **Commits:** 533f9e8 (prereg), (code + results + docs)
+- **Status:** closed (straddling words); lead (rule-placed spaces)
+- **Led to:** a junction-rule generator; a proper DP word segmenter
