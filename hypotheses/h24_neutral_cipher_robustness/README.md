@@ -33,8 +33,8 @@ h23 found that Naibbe-Italian with a 5 % suffix-swap copy layer reproduced all f
 | verbose, 12 glyphs | 1276 (none) | D1 +0.4 … +0.5; D4 ≈ −3.5 |
 | verbose, 8 glyphs (± own-ciphertext nulls) | 2225–2428 | D4 ≈ −4.7; nulls fix D1 but not D4 |
 
-- **Matches:** no neutral cipher reaches 4/5 in any seed, with or without copying. The maximum is 3/5, on bifolium and on quire folds alike.
-- **Transfer:** the best setting (homophonic-2 + `inline`) gives distances of 89–124 on Cucina, Sidrach and Cennini.
+- **Matches:** no neutral cipher reaches 4/5 in any seed on bifolium folds, with or without copying (maximum 3/5). On the wider quire range, homophonic-2 + copy reaches 4/5, still missing D5 (bits/glyph).
+- **Transfer:** the best setting (homophonic-2 + `inline`) gives distances of 89 (Cucina), 124 (Cennini) and 190 (Sidrach).
 - **What the families lack:**
   - Homophonic ciphers get the "no n-gram gain" signature (D1 ≈ −0.14) and a sensible D4, but they spend too many bits per glyph.
   - Verbose and nomenclator ciphers get low bits/glyph, but their deterministic word codes keep Italian's n-gram gain and make word models dominate (very negative D4).
@@ -61,7 +61,7 @@ h23 found that Naibbe-Italian with a 5 % suffix-swap copy layer reproduced all f
 |---|---|---|
 | S1 | `swap` 5/5 in ≥ 40 % of seed × source cells, mean distance ≤ 4 | **fail** (35 %; 3.61) |
 | S2 | no neutral cipher without copying ≥ 4/5 | **pass** (max 3/5) |
-| S3 | some neutral cipher + copy reaches 5/5; "survives without Naibbe" | **fail** (max 3/5; best distance 126) |
+| S3 | some neutral cipher + copy reaches 5/5; "survives without Naibbe" | **fail** (max 3/5 on bifolium, 4/5 on quire; best distance 126) |
 | S4 | verbose ciphers closer than homophonic | **fail** (homophonic 126 vs verbose ≥ 1276) |
 | S5 | section effect: 2B-herbal within 0.05 of 1A-herbal and 2B-biological lowest | **section effect** (−0.02; biological lowest) |
 
