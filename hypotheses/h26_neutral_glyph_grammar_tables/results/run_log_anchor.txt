@@ -1,0 +1,11 @@
+todo 10
+done G_boccaccio_naibbe_swap_eva_s2
+done G_boccaccio_naibbe_none_eva_s2
+done G_boccaccio_naibbe_none_eva_s1
+done G_boccaccio_naibbe_swap_eva_s1
+done G_boccaccio_naibbe_swap_eva_s3
+done G_boccaccio_naibbe_none_eva_s3
+done G_boccaccio_naibbe_none_eva_s4
+done G_boccaccio_naibbe_none_eva_s5
+done G_boccaccio_naibbe_swap_eva_s4
+done G_boccaccio_naibbe_swap_eva_s5

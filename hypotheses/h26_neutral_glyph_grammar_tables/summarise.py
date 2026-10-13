@@ -41,14 +41,17 @@ P["G1"] = dict(ms=B[B.grammar == "ms"][["copy", "rate4", "rate5", "dist_mean", "
 neu = B[B.grammar.isin(["rs", "lat"])].sort_values("dist_mean"); nb = neu.iloc[0]
 P["G2"] = dict(best_neutral=f"{nb.grammar}/{nb['copy']}", rate4=float(nb.rate4), dist=float(nb.dist_mean), ms_best_dist=float(msb.dist_mean),
                any_orderly_suffices=bool(nb.rate4 >= .6 and nb.dist_mean <= 2 * msb.dist_mean))
-allg = B[B.grammar != "ms"]
+allg = B[~B.grammar.isin(["ms", "naibbe"])]
 P["G3"] = dict(dist={f"{r.grammar}/{r['copy']}": round(float(r.dist_mean), 2) for _, r in allg.iterrows()}, pass_=bool(((allg["copy"] == "none") & (allg.dist_mean < 75.6) | (allg["copy"] == "swap") & (allg.dist_mean < 67.5)).all()))
-bc = T[(T.src == "it_boccaccio") & (T.render == "eva")]
+bc = T[(T.src == "it_boccaccio") & (T.render == "eva") & (T.grammar != "naibbe")]
 rho = {p: float(spearmanr(bc[p], bc.m_distance).correlation) for p in ["H1", "rigidity", "mean_len"]}
 P["G4"] = dict(spearman=rho, top=max(rho, key=lambda k: abs(rho[k])), pass_=bool(max(rho, key=lambda k: abs(rho[k])) == "rigidity"))
 P["G4"]["spearman_neutral_only"] = {p: float(spearmanr(bc[bc.grammar != "ms"][p], bc[bc.grammar != "ms"].m_distance).correlation) for p in ["H1", "rigidity", "mean_len"]}
-P["G5"] = dict(decodable=float(nb.decodable), pass_=bool(nb.decodable >= .8))
-json.dump([[nb.grammar, nb["copy"]], ["ms", msb["copy"]]], open(R / "transfer_settings.json", "w"))
+P["G5"] = dict(decodable=float(nb.decodable), decodable_best_any=float(B[~B.grammar.isin(["ms", "naibbe"])].sort_values("dist_mean").iloc[0].decodable), pass_=bool(nb.decodable >= .8))
+nbest = B[~B.grammar.isin(["ms", "naibbe"])].sort_values("dist_mean").iloc[0]
+P["best_neutral_any"] = dict(setting=f"{nbest.grammar}/{nbest['copy']}", dist=float(nbest.dist_mean), rate4=float(nbest.rate4), decodable=float(nbest.decodable))
+if not (R / "transfer_settings.json").exists(): json.dump([[nbest.grammar, nbest["copy"]], ["ms", msb["copy"]]], open(R / "transfer_settings.json", "w"))
+P["naibbe_anchor"] = B[B.grammar == "naibbe"][["copy", "n", "rate4", "rate5", "dist_mean", "dist_lo", "dist_hi", "D2", "D3", "D4", "D5"]].round(3).to_dict("records")
 tr = G[(G.src != "it_boccaccio")]
 P["transfer"] = tr[["src", "grammar", "copy", "n", "rate4", "rate5", "dist_mean", "dist_lo", "dist_hi"]].round(3).to_dict("records")
 P["char_vs_eva_rs"] = G[(G.grammar == "rs") & (G["copy"] == "none") & (G.src == "it_boccaccio")][["render", "dist_mean", "D4", "D5"]].round(3).to_dict("records")

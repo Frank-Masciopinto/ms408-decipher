@@ -20,10 +20,13 @@ def name(src, g, cp, render, s): return f"G_{src[3:]}_{g}_{cp}_{render}_s{s}"
 
 
 def cell(src, g, cp, s, render):
-    gram = L.make_grammar(g, s); f = L.write_tables(TD / f"{g}_s{s}.csv", gram)
+    if g == "naibbe":                     # diagnostic anchor (not pre-registered): the author's real tables in the same engine
+        f = ROOT / "data" / "mechanisms" / "naibbe_tables.csv"
+    else:
+        gram = L.make_grammar(g, s); f = L.write_tables(TD / f"{g}_s{s}.csv", gram)
     ci = L25.NH(f, 6, "naibbe", 17 / 36); full = R20.italian(src)
     toks = [str(t) for t in ci.encrypt(full, seed=s, n_words_out=2 * NTOK)]; labs = ["#"] * len(toks)
-    eva_native = g == "ms"; segf = R19.seg_fn("eva") if eva_native else tuple
+    eva_native = g in ("ms", "naibbe"); segf = R19.seg_fn("eva") if eva_native else tuple
     toks, labs, n = L24.copy_variant(toks, labs, COPY[cp], cp, seed=100 * s + 17, seg=segf) if COPY[cp] > 0 else (toks, labs, 0)
     dec = L25.decodable_share(ci, toks[:NTOK], labs[:NTOK]); seg = "eva" if eva_native else "char"
     if render == "eva" and not eva_native:
@@ -46,6 +49,9 @@ def plan(phase):
             if g == "rs": continue
             for s in range(1, NSEED_VAR + 1):
                 for cp in COPY: out.append(("it_boccaccio", g, cp, s, "eva"))
+    elif phase == "anchor":
+        for s in range(1, NSEED_MAIN + 1):
+            for cp in COPY: out.append(("it_boccaccio", "naibbe", cp, s, "eva"))
     else:
         for g, cp in json.load(open(HERE / "results" / "transfer_settings.json")):
             for src in SRC[1:]:
