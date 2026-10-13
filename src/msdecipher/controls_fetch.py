@@ -24,7 +24,7 @@ import requests
 
 from .paths import repo_root
 
-USER_AGENT = "msdecipher/0.1 (research tool; +https://github.com/Frank-Masciopinto/ms408-decipher)"
+USER_AGENT = "msdecipher/0.1 (research tool; +https://github.com/Frank-Masciopinto/voynich-manuscript-decipher)"
 WIKISOURCE_LA_API = "https://la.wikisource.org/w/api.php"
 WIKISOURCE_AR_API = "https://ar.wikisource.org/w/api.php"
 SEFARIA_API = "https://www.sefaria.org/api/v3/texts/"

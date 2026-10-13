@@ -421,3 +421,20 @@ Status key:
 - **Commits:** 1d5d29c, 346606e, (FINDINGS/README/log commit; also repo rename URLs and README title)
 - **Status:** closed
 - **Led to:** —
+
+### L34 · 2026-10-13 14:16–14:42 · h24 neutral-cipher robustness, and hand vs section
+- **Folder:** [hypotheses/h24_neutral_cipher_robustness/](hypotheses/h24_neutral_cipher_robustness/)
+- **Question:** is the h23 Naibbe+copy 5/5 robust to seeds? Does it survive ciphers not designed from MS? Is 2B a hand effect or a section effect?
+- **Done:**
+  - 60 Naibbe cells: 3 copy rules × 4 sources × 5 seeds.
+  - 54 neutral-cipher cells (6 families × 3 copy conditions × 3 seeds) plus 9 transfer cells.
+  - 8 section-matched MS subsets.
+  - Repo-rename follow-up: user-agent URLs in fetch.py and controls_fetch.py; LICENSE contributors name.
+- **Result:**
+  - Naibbe+copy is at least 4/5 in 60/60 cells (5/5 in 15–35 %), distance 2.2–4.4.
+  - Neutral ciphers reach at most 3/5, distance at least 89, so the match depends on Naibbe's MS-like tables.
+  - 2B's low bits/glyph is a biological-section effect.
+  - S2 passes; S1, S3 and S4 fail; S5 shows a section effect.
+- **Commits:** f327363, 381f275, (README fix), (FINDINGS/README/log/rename commit)
+- **Status:** closed
+- **Led to:** —

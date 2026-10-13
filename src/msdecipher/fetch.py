@@ -20,7 +20,7 @@ from pathlib import Path
 from .paths import transcription_dir
 
 BASE = "https://www.voynich.nu/data/"
-USER_AGENT = "msdecipher/0.1 (research tool; +https://github.com/Frank-Masciopinto/ms408-decipher)"
+USER_AGENT = "msdecipher/0.1 (research tool; +https://github.com/Frank-Masciopinto/voynich-manuscript-decipher)"
 
 LICENSE_NOTE = (
     "voynich.nu publishes these files for research use but states no open licence in the "
