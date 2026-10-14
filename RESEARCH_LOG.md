@@ -24,6 +24,7 @@ Status key:
 - **Italian plaintext under the real Naibbe tables (h27):** shuffling Boccaccio, or replacing it with Zipf nonsense on the same letter frequencies, leaves the likelihood-fingerprint match. The tables and the copy layer carry it. The plaintext does not.
 - **One cut of the Naibbe tables (h28):** shuffling which letter owns which string, which strings are prefixes versus suffixes, or the order of units inside each string each takes the fingerprint outside the match rule. The order cut is the large one. No one of the three is the sole carrier.
 - **A decodable toy table hitting MS's D4 window (h29):** three length × suffix-pool settings are ≥0.8 decodable and clear the D4 floor of −0.07, but their D4 (+0.38 to +0.48) is above the MS band. No setting of the 25 reproduces the five-statistic fingerprint.
+- **Transcription moving the fingerprint (h40):** across ZL3b, IT2a and RF1b, D1–D5 stay inside the h20 tolerances and the last-glyph link stays far above the generators. The space-predictability target does move: for hands 2B and 3B it sits above 0.80.
 
 ## Open leads
 - **Line structure (h13–h16):**
@@ -35,8 +36,9 @@ Status key:
   - Word-level evidence for the mapping is weak (it is mostly shared stems).
 - **Weak leads from h09:** root/jar words.
 - **Section signal (h11):** survives on hand residuals but cannot be separated from quire with this data.
+- **Burstiness (h41):** at 10,500 tokens, clustering of the 50 most frequent words separates plain Boccaccio from Naibbe ciphertext. The three hands are more bursty than Boccaccio, and the ciphers and C0 are less. New-type rate, lag-100 mutual information and adjacent-block divergence do not separate the plaintext.
+- **Near-repeat range (h42):** one-edit pairs are absent in Boccaccio and in the h39 graph respelling. Hand 1A drops at gap 21–100, hand 3B at 101–500. Hand 2B is not elevated for adjacent pairs, is elevated at gaps 2–20, and is elevated again at 101–500. C0 drops at gap 2–5. Fitted self-citation and the h39 tuned copier stay elevated through gap 21–100.
 - **Not yet attempted:**
-  - Likelihood-based comparison of language vs generator vs cipher models.
   - A pharma label ↔ grid layout from the scans, so h17 test A can be redone on individual labels.
   - The image-stage glyph check on higher-resolution scans.
 
@@ -638,3 +640,42 @@ Status key:
 - **Commits:** 351b9d5 (prereg), (code + results + docs)
 - **Status:** negative (loop ends; per-slot recoding is the closest compromise)
 - **Led to:** synthesis section in FINDINGS (h33–h39); next direction: model word similarity as a shared slot grammar (type-level) rather than token copying, or a context-dependent slot map that also preserves the gap table
+
+### L50 · 2026-10-14 10:52 · h40 transcription targets
+- **Folder:** [hypotheses/h40_transcription_targets/](hypotheses/h40_transcription_targets/)
+- **Question:** do space predictability, the last-glyph link and D1–D5 survive ZL3b with uncertain spaces joined, IT2a, and RF1b?
+- **Done:**
+  - Pre-registered, then five readings of hands 1A, 2B and 3B. Space and junction on the h33 token cap. Bifolium D1–D5 on up to 10,500 tokens. No generator was rerun.
+  - The nine stored h39 graph cells were re-scored against each hand's widened space band.
+- **Result:**
+  - R1–R3 pass. The largest D1–D5 range is 2B's D4, 0.065, inside the tolerance of 0.10. Junction stays 0.083–0.242, against generator originals ≤ 0.0034.
+  - Interior space bands: 1A 0.750–0.770, 2B 0.811–0.827, 3B 0.815–0.847. The 2B and 3B bands sit above the old 0.72–0.80 target. Four of nine h39 cells fall in the widened band, three in the old one.
+- **Commits:** 7af068c (prereg), (results and log commit)
+- **Status:** closed (fingerprint and link); lead (the space target was too low for 2B and 3B)
+- **Led to:** —
+
+### L51 · 2026-10-14 10:52 · h41 long-range plaintext visibility
+- **Folder:** [hypotheses/h41_plaintext_visibility/](hypotheses/h41_plaintext_visibility/)
+- **Question:** at 10,500 tokens, can any long-range statistic tell Boccaccio from shuffled and Zipf Naibbe ciphertext, and where does MS 408 sit on a statistic that can?
+- **Done:**
+  - Pre-registered. Five Boccaccio windows, five seeds each of Naibbe plus suffix-swap on real, shuffled and Zipf plaintext, and five C0 streams fit on hand 2B (`n_random` 60).
+  - Statistics: half-sample new-type rate, burstiness of the 50 most frequent words, MI at lag 100 over lag 1, and Jensen–Shannon divergence of adjacent 200-token blocks.
+- **Result:**
+  - V1 passes on burstiness only (plain 4.16–4.78; shuffle and zipf both ≤ 3.74). The other three statistics overlap.
+  - V2 fails. Hands 1A, 2B and 3B score 5.22, 5.11 and 5.10, closer to plain Boccaccio (mean 4.40) than to C0 (3.59) or the cipher arms (3.54).
+- **Commits:** 7af068c (prereg), (results and log commit)
+- **Status:** lead (burstiness sees a plaintext, and MS is on the plain-text side)
+- **Led to:** —
+
+### L52 · 2026-10-14 10:52 · h42 near-repeat decay
+- **Folder:** [hypotheses/h42_near_repeat_decay/](hypotheses/h42_near_repeat_decay/)
+- **Question:** do one-edit word pairs in MS 408 die out within a few tokens, within a page, or not at all?
+- **Done:**
+  - Pre-registered. Edit distance 1 on EVA units, gaps 1 through 1,000, against a shuffle inside hand × quire (ten shuffles).
+  - Streams: hands 1A, 2B, 3B, Boccaccio, one C0 stream, fitted self-citation, and the h39 tuned copier and graph respell for hand 2B.
+- **Result:**
+  - N1–N3 pass on the first-drop rule. Hand 1A drops at 21–100, hand 2B at 21–100, hand 3B at 101–500. Hand 2B's adjacent excess is 0.007 (not elevated), and its 101–500 bin is elevated again (0.010).
+  - C0 drops at gap 2–5 (adjacent excess 0.024) and is elevated again at 6–20. Fitted self-citation and the h39 tuned copier stay elevated through 21–100 and drop at 101–500, which is later than hand 2B's first drop. Boccaccio and the h39 graph respell have no elevated bin (Boccaccio adjacent excess −0.027).
+- **Commits:** 7af068c (prereg), (results and log commit)
+- **Status:** closed (not Boccaccio's pattern); lead (hand 2B's excess returns at 101–500 tokens)
+- **Led to:** —

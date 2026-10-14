@@ -1,0 +1,25 @@
+load it_boccaccio
+source 61623
+fit C0 on 10722 tokens, n_random=60, one worker
+pmap 61 jobs, one worker
+  1/61 0.5s
+  10/61 5.5s
+  20/61 10.4s
+  30/61 15.9s
+  40/61 21.5s
+  50/61 27.2s
+  60/61 32.6s
+  61/61 33.2s
+pmap 30 jobs, one worker
+  1/30 0.7s
+  10/30 6.9s
+  20/30 13.9s
+  30/30 20.8s
+fit done 55.3 distance 2.568791252903033
+C0 1 done
+C0 2 done
+C0 3 done
+C0 4 done
+C0 5 done
+scores written 56.9
+EXIT:0

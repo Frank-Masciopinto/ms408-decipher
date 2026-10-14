@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "predictions": {
+    "N1": true,
+    "N2": true,
+    "N3": true
+  },
+  "N1": true,
+  "N2": true,
+  "N3": true,
+  "shapes": {
+    "MS_1A": "page",
+    "MS_2B": "page",
+    "MS_3B": "page",
+    "boccaccio": "none",
+    "C0": "local",
+    "self_citation": "page",
+    "h39_native_tuned": "page",
+    "h39_C0_graph": "none"
+  },
+  "decay_points": {
+    "MS_1A": "21-100",
+    "MS_2B": "21-100",
+    "MS_3B": "101-500",
+    "boccaccio": null,
+    "C0": "2-5",
+    "self_citation": "101-500",
+    "h39_native_tuned": "101-500",
+    "h39_C0_graph": null
+  },
+  "bin1_excess": {
+    "MS_1A": 0.02952500000000001,
+    "MS_2B": 0.006574999999999984,
+    "MS_3B": 0.02654999999999999,
+    "boccaccio": -0.02688134406720337,
+    "C0": 0.024050000000000002,
+    "self_citation": 0.045375,
+    "h39_native_tuned": 0.03082499999999999,
+    "h39_C0_graph": -0.005074999999999989
+  }
+}

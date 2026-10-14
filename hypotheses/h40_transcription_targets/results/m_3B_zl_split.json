@@ -1,0 +1,12 @@
+{
+ "S_full": 0.801869713786969,
+ "S_interior": 0.8200804122896839,
+ "junction": 0.23170138019092595,
+ "junction_interior": 0.2336124439102868,
+ "n_tokens_full": 10325,
+ "n_tokens_interior": 8207,
+ "n_lines_capped": 1053,
+ "hand": "3B",
+ "condition": "zl_split",
+ "n_tokens_loaded": 10835
+}

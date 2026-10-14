@@ -1,0 +1,12 @@
+{
+ "S_full": 0.7487941495949701,
+ "S_interior": 0.7598583301595212,
+ "junction": 0.09483698742565533,
+ "junction_interior": 0.0931989369657108,
+ "n_tokens_full": 9390,
+ "n_tokens_interior": 6346,
+ "n_lines_capped": 1477,
+ "hand": "1A",
+ "condition": "rf_join",
+ "n_tokens_loaded": 9404
+}

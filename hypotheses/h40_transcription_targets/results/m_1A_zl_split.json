@@ -1,0 +1,12 @@
+{
+ "S_full": 0.7412771002447555,
+ "S_interior": 0.750157271692981,
+ "junction": 0.12219374825748924,
+ "junction_interior": 0.12000375283335764,
+ "n_tokens_full": 10316,
+ "n_tokens_interior": 7287,
+ "n_lines_capped": 1477,
+ "hand": "1A",
+ "condition": "zl_split",
+ "n_tokens_loaded": 10326
+}

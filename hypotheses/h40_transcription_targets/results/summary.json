@@ -1,0 +1,977 @@
+{
+  "complete": true,
+  "predictions": {
+    "R1": {
+      "pass": true,
+      "by_hand": {
+        "1A": {
+          "D1": {
+            "min": -0.20147244365533723,
+            "max": -0.17547376560929173,
+            "range": 0.025998678046045498,
+            "delta": 0.1,
+            "pass": true
+          },
+          "D2": {
+            "min": 0.2136928955080979,
+            "max": 0.2450962714964433,
+            "range": 0.03140337598834542,
+            "delta": 0.1,
+            "pass": true
+          },
+          "D3": {
+            "min": 0.0341708464779461,
+            "max": 0.04168254900489003,
+            "range": 0.007511702526943935,
+            "delta": 0.015,
+            "pass": true
+          },
+          "D4": {
+            "min": 0.06169575142510553,
+            "max": 0.09544790862482166,
+            "range": 0.03375215719971614,
+            "delta": 0.1,
+            "pass": true
+          },
+          "D5": {
+            "min": 1.9257848158960924,
+            "max": 1.9396103311808501,
+            "range": 0.013825515284757728,
+            "delta": 0.15,
+            "pass": true
+          }
+        },
+        "2B": {
+          "D1": {
+            "min": -0.16228134386154736,
+            "max": -0.13290014677517625,
+            "range": 0.029381197086371103,
+            "delta": 0.1,
+            "pass": true
+          },
+          "D2": {
+            "min": 0.2102982734100216,
+            "max": 0.26069114282482353,
+            "range": 0.05039286941480192,
+            "delta": 0.1,
+            "pass": true
+          },
+          "D3": {
+            "min": 0.032334923872729626,
+            "max": 0.03878909850745604,
+            "range": 0.00645417463472641,
+            "delta": 0.015,
+            "pass": true
+          },
+          "D4": {
+            "min": 0.01204853733424116,
+            "max": 0.07705471059722058,
+            "range": 0.06500617326297942,
+            "delta": 0.1,
+            "pass": true
+          },
+          "D5": {
+            "min": 1.7470009163310445,
+            "max": 1.7724309596599526,
+            "range": 0.02543004332890808,
+            "delta": 0.15,
+            "pass": true
+          }
+        },
+        "3B": {
+          "D1": {
+            "min": -0.19054241109335557,
+            "max": -0.1667245296344717,
+            "range": 0.02381788145888386,
+            "delta": 0.1,
+            "pass": true
+          },
+          "D2": {
+            "min": 0.1900505609857479,
+            "max": 0.23356931570848083,
+            "range": 0.04351875472273292,
+            "delta": 0.1,
+            "pass": true
+          },
+          "D3": {
+            "min": 0.023089278439789945,
+            "max": 0.030901375540895386,
+            "range": 0.0078120971011054405,
+            "delta": 0.015,
+            "pass": true
+          },
+          "D4": {
+            "min": 0.04781500183372067,
+            "max": 0.10484273805632682,
+            "range": 0.05702773622260615,
+            "delta": 0.1,
+            "pass": true
+          },
+          "D5": {
+            "min": 1.8145553739034783,
+            "max": 1.8487880361352487,
+            "range": 0.03423266223177035,
+            "delta": 0.15,
+            "pass": true
+          }
+        }
+      }
+    },
+    "R2": {
+      "pass": true,
+      "n_in_old_band": 3,
+      "n_in_widened_band": 4,
+      "n_outside_old_inside_widened": 4,
+      "cells": [
+        {
+          "hand": "1A",
+          "gen": "C0",
+          "S": 0.737710862327801,
+          "S_table": 0.738,
+          "in_old_band": true,
+          "in_widened_band": false,
+          "outside_old_inside_widened": false
+        },
+        {
+          "hand": "1A",
+          "gen": "naibbe_it",
+          "S": 0.7412052084456562,
+          "S_table": 0.741,
+          "in_old_band": true,
+          "in_widened_band": false,
+          "outside_old_inside_widened": false
+        },
+        {
+          "hand": "1A",
+          "gen": "naibbe_nonsense",
+          "S": 0.790545218456753,
+          "S_table": 0.791,
+          "in_old_band": true,
+          "in_widened_band": false,
+          "outside_old_inside_widened": false
+        },
+        {
+          "hand": "2B",
+          "gen": "C0",
+          "S": 0.8245495657278826,
+          "S_table": 0.825,
+          "in_old_band": false,
+          "in_widened_band": true,
+          "outside_old_inside_widened": true
+        },
+        {
+          "hand": "2B",
+          "gen": "naibbe_it",
+          "S": 0.8222491677157053,
+          "S_table": 0.822,
+          "in_old_band": false,
+          "in_widened_band": true,
+          "outside_old_inside_widened": true
+        },
+        {
+          "hand": "2B",
+          "gen": "naibbe_nonsense",
+          "S": 0.8366360720043055,
+          "S_table": 0.837,
+          "in_old_band": false,
+          "in_widened_band": false,
+          "outside_old_inside_widened": false
+        },
+        {
+          "hand": "3B",
+          "gen": "C0",
+          "S": 0.8242229678034406,
+          "S_table": 0.824,
+          "in_old_band": false,
+          "in_widened_band": true,
+          "outside_old_inside_widened": true
+        },
+        {
+          "hand": "3B",
+          "gen": "naibbe_it",
+          "S": 0.807910881492064,
+          "S_table": 0.808,
+          "in_old_band": false,
+          "in_widened_band": false,
+          "outside_old_inside_widened": false
+        },
+        {
+          "hand": "3B",
+          "gen": "naibbe_nonsense",
+          "S": 0.84008300295749,
+          "S_table": 0.84,
+          "in_old_band": false,
+          "in_widened_band": true,
+          "outside_old_inside_widened": true
+        }
+      ]
+    },
+    "R3": {
+      "pass": true,
+      "any_junction_le_0.05": false,
+      "any_interior_junction_le_0.05": false,
+      "junction_min": 0.08314596705235461,
+      "junction_max": 0.24232452281524358,
+      "junction_interior_min": 0.0814292105199117,
+      "above_generator_orig": true,
+      "generator_orig_max": 0.0034201899670206672,
+      "generator_ceiling": 0.004
+    }
+  },
+  "numbers": {
+    "old_band": [
+      0.72,
+      0.8
+    ],
+    "widened_bands": {
+      "1A": [
+        0.750157271692981,
+        0.7701395460864507
+      ],
+      "2B": [
+        0.810948443944006,
+        0.8268249576055238
+      ],
+      "3B": [
+        0.8148526240093674,
+        0.8467773849886273
+      ]
+    },
+    "D_ranges": {
+      "1A": {
+        "D1": {
+          "min": -0.20147244365533723,
+          "max": -0.17547376560929173,
+          "range": 0.025998678046045498,
+          "delta": 0.1,
+          "pass": true
+        },
+        "D2": {
+          "min": 0.2136928955080979,
+          "max": 0.2450962714964433,
+          "range": 0.03140337598834542,
+          "delta": 0.1,
+          "pass": true
+        },
+        "D3": {
+          "min": 0.0341708464779461,
+          "max": 0.04168254900489003,
+          "range": 0.007511702526943935,
+          "delta": 0.015,
+          "pass": true
+        },
+        "D4": {
+          "min": 0.06169575142510553,
+          "max": 0.09544790862482166,
+          "range": 0.03375215719971614,
+          "delta": 0.1,
+          "pass": true
+        },
+        "D5": {
+          "min": 1.9257848158960924,
+          "max": 1.9396103311808501,
+          "range": 0.013825515284757728,
+          "delta": 0.15,
+          "pass": true
+        }
+      },
+      "2B": {
+        "D1": {
+          "min": -0.16228134386154736,
+          "max": -0.13290014677517625,
+          "range": 0.029381197086371103,
+          "delta": 0.1,
+          "pass": true
+        },
+        "D2": {
+          "min": 0.2102982734100216,
+          "max": 0.26069114282482353,
+          "range": 0.05039286941480192,
+          "delta": 0.1,
+          "pass": true
+        },
+        "D3": {
+          "min": 0.032334923872729626,
+          "max": 0.03878909850745604,
+          "range": 0.00645417463472641,
+          "delta": 0.015,
+          "pass": true
+        },
+        "D4": {
+          "min": 0.01204853733424116,
+          "max": 0.07705471059722058,
+          "range": 0.06500617326297942,
+          "delta": 0.1,
+          "pass": true
+        },
+        "D5": {
+          "min": 1.7470009163310445,
+          "max": 1.7724309596599526,
+          "range": 0.02543004332890808,
+          "delta": 0.15,
+          "pass": true
+        }
+      },
+      "3B": {
+        "D1": {
+          "min": -0.19054241109335557,
+          "max": -0.1667245296344717,
+          "range": 0.02381788145888386,
+          "delta": 0.1,
+          "pass": true
+        },
+        "D2": {
+          "min": 0.1900505609857479,
+          "max": 0.23356931570848083,
+          "range": 0.04351875472273292,
+          "delta": 0.1,
+          "pass": true
+        },
+        "D3": {
+          "min": 0.023089278439789945,
+          "max": 0.030901375540895386,
+          "range": 0.0078120971011054405,
+          "delta": 0.015,
+          "pass": true
+        },
+        "D4": {
+          "min": 0.04781500183372067,
+          "max": 0.10484273805632682,
+          "range": 0.05702773622260615,
+          "delta": 0.1,
+          "pass": true
+        },
+        "D5": {
+          "min": 1.8145553739034783,
+          "max": 1.8487880361352487,
+          "range": 0.03423266223177035,
+          "delta": 0.15,
+          "pass": true
+        }
+      }
+    },
+    "deltas": {
+      "D1": 0.1,
+      "D2": 0.1,
+      "D3": 0.015,
+      "D4": 0.1,
+      "D5": 0.15
+    },
+    "h39_in_old_band": 3,
+    "h39_in_widened_band": 4,
+    "h39_outside_old_inside_widened": 4,
+    "junction_min": 0.08314596705235461,
+    "junction_max": 0.24232452281524358,
+    "junction_interior_min": 0.0814292105199117,
+    "any_junction_le_0.05": false,
+    "any_interior_junction_le_0.05": false,
+    "generator_orig_max": 0.0034201899670206672,
+    "generator_max_at_most_0.004": 0.0037186885854186245,
+    "generator_ceiling": 0.004,
+    "generator_orig_all_le_0.004": true,
+    "junction_join_drops": [
+      {
+        "hand": "1A",
+        "pair": "zl",
+        "junction_split": 0.12219374825748924,
+        "junction_join": 0.08314596705235461,
+        "relative_drop": 0.3195562928706657
+      },
+      {
+        "hand": "1A",
+        "pair": "rf",
+        "junction_split": 0.10203988224988984,
+        "junction_join": 0.09483698742565533,
+        "relative_drop": 0.0705890154458924
+      },
+      {
+        "hand": "2B",
+        "pair": "zl",
+        "junction_split": 0.24232452281524358,
+        "junction_join": 0.2055214732109602,
+        "relative_drop": 0.15187505241614885
+      },
+      {
+        "hand": "2B",
+        "pair": "rf",
+        "junction_split": 0.19979376498799298,
+        "junction_join": 0.1887150426397145,
+        "relative_drop": 0.05545079121435183
+      },
+      {
+        "hand": "3B",
+        "pair": "zl",
+        "junction_split": 0.23170138019092595,
+        "junction_join": 0.19087184138276236,
+        "relative_drop": 0.1762162088741955
+      },
+      {
+        "hand": "3B",
+        "pair": "rf",
+        "junction_split": 0.19855945985669923,
+        "junction_join": 0.1906127595567254,
+        "relative_drop": 0.040021766304707794
+      }
+    ],
+    "measures": [
+      {
+        "S_full": 0.7412771002447555,
+        "S_interior": 0.750157271692981,
+        "junction": 0.12219374825748924,
+        "junction_interior": 0.12000375283335764,
+        "n_tokens_full": 10316,
+        "n_tokens_interior": 7287,
+        "n_lines_capped": 1477,
+        "hand": "1A",
+        "condition": "zl_split",
+        "n_tokens_loaded": 10326
+      },
+      {
+        "S_full": 0.7449974355087339,
+        "S_interior": 0.7556204445353149,
+        "junction": 0.08314596705235461,
+        "junction_interior": 0.0814292105199117,
+        "n_tokens_full": 9570,
+        "n_tokens_interior": 6524,
+        "n_lines_capped": 1477,
+        "hand": "1A",
+        "condition": "zl_join",
+        "n_tokens_loaded": 9582
+      },
+      {
+        "S_full": 0.7585872126428491,
+        "S_interior": 0.7701395460864507,
+        "junction": 0.09661039541699838,
+        "junction_interior": 0.09058938970642157,
+        "n_tokens_full": 10322,
+        "n_tokens_interior": 7296,
+        "n_lines_capped": 1474,
+        "hand": "1A",
+        "condition": "it2a",
+        "n_tokens_loaded": 10349
+      },
+      {
+        "S_full": 0.7436083641785296,
+        "S_interior": 0.7550124397627269,
+        "junction": 0.10203988224988984,
+        "junction_interior": 0.10061761200769084,
+        "n_tokens_full": 9567,
+        "n_tokens_interior": 6524,
+        "n_lines_capped": 1477,
+        "hand": "1A",
+        "condition": "rf_split",
+        "n_tokens_loaded": 9580
+      },
+      {
+        "S_full": 0.7487941495949701,
+        "S_interior": 0.7598583301595212,
+        "junction": 0.09483698742565533,
+        "junction_interior": 0.0931989369657108,
+        "n_tokens_full": 9390,
+        "n_tokens_interior": 6346,
+        "n_lines_capped": 1477,
+        "hand": "1A",
+        "condition": "rf_join",
+        "n_tokens_loaded": 9404
+      },
+      {
+        "S_full": 0.7980037245271197,
+        "S_interior": 0.810948443944006,
+        "junction": 0.24232452281524358,
+        "junction_interior": 0.2370047673226886,
+        "n_tokens_full": 10323,
+        "n_tokens_interior": 7973,
+        "n_lines_capped": 1179,
+        "hand": "2B",
+        "condition": "zl_split",
+        "n_tokens_loaded": 10722
+      },
+      {
+        "S_full": 0.8014099770279781,
+        "S_interior": 0.8168586859907097,
+        "junction": 0.2055214732109602,
+        "junction_interior": 0.1967863979202443,
+        "n_tokens_full": 9970,
+        "n_tokens_interior": 7515,
+        "n_lines_capped": 1227,
+        "hand": "2B",
+        "condition": "zl_join",
+        "n_tokens_loaded": 9984
+      },
+      {
+        "S_full": 0.8167552793316672,
+        "S_interior": 0.8268249576055238,
+        "junction": 0.22490359348580052,
+        "junction_interior": 0.2143048610089251,
+        "n_tokens_full": 10313,
+        "n_tokens_interior": 7963,
+        "n_lines_capped": 1181,
+        "hand": "2B",
+        "condition": "it2a",
+        "n_tokens_loaded": 10704
+      },
+      {
+        "S_full": 0.8100742933614851,
+        "S_interior": 0.8206165442814712,
+        "junction": 0.19979376498799298,
+        "junction_interior": 0.2007073072901761,
+        "n_tokens_full": 9040,
+        "n_tokens_interior": 6567,
+        "n_lines_capped": 1221,
+        "hand": "2B",
+        "condition": "rf_split",
+        "n_tokens_loaded": 9054
+      },
+      {
+        "S_full": 0.8144515578342866,
+        "S_interior": 0.8257949575021786,
+        "junction": 0.1887150426397145,
+        "junction_interior": 0.19294281355771867,
+        "n_tokens_full": 8856,
+        "n_tokens_interior": 6381,
+        "n_lines_capped": 1221,
+        "hand": "2B",
+        "condition": "rf_join",
+        "n_tokens_loaded": 8871
+      },
+      {
+        "S_full": 0.801869713786969,
+        "S_interior": 0.8200804122896839,
+        "junction": 0.23170138019092595,
+        "junction_interior": 0.2336124439102868,
+        "n_tokens_full": 10325,
+        "n_tokens_interior": 8207,
+        "n_lines_capped": 1053,
+        "hand": "3B",
+        "condition": "zl_split",
+        "n_tokens_loaded": 10835
+      },
+      {
+        "S_full": 0.8061441719588024,
+        "S_interior": 0.8279321044705796,
+        "junction": 0.19087184138276236,
+        "junction_interior": 0.18756614671648114,
+        "n_tokens_full": 10030,
+        "n_tokens_interior": 7813,
+        "n_lines_capped": 1100,
+        "hand": "3B",
+        "condition": "zl_join",
+        "n_tokens_loaded": 10031
+      },
+      {
+        "S_full": 0.8275550093987533,
+        "S_interior": 0.8467773849886273,
+        "junction": 0.221485939749273,
+        "junction_interior": 0.2172855484724286,
+        "n_tokens_full": 10330,
+        "n_tokens_interior": 8202,
+        "n_lines_capped": 1058,
+        "hand": "3B",
+        "condition": "it2a",
+        "n_tokens_loaded": 10775
+      },
+      {
+        "S_full": 0.7976394677885931,
+        "S_interior": 0.8148526240093674,
+        "junction": 0.19855945985669923,
+        "junction_interior": 0.2070486435409686,
+        "n_tokens_full": 9604,
+        "n_tokens_interior": 7389,
+        "n_lines_capped": 1100,
+        "hand": "3B",
+        "condition": "rf_split",
+        "n_tokens_loaded": 9607
+      },
+      {
+        "S_full": 0.8020341274077213,
+        "S_interior": 0.8201582760670858,
+        "junction": 0.1906127595567254,
+        "junction_interior": 0.19674861316534462,
+        "n_tokens_full": 9406,
+        "n_tokens_interior": 7188,
+        "n_lines_capped": 1100,
+        "hand": "3B",
+        "condition": "rf_join",
+        "n_tokens_loaded": 9409
+      }
+    ],
+    "fingerprints": [
+      {
+        "hand": "1A",
+        "condition": "zl_split",
+        "n_tokens": 10326,
+        "D": {
+          "D1": -0.17547376560929173,
+          "D2": 0.2450962714964433,
+          "D3": 0.04168254900489003,
+          "D4": 0.06169575142510553,
+          "D5": 1.9333304136579703
+        },
+        "n_match": 5,
+        "reproduces": true,
+        "distance": 0.40725292580962946,
+        "glyphs_per_word": 5.76786751888437,
+        "lam5": 0.04168254900489003
+      },
+      {
+        "hand": "1A",
+        "condition": "zl_join",
+        "n_tokens": 9582,
+        "D": {
+          "D1": -0.20142300246421563,
+          "D2": 0.23241007654244328,
+          "D3": 0.036001428493816025,
+          "D4": 0.09292432223629099,
+          "D5": 1.9396103311808501
+        },
+        "n_match": 5,
+        "reproduces": true,
+        "distance": 0.7515139667121451,
+        "glyphs_per_word": 6.131183469004383,
+        "lam5": 0.036001428493816025
+      },
+      {
+        "hand": "1A",
+        "condition": "it2a",
+        "n_tokens": 10349,
+        "D": {
+          "D1": -0.20147244365533723,
+          "D2": 0.23687850395880083,
+          "D3": 0.04088862177847835,
+          "D4": 0.06500114524587097,
+          "D5": 1.932123036748616
+        },
+        "n_match": 5,
+        "reproduces": true,
+        "distance": 0.552824682062816,
+        "glyphs_per_word": 5.86443134602377,
+        "lam5": 0.04088862177847835
+      },
+      {
+        "hand": "1A",
+        "condition": "rf_split",
+        "n_tokens": 9580,
+        "D": {
+          "D1": -0.18966776775456218,
+          "D2": 0.2136928955080979,
+          "D3": 0.03742655572241711,
+          "D4": 0.09123215749862545,
+          "D5": 1.9257848158960924
+        },
+        "n_match": 5,
+        "reproduces": true,
+        "distance": 0.6184896352403346,
+        "glyphs_per_word": 5.8694154488517745,
+        "lam5": 0.03742655572241711
+      },
+      {
+        "hand": "1A",
+        "condition": "rf_join",
+        "n_tokens": 9404,
+        "D": {
+          "D1": -0.1985232913921724,
+          "D2": 0.21405288865651428,
+          "D3": 0.0341708464779461,
+          "D4": 0.09544790862482166,
+          "D5": 1.927344880884835
+        },
+        "n_match": 5,
+        "reproduces": true,
+        "distance": 0.7920756328837326,
+        "glyphs_per_word": 5.948638877073586,
+        "lam5": 0.0341708464779461
+      },
+      {
+        "hand": "2B",
+        "condition": "zl_split",
+        "n_tokens": 10500,
+        "D": {
+          "D1": -0.13290014677517625,
+          "D2": 0.22279790121820575,
+          "D3": 0.03457990466850555,
+          "D4": 0.05076970460438979,
+          "D5": 1.7470009163310445
+        },
+        "n_match": 5,
+        "reproduces": true,
+        "distance": 0.6437704379717308,
+        "glyphs_per_word": 5.9154285714285715,
+        "lam5": 0.03457990466850555
+      },
+      {
+        "hand": "2B",
+        "condition": "zl_join",
+        "n_tokens": 9984,
+        "D": {
+          "D1": -0.16228134386154736,
+          "D2": 0.2102982734100216,
+          "D3": 0.032334923872729626,
+          "D4": 0.07705471059722058,
+          "D5": 1.761343179854398
+        },
+        "n_match": 5,
+        "reproduces": true,
+        "distance": 0.6895553009669598,
+        "glyphs_per_word": 6.286157852564102,
+        "lam5": 0.032334923872729626
+      },
+      {
+        "hand": "2B",
+        "condition": "it2a",
+        "n_tokens": 10500,
+        "D": {
+          "D1": -0.15615952454804471,
+          "D2": 0.26069114282482353,
+          "D3": 0.03878909850745604,
+          "D4": 0.01204853733424116,
+          "D5": 1.7560615770512205
+        },
+        "n_match": 5,
+        "reproduces": true,
+        "distance": 0.5783736207660817,
+        "glyphs_per_word": 5.983619047619047,
+        "lam5": 0.03878909850745604
+      },
+      {
+        "hand": "2B",
+        "condition": "rf_split",
+        "n_tokens": 9054,
+        "D": {
+          "D1": -0.14512200831844524,
+          "D2": 0.2280683836553603,
+          "D3": 0.03706170645104907,
+          "D4": 0.046927753590457755,
+          "D5": 1.7724309596599526
+        },
+        "n_match": 5,
+        "reproduces": true,
+        "distance": 0.32496151976828397,
+        "glyphs_per_word": 5.846366246962669,
+        "lam5": 0.03706170645104907
+      },
+      {
+        "hand": "2B",
+        "condition": "rf_join",
+        "n_tokens": 8871,
+        "D": {
+          "D1": -0.15094066197363354,
+          "D2": 0.21141358507573216,
+          "D3": 0.034137868860840075,
+          "D4": 0.06803857979659433,
+          "D5": 1.7716964134279
+        },
+        "n_match": 5,
+        "reproduces": true,
+        "distance": 0.49364705109609064,
+        "glyphs_per_word": 5.936309322511555,
+        "lam5": 0.034137868860840075
+      },
+      {
+        "hand": "3B",
+        "condition": "zl_split",
+        "n_tokens": 10500,
+        "D": {
+          "D1": -0.1667245296344717,
+          "D2": 0.20022122668691011,
+          "D3": 0.02635681258589227,
+          "D4": 0.0815395685191973,
+          "D5": 1.8158470856109765
+        },
+        "n_match": 5,
+        "reproduces": true,
+        "distance": 0.9715653353673684,
+        "glyphs_per_word": 6.232285714285714,
+        "lam5": 0.02635681258589227
+      },
+      {
+        "hand": "3B",
+        "condition": "zl_join",
+        "n_tokens": 10031,
+        "D": {
+          "D1": -0.19054241109335557,
+          "D2": 0.1900505609857479,
+          "D3": 0.023089278439789945,
+          "D4": 0.10484273805632682,
+          "D5": 1.8268494806032234
+        },
+        "n_match": 5,
+        "reproduces": true,
+        "distance": 1.7256259188180698,
+        "glyphs_per_word": 6.62595952547104,
+        "lam5": 0.023089278439789945
+      },
+      {
+        "hand": "3B",
+        "condition": "it2a",
+        "n_tokens": 10500,
+        "D": {
+          "D1": -0.18238285393823794,
+          "D2": 0.23356931570848083,
+          "D3": 0.03005014006113234,
+          "D4": 0.04781500183372067,
+          "D5": 1.8145553739034783
+        },
+        "n_match": 5,
+        "reproduces": true,
+        "distance": 0.42433728635284934,
+        "glyphs_per_word": 6.318190476190476,
+        "lam5": 0.03005014006113234
+      },
+      {
+        "hand": "3B",
+        "condition": "rf_split",
+        "n_tokens": 9607,
+        "D": {
+          "D1": -0.18393939894382605,
+          "D2": 0.22196035213295495,
+          "D3": 0.030901375540895386,
+          "D4": 0.0637565676581957,
+          "D5": 1.8467773606407936
+        },
+        "n_match": 5,
+        "reproduces": true,
+        "distance": 0.3734662454199889,
+        "glyphs_per_word": 6.1663370459040285,
+        "lam5": 0.030901375540895386
+      },
+      {
+        "hand": "3B",
+        "condition": "rf_join",
+        "n_tokens": 9409,
+        "D": {
+          "D1": -0.18135421192680745,
+          "D2": 0.22574660677180702,
+          "D3": 0.029576814893260337,
+          "D4": 0.06617134136543257,
+          "D5": 1.8487880361352487
+        },
+        "n_match": 5,
+        "reproduces": true,
+        "distance": 0.44118982987159416,
+        "glyphs_per_word": 6.266659581251993,
+        "lam5": 0.029576814893260337
+      }
+    ],
+    "h39_cells": [
+      {
+        "hand": "1A",
+        "gen": "C0",
+        "S": 0.737710862327801,
+        "S_table": 0.738,
+        "in_old_band": true,
+        "in_widened_band": false,
+        "outside_old_inside_widened": false
+      },
+      {
+        "hand": "1A",
+        "gen": "naibbe_it",
+        "S": 0.7412052084456562,
+        "S_table": 0.741,
+        "in_old_band": true,
+        "in_widened_band": false,
+        "outside_old_inside_widened": false
+      },
+      {
+        "hand": "1A",
+        "gen": "naibbe_nonsense",
+        "S": 0.790545218456753,
+        "S_table": 0.791,
+        "in_old_band": true,
+        "in_widened_band": false,
+        "outside_old_inside_widened": false
+      },
+      {
+        "hand": "2B",
+        "gen": "C0",
+        "S": 0.8245495657278826,
+        "S_table": 0.825,
+        "in_old_band": false,
+        "in_widened_band": true,
+        "outside_old_inside_widened": true
+      },
+      {
+        "hand": "2B",
+        "gen": "naibbe_it",
+        "S": 0.8222491677157053,
+        "S_table": 0.822,
+        "in_old_band": false,
+        "in_widened_band": true,
+        "outside_old_inside_widened": true
+      },
+      {
+        "hand": "2B",
+        "gen": "naibbe_nonsense",
+        "S": 0.8366360720043055,
+        "S_table": 0.837,
+        "in_old_band": false,
+        "in_widened_band": false,
+        "outside_old_inside_widened": false
+      },
+      {
+        "hand": "3B",
+        "gen": "C0",
+        "S": 0.8242229678034406,
+        "S_table": 0.824,
+        "in_old_band": false,
+        "in_widened_band": true,
+        "outside_old_inside_widened": true
+      },
+      {
+        "hand": "3B",
+        "gen": "naibbe_it",
+        "S": 0.807910881492064,
+        "S_table": 0.808,
+        "in_old_band": false,
+        "in_widened_band": false,
+        "outside_old_inside_widened": false
+      },
+      {
+        "hand": "3B",
+        "gen": "naibbe_nonsense",
+        "S": 0.84008300295749,
+        "S_table": 0.84,
+        "in_old_band": false,
+        "in_widened_band": true,
+        "outside_old_inside_widened": true
+      }
+    ],
+    "generator_orig": [
+      {
+        "corpus": "GEN_C0_2B",
+        "variant": "full",
+        "transform": "orig",
+        "M5_junction": 0.0009377325084131034
+      },
+      {
+        "corpus": "GEN_C0_2B",
+        "variant": "interior",
+        "transform": "orig",
+        "M5_junction": -0.0006444982072680502
+      },
+      {
+        "corpus": "GEN_naibbe_it_ariosto",
+        "variant": "full",
+        "transform": "orig",
+        "M5_junction": 0.0034201899670206672
+      },
+      {
+        "corpus": "GEN_naibbe_it_ariosto",
+        "variant": "interior",
+        "transform": "orig",
+        "M5_junction": 0.0025004457840629834
+      },
+      {
+        "corpus": "GEN_naibbe_la_pliny",
+        "variant": "full",
+        "transform": "orig",
+        "M5_junction": 0.0015596375347764618
+      },
+      {
+        "corpus": "GEN_naibbe_la_pliny",
+        "variant": "interior",
+        "transform": "orig",
+        "M5_junction": 0.0019190096231744558
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+ "S_full": 0.7585872126428491,
+ "S_interior": 0.7701395460864507,
+ "junction": 0.09661039541699838,
+ "junction_interior": 0.09058938970642157,
+ "n_tokens_full": 10322,
+ "n_tokens_interior": 7296,
+ "n_lines_capped": 1474,
+ "hand": "1A",
+ "condition": "it2a",
+ "n_tokens_loaded": 10349
+}

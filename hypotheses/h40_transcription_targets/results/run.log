@@ -1,0 +1,43 @@
+measure 1A_zl_split S_full=0.741277 S_interior=0.750157 J=0.122194 J_int=0.120004 n=10326 (1.6s)
+check 1A zl_split S_full delta=0.000e+00
+check 1A zl_split S_interior delta=0.000e+00
+check 1A zl_split junction delta=0.000e+00
+check 1A zl_split junction_interior delta=0.000e+00
+fingerprint 1A_zl_split (30.9s)
+measure 1A_zl_join S_full=0.744997 S_interior=0.755620 J=0.083146 J_int=0.081429 n=9582 (1.5s)
+fingerprint 1A_zl_join (26.2s)
+measure 1A_it2a S_full=0.758587 S_interior=0.770140 J=0.096610 J_int=0.090589 n=10349 (1.5s)
+fingerprint 1A_it2a (30.5s)
+measure 1A_rf_split S_full=0.743608 S_interior=0.755012 J=0.102040 J_int=0.100618 n=9580 (1.5s)
+fingerprint 1A_rf_split (28.1s)
+measure 1A_rf_join S_full=0.748794 S_interior=0.759858 J=0.094837 J_int=0.093199 n=9404 (1.4s)
+fingerprint 1A_rf_join (27.1s)
+measure 2B_zl_split S_full=0.798004 S_interior=0.810948 J=0.242325 J_int=0.237005 n=10722 (1.5s)
+check 2B zl_split S_full delta=0.000e+00
+check 2B zl_split S_interior delta=0.000e+00
+check 2B zl_split junction delta=0.000e+00
+check 2B zl_split junction_interior delta=0.000e+00
+fingerprint 2B_zl_split (30.9s)
+measure 2B_zl_join S_full=0.801410 S_interior=0.816859 J=0.205521 J_int=0.196786 n=9984 (1.5s)
+fingerprint 2B_zl_join (26.8s)
+measure 2B_it2a S_full=0.816755 S_interior=0.826825 J=0.224904 J_int=0.214305 n=10704 (1.5s)
+fingerprint 2B_it2a (30.7s)
+measure 2B_rf_split S_full=0.810074 S_interior=0.820617 J=0.199794 J_int=0.200707 n=9054 (1.3s)
+fingerprint 2B_rf_split (26.0s)
+measure 2B_rf_join S_full=0.814452 S_interior=0.825795 J=0.188715 J_int=0.192943 n=8871 (1.3s)
+fingerprint 2B_rf_join (24.9s)
+measure 3B_zl_split S_full=0.801870 S_interior=0.820080 J=0.231701 J_int=0.233612 n=10835 (1.5s)
+check 3B zl_split S_full delta=0.000e+00
+check 3B zl_split S_interior delta=0.000e+00
+check 3B zl_split junction delta=0.000e+00
+check 3B zl_split junction_interior delta=0.000e+00
+fingerprint 3B_zl_split (25.8s)
+measure 3B_zl_join S_full=0.806144 S_interior=0.827932 J=0.190872 J_int=0.187566 n=10031 (1.5s)
+fingerprint 3B_zl_join (23.5s)
+measure 3B_it2a S_full=0.827555 S_interior=0.846777 J=0.221486 J_int=0.217286 n=10775 (1.5s)
+fingerprint 3B_it2a (37.9s)
+measure 3B_rf_split S_full=0.797639 S_interior=0.814853 J=0.198559 J_int=0.207049 n=9607 (1.4s)
+fingerprint 3B_rf_split (24.1s)
+measure 3B_rf_join S_full=0.802034 S_interior=0.820158 J=0.190613 J_int=0.196749 n=9409 (1.4s)
+fingerprint 3B_rf_join (22.8s)
+run complete
