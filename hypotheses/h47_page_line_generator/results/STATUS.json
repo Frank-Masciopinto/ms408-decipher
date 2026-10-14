@@ -1,0 +1,15 @@
+{
+  "hypothesis": "h47_page_line_generator",
+  "complete": true,
+  "verdict": "supported",
+  "U1": true,
+  "U2": true,
+  "U3": true,
+  "n_passed_1A": 6,
+  "n_passed_2B": 6,
+  "n_passed_3B": 6,
+  "baseline_native_2B_passed": 1,
+  "baseline_C0_graph_2B_passed": 2,
+  "seed": 47,
+  "runtime_sec": 85.13640673800546
+}

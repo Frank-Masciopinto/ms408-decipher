@@ -25,12 +25,12 @@ Status key:
 - **One cut of the Naibbe tables (h28):** shuffling which letter owns which string, which strings are prefixes versus suffixes, or the order of units inside each string each takes the fingerprint outside the match rule. The order cut is the large one. No one of the three is the sole carrier.
 - **A decodable toy table hitting MS's D4 window (h29):** three length × suffix-pool settings are ≥0.8 decodable and clear the D4 floor of −0.07, but their D4 (+0.38 to +0.48) is above the MS band. No setting of the 25 reproduces the five-statistic fingerprint.
 - **Transcription moving the fingerprint (h40):** across ZL3b, IT2a and RF1b, D1–D5 stay inside the h20 tolerances and the last-glyph link stays far above the generators. The space-predictability target does move: for hands 2B and 3B it sits above 0.80.
+- **First-line copy seeding or open-spread copying across folios (h46):** folio-opening first lines have a *lower* one-edit pair rate with later lines on the same folio than interior lines do (`seed − interior` = −0.017 to −0.024 across all three hands), and cross-folio one-edit rates across a visible open spread (`v → r`) are no higher than across a page turn (`r → v`).
 
 ## Open leads
-- **Line structure (h13–h16):**
-  - Line-start words are a 2B/3B habit, adding a d-/s- or gallows onset to common words.
-  - `am`/`dam`/`dy` end lines in every hand.
-  - Not yet modelled by any generator.
+- **Line structure (h13–h16, h30, h47):**
+  - Line-start words are a 2B/3B habit, adding a d-/s- or gallows onset to common words; `am`/`dam`/`dy` end lines in every hand.
+  - Modelled in `h47` (`page_line_copier`), which reproduces line-edge concentration, paragraph-initial gallows, and the cross-line junction drop alongside the 5/5 fingerprint, space band, page burstiness, near-repeat decay, and folio-boundary break.
 - **Hands (h11, h12, h14, h15):**
   - Hands look like one system with spelling habits (`-edy → -ol`) plus different vocabulary.
   - Word-level evidence for the mapping is weak (it is mostly shared stems).
@@ -40,7 +40,7 @@ Status key:
 - **Near-repeat range (h42):** one-edit pairs are absent in Boccaccio and in the h39 graph respelling. Hand 1A drops at gap 21–100, hand 3B at 101–500. Hand 2B is not elevated for adjacent pairs, is elevated at gaps 2–20, and is elevated again at 101–500. C0 drops at gap 2–5. Fitted self-citation and the h39 tuned copier stay elevated through gap 21–100.
 - **Page clustering as evidence of content (h44):** fitted self-citation, cut into arbitrary pages of 230 tokens, reaches a burst excess of 1.63, inside the manuscript range of 1.50–1.69. The h39 tuned copier exceeds it (4.76). The excess number does not require a plaintext or real page boundaries.
 - **Vowel/consonant account of the glyph link (h45):** in prose controls the Sukhotin split carries a median share of 0.004 of the last-to-first link. The pre-registered sound pattern is not there, so the pen-versus-sound comparison is not scored.
-- **Folio boundary (h43):** at a matched distance of 80 tokens, same-folio windows are more alike than cross-folio windows in hands 1A (effect 0.082 vs null 0.059) and 2B (0.100 vs 0.074). Hand 3B has too few cross pairs to score. Among texts with known section edges, only Pliny's chapters pass at that distance. Boccaccio's novellas pass at distance 160. The recipe book does not.
+- **Folio boundary (h43, h46, h47, h48):** at a matched distance of 80 tokens, same-folio windows are more alike than cross-folio windows in hands 1A (effect 0.082 vs null 0.059) and 2B (0.100 vs 0.074). Short-lag (`6–20`) one-edit pair rates also drop across folio boundaries in all three hands (`h46`). Inside each folio (`h48`), similarity is not a stationary page palette alone: both one-edit rate ($z = 5.2\text{–}11.5$) and unit-3gram cosine ($z = 10.5\text{–}19.1$) decay significantly with line distance $\Delta\ell$ against a within-folio line-order permutation null, decomposing short-lag same-folio one-edit excess into roughly half folio-level vocabulary palette (37–63 %) and half top-to-bottom sequential copy drift (37–63 %). Adding a partial folio-buffer reset (`rho_keep = 0.15`) and line-boundary slot framing to a no-plaintext copier (`h47`) passes all 6 benchmark families simultaneously across hands 1A, 2B and 3B.
 - **Not yet attempted:**
   - A pharma label ↔ grid layout from the scans, so h17 test A can be redone on individual labels.
   - The image-stage glyph check on higher-resolution scans.
@@ -719,6 +719,44 @@ Status key:
 - **Result:**
   - C1 fails. The median control share is 0.004, against a bar of 0.25. Boccaccio 0.002, cucina 0.005, Pliny 0.0004, Macer 0.21. Sukhotin recovers e a o i u on Boccaccio.
   - C2 and C3 are not scored. MS shares are 0.058, 0.066 and 0.057. Self-citation is 0.002 and the gap rule is 0.001. The gap-rule stream is the whole fitted text, 48,671 tokens.
-- **Commits:** adf281d (prereg), (results and log commit)
+- **Commits:** adf281d (prereg), a97b8a7 (results and log)
 - **Status:** closed (the vowel/consonant split is not the control pattern)
+- **Led to:** —
+
+### L56 · 2026-10-14 14:48 · h46 folio reset mechanism
+- **Folder:** [hypotheses/h46_folio_reset_mechanism/](hypotheses/h46_folio_reset_mechanism/)
+- **Question:** do one-edit word pairs drop across folio boundaries at matched token lag, do folio-opening first lines seed their page's one-edit cluster, and does Hand 2B's `101–500` excess come from visible open spreads (`v → r`)?
+- **Done:**
+  - Pre-registered. Hands 1A, 2B, 3B (`h14_lib.table()`, ZL3b, comma as space, collapsed EVA units).
+  - Test 1: same-folio vs cross-folio one-edit rate in lags `6-20`, `21-100`, `101-500` against 100 within-quire circular rotations (seed 46). Test 2: line-1 seed rate vs interior baseline rate on folios with $\ge 6$ lines against 200 within-folio line-order permutations. Test 3: `v_to_r` (open spread) vs `r_to_v` (page turn) across consecutive folios in `21-100` and `101-500` against 200 transition-label permutations.
+- **Result:**
+  - F1–F3 fail. In Test 1, all three hands pass at `6-20` (`same − cross` +0.020, +0.024, +0.015), and 1A (+0.006 vs null 95th +0.002) and 3B (+0.008 vs +0.007; also `101-500` +0.008 vs +0.006) pass at `21-100`, whereas 2B (+0.006 vs +0.011) does not exceed the rotation null at `21-100` or `101-500`.
+  - In Test 2, line 1 has a *lower* one-edit rate with its folio than interior lines do in every hand (−0.017, −0.024, −0.019). In Test 3, `v_to_r − r_to_v` is within noise (+0.004 and −0.001 in 2B).
+- **Commits:** 7992e99 (prereg), (results and log commit)
+- **Status:** closed (first-line seeding and open-spread copying); lead (short-lag `6–20` one-edit chains break at folio edges in all three hands)
+- **Led to:** L57, L58
+
+### L57 · 2026-10-14 14:48 · h47 unified page- and line-bounded generator
+- **Folder:** [hypotheses/h47_page_line_generator/](hypotheses/h47_page_line_generator/)
+- **Question:** can a single no-plaintext generator with partial folio-buffer reset and line-boundary slot framing simultaneously pass all six manuscript benchmark families (`B1`–`B6`) across hands 1A, 2B and 3B?
+- **Done:**
+  - Pre-registered. Fit `page_line_copier` on even bifolia of hands 1A, 2B and 3B (partial lookback reset `rho_keep = 0.15` at folio edges; line-initial/paragraph-initial onset weights, line-final ending weights, and cross-line junction reset at line breaks) and generated on each hand's real folio/line template up to 10,500 tokens (seed 47).
+  - Scored `page_line_copier` (1A, 2B, 3B) and the two stored Hand 2B `h39` baselines (`native_tuned` and `C0_graph`) on `B1` (`h20` 5/5 fingerprint), `B2` (`h40` interior space band + junction $J \ge 0.06$), `B3` (`h30` line-edge concentration, cross/within MI $< 0.5$, para-initial $z > 3$), `B4` (`h43` folio-boundary drop), `B5` (`h44` folio-concentrated burstiness), and `B6` (`h42` page-scale near-repeat decay).
+- **Result:**
+  - U1–U3 pass. `page_line_copier` passes 6/6 benchmarks on Hand 1A, 6/6 on Hand 2B, and 6/6 on Hand 3B (5/6 if `d=80` unscored is excluded; `d=160` passes with +0.129 vs +0.061).
+  - On Hand 2B, the stored `h39` baselines pass only 1/6 (`h39_native_tuned_2B`) and 2/6 (`h39_C0_graph_2B`).
+- **Commits:** 7992e99 (prereg), (results and log commit)
+- **Status:** lead (a single page-and-line-bounded no-plaintext generator reproduces all six benchmark families simultaneously)
+- **Led to:** —
+
+### L58 · 2026-10-14 14:48 · h48 within-folio copy drift vs fixed page palette
+- **Folder:** [hypotheses/h48_within_folio_drift/](hypotheses/h48_within_folio_drift/)
+- **Question:** within a single folio, is similarity stationary from top to bottom (a fixed page vocabulary palette) or does it decay with line lag $\Delta\ell$ (sequential top-to-bottom copy drift)?
+- **Done:**
+  - Pre-registered. Same-folio line pairs on folios with $\ge 8$ paragraph lines across MS hands 1A, 2B, 3B, prose controls (`it_boccaccio`, `la_pliny_herbal`), drift generators (`self_citation`, `h39_native_tuned`), and a within-folio line-permuted control (`palette_ctrl`), scored against 200 within-folio line-order permutations (seed 48) and 200 within-quire shuffles.
+- **Result:**
+  - D1–D3 pass in 3/3 MS hands. One-edit drift slope $S_{\text{edit}}$ (`Delta_l in {1,2}` minus `Delta_l >= 5`) is +0.0086 ($z = 5.2$), +0.0093 ($z = 11.5$) and +0.0060 ($z = 7.8$) in 1A, 2B and 3B, while Boccaccio (−0.0006) and Pliny (−0.0001) show zero one-edit slope. Unit-3gram cosine slope $S_{\text{cos3}}$ is +0.042, +0.042 and +0.030 ($z = 10.5\text{–}19.1$).
+  - Decomposing short-lag ($\Delta\ell \in \{1,2\}$) same-folio one-edit excess over a within-quire shuffle (`D3`) shows that both a folio-wide vocabulary palette (62.8 %, 36.8 %, 59.8 %; $z = 5.5\text{–}11.7$) and within-folio sequential drift (37.2 %, 63.2 %, 40.2 %; $z = 5.2\text{–}10.9$) contribute in every hand.
+- **Commits:** 7992e99 (prereg), (results and log commit)
+- **Status:** lead (each folio combines a page-level vocabulary shift with top-to-bottom line-by-line copy drift)
 - **Led to:** —

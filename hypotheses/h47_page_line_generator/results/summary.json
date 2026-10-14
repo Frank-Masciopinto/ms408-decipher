@@ -1,0 +1,576 @@
+{
+  "hypothesis": "h47_page_line_generator",
+  "verdict": "supported",
+  "seed": 47,
+  "n_stream": 10500,
+  "rho_keep": 0.15,
+  "w_buf": 90,
+  "predictions": {
+    "U1": {
+      "passed": true,
+      "n_passed_2B": 6,
+      "pass_flags_2B": {
+        "B1": true,
+        "B2": true,
+        "B3": true,
+        "B4": true,
+        "B5": true,
+        "B6": true
+      },
+      "description": "page_line_copier passes >= 5 of B1..B6 on Hand 2B"
+    },
+    "U2": {
+      "passed": true,
+      "hands_passing_ge5": [
+        "1A",
+        "2B",
+        "3B"
+      ],
+      "n_passed_by_hand": {
+        "1A": 6,
+        "2B": 6,
+        "3B": 6
+      },
+      "description": "page_line_copier passes >= 5 of B1..B6 on >= 2 of {1A, 2B, 3B}"
+    },
+    "U3": {
+      "passed": true,
+      "n_passed_h39_native_tuned_2B": 1,
+      "n_passed_h39_C0_graph_2B": 2,
+      "description": "Previous h39 best generators pass <= 3 of B1..B6 when evaluated on all six simultaneously"
+    },
+    "verdict": "supported"
+  },
+  "streams": {
+    "page_line_copier_1A": {
+      "hand": "1A",
+      "n_lines": 1477,
+      "n_tokens": 10326,
+      "n_folios": 112,
+      "n_quires": 10,
+      "n_passed": 6,
+      "pass_flags": {
+        "B1": true,
+        "B2": true,
+        "B3": true,
+        "B4": true,
+        "B5": true,
+        "B6": true
+      },
+      "B1": {
+        "passed": true,
+        "n_match": 5,
+        "stats": {
+          "D1": -0.26819751820485394,
+          "D2": 0.24907633815294083,
+          "D3": 0.0389195587326319,
+          "D4": -0.06923238764098727,
+          "D5": 2.0154664525125083
+        },
+        "match": {
+          "D1": true,
+          "D2": true,
+          "D3": true,
+          "D4": true,
+          "D5": true,
+          "n_match": 5,
+          "reproduces": true,
+          "distance": 3.9351884398418333
+        }
+      },
+      "B2": {
+        "S_interior": 0.7419167473080526,
+        "S_full": 0.7476392140146338,
+        "band_lo": 0.73,
+        "band_hi": 0.79,
+        "in_band": true,
+        "J": 0.06728817079001555,
+        "J_min": 0.06,
+        "j_ok": true,
+        "passed": true
+      },
+      "B3": {
+        "onset_excess": 0.1994020064158916,
+        "onset_z": 303.6036990744235,
+        "end_excess": 0.13665058760426185,
+        "end_z": 216.23957013641999,
+        "comb_excess": 0.3360525940201534,
+        "prose_3x_threshold": 0.037206,
+        "within_end_onset_mi": 0.07618131764072847,
+        "across_end_onset_mi": 0.03458116451977813,
+        "across_end_onset_excess": -0.0021031985059420943,
+        "across_end_onset_z": -0.4369117885529406,
+        "cross_to_within_ratio": -0.027607799012623942,
+        "para_onset_js": 0.30157725918633493,
+        "para_onset_z": 72.20233718712204,
+        "pass_pos": true,
+        "pass_cross": true,
+        "pass_para": true,
+        "passed": true
+      },
+      "B4": {
+        "passed": true,
+        "d80_scored": true,
+        "d80_pass": true,
+        "d80_effect_gt_p95": true,
+        "d160_pass": false,
+        "d80_effect": 0.12786762703105276,
+        "d80_null_p95": 0.08159622879192462,
+        "d80_n_cross": 45,
+        "d160_effect": null,
+        "d160_null_p95": null,
+        "d160_n_cross": 586
+      },
+      "B5": {
+        "orig": 4.527674821194138,
+        "in_page": 4.6462791866279325,
+        "in_quire": 3.576216822956732,
+        "full": 3.5654835462248022,
+        "excess": 0.9621912749693355,
+        "page_gap": 1.0807956404031303,
+        "quire_gap": 0.01073327673192992,
+        "share_kept_in_quire": 0.011155034358705842,
+        "in_band": true,
+        "folio_concentrated": true,
+        "passed": true
+      },
+      "B6": {
+        "passed": true,
+        "shape": "page",
+        "decay_point": "21-100",
+        "rates": {
+          "1": 0.05825,
+          "2-5": 0.05675,
+          "6-20": 0.0515,
+          "21-100": 0.043,
+          "101-500": 0.0505,
+          "501-1000": 0.0455
+        }
+      }
+    },
+    "page_line_copier_2B": {
+      "hand": "2B",
+      "n_lines": 1197,
+      "n_tokens": 10494,
+      "n_folios": 46,
+      "n_quires": 6,
+      "n_passed": 6,
+      "pass_flags": {
+        "B1": true,
+        "B2": true,
+        "B3": true,
+        "B4": true,
+        "B5": true,
+        "B6": true
+      },
+      "B1": {
+        "passed": true,
+        "n_match": 5,
+        "stats": {
+          "D1": -0.25874903755541645,
+          "D2": 0.22389936052558745,
+          "D3": 0.031304390817802105,
+          "D4": 0.05519395681549,
+          "D5": 1.8677989783229156
+        },
+        "match": {
+          "D1": true,
+          "D2": true,
+          "D3": true,
+          "D4": true,
+          "D5": true,
+          "n_match": 5,
+          "reproduces": true,
+          "distance": 1.2952617908599338
+        }
+      },
+      "B2": {
+        "S_interior": 0.8152386952901085,
+        "S_full": 0.8201119820886917,
+        "band_lo": 0.791,
+        "band_hi": 0.847,
+        "in_band": true,
+        "J": 0.11574335844522522,
+        "J_min": 0.06,
+        "j_ok": true,
+        "passed": true
+      },
+      "B3": {
+        "onset_excess": 0.16422594928482784,
+        "onset_z": 278.9501850919093,
+        "end_excess": 0.03000680630221316,
+        "end_z": 51.887072764667856,
+        "comb_excess": 0.194232755587041,
+        "prose_3x_threshold": 0.037206,
+        "within_end_onset_mi": 0.12412979184900111,
+        "across_end_onset_mi": 0.03193999898326762,
+        "across_end_onset_excess": -0.004180669004698691,
+        "across_end_onset_z": -0.7707513905858808,
+        "cross_to_within_ratio": -0.033679819666372325,
+        "para_onset_js": 0.359636595790469,
+        "para_onset_z": 77.43874268274817,
+        "pass_pos": true,
+        "pass_cross": true,
+        "pass_para": true,
+        "passed": true
+      },
+      "B4": {
+        "passed": true,
+        "d80_scored": true,
+        "d80_pass": true,
+        "d80_effect_gt_p95": true,
+        "d160_pass": true,
+        "d80_effect": 0.1411677923822969,
+        "d80_null_p95": 0.0556617595031686,
+        "d80_n_cross": 40,
+        "d160_effect": 0.11300481968489406,
+        "d160_null_p95": 0.05260443932606518,
+        "d160_n_cross": 2083
+      },
+      "B5": {
+        "orig": 5.46410516900192,
+        "in_page": 5.6505431178402095,
+        "in_quire": 3.5430017762839383,
+        "full": 3.397674737160225,
+        "excess": 2.066430431841695,
+        "page_gap": 2.2528683806799843,
+        "quire_gap": 0.14532703912371314,
+        "share_kept_in_quire": 0.07032757400605605,
+        "in_band": true,
+        "folio_concentrated": true,
+        "passed": true
+      },
+      "B6": {
+        "passed": true,
+        "shape": "page",
+        "decay_point": "21-100",
+        "rates": {
+          "1": 0.0595,
+          "2-5": 0.06225,
+          "6-20": 0.05775,
+          "21-100": 0.04175,
+          "101-500": 0.04275,
+          "501-1000": 0.043
+        }
+      }
+    },
+    "page_line_copier_3B": {
+      "hand": "3B",
+      "n_lines": 1069,
+      "n_tokens": 10493,
+      "n_folios": 28,
+      "n_quires": 2,
+      "n_passed": 6,
+      "pass_flags": {
+        "B1": true,
+        "B2": true,
+        "B3": true,
+        "B4": true,
+        "B5": true,
+        "B6": true
+      },
+      "B1": {
+        "passed": true,
+        "n_match": 5,
+        "stats": {
+          "D1": -0.2624181888630197,
+          "D2": 0.23861016885758524,
+          "D3": 0.024576600567670984,
+          "D4": -0.060861426352163406,
+          "D5": 1.863326956999804
+        },
+        "match": {
+          "D1": true,
+          "D2": true,
+          "D3": true,
+          "D4": true,
+          "D5": true,
+          "n_match": 5,
+          "reproduces": true,
+          "distance": 3.2175208402278184
+        }
+      },
+      "B2": {
+        "S_interior": 0.8299976867352832,
+        "S_full": 0.8293561755070142,
+        "band_lo": 0.795,
+        "band_hi": 0.867,
+        "in_band": true,
+        "J": 0.20644480117685904,
+        "J_min": 0.06,
+        "j_ok": true,
+        "passed": true
+      },
+      "B3": {
+        "onset_excess": 0.20667357622240246,
+        "onset_z": 307.26209612089195,
+        "end_excess": 0.09083746957517863,
+        "end_z": 134.53680559678932,
+        "comb_excess": 0.2975110457975811,
+        "prose_3x_threshold": 0.037206,
+        "within_end_onset_mi": 0.2158512249319315,
+        "across_end_onset_mi": 0.023012063540943893,
+        "across_end_onset_excess": -0.0042185885812175625,
+        "across_end_onset_z": -0.7663957493900883,
+        "cross_to_within_ratio": -0.019543964054630176,
+        "para_onset_js": 0.5246357279288929,
+        "para_onset_z": 184.35488288451938,
+        "pass_pos": true,
+        "pass_cross": true,
+        "pass_para": true,
+        "passed": true
+      },
+      "B4": {
+        "passed": true,
+        "d80_scored": false,
+        "d80_pass": false,
+        "d80_effect_gt_p95": true,
+        "d160_pass": true,
+        "d80_effect": 0.11744703541435844,
+        "d80_null_p95": 0.04155747183546482,
+        "d80_n_cross": 23,
+        "d160_effect": 0.12850482116299644,
+        "d160_null_p95": 0.06059608430349093,
+        "d160_n_cross": 1738
+      },
+      "B5": {
+        "orig": 6.616953592872645,
+        "in_page": 7.047411210615188,
+        "in_quire": 3.5699628619128276,
+        "full": 3.6395935934982875,
+        "excess": 2.9773599993743574,
+        "page_gap": 3.4078176171169003,
+        "quire_gap": -0.06963073158545985,
+        "share_kept_in_quire": -0.02338673576594419,
+        "in_band": true,
+        "folio_concentrated": true,
+        "passed": true
+      },
+      "B6": {
+        "passed": true,
+        "shape": "page",
+        "decay_point": "21-100",
+        "rates": {
+          "1": 0.04075,
+          "2-5": 0.0515,
+          "6-20": 0.04575,
+          "21-100": 0.0365,
+          "101-500": 0.0335,
+          "501-1000": 0.0335
+        }
+      }
+    },
+    "h39_native_tuned_2B": {
+      "hand": "2B",
+      "n_lines": 1197,
+      "n_tokens": 10494,
+      "n_folios": 46,
+      "n_quires": 6,
+      "n_passed": 1,
+      "pass_flags": {
+        "B1": false,
+        "B2": false,
+        "B3": false,
+        "B4": false,
+        "B5": false,
+        "B6": true
+      },
+      "B1": {
+        "passed": false,
+        "n_match": 1,
+        "stats": {
+          "D1": -0.18785185350924394,
+          "D2": 5.4273461205658915,
+          "D3": 0.22963342149887808,
+          "D4": -5.0752778906981835,
+          "D5": 2.7045303852304174
+        },
+        "match": {
+          "D1": true,
+          "D2": false,
+          "D3": false,
+          "D4": false,
+          "D5": false,
+          "n_match": 1,
+          "reproduces": false,
+          "distance": 5509.14989338577
+        }
+      },
+      "B2": {
+        "S_interior": 0.589567319101358,
+        "S_full": 0.5894644700869787,
+        "band_lo": 0.791,
+        "band_hi": 0.847,
+        "in_band": false,
+        "J": 0.1330387020683743,
+        "J_min": 0.06,
+        "j_ok": true,
+        "passed": false
+      },
+      "B3": {
+        "onset_excess": 0.0001100978915503279,
+        "onset_z": 0.200588342489484,
+        "end_excess": -7.233147728772813e-05,
+        "end_z": -0.12387964102447967,
+        "comb_excess": 3.776641426259976e-05,
+        "prose_3x_threshold": 0.037206,
+        "within_end_onset_mi": 0.12595020706195362,
+        "across_end_onset_mi": 0.1671092804784113,
+        "across_end_onset_excess": 0.0964545346979322,
+        "across_end_onset_z": 11.452835610074253,
+        "cross_to_within_ratio": 0.7658148164098468,
+        "para_onset_js": 0.006262913177700076,
+        "para_onset_z": -1.067664578998319,
+        "pass_pos": false,
+        "pass_cross": false,
+        "pass_para": false,
+        "passed": false
+      },
+      "B4": {
+        "passed": false,
+        "d80_scored": true,
+        "d80_pass": false,
+        "d80_effect_gt_p95": false,
+        "d160_pass": false,
+        "d80_effect": 0.0006149554529711332,
+        "d80_null_p95": 0.04260504365267175,
+        "d80_n_cross": 40,
+        "d160_effect": -0.0020301202667237367,
+        "d160_null_p95": 0.0182018908429284,
+        "d160_n_cross": 2083
+      },
+      "B5": {
+        "orig": 9.232128816039994,
+        "in_page": 7.481550133729698,
+        "in_quire": 5.117826999708926,
+        "full": 4.470082658785306,
+        "excess": 4.762046157254688,
+        "page_gap": 3.011467474944392,
+        "quire_gap": 0.6477443409236203,
+        "share_kept_in_quire": 0.1360222726814231,
+        "in_band": false,
+        "folio_concentrated": true,
+        "passed": false
+      },
+      "B6": {
+        "passed": true,
+        "shape": "page",
+        "decay_point": "101-500",
+        "rates": {
+          "1": 0.07225,
+          "2-5": 0.066,
+          "6-20": 0.0705,
+          "21-100": 0.0585,
+          "101-500": 0.0325,
+          "501-1000": 0.03125
+        }
+      }
+    },
+    "h39_C0_graph_2B": {
+      "hand": "2B",
+      "n_lines": 1197,
+      "n_tokens": 10494,
+      "n_folios": 46,
+      "n_quires": 6,
+      "n_passed": 2,
+      "pass_flags": {
+        "B1": true,
+        "B2": true,
+        "B3": false,
+        "B4": false,
+        "B5": false,
+        "B6": false
+      },
+      "B1": {
+        "passed": true,
+        "n_match": 5,
+        "stats": {
+          "D1": -0.2604758812078476,
+          "D2": 0.26560803767139163,
+          "D3": 0.0376203412312479,
+          "D4": 0.11074101927045632,
+          "D5": 1.909942188406604
+        },
+        "match": {
+          "D1": true,
+          "D2": true,
+          "D3": true,
+          "D4": true,
+          "D5": true,
+          "n_match": 5,
+          "reproduces": true,
+          "distance": 1.5910025247125092
+        }
+      },
+      "B2": {
+        "S_interior": 0.8151867081804487,
+        "S_full": 0.821987018861116,
+        "band_lo": 0.791,
+        "band_hi": 0.847,
+        "in_band": true,
+        "J": 0.17780026043925615,
+        "J_min": 0.06,
+        "j_ok": true,
+        "passed": true
+      },
+      "B3": {
+        "onset_excess": 7.03955392021313e-05,
+        "onset_z": 0.1383258186083964,
+        "end_excess": 0.00018454053650839974,
+        "end_z": 0.2859202425169521,
+        "comb_excess": 0.00025493607571053104,
+        "prose_3x_threshold": 0.037206,
+        "within_end_onset_mi": 0.18621664832228624,
+        "across_end_onset_mi": 0.22789742490206308,
+        "across_end_onset_excess": 0.19011182267182297,
+        "across_end_onset_z": 31.389479836881748,
+        "cross_to_within_ratio": 1.0209174334552265,
+        "para_onset_js": 0.00890160619665863,
+        "para_onset_z": -0.6272207156646419,
+        "pass_pos": false,
+        "pass_cross": false,
+        "pass_para": false,
+        "passed": false
+      },
+      "B4": {
+        "passed": false,
+        "d80_scored": true,
+        "d80_pass": false,
+        "d80_effect_gt_p95": false,
+        "d160_pass": false,
+        "d80_effect": 0.0038366778021019787,
+        "d80_null_p95": 0.01548795539185252,
+        "d80_n_cross": 40,
+        "d160_effect": -0.0013622898867614308,
+        "d160_null_p95": 0.02004806274971423,
+        "d160_n_cross": 2083
+      },
+      "B5": {
+        "orig": 3.7373113464769574,
+        "in_page": 3.7161852052002926,
+        "in_quire": 3.5956824512275234,
+        "full": 3.5693132288464886,
+        "excess": 0.1679981176304688,
+        "page_gap": 0.146871976353804,
+        "quire_gap": 0.026369222381034785,
+        "share_kept_in_quire": 0.15696141571679348,
+        "in_band": false,
+        "folio_concentrated": true,
+        "passed": false
+      },
+      "B6": {
+        "passed": false,
+        "shape": "none",
+        "decay_point": null,
+        "rates": {
+          "1": 0.0355,
+          "2-5": 0.04275,
+          "6-20": 0.04075,
+          "21-100": 0.03725,
+          "101-500": 0.04275,
+          "501-1000": 0.0405
+        }
+      }
+    }
+  }
+}

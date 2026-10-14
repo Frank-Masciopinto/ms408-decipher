@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "F1": false,
+  "F2": false,
+  "F3": false,
+  "predictions": {
+    "F1": false,
+    "F1_1A_passing_bins": [
+      "21-100"
+    ],
+    "F1_2B_passing_bins": [],
+    "F2": false,
+    "F2_passing_hands": [],
+    "F3": false,
+    "F3_2B_passing_bins": []
+  },
+  "null_seed": 46,
+  "n_rotations": 100,
+  "n_line_perms": 200,
+  "n_trans_swaps": 200
+}

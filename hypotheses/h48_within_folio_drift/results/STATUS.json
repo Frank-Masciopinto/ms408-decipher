@@ -1,0 +1,25 @@
+{
+  "complete": true,
+  "hypothesis": "h48_within_folio_drift",
+  "D1": true,
+  "D1_pass_hands": [
+    "1A",
+    "2B",
+    "3B"
+  ],
+  "D2": true,
+  "D2_pass_hands": [
+    "1A",
+    "2B",
+    "3B"
+  ],
+  "D3": true,
+  "D3_pass_hands": [
+    "1A",
+    "2B",
+    "3B"
+  ],
+  "verdict": "supported",
+  "n_perm": 200,
+  "seed": 48
+}
