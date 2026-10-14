@@ -44,6 +44,7 @@ Status key:
 - **Page clustering as evidence of content (h44):** fitted self-citation, cut into arbitrary pages of 230 tokens, reaches a burst excess of 1.63, inside the manuscript range of 1.50–1.69. The h39 tuned copier exceeds it (4.76). The excess number does not require a plaintext or real page boundaries.
 - **Vowel/consonant account of the glyph link (h45):** in prose controls the Sukhotin split carries a median share of 0.004 of the last-to-first link. The pre-registered sound pattern is not there, so the pen-versus-sound comparison is not scored.
 - **Folio boundary (h43, h46, h47, h48):** at a matched distance of 80 tokens, same-folio windows are more alike than cross-folio windows in hands 1A (effect 0.082 vs null 0.059) and 2B (0.100 vs 0.074). Short-lag (`6–20`) one-edit pair rates also drop across folio boundaries in all three hands (`h46`). Inside each folio (`h48`), similarity is not a stationary page palette alone: both one-edit rate ($z = 5.2\text{–}11.5$) and unit-3gram cosine ($z = 10.5\text{–}19.1$) decay significantly with line distance $\Delta\ell$ against a within-folio line-order permutation null, decomposing short-lag same-folio one-edit excess into roughly half folio-level vocabulary palette (37–63 %) and half top-to-bottom sequential copy drift (37–63 %). Adding a partial folio-buffer reset (`rho_keep = 0.15`) and line-boundary slot framing to a no-plaintext copier (`h47`) passes all 6 benchmark families simultaneously across hands 1A, 2B and 3B.
+- **Residual structure the page-line copier misses (h52, h53):** with the boundary junction held fixed, the second unit of a word still predicts the second unit of the next word (+0.020 to +0.023 bits, all three hands; Italian prose +0.17 to +0.20 on the same statistic). With both edge words of a line removed, paragraph-opening interiors differ from paragraph-closing interiors (+0.022 to +0.044 bits; Cucina +0.042). Neither contrast is produced at that size by `page_line_copier`.
 - **Not yet attempted:**
   - A pharma label ↔ grid layout from the scans, so h17 test A can be redone on individual labels.
   - The image-stage glyph check on higher-resolution scans.
@@ -801,4 +802,30 @@ Status key:
   - In `Test 3`, label-linked seeds have larger same-folio one-edit progeny than length-matched unlinked seeds (7.00 vs 5.34, $z = 3.96, p = 0.0005$), but swapping label sets across folios within the same quire produces nearly the same gap (+0.95 vs +1.65, $p = 0.068$), showing that both draw from dense quire-level EVA word shapes rather than folio-specific label seeding.
 - **Commits:** ecacc79 (prereg), (results and log commit)
 - **Status:** closed (labels do not anchor folio-specific paragraph seeds or de-padded herbal–pharma pairs)
+- **Led to:** L62, L63
+
+### L62 · 2026-10-14 16:05 · h52 non-touching slot agreement
+- **Folder:** [hypotheses/h52_non_boundary_slot_agreement/](hypotheses/h52_non_boundary_slot_agreement/)
+- **Question:** once the touching pair `(end of word t, onset of word t+1)` is held fixed, does the opening of word `t` still predict the ending of word `t+1`, or the second unit of word `t` the second unit of word `t+1`?
+- **Done:**
+  - Pre-registered. Hands 1A, 2B, 3B and `page_line_copier` on the `h47` 10,500-token template. Cucina and Sidrach are character-level references and do not enter the pass rule.
+  - Conditional mutual information inside strata of at least 20 pairs. Null: 200 shuffles of the right-hand slot inside each stratum (seed 52). A planted copy of the left slot onto the right slot is the validity check.
+- **Result:**
+  - The validity check passes (excess +2.06, z +702). G1 passes on F2 in all three hands: excess +0.023 / +0.020 / +0.023 bits, z +4.3 / +4.3 / +5.0, against copier +0.007 / −0.001 / +0.002. Cucina and Sidrach on the same statistic are +0.199 and +0.167.
+  - F1 passes only in hand 3B (+0.012, z +2.62). F3, which is not in the pass rule, is +0.025 / +0.015 / +0.019 in the hands and +0.202 / +0.318 in the Italian texts. G2 fails.
+- **Commits:** 167bb5e (prereg), (results and log commit)
+- **Status:** lead (adjacent interiors stay coupled after the junction is removed, at about a tenth of Italian prose; the page-line copier does not produce it)
+- **Led to:** —
+
+### L63 · 2026-10-14 16:05 · h53 paragraph opening vs closing interiors
+- **Folder:** [hypotheses/h53_paragraph_arc_structure/](hypotheses/h53_paragraph_arc_structure/)
+- **Question:** after the first and last word of every line are removed, do the remaining words of a paragraph's first line differ from those of its last line, beyond `page_line_copier`?
+- **Done:**
+  - Pre-registered. Same `h47` template span for the three hands and the copier. Cucina, with its own paragraph breaks, is the sensitivity check.
+  - Word-class Jensen–Shannon divergence of opening interiors vs closing interiors. Null: 200 shuffles of line order inside each paragraph (seed 53).
+- **Result:**
+  - A1 and C1 pass. Word-class excess is +0.044 / +0.022 / +0.029 bits (z +14.9 / +6.2 / +14.7) against copier −0.000 / +0.011 / +0.010. Cucina is +0.042. Hand 2B's gap over its copier is 0.010 bits, the pre-registered minimum.
+  - The onset of those interior words, not part of the pass rule, is +0.074 / +0.020 / +0.039 against about 0 for the copier.
+- **Commits:** 167bb5e (prereg), (results and log commit)
+- **Status:** lead (paragraph-opening interiors differ from paragraph-closing interiors beyond the copier; hand 1A matches the recipe control on this contrast)
 - **Led to:** —
