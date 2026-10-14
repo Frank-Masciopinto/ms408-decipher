@@ -583,7 +583,7 @@ Status key:
 - **Status:** lead (gap rule explains the junction link); open (space placement)
 - **Led to:** a word-internal start/end glyph model for space placement; finer s fit
 
-## L41 — h35 per-hand word-shape model (2026-10-14)
+### L45 · 2026-10-14 · h35 per-hand word-shape model
 - **Question:** does per-hand word-internal glyph structure explain the h34 space-predictability gap?
 - **Did:** glyph 3-gram shape model per hand on even bifolia; type-level re-spelling of C0 / Naibbe-Italian / Naibbe-nonsense words; h34 gap rule kept; held-out odd bifolia. Controls: shape off, shuffled shape, nonsense.
 - **Found:**
