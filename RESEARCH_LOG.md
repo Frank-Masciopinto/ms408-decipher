@@ -842,6 +842,6 @@ Status key:
   - Slots are `partial`, and the adjacency test fails. A1 still passes in 2B and 3B (excess +0.022 and +0.025). A2 excess is −0.218 / −0.250 / −0.232 (z −30 to −39): shuffling cores inside the line increases the mutual information. No hand passes A2, so the held-out gain was not run.
   - Paragraphs `stand`. B3 passes in all three hands: D +0.097 / +0.030 / +0.065 against copier excesses +0.022 / +0.014 / +0.005. Hand 2B is 0.005 bits above its null 95th percentile (z +2.0). B2 passes in all three hands. B1 passes in 1A and 3B; 2B's gap over the copier falls to 0.004 bits once folio-first paragraphs are removed.
   - The cross-hand test is `not_shared`. Pairs of hands have 1, 1, and 5 types in common, under the floor of 15. Overall label `paragraphs_only`.
-- **Commits:** e65bd40 (prereg), (results and log commit)
+- **Commits:** e65bd40 (prereg), 508f1d1 (results and log)
 - **Status:** closed (slot adjacency); lead (paragraph opening versus closing, strongest in 1A and 3B, weak in 2B, no shared closing word list)
 - **Led to:** —
