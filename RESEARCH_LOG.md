@@ -594,3 +594,14 @@ Status key:
 - **Commits:** 1410b0a (prereg), (code + results + docs)
 - **Status:** lead (space placement); open (one generator matching space placement and fingerprint)
 - **Led to:** similarity-preserving re-spelling
+
+### L46 · 2026-10-14 · h36 similarity-preserving re-spelling
+- **Question:** can a re-spelling that keeps one-glyph near-copies near fix space placement (h35) and keep the 5/5 fingerprint?
+- **Did:** glyph-by-glyph rank map per position class (`pos`) and per previous glyph (`ctx`), fitted on even bifolia; h34 gap rule kept; scored on odd bifolia for C0 / Naibbe-Italian / Naibbe-nonsense. Controls: shape off, shuffled map, nonsense, h35 reference.
+- **Found:**
+  - Edit-neighbour preservation .83–.96 (`pos`) vs .01 for h35; fingerprint back to 5/5 in 6/9, 4/5 in the rest.
+  - Space predictability rises to .78–.95 (1/9 in .72–.80): worse than no re-spelling. `ctx` S .74–.92, E .39–.82.
+  - Link, gap table (r .95–.98), inventory kept; Italian = nonsense.
+- **Commits:** eea4e97 (prereg), (code + results + docs)
+- **Status:** negative (trade-off between copy structure and space placement)
+- **Led to:** copy-aware re-spelling (shape the source word, replay copy edits on top)

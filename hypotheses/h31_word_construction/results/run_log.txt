@@ -1,0 +1,12 @@
+done MS_2B
+done MS_1A
+done NAT_he_tanakh
+done NAT_it_sidrach
+done MS_3B
+done NAT_it_dante
+done NAT_la_vulgate
+done NAT_la_celsus
+done GEN_C0_2B
+done GEN_naibbe_la_pliny
+done GEN_naibbe_it_ariosto
+done NAT_ar_quran
