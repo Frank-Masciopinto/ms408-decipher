@@ -29,6 +29,8 @@ Status key:
 - **De-padded seed skeleton syntax (h49):** stripping same-folio exact repeats and one-edit echoes (`local_W25` or `folio_comp`) does not uncover positive word-order syntax ($D_1 = -0.22\text{ to }-0.24$ on `local_W25`), and MS 408's de-padded retention rate, $D_1$, and `morphs_per_type` all match the no-plaintext `page_line_copier` within $\pm 0.08$ across Hands 1A, 2B and 3B.
 - **Vertical paragraph/line-initial header or glyph acrostic (h50):** vertical sequences of paragraph-initial words and raw or onset-stripped line-initial words have negative bigram gain ($D_1 < 0$) in all three hands, and vertical line-initial first-unit redundancy ($R_{\text{acro}}$) is only 14–24 % of horizontal within-word redundancy (matching prose controls at 24–40 %).
 - **Diagram/plant label links to de-padded paragraph seeds (h51):** matching `L`-locus labels to their own folio's de-padded `seed_W25` tokens via exact, one-edit, or onset-stripped stem overlap shows no enrichment over within-quire folio permutations ($p_{\text{Holm}} = 0.46$), and de-padded herbal–pharmaceutical same-plant pairs do not beat random herbal partners ($p \ge 0.089$).
+- **Adjacent core rule (h52, h55):** shuffling whole words inside the line puts the h52 second-unit coupling below the shuffle (−0.042 to −0.052 bits, z −5.6 to −8.6). A planted block rule scores +0.80 to +0.91, and the copier passes the positive rule on no hand.
+
 ## Open leads
 - **Line structure (h13–h16, h30, h47):**
   - Line-start words are a 2B/3B habit, adding a d-/s- or gallows onset to common words; `am`/`dam`/`dy` end lines in every hand.
@@ -43,8 +45,7 @@ Status key:
 - **Page clustering as evidence of content (h44):** fitted self-citation, cut into arbitrary pages of 230 tokens, reaches a burst excess of 1.63, inside the manuscript range of 1.50–1.69. The h39 tuned copier exceeds it (4.76). The excess number does not require a plaintext or real page boundaries.
 - **Vowel/consonant account of the glyph link (h45):** in prose controls the Sukhotin split carries a median share of 0.004 of the last-to-first link. The pre-registered sound pattern is not there, so the pen-versus-sound comparison is not scored.
 - **Folio boundary (h43, h46, h47, h48):** at a matched distance of 80 tokens, same-folio windows are more alike than cross-folio windows in hands 1A (effect 0.082 vs null 0.059) and 2B (0.100 vs 0.074). Short-lag (`6–20`) one-edit pair rates also drop across folio boundaries in all three hands (`h46`). Inside each folio (`h48`), similarity is not a stationary page palette alone: both one-edit rate ($z = 5.2\text{–}11.5$) and unit-3gram cosine ($z = 10.5\text{–}19.1$) decay significantly with line distance $\Delta\ell$ against a within-folio line-order permutation null, decomposing short-lag same-folio one-edit excess into roughly half folio-level vocabulary palette (37–63 %) and half top-to-bottom sequential copy drift (37–63 %). Adding a partial folio-buffer reset (`rho_keep = 0.15`) and line-boundary slot framing to a no-plaintext copier (`h47`) passes all 6 benchmark families simultaneously across hands 1A, 2B and 3B.
-- **Paragraph opening versus closing (h53, h54):** after line-edge words are removed, opening interiors differ from closing interiors beyond the copier, and the gap survives dropping folio-first paragraphs and requiring both edge lines to have at least 6 words. It has not been separated from drift: in h54 the comparison lines were about two lines closer together than the opening and closing lines, and the closing lines were shorter. The hands do not share enough closing word types to test a common list (1, 1, and 5 types).
-- **Second-unit coupling (h52, h54):** with the boundary junction held fixed, the second unit of a word predicts the second unit of the next word (+0.020 to +0.023 bits), and removing near-copies leaves it. Whether it is adjacency or the line's inventory is untested: the h54 shuffle detached second units from their own words and failed on the copier. In h52 the lag-2 coupling is as large as lag 1 in hands 1A and 2B, and about a third of it in 3B.
+- **Paragraph opening step (h53, h55):** on lines of at least 7 words, using only words two places in from either edge, the first line against the second exceeds a random neighbouring pair by +0.021 / +0.024 / +0.021 bits. The copier does not. The last step does not. The onset ranking is not shared across hands at the pre-registered bar. The largest piece of the opening step is `ch` more common on the second line (rate difference +0.06 / +0.04 / +0.08).
 - **Not yet attempted:**
   - A pharma label ↔ grid layout from the scans, so h17 test A can be redone on individual labels.
   - The image-stage glyph check on higher-resolution scans.
@@ -844,4 +845,19 @@ Status key:
   - Correction (same day): two design checks run after these results show that A2 and B3 do not test what their names say. The A2 shuffle detaches each second unit from its own word (within-word onset–core information 1.0–1.5 bits → about 0.05) and gives the copier −0.075 to −0.131, so it cannot separate adjacency from line inventory. B3's middle pair is on average two lines closer together than the opening and closing lines (1.96 / 4.78 / 2.02 against 3.96 / 6.80 / 4.02), and closing lines are 1–3 words shorter, so drift and length remain in D.
 - **Commits:** e65bd40 (prereg), 508f1d1 (results and log), 773af7c (correction)
 - **Status:** open (slot adjacency versus line inventory); open (paragraph role versus drift and line length)
+- **Led to:** L65
+
+### L65 · 2026-10-14 16:49 · h55 whole-word order and one-line paragraph steps
+- **Folder:** [hypotheses/h55_step_and_order/](hypotheses/h55_step_and_order/)
+- **Question:** if whole words are shuffled inside the line, does the h52 core coupling remain; and is the first or last step of a paragraph different from any other pair of neighbouring lines?
+- **Done:**
+  - Pre-registered before computing. S1 shuffles whole words inside each line and rescores F2. S2 asks what the previous core adds beyond the junction and the rest of the folio. Both must stay quiet on the copier and must detect a copier whose lines were stably sorted by core.
+  - Opening and closing steps use lines of at least 7 words and only `words[2:-2]`. The null picks a random eligible neighbouring pair in each paragraph. The same quiet and plant checks apply. Onset shifts across hands are scored only if a step passes on two hands. 200 permutations, seed 55.
+- **Result:**
+  - S1 is valid and `no_adjacency`. Manuscript excess −0.042 / −0.048 / −0.052 (z −5.6 / −7.9 / −8.6). Copier excess −0.016 / −0.024 / −0.042, so it passes on no hand. The core-sorted plant scores +0.80 to +0.91 on all three hands.
+  - S2 is `invalid`. The plant is detected, but the copier already passes the absolute gain rule on hands 2B and 3B (+0.032, +0.033). The manuscript on those hands is +0.037 and +0.047.
+  - Paragraphs are `role` from the opening step only. Excess +0.021 / +0.024 / +0.021 (z +4.1 / +4.9 / +6.5), copier inside its null on every hand, plant detected. The closing step passes on no hand; hand 2B's closing excess (+0.024) is below its copier (+0.034).
+  - Onset correlations are +0.018, +0.394 and +0.315, and none clears its null, so X is `not_shared`. The largest onset change at the opening step is `ch`, more common on the second line by 0.058 / 0.040 / 0.084.
+- **Commits:** 6e1538d (prereg), (results and log commit)
+- **Status:** closed (adjacent core rule); lead (the first step of a paragraph, about +0.02 bits, not shared as an onset ranking)
 - **Led to:** —
