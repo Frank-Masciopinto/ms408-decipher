@@ -813,7 +813,7 @@ Status key:
 - **Result:**
   - The validity check passes (excess +2.06, z +702). G1 passes on F2 in all three hands: excess +0.023 / +0.020 / +0.023 bits, z +4.3 / +4.3 / +5.0, against copier +0.007 / −0.001 / +0.002. Cucina and Sidrach on the same statistic are +0.199 and +0.167.
   - F1 passes only in hand 3B (+0.012, z +2.62). F3, which is not in the pass rule, is +0.025 / +0.015 / +0.019 in the hands and +0.202 / +0.318 in the Italian texts. G2 fails.
-- **Commits:** 167bb5e (prereg), (results and log commit)
+- **Commits:** 167bb5e (prereg), 3e6a0ed (results and log)
 - **Status:** lead (adjacent interiors stay coupled after the junction is removed, at about a tenth of Italian prose; the page-line copier does not produce it)
 - **Led to:** —
 
@@ -826,6 +826,6 @@ Status key:
 - **Result:**
   - A1 and C1 pass. Word-class excess is +0.044 / +0.022 / +0.029 bits (z +14.9 / +6.2 / +14.7) against copier −0.000 / +0.011 / +0.010. Cucina is +0.042. Hand 2B's gap over its copier is 0.010 bits, the pre-registered minimum.
   - The onset of those interior words, not part of the pass rule, is +0.074 / +0.020 / +0.039 against about 0 for the copier.
-- **Commits:** 167bb5e (prereg), (results and log commit)
+- **Commits:** 167bb5e (prereg), 3e6a0ed (results and log)
 - **Status:** lead (paragraph-opening interiors differ from paragraph-closing interiors beyond the copier; hand 1A matches the recipe control on this contrast)
 - **Led to:** —
