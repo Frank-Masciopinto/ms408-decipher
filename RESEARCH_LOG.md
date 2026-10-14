@@ -582,3 +582,15 @@ Status key:
 - **Commits:** 46d318e (prereg), (code + results + docs)
 - **Status:** lead (gap rule explains the junction link); open (space placement)
 - **Led to:** a word-internal start/end glyph model for space placement; finer s fit
+
+## L41 — h35 per-hand word-shape model (2026-10-14)
+- **Question:** does per-hand word-internal glyph structure explain the h34 space-predictability gap?
+- **Did:** glyph 3-gram shape model per hand on even bifolia; type-level re-spelling of C0 / Naibbe-Italian / Naibbe-nonsense words; h34 gap rule kept; held-out odd bifolia. Controls: shape off, shuffled shape, nonsense.
+- **Found:**
+  - Space predictability .72–.80 (8/9), within ±.04 of hand 9/9; was .84 for Naibbe.
+  - Link, gap table (r .92–.97), inventory kept; shuffled model .23–.34; Italian = nonsense.
+  - Fingerprint falls to 2–3/5 (cache gain, copy rate, word/glyph dominance): re-spelling breaks near-copies.
+  - Gap drivers: glyphs both final and internal (`l`, `y`, `r`; also `o`, `s`, `d`).
+- **Commits:** 1410b0a (prereg), (code + results + docs)
+- **Status:** lead (space placement); open (one generator matching space placement and fingerprint)
+- **Led to:** similarity-preserving re-spelling
