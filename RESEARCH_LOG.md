@@ -842,6 +842,6 @@ Status key:
   - Paragraphs `stand`. B3 passes in all three hands: D +0.097 / +0.030 / +0.065 against copier excesses +0.022 / +0.014 / +0.005. Hand 2B is 0.005 bits above its null 95th percentile (z +2.0). B2 passes in all three hands. B1 passes in 1A and 3B; 2B's gap over the copier falls to 0.004 bits once folio-first paragraphs are removed.
   - The cross-hand test is `not_shared`. Pairs of hands have 1, 1, and 5 types in common, under the floor of 15. Overall label `paragraphs_only`.
   - Correction (same day): two design checks run after these results show that A2 and B3 do not test what their names say. The A2 shuffle detaches each second unit from its own word (within-word onset–core information 1.0–1.5 bits → about 0.05) and gives the copier −0.075 to −0.131, so it cannot separate adjacency from line inventory. B3's middle pair is on average two lines closer together than the opening and closing lines (1.96 / 4.78 / 2.02 against 3.96 / 6.80 / 4.02), and closing lines are 1–3 words shorter, so drift and length remain in D.
-- **Commits:** e65bd40 (prereg), 508f1d1 (results and log), (correction commit)
+- **Commits:** e65bd40 (prereg), 508f1d1 (results and log), 773af7c (correction)
 - **Status:** open (slot adjacency versus line inventory); open (paragraph role versus drift and line length)
 - **Led to:** —
