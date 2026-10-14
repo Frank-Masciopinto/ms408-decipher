@@ -605,3 +605,14 @@ Status key:
 - **Commits:** eea4e97 (prereg), (code + results + docs)
 - **Status:** negative (trade-off between copy structure and space placement)
 - **Led to:** copy-aware re-spelling (shape the source word, replay copy edits on top)
+
+### L47 · 2026-10-14 · h37 copy-aware re-spelling
+- **Question:** if only "source" words get the h35 word-shape re-spelling and near-copies are rebuilt by replaying their one-glyph edit, do space placement, copy structure and the 5/5 fingerprint hold together?
+- **Did:** edit-neighbour graph (root = no more frequent type at edit distance 1), roots re-spelled with the per-hand 3-gram shape model, derived types rebuilt from their re-spelled parent (position-relative edit, glyph drawn from the shape model); h34 gap rule kept; fit even bifolia, score odd; C0 / Naibbe-Italian / Naibbe-nonsense × 1A/2B/3B. Controls: h34 off, h35, h36 pos, shuffled shape model, nonsense.
+- **Found:**
+  - Parent→child edits survive for 96–98 % of derived types, but edit-neighbour preservation over all pairs is only .45–.51 (P6 0/9): siblings and cross-family neighbours are rebuilt independently.
+  - Space predictability .69–.74 (P1 3/9; slightly *too* unpredictable, opposite side to h36); fingerprint 2–4/5 (P5 0/9).
+  - Link (9/9), gap table r .84–.93 (8/9), inventory (9/9) kept; shuffled shape model far off (9/9); Italian = nonsense (3/3).
+- **Commits:** 83fe362 (prereg), (code + results + docs)
+- **Status:** negative (copy tree kept, near-copy network lost)
+- **Led to:** network-aware re-spelling (shared glyph substitutions across all edit neighbours, e.g. respell a word's variable slot once per family) or a generator that copies in MS shape directly
