@@ -567,3 +567,18 @@ Status key:
 - **Commits:** 533f9e8 (prereg), (code + results + docs)
 - **Status:** closed (straddling words); lead (rule-placed spaces)
 - **Led to:** a junction-rule generator; a proper DP word segmenter
+
+### L44 · 2026-10-14 · h34 per-hand word-gap rule generator
+- **Folder:** [hypotheses/h34_boundary_rule_generator/](hypotheses/h34_boundary_rule_generator/)
+- **Question:** can a per-hand gap rule (next word chosen by its first glyph given the previous last glyph) added to generators reproduce h31's end→start link and h33's space predictability, while keeping inventory and the D1–D5 fingerprint?
+- **Done:**
+  - Pre-registered, then fitted rule tables on train bifolia per hand and applied them to C0, Naibbe-Italian+swap copy and nonsense-plaintext Naibbe (local reordering, K=10, s grid 0–3).
+  - Controls: s=0, shuffled table, all-gaps, edge-excluded. Evaluated on test bifolia; ran the h20 fingerprint for s=0 and s* cells.
+- **Result:**
+  - At s*=1 the link is reproduced in 8/9 cells (MS .14/.27/.22; generators .08–.20; s=0 ≤ .004), with the MS table pattern (r .90–.97; shuffled ≤ .31) and last glyph beating ending 9/9.
+  - Fingerprint 5/5 in 8/9 cells; Naibbe-Italian goes 4/5 → 5/5 for all hands. Same with nonsense plaintext.
+  - MS link survives dropping line-edge words (95–98 %).
+  - Space predictability barely moves (−.015 to −.03): P4 fails 2/9. H-gap supported (P1, P2, P3, P6).
+- **Commits:** 46d318e (prereg), (code + results + docs)
+- **Status:** lead (gap rule explains the junction link); open (space placement)
+- **Led to:** a word-internal start/end glyph model for space placement; finer s fit

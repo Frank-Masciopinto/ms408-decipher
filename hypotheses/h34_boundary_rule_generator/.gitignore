@@ -1,0 +1,3 @@
+results/tokens_*.csv.gz
+results/base_*.json
+results/lines_*.json
