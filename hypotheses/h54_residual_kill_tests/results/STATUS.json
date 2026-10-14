@@ -1,0 +1,27 @@
+{
+  "hypothesis": "h54_residual_kill_tests",
+  "overall": "paragraphs_only",
+  "slots": "partial",
+  "paragraphs": "stands",
+  "A1_hands": [
+    "2B",
+    "3B"
+  ],
+  "A2_hands": [],
+  "B1_hands": [
+    "1A",
+    "3B"
+  ],
+  "B2_hands": [
+    "1A",
+    "2B",
+    "3B"
+  ],
+  "B3_hands": [
+    "1A",
+    "2B",
+    "3B"
+  ],
+  "C": "not_run",
+  "D": "not_shared"
+}

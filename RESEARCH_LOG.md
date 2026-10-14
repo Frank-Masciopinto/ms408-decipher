@@ -29,6 +29,7 @@ Status key:
 - **De-padded seed skeleton syntax (h49):** stripping same-folio exact repeats and one-edit echoes (`local_W25` or `folio_comp`) does not uncover positive word-order syntax ($D_1 = -0.22\text{ to }-0.24$ on `local_W25`), and MS 408's de-padded retention rate, $D_1$, and `morphs_per_type` all match the no-plaintext `page_line_copier` within $\pm 0.08$ across Hands 1A, 2B and 3B.
 - **Vertical paragraph/line-initial header or glyph acrostic (h50):** vertical sequences of paragraph-initial words and raw or onset-stripped line-initial words have negative bigram gain ($D_1 < 0$) in all three hands, and vertical line-initial first-unit redundancy ($R_{\text{acro}}$) is only 14–24 % of horizontal within-word redundancy (matching prose controls at 24–40 %).
 - **Diagram/plant label links to de-padded paragraph seeds (h51):** matching `L`-locus labels to their own folio's de-padded `seed_W25` tokens via exact, one-edit, or onset-stripped stem overlap shows no enrichment over within-quire folio permutations ($p_{\text{Holm}} = 0.46$), and de-padded herbal–pharmaceutical same-plant pairs do not beat random herbal partners ($p \ge 0.089$).
+- **Adjacent slot agreement (h52, h54):** the h52 second-unit coupling survives deletion of identical, one-edit, and shared-interior pairs, and it does not survive a shuffle of those second units inside the line. That shuffle raises conditional mutual information by about 0.22 bits (z −30 to −39). The coupling is the line's inventory, not an adjacency rule.
 
 ## Open leads
 - **Line structure (h13–h16, h30, h47):**
@@ -44,7 +45,7 @@ Status key:
 - **Page clustering as evidence of content (h44):** fitted self-citation, cut into arbitrary pages of 230 tokens, reaches a burst excess of 1.63, inside the manuscript range of 1.50–1.69. The h39 tuned copier exceeds it (4.76). The excess number does not require a plaintext or real page boundaries.
 - **Vowel/consonant account of the glyph link (h45):** in prose controls the Sukhotin split carries a median share of 0.004 of the last-to-first link. The pre-registered sound pattern is not there, so the pen-versus-sound comparison is not scored.
 - **Folio boundary (h43, h46, h47, h48):** at a matched distance of 80 tokens, same-folio windows are more alike than cross-folio windows in hands 1A (effect 0.082 vs null 0.059) and 2B (0.100 vs 0.074). Short-lag (`6–20`) one-edit pair rates also drop across folio boundaries in all three hands (`h46`). Inside each folio (`h48`), similarity is not a stationary page palette alone: both one-edit rate ($z = 5.2\text{–}11.5$) and unit-3gram cosine ($z = 10.5\text{–}19.1$) decay significantly with line distance $\Delta\ell$ against a within-folio line-order permutation null, decomposing short-lag same-folio one-edit excess into roughly half folio-level vocabulary palette (37–63 %) and half top-to-bottom sequential copy drift (37–63 %). Adding a partial folio-buffer reset (`rho_keep = 0.15`) and line-boundary slot framing to a no-plaintext copier (`h47`) passes all 6 benchmark families simultaneously across hands 1A, 2B and 3B.
-- **Residual structure the page-line copier misses (h52, h53):** with the boundary junction held fixed, the second unit of a word still predicts the second unit of the next word (+0.020 to +0.023 bits, all three hands; Italian prose +0.17 to +0.20 on the same statistic). With both edge words of a line removed, paragraph-opening interiors differ from paragraph-closing interiors (+0.022 to +0.044 bits; Cucina +0.042). Neither contrast is produced at that size by `page_line_copier`.
+- **Paragraph opening versus closing (h53, h54):** after line-edge words are removed, opening interiors differ from closing interiors beyond the copier. The gap survives dropping folio-first paragraphs, requiring both edge lines to have at least 6 words, and subtracting the gap between two long middle lines (`D` +0.097 / +0.030 / +0.065 bits). Hand 2B is 0.005 bits above its null 95th percentile. The hands do not share enough closing word types to test a common list (1, 1, and 5 types).
 - **Not yet attempted:**
   - A pharma label ↔ grid layout from the scans, so h17 test A can be redone on individual labels.
   - The image-stage glyph check on higher-resolution scans.
@@ -828,4 +829,19 @@ Status key:
   - The onset of those interior words, not part of the pass rule, is +0.074 / +0.020 / +0.039 against about 0 for the copier.
 - **Commits:** 167bb5e (prereg), 3e6a0ed (results and log)
 - **Status:** lead (paragraph-opening interiors differ from paragraph-closing interiors beyond the copier; hand 1A matches the recipe control on this contrast)
+- **Led to:** L64
+
+### L64 · 2026-10-14 16:25 · h54 kill tests for the slot and paragraph residuals
+- **Folder:** [hypotheses/h54_residual_kill_tests/](hypotheses/h54_residual_kill_tests/)
+- **Question:** is the h52 second-unit coupling adjacency, or near-copies and a line inventory; and is the h53 paragraph contrast a closing role, or the folio's first line, a short last line, and drift?
+- **Done:**
+  - Pre-registered before computing. A1 drops identical, one-edit, and shared-interior pairs and recomputes F2. A2 shuffles second units inside each line, leaving onsets and ends in place.
+  - B1 drops folio-first paragraphs. B2 keeps only paragraphs whose first and last lines have at least 6 words. B3 subtracts the JS gap between the earliest and latest long middle lines from the opening-versus-closing gap. 200 permutations, seed 54.
+  - Held-out core gain runs only if A2 passes on two hands. Cross-hand closing vocabulary runs only if B3 passes on two hands.
+- **Result:**
+  - Slots are `partial`, and the adjacency test fails. A1 still passes in 2B and 3B (excess +0.022 and +0.025). A2 excess is −0.218 / −0.250 / −0.232 (z −30 to −39): shuffling cores inside the line increases the mutual information. No hand passes A2, so the held-out gain was not run.
+  - Paragraphs `stand`. B3 passes in all three hands: D +0.097 / +0.030 / +0.065 against copier excesses +0.022 / +0.014 / +0.005. Hand 2B is 0.005 bits above its null 95th percentile (z +2.0). B2 passes in all three hands. B1 passes in 1A and 3B; 2B's gap over the copier falls to 0.004 bits once folio-first paragraphs are removed.
+  - The cross-hand test is `not_shared`. Pairs of hands have 1, 1, and 5 types in common, under the floor of 15. Overall label `paragraphs_only`.
+- **Commits:** e65bd40 (prereg), (results and log commit)
+- **Status:** closed (slot adjacency); lead (paragraph opening versus closing, strongest in 1A and 3B, weak in 2B, no shared closing word list)
 - **Led to:** —
