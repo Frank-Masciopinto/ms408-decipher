@@ -858,6 +858,6 @@ Status key:
   - S2 is `invalid`. The plant is detected, but the copier already passes the absolute gain rule on hands 2B and 3B (+0.032, +0.033). The manuscript on those hands is +0.037 and +0.047.
   - Paragraphs are `role` from the opening step only. Excess +0.021 / +0.024 / +0.021 (z +4.1 / +4.9 / +6.5), copier inside its null on every hand, plant detected. The closing step passes on no hand; hand 2B's closing excess (+0.024) is below its copier (+0.034).
   - Onset correlations are +0.018, +0.394 and +0.315, and none clears its null, so X is `not_shared`. The largest onset change at the opening step is `ch`, more common on the second line by 0.058 / 0.040 / 0.084.
-- **Commits:** 6e1538d (prereg), (results and log commit)
+- **Commits:** 6e1538d (prereg), d5625e8 (results and log)
 - **Status:** closed (adjacent core rule); lead (the first step of a paragraph, about +0.02 bits, not shared as an onset ranking)
 - **Led to:** —
