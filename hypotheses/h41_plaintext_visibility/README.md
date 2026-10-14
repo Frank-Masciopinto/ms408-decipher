@@ -45,6 +45,18 @@ A statistic passes only when `min(real) > max(shuffle)` and `min(real) > max(zip
 
 Each hand is nearer plain Boccaccio than either C0 or the cipher-arm mean. The figure is `figures/plaintext_visibility.png`. Per-stream values are in `results/scores.json`; the verdict is in `results/STATUS.json` (`complete` true, `n_random` 60).
 
+## Reading
+The separation test compares plain Boccaccio with ciphertext, so a pass means a statistic tells plain text from Naibbe ciphertext. It does not mean the statistic sees a plaintext through the cipher. That needs the real-plaintext Naibbe arm against the shuffle and zipf arms, and on all four statistics those ranges overlap (`results/scores.json`):
+
+| statistic | real Naibbe | shuffle | zipf |
+|---|---|---|---|
+| new_type | 0.545–0.583 | 0.559–0.579 | 0.592–0.614 |
+| burst | 3.405–3.648 | 3.399–3.697 | 3.377–3.738 |
+| mi100 | 0.992–0.996 | 0.993–0.996 | 0.989–0.996 |
+| block_js | 0.687–0.700 | 0.691–0.704 | 0.679–0.700 |
+
+Naibbe encryption flattens burstiness to the same level whatever the plaintext. The MS hands (5.10–5.22) sit far above every Naibbe arm and C0 (at most 3.74), and above plain Boccaccio.
+
 ## Reproduce
 From this directory, with `PYTHONDONTWRITEBYTECODE=1`, `PYTHONUNBUFFERED=1`, and OMP/OPENBLAS/MKL/NUMEXPR threads set to 1:
 

@@ -36,7 +36,7 @@ Status key:
   - Word-level evidence for the mapping is weak (it is mostly shared stems).
 - **Weak leads from h09:** root/jar words.
 - **Section signal (h11):** survives on hand residuals but cannot be separated from quire with this data.
-- **Burstiness (h41):** at 10,500 tokens, clustering of the 50 most frequent words separates plain Boccaccio from Naibbe ciphertext. The three hands are more bursty than Boccaccio, and the ciphers and C0 are less. New-type rate, lag-100 mutual information and adjacent-block divergence do not separate the plaintext.
+- **Burstiness (h41):** at 10,500 tokens, clustering of the 50 most frequent words separates plain Boccaccio from Naibbe ciphertext, but not a plaintext through the cipher: Naibbe on real, shuffled and nonsense Boccaccio all score 3.4–3.7. The three hands score 5.1–5.2, above plain Boccaccio and every Naibbe arm and C0. New-type rate, lag-100 mutual information and adjacent-block divergence separate nothing.
 - **Near-repeat range (h42):** one-edit pairs are absent in Boccaccio and in the h39 graph respelling. Hand 1A drops at gap 21–100, hand 3B at 101–500. Hand 2B is not elevated for adjacent pairs, is elevated at gaps 2–20, and is elevated again at 101–500. C0 drops at gap 2–5. Fitted self-citation and the h39 tuned copier stay elevated through gap 21–100.
 - **Not yet attempted:**
   - A pharma label ↔ grid layout from the scans, so h17 test A can be redone on individual labels.
@@ -650,7 +650,7 @@ Status key:
 - **Result:**
   - R1–R3 pass. The largest D1–D5 range is 2B's D4, 0.065, inside the tolerance of 0.10. Junction stays 0.083–0.242, against generator originals ≤ 0.0034.
   - Interior space bands: 1A 0.750–0.770, 2B 0.811–0.827, 3B 0.815–0.847. The 2B and 3B bands sit above the old 0.72–0.80 target. Four of nine h39 cells fall in the widened band, three in the old one.
-- **Commits:** 7af068c (prereg), (results and log commit)
+- **Commits:** 7af068c (prereg), 96d9abb (results and log)
 - **Status:** closed (fingerprint and link); lead (the space target was too low for 2B and 3B)
 - **Led to:** —
 
@@ -663,8 +663,9 @@ Status key:
 - **Result:**
   - V1 passes on burstiness only (plain 4.16–4.78; shuffle and zipf both ≤ 3.74). The other three statistics overlap.
   - V2 fails. Hands 1A, 2B and 3B score 5.22, 5.11 and 5.10, closer to plain Boccaccio (mean 4.40) than to C0 (3.59) or the cipher arms (3.54).
-- **Commits:** 7af068c (prereg), (results and log commit)
-- **Status:** lead (burstiness sees a plaintext, and MS is on the plain-text side)
+  - Correction (same day): the separation test compared plain text with ciphertext. Through the cipher, Naibbe on real Boccaccio (burst 3.41–3.65) overlaps shuffled (3.40–3.70) and nonsense (3.38–3.74) on all four statistics, so no statistic here sees a plaintext through Naibbe. The pre-registration lacked that arm in the separation rule.
+- **Commits:** 7af068c (prereg), 96d9abb (results and log), (correction commit)
+- **Status:** lead (MS word clustering is far above any Naibbe arm and C0, and above plain Boccaccio); closed (plaintext visibility through Naibbe: none of the four statistics)
 - **Led to:** —
 
 ### L52 · 2026-10-14 10:52 · h42 near-repeat decay
@@ -676,6 +677,6 @@ Status key:
 - **Result:**
   - N1–N3 pass on the first-drop rule. Hand 1A drops at 21–100, hand 2B at 21–100, hand 3B at 101–500. Hand 2B's adjacent excess is 0.007 (not elevated), and its 101–500 bin is elevated again (0.010).
   - C0 drops at gap 2–5 (adjacent excess 0.024) and is elevated again at 6–20. Fitted self-citation and the h39 tuned copier stay elevated through 21–100 and drop at 101–500, which is later than hand 2B's first drop. Boccaccio and the h39 graph respell have no elevated bin (Boccaccio adjacent excess −0.027).
-- **Commits:** 7af068c (prereg), (results and log commit)
+- **Commits:** 7af068c (prereg), 96d9abb (results and log)
 - **Status:** closed (not Boccaccio's pattern); lead (hand 2B's excess returns at 101–500 tokens)
 - **Led to:** —
