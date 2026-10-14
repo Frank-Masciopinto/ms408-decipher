@@ -85,6 +85,27 @@
 | 44 | **h36** similarity-preserving re-spelling: glyph-by-glyph per-position (and previous-glyph) rank map to hand train glyphs, h34 gap rule kept, held-out bifolia | Keeps near-copies (edit-neighbour preservation .83–.96 vs .01 for h35) and restores the fingerprint (6/9 at 5/5, rest 4/5), link/table/inventory kept; **but space predictability rises to .78–.95 (1/9 in MS range)**. Nonsense = Italian | negative (trade-off: glyph-level keeps copies, word-level fixes spaces; neither both) |
 | 45 | **h37** copy-aware re-spelling: edit-neighbour roots re-spelled with the h35 whole-word shape model, each near-copy rebuilt by replaying its one-glyph edit (position-relative, glyph from the hand shape 3-gram) on the re-spelled parent; h34 gap rule kept, held-out bifolia | Parent→child edits kept for 96–98 % of derived types, but overall edit-neighbour preservation only .45–.51 (sibling and cross-family pairs lost); space predictability .69–.74 (3/9 in .72–.80, rest just below); **fingerprint 2–4/5 (0/9 at 5/5)**; link, table r .84–.93, inventory kept; shuffled-shape control far off (S .37–.53); nonsense = Italian | negative (tree-wise copy replay keeps the copy tree but not the dense near-copy network the 5/5 fingerprint needs) |
 | 46 | **h38** (A) family re-spelling: one-edit connected components share a re-spelled root and a family-wide glyph map for variable slots (word-final slots from the hand's final-glyph distribution); (B) native-shape copier: C0/Timm–Schinner-style self-citation with seed words and edits from the per-hand shape model (fresh words from shape model, Naibbe-Italian or Naibbe-nonsense); h34 gap rule, held-out bifolia | **Negative for both.** A: space predictability in .72–.80 in 8/9 (best yet) and final-glyph distance below h37 in 6/9, but all-pairs near-copy preservation only .46–.56 (target ≥ .9; Naibbe streams form one giant edit component, so a BFS tree cannot keep all links) and **fingerprint 1–4/5 (0/9 at 5/5)**. B: link and gap table kept (9/9), final-glyph distance ≤ .05 bits in 5/9, but spaces far too unpredictable (.32–.45 vs MS .72–.80), inventory 1.7–2.4× MS and **fingerprint 1/5 in 9/9**. Shuffled-shape control further off (7/9); feeding Italian vs nonsense changes nothing systematic | Still no generator matches space placement, near-copy network and fingerprint together; says nothing about meaning or an underlying language |
+| 47 | **h39** (A) graph-preserving re-spelling: one glyph substitution per word slot (0,1,2,mid,−3,−2,−1), annealed jointly over the whole one-edit graph against hand train slot/final-glyph distributions and space predictability; (B) native copier with fresh rate, window and edit mix tuned on even bifolia (type/token, near-repeat rate, spaces); h34 gap rule, held-out odd bifolia | **Negative for both headlines.** A: near-copy preservation .74–.83 (best of loop; 0/9 ≥ .9), final-glyph JS ≤ .04 in 9/9, **fingerprint 5/5 in 4/9** (rest 3–4/5), spaces .74–.84 (3/9 in .72–.80; 2B/3B slightly too predictable), 340–1 330 types merged, gap-table r drops to .16–.60; shuffled-target control far off (S .31–.54). B: tuned to grid edge (25 % fresh, window 50, 55 % unchanged), near-repeat rate matched, link/table kept 9/9, but spaces .48–.59 (0/9) and fingerprint 1/5 (λ5 .21–.23 vs MS .03–.04). Italian = nonsense | Loop ends without a generator matching spaces, near-copy network and fingerprint together; per-slot recoding is the closest compromise. Says nothing about meaning or an underlying language |
+
+
+### Synthesis of the word-boundary loop (h33–h39)
+
+* **Spaces are real and rule-bound (h33).** Moving or joining spaces never makes more word-like units, in MS or in
+  Latin/Italian; boundary positions are predictable from two glyphs either side (S ≈ .72–.80 per hand), between
+  natural text and the generators.
+* **The end→start word link is a gap rule, not hidden words (h31, h33, h34).** A per-hand rule choosing the next word
+  by its first glyph given the previous last glyph reproduces the link (r .90–.97 with MS's table) and keeps the 5/5
+  fingerprint, with Italian or nonsense input alike.
+* **Space placement comes from word shape (h35).** Re-spelling generator words with each hand's glyph-shape model puts
+  spaces in range; `l`, `y`, `r` as word-final glyphs carry most of the gap.
+* **But shape and copying pull against each other (h35–h39).** Whole-word re-spelling fixes spaces and destroys the
+  near-copy network the fingerprint needs; glyph-level maps keep copies but over-regularise spaces; tree- and
+  family-wise schemes (h37, h38) keep part of each. The best compromise (h39 A, one annealed substitution per slot)
+  reaches near-copy .74–.83, 5/5 in 4/9 cells and spaces .74–.84, never all targets at once.
+* **MS's local word similarity is not literal copying at face value (h38, h39 B).** A copier tuned to MS's near-repeat
+  rate overshoots the 5-word copy statistic 5–7× and leaves spaces far too unpredictable.
+* **Plaintext never matters.** At every step Italian (Boccaccio) and Zipf nonsense give the same results, so none of
+  these fits is evidence for or against an underlying language, and none supports any reading.
 
 ## 3. What each result does and does not show
 

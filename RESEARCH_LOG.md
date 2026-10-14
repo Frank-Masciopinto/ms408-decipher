@@ -627,3 +627,14 @@ Status key:
 - **Commits:** a5c19e1 (prereg), (code + results + docs)
 - **Status:** negative (A: spaces fixed, network not; B: wrong on spaces and fingerprint)
 - **Led to:** keep a full edit graph (not a BFS tree) with a per-family glyph map solved jointly, or tune B's fresh/copy rates to MS λ5 before re-testing
+
+### L49 · 2026-10-14 · h39 graph-preserving re-spelling and tuned native copier
+- **Question:** final round of the h35–h39 loop: can a re-spelling that keeps the whole one-edit graph (A), or a native copier with tuned rates (B), match space placement, the near-copy network and the 5/5 fingerprint at once?
+- **Did:** A: one glyph substitution per word slot (0,1,2,mid,−3,−2,−1), simulated annealing (1 500 proposals) jointly over the top-800-type edit graph against hand-train slot and final-glyph distributions and space predictability. B: h38 copier with 80-point grid over fresh rate, window and unchanged-copy share, tuned on even bifolia (types/5k, near-repeat proxy, S). h34 gap rule; scored on odd bifolia; hands 1A/2B/3B; generators C0, Naibbe-Italian + 5 % swap, Naibbe-nonsense. Controls: shuffled-target annealing, h38 reference, nonsense feed.
+- **Found:**
+  - A: near-copy E .74–.83 (0/9 ≥ .9, best of loop); spaces .74–.84 (3/9 in range); fingerprint 5/5 in 4/9; final-glyph JS ≤ .04 9/9; 340–1 330 types merged; gap-table r .16–.60; shuffled control far off 9/9.
+  - B: tuned to grid edge (25 % fresh, window 50, 55 % unchanged); near-repeat matched; link + table kept 9/9; spaces .48–.59 (0/9); fingerprint 1/5 (λ5 .21–.23 vs MS .03–.04); inventory 1.13–1.63× MS.
+  - Italian = nonsense.
+- **Commits:** 351b9d5 (prereg), (code + results + docs)
+- **Status:** negative (loop ends; per-slot recoding is the closest compromise)
+- **Led to:** synthesis section in FINDINGS (h33–h39); next direction: model word similarity as a shared slot grammar (type-level) rather than token copying, or a context-dependent slot map that also preserves the gap table
