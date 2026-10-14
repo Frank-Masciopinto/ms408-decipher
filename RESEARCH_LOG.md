@@ -616,3 +616,14 @@ Status key:
 - **Commits:** 83fe362 (prereg), (code + results + docs)
 - **Status:** negative (copy tree kept, near-copy network lost)
 - **Led to:** network-aware re-spelling (shared glyph substitutions across all edit neighbours, e.g. respell a word's variable slot once per family) or a generator that copies in MS shape directly
+
+### L48 · 2026-10-14 · h38 family re-spelling and native-shape copier
+- **Question:** can re-spelling whole near-copy families (A) or copying directly in MS word shapes (B) match space placement, the near-copy network and the 5/5 fingerprint at once?
+- **Did:** A: edit-1 connected components share a re-spelled root and a family-wide glyph map (word-final slots from the hand's final-glyph distribution). B: self-citation generator (15 % fresh, else copy from last 50 with 0/1/2 edits) with seeds and edits from the per-hand shape model; fresh words from shape model, Naibbe-Italian or Naibbe-nonsense. h34 gap rule; train even / test odd bifolia; hands 1A/2B/3B. Controls: shuffled-shape model, h37 reference, nonsense feed.
+- **Found:**
+  - A: S in .72–.80 in 8/9; all-pairs near-copy .46–.56 (0/9 ≥ .9); fingerprint 1–4/5 (0/9 at 5/5); final-glyph JS lower than h37 in 6/9; shuffled control further off 7/9.
+  - B: S .32–.45 (0/9 in range); fingerprint 1/5 (9/9); link + gap table kept 9/9; final-glyph JS ≤ .05 in 5/9; inventory 1.7–2.4× MS.
+  - Italian = nonsense (no plaintext signal either way).
+- **Commits:** a5c19e1 (prereg), (code + results + docs)
+- **Status:** negative (A: spaces fixed, network not; B: wrong on spaces and fingerprint)
+- **Led to:** keep a full edit graph (not a BFS tree) with a per-family glyph map solved jointly, or tune B's fresh/copy rates to MS λ5 before re-testing

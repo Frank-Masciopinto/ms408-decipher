@@ -1,0 +1,37 @@
+"""Summarise h38 -> results/summary.json, summary.md (pass/fail per PREREG)."""
+import json, sys
+import h38_lib as S
+import run_h34 as R34
+sys.path.insert(0, str(S.ROOT / "hypotheses/h20_generators_vs_italian"))
+import h20_lib as L20  # noqa: E402
+R = S.HERE / "results"; HANDS = ["1A", "2B", "3B"]; GENS = ["C0", "naibbe_it", "naibbe_nonsense"]; FEEDS = ["native", "naibbe_it", "naibbe_nonsense"]
+H = S.ROOT / "hypotheses"; R20 = H / "h20_generators_vs_italian/results"; R37 = H / "h37_copy_aware_respell/results"
+ms = json.loads((H / "h34_boundary_rule_generator/results/ms_targets.json").read_text())
+fp = lambda f: (lambda d: L20.dstats(d["schemes"]["bifolium"]["bits"], d["schemes"]["bifolium"]["glyphs_per_word"], d["crossfit_W5"]["lam"]))(json.loads(f.read_text()))
+msr = [fp(R20 / f"cell_MS_{h}.json") for h in HANDS]; ld = lambda f: json.loads(f.read_text())
+nfp = lambda f: L20.match(fp(f), msr)["n_match"] if f.exists() else None
+te = {h: [w for l in R34.split(h)[1] for w in l] for h in HANDS}; A = []; B = []
+for h in HANDS:
+    for g in GENS:
+        d = ld(R / f"m_{h}_{g}_fam.json"); sh = ld(R / f"m_{h}_{g}_famshuf.json"); r37 = ld(R37 / f"m_{h}_{g}_copy.json")
+        F37 = S.js_final([w for l in ld(R37 / f"lines_{h}_{g}_copy.json") for w in l], te[h])
+        st = d["respell_stats"]
+        A.append(dict(hand=h, gen=g, S_ms=ms[h]["test"]["S"], S=d["m"]["S"], S_shuf=sh["m"]["S"], S_h37=r37["m"]["S"], E=d["E"], E_h37=r37["E"],
+                      F=d["F"], F_h37=F37, J=d["m"]["J"], J_ms=d["J_train_ms"], T=d["m"]["T"], V=d["V_ms"], fp=nfp(R / f"cell_{h}_{g}_fam.json"),
+                      families=st["root"], derived_ok=st.get("derived_ok", 0) / max(1, st.get("derived_ok", 0) + st.get("derived_fail", 0))))
+    for f in FEEDS:
+        d = ld(R / f"m_{h}_{f}_nat.json")
+        B.append(dict(hand=h, feed=f, S_ms=ms[h]["test"]["S"], S=d["m"]["S"], F=d["F"], J=d["m"]["J"], J_ms=d["J_train_ms"], T=d["m"]["T"], V=d["V_ms"],
+                      fp=nfp(R / f"cell_{h}_{f}_nat.json")))
+inr = lambda x: .72 <= x <= .80
+P = dict(A1=sum(r["E"] >= .9 for r in A), A2=sum(inr(r["S"]) for r in A), A3=sum(r["fp"] == 5 for r in A), A4=sum(r["F"] < r["F_h37"] for r in A),
+         A5=sum(abs(r["S_shuf"] - r["S_ms"]) > abs(r["S"] - r["S_ms"]) for r in A),
+         B1=sum(inr(r["S"]) for r in B), B2=sum(r["fp"] == 5 for r in B), B3=sum(r["J"] >= .6 * r["J_ms"] and r["T"] >= .85 for r in B),
+         B4=sum(r["F"] <= .05 for r in B),
+         B5=sum(abs(next(r["S"] for r in B if r["hand"] == h and r["feed"] == "naibbe_it") - next(r["S"] for r in B if r["hand"] == h and r["feed"] == "naibbe_nonsense")) <= .03 for h in HANDS))
+V = dict(A1=P["A1"] >= 7, A2=P["A2"] >= 6, A3=P["A3"] >= 6, A4=P["A4"] >= 7, A5=P["A5"] >= 6, B1=P["B1"] >= 6, B2=P["B2"] >= 6, B3=P["B3"] >= 7, B4=P["B4"] >= 7, B5=P["B5"] == 3)
+V["H_A"] = V["A1"] and V["A2"] and V["A3"]; V["H_B"] = V["B1"] and V["B2"] and V["B3"]
+(R / "summary.json").write_text(json.dumps(dict(counts=P, verdicts=V, A=A, B=B), indent=1, default=float))
+tab = lambda rows: ["| " + " | ".join(rows[0]) + " |", "|" + "---|" * len(rows[0])] + ["| " + " | ".join(f"{v:.3f}" if isinstance(v, float) else str(v) for v in r.values()) + " |" for r in rows]
+md = ["## Variant A (fam)"] + tab(A) + ["", "## Variant B (nat)"] + tab(B) + ["", "counts: " + json.dumps(P), "verdicts: " + json.dumps(V)]
+(R / "summary.md").write_text("\n".join(md) + "\n"); print("\n".join(md))
