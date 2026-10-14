@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "hypothesis": "h51_label_to_seed_link",
+  "L1": false,
+  "L1_min_p_holm": 0.4587706146926537,
+  "L2": false,
+  "L2_primary_mean_rank_pct": 0.590576171875,
+  "L2_primary_p": 0.08895552223888056,
+  "L3": true,
+  "L3_obs_diff": 1.6549498740867703,
+  "L3_p_within_folio_len": 0.0004997501249375312,
+  "verdict": "mixed",
+  "n_perm": 2000,
+  "seed": 51
+}

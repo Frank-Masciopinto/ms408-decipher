@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "hypothesis": "h49_seed_skeleton_extraction",
+  "verdict": "mixed",
+  "S1": false,
+  "S1_passing_hands": [],
+  "S2": true,
+  "S2_passing_hands": [
+    "1A",
+    "2B"
+  ],
+  "S3": true,
+  "S3_passing_hands": [
+    "1A",
+    "2B",
+    "3B"
+  ],
+  "seed": 49,
+  "runtime_sec": 131.54087548299867
+}

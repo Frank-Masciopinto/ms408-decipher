@@ -1,0 +1,648 @@
+{
+  "hypothesis": "h50_header_acrostic_stream",
+  "verdict": "partially_supported",
+  "predictions": {
+    "A1": false,
+    "A1_passing_hands": [],
+    "A1_by_hand": {
+      "1A": {
+        "passed": false,
+        "line_words_stripped_D1": -0.21961195681841517,
+        "line_words_stripped_mi_above_p95": false,
+        "line_words_stripped_pass": false,
+        "para_words_D1": -0.08340466492684584,
+        "para_words_mi_above_p95": true,
+        "para_words_pass": false
+      },
+      "2B": {
+        "passed": false,
+        "line_words_stripped_D1": -0.19786036044466115,
+        "line_words_stripped_mi_above_p95": true,
+        "line_words_stripped_pass": false,
+        "para_words_D1": -0.07571630054411216,
+        "para_words_mi_above_p95": false,
+        "para_words_pass": false
+      },
+      "3B": {
+        "passed": false,
+        "line_words_stripped_D1": -0.18335133568222695,
+        "line_words_stripped_mi_above_p95": false,
+        "line_words_stripped_pass": false,
+        "para_words_D1": -0.10264368261735513,
+        "para_words_mi_above_p95": true,
+        "para_words_pass": false
+      }
+    },
+    "A2": false,
+    "A2_passing_hands": [],
+    "A2_by_hand": {
+      "1A": {
+        "passed": false,
+        "R_acro": 0.39407855489916743,
+        "R_acro_null_p95": 0.13979446892005476,
+        "R_acro_above_p95": true,
+        "R_horiz": 1.6211875921284093,
+        "acro_to_horiz_ratio": 0.24308016963156825,
+        "reaches_50pct_horiz": false
+      },
+      "2B": {
+        "passed": false,
+        "R_acro": 0.26134078920888903,
+        "R_acro_null_p95": 0.15242242916513823,
+        "R_acro_above_p95": true,
+        "R_horiz": 1.9062159135913461,
+        "acro_to_horiz_ratio": 0.13709925897980682,
+        "reaches_50pct_horiz": false
+      },
+      "3B": {
+        "passed": false,
+        "R_acro": 0.2702432640672012,
+        "R_acro_null_p95": 0.15137539773717854,
+        "R_acro_above_p95": true,
+        "R_horiz": 1.7832942904273783,
+        "acro_to_horiz_ratio": 0.15154159664944344,
+        "reaches_50pct_horiz": false
+      }
+    },
+    "A3": true,
+    "A3_passing_hands": [
+      "1A",
+      "2B",
+      "3B"
+    ],
+    "A3_by_hand": {
+      "1A": {
+        "passed": true,
+        "header_body_cos": 0.40413360232474743,
+        "header_body_cos_null_p95": 0.3756034246551968,
+        "header_body_cos_above_p95": true,
+        "header_body_edit1": 0.06625923096511332,
+        "header_body_edit1_null_p95": 0.0622596603901331
+      },
+      "2B": {
+        "passed": true,
+        "header_body_cos": 0.5329330136909735,
+        "header_body_cos_null_p95": 0.5224571725111369,
+        "header_body_cos_above_p95": true,
+        "header_body_edit1": 0.05303614298614629,
+        "header_body_edit1_null_p95": 0.055322746969175655
+      },
+      "3B": {
+        "passed": true,
+        "header_body_cos": 0.5564618813648464,
+        "header_body_cos_null_p95": 0.5286131262469027,
+        "header_body_cos_above_p95": true,
+        "header_body_edit1": 0.038190235857492004,
+        "header_body_edit1_null_p95": 0.037285062981495434
+      }
+    },
+    "verdict": "partially_supported"
+  },
+  "streams": {
+    "MS_1A": {
+      "unit_kind": "eva",
+      "n_tokens": 10326,
+      "n_lines": 1477,
+      "n_paras": 209,
+      "n_folios": 112,
+      "n_quires": 10,
+      "share_line_words_stripped": 0.4597156398104265,
+      "M1": {
+        "pass_a1": false,
+        "line_words_raw": {
+          "D1_vert": -0.21201051354793243,
+          "lag1_class_mi": 0.2203930426504196,
+          "lag1_class_mi_null_p95": 0.2375019252555673,
+          "adj_repeat_z": -2.021487158896518
+        },
+        "line_words_stripped": {
+          "D1_vert": -0.21961195681841517,
+          "lag1_class_mi": 0.29427567805044513,
+          "lag1_class_mi_null_p95": 0.29746884828061254,
+          "adj_repeat_z": -1.4223580321944376,
+          "pass_a1": false
+        },
+        "para_words": {
+          "D1_vert": -0.08340466492684584,
+          "lag1_class_mi": 0.8175046499878329,
+          "lag1_class_mi_null_p95": 0.7635537158334601,
+          "adj_repeat_z": 0.6095839625058797,
+          "pass_a1": false
+        }
+      },
+      "M2": {
+        "pass_a2": false,
+        "H1_acro": 3.309137126014532,
+        "h2_acro": 2.9150585711153645,
+        "R_acro": 0.39407855489916743,
+        "R_acro_null_mean": 0.11991417836444312,
+        "R_acro_null_p95": 0.13979446892005476,
+        "R_acro_z": 22.85494059945056,
+        "R_horiz": 1.6211875921284093,
+        "acro_to_horiz_ratio": 0.24308016963156825,
+        "reaches_50pct_horiz": false,
+        "sukhotin_alt": 0.05691941391941385,
+        "sukhotin_vert_z": 4.883411359093179,
+        "sukhotin_horiz_excess": 0.15575561097256863,
+        "sukhotin_horiz_z": 67.4774742731411
+      },
+      "M3": {
+        "pass_a3": true,
+        "header_body_cos": 0.40413360232474743,
+        "header_body_cos_raw": 0.4273437601899251,
+        "header_body_cos_null_mean": 0.3666179103471127,
+        "header_body_cos_null_p95": 0.3756034246551968,
+        "header_body_cos_z": 6.23876138243402,
+        "header_body_edit1": 0.06625923096511332,
+        "header_body_edit1_null_mean": 0.05943793418471326,
+        "header_body_edit1_null_p95": 0.0622596603901331,
+        "header_body_edit1_z": 3.5650873703326917
+      }
+    },
+    "MS_2B": {
+      "unit_kind": "eva",
+      "n_tokens": 10722,
+      "n_lines": 1227,
+      "n_paras": 148,
+      "n_folios": 46,
+      "n_quires": 6,
+      "share_line_words_stripped": 0.511002444987775,
+      "M1": {
+        "pass_a1": false,
+        "line_words_raw": {
+          "D1_vert": -0.18250649943434283,
+          "lag1_class_mi": 0.35805793392704083,
+          "lag1_class_mi_null_p95": 0.35747293403811287,
+          "adj_repeat_z": -1.1119284142466255
+        },
+        "line_words_stripped": {
+          "D1_vert": -0.19786036044466115,
+          "lag1_class_mi": 0.39254884946388874,
+          "lag1_class_mi_null_p95": 0.38832390026489605,
+          "adj_repeat_z": -0.39174510188813644,
+          "pass_a1": false
+        },
+        "para_words": {
+          "D1_vert": -0.07571630054411216,
+          "lag1_class_mi": 1.245271837374895,
+          "lag1_class_mi_null_p95": 1.3219686421016315,
+          "adj_repeat_z": -0.46153326001620654,
+          "pass_a1": false
+        }
+      },
+      "M2": {
+        "pass_a2": false,
+        "H1_acro": 3.227730349871184,
+        "h2_acro": 2.9663895606622948,
+        "R_acro": 0.26134078920888903,
+        "R_acro_null_mean": 0.12911383052242595,
+        "R_acro_null_p95": 0.15242242916513823,
+        "R_acro_z": 10.48659739742797,
+        "R_horiz": 1.9062159135913461,
+        "acro_to_horiz_ratio": 0.13709925897980682,
+        "reaches_50pct_horiz": false,
+        "sukhotin_alt": 0.012311600338695994,
+        "sukhotin_vert_z": 1.3011595224520365,
+        "sukhotin_horiz_excess": 0.19634321120689668,
+        "sukhotin_horiz_z": 93.18675045049307
+      },
+      "M3": {
+        "pass_a3": true,
+        "header_body_cos": 0.5329330136909735,
+        "header_body_cos_raw": 0.5349796170584885,
+        "header_body_cos_null_mean": 0.5131202043876647,
+        "header_body_cos_null_p95": 0.5224571725111369,
+        "header_body_cos_z": 3.041664591643917,
+        "header_body_edit1": 0.05303614298614629,
+        "header_body_edit1_null_mean": 0.05268057994222806,
+        "header_body_edit1_null_p95": 0.055322746969175655,
+        "header_body_edit1_z": 0.21344845465481815
+      }
+    },
+    "MS_3B": {
+      "unit_kind": "eva",
+      "n_tokens": 10835,
+      "n_lines": 1100,
+      "n_paras": 279,
+      "n_folios": 28,
+      "n_quires": 2,
+      "share_line_words_stripped": 0.5827272727272728,
+      "M1": {
+        "pass_a1": false,
+        "line_words_raw": {
+          "D1_vert": -0.19171021824342382,
+          "lag1_class_mi": 0.25055192512187685,
+          "lag1_class_mi_null_p95": 0.2837865708284041,
+          "adj_repeat_z": -0.8836494972827131
+        },
+        "line_words_stripped": {
+          "D1_vert": -0.18335133568222695,
+          "lag1_class_mi": 0.32190281447312913,
+          "lag1_class_mi_null_p95": 0.3312126826311378,
+          "adj_repeat_z": 0.6253407840990386,
+          "pass_a1": false
+        },
+        "para_words": {
+          "D1_vert": -0.10264368261735513,
+          "lag1_class_mi": 0.5869999461382037,
+          "lag1_class_mi_null_p95": 0.5654061272811917,
+          "adj_repeat_z": 2.2709705718658793,
+          "pass_a1": false
+        }
+      },
+      "M2": {
+        "pass_a2": false,
+        "H1_acro": 3.256270995881505,
+        "h2_acro": 2.986027731814304,
+        "R_acro": 0.2702432640672012,
+        "R_acro_null_mean": 0.13050224266338883,
+        "R_acro_null_p95": 0.15137539773717854,
+        "R_acro_z": 10.825758680766663,
+        "R_horiz": 1.7832942904273783,
+        "acro_to_horiz_ratio": 0.15154159664944344,
+        "reaches_50pct_horiz": false,
+        "sukhotin_alt": 0.04407649253731338,
+        "sukhotin_vert_z": 3.4775513492973005,
+        "sukhotin_horiz_excess": 0.16686542198607734,
+        "sukhotin_horiz_z": 62.839178966876986
+      },
+      "M3": {
+        "pass_a3": true,
+        "header_body_cos": 0.5564618813648464,
+        "header_body_cos_raw": 0.5581192374639861,
+        "header_body_cos_null_mean": 0.5109690961883538,
+        "header_body_cos_null_p95": 0.5286131262469027,
+        "header_body_cos_z": 4.530601447234661,
+        "header_body_edit1": 0.038190235857492004,
+        "header_body_edit1_null_mean": 0.034775888088072596,
+        "header_body_edit1_null_p95": 0.037285062981495434,
+        "header_body_edit1_z": 2.2222694563750163
+      }
+    },
+    "page_line_copier_1A": {
+      "unit_kind": "eva",
+      "n_tokens": 10326,
+      "n_lines": 1477,
+      "n_paras": 209,
+      "n_folios": 112,
+      "n_quires": 10,
+      "share_line_words_stripped": 0.03588354773188896,
+      "M1": {
+        "pass_a1": false,
+        "line_words_raw": {
+          "D1_vert": -0.24019947113561813,
+          "lag1_class_mi": 0.31629460574071844,
+          "lag1_class_mi_null_p95": 0.3421056898809212,
+          "adj_repeat_z": 0.38995076952159996
+        },
+        "line_words_stripped": {
+          "D1_vert": -0.24367316722024235,
+          "lag1_class_mi": 0.3180059155202813,
+          "lag1_class_mi_null_p95": 0.3437962420442485,
+          "adj_repeat_z": 0.6933752052860352,
+          "pass_a1": false
+        },
+        "para_words": {
+          "D1_vert": -0.20009984194367725,
+          "lag1_class_mi": 1.2690158612169853,
+          "lag1_class_mi_null_p95": 1.272044962964014,
+          "adj_repeat_z": -0.4615805356362976,
+          "pass_a1": false
+        }
+      },
+      "M2": {
+        "pass_a2": false,
+        "H1_acro": 1.8097464966265235,
+        "h2_acro": 1.707642849856656,
+        "R_acro": 0.1021036467698675,
+        "R_acro_null_mean": 0.03923450295430833,
+        "R_acro_null_p95": 0.05993321170378472,
+        "R_acro_z": 5.224872858143324,
+        "R_horiz": 0.6579198409899445,
+        "acro_to_horiz_ratio": 0.15519162124102598,
+        "reaches_50pct_horiz": false,
+        "sukhotin_alt": 0.019992673992674015,
+        "sukhotin_vert_z": 1.5483475591232996,
+        "sukhotin_horiz_excess": 0.08024597263121414,
+        "sukhotin_horiz_z": 36.4087184859741
+      },
+      "M3": {
+        "pass_a3": true,
+        "header_body_cos": 0.4262114328067406,
+        "header_body_cos_raw": 0.44110086092967965,
+        "header_body_cos_null_mean": 0.38801062786689205,
+        "header_body_cos_null_p95": 0.39619120032874877,
+        "header_body_cos_z": 7.423968606093888,
+        "header_body_edit1": 0.049099615566196804,
+        "header_body_edit1_null_mean": 0.04494638910902836,
+        "header_body_edit1_null_p95": 0.046784765271082294,
+        "header_body_edit1_z": 3.7067178512962733
+      }
+    },
+    "page_line_copier_2B": {
+      "unit_kind": "eva",
+      "n_tokens": 10494,
+      "n_lines": 1197,
+      "n_paras": 147,
+      "n_folios": 46,
+      "n_quires": 6,
+      "share_line_words_stripped": 0.6190476190476191,
+      "M1": {
+        "pass_a1": false,
+        "line_words_raw": {
+          "D1_vert": -0.24115432513159973,
+          "lag1_class_mi": 0.358505569097979,
+          "lag1_class_mi_null_p95": 0.3836676684753736,
+          "adj_repeat_z": -0.1650897885689686
+        },
+        "line_words_stripped": {
+          "D1_vert": -0.25796937306316003,
+          "lag1_class_mi": 0.3721727695612644,
+          "lag1_class_mi_null_p95": 0.3970567866814937,
+          "adj_repeat_z": -0.3236351455350647,
+          "pass_a1": false
+        },
+        "para_words": {
+          "D1_vert": -0.20019037366204628,
+          "lag1_class_mi": 1.6450870807463103,
+          "lag1_class_mi_null_p95": 1.7881530306432936,
+          "adj_repeat_z": 2.3487473979422178,
+          "pass_a1": false
+        }
+      },
+      "M2": {
+        "pass_a2": false,
+        "H1_acro": 1.8731449200130612,
+        "h2_acro": 1.8533181126375453,
+        "R_acro": 0.019826807375515898,
+        "R_acro_null_mean": 0.03029610067107051,
+        "R_acro_null_p95": 0.04647471432740224,
+        "R_acro_z": -1.0967998364726423,
+        "R_horiz": 0.831441217697861,
+        "acro_to_horiz_ratio": 0.02384631282823989,
+        "reaches_50pct_horiz": false,
+        "sukhotin_alt": -0.0019895742832319874,
+        "sukhotin_vert_z": -0.22079146956085663,
+        "sukhotin_horiz_excess": 0.09331410338225898,
+        "sukhotin_horiz_z": 43.021336734575726
+      },
+      "M3": {
+        "pass_a3": true,
+        "header_body_cos": 0.5348444914639563,
+        "header_body_cos_raw": 0.5582767142894187,
+        "header_body_cos_null_mean": 0.5208597626026878,
+        "header_body_cos_null_p95": 0.5306169606917319,
+        "header_body_cos_z": 2.472262396937628,
+        "header_body_edit1": 0.04684283843067135,
+        "header_body_edit1_null_mean": 0.046080671065003444,
+        "header_body_edit1_null_p95": 0.04897472846298023,
+        "header_body_edit1_z": 0.42584918195644184
+      }
+    },
+    "page_line_copier_3B": {
+      "unit_kind": "eva",
+      "n_tokens": 10493,
+      "n_lines": 1069,
+      "n_paras": 277,
+      "n_folios": 28,
+      "n_quires": 2,
+      "share_line_words_stripped": 0.31898971000935455,
+      "M1": {
+        "pass_a1": false,
+        "line_words_raw": {
+          "D1_vert": -0.2579007242327087,
+          "lag1_class_mi": 0.37659967287549445,
+          "lag1_class_mi_null_p95": 0.4062205711860491,
+          "adj_repeat_z": -0.20119653444350605
+        },
+        "line_words_stripped": {
+          "D1_vert": -0.2583780830811353,
+          "lag1_class_mi": 0.36507946741989816,
+          "lag1_class_mi_null_p95": 0.4225421309508989,
+          "adj_repeat_z": -0.6139069489359524,
+          "pass_a1": false
+        },
+        "para_words": {
+          "D1_vert": -0.14872346591248053,
+          "lag1_class_mi": 0.7753998356591237,
+          "lag1_class_mi_null_p95": 0.8451125957850644,
+          "adj_repeat_z": 2.633590309532551,
+          "pass_a1": false
+        }
+      },
+      "M2": {
+        "pass_a2": false,
+        "H1_acro": 1.6527577681348218,
+        "h2_acro": 1.5238519197124007,
+        "R_acro": 0.12890584842242103,
+        "R_acro_null_mean": 0.030879862182042767,
+        "R_acro_null_p95": 0.04526941200786588,
+        "R_acro_z": 11.057243769593404,
+        "R_horiz": 0.881482491211409,
+        "acro_to_horiz_ratio": 0.14623755968796107,
+        "reaches_50pct_horiz": false,
+        "sukhotin_alt": 0.0017387127761768206,
+        "sukhotin_vert_z": 0.20093803411091493,
+        "sukhotin_horiz_excess": 0.08762371626755561,
+        "sukhotin_horiz_z": 42.01062184158397
+      },
+      "M3": {
+        "pass_a3": true,
+        "header_body_cos": 0.5940130360032526,
+        "header_body_cos_raw": 0.591922747800144,
+        "header_body_cos_null_mean": 0.5619696974485823,
+        "header_body_cos_null_p95": 0.5728319596680536,
+        "header_body_cos_z": 4.764157201004137,
+        "header_body_edit1": 0.03665401230527556,
+        "header_body_edit1_null_mean": 0.03602132600874406,
+        "header_body_edit1_null_p95": 0.03821119444593779,
+        "header_body_edit1_z": 0.4504183077036215
+      }
+    },
+    "it_boccaccio": {
+      "unit_kind": "char",
+      "n_tokens": 10494,
+      "n_lines": 1197,
+      "n_paras": 147,
+      "n_folios": 46,
+      "n_quires": 6,
+      "share_line_words_stripped": 0.2548036758563074,
+      "M1": {
+        "pass_a1": false,
+        "line_words_raw": {
+          "D1_vert": -0.21981967913819034,
+          "lag1_class_mi": 0.28486562303772034,
+          "lag1_class_mi_null_p95": 0.31763636281712176,
+          "adj_repeat_z": 0.686059425567754
+        },
+        "line_words_stripped": {
+          "D1_vert": -0.2215384852281641,
+          "lag1_class_mi": 0.29005587712577674,
+          "lag1_class_mi_null_p95": 0.32425784573667726,
+          "adj_repeat_z": 0.6700454183585853,
+          "pass_a1": false
+        },
+        "para_words": {
+          "D1_vert": -0.1524627548371278,
+          "lag1_class_mi": 1.3914234255843845,
+          "lag1_class_mi_null_p95": 1.5517005891211875,
+          "adj_repeat_z": -0.4292543059943023,
+          "pass_a1": false
+        }
+      },
+      "M2": {
+        "pass_a2": false,
+        "H1_acro": 3.949926509371973,
+        "h2_acro": 3.6932574988926814,
+        "R_acro": 0.2566690104792917,
+        "R_acro_null_mean": 0.22950800156858928,
+        "R_acro_null_p95": 0.2541072479536757,
+        "R_acro_z": 1.7040380589453028,
+        "R_horiz": 1.0500091428439267,
+        "acro_to_horiz_ratio": 0.24444454815327543,
+        "reaches_50pct_horiz": false,
+        "sukhotin_alt": 0.008488271068636033,
+        "sukhotin_vert_z": 0.7949864038459016,
+        "sukhotin_horiz_excess": 0.17585016235051887,
+        "sukhotin_horiz_z": 62.455553401614615
+      },
+      "M3": {
+        "pass_a3": false,
+        "header_body_cos": 0.2567054531642424,
+        "header_body_cos_raw": 0.2707305630695678,
+        "header_body_cos_null_mean": 0.24883134659919776,
+        "header_body_cos_null_p95": 0.2587101670248506,
+        "header_body_cos_z": 1.2708678700541232,
+        "header_body_edit1": 0.07444952769640918,
+        "header_body_edit1_null_mean": 0.07295508954631787,
+        "header_body_edit1_null_p95": 0.07649643903816955,
+        "header_body_edit1_z": 0.7222514645378748
+      }
+    },
+    "cucina": {
+      "unit_kind": "char",
+      "n_tokens": 10509,
+      "n_lines": 1058,
+      "n_paras": 313,
+      "n_folios": 43,
+      "n_quires": 11,
+      "share_line_words_stripped": 0.3733459357277883,
+      "M1": {
+        "pass_a1": true,
+        "line_words_raw": {
+          "D1_vert": 0.003783352359237213,
+          "lag1_class_mi": 0.6114309911538407,
+          "lag1_class_mi_null_p95": 0.3881673632361674,
+          "adj_repeat_z": -2.715302601170165
+        },
+        "line_words_stripped": {
+          "D1_vert": 0.007703455269366444,
+          "lag1_class_mi": 0.6086041708882343,
+          "lag1_class_mi_null_p95": 0.39418109748396585,
+          "adj_repeat_z": -2.715302601170165,
+          "pass_a1": false
+        },
+        "para_words": {
+          "D1_vert": 0.4271207449800585,
+          "lag1_class_mi": 1.58616790198466,
+          "lag1_class_mi_null_p95": 1.0012337380134542,
+          "adj_repeat_z": -8.46720380226168,
+          "pass_a1": true
+        }
+      },
+      "M2": {
+        "pass_a2": false,
+        "H1_acro": 3.886714712794712,
+        "h2_acro": 3.4637982763723083,
+        "R_acro": 0.42291643642240384,
+        "R_acro_null_mean": 0.2866627106706365,
+        "R_acro_null_p95": 0.31551531400177274,
+        "R_acro_z": 7.477248444184735,
+        "R_horiz": 1.0652878542317392,
+        "acro_to_horiz_ratio": 0.3969973324509565,
+        "reaches_50pct_horiz": false,
+        "sukhotin_alt": 0.018970443349753674,
+        "sukhotin_vert_z": 1.9925100524689392,
+        "sukhotin_horiz_excess": 0.17789455733977544,
+        "sukhotin_horiz_z": 93.5690100839832
+      },
+      "M3": {
+        "pass_a3": true,
+        "header_body_cos": 0.2800723194221479,
+        "header_body_cos_raw": 0.3028475981005693,
+        "header_body_cos_null_mean": 0.2701124748466434,
+        "header_body_cos_null_p95": 0.27929532872992036,
+        "header_body_cos_z": 1.7691669715752534,
+        "header_body_edit1": 0.09581497797356828,
+        "header_body_edit1_null_mean": 0.09487716639707904,
+        "header_body_edit1_null_p95": 0.09738635937487189,
+        "header_body_edit1_z": 0.6618182519927982
+      }
+    },
+    "la_pliny_herbal": {
+      "unit_kind": "char",
+      "n_tokens": 10494,
+      "n_lines": 1197,
+      "n_paras": 147,
+      "n_folios": 46,
+      "n_quires": 6,
+      "share_line_words_stripped": 0.27986633249791143,
+      "M1": {
+        "pass_a1": false,
+        "line_words_raw": {
+          "D1_vert": -0.16357735557466313,
+          "lag1_class_mi": 0.1998021791732169,
+          "lag1_class_mi_null_p95": 0.2277897854276111,
+          "adj_repeat_z": -0.06711788441823469
+        },
+        "line_words_stripped": {
+          "D1_vert": -0.1648259755794257,
+          "lag1_class_mi": 0.1994791913907088,
+          "lag1_class_mi_null_p95": 0.2289091057699228,
+          "adj_repeat_z": -0.1178023912712635,
+          "pass_a1": false
+        },
+        "para_words": {
+          "D1_vert": -0.06211445567437579,
+          "lag1_class_mi": 1.384093011943199,
+          "lag1_class_mi_null_p95": 1.4006428298723312,
+          "adj_repeat_z": 1.1008666936615,
+          "pass_a1": false
+        }
+      },
+      "M2": {
+        "pass_a2": false,
+        "H1_acro": 3.9093888789090125,
+        "h2_acro": 3.6648035554550904,
+        "R_acro": 0.24458532345392214,
+        "R_acro_null_mean": 0.22446608007143287,
+        "R_acro_null_p95": 0.25070237397142375,
+        "R_acro_z": 1.2578055664742782,
+        "R_horiz": 0.7488935807259276,
+        "acro_to_horiz_ratio": 0.3265955667784432,
+        "reaches_50pct_horiz": false,
+        "sukhotin_alt": 0.010629887054734943,
+        "sukhotin_vert_z": 0.7729246373814133,
+        "sukhotin_horiz_excess": 0.22443626827406704,
+        "sukhotin_horiz_z": 123.52032269035942
+      },
+      "M3": {
+        "pass_a3": false,
+        "header_body_cos": 0.2814894302048744,
+        "header_body_cos_raw": 0.28452088804494036,
+        "header_body_cos_null_mean": 0.2789796906656678,
+        "header_body_cos_null_p95": 0.28731824237367,
+        "header_body_cos_z": 0.5378366453471248,
+        "header_body_edit1": 0.01852665495020504,
+        "header_body_edit1_null_mean": 0.017878551554974274,
+        "header_body_edit1_null_p95": 0.01995260874030371,
+        "header_body_edit1_z": 0.5785402804397359
+      }
+    }
+  },
+  "n_perm": 200,
+  "seed": 50,
+  "numpy": "2.5.4",
+  "python": "3.12.3",
+  "runtime_sec": 31.96917565399781
+}

@@ -1,0 +1,18 @@
+{
+  "hypothesis": "h50_header_acrostic_stream",
+  "complete": true,
+  "verdict": "partially_supported",
+  "A1": false,
+  "A1_passing_hands": [],
+  "A2": false,
+  "A2_passing_hands": [],
+  "A3": true,
+  "A3_passing_hands": [
+    "1A",
+    "2B",
+    "3B"
+  ],
+  "n_perm": 200,
+  "seed": 50,
+  "runtime_sec": 31.96917565399781
+}

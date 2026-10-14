@@ -26,6 +26,9 @@ Status key:
 - **A decodable toy table hitting MS's D4 window (h29):** three length × suffix-pool settings are ≥0.8 decodable and clear the D4 floor of −0.07, but their D4 (+0.38 to +0.48) is above the MS band. No setting of the 25 reproduces the five-statistic fingerprint.
 - **Transcription moving the fingerprint (h40):** across ZL3b, IT2a and RF1b, D1–D5 stay inside the h20 tolerances and the last-glyph link stays far above the generators. The space-predictability target does move: for hands 2B and 3B it sits above 0.80.
 - **First-line copy seeding or open-spread copying across folios (h46):** folio-opening first lines have a *lower* one-edit pair rate with later lines on the same folio than interior lines do (`seed − interior` = −0.017 to −0.024 across all three hands), and cross-folio one-edit rates across a visible open spread (`v → r`) are no higher than across a page turn (`r → v`).
+- **De-padded seed skeleton syntax (h49):** stripping same-folio exact repeats and one-edit echoes (`local_W25` or `folio_comp`) does not uncover positive word-order syntax ($D_1 = -0.22\text{ to }-0.24$ on `local_W25`), and MS 408's de-padded retention rate, $D_1$, and `morphs_per_type` all match the no-plaintext `page_line_copier` within $\pm 0.08$ across Hands 1A, 2B and 3B.
+- **Vertical paragraph/line-initial header or glyph acrostic (h50):** vertical sequences of paragraph-initial words and raw or onset-stripped line-initial words have negative bigram gain ($D_1 < 0$) in all three hands, and vertical line-initial first-unit redundancy ($R_{\text{acro}}$) is only 14–24 % of horizontal within-word redundancy (matching prose controls at 24–40 %).
+- **Diagram/plant label links to de-padded paragraph seeds (h51):** matching `L`-locus labels to their own folio's de-padded `seed_W25` tokens via exact, one-edit, or onset-stripped stem overlap shows no enrichment over within-quire folio permutations ($p_{\text{Holm}} = 0.46$), and de-padded herbal–pharmaceutical same-plant pairs do not beat random herbal partners ($p \ge 0.089$).
 
 ## Open leads
 - **Line structure (h13–h16, h30, h47):**
@@ -757,6 +760,45 @@ Status key:
 - **Result:**
   - D1–D3 pass in 3/3 MS hands. One-edit drift slope $S_{\text{edit}}$ (`Delta_l in {1,2}` minus `Delta_l >= 5`) is +0.0086 ($z = 5.2$), +0.0093 ($z = 11.5$) and +0.0060 ($z = 7.8$) in 1A, 2B and 3B, while Boccaccio (−0.0006) and Pliny (−0.0001) show zero one-edit slope. Unit-3gram cosine slope $S_{\text{cos3}}$ is +0.042, +0.042 and +0.030 ($z = 10.5\text{–}19.1$).
   - Decomposing short-lag ($\Delta\ell \in \{1,2\}$) same-folio one-edit excess over a within-quire shuffle (`D3`) shows that both a folio-wide vocabulary palette (62.8 %, 36.8 %, 59.8 %; $z = 5.5\text{–}11.7$) and within-folio sequential drift (37.2 %, 63.2 %, 40.2 %; $z = 5.2\text{–}10.9$) contribute in every hand.
-- **Commits:** 7992e99 (prereg), (results and log commit)
+- **Commits:** 7992e99 (prereg), dbfbe24 (results and log)
 - **Status:** lead (each folio combines a page-level vocabulary shift with top-to-bottom line-by-line copy drift)
+- **Led to:** L59, L60, L61
+
+### L59 · 2026-10-14 15:25 · h49 de-padded seed skeleton extraction
+- **Folder:** [hypotheses/h49_seed_skeleton_extraction/](hypotheses/h49_seed_skeleton_extraction/)
+- **Question:** does stripping same-folio exact repeats and one-edit echoes (`local_W25` within 25 tokens, or `folio_comp` across the whole folio) uncover a language-like seed skeleton with positive word-order syntax ($D_1 > 0$) or a distinct morpheme inventory compared with the no-plaintext `page_line_copier`?
+- **Done:**
+  - Pre-registered. Extracted `raw`, `local_W25`, and `folio_comp` seed streams on MS hands 1A, 2B, 3B (`h30_lib.load_ms`, up to 10,500 tokens), `page_line_copier` (1A, 2B, 3B from `h47`), `naibbe_boccaccio_swap`, and `it_boccaccio`.
+  - Measured `keep_rate`, 5-fold Kneser–Ney word-order gain `D1_seed` and adjacent top-50 stem bigram MI $z$-score against 100 within-folio seed permutations (`mi_adj_z`), `morphs_per_type`, and cross-folio seed continuity (`adj_folio_cos`) against 200 within-quire folio-order permutations (seed 49).
+- **Result:**
+  - S1 fails (0/3 hands): `D1_seed` stays negative after de-padding in every MS hand (`local_W25`: −0.225, −0.233, −0.240; `folio_comp`: −0.213, −0.153, −0.124), whereas plain `it_boccaccio` retains positive `D1_seed = +0.032` on `local_W25`.
+  - S2 passes (2/3 hands: 1A `mi_adj_z = 2.29`, 2B `2.00`, 3B `1.26`), matched by `page_line_copier_2B` (`2.15`). S3 passes in 3/3 hands: on `local_W25`, MS and `page_line_copier` agree within $\pm 0.08$ on `keep_rate` (max diff 0.073), `D1_seed` (max diff 0.020), and `morphs_per_type` (max diff 0.011).
+- **Commits:** ecacc79 (prereg), (results and log commit)
+- **Status:** closed (de-padding one-edit echoes leaves a seed skeleton indistinguishable from the no-plaintext `h47` generator)
+- **Led to:** —
+
+### L60 · 2026-10-14 15:25 · h50 vertical header and acrostic stream
+- **Folder:** [hypotheses/h50_header_acrostic_stream/](hypotheses/h50_header_acrostic_stream/)
+- **Question:** do vertical sequences of paragraph-initial words (`para_words`), line-initial words (`line_words_raw`, `line_words_stripped`), or line-initial first units (`line_first_unit`) carry sequential syntax or spell vertical words down the margin?
+- **Done:**
+  - Pre-registered. Extracted the four vertical streams across MS hands 1A, 2B, 3B, `page_line_copier` (1A, 2B, 3B), and prose/recipe controls (`it_boccaccio`, `la_pliny_herbal`, `cucina`).
+  - Scored 5-fold KN bigram gain `D1_vert` and lag-1 class MI (`M1`), vertical first-unit redundancy $R_{\text{acro}} = H_1 - h_2$ vs horizontal within-word redundancy $R_{\text{horiz}}$ and Sukhotin alternation (`M2`), and onset-stripped Line-1 to folio-body similarity vs 200 within-quire Line-1 swaps (`M3`, seed 50).
+- **Result:**
+  - A1 and A2 fail (0/3 hands); A3 passes (3/3 hands, and also passes in 3/3 `page_line_copier` hands). All MS vertical word streams have negative `D1_vert` (`para_words` −0.083, −0.076, −0.103; `line_words_stripped` −0.220, −0.198, −0.183; vs `cucina` `para_words` +0.427).
+  - Vertical first-unit redundancy $R_{\text{acro}}$ (0.394, 0.261, 0.270 bits, driven by gallows on paragraph-first lines) is only 13.7–24.3 % of horizontal within-word redundancy (below the 50 % bar and matching prose controls at 24.4–39.7 %).
+- **Commits:** ecacc79 (prereg), (results and log commit)
+- **Status:** closed (no vertical word syntax or margin glyph acrostic)
+- **Led to:** —
+
+### L61 · 2026-10-14 15:25 · h51 diagram/plant label link to de-padded folio seeds
+- **Folder:** [hypotheses/h51_label_to_seed_link/](hypotheses/h51_label_to_seed_link/)
+- **Question:** when label-to-text matching is relaxed from exact word identity to unit edit distance $\le 1$ (`edit1_hit`) or onset-stripped 3-unit stem (`stem_hit`) and compared against de-padded folio seeds (`seed_W25`) and paragraph headers, do labels anchor their folio's seeds or paired herbal folios?
+- **Done:**
+  - Pre-registered. Parsed 428 label words ($\ge 2$ EVA units) across 30 folios with $\ge 20$ paragraph tokens, plus 16 herbal–pharma same-plant pairs (`ZL3b-n.txt`).
+  - Tested own-folio label $\leftrightarrow$ `seed_W25` / `full_para` / `header_tokens` hit rates against 2,000 within-quire folio permutations (`Test 1`), de-padded same-plant pair rank percentiles against 2,000 random partner permutations (`Test 2`), and same-folio one-edit progeny size of label-linked vs length-matched unlinked seeds (`Test 3`, seed 51).
+- **Result:**
+  - L1 and L2 fail; L3 passes. On own-folio `seed_W25` (`Test 1`), `exact_hit` is 7.7 % ($p_{\text{Holm}} = 0.46$), `edit1_hit` is 33.6 % vs 32.2 % within-quire null ($z = 1.03, p_{\text{Holm}} = 0.46$), and `stem_hit` is 32.9 % vs 32.7 % ($p_{\text{Holm}} = 0.46$). On the 16 same-plant pairs (`Test 2`), de-padded `seed_W25` mean rank percentiles are 0.48–0.59 ($p \ge 0.089$).
+  - In `Test 3`, label-linked seeds have larger same-folio one-edit progeny than length-matched unlinked seeds (7.00 vs 5.34, $z = 3.96, p = 0.0005$), but swapping label sets across folios within the same quire produces nearly the same gap (+0.95 vs +1.65, $p = 0.068$), showing that both draw from dense quire-level EVA word shapes rather than folio-specific label seeding.
+- **Commits:** ecacc79 (prereg), (results and log commit)
+- **Status:** closed (labels do not anchor folio-specific paragraph seeds or de-padded herbal–pharma pairs)
 - **Led to:** —
