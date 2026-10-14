@@ -4,9 +4,12 @@ Pre-registered checks of whether the h52 interior coupling is adjacency rather t
 
 **Overall: `paragraphs_only`.** Slots `partial` (A1 hands `2B`, `3B`; A2 hands none). Paragraphs `stands` (B3 hands `1A`, `2B`, `3B`). B1 hands `1A`, `3B`. B2 hands `1A`, `2B`, `3B`. C `not_run`. D `not_shared`.
 
-A2 is the adjacency test, and it fails in the strong direction. Shuffling second units inside the line, while keeping that line's inventory, raises conditional mutual information from about 0.25 bits to about 0.50. The manuscript's cores are less paired across neighbouring words than a random placement of the same cores. Removing near-copies (A1) does not remove the h52 excess, so that excess was not the one-edit pairs either. It was the line's shared inventory.
+The labels above are the pre-registered ones. Two design checks run after the results show that neither residual is settled by this run.
 
-B3 keeps a real opening-versus-closing gap after folio-first paragraphs are dropped, both edge lines are required to have at least 6 words, and the comparison is against two long middle lines. Hand 2B clears its null 95th percentile by 0.005 bits (z +2.0) and its copier by 0.016 bits. Hands 1A and 3B are larger (D +0.097 and +0.065). The cross-hand word list does not get off the ground: after the count floor, the hands share 1, 1, and 5 types, under the floor of 15.
+- **A2 does not test adjacency.** Moving second units around inside a line also detaches each one from its own word. Within-word mutual information between onset and second unit falls from 1.01 / 1.50 / 1.43 bits to 0.06 / 0.06 / 0.05, and the entropy of the next word's second unit given the junction rises from 1.96 / 1.71 / 1.79 to 2.96 / 3.20 / 3.23 bits. The copier, which links neighbouring words only through occasional one-edit copies, scores −0.097 / −0.075 / −0.131 under the same null. A null that fails on the copier cannot say whether the manuscript's coupling is adjacency or the line's inventory. A1 stands: removing near-copies does not remove the h52 excess.
+- **B3 is not distance-matched.** `PREREG.md` uses that name, but the rule it states takes the earliest and latest long middle lines, and those are closer together than the opening and closing lines: mean line distance 1.96 / 4.78 / 2.02 against 3.96 / 6.80 / 4.02. Closing lines are also shorter (8.5 / 7.5 / 7.5 words against 9.6–11.2 for the other three roles). The shuffle null removes drift, so drift and line length both remain inside D. D is largest in hands 1A and 3B, where the middle pair is two adjacent lines in 56 % and 65 % of paragraphs, and smallest in 2B (8 %), which is the pattern drift alone would give.
+
+The cross-hand word list does not get off the ground: after the count floor, the hands share 1, 1, and 5 types, under the floor of 15.
 
 ## A. Second-unit coupling
 
