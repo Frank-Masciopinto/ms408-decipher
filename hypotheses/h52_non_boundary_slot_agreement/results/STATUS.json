@@ -1,0 +1,17 @@
+{
+  "hypothesis": "h52_non_boundary_slot_agreement",
+  "verdict": "supported",
+  "G1": true,
+  "G2": false,
+  "valid": true,
+  "G1_hands": {
+    "F1": [
+      "3B"
+    ],
+    "F2": [
+      "1A",
+      "2B",
+      "3B"
+    ]
+  }
+}
