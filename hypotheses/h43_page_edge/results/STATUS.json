@@ -1,0 +1,23 @@
+{
+ "complete": true,
+ "E1": true,
+ "E2": false,
+ "E2_scored": true,
+ "uncalibrated": false,
+ "hands_pass_distance_80": [
+  "1A",
+  "2B"
+ ],
+ "controls_available": [
+  "it_boccaccio",
+  "it_cucina",
+  "la_pliny_herbal"
+ ],
+ "controls_pass_distance_80": [
+  "la_pliny_herbal"
+ ],
+ "window": 80,
+ "min_pairs": 30,
+ "n_null": 100,
+ "null_seed": 43
+}

@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "L": 229.5,
+  "page_tokens": 230,
+  "central_folio_counts": [
+    210,
+    249
+  ],
+  "n_folios_2B": 46,
+  "B1": false,
+  "B2": true,
+  "B3": true,
+  "B1_fail": [
+    "fitted_s1",
+    "h39_native_tuned"
+  ],
+  "B3_hands": [
+    "MS_1A",
+    "MS_2B",
+    "MS_3B"
+  ],
+  "ms_excess_min": 1.5025317133774427,
+  "ms_excess_max": 1.6921321363922979,
+  "n_random": 20,
+  "n_shuffles": 10,
+  "shuffle_seed": 44,
+  "h06_parameters_fitted": false
+}

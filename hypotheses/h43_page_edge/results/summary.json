@@ -1,0 +1,145 @@
+{
+ "predictions": {
+  "E1": true,
+  "E1_pass_hands": [
+   "1A",
+   "2B"
+  ],
+  "E2": false,
+  "E2_scored": true,
+  "E2_pass_controls": [
+   "la_pliny_herbal"
+  ],
+  "n_controls_available": 3,
+  "available_controls": [
+   "it_boccaccio",
+   "it_cucina",
+   "la_pliny_herbal"
+  ],
+  "uncalibrated": false
+ },
+ "rows": [
+  {
+   "series": "1A",
+   "distance": 80,
+   "n_same": 184,
+   "n_cross": 45,
+   "effect": 0.08246622370279166,
+   "null_p95": 0.058579658560003085,
+   "scored": true,
+   "pass": true
+  },
+  {
+   "series": "1A",
+   "distance": 160,
+   "n_same": 0,
+   "n_cross": 586,
+   "effect": null,
+   "null_p95": null,
+   "scored": false,
+   "pass": false
+  },
+  {
+   "series": "2B",
+   "distance": 80,
+   "n_same": 4440,
+   "n_cross": 41,
+   "effect": 0.09976950173521465,
+   "null_p95": 0.07434573085364016,
+   "scored": true,
+   "pass": true
+  },
+  {
+   "series": "2B",
+   "distance": 160,
+   "n_same": 2549,
+   "n_cross": 2164,
+   "effect": 0.05648156220720263,
+   "null_p95": 0.049907214286177275,
+   "scored": true,
+   "pass": true
+  },
+  {
+   "series": "3B",
+   "distance": 80,
+   "n_same": 6807,
+   "n_cross": 23,
+   "effect": 0.019649058437155642,
+   "null_p95": 0.02928221855638351,
+   "scored": false,
+   "pass": false
+  },
+  {
+   "series": "3B",
+   "distance": 160,
+   "n_same": 5047,
+   "n_cross": 1738,
+   "effect": 0.013225541516944328,
+   "null_p95": 0.02440724175903405,
+   "scored": true,
+   "pass": false
+  },
+  {
+   "series": "Boccaccio",
+   "distance": 80,
+   "n_same": 58284,
+   "n_cross": 20,
+   "effect": 0.09367003914525507,
+   "null_p95": 0.037746145948298664,
+   "scored": false,
+   "pass": false
+  },
+  {
+   "series": "Boccaccio",
+   "distance": 160,
+   "n_same": 56604,
+   "n_cross": 1620,
+   "effect": 0.03480858784338581,
+   "null_p95": 0.022513487915333925,
+   "scored": true,
+   "pass": true
+  },
+  {
+   "series": "Cucina",
+   "distance": 80,
+   "n_same": 1511,
+   "n_cross": 12,
+   "effect": -0.17530043814578955,
+   "null_p95": 0.1563287054184805,
+   "scored": false,
+   "pass": false
+  },
+  {
+   "series": "Cucina",
+   "distance": 160,
+   "n_same": 1199,
+   "n_cross": 153,
+   "effect": -0.25762865959954134,
+   "null_p95": 0.15099560142365392,
+   "scored": true,
+   "pass": false
+  },
+  {
+   "series": "Pliny",
+   "distance": 80,
+   "n_same": 55014,
+   "n_cross": 127,
+   "effect": 0.04727057875735233,
+   "null_p95": 0.013664073303600146,
+   "scored": true,
+   "pass": true
+  },
+  {
+   "series": "Pliny",
+   "distance": 160,
+   "n_same": 46348,
+   "n_cross": 8961,
+   "effect": 0.0312008459040245,
+   "null_p95": 0.013674912044141447,
+   "scored": true,
+   "pass": true
+  }
+ ],
+ "numpy": "2.5.4",
+ "python": "3.12.3"
+}

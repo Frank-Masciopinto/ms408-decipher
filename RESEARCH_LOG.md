@@ -38,6 +38,9 @@ Status key:
 - **Section signal (h11):** survives on hand residuals but cannot be separated from quire with this data.
 - **Burstiness (h41):** at 10,500 tokens, clustering of the 50 most frequent words separates plain Boccaccio from Naibbe ciphertext, but not a plaintext through the cipher: Naibbe on real, shuffled and nonsense Boccaccio all score 3.4–3.7. The three hands score 5.1–5.2, above plain Boccaccio and every Naibbe arm and C0. New-type rate, lag-100 mutual information and adjacent-block divergence separate nothing.
 - **Near-repeat range (h42):** one-edit pairs are absent in Boccaccio and in the h39 graph respelling. Hand 1A drops at gap 21–100, hand 3B at 101–500. Hand 2B is not elevated for adjacent pairs, is elevated at gaps 2–20, and is elevated again at 101–500. C0 drops at gap 2–5. Fitted self-citation and the h39 tuned copier stay elevated through gap 21–100.
+- **Page clustering as evidence of content (h44):** fitted self-citation, cut into arbitrary pages of 230 tokens, reaches a burst excess of 1.63, inside the manuscript range of 1.50–1.69. The h39 tuned copier exceeds it (4.76). The excess number does not require a plaintext or real page boundaries.
+- **Vowel/consonant account of the glyph link (h45):** in prose controls the Sukhotin split carries a median share of 0.004 of the last-to-first link. The pre-registered sound pattern is not there, so the pen-versus-sound comparison is not scored.
+- **Folio boundary (h43):** at a matched distance of 80 tokens, same-folio windows are more alike than cross-folio windows in hands 1A (effect 0.082 vs null 0.059) and 2B (0.100 vs 0.074). Hand 3B has too few cross pairs to score. Among texts with known section edges, only Pliny's chapters pass at that distance. Boccaccio's novellas pass at distance 160. The recipe book does not.
 - **Not yet attempted:**
   - A pharma label ↔ grid layout from the scans, so h17 test A can be redone on individual labels.
   - The image-stage glyph check on higher-resolution scans.
@@ -679,4 +682,43 @@ Status key:
   - C0 drops at gap 2–5 (adjacent excess 0.024) and is elevated again at 6–20. Fitted self-citation and the h39 tuned copier stay elevated through 21–100 and drop at 101–500, which is later than hand 2B's first drop. Boccaccio and the h39 graph respell have no elevated bin (Boccaccio adjacent excess −0.027).
 - **Commits:** 7af068c (prereg), 96d9abb (results and log)
 - **Status:** closed (not Boccaccio's pattern); lead (hand 2B's excess returns at 101–500 tokens)
+- **Led to:** L53
+
+### L53 · 2026-10-14 12:08 · h43 vocabulary at the folio boundary
+- **Folder:** [hypotheses/h43_page_edge/](hypotheses/h43_page_edge/)
+- **Question:** at a matched distance, are windows on one folio more alike than windows split by a folio boundary, and do known section edges behave the same way?
+- **Done:**
+  - Pre-registered. Windows of 80 tokens, pairs 80 and 160 tokens apart, cosine of word counts. Null: 100 rotations of the text against fixed folio lengths inside each quire.
+  - Hands 1A, 2B, 3B. Controls: Boccaccio novellas (20 boundaries), cucina recipes (180), Pliny chapters (155).
+- **Result:**
+  - E1 passes. At distance 80, 1A effect 0.082 against a null 95th percentile of 0.059 (184 same, 45 cross) and 2B 0.100 against 0.074 (4440 / 41). 3B has 23 cross pairs, so it is unscored.
+  - E2 fails. Only Pliny passes at distance 80 (0.047 vs 0.014). Boccaccio and cucina have 20 and 12 cross pairs there. At distance 160, Boccaccio and Pliny pass and cucina's effect is −0.26.
+- **Commits:** adf281d (prereg), (results and log commit)
+- **Status:** lead (folio boundary in 1A and 2B); closed (not the same break as a novella or a recipe)
+- **Led to:** —
+
+### L54 · 2026-10-14 12:08 · h44 generator page clustering
+- **Folder:** [hypotheses/h44_generator_page_burst/](hypotheses/h44_generator_page_burst/)
+- **Question:** can a generator with no plaintext match the manuscript's page-level burst excess?
+- **Done:**
+  - Pre-registered. h41 burst statistic, shuffles inside the page, inside the quire, and overall. Generated pages are 230 tokens, the median hand-2B folio. Quires are 8 pages.
+  - Streams: MS hands, fitted self-citation s1 and s2, C0, an h06 pool and a no-pool stream with default parameters, two h39 streams, and a per-page vocabulary control.
+- **Result:**
+  - B1 fails. MS excess is 1.51, 1.69 and 1.50. fitted_s1 is 1.63 and the h39 tuned copier is 4.76. C0 is 0.15, the h06 pool 0.27, h06 with no pool 0.05, and the h39 graph respelling 0.19.
+  - B2 and B3 pass. The per-page vocabulary stream reaches 33.2. In every hand, more of the excess sits inside the folio than inside the quire.
+- **Commits:** adf281d (prereg), (results and log commit)
+- **Status:** closed (the excess is not evidence of content)
+- **Led to:** —
+
+### L55 · 2026-10-14 12:08 · h45 vowel/consonant share of the glyph link
+- **Folder:** [hypotheses/h45_edge_link_classes/](hypotheses/h45_edge_link_classes/)
+- **Question:** how much of the last-glyph to next-first-glyph link is a two-way vowel/consonant split?
+- **Done:**
+  - Pre-registered. Sukhotin classes fit on each stream. Share is the mutual information of the classes divided by the mutual information of the glyphs.
+  - Four controls, three hands, fitted self-citation, and an h34 gap rule applied to that self-citation stream.
+- **Result:**
+  - C1 fails. The median control share is 0.004, against a bar of 0.25. Boccaccio 0.002, cucina 0.005, Pliny 0.0004, Macer 0.21. Sukhotin recovers e a o i u on Boccaccio.
+  - C2 and C3 are not scored. MS shares are 0.058, 0.066 and 0.057. Self-citation is 0.002 and the gap rule is 0.001. The gap-rule stream is the whole fitted text, 48,671 tokens.
+- **Commits:** adf281d (prereg), (results and log commit)
+- **Status:** closed (the vowel/consonant split is not the control pattern)
 - **Led to:** —
