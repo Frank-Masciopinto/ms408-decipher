@@ -30,6 +30,7 @@ Status key:
 - **Vertical paragraph/line-initial header or glyph acrostic (h50):** vertical sequences of paragraph-initial words and raw or onset-stripped line-initial words have negative bigram gain ($D_1 < 0$) in all three hands, and vertical line-initial first-unit redundancy ($R_{\text{acro}}$) is only 14–24 % of horizontal within-word redundancy (matching prose controls at 24–40 %).
 - **Diagram/plant label links to de-padded paragraph seeds (h51):** matching `L`-locus labels to their own folio's de-padded `seed_W25` tokens via exact, one-edit, or onset-stripped stem overlap shows no enrichment over within-quire folio permutations ($p_{\text{Holm}} = 0.46$), and de-padded herbal–pharmaceutical same-plant pairs do not beat random herbal partners ($p \ge 0.089$).
 - **Adjacent core rule (h52, h55):** shuffling whole words inside the line puts the h52 second-unit coupling below the shuffle (−0.042 to −0.052 bits, z −5.6 to −8.6). A planted block rule scores +0.80 to +0.91, and the copier passes the positive rule on no hand.
+- **Semantic identifiability from drawings and labels (h56):** a root detector that recovers a planted topic (accuracy 0.575 vs 0.000) finds no association between folio roots, label onsets, label counts, or procedural surprise and jars, roots, nymphs, or stars. Labels are less surprising than length-matched paragraph words on the same folio. No reading follows. Erasure recovery is blocked: there are no multispectral images.
 
 ## Open leads
 - **Line structure (h13–h16, h30, h47):**
@@ -860,4 +861,18 @@ Status key:
   - Onset correlations are +0.018, +0.394 and +0.315, and none clears its null, so X is `not_shared`. The largest onset change at the opening step is `ch`, more common on the second line by 0.058 / 0.040 / 0.084.
 - **Commits:** 6e1538d (prereg), d5625e8 (results and log)
 - **Status:** closed (adjacent core rule); lead (the first step of a paragraph, about +0.02 bits, not shared as an onset ranking)
+- **Led to:** L66
+
+### L66 · 2026-10-16 15:03 · h56 identifiability after the copying routine
+- **Folder:** [hypotheses/h56_identifiability/](hypotheses/h56_identifiability/)
+- **Question:** after hand, quire, folio vocabulary, and local copying are removed, does any residual predict drawings or labels, and is that test able to recover a planted topic?
+- **Done:**
+  - Pre-registered seven stages. The reading lattice is ZL primary, ZL with the second alternative substituted, ZL with uncertain spaces joined, and IT2a. Surprise is a fixed mixture of folio, hand, line position, and local edit. Roots are the most frequent type in each edit-distance-1 component of at least three tokens. Tags are jars, roots, nymphs, and stars, permuted inside the quire.
+  - The synthetic check plants topic markers into 25% of tokens. Stage 7 proposes no reading unless that check passes and a manuscript association does too.
+  - Multispectral images are not in the repository. Stage 5 uses the recorded alternative groups only.
+- **Result:**
+  - Stage 7 is `unidentifiable`. Planted accuracy 0.575, null accuracy 0.000. R1 contrast −0.494 bits (p 0.82). R2, M1 (0 of 25 roots), and both label tests fail Holm. Edit-distance-1 families cover 0.758 of paragraph tokens.
+  - U1 fails. Joined Hand 3B has edit-1 rate 0.027 and IT2a Hand 3B 0.030, against a floor of 0.030. Bigram gain is negative and the line-initial onset excess is positive in all twelve cells. Alternatives cover 1.85% of paragraph tokens; 98.5% of the options have length at most 3.
+- **Commits:** 0a603f6 (prereg), 04731f9 (results and log)
+- **Status:** closed (no identifiable semantic layer in the tested channels); blocked (erasure recovery, no multispectral images)
 - **Led to:** —
