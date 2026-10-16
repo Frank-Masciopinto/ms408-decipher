@@ -863,7 +863,7 @@ Status key:
 - **Status:** closed (adjacent core rule); lead (the first step of a paragraph, about +0.02 bits, not shared as an onset ranking)
 - **Led to:** L66
 
-### L66 · 2026-10-16 14:55 · h56 identifiability after the copying routine
+### L66 · 2026-10-16 15:03 · h56 identifiability after the copying routine
 - **Folder:** [hypotheses/h56_identifiability/](hypotheses/h56_identifiability/)
 - **Question:** after hand, quire, folio vocabulary, and local copying are removed, does any residual predict drawings or labels, and is that test able to recover a planted topic?
 - **Done:**
@@ -873,6 +873,6 @@ Status key:
 - **Result:**
   - Stage 7 is `unidentifiable`. Planted accuracy 0.575, null accuracy 0.000. R1 contrast −0.494 bits (p 0.82). R2, M1 (0 of 25 roots), and both label tests fail Holm. Edit-distance-1 families cover 0.758 of paragraph tokens.
   - U1 fails. Joined Hand 3B has edit-1 rate 0.027 and IT2a Hand 3B 0.030, against a floor of 0.030. Bigram gain is negative and the line-initial onset excess is positive in all twelve cells. Alternatives cover 1.85% of paragraph tokens; 98.5% of the options have length at most 3.
-- **Commits:** 0a603f6 (prereg), (results and log commit)
+- **Commits:** 0a603f6 (prereg), 04731f9 (results and log)
 - **Status:** closed (no identifiable semantic layer in the tested channels); blocked (erasure recovery, no multispectral images)
 - **Led to:** —
