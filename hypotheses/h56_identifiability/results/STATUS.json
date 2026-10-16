@@ -1,0 +1,16 @@
+{
+  "hypothesis": "h56_identifiability",
+  "stage7": "unidentifiable",
+  "U1": 0,
+  "R1": {
+    "contrast": -0.4940259004401643,
+    "p": 0.823088455772114,
+    "pass": 0,
+    "n_folios": 30
+  },
+  "R2_pass": 0,
+  "M1": 0,
+  "L_pass": 0,
+  "C1": 1,
+  "S6": 1
+}
